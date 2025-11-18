@@ -1,4 +1,4 @@
-import { Chapter } from '../../types'
+import { Chapter, TextType } from '../../types'
 import ArrowLeftIcon from './icons/ArrowLeftIcon'
 import ChevronLeftIcon from './icons/ChevronLeftIcon'
 import ChevronRightIcon from './icons/ChevronRightIcon'
@@ -11,6 +11,7 @@ interface ChapterViewProps {
   onVerseChange: (verseNumber: number) => void
   onBack: () => void
   fontSize: number
+  textType?: TextType
 }
 
 export default function ChapterView({
@@ -19,6 +20,7 @@ export default function ChapterView({
   onVerseChange,
   onBack,
   fontSize,
+  textType,
 }: ChapterViewProps) {
   const verse = chapter.verses.find((v) => v.verse_number === currentVerse)
   const totalVerses = chapter.verses.length
@@ -104,7 +106,32 @@ export default function ChapterView({
         {/* Hindi Meaning */}
         <div className="mb-6">
           <div className="text-sm font-semibold text-gray-600 mb-2">Hindi Meaning:</div>
-          <div className="text-lg text-gray-700 leading-relaxed">{verse.hindi_meaning}</div>
+          {textType === 'yakshaPrashna' && verse.hindi_meaning.includes('\n\n') ? (
+            <div className="text-lg text-gray-700 leading-relaxed">
+              {verse.hindi_meaning.split('\n\n').map((part, index) => {
+                if (part.includes('यक्ष प्रश्न:')) {
+                  return (
+                    <div key={index} className="mb-2">
+                      <div className="font-medium text-amber-700">{part.trim()}</div>
+                    </div>
+                  )
+                } else if (part.includes('युधिष्ठिर उत्तर:')) {
+                  return (
+                    <div key={index} className="ml-0">
+                      <div className="font-medium text-green-700">{part.trim()}</div>
+                    </div>
+                  )
+                }
+                return (
+                  <div key={index} className="mb-2">
+                    {part.trim()}
+                  </div>
+                )
+              })}
+            </div>
+          ) : (
+            <div className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">{verse.hindi_meaning}</div>
+          )}
         </div>
 
         {/* English Meaning */}

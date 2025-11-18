@@ -120,6 +120,7 @@ function App() {
                 onVerseChange={setSelectedVerse}
                 onBack={handleBackToHome}
                 fontSize={fontSize}
+                textType={textType}
               />
             </div>
           )}
