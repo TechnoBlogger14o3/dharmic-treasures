@@ -6,28 +6,34 @@ interface GitaChatbotProps {
 }
 
 interface ChatMessage {
-  type: 'user' | 'bot'
+  type: 'user' | 'bot' | 'loading'
   content: string
-  verses?: Array<{ chapter: number; verse: number; meaning: string; chapterName: string }>
+  verses?: Array<{ chapter: number; verse: number; meaning: string; chapterName: string; verseId?: number }>
 }
 
 const keywordMapping: Record<string, string[]> = {
-  stress: ['anxiety', 'worry', 'fear', 'trouble', 'difficulty', 'sorrow', 'grief', 'distress'],
-  duty: ['dharma', 'responsibility', 'obligation', 'work', 'action', 'karma', 'righteousness'],
-  happiness: ['joy', 'peace', 'bliss', 'contentment', 'satisfaction', 'delight'],
-  death: ['mortality', 'afterlife', 'soul', 'spirit', 'rebirth', 'reincarnation'],
-  anger: ['rage', 'wrath', 'fury', 'irritation', 'temper'],
-  karma: ['action', 'deed', 'work', 'consequence', 'result'],
-  meditation: ['yoga', 'contemplation', 'concentration', 'mindfulness', 'dhyana'],
-  love: ['devotion', 'affection', 'compassion', 'bhakti', 'attachment'],
-  knowledge: ['wisdom', 'understanding', 'insight', 'jnana', 'awareness'],
-  detachment: ['renunciation', 'non-attachment', 'vairagya', 'indifference'],
-  self: ['soul', 'atman', 'self', 'ego', 'identity'],
-  god: ['krishna', 'lord', 'divine', 'supreme', 'brahman', 'ishvara'],
-  path: ['way', 'method', 'practice', 'yoga', 'marga'],
-  mind: ['thought', 'consciousness', 'intellect', 'buddhi', 'manas'],
-  control: ['discipline', 'restraint', 'mastery', 'regulation'],
-  peace: ['tranquility', 'calm', 'serenity', 'shanti'],
+  stress: ['anxiety', 'worry', 'fear', 'trouble', 'difficulty', 'sorrow', 'grief', 'distress', 'tension', 'pressure', 'strain'],
+  duty: ['dharma', 'responsibility', 'obligation', 'work', 'action', 'karma', 'righteousness', 'purpose', 'calling'],
+  happiness: ['joy', 'peace', 'bliss', 'contentment', 'satisfaction', 'delight', 'pleasure', 'cheer', 'gladness'],
+  death: ['mortality', 'afterlife', 'soul', 'spirit', 'rebirth', 'reincarnation', 'moksha', 'liberation', 'immortality'],
+  anger: ['rage', 'wrath', 'fury', 'irritation', 'temper', 'resentment', 'hostility', 'annoyance'],
+  karma: ['action', 'deed', 'work', 'consequence', 'result', 'fate', 'destiny', 'deeds', 'activities'],
+  meditation: ['yoga', 'contemplation', 'concentration', 'mindfulness', 'dhyana', 'samadhi', 'practice', 'sadhana'],
+  love: ['devotion', 'affection', 'compassion', 'bhakti', 'attachment', 'care', 'kindness', 'mercy'],
+  knowledge: ['wisdom', 'understanding', 'insight', 'jnana', 'awareness', 'learning', 'education', 'enlightenment'],
+  detachment: ['renunciation', 'non-attachment', 'vairagya', 'indifference', 'dispassion', 'unattached'],
+  self: ['soul', 'atman', 'self', 'ego', 'identity', 'individual', 'person', 'being'],
+  god: ['krishna', 'lord', 'divine', 'supreme', 'brahman', 'ishvara', 'deity', 'almighty', 'creator'],
+  path: ['way', 'method', 'practice', 'yoga', 'marga', 'route', 'approach', 'technique'],
+  mind: ['thought', 'consciousness', 'intellect', 'buddhi', 'manas', 'mental', 'thinking', 'awareness'],
+  control: ['discipline', 'restraint', 'mastery', 'regulation', 'self-control', 'willpower', 'restraint'],
+  peace: ['tranquility', 'calm', 'serenity', 'shanti', 'quiet', 'stillness', 'harmony'],
+  success: ['achievement', 'victory', 'triumph', 'accomplishment', 'prosperity', 'wealth'],
+  failure: ['defeat', 'loss', 'mistake', 'error', 'defeat', 'downfall'],
+  guidance: ['direction', 'advice', 'counsel', 'instruction', 'teaching', 'guidance'],
+  purpose: ['meaning', 'goal', 'aim', 'objective', 'intention', 'reason'],
+  suffering: ['pain', 'misery', 'agony', 'torment', 'hardship', 'adversity'],
+  devotion: ['worship', 'prayer', 'bhakti', 'faith', 'dedication', 'surrender'],
 }
 
 function expandKeywords(query: string): string[] {
@@ -53,7 +59,7 @@ function searchRelevantVerses(
   chapters: Chapter[]
 ): Array<{ verse: Verse; chapter: Chapter; score: number }> {
   const expandedKeywords = expandKeywords(query)
-  const lowerQuery = query.toLowerCase()
+  const lowerQuery = query.toLowerCase().trim()
   const queryWords = lowerQuery.split(/\s+/).filter((w) => w.length > 2)
   
   const scoredVerses: Array<{ verse: Verse; chapter: Chapter; score: number }> = []
@@ -66,26 +72,46 @@ function searchRelevantVerses(
       const meaning = verse.meaning.toLowerCase()
       const hindiMeaning = verse.hindi_meaning.toLowerCase()
       const chapterSummary = chapter.summary.toLowerCase()
+      const chapterName = chapter.name_meaning.toLowerCase()
       
-      // Exact phrase match (highest priority)
-      if (meaning.includes(lowerQuery) || hindiMeaning.includes(lowerQuery)) {
-        score += 100
+      // Exact phrase match in meaning (highest priority)
+      if (meaning.includes(lowerQuery)) {
+        score += 150
+      }
+      if (hindiMeaning.includes(lowerQuery)) {
+        score += 120
       }
       
-      // Expanded keyword matches
+      // Exact phrase match in chapter name/summary
+      if (chapterName.includes(lowerQuery) || chapterSummary.includes(lowerQuery)) {
+        score += 80
+      }
+      
+      // Word boundary matches (more precise)
+      const wordBoundaryRegex = new RegExp(`\\b${lowerQuery.replace(/\s+/g, '\\s+')}\\b`, 'i')
+      if (wordBoundaryRegex.test(meaning)) score += 50
+      if (wordBoundaryRegex.test(hindiMeaning)) score += 40
+      
+      // Expanded keyword matches (weighted by importance)
       expandedKeywords.forEach((keyword) => {
-        if (meaning.includes(keyword)) score += 10
-        if (hindiMeaning.includes(keyword)) score += 10
-        if (chapterSummary.includes(keyword)) score += 5
+        if (meaning.includes(keyword)) score += 15
+        if (hindiMeaning.includes(keyword)) score += 12
+        if (chapterSummary.includes(keyword)) score += 8
+        if (chapterName.includes(keyword)) score += 10
       })
       
       // Original word matches
       queryWords.forEach((word) => {
-        if (meaning.includes(word)) score += 5
-        if (hindiMeaning.includes(word)) score += 5
+        if (word.length > 3) { // Longer words are more significant
+          if (meaning.includes(word)) score += 8
+          if (hindiMeaning.includes(word)) score += 6
+        } else {
+          if (meaning.includes(word)) score += 4
+          if (hindiMeaning.includes(word)) score += 3
+        }
         if (transliteration.includes(word)) score += 3
         if (verseText.includes(word)) score += 2
-        if (chapterSummary.includes(word)) score += 3
+        if (chapterSummary.includes(word)) score += 4
       })
       
       if (score > 0) {
@@ -94,14 +120,14 @@ function searchRelevantVerses(
     })
   })
   
-  // Sort by score and return top 5
-  return scoredVerses.sort((a, b) => b.score - a.score).slice(0, 5)
+  // Sort by score and return top 7 (increased from 5)
+  return scoredVerses.sort((a, b) => b.score - a.score).slice(0, 7)
 }
 
 function generateResponse(
   query: string,
   chapters: Chapter[]
-): Array<{ chapter: number; verse: number; meaning: string; chapterName: string }> {
+): Array<{ chapter: number; verse: number; meaning: string; chapterName: string; verseId: number }> {
   const relevantVerses = searchRelevantVerses(query, chapters)
   
   return relevantVerses.map(({ verse, chapter }) => ({
@@ -109,15 +135,22 @@ function generateResponse(
     verse: verse.verse_number,
     meaning: verse.meaning,
     chapterName: chapter.name_meaning,
+    verseId: verse.id,
   }))
 }
 
-export default function GitaChatbot({ chapters }: GitaChatbotProps) {
+interface GitaChatbotProps {
+  chapters: Chapter[]
+  onNavigateToVerse?: (chapterNumber: number, verseNumber: number) => void
+}
+
+export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbotProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       type: 'bot',
-      content: 'Namaste! I am the Gita Chatbot. Ask me questions about life, duty, karma, stress, or any topic, and I will find relevant verses from the Bhagavad Gita for you.',
+      content: 'Namaste! 🙏 I am the Gita Chatbot. Ask me questions about life, duty, karma, stress, happiness, or any topic, and I will find relevant verses from the Bhagavad Gita for you.',
     },
   ])
   const [inputValue, setInputValue] = useState('')
@@ -128,7 +161,7 @@ export default function GitaChatbot({ chapters }: GitaChatbotProps) {
   }, [messages])
 
   const handleSend = () => {
-    if (!inputValue.trim()) return
+    if (!inputValue.trim() || isLoading) return
 
     const userMessage: ChatMessage = {
       type: 'user',
@@ -136,20 +169,34 @@ export default function GitaChatbot({ chapters }: GitaChatbotProps) {
     }
 
     setMessages((prev) => [...prev, userMessage])
+    const query = inputValue
     setInputValue('')
+    setIsLoading(true)
+
+    // Add loading message
+    const loadingMessage: ChatMessage = {
+      type: 'loading',
+      content: 'Searching the Bhagavad Gita...',
+    }
+    setMessages((prev) => [...prev, loadingMessage])
 
     // Generate response
     setTimeout(() => {
-      const verses = generateResponse(inputValue, chapters)
+      setIsLoading(false)
+      const verses = generateResponse(query, chapters)
+      
+      // Remove loading message
+      setMessages((prev) => prev.filter((msg) => msg.type !== 'loading'))
+      
       const botMessage: ChatMessage = {
         type: 'bot',
         content: verses.length > 0
-          ? `Here are ${verses.length} relevant verse${verses.length > 1 ? 's' : ''} from the Bhagavad Gita:`
-          : "I couldn't find specific verses matching your query. Try rephrasing or asking about topics like duty, karma, stress, happiness, meditation, or detachment.",
+          ? `I found ${verses.length} relevant verse${verses.length > 1 ? 's' : ''} from the Bhagavad Gita. Click on any verse to read it in detail:`
+          : `I couldn't find specific verses matching "${query}". Try asking about:\n\n• Duty and Dharma\n• Karma and Actions\n• Stress and Worry\n• Happiness and Peace\n• Meditation and Yoga\n• Detachment and Renunciation\n• Knowledge and Wisdom\n• Devotion and Bhakti\n\nOr rephrase your question with different words.`,
         verses: verses.length > 0 ? verses : undefined,
       }
       setMessages((prev) => [...prev, botMessage])
-    }, 500)
+    }, 800)
   }
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -223,21 +270,41 @@ export default function GitaChatbot({ chapters }: GitaChatbotProps) {
                       : 'bg-white text-gray-800 shadow-sm border border-gray-200'
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
-                  {message.verses && message.verses.length > 0 && (
-                    <div className="mt-3 space-y-2">
-                      {message.verses.map((verse, vIndex) => (
-                        <div
-                          key={vIndex}
-                          className="bg-amber-50 border border-amber-200 rounded p-2 text-xs"
-                        >
-                          <div className="font-semibold text-amber-700 mb-1">
-                            Chapter {verse.chapter}: {verse.chapterName} - Verse {verse.verse}
-                          </div>
-                          <div className="text-gray-700">{verse.meaning}</div>
-                        </div>
-                      ))}
+                  {message.type === 'loading' ? (
+                    <div className="flex items-center gap-2">
+                      <div className="animate-spin rounded-full h-4 w-4 border-2 border-amber-500 border-t-transparent"></div>
+                      <p className="text-sm text-gray-600">{message.content}</p>
                     </div>
+                  ) : (
+                    <>
+                      <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                      {message.verses && message.verses.length > 0 && (
+                        <div className="mt-3 space-y-2">
+                          {message.verses.map((verse, vIndex) => (
+                            <div
+                              key={vIndex}
+                              onClick={() => {
+                                if (onNavigateToVerse) {
+                                  setIsOpen(false)
+                                  onNavigateToVerse(verse.chapter, verse.verse)
+                                }
+                              }}
+                              className={`bg-amber-50 border border-amber-200 rounded p-2 text-xs ${
+                                onNavigateToVerse ? 'cursor-pointer hover:bg-amber-100 hover:border-amber-300 transition-colors' : ''
+                              }`}
+                            >
+                              <div className="font-semibold text-amber-700 mb-1">
+                                Chapter {verse.chapter}: {verse.chapterName} - Verse {verse.verse}
+                                {onNavigateToVerse && (
+                                  <span className="ml-2 text-amber-600 text-[10px]">(Click to read)</span>
+                                )}
+                              </div>
+                              <div className="text-gray-700">{verse.meaning}</div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               </div>

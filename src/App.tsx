@@ -43,9 +43,9 @@ function App() {
   const currentText = textConfigs[textType]
   const isHomePage = selectedChapter === null
 
-  const handleChapterSelect = (chapterNumber: number) => {
+  const handleChapterSelect = (chapterNumber: number, verseNumber?: number) => {
     setSelectedChapter(chapterNumber)
-    setSelectedVerse(1)
+    setSelectedVerse(verseNumber || 1)
   }
 
   const handleBackToHome = () => {

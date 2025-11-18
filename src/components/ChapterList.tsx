@@ -7,7 +7,7 @@ interface ChapterListProps {
   chapters: Chapter[]
   textName: string
   textNameHindi: string
-  onChapterSelect: (chapterNumber: number) => void
+  onChapterSelect: (chapterNumber: number, verseNumber?: number) => void
   textType: TextType
 }
 
@@ -97,7 +97,14 @@ export default function ChapterList({
       )}
 
       {/* Gita Chatbot - Only for Bhagavad Gita */}
-      {textType === 'gita' && <GitaChatbot chapters={chapters} />}
+      {textType === 'gita' && (
+        <GitaChatbot
+          chapters={chapters}
+          onNavigateToVerse={(chapterNumber, verseNumber) => {
+            onChapterSelect(chapterNumber, verseNumber)
+          }}
+        />
+      )}
     </div>
   )
 }
