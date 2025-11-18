@@ -165,7 +165,7 @@ export default function GitaChatbot({ chapters }: GitaChatbotProps) {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 bg-amber-500 text-white rounded-full p-4 shadow-lg hover:bg-amber-600 transition-all duration-300 z-50"
+          className="fixed bottom-6 right-6 bg-amber-500 text-white rounded-full p-4 shadow-lg hover:bg-amber-600 transition-all duration-300 z-50 animate-pulse-slow hover:animate-none"
           aria-label="Open Chatbot"
         >
           <svg
@@ -213,7 +213,8 @@ export default function GitaChatbot({ chapters }: GitaChatbotProps) {
             {messages.map((message, index) => (
               <div
                 key={index}
-                className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}
+                className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'} animate-fadeIn`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div
                   className={`max-w-[80%] rounded-lg p-3 ${

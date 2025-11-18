@@ -51,17 +51,17 @@ export default function ChapterView({
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl">
+    <div className="container mx-auto px-4 py-8 max-w-4xl animate-fadeIn">
       {/* Header */}
       <div className="mb-6">
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-gray-700 hover:text-amber-600 transition-colors mb-4"
+          className="flex items-center gap-2 text-gray-700 hover:text-amber-600 transition-all duration-300 mb-4 animate-slideInLeft"
         >
           <ArrowLeftIcon className="w-5 h-5" />
           <span>Back to Chapters</span>
         </button>
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-gray-200">
+        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-gray-200 animate-scaleIn">
           <div className="text-center mb-4">
             <div className="text-2xl font-bold text-amber-600 mb-2">
               {chapter.chapter_number}
@@ -78,8 +78,9 @@ export default function ChapterView({
 
       {/* Verse Content */}
       <div
-        className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-200 mb-6"
+        className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-gray-200 mb-6 animate-fadeIn"
         style={{ fontSize: `${fontSize}px` }}
+        key={currentVerse}
       >
         <div className="text-center mb-6">
           <div className="inline-block bg-amber-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
@@ -123,7 +124,7 @@ export default function ChapterView({
       </div>
 
       {/* Navigation */}
-      <div className="flex items-center justify-between bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 border border-gray-200">
+      <div className="flex items-center justify-between bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 border border-gray-200 animate-slideInRight">
         <button
           onClick={handlePrevious}
           disabled={currentVerse === 1}

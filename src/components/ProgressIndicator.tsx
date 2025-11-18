@@ -19,7 +19,7 @@ export default function ProgressIndicator({
       </div>
       <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
         <div
-          className="bg-amber-500 h-2.5 rounded-full transition-all duration-300 ease-out"
+          className="bg-amber-500 h-2.5 rounded-full transition-all duration-500 ease-out animate-fadeIn"
           style={{ width: `${progress}%` }}
         />
       </div>

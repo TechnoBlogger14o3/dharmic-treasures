@@ -103,21 +103,25 @@ function App() {
         {/* Main Content */}
         <div className="relative z-10">
           {isHomePage ? (
-            <ChapterList
-              chapters={currentText.data}
-              textName={currentText.name}
-              textNameHindi={currentText.nameHindi}
-              onChapterSelect={handleChapterSelect}
-              textType={textType}
-            />
+            <div key="chapter-list" className="animate-fadeIn">
+              <ChapterList
+                chapters={currentText.data}
+                textName={currentText.name}
+                textNameHindi={currentText.nameHindi}
+                onChapterSelect={handleChapterSelect}
+                textType={textType}
+              />
+            </div>
           ) : (
-            <ChapterView
-              chapter={currentText.data.find((ch) => ch.chapter_number === selectedChapter)!}
-              currentVerse={selectedVerse}
-              onVerseChange={setSelectedVerse}
-              onBack={handleBackToHome}
-              fontSize={fontSize}
-            />
+            <div key="chapter-view" className="animate-fadeIn">
+              <ChapterView
+                chapter={currentText.data.find((ch) => ch.chapter_number === selectedChapter)!}
+                currentVerse={selectedVerse}
+                onVerseChange={setSelectedVerse}
+                onBack={handleBackToHome}
+                fontSize={fontSize}
+              />
+            </div>
           )}
         </div>
 

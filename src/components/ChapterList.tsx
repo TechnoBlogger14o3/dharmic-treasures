@@ -25,7 +25,7 @@ export default function ChapterList({
   useEffect(() => {
     setFilteredChapters(chapters)
     setSearchQuery('')
-  }, [chapters])
+  }, [chapters, textType])
 
   const handleSearch = (query: string) => {
     setSearchQuery(query)
@@ -54,23 +54,26 @@ export default function ChapterList({
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Title */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 animate-fadeIn">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-2">{textNameHindi}</h1>
         <p className="text-xl md:text-2xl text-gray-600">{textName}</p>
       </div>
 
-      {/* Search Bar */}
-      <div className="max-w-2xl mx-auto mb-8">
-        <SearchBar onSearch={handleSearch} placeholder={`Search ${textName}...`} />
-      </div>
+      {/* Search Bar - Only for Bhagavad Gita */}
+      {textType === 'gita' && (
+        <div className="max-w-2xl mx-auto mb-8">
+          <SearchBar onSearch={handleSearch} placeholder={`Search ${textName}...`} />
+        </div>
+      )}
 
       {/* Chapters Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-        {filteredChapters.map((chapter) => (
+        {filteredChapters.map((chapter, index) => (
           <div
             key={chapter.id}
             onClick={() => onChapterSelect(chapter.chapter_number)}
-            className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105 border border-gray-200 p-6"
+            className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105 border border-gray-200 p-6 animate-fadeIn"
+            style={{ animationDelay: `${index * 0.05}s` }}
           >
             <div className="text-center">
               <div className="text-3xl font-bold text-amber-600 mb-2">
