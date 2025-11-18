@@ -1,11 +1,10 @@
-# श्रीमद्भगवद्गीता | Bhagavad Gita: The Divine Song
+# धर्मिक खजाना | Dharmic Treasures
 
 <div align="center">
 
-![Bhagavad Gita](screenshots/Home%20Page.png)
+![Dharmic Treasures](screenshots/Home%20Page.png)
 
 **An interactive web application to explore the timeless wisdom of Hindu scriptures**
-
 
 </div>
 
@@ -13,7 +12,7 @@
 
 ## 📖 About
 
-This is a modern, interactive web application that brings the sacred texts of Hindu philosophy to life. The application features multiple scriptures including the Bhagavad Gita, Hanuman Chalisa, Sunderkand, Bajrang Baan, and Yaksha Prashna, all with beautiful UI, 3D animations, and an intelligent chatbot that helps answer life's questions using the wisdom of the Bhagavad Gita.
+This is a modern, interactive web application that brings the sacred texts of Hindu philosophy to life. The application features multiple scriptures including the Bhagavad Gita, Hanuman Chalisa, Sunderkand, Bajrang Baan, and Yaksha Prashna, all with a beautiful UI and an intelligent chatbot that helps answer life's questions using the wisdom of the Bhagavad Gita.
 
 ## ✨ Features
 
@@ -37,14 +36,10 @@ This is a modern, interactive web application that brings the sacred texts of Hi
   - Search by keywords, phrases, or concepts
   - Direct navigation to specific verses
   - Real-time search results
-- **🎨 Beautiful 3D Interface**:
-
-  - Interactive 3D background with animated characters (Krishna & Arjuna)
-  - Smooth transitions and animations
-  - Responsive design for all devices
 - **🎨 Customizable Themes**:
 
-  - Multiple background gradient options
+  - Multiple background gradient options (5 themes)
+  - Background selector in top-right corner
   - Adjustable font sizes for comfortable reading
   - Smooth theme transitions
 - **📱 Fully Responsive**: Works seamlessly on desktop, tablet, and mobile devices
@@ -63,7 +58,7 @@ This is a modern, interactive web application that brings the sacred texts of Hi
 ### Home Page
 
 ![Home Page](screenshots/Home%20Page.png)
-*Beautiful home page with text type selector and 3D animated background*
+*Beautiful home page with text type selector and customizable background themes*
 
 ### Bhagavad Gita
 
@@ -116,7 +111,7 @@ This is a modern, interactive web application that brings the sacred texts of Hi
 - **Vite** - Fast build tool and dev server
 - **Tailwind CSS** - Utility-first CSS framework
 
-### 3D Graphics
+### 3D Graphics (Available but not active in UI)
 
 - **Three.js** - 3D graphics library
 - **@react-three/fiber** - React renderer for Three.js
@@ -144,8 +139,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/TechnoBlogger14o3/Bhagavad-Gita.git
-cd Bhagavad-Gita
+git clone https://github.com/TechnoBlogger14o3/dharmic-treasures.git
+cd dharmic-treasures
 ```
 
 ### 2. Install Dependencies
@@ -181,40 +176,46 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-Bhagavad-Gita/
-├── components/              # React components
-│   ├── Arjuna.tsx          # Arjuna 3D character
-│   ├── Krishna.tsx         # Krishna 3D character
-│   ├── ChapterCard3D.tsx   # 3D chapter cards
-│   ├── ChapterList.tsx     # Chapter selection view
-│   ├── ChapterView.tsx     # Verse reading view
-│   ├── Scene3D.tsx         # 3D scene component
-│   ├── GitaChatbot.tsx     # Intelligent chatbot component
-│   ├── SearchBar.tsx       # Search functionality
-│   ├── BackgroundSelector.tsx  # Theme selector
-│   ├── FontSizeControl.tsx     # Font size adjustment
-│   ├── ProgressIndicator.tsx   # Reading progress
-│   ├── ShareButton.tsx         # Share functionality
-│   ├── ErrorBoundary.tsx       # Error handling
-│   └── icons/              # Icon components
-│       ├── ArrowLeftIcon.tsx
-│       ├── ChevronLeftIcon.tsx
-│       └── ChevronRightIcon.tsx
-├── data/                   # Data files
-│   ├── gita.ts            # Bhagavad Gita data (18 chapters, 700+ verses)
-│   ├── hanumanChalisa.ts  # Hanuman Chalisa data
-│   ├── sunderkand.ts      # Sunderkand data
-│   ├── bajrangBaan.ts     # Bajrang Baan data
-│   └── yakshaPrashn.ts    # Yaksha Prashna data
-├── scripts/               # Utility scripts
+dharmic-treasures/
+├── src/                      # Source code
+│   ├── components/           # React components
+│   │   ├── ChapterList.tsx     # Chapter selection view
+│   │   ├── ChapterView.tsx     # Verse reading view
+│   │   ├── GitaChatbot.tsx     # Intelligent chatbot component
+│   │   ├── SearchBar.tsx       # Search functionality
+│   │   ├── BackgroundSelector.tsx  # Theme selector (top-right)
+│   │   ├── FontSizeControl.tsx     # Font size adjustment
+│   │   ├── ProgressIndicator.tsx   # Reading progress
+│   │   ├── ShareButton.tsx         # Share functionality
+│   │   ├── ErrorBoundary.tsx       # Error handling
+│   │   ├── icons/              # Icon components
+│   │   │   ├── ArrowLeftIcon.tsx
+│   │   │   ├── ChevronLeftIcon.tsx
+│   │   │   └── ChevronRightIcon.tsx
+│   │   └── [3D components available but not used in UI]
+│   │       ├── Arjuna.tsx
+│   │       ├── Krishna.tsx
+│   │       ├── ChapterCard3D.tsx
+│   │       └── Scene3D.tsx
+│   ├── App.tsx               # Main application component
+│   ├── index.tsx             # Application entry point
+│   └── index.css             # Global styles
+├── data/                     # Data files
+│   ├── gita.ts              # Bhagavad Gita data (18 chapters, 700+ verses)
+│   ├── hanumanChalisa.ts    # Hanuman Chalisa data
+│   ├── sunderkand.ts        # Sunderkand data
+│   ├── bajrangBaan.ts       # Bajrang Baan data
+│   └── yakshaPrashn.ts      # Yaksha Prashna data
+├── scripts/                  # Utility scripts
 │   └── fill-all-hindi-meanings.js
-├── screenshots/           # Project screenshots
-├── App.tsx               # Main application component
-├── index.tsx             # Application entry point
-├── types.ts              # TypeScript type definitions
-├── vite.config.ts        # Vite configuration
-├── tsconfig.json         # TypeScript configuration
-└── package.json          # Project dependencies
+├── screenshots/             # Project screenshots
+├── types.ts                 # TypeScript type definitions
+├── vite.config.ts          # Vite configuration
+├── tsconfig.json            # TypeScript configuration
+├── tailwind.config.js       # Tailwind CSS configuration
+├── postcss.config.js        # PostCSS configuration
+├── package.json             # Project dependencies
+└── README.md                # This file
 ```
 
 ---
@@ -242,8 +243,8 @@ Bhagavad-Gita/
 4. **Search**: Use the search bar to find specific verses or chapters
 5. **Customize**:
 
-   - Change background theme using the background selector
-   - Adjust font size for comfortable reading
+   - Change background theme using the background selector (top-right corner)
+   - Adjust font size for comfortable reading (bottom-right when viewing verses)
 6. **Use the Chatbot** (Bhagavad Gita only):
 
    - Click the chat button (bottom-right corner)
@@ -331,7 +332,7 @@ The chatbot formats the response with:
    Your app will be available at:
 
    ```
-   https://technoblogger14o3.github.io/Bhagavad-Gita/
+   https://technoblogger14o3.github.io/dharmic-treasures/
    ```
 
 > **Note**: It may take a few minutes for the site to become available after enabling GitHub Pages.
@@ -364,13 +365,6 @@ Yaksha Prashna is a dialogue between Yudhishthira and a Yaksha (a nature spirit)
 
 ## 🎨 Features in Detail
 
-### 3D Background Scene
-
-- Interactive 3D characters (Krishna and Arjuna)
-- Smooth animations and transitions
-- Only visible on the home page
-- Built with Three.js and React Three Fiber
-
 ### Search Functionality
 
 - Real-time search across all chapters and verses
@@ -392,12 +386,20 @@ Yaksha Prashna is a dialogue between Yudhishthira and a Yaksha (a nature spirit)
 - Share specific verses with others
 - Generates shareable links
 - Easy sharing on social media
+- Uses native Web Share API when available
 
 ### Error Boundary
 
 - Graceful error handling
 - User-friendly error messages
 - Prevents application crashes
+
+### Theme Customization
+
+- 5 beautiful gradient themes
+- Background selector in top-right corner
+- Smooth transitions between themes
+- Font size control for comfortable reading
 
 ---
 
@@ -408,6 +410,8 @@ Yaksha Prashna is a dialogue between Yudhishthira and a Yaksha (a nature spirit)
 1. Create a new data file in `data/` directory following the structure:
 
    ```typescript
+   import { Chapter } from '../types';
+
    export const newText: Chapter[] = [
      {
        id: 1,
@@ -430,15 +434,16 @@ Yaksha Prashna is a dialogue between Yudhishthira and a Yaksha (a nature spirit)
      }
    ];
    ```
-2. Add the text type to `App.tsx`:
+2. Add the text type to `src/App.tsx`:
 
-   - Add to `TextType` union type
+   - Import the data file
+   - Add to `TextType` union type in `types.ts`
    - Add to `textConfigs` object
-   - Add button in text type selector
+   - The button will automatically appear in the text type selector
 
 ### Customizing Themes
 
-Edit `components/BackgroundSelector.tsx` to add new background themes.
+Edit the `backgroundClasses` object in `src/App.tsx` to add new background themes. You can also modify `BackgroundSelector.tsx` to add theme labels.
 
 ### Extending Chatbot
 
@@ -488,6 +493,6 @@ If you have any questions or suggestions, please open an issue on GitHub.
 
 *Built with ❤️ and devotion*
 
-[⬆ Back to Top](#श्रीमद्भगवद्गीता--bhagavad-gita-the-divine-song)
+[⬆ Back to Top](#धर्मिक-खजाना--dharmic-treasures)
 
 </div>
