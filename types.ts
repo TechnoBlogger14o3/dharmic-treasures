@@ -18,7 +18,7 @@ export interface Chapter {
   verses: Verse[];
 }
 
-export type TextType = 'gita' | 'hanumanChalisa' | 'sunderkand' | 'bajrangBaan' | 'yakshaPrashna';
+export type TextType = 'gita' | 'hanumanChalisa' | 'bajrangBaan' | 'yakshaPrashna';
 
 export interface TextConfig {
   name: string;

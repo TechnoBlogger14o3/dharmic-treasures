@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { TextType, TextConfig } from '../types'
 import { gitaChapters } from '../data/gita'
 import { hanumanChalisa } from '../data/hanumanChalisa'
-import { sunderkandChapters } from '../data/sunderkand'
 import { bajrangBaan } from '../data/bajrangBaan'
 import { yakshaPrashna } from '../data/yakshaPrashn'
 import ChapterList from './components/ChapterList'
@@ -21,11 +20,6 @@ const textConfigs: Record<TextType, TextConfig> = {
     name: 'Hanuman Chalisa',
     nameHindi: 'हनुमान चालीसा',
     data: hanumanChalisa,
-  },
-  sunderkand: {
-    name: 'Sunderkand',
-    nameHindi: 'सुन्दरकाण्ड',
-    data: sunderkandChapters,
   },
   bajrangBaan: {
     name: 'Bajrang Baan',

@@ -8,7 +8,7 @@ export const sunderkandChapters: Chapter[] = [
     name: "सुन्दरकाण्ड",
     name_meaning: "Sunderkand - The Beautiful Chapter",
     summary: "Sunderkand is the fifth chapter of the Ramayana, describing Hanuman's journey to Lanka in search of Sita. It is considered one of the most powerful and auspicious chapters, filled with Hanuman's devotion, strength, and wisdom.",
-    verses_count: 68,
+    verses_count: 10, // Currently incomplete - needs verses 11-68 from authentic source
     verses: [
       {
         id: 1,
@@ -100,6 +100,10 @@ export const sunderkandChapters: Chapter[] = [
         hindi_meaning: "तब हनुमान ने सीता से वाक्य बोला और राम के कुशल वाक्य को सीता को सब कुछ निवेदन किया।",
         meaning: "Then Hanuman spoke words to Sita and conveyed all of Rama's well-being messages to Sita."
       }
+      // NOTE: Verses 11-68 need to be added from authentic source
+      // Sunderkand traditionally has 68 sargas (chapters), each with multiple verses
+      // The current file only contains 10 verses. To complete it, please provide
+      // the complete text from an authentic source (Sanskrit, transliteration, Hindi, English)
     ]
   }
 ];
