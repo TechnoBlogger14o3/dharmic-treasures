@@ -40,7 +40,7 @@ export default function ShareButton({ verse, chapterName, chapterNumber }: Share
   return (
     <button
       onClick={handleShare}
-      className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium"
+      className="flex items-center gap-2 px-4 py-2.5 sm:py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 active:bg-blue-700 transition-colors text-sm font-medium touch-manipulation min-h-[44px]"
     >
       {copied ? (
         <>

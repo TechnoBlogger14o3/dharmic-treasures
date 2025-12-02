@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { TextType, TextConfig } from '../types'
 import { gitaChapters } from '../data/gita'
 import { hanumanChalisa } from '../data/hanumanChalisa'
+import { sunderkandChapters } from '../data/sunderkand'
 import { bajrangBaan } from '../data/bajrangBaan'
 import { yakshaPrashna } from '../data/yakshaPrashn'
 import ChapterList from './components/ChapterList'
@@ -20,6 +21,11 @@ const textConfigs: Record<TextType, TextConfig> = {
     name: 'Hanuman Chalisa',
     nameHindi: 'हनुमान चालीसा',
     data: hanumanChalisa,
+  },
+  sunderkand: {
+    name: 'Sunderkand',
+    nameHindi: 'सुन्दरकाण्ड',
+    data: sunderkandChapters,
   },
   bajrangBaan: {
     name: 'Bajrang Baan',
@@ -65,30 +71,34 @@ function App() {
     <ErrorBoundary>
       <div className={`min-h-screen transition-colors duration-500 ${backgroundClasses[backgroundTheme]}`}>
         {/* Header with Text Type Selector */}
-        <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md border-b border-gray-200">
-          <div className="container mx-auto px-4 py-4">
-            <div className="flex items-center justify-between">
-              <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 flex-1">
-                {(Object.keys(textConfigs) as TextType[]).map((type) => (
-                  <button
-                    key={type}
-                    onClick={() => {
-                      setTextType(type)
-                      setSelectedChapter(null)
-                      setSelectedVerse(1)
-                    }}
-                    className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 cursor-pointer touch-manipulation ${
-                      textType === type
-                        ? 'bg-amber-500 text-white shadow-lg scale-105'
-                        : 'bg-white text-gray-700 hover:bg-amber-100 active:bg-amber-200 border border-gray-200'
-                    }`}
-                  >
-                    <div className="text-sm md:text-base">{textConfigs[type].nameHindi}</div>
-                    <div className="text-xs text-gray-500">{textConfigs[type].name}</div>
-                  </button>
-                ))}
+        <div className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-gray-200">
+          <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
+            <div className="flex items-center justify-between gap-2">
+              {/* Text Type Selector - Scrollable on mobile */}
+              <div className="flex-1 overflow-x-auto scrollbar-hide -mx-3 sm:mx-0 px-3 sm:px-0">
+                <div className="flex items-center gap-2 sm:gap-3 min-w-max sm:flex-wrap sm:justify-center">
+                  {(Object.keys(textConfigs) as TextType[]).map((type) => (
+                    <button
+                      key={type}
+                      onClick={() => {
+                        setTextType(type)
+                        setSelectedChapter(null)
+                        setSelectedVerse(1)
+                      }}
+                      className={`px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium transition-all duration-300 cursor-pointer touch-manipulation min-w-[80px] sm:min-w-0 flex-shrink-0 ${
+                        textType === type
+                          ? 'bg-amber-500 text-white shadow-lg scale-105'
+                          : 'bg-white text-gray-700 hover:bg-amber-100 active:bg-amber-200 border border-gray-200'
+                      }`}
+                    >
+                      <div className="text-xs sm:text-sm md:text-base whitespace-nowrap">{textConfigs[type].nameHindi}</div>
+                      <div className="text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">{textConfigs[type].name}</div>
+                    </button>
+                  ))}
+                </div>
               </div>
-              <div className="ml-4">
+              {/* Background Selector */}
+              <div className="flex-shrink-0">
                 <BackgroundSelector
                   currentTheme={backgroundTheme}
                   onThemeChange={setBackgroundTheme}
@@ -128,7 +138,7 @@ function App() {
 
         {/* Controls */}
         {!isHomePage && (
-          <div className="fixed bottom-4 right-4 z-50">
+          <div className="fixed bottom-20 sm:bottom-4 right-4 z-40">
             <FontSizeControl fontSize={fontSize} onFontSizeChange={setFontSize} />
           </div>
         )}

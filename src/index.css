@@ -92,3 +92,60 @@ body {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+/* Mobile Optimizations */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Touch-friendly improvements */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Safe area insets for notched devices */
+@supports (padding: max(0px)) {
+  .safe-area-inset-top {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
+  
+  .safe-area-inset-bottom {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Page Flip Animation */
+@keyframes pageFlip {
+  0% {
+    transform: perspective(1500px) rotateY(0deg);
+    opacity: 1;
+  }
+  30% {
+    transform: perspective(1500px) rotateY(-30deg) scale(0.98);
+    opacity: 0.9;
+  }
+  50% {
+    transform: perspective(1500px) rotateY(-90deg) scale(0.95);
+    opacity: 0.6;
+  }
+  70% {
+    transform: perspective(1500px) rotateY(-150deg) scale(0.98);
+    opacity: 0.9;
+  }
+  100% {
+    transform: perspective(1500px) rotateY(-180deg);
+    opacity: 1;
+  }
+}
+
+.page-flip {
+  animation: pageFlip 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-style: preserve-3d;
+  transform-origin: left center;
+}
+

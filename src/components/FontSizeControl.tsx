@@ -14,7 +14,7 @@ export default function FontSizeControl({ fontSize, onFontSizeChange }: FontSize
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg hover:shadow-xl transition-all border border-gray-200"
+        className="bg-white/95 backdrop-blur-md sm:bg-white/90 sm:backdrop-blur-sm rounded-lg p-3 shadow-lg hover:shadow-xl active:shadow-md transition-all border border-gray-200 touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
         aria-label="Adjust Font Size"
       >
         <svg
@@ -38,7 +38,7 @@ export default function FontSizeControl({ fontSize, onFontSizeChange }: FontSize
             className="fixed inset-0 z-40"
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute bottom-full right-0 mb-2 bg-white rounded-lg shadow-xl border border-gray-200 p-2 z-50 min-w-[120px]">
+          <div className="absolute bottom-full right-0 mb-2 bg-white rounded-lg shadow-xl border border-gray-200 p-2 z-50 min-w-[140px]">
             <div className="text-xs font-semibold text-gray-600 mb-2 px-2">Font Size</div>
             <div className="space-y-1">
               {sizes.map((size) => (
@@ -48,10 +48,10 @@ export default function FontSizeControl({ fontSize, onFontSizeChange }: FontSize
                     onFontSizeChange(size)
                     setIsOpen(false)
                   }}
-                  className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
+                  className={`w-full text-left px-3 py-2.5 rounded-md text-sm transition-colors touch-manipulation min-h-[44px] ${
                     fontSize === size
                       ? 'bg-amber-100 text-amber-700 font-medium'
-                      : 'text-gray-700 hover:bg-gray-100'
+                      : 'text-gray-700 hover:bg-gray-100 active:bg-gray-200'
                   }`}
                   style={{ fontSize: `${size}px` }}
                 >

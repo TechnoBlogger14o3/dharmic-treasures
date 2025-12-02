@@ -41,7 +41,7 @@ export default function SearchBar({ onSearch, placeholder = 'Search...' }: Searc
         value={query}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none bg-white/90 backdrop-blur-sm text-gray-800"
+        className="w-full pl-10 pr-10 py-3 sm:py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none bg-white/90 backdrop-blur-sm text-gray-800 text-base sm:text-sm min-h-[44px]"
       />
       {query && (
         <button

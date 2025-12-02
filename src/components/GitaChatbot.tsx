@@ -1,10 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { Chapter, Verse } from '../../types'
 
-interface GitaChatbotProps {
-  chapters: Chapter[]
-}
-
 interface ChatMessage {
   type: 'user' | 'bot' | 'loading'
   content: string
@@ -212,7 +208,7 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 bg-amber-500 text-white rounded-full p-4 shadow-lg hover:bg-amber-600 transition-all duration-300 z-50 animate-pulse-slow hover:animate-none"
+          className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 bg-amber-500 text-white rounded-full p-4 shadow-lg hover:bg-amber-600 active:bg-amber-700 transition-all duration-300 z-50 animate-pulse-slow hover:animate-none touch-manipulation min-w-[56px] min-h-[56px] flex items-center justify-center"
           aria-label="Open Chatbot"
         >
           <svg
@@ -233,16 +229,17 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 w-96 h-[600px] bg-white rounded-xl shadow-2xl flex flex-col z-50 border border-gray-200">
+        <div className="fixed inset-0 sm:inset-auto sm:bottom-6 sm:right-6 sm:w-96 sm:h-[600px] sm:rounded-xl bg-white shadow-2xl flex flex-col z-50 border-0 sm:border border-gray-200">
           {/* Header */}
-          <div className="bg-amber-500 text-white p-4 rounded-t-xl flex items-center justify-between">
+          <div className="bg-amber-500 text-white p-4 sm:rounded-t-xl flex items-center justify-between flex-shrink-0">
             <div>
-              <h3 className="font-semibold text-lg">Gita Chatbot</h3>
+              <h3 className="font-semibold text-base sm:text-lg">Gita Chatbot</h3>
               <p className="text-xs text-amber-100">Ask me anything</p>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="text-white hover:text-amber-100 transition-colors"
+              className="text-white hover:text-amber-100 active:text-amber-200 transition-colors p-2 -mr-2 touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
+              aria-label="Close Chatbot"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
@@ -313,7 +310,7 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
           </div>
 
           {/* Input */}
-          <div className="p-4 border-t border-gray-200 bg-white rounded-b-xl">
+          <div className="p-3 sm:p-4 border-t border-gray-200 bg-white sm:rounded-b-xl flex-shrink-0">
             <div className="flex gap-2">
               <input
                 type="text"
@@ -321,11 +318,12 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Ask a question..."
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none text-sm"
+                className="flex-1 px-3 sm:px-4 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none text-sm min-h-[44px]"
               />
               <button
                 onClick={handleSend}
-                className="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors"
+                className="bg-amber-500 text-white px-4 py-2.5 sm:py-2 rounded-lg hover:bg-amber-600 active:bg-amber-700 transition-colors touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
+                aria-label="Send message"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path

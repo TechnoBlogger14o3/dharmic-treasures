@@ -25,7 +25,7 @@ export default function BackgroundSelector({
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg hover:shadow-xl transition-all border border-gray-200"
+        className="bg-white/95 backdrop-blur-md sm:bg-white/90 sm:backdrop-blur-sm rounded-lg p-2.5 sm:p-3 shadow-lg hover:shadow-xl active:shadow-md transition-all border border-gray-200 touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
         aria-label="Change Background Theme"
       >
         <svg
@@ -49,7 +49,7 @@ export default function BackgroundSelector({
             className="fixed inset-0 z-40"
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 p-2 z-50 min-w-[150px]">
+          <div className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 p-2 z-50 min-w-[160px]">
             <div className="text-xs font-semibold text-gray-600 mb-2 px-2">Background Theme</div>
             {themes.map((theme) => (
               <button
@@ -58,10 +58,10 @@ export default function BackgroundSelector({
                   onThemeChange(theme)
                   setIsOpen(false)
                 }}
-                className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
+                className={`w-full text-left px-3 py-2.5 rounded-md text-sm transition-colors touch-manipulation min-h-[44px] ${
                   currentTheme === theme
                     ? 'bg-amber-100 text-amber-700 font-medium'
-                    : 'text-gray-700 hover:bg-gray-100'
+                    : 'text-gray-700 hover:bg-gray-100 active:bg-gray-200'
                 }`}
               >
                 {themeLabels[theme] || theme}
