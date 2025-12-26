@@ -1,3 +1,6 @@
+/* Leaflet CSS - must be imported first */
+@import 'leaflet/dist/leaflet.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,11 +25,9 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -68,31 +69,31 @@ body {
     opacity: 1;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 
 .animate-fadeIn {
-  animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .animate-slideInRight {
-  animation: slideInRight 0.4s ease-out;
+  animation: slideInRight 0.5s ease-out;
 }
 
 .animate-slideInLeft {
-  animation: slideInLeft 0.4s ease-out;
+  animation: slideInLeft 0.5s ease-out;
 }
 
 .animate-scaleIn {
-  animation: scaleIn 0.3s ease-out;
+  animation: scaleIn 0.4s ease-out;
 }
 
 .animate-pulse-slow {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: pulse 3s ease-in-out infinite;
 }
 
-/* Mobile Optimizations */
+/* Scrollbar Styling */
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -102,233 +103,32 @@ body {
   display: none;
 }
 
-/* Touch-friendly improvements */
+/* Touch Manipulation */
 .touch-manipulation {
   touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
 }
 
-/* Safe area insets for notched devices */
+/* Safe Area Insets for Mobile */
 @supports (padding: max(0px)) {
-  .safe-area-inset-top {
+  .safe-area-top {
     padding-top: max(1rem, env(safe-area-inset-top));
   }
-  
-  .safe-area-inset-bottom {
+
+  .safe-area-bottom {
     padding-bottom: max(1rem, env(safe-area-inset-bottom));
   }
 }
 
-/* Page Turn Animation - Realistic Book Page Turn */
-@keyframes pageTurnNext {
-  0% {
-    transform: perspective(2000px) rotateY(0deg);
-    transform-origin: left center;
-    opacity: 1;
-    filter: brightness(1);
-  }
-  15% {
-    transform: perspective(2000px) rotateY(-20deg) scaleX(0.99);
-    transform-origin: left center;
-    opacity: 0.98;
-    filter: brightness(0.98);
-  }
-  30% {
-    transform: perspective(2000px) rotateY(-45deg) scaleX(0.95);
-    transform-origin: left center;
-    opacity: 0.9;
-    filter: brightness(0.9);
-  }
-  50% {
-    transform: perspective(2000px) rotateY(-90deg) scaleX(0.8);
-    transform-origin: left center;
-    opacity: 0.2;
-    filter: brightness(0.3);
-    box-shadow: -30px 0 60px rgba(0, 0, 0, 0.4);
-  }
-  70% {
-    transform: perspective(2000px) rotateY(-135deg) scaleX(0.95);
-    transform-origin: left center;
-    opacity: 0.9;
-    filter: brightness(0.9);
-  }
-  85% {
-    transform: perspective(2000px) rotateY(-160deg) scaleX(0.99);
-    transform-origin: left center;
-    opacity: 0.98;
-    filter: brightness(0.98);
-  }
-  100% {
-    transform: perspective(2000px) rotateY(-180deg);
-    transform-origin: left center;
-    opacity: 1;
-    filter: brightness(1);
-  }
+/* Leaflet Map Container Overrides */
+.leaflet-container {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-@keyframes pageTurnPrevious {
-  0% {
-    transform: perspective(2000px) rotateY(0deg);
-    transform-origin: right center;
-    opacity: 1;
-    filter: brightness(1);
-  }
-  15% {
-    transform: perspective(2000px) rotateY(20deg) scaleX(0.99);
-    transform-origin: right center;
-    opacity: 0.98;
-    filter: brightness(0.98);
-  }
-  30% {
-    transform: perspective(2000px) rotateY(45deg) scaleX(0.95);
-    transform-origin: right center;
-    opacity: 0.9;
-    filter: brightness(0.9);
-  }
-  50% {
-    transform: perspective(2000px) rotateY(90deg) scaleX(0.8);
-    transform-origin: right center;
-    opacity: 0.2;
-    filter: brightness(0.3);
-    box-shadow: 30px 0 60px rgba(0, 0, 0, 0.4);
-  }
-  70% {
-    transform: perspective(2000px) rotateY(135deg) scaleX(0.95);
-    transform-origin: right center;
-    opacity: 0.9;
-    filter: brightness(0.9);
-  }
-  85% {
-    transform: perspective(2000px) rotateY(160deg) scaleX(0.99);
-    transform-origin: right center;
-    opacity: 0.98;
-    filter: brightness(0.98);
-  }
-  100% {
-    transform: perspective(2000px) rotateY(180deg);
-    transform-origin: right center;
-    opacity: 1;
-    filter: brightness(1);
-  }
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
 }
 
-.page-turn-next {
-  animation: pageTurnNext 0.9s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-style: preserve-3d;
+.leaflet-popup-content {
+  margin: 0;
+  padding: 0;
 }
-
-.page-turn-previous {
-  animation: pageTurnPrevious 0.9s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-style: preserve-3d;
-}
-
-/* Page Fade Animation */
-@keyframes pageFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95) translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-.page-fade-in {
-  animation: pageFadeIn 0.4s ease-out;
-}
-
-/* Loading Spinner */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spinPulse {
-  0%, 100% {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    opacity: 0.7;
-    transform: rotate(180deg) scale(1.1);
-  }
-}
-
-.spinner {
-  animation: spin 1s linear infinite;
-}
-
-.spinner-pulse {
-  animation: spinPulse 2s ease-in-out infinite;
-}
-
-/* Button Press Animation */
-@keyframes buttonPress {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.button-press {
-  animation: buttonPress 0.2s ease-out;
-}
-
-/* Page Number Counter Animation */
-@keyframes numberPop {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.number-pop {
-  animation: numberPop 0.3s ease-out;
-}
-
-/* Slide Page Animation */
-@keyframes slidePageLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slidePageRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-page-left {
-  animation: slidePageLeft 0.4s ease-out;
-}
-
-.slide-page-right {
-  animation: slidePageRight 0.4s ease-out;
-}
-

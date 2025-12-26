@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { shaktipeethIntroduction, shaktipeethCountByState, shaktipeeths, Shaktipeeth } from '../../data/shaktipeeths'
+import ShaktipeethsMap from './ShaktipeethsMap'
 
 interface ShaktipeethModalProps {
   peeth: Shaktipeeth | null
@@ -11,36 +12,42 @@ function ShaktipeethModal({ peeth, onClose }: ShaktipeethModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 backdrop-blur-sm animate-fadeIn"
+      className="fixed inset-0 z-50 flex items-start justify-center pt-20 sm:pt-24 px-4 pb-4 bg-black bg-opacity-50 backdrop-blur-sm animate-fadeIn overflow-y-auto"
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto animate-scaleIn"
+        className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[calc(100vh-6rem)] my-auto animate-scaleIn"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
         <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-6 relative">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors z-10"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <div className="pr-10">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1">
-                <span className="text-white font-bold text-lg">#{peeth.id}</span>
-              </div>
-              <p className="text-white/80 text-sm uppercase tracking-wide">{peeth.puranicReference}</p>
+          
+          {/* Top Left - ID and Puranic Reference */}
+          <div className="absolute top-4 left-4 flex items-center gap-3 z-10">
+            <div className="bg-white rounded-lg px-3 py-1.5 shadow-lg border-2 border-white">
+              <span className="text-amber-600 font-bold text-lg">#{peeth.id}</span>
             </div>
-            <h2 className="text-3xl font-bold text-white mb-2">{peeth.name}</h2>
-            <div className="flex items-center gap-2 text-white/90">
+            <div className="bg-black/40 backdrop-blur-sm rounded-lg px-3 py-1.5 border border-white/30">
+              <p className="text-white text-xs font-bold uppercase tracking-wide">{peeth.puranicReference}</p>
+            </div>
+          </div>
+          
+          {/* Main Content */}
+          <div className="pt-16 pr-10">
+            <h2 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">{peeth.name}</h2>
+            <div className="flex items-center gap-2 text-white">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
               </svg>
-              <span className="text-lg">{peeth.location}, {peeth.state}, {peeth.country}</span>
+              <span className="text-lg font-medium drop-shadow-md">{peeth.location}, {peeth.state}, {peeth.country}</span>
             </div>
           </div>
         </div>
@@ -175,22 +182,105 @@ function ShaktipeethModal({ peeth, onClose }: ShaktipeethModalProps) {
         </div>
 
         {/* Modal Footer */}
-        <div className="bg-gray-50 px-6 py-4 border-t border-gray-200 flex justify-end">
-          <button
-            onClick={onClose}
-            className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-2 rounded-lg font-medium hover:from-amber-600 hover:to-orange-600 transition-all duration-200 shadow-md"
-          >
-            Close
-          </button>
-        </div>
+     
+     
+     
+     
+     
+     
+     
+     
       </div>
     </div>
   )
 }
 
+type SortOption = 'name' | 'state' | 'country' | 'id'
+type ViewMode = 'grid' | 'list'
+
 export default function ShaktipeethsView() {
   const totalCount = shaktipeeths.length
   const [selectedPeeth, setSelectedPeeth] = useState<Shaktipeeth | null>(null)
+  const [viewMode, setViewMode] = useState<ViewMode>('grid')
+  const [sortBy, setSortBy] = useState<SortOption>('id')
+  const [filters, setFilters] = useState<{
+    state: string | null
+    country: string | null
+    bodyPart: string | null
+  }>({
+    state: null,
+    country: null,
+    bodyPart: null,
+  })
+
+  // Get unique values for filters
+  const uniqueStates = useMemo(() => [...new Set(shaktipeeths.map(p => p.state))].sort(), [])
+  const uniqueCountries = useMemo(() => [...new Set(shaktipeeths.map(p => p.country))].sort(), [])
+  const uniqueBodyParts = useMemo(() => [...new Set(shaktipeeths.map(p => p.bodyPart))].sort(), [])
+
+  // Filter and sort data
+  const filteredAndSorted = useMemo(() => {
+    let filtered = shaktipeeths.filter(peeth => {
+      if (filters.state && peeth.state !== filters.state) return false
+      if (filters.country && peeth.country !== filters.country) return false
+      if (filters.bodyPart && peeth.bodyPart !== filters.bodyPart) return false
+      return true
+    })
+
+    // Sort
+    filtered = [...filtered].sort((a, b) => {
+      switch (sortBy) {
+        case 'name':
+          return a.name.localeCompare(b.name)
+        case 'state':
+          return a.state.localeCompare(b.state) || a.name.localeCompare(b.name)
+        case 'country':
+          return a.country.localeCompare(b.country) || a.name.localeCompare(b.name)
+        case 'id':
+        default:
+          return a.id - b.id
+      }
+    })
+
+    return filtered
+  }, [filters, sortBy])
+
+  // Statistics
+  const bodyPartStats = useMemo(() => {
+    const stats = filteredAndSorted.reduce((acc, peeth) => {
+      acc[peeth.bodyPart] = (acc[peeth.bodyPart] || 0) + 1
+      return acc
+    }, {} as Record<string, number>)
+    return Object.entries(stats)
+      .map(([bodyPart, count]) => ({ bodyPart, count }))
+      .sort((a, b) => b.count - a.count)
+  }, [filteredAndSorted])
+
+  const countryStats = useMemo(() => {
+    const stats = filteredAndSorted.reduce((acc, peeth) => {
+      acc[peeth.country] = (acc[peeth.country] || 0) + 1
+      return acc
+    }, {} as Record<string, number>)
+    return Object.entries(stats)
+      .map(([country, count]) => ({ country, count }))
+      .sort((a, b) => b.count - a.count)
+  }, [filteredAndSorted])
+
+  const maxBodyPartCount = Math.max(...bodyPartStats.map(s => s.count), 1)
+  const maxCountryCount = Math.max(...countryStats.map(s => s.count), 1)
+
+  const toggleFilter = (type: 'state' | 'country' | 'bodyPart', value: string) => {
+    setFilters(prev => ({
+      ...prev,
+      [type]: prev[type] === value ? null : value
+    }))
+  }
+
+  const clearAllFilters = () => {
+    setFilters({ state: null, country: null, bodyPart: null })
+  }
+
+  const hasActiveFilters = filters.state || filters.country || filters.bodyPart
 
   return (
     <>
@@ -202,7 +292,7 @@ export default function ShaktipeethsView() {
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4">Shaktipeeths</p>
           <div className="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-lg sm:text-xl shadow-lg">
-            Total: {totalCount} Shaktipeeths
+            Total: {totalCount} Shaktipeeths {hasActiveFilters && `(${filteredAndSorted.length} filtered)`}
           </div>
         </div>
 
@@ -222,152 +312,375 @@ export default function ShaktipeethsView() {
           </div>
         </div>
 
-        {/* State-wise Count Summary */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 mb-6 sm:mb-8 animate-fadeIn">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
-            State-wise Distribution | राज्य-वार वितरण
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
-            {shaktipeethCountByState.map((state, index) => (
-              <div
-                key={state.stateCountry}
-                className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg p-3 sm:p-4 border border-amber-200 hover:shadow-md transition-shadow duration-300 animate-fadeIn"
-                style={{ animationDelay: `${index * 0.05}s` }}
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex-1">
-                    <div className="font-bold text-gray-800 text-sm sm:text-base">{state.state}</div>
-                    <div className="text-xs sm:text-sm text-gray-600">{state.country}</div>
+        {/* Statistics and Visualizations */}
+        <div className="space-y-6 mb-6 sm:mb-8">
+          {/* Body Part Distribution Chart */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-fadeIn">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
+              Body Part Distribution | शरीर के अंग वितरण
+            </h2>
+            <div className="space-y-3">
+              {bodyPartStats.slice(0, 10).map((stat) => (
+                <div key={stat.bodyPart} className="flex items-center gap-3">
+                  <div className="w-32 sm:w-40 text-sm font-medium text-gray-700 truncate">
+                    {stat.bodyPart}
                   </div>
-                  <div className="bg-gradient-to-br from-amber-500 to-orange-500 text-white rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center font-bold text-sm sm:text-base shadow-md">
-                    {state.count}
+                  <div className="flex-1 bg-gray-200 rounded-full h-6 relative overflow-hidden">
+                    <div
+                      className="bg-gradient-to-r from-amber-500 to-orange-500 h-full rounded-full flex items-center justify-end pr-2 transition-all duration-500"
+                      style={{ width: `${(stat.count / maxBodyPartCount) * 100}%` }}
+                    >
+                      <span className="text-xs font-bold text-white">{stat.count}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          {/* Country Breakdown Chart */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-fadeIn">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
+              Country Breakdown | देश-वार वितरण
+            </h2>
+            <div className="space-y-3">
+              {countryStats.map((stat) => (
+                <div key={stat.country} className="flex items-center gap-3">
+                  <div className="w-32 sm:w-40 text-sm font-medium text-gray-700">
+                    {stat.country}
+                  </div>
+                  <div className="flex-1 bg-gray-200 rounded-full h-6 relative overflow-hidden">
+                    <div
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 h-full rounded-full flex items-center justify-end pr-2 transition-all duration-500"
+                      style={{ width: `${(stat.count / maxCountryCount) * 100}%` }}
+                    >
+                      <span className="text-xs font-bold text-white">{stat.count}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Interactive Map Visualization */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-fadeIn">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
+              Interactive Map | इंटरैक्टिव मानचित्र
+            </h2>
+            <p className="text-sm text-gray-600 text-center mb-4">
+              Click on markers to view details. Map shows approximate locations of all Shaktipeeths.
+            </p>
+            <ShaktipeethsMap 
+              shaktipeeths={filteredAndSorted} 
+              onMarkerClick={setSelectedPeeth}
+            />
+          </div>
+
+          {/* State-wise Distribution Grid */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-fadeIn">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
+              State-wise Distribution | राज्य-वार वितरण
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              {shaktipeethCountByState.map((state) => {
+                const intensity = Math.min(state.count / 10, 1) // Normalize to 0-1
+                return (
+                  <div
+                    key={state.stateCountry}
+                    className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg p-3 border-2 border-amber-300 hover:shadow-lg transition-all cursor-pointer"
+                    style={{
+                      background: `linear-gradient(135deg, rgba(251, 191, 36, ${0.3 + intensity * 0.7}), rgba(249, 115, 22, ${0.3 + intensity * 0.7}))`,
+                      borderColor: `rgba(251, 191, 36, ${0.5 + intensity * 0.5})`
+                    }}
+                    onClick={() => toggleFilter('state', state.state)}
+                  >
+                    <div className="text-center">
+                      <div className="font-bold text-gray-800 text-sm mb-1">{state.state}</div>
+                      <div className="text-xs text-gray-600 mb-2">{state.country}</div>
+                      <div className="bg-white/80 rounded-full w-10 h-10 flex items-center justify-center mx-auto font-bold text-amber-700">
+                        {state.count}
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
 
-        {/* All Shaktipeeths in Card Grid */}
-        <div className="mb-6 sm:mb-8">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
-            All 51 Shaktipeeths | सभी 51 शक्तिपीठ
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {shaktipeeths.map((peeth, index) => (
-              <div
-                key={peeth.id}
-                className="bg-white rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden animate-fadeIn"
-                style={{ animationDelay: `${index * 0.03}s` }}
-              >
-                {/* Header Section - Cream/Pale Yellow Background */}
-                <div className="bg-gradient-to-br from-amber-50 to-yellow-50 p-4 sm:p-5 relative">
-                  {/* Puranic Reference - Top Right */}
-                  <div className="absolute top-3 right-3">
-                    <p className="text-xs uppercase tracking-wide text-gray-400 font-medium">
-                      {peeth.puranicReference}
-                    </p>
-                  </div>
-
-                  {/* ID Badge - Top Left */}
-                  <div className="absolute top-3 left-3">
-                    <div className="bg-orange-400 border border-orange-500 rounded-lg px-2 py-1">
-                      <span className="text-white font-bold text-sm">#{peeth.id}</span>
-                    </div>
-                  </div>
-
-                  {/* Name */}
-                  <div className="pt-8 pb-2">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      {peeth.name}
-                    </h3>
-                  </div>
-
-                  {/* Location with Map Pin Icon */}
-                  <div className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-red-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-sm text-red-800 font-medium">
-                      {peeth.location}, {peeth.state}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Details Grid Section - White Background */}
-                <div className="bg-white p-4 sm:p-5">
-                  <div className="grid grid-cols-2 gap-4">
-                    {/* Left Column */}
-                    <div className="space-y-4">
-                      {/* Body Part */}
-                      <div>
-                        <p className="text-xs uppercase tracking-wide text-gray-400 font-medium mb-1">
-                          BODY PART
-                        </p>
-                        <p className="text-sm font-bold text-gray-900">
-                          {peeth.bodyPart}
-                        </p>
-                      </div>
-
-                      {/* Bhairava */}
-                      <div>
-                        <p className="text-xs uppercase tracking-wide text-gray-400 font-medium mb-1">
-                          BHAIRAVA
-                        </p>
-                        <p className="text-sm font-bold text-gray-900">
-                          {peeth.bhairavaName}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Right Column */}
-                    <div className="space-y-4">
-                      {/* Devi Form */}
-                      <div>
-                        <p className="text-xs uppercase tracking-wide text-gray-400 font-medium mb-1">
-                          DEVI FORM
-                        </p>
-                        <p className="text-sm font-bold text-gray-900">
-                          {peeth.deviName}
-                        </p>
-                      </div>
-
-                      {/* Country */}
-                      <div>
-                        <p className="text-xs uppercase tracking-wide text-gray-400 font-medium mb-1">
-                          COUNTRY
-                        </p>
-                        <p className="text-sm font-bold text-gray-900">
-                          {peeth.country}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Footer Section - White Background */}
-                <div className="bg-white px-4 sm:px-5 pb-4 sm:pb-5">
-                  {/* Description */}
-                  {peeth.description && (
-                    <p className="text-sm text-gray-500 italic mb-4">
-                      {peeth.description}
-                    </p>
-                  )}
-
-                  {/* Action Button */}
-                  <button
-                    onClick={() => setSelectedPeeth(peeth)}
-                    className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
-                  >
-                    <svg className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <span>Discover Spiritual Significance</span>
-                  </button>
-                </div>
+        {/* Filters and Controls */}
+        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 mb-6 sm:mb-8 animate-fadeIn">
+          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
+              All Shaktipeeths | सभी 51 शक्तिपीठ
+            </h2>
+            <div className="flex flex-wrap gap-3 items-center">
+              {/* View Toggle */}
+              <div className="flex bg-gray-100 rounded-lg p-1">
+                <button
+                  onClick={() => setViewMode('grid')}
+                  className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+                    viewMode === 'grid'
+                      ? 'bg-amber-500 text-white shadow-md'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                  </svg>
+                </button>
+                <button
+                  onClick={() => setViewMode('list')}
+                  className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+                    viewMode === 'list'
+                      ? 'bg-amber-500 text-white shadow-md'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
               </div>
-            ))}
+
+              {/* Sort */}
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as SortOption)}
+                className="px-3 py-2 border border-gray-300 rounded-lg bg-white text-sm font-medium text-gray-700 focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+              >
+                <option value="id">Sort by ID</option>
+                <option value="name">Sort by Name (A-Z)</option>
+                <option value="state">Sort by State</option>
+                <option value="country">Sort by Country</option>
+              </select>
+            </div>
           </div>
+
+          {/* Quick Filter Chips */}
+          <div className="space-y-4">
+            {/* State Filters */}
+            <div>
+              <p className="text-sm font-semibold text-gray-700 mb-2">Filter by State:</p>
+              <div className="flex flex-wrap gap-2">
+                {uniqueStates.map(state => (
+                  <button
+                    key={state}
+                    onClick={() => toggleFilter('state', state)}
+                    className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                      filters.state === state
+                        ? 'bg-amber-500 text-white shadow-md'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    }`}
+                  >
+                    {state}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Country Filters */}
+            <div>
+              <p className="text-sm font-semibold text-gray-700 mb-2">Filter by Country:</p>
+              <div className="flex flex-wrap gap-2">
+                {uniqueCountries.map(country => (
+                  <button
+                    key={country}
+                    onClick={() => toggleFilter('country', country)}
+                    className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                      filters.country === country
+                        ? 'bg-purple-500 text-white shadow-md'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    }`}
+                  >
+                    {country}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Body Part Filters */}
+            <div>
+              <p className="text-sm font-semibold text-gray-700 mb-2">Filter by Body Part:</p>
+              <div className="flex flex-wrap gap-2">
+                {uniqueBodyParts.slice(0, 15).map(bodyPart => (
+                  <button
+                    key={bodyPart}
+                    onClick={() => toggleFilter('bodyPart', bodyPart)}
+                    className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                      filters.bodyPart === bodyPart
+                        ? 'bg-blue-500 text-white shadow-md'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    }`}
+                  >
+                    {bodyPart}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Clear Filters */}
+            {hasActiveFilters && (
+              <button
+                onClick={clearAllFilters}
+                className="px-4 py-2 bg-red-500 text-white rounded-lg text-sm font-medium hover:bg-red-600 transition-colors"
+              >
+                Clear All Filters
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Shaktipeeths List/Grid */}
+        <div className="mb-6 sm:mb-8">
+          {viewMode === 'grid' ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {filteredAndSorted.map((peeth, index) => (
+                <div
+                  key={peeth.id}
+                  className="bg-white rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden animate-fadeIn"
+                  style={{ animationDelay: `${index * 0.03}s` }}
+                >
+                  {/* Card content - same as before */}
+                  <div className="bg-gradient-to-br from-amber-50 to-yellow-50 p-4 sm:p-5 relative">
+                    <div className="absolute top-3 right-3">
+                      <p className="text-xs uppercase tracking-wide text-gray-400 font-medium">
+                        {peeth.puranicReference}
+                      </p>
+                    </div>
+                    <div className="absolute top-3 left-3">
+                      <div className="bg-orange-400 border border-orange-500 rounded-lg px-2 py-1">
+                        <span className="text-white font-bold text-sm">#{peeth.id}</span>
+                      </div>
+                    </div>
+                    <div className="pt-8 pb-2">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+                        {peeth.name}
+                      </h3>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <svg className="w-4 h-4 text-red-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                      </svg>
+                      <p className="text-sm text-red-800 font-medium">
+                        {peeth.location}, {peeth.state}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-white p-4 sm:p-5">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-4">
+                        <div>
+                          <p className="text-xs uppercase tracking-wide text-gray-400 font-medium mb-1">
+                            BODY PART
+                          </p>
+                          <p className="text-sm font-bold text-gray-900">
+                            {peeth.bodyPart}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="text-xs uppercase tracking-wide text-gray-400 font-medium mb-1">
+                            BHAIRAVA
+                          </p>
+                          <p className="text-sm font-bold text-gray-900">
+                            {peeth.bhairavaName}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="space-y-4">
+                        <div>
+                          <p className="text-xs uppercase tracking-wide text-gray-400 font-medium mb-1">
+                            DEVI FORM
+                          </p>
+                          <p className="text-sm font-bold text-gray-900">
+                            {peeth.deviName}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="text-xs uppercase tracking-wide text-gray-400 font-medium mb-1">
+                            COUNTRY
+                          </p>
+                          <p className="text-sm font-bold text-gray-900">
+                            {peeth.country}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-white px-4 sm:px-5 pb-4 sm:pb-5">
+                    {peeth.description && (
+                      <p className="text-sm text-gray-500 italic mb-4">
+                        {peeth.description}
+                      </p>
+                    )}
+                    <button
+                      onClick={() => setSelectedPeeth(peeth)}
+                      className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                    >
+                      <svg className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <span>Discover Spiritual Significance</span>
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {filteredAndSorted.map((peeth, index) => (
+                <div
+                  key={peeth.id}
+                  className="bg-white rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden animate-fadeIn p-4 sm:p-6"
+                  style={{ animationDelay: `${index * 0.03}s` }}
+                >
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="bg-orange-400 border border-orange-500 rounded-lg px-3 py-1 inline-block">
+                        <span className="text-white font-bold">#{peeth.id}</span>
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+                        <h3 className="text-xl sm:text-2xl font-bold text-gray-900">{peeth.name}</h3>
+                        <p className="text-xs uppercase text-gray-400">{peeth.puranicReference}</p>
+                      </div>
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-3">
+                        <div>
+                          <p className="text-xs uppercase text-gray-500 mb-1">Location</p>
+                          <p className="text-sm font-semibold text-gray-800">{peeth.location}, {peeth.state}</p>
+                        </div>
+                        <div>
+                          <p className="text-xs uppercase text-gray-500 mb-1">Body Part</p>
+                          <p className="text-sm font-semibold text-gray-800">{peeth.bodyPart}</p>
+                        </div>
+                        <div>
+                          <p className="text-xs uppercase text-gray-500 mb-1">Shakti</p>
+                          <p className="text-sm font-semibold text-gray-800">{peeth.deviName}</p>
+                        </div>
+                        <div>
+                          <p className="text-xs uppercase text-gray-500 mb-1">Bhairava</p>
+                          <p className="text-sm font-semibold text-gray-800">{peeth.bhairavaName}</p>
+                        </div>
+                      </div>
+                      {peeth.description && (
+                        <p className="text-sm text-gray-600 italic mb-3">{peeth.description}</p>
+                      )}
+                      <button
+                        onClick={() => setSelectedPeeth(peeth)}
+                        className="bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-lg transition-colors duration-200 inline-flex items-center gap-2"
+                      >
+                        <svg className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <span>Discover Spiritual Significance</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
