@@ -9,6 +9,8 @@ interface ChapterListProps {
   textNameHindi: string
   onChapterSelect: (chapterNumber: number, verseNumber?: number) => void
   textType: TextType
+  hasPDF?: boolean
+  onViewPDF?: () => void
 }
 
 export default function ChapterList({
@@ -17,6 +19,8 @@ export default function ChapterList({
   textNameHindi,
   onChapterSelect,
   textType,
+  hasPDF,
+  onViewPDF,
 }: ChapterListProps) {
   const [searchQuery, setSearchQuery] = useState('')
   const [filteredChapters, setFilteredChapters] = useState<Chapter[]>(chapters)
@@ -56,7 +60,18 @@ export default function ChapterList({
       {/* Title */}
       <div className="text-center mb-6 sm:mb-8 animate-fadeIn">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-gray-800 mb-2">{textNameHindi}</h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600">{textName}</p>
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-4">{textName}</p>
+        {hasPDF && onViewPDF && (
+          <button
+            onClick={onViewPDF}
+            className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-amber-500 text-white rounded-lg font-medium hover:bg-amber-600 active:bg-amber-700 transition-all duration-200 shadow-md hover:shadow-lg touch-manipulation"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+            <span className="text-sm sm:text-base">View {textName} in PDF</span>
+          </button>
+        )}
       </div>
 
       {/* Search Bar - Only for Bhagavad Gita */}

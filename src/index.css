@@ -119,33 +119,216 @@ body {
   }
 }
 
-/* Page Flip Animation */
-@keyframes pageFlip {
+/* Page Turn Animation - Realistic Book Page Turn */
+@keyframes pageTurnNext {
   0% {
-    transform: perspective(1500px) rotateY(0deg);
+    transform: perspective(2000px) rotateY(0deg);
+    transform-origin: left center;
     opacity: 1;
+    filter: brightness(1);
+  }
+  15% {
+    transform: perspective(2000px) rotateY(-20deg) scaleX(0.99);
+    transform-origin: left center;
+    opacity: 0.98;
+    filter: brightness(0.98);
   }
   30% {
-    transform: perspective(1500px) rotateY(-30deg) scale(0.98);
+    transform: perspective(2000px) rotateY(-45deg) scaleX(0.95);
+    transform-origin: left center;
     opacity: 0.9;
+    filter: brightness(0.9);
   }
   50% {
-    transform: perspective(1500px) rotateY(-90deg) scale(0.95);
-    opacity: 0.6;
+    transform: perspective(2000px) rotateY(-90deg) scaleX(0.8);
+    transform-origin: left center;
+    opacity: 0.2;
+    filter: brightness(0.3);
+    box-shadow: -30px 0 60px rgba(0, 0, 0, 0.4);
   }
   70% {
-    transform: perspective(1500px) rotateY(-150deg) scale(0.98);
+    transform: perspective(2000px) rotateY(-135deg) scaleX(0.95);
+    transform-origin: left center;
     opacity: 0.9;
+    filter: brightness(0.9);
+  }
+  85% {
+    transform: perspective(2000px) rotateY(-160deg) scaleX(0.99);
+    transform-origin: left center;
+    opacity: 0.98;
+    filter: brightness(0.98);
   }
   100% {
-    transform: perspective(1500px) rotateY(-180deg);
+    transform: perspective(2000px) rotateY(-180deg);
+    transform-origin: left center;
     opacity: 1;
+    filter: brightness(1);
   }
 }
 
-.page-flip {
-  animation: pageFlip 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+@keyframes pageTurnPrevious {
+  0% {
+    transform: perspective(2000px) rotateY(0deg);
+    transform-origin: right center;
+    opacity: 1;
+    filter: brightness(1);
+  }
+  15% {
+    transform: perspective(2000px) rotateY(20deg) scaleX(0.99);
+    transform-origin: right center;
+    opacity: 0.98;
+    filter: brightness(0.98);
+  }
+  30% {
+    transform: perspective(2000px) rotateY(45deg) scaleX(0.95);
+    transform-origin: right center;
+    opacity: 0.9;
+    filter: brightness(0.9);
+  }
+  50% {
+    transform: perspective(2000px) rotateY(90deg) scaleX(0.8);
+    transform-origin: right center;
+    opacity: 0.2;
+    filter: brightness(0.3);
+    box-shadow: 30px 0 60px rgba(0, 0, 0, 0.4);
+  }
+  70% {
+    transform: perspective(2000px) rotateY(135deg) scaleX(0.95);
+    transform-origin: right center;
+    opacity: 0.9;
+    filter: brightness(0.9);
+  }
+  85% {
+    transform: perspective(2000px) rotateY(160deg) scaleX(0.99);
+    transform-origin: right center;
+    opacity: 0.98;
+    filter: brightness(0.98);
+  }
+  100% {
+    transform: perspective(2000px) rotateY(180deg);
+    transform-origin: right center;
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+.page-turn-next {
+  animation: pageTurnNext 0.9s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
-  transform-origin: left center;
+}
+
+.page-turn-previous {
+  animation: pageTurnPrevious 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* Page Fade Animation */
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.page-fade-in {
+  animation: pageFadeIn 0.4s ease-out;
+}
+
+/* Loading Spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(180deg) scale(1.1);
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+.spinner-pulse {
+  animation: spinPulse 2s ease-in-out infinite;
+}
+
+/* Button Press Animation */
+@keyframes buttonPress {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button-press {
+  animation: buttonPress 0.2s ease-out;
+}
+
+/* Page Number Counter Animation */
+@keyframes numberPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.number-pop {
+  animation: numberPop 0.3s ease-out;
+}
+
+/* Slide Page Animation */
+@keyframes slidePageLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidePageRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-page-left {
+  animation: slidePageLeft 0.4s ease-out;
+}
+
+.slide-page-right {
+  animation: slidePageRight 0.4s ease-out;
 }
 
