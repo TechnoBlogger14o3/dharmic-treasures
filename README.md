@@ -2,9 +2,11 @@
 
 <div align="center">
 
-![Dharmic Treasures](screenshots/Home%20Page.png)
+![Dharmic Treasures](screenshots/HomePage.png)
 
 **An interactive web application to explore the timeless wisdom of Hindu scriptures**
+
+[🌐 Live Site](https://technoblogger14o3.github.io/dharmic-treasures/) | [📖 Documentation](#-about) | [🚀 Getting Started](#-getting-started)
 
 </div>
 
@@ -12,43 +14,71 @@
 
 ## 📖 About
 
-This is a modern, interactive web application that brings the sacred texts of Hindu philosophy to life. The application features multiple scriptures including the Bhagavad Gita, Hanuman Chalisa, Sunderkand, Bajrang Baan, and Yaksha Prashna, all with a beautiful UI and an intelligent chatbot that helps answer life's questions using the wisdom of the Bhagavad Gita.
+This is a modern, interactive web application that brings the sacred texts of Hindu philosophy to life. The application features multiple scriptures including the Bhagavad Gita, Hanuman Chalisa, Sunderkand, Bajrang Baan, Yaksha Prashna, and an extensive guide to the 51 Shaktipeeths, all with a beautiful UI and an intelligent chatbot that helps answer life's questions using the wisdom of the Bhagavad Gita.
 
 ## ✨ Features
 
 ### 🎯 Core Features
 
-- **📚 Multiple Sacred Texts**: Access five different sacred texts in one application
+- **📚 Multiple Sacred Texts**: Access six different sacred texts and guides in one application
 
-  - **Bhagavad Gita**: All 18 chapters with 700+ verses
+  - **Bhagavad Gita**: All 18 chapters with 700+ verses, with PDF viewer support
   - **Hanuman Chalisa**: 40 verses of devotion
   - **Sunderkand**: The beautiful chapter from Ramayana
   - **Bajrang Baan**: The powerful prayer to Lord Hanuman
   - **Yaksha Prashna**: 126 questions and answers from Mahabharata
+  - **Shaktipeeths**: Complete guide to all 51 sacred Shaktipeeths with interactive map
+
+- **🗺️ Interactive Shaktipeeths Explorer**:
+  - Complete database of all 51 Shaktipeeths with detailed information
+  - Interactive map visualization with Leaflet
+  - Filter by state, country, and body part
+  - Quick filter chips for easy navigation
+  - Sort by name (A-Z), state, country, and ID
+  - Toggle between grid and list views
+  - Data visualizations:
+    - Body part distribution chart
+    - Country breakdown chart
+    - State-wise statistics
+  - Detailed modal view with historical significance, spiritual importance, and pilgrimage information
+
+- **📄 PDF Viewer**: 
+  - Built-in PDF viewer for sacred texts
+  - Page-by-page navigation
+  - Tap/click navigation on pages
+  - Responsive design for all devices
+  - Smooth page transitions
+
 - **🤖 Intelligent Gita Chatbot**: Ask life questions and get relevant verses from the Bhagavad Gita
 
   - Semantic search with keyword expansion
   - Finds most relevant verses based on your question
   - Clickable verse links to read in detail
   - Works completely offline (no external APIs)
+
 - **🔍 Advanced Search**: Search across all chapters and verses
 
   - Search by keywords, phrases, or concepts
   - Direct navigation to specific verses
   - Real-time search results
+
 - **🎨 Customizable Themes**:
 
   - Multiple background gradient options (5 themes)
   - Background selector in top-right corner
   - Adjustable font sizes for comfortable reading
   - Smooth theme transitions
+
 - **📱 Fully Responsive**: Works seamlessly on desktop, tablet, and mobile devices
+
 - **🌐 Multilingual Support**:
 
   - Original Sanskrit text
   - Hindi translations
   - English transliteration and meanings
+
 - **📊 Progress Tracking**: Visual progress indicator showing reading progress
+
 - **🔗 Share Functionality**: Share specific verses with others
 
 ---
@@ -57,22 +87,17 @@ This is a modern, interactive web application that brings the sacred texts of Hi
 
 ### Home Page
 
-![Home Page](screenshots/Home%20Page.png)
+![Home Page](screenshots/HomePage.png)
 *Beautiful home page with text type selector and customizable background themes*
 
 ### Bhagavad Gita
 
-![Bhagavad Gita](screenshots/Bhagavad%20Gita.png)
+![Bhagavad Gita Chapters](screenshots/Bhagavad%20Geeta%20Chapters.png)
 *Browse through all 18 chapters of the Bhagavad Gita*
-
-### Gita Chatbot
-
-![Gita Chatbot](screenshots/Bhagavad%20Gita%20ChatBot.png)
-*Ask life questions and get relevant verses from the Bhagavad Gita*
 
 ### Hanuman Chalisa
 
-![Hanuman Chalisa](screenshots/Hanuman%20Chalisa.png)
+![Hanuman Chalisa](screenshots/Hanuman%20Chaalisa.png)
 *Read the 40 verses of Hanuman Chalisa*
 
 ### Sunderkand
@@ -95,10 +120,34 @@ This is a modern, interactive web application that brings the sacred texts of Hi
 ![Yaksha Prashna Content](screenshots/Yaksh%20Prashn%20Content.png)
 *Detailed view with Hindi translations of questions and answers*
 
-### Background Selector
+### Shaktipeeths - History
 
-![Background Selector](screenshots/Background%20Selector.png)
-*Customize your reading experience with different background themes*
+![Shaktipeeths History](screenshots/shaktipeeths_history.png)
+*Introduction to the history and significance of Shaktipeeths*
+
+### Shaktipeeths - Contents
+
+![Shaktipeeths Contents](screenshots/Shakteepeeth_contents.png)
+*Browse all 51 Shaktipeeths with filtering and sorting options*
+
+### Shaktipeeths - Interactive Map
+
+![Shaktipeeths Map](screenshots/shaktipeeths_Map.png)
+*Interactive map showing locations of all Shaktipeeths*
+
+### Shaktipeeths - Additional Views
+
+![Shaktipeeths View 1](screenshots/Screenshot%202025-12-27%20at%2009.14.13.png)
+*Shaktipeeths with filters and visualizations*
+
+![Shaktipeeths View 2](screenshots/Screenshot%202025-12-27%20at%2009.14.22.png)
+*Grid view of Shaktipeeths*
+
+![Shaktipeeths View 3](screenshots/Screenshot%202025-12-27%20at%2009.14.30.png)
+*List view with detailed information*
+
+![Shaktipeeths View 4](screenshots/Screenshot%202025-12-27%20at%2009.14.42.png)
+*Modal view with complete details*
 
 ---
 
@@ -110,6 +159,14 @@ This is a modern, interactive web application that brings the sacred texts of Hi
 - **TypeScript** - Type-safe development
 - **Vite** - Fast build tool and dev server
 - **Tailwind CSS** - Utility-first CSS framework
+
+### Libraries & Tools
+
+- **react-pdf** - PDF viewing and rendering
+- **pdfjs-dist** - PDF.js library for PDF processing
+- **react-leaflet** - React components for Leaflet maps
+- **leaflet** - Interactive maps library
+- **recharts** - Chart library for data visualizations (via Shaktipeeths)
 
 ### 3D Graphics (Available but not active in UI)
 
@@ -187,6 +244,9 @@ dharmic-treasures/
 │   │   ├── FontSizeControl.tsx     # Font size adjustment
 │   │   ├── ProgressIndicator.tsx   # Reading progress
 │   │   ├── ShareButton.tsx         # Share functionality
+│   │   ├── PDFViewer.tsx           # PDF viewing component
+│   │   ├── ShaktipeethsView.tsx    # Shaktipeeths explorer view
+│   │   ├── ShaktipeethsMap.tsx     # Interactive map component
 │   │   ├── ErrorBoundary.tsx       # Error handling
 │   │   ├── icons/              # Icon components
 │   │   │   ├── ArrowLeftIcon.tsx
@@ -197,6 +257,8 @@ dharmic-treasures/
 │   │       ├── Krishna.tsx
 │   │       ├── ChapterCard3D.tsx
 │   │       └── Scene3D.tsx
+│   ├── utils/                 # Utility functions
+│   │   └── transliteration.ts  # English to Hindi transliteration
 │   ├── App.tsx               # Main application component
 │   ├── index.tsx             # Application entry point
 │   └── index.css             # Global styles
@@ -205,9 +267,12 @@ dharmic-treasures/
 │   ├── hanumanChalisa.ts    # Hanuman Chalisa data
 │   ├── sunderkand.ts        # Sunderkand data
 │   ├── bajrangBaan.ts       # Bajrang Baan data
-│   └── yakshaPrashn.ts      # Yaksha Prashna data
-├── scripts/                  # Utility scripts
-│   └── fill-all-hindi-meanings.js
+│   ├── yakshaPrashn.ts      # Yaksha Prashna data
+│   ├── shaktipeeths.ts      # Shaktipeeths data and utilities
+│   └── shakti_peethas_51.json  # JSON data for all 51 Shaktipeeths
+├── public/                   # Static assets
+│   ├── pdf.worker.min.mjs   # PDF.js worker file
+│   └── sadhak-sanjeevani.pdf # PDF file for Bhagavad Gita
 ├── screenshots/             # Project screenshots
 ├── types.ts                 # TypeScript type definitions
 ├── vite.config.ts          # Vite configuration
@@ -226,27 +291,44 @@ dharmic-treasures/
 
 1. **Select a Text Type**: Use the text type selector at the top to choose between:
 
-   - भगवद्गीता (Bhagavad Gita)
+   - भगवद्गीता (Bhagavad Gita) - with PDF viewer option
    - हनुमान चालीसा (Hanuman Chalisa)
    - सुन्दरकाण्ड (Sunderkand)
    - बजरंग बाण (Bajrang Baan)
    - यक्ष प्रश्न (Yaksha Prashna)
-2. **Browse Chapters**: Click on any chapter card to view its contents
-3. **Read Verses**:
+   - शक्तिपीठ (Shaktipeeths)
 
+2. **Browse Chapters**: Click on any chapter card to view its contents
+
+3. **Read Verses**:
    - Navigate through verses using Previous/Next buttons
    - Each verse shows:
      - Original Sanskrit text
      - Transliteration
      - Hindi meaning
      - English meaning
-4. **Search**: Use the search bar to find specific verses or chapters
-5. **Customize**:
 
+4. **View PDFs**: For texts with PDF support (like Bhagavad Gita), click "View in PDF" to open the PDF viewer
+   - Navigate pages using Previous/Next buttons
+   - Tap left/right side of the page to turn pages
+   - Responsive design works on all devices
+
+5. **Explore Shaktipeeths**:
+   - Browse all 51 Shaktipeeths in grid or list view
+   - Filter by state, country, or body part
+   - Use quick filter chips for common filters
+   - Sort by name, state, country, or ID
+   - View interactive map with all locations
+   - Click on any Shaktipeeth to see detailed information
+   - Explore visualizations for data insights
+
+6. **Search**: Use the search bar to find specific verses or chapters
+
+7. **Customize**:
    - Change background theme using the background selector (top-right corner)
    - Adjust font size for comfortable reading (bottom-right when viewing verses)
-6. **Use the Chatbot** (Bhagavad Gita only):
 
+8. **Use the Chatbot** (Bhagavad Gita only):
    - Click the chat button (bottom-right corner)
    - Ask questions about life, duty, karma, stress, etc.
    - Get relevant verses with clickable links
@@ -321,6 +403,7 @@ The chatbot formats the response with:
    ```bash
    npm run deploy
    ```
+
 2. **Enable GitHub Pages**:
 
    - Go to your repository on GitHub
@@ -328,6 +411,7 @@ The chatbot formats the response with:
    - Under **Source**, select **Deploy from a branch**
    - Select **gh-pages** branch and **/ (root)** folder
    - Click **Save**
+
 3. **Access Your Site**:
    Your app will be available at:
 
@@ -361,6 +445,10 @@ Bajrang Baan is a powerful prayer dedicated to Lord Hanuman. It is believed to b
 
 Yaksha Prashna is a dialogue between Yudhishthira and a Yaksha (a nature spirit) in the Mahabharata. It consists of 126 questions and answers that test Yudhishthira's wisdom and righteousness. The questions cover various aspects of life, duty, and philosophy.
 
+### Shaktipeeths
+
+Shaktipeeths are among the most sacred places in Hinduism. Their origin is linked to the story of Goddess Sati. When King Daksha organized a yajna (sacrificial ritual), he did not invite his daughter Sati and son-in-law Shiva. Sati decided to attend her father's yajna, but was humiliated there. Overwhelmed by the insult, Sati immolated herself in the yajna fire. When Lord Shiva learned of this, he became enraged and began performing the Tandava dance while carrying Sati's body. To control the situation, Lord Vishnu used his Sudarshan Chakra to divide Sati's body into 51 parts. Wherever parts of Sati's body fell, Shaktipeeths were established. Each Shaktipeeth contains the power of the Goddess and the presence of Lord Shiva (Bhairava). Worshipping these 51 Shaktipeeths grants devotees liberation and spiritual power.
+
 ---
 
 ## 🎨 Features in Detail
@@ -387,6 +475,31 @@ Yaksha Prashna is a dialogue between Yudhishthira and a Yaksha (a nature spirit)
 - Generates shareable links
 - Easy sharing on social media
 - Uses native Web Share API when available
+
+### PDF Viewer
+
+- Built-in PDF viewer using PDF.js
+- Page-by-page navigation
+- Tap/click navigation on pages
+- Responsive design for mobile and desktop
+- Loading states and error handling
+
+### Shaktipeeths Explorer
+
+- **Filtering**: Filter by state, country, or body part
+- **Quick Filters**: One-click filter chips for common selections
+- **Sorting**: Sort by name (A-Z), state, country, or ID
+- **Views**: Toggle between grid and list views
+- **Map**: Interactive Leaflet map with all 51 locations
+- **Visualizations**: 
+  - Body part distribution chart
+  - Country breakdown chart
+  - State-wise statistics
+- **Detailed Modal**: Complete information including:
+  - Historical significance
+  - Spiritual importance
+  - Pilgrimage information
+  - Related stories and legends
 
 ### Error Boundary
 
@@ -434,12 +547,27 @@ Yaksha Prashna is a dialogue between Yudhishthira and a Yaksha (a nature spirit)
      }
    ];
    ```
+
 2. Add the text type to `src/App.tsx`:
 
    - Import the data file
    - Add to `TextType` union type in `types.ts`
    - Add to `textConfigs` object
    - The button will automatically appear in the text type selector
+
+### Adding PDF Support
+
+1. Place the PDF file in the `public/` directory
+2. Add the PDF path to `pdfPaths` object in `src/App.tsx`:
+
+   ```typescript
+   const pdfPaths: Partial<Record<TextType, string>> = {
+     gita: 'sadhak-sanjeevani.pdf',
+     newText: 'new-text.pdf', // Add your PDF here
+   }
+   ```
+
+3. Ensure `pdf.worker.min.mjs` is in the `public/` directory
 
 ### Customizing Themes
 
@@ -452,6 +580,23 @@ To improve chatbot search:
 1. Add more keywords to `keywordMapping` in `GitaChatbot.tsx`
 2. Adjust scoring weights in `searchRelevantVerses` function
 3. Modify `generateResponse` for different response formats
+
+### Shaktipeeths Data
+
+The Shaktipeeths data is stored in `data/shakti_peethas_51.json` and processed in `data/shaktipeeths.ts`. To update the data:
+
+1. Edit `data/shakti_peethas_51.json` with new information
+2. The data structure includes:
+   - `id`: Unique identifier
+   - `name`: Name of the Shaktipeeth
+   - `bodyPart`: Body part that fell at this location
+   - `deviName`: Name of the Goddess (Shakti)
+   - `bhairavaName`: Name of the Bhairava
+   - `location`: Specific location name
+   - `state`: State or province
+   - `country`: Country name
+   - `puranicReference`: Reference from Puranas
+   - `description`: Detailed description
 
 ---
 
@@ -466,6 +611,7 @@ This project is open source and available for educational purposes.
 - Inspired by the timeless wisdom of the Bhagavad Gita and other sacred texts
 - Built with love and devotion for spreading the teachings of Sanatana Dharma
 - Special thanks to all the contributors and the open-source community
+- Data sources for Shaktipeeths from various Puranic references and historical texts
 
 ---
 
