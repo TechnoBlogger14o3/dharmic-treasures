@@ -2,7 +2,6 @@ import { Chapter, TextType } from '../../types'
 import ArrowLeftIcon from './icons/ArrowLeftIcon'
 import ChevronLeftIcon from './icons/ChevronLeftIcon'
 import ChevronRightIcon from './icons/ChevronRightIcon'
-import ProgressIndicator from './ProgressIndicator'
 import ShareButton from './ShareButton'
 
 interface ChapterViewProps {
@@ -24,7 +23,6 @@ export default function ChapterView({
 }: ChapterViewProps) {
   const verse = chapter.verses.find((v) => v.verse_number === currentVerse)
   const totalVerses = chapter.verses.length
-  const progress = (currentVerse / totalVerses) * 100
 
   const handlePrevious = () => {
     if (currentVerse > 1) {
@@ -52,35 +50,72 @@ export default function ChapterView({
     )
   }
 
+  // Background image for Bhagavad Gita
+  const isGita = textType === 'gita'
+  // Construct path - same pattern as PDF viewer
+  const baseUrl = import.meta.env.BASE_URL || '/'
+  const imagePath = `${baseUrl}krishna-arjuna-bg.jpg`.replace(/\/\//g, '/')
+  const backgroundImageUrl = isGita ? imagePath : undefined
+  
+  // Debug: log the image path (remove in production if needed)
+  if (isGita && backgroundImageUrl) {
+    console.log('Background image path:', backgroundImageUrl)
+  }
+
   return (
-    <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 md:py-8 max-w-4xl animate-fadeIn pb-20 sm:pb-8">
+    <div 
+      className={`relative min-h-screen ${isGita ? '' : 'container mx-auto px-3 sm:px-4 py-4 sm:py-6 md:py-8 max-w-4xl animate-fadeIn pb-20 sm:pb-8'}`}
+    >
+      {/* Background Image - Only for Bhagavad Gita */}
+      {isGita && (
+        <div 
+          className="fixed inset-0 z-0 animate-fadeIn"
+          style={{
+            backgroundImage: backgroundImageUrl ? `url(${backgroundImageUrl})` : 'linear-gradient(to bottom right, #fef3c7, #fed7aa, #fde68a)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center top',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+            top: '40px',
+            height: 'calc(100% - 40px)',
+          }}
+        >
+          {/* Gradient fade overlays for smooth edges */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-black/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/5"></div>
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black/5"></div>
+          {/* Overlay for better text readability - reduced opacity to let image show through */}
+          <div className="absolute inset-0 bg-black/15"></div>
+        </div>
+      )}
+
+      {/* Content Container */}
+      <div className={`relative z-10 ${isGita ? 'container mx-auto px-3 sm:px-4 py-4 sm:py-6 md:py-8 max-w-4xl animate-fadeIn pb-20 sm:pb-8' : ''}`}>
       {/* Header */}
       <div className="mb-4 sm:mb-6">
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-gray-700 hover:text-amber-600 active:text-amber-700 transition-all duration-300 mb-3 sm:mb-4 py-2 -ml-2 pl-2 pr-4 rounded-lg touch-manipulation animate-slideInLeft"
+          className={`flex items-center gap-2 transition-all duration-300 mb-3 sm:mb-4 py-2 -ml-2 pl-2 pr-4 rounded-lg touch-manipulation animate-slideInLeft ${isGita ? 'text-white hover:text-amber-200 active:text-amber-300 drop-shadow-md' : 'text-gray-700 hover:text-amber-600 active:text-amber-700'}`}
         >
           <ArrowLeftIcon className="w-5 h-5 flex-shrink-0" />
           <span className="text-sm sm:text-base">Back to Chapters</span>
         </button>
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-scaleIn">
+        <div className={`${isGita ? 'bg-white/50 backdrop-blur-sm' : 'bg-white/90 backdrop-blur-sm'} rounded-xl shadow-lg p-4 sm:p-6 border border-white/30 animate-scaleIn`}>
           <div className="text-center mb-4">
             <div className="text-xl sm:text-2xl font-bold text-amber-600 mb-2">
               {chapter.chapter_number}
             </div>
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">{chapter.name}</h1>
-            <p className="text-base sm:text-lg text-gray-600 mb-3 sm:mb-4">{chapter.name_meaning}</p>
-            <p className="text-xs sm:text-sm text-gray-500">{chapter.summary}</p>
+            <h1 className={`text-xl sm:text-2xl md:text-3xl font-bold mb-2 ${isGita ? 'text-gray-900 drop-shadow-sm' : 'text-gray-800'}`}>{chapter.name}</h1>
+            <p className={`text-base sm:text-lg mb-3 sm:mb-4 ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-600'}`}>{chapter.name_meaning}</p>
+            <p className={`text-xs sm:text-sm ${isGita ? 'text-gray-700 drop-shadow-sm font-medium' : 'text-gray-500'}`}>{chapter.summary}</p>
           </div>
         </div>
       </div>
 
-      {/* Progress Indicator */}
-      <ProgressIndicator progress={progress} currentVerse={currentVerse} totalVerses={totalVerses} />
-
       {/* Verse Content */}
       <div
-        className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 md:p-8 border border-gray-200 mb-4 sm:mb-6 animate-fadeIn"
+        className={`${isGita ? 'bg-white/50 backdrop-blur-sm' : 'bg-white/90 backdrop-blur-sm'} rounded-xl shadow-lg p-4 sm:p-6 md:p-8 border border-white/30 mb-4 sm:mb-6 animate-fadeIn`}
         style={{ fontSize: `${fontSize}px` }}
         key={currentVerse}
       >
@@ -92,20 +127,20 @@ export default function ChapterView({
 
         {/* Sanskrit Text */}
         <div className="mb-4 sm:mb-6">
-          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-800 leading-relaxed text-center mb-3 sm:mb-4">
+          <div className={`text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed text-center mb-3 sm:mb-4 ${isGita ? 'text-gray-900 drop-shadow-sm font-bold' : 'text-gray-800 font-medium'}`}>
             {verse.text}
           </div>
         </div>
 
         {/* Transliteration */}
         <div className="mb-4 sm:mb-6">
-          <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-2">Transliteration:</div>
-          <div className="text-base sm:text-lg text-gray-700 italic leading-relaxed">{verse.transliteration}</div>
+          <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Transliteration:</div>
+          <div className={`text-base sm:text-lg italic leading-relaxed ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse.transliteration}</div>
         </div>
 
         {/* Hindi Meaning */}
         <div className="mb-4 sm:mb-6">
-          <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-2">Hindi Meaning:</div>
+          <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Hindi Meaning:</div>
           {textType === 'yakshaPrashna' && verse.hindi_meaning.includes('\n\n') ? (
             <div className="text-base sm:text-lg text-gray-700 leading-relaxed">
               {verse.hindi_meaning.split('\n\n').map((part, index) => {
@@ -130,14 +165,14 @@ export default function ChapterView({
               })}
             </div>
           ) : (
-            <div className="text-base sm:text-lg text-gray-700 leading-relaxed whitespace-pre-line">{verse.hindi_meaning}</div>
+            <div className={`text-base sm:text-lg leading-relaxed whitespace-pre-line ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse.hindi_meaning}</div>
           )}
         </div>
 
         {/* English Meaning */}
         <div className="mb-4 sm:mb-6">
-          <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-2">Meaning:</div>
-          <div className="text-base sm:text-lg text-gray-700 leading-relaxed">{verse.meaning}</div>
+          <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Meaning:</div>
+          <div className={`text-base sm:text-lg leading-relaxed ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse.meaning}</div>
         </div>
 
         {/* Share Button */}
@@ -181,6 +216,7 @@ export default function ChapterView({
           <span className="text-sm sm:text-base">Next</span>
           <ChevronRightIcon className="w-5 h-5 flex-shrink-0" />
         </button>
+      </div>
       </div>
     </div>
   )
