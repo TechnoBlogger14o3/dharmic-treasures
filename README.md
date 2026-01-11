@@ -6,7 +6,7 @@
 
 **An interactive web application to explore the timeless wisdom of Hindu scriptures**
 
-[🌐 Live Site](https://technoblogger14o3.github.io/dharmic-treasures/) | [📖 Documentation](#-about) | [🚀 Getting Started](#-getting-started)
+[🌐 Live Site](https://technoblogger14o3.github.io/dharmic-treasures/?v=2) | [📖 Documentation](#-about) | [🚀 Getting Started](#-getting-started)
 
 </div>
 
@@ -530,7 +530,7 @@ This application can be deployed in multiple ways:
    Your app will be available at:
 
    ```
-   https://technoblogger14o3.github.io/dharmic-treasures/
+   https://technoblogger14o3.github.io/dharmic-treasures/?v=2
    ```
 
 > **Note**: It may take a few minutes for the site to become available after enabling GitHub Pages.
