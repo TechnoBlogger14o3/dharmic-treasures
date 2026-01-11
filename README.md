@@ -77,9 +77,17 @@ This is a modern, interactive web application that brings the sacred texts of Hi
   - Hindi translations
   - English transliteration and meanings
 
-- **📊 Progress Tracking**: Visual progress indicator showing reading progress
+- **📊 Progress Tracking**: Visual progress indicator showing reading progress with automatic save/restore
 
 - **🔗 Share Functionality**: Share specific verses with others
+
+- **⭐ Bookmarks**: Save favorite verses for quick access later
+
+- **💾 Export & Print**: Export verses as text files or print them with beautiful formatting
+
+- **💻 Native Desktop App**: Build native desktop apps for Windows, macOS, and Linux using Tauri
+
+- **📱 Native Mobile Apps**: Build native iOS and Android apps using Tauri (coming soon)
 
 ---
 
@@ -153,31 +161,71 @@ This is a modern, interactive web application that brings the sacred texts of Hi
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### Frontend Framework
 
-- **React 18.3.1** - Modern UI framework
-- **TypeScript** - Type-safe development
-- **Vite** - Fast build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
+- **React 18.3.1** - Modern UI framework with hooks and functional components
+- **TypeScript 5.5.3** - Type-safe development for better code quality
+- **Vite 5.3.1** - Lightning-fast build tool and dev server with HMR
+- **Tailwind CSS 3.4.3** - Utility-first CSS framework for rapid UI development
 
-### Libraries & Tools
+### Core Libraries
 
-- **react-pdf** - PDF viewing and rendering
-- **pdfjs-dist** - PDF.js library for PDF processing
-- **react-leaflet** - React components for Leaflet maps
-- **leaflet** - Interactive maps library
-- **recharts** - Chart library for data visualizations (via Shaktipeeths)
+- **react-pdf 10.2.0** - PDF viewing and rendering in React
+- **pdfjs-dist 5.4.394** - Mozilla's PDF.js library for PDF processing
+- **react-leaflet 4.2.1** - React components for Leaflet maps
+- **leaflet 1.9.4** - Open-source interactive maps library
+- **recharts** - Chart library for data visualizations (used in Shaktipeeths explorer)
 
 ### 3D Graphics (Available but not active in UI)
 
-- **Three.js** - 3D graphics library
-- **@react-three/fiber** - React renderer for Three.js
-- **@react-three/drei** - Useful helpers for react-three-fiber
+- **Three.js 0.168.0** - Powerful 3D graphics library
+- **@react-three/fiber 8.15.19** - React renderer for Three.js
+- **@react-three/drei 9.92.7** - Useful helpers and abstractions for react-three-fiber
 
-### Deployment
+### Native App Framework (Tauri)
 
-- **GitHub Pages** - Static site hosting
-- **gh-pages** - Automated deployment
+- **Tauri v2.9.5** - Build lightweight native desktop and mobile apps
+  - Uses system webview (no bundled browser)
+  - Rust backend for security and performance
+  - Smaller app size compared to Electron
+  - Supports Windows, macOS, Linux, iOS, and Android
+
+### Tauri Plugins & APIs
+
+- **@tauri-apps/api 2.9.1** - Core Tauri JavaScript API
+- **@tauri-apps/plugin-fs 2.4.5** - File system read/write operations
+- **@tauri-apps/plugin-dialog 2.5.0** - Native file dialogs (open/save)
+- **@tauri-apps/plugin-notification 2.3.3** - System-level notifications
+- **@tauri-apps/plugin-shell 2.3.4** - Execute shell commands and open URLs
+- **@tauri-apps/cli 2.9.6** - Command-line tools for Tauri development
+
+### Backend (Rust)
+
+- **Rust** - Systems programming language for Tauri backend
+- **tauri-plugin-fs** - Rust file system plugin
+- **tauri-plugin-dialog** - Rust dialog plugin
+- **tauri-plugin-notification** - Rust notification plugin
+- **tauri-plugin-shell** - Rust shell plugin
+- **tauri-plugin-log** - Logging plugin for debugging
+
+### Data Storage
+
+- **localStorage** - Browser/local storage for bookmarks, progress, and settings
+- **File System** (Tauri) - Native file access for export functionality
+
+### Deployment & Distribution
+
+- **GitHub Pages** - Static site hosting for web version
+- **gh-pages 6.1.1** - Automated deployment to GitHub Pages
+- **Tauri Bundle** - Native app distribution
+  - **Desktop**: `.app` (macOS), `.exe`/`.msi` (Windows), `.AppImage`/`.deb` (Linux)
+  - **Mobile**: `.ipa` (iOS), `.apk`/`.aab` (Android)
+
+### Development Tools
+
+- **PostCSS 8.4.38** - CSS processing
+- **Autoprefixer 10.4.19** - Automatic vendor prefixing
+- **TypeScript Compiler** - Type checking and compilation
 
 ---
 
@@ -188,6 +236,17 @@ Before you begin, ensure you have the following installed:
 - **Node.js** (v16 or higher recommended)
 - **npm** or **yarn** package manager
 - **Git** (for cloning the repository)
+
+### For Desktop App (Tauri):
+- **Rust** (latest stable version) - [Install Rust](https://www.rust-lang.org/tools/install)
+- **System dependencies**:
+  - **macOS**: Xcode Command Line Tools
+  - **Windows**: Microsoft Visual Studio C++ Build Tools
+  - **Linux**: `libwebkit2gtk-4.0-dev`, `build-essential`, `curl`, `wget`, `libssl-dev`, `libgtk-3-dev`, `libayatana-appindicator3-dev`, `librsvg2-dev`
+
+### For Mobile Apps (Tauri):
+- **iOS**: macOS, Xcode, CocoaPods, Apple Developer Account
+- **Android**: Android Studio, JDK, Android SDK
 
 ---
 
@@ -228,6 +287,37 @@ This creates an optimized production build in the `dist` directory.
 npm run preview
 ```
 
+### 6. Run as Desktop App (Tauri)
+
+```bash
+# Development mode (opens native window)
+npm run tauri:dev
+
+# Build native desktop app
+npm run tauri:build
+```
+
+After building, you'll find installers in `src-tauri/target/release/bundle/`:
+- **macOS**: `.app` or `.dmg`
+- **Windows**: `.exe` installer
+- **Linux**: `.AppImage` or `.deb`
+
+### 7. Run as Mobile App (Tauri)
+
+```bash
+# iOS (requires macOS)
+npm run tauri ios init    # First time only
+npm run tauri ios dev     # Development
+npm run tauri ios build   # Production build
+
+# Android
+npm run tauri android init    # First time only
+npm run tauri android dev     # Development
+npm run tauri android build   # Production build
+```
+
+> **Note**: See [MOBILE_SETUP.md](./MOBILE_SETUP.md) for detailed mobile setup instructions.
+
 ---
 
 ## 📁 Project Structure
@@ -244,6 +334,9 @@ dharmic-treasures/
 │   │   ├── FontSizeControl.tsx     # Font size adjustment
 │   │   ├── ProgressIndicator.tsx   # Reading progress
 │   │   ├── ShareButton.tsx         # Share functionality
+│   │   ├── BookmarkButton.tsx      # Bookmark verses
+│   │   ├── ExportButton.tsx        # Export and print verses
+│   │   ├── BookmarksView.tsx       # View all bookmarks
 │   │   ├── PDFViewer.tsx           # PDF viewing component
 │   │   ├── ShaktipeethsView.tsx    # Shaktipeeths explorer view
 │   │   ├── ShaktipeethsMap.tsx     # Interactive map component
@@ -258,7 +351,9 @@ dharmic-treasures/
 │   │       ├── ChapterCard3D.tsx
 │   │       └── Scene3D.tsx
 │   ├── utils/                 # Utility functions
-│   │   └── transliteration.ts  # English to Hindi transliteration
+│   │   ├── transliteration.ts  # English to Hindi transliteration
+│   │   ├── tauri.ts           # Tauri utilities (native app features)
+│   │   └── storage.ts         # Storage utilities (bookmarks, progress, settings)
 │   ├── App.tsx               # Main application component
 │   ├── index.tsx             # Application entry point
 │   └── index.css             # Global styles
@@ -274,6 +369,11 @@ dharmic-treasures/
 │   ├── pdf.worker.min.mjs   # PDF.js worker file
 │   └── sadhak-sanjeevani.pdf # PDF file for Bhagavad Gita
 ├── screenshots/             # Project screenshots
+├── src-tauri/               # Tauri backend (Rust)
+│   ├── src/                 # Rust source code
+│   ├── Cargo.toml           # Rust dependencies
+│   ├── tauri.conf.json      # Tauri configuration
+│   └── capabilities/        # Security permissions
 ├── types.ts                 # TypeScript type definitions
 ├── vite.config.ts          # Vite configuration
 ├── tsconfig.json            # TypeScript configuration
@@ -391,10 +491,24 @@ The chatbot formats the response with:
 | `npm run build`   | Build for production             |
 | `npm run preview` | Preview production build         |
 | `npm run deploy`  | Build and deploy to GitHub Pages |
+| `npm run tauri:dev` | Run as desktop app (development) |
+| `npm run tauri:build` | Build native desktop app |
+| `npm run tauri ios dev` | Run as iOS app (development) |
+| `npm run tauri ios build` | Build iOS app |
+| `npm run tauri android dev` | Run as Android app (development) |
+| `npm run tauri android build` | Build Android app |
 
 ---
 
 ## 🚀 Deployment
+
+### Platform Support
+
+This application can be deployed in multiple ways:
+
+1. **Web**: Deploy to GitHub Pages, Netlify, Vercel, etc.
+2. **Desktop**: Build native apps for Windows, macOS, and Linux
+3. **Mobile**: Build native apps for iOS and Android
 
 ### Deploy to GitHub Pages
 
@@ -420,6 +534,36 @@ The chatbot formats the response with:
    ```
 
 > **Note**: It may take a few minutes for the site to become available after enabling GitHub Pages.
+
+### Build Native Desktop App
+
+1. **Install Rust** (if not already installed):
+   ```bash
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+
+2. **Build the app**:
+   ```bash
+   npm run tauri:build
+   ```
+
+3. **Find installers**:
+   - **macOS**:** `src-tauri/target/release/bundle/macos/Dharmic Treasures.app`
+   - **Windows**:** `src-tauri/target/release/bundle/msi/Dharmic Treasures_0.1.0_x64_en-US.msi`
+   - **Linux**:** `src-tauri/target/release/bundle/appimage/Dharmic Treasures_0.1.0_amd64.AppImage`
+
+### Build Mobile Apps
+
+See [MOBILE_SETUP.md](./MOBILE_SETUP.md) for detailed instructions on building iOS and Android apps.
+
+### Single Codebase, Multiple Platforms
+
+The same React codebase works for:
+- ✅ **Web** (browser)
+- ✅ **Desktop** (Windows, macOS, Linux)
+- ✅ **Mobile** (iOS, Android)
+
+All features work across all platforms with automatic fallbacks!
 
 ---
 
@@ -475,6 +619,24 @@ Shaktipeeths are among the most sacred places in Hinduism. Their origin is linke
 - Generates shareable links
 - Easy sharing on social media
 - Uses native Web Share API when available
+- Native share dialog in desktop/mobile apps
+
+### Bookmarks
+
+- Save favorite verses for quick access
+- Persistent storage across sessions
+- View all bookmarks in one place
+- Quick navigation to bookmarked verses
+- Works in both web and native apps
+
+### Export & Print
+
+- **Export to File**: Save verses as text files
+  - Native file dialog in desktop apps
+  - Browser download in web version
+- **Print**: Print verses with beautiful formatting
+  - Native print dialog support
+  - Formatted layout for printing
 
 ### PDF Viewer
 
@@ -626,6 +788,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Open a Pull Request
 
 ---
+
+## 📚 Additional Documentation
+
+- **[TAURI_FEATURES.md](./TAURI_FEATURES.md)** - Detailed guide on Tauri features and capabilities
+- **[MOBILE_SETUP.md](./MOBILE_SETUP.md)** - Complete guide for building iOS and Android apps
 
 ## 📞 Support
 

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { TextType, TextConfig } from '../types'
 import { gitaChapters } from '../data/gita'
 import { hanumanChalisa } from '../data/hanumanChalisa'
@@ -12,6 +12,7 @@ import ShaktipeethsView from './components/ShaktipeethsView'
 import ErrorBoundary from './components/ErrorBoundary'
 import BackgroundSelector from './components/BackgroundSelector'
 import FontSizeControl from './components/FontSizeControl'
+import { getSettings, saveSettings, getProgress } from './utils/storage'
 
 const textConfigs: Record<TextType, TextConfig> = {
   gita: {
@@ -52,12 +53,33 @@ const pdfPaths: Partial<Record<TextType, string>> = {
 }
 
 function App() {
+  // Load settings from storage
+  const savedSettings = getSettings()
   const [textType, setTextType] = useState<TextType>('gita')
   const [selectedChapter, setSelectedChapter] = useState<number | null>(null)
   const [selectedVerse, setSelectedVerse] = useState<number>(1)
-  const [backgroundTheme, setBackgroundTheme] = useState<string>('gradient-1')
-  const [fontSize, setFontSize] = useState<number>(16)
+  const [backgroundTheme, setBackgroundTheme] = useState<string>(savedSettings.backgroundTheme)
+  const [fontSize, setFontSize] = useState<number>(savedSettings.fontSize)
   const [viewMode, setViewMode] = useState<'text' | 'pdf'>('text')
+
+  // Restore reading progress on mount
+  useEffect(() => {
+    const progress = getProgress(textType)
+    if (progress) {
+      setSelectedChapter(progress.chapterNumber)
+      setSelectedVerse(progress.verseNumber)
+    }
+  }, [textType])
+
+  // Save settings when they change
+  useEffect(() => {
+    saveSettings({
+      fontSize,
+      backgroundTheme,
+      notificationsEnabled: savedSettings.notificationsEnabled,
+      dailyVerseTime: savedSettings.dailyVerseTime,
+    })
+  }, [fontSize, backgroundTheme])
 
   const currentText = textConfigs[textType]
   const hasPDF = pdfPaths[textType] !== undefined

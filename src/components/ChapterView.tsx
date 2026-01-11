@@ -3,6 +3,10 @@ import ArrowLeftIcon from './icons/ArrowLeftIcon'
 import ChevronLeftIcon from './icons/ChevronLeftIcon'
 import ChevronRightIcon from './icons/ChevronRightIcon'
 import ShareButton from './ShareButton'
+import BookmarkButton from './BookmarkButton'
+import ExportButton from './ExportButton'
+import { saveProgress } from '../utils/storage'
+import { useEffect } from 'react'
 
 interface ChapterViewProps {
   chapter: Chapter
@@ -23,6 +27,18 @@ export default function ChapterView({
 }: ChapterViewProps) {
   const verse = chapter.verses.find((v) => v.verse_number === currentVerse)
   const totalVerses = chapter.verses.length
+
+  // Save reading progress
+  useEffect(() => {
+    if (textType && chapter.chapter_number && currentVerse) {
+      saveProgress({
+        textType,
+        chapterNumber: chapter.chapter_number,
+        verseNumber: currentVerse,
+        lastRead: Date.now(),
+      })
+    }
+  }, [textType, chapter.chapter_number, currentVerse])
 
   const handlePrevious = () => {
     if (currentVerse > 1) {
@@ -175,12 +191,24 @@ export default function ChapterView({
           <div className={`text-base sm:text-lg leading-relaxed ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse.meaning}</div>
         </div>
 
-        {/* Share Button */}
-        <div className="flex justify-center mt-6">
+        {/* Action Buttons */}
+        <div className="flex flex-wrap justify-center gap-3 mt-6">
+          <BookmarkButton
+            textType={textType || ''}
+            chapterNumber={chapter.chapter_number}
+            verseNumber={verse.verse_number}
+            chapterName={chapter.name}
+          />
           <ShareButton
             verse={verse}
             chapterName={chapter.name}
             chapterNumber={chapter.chapter_number}
+          />
+          <ExportButton
+            verse={verse}
+            chapterName={chapter.name}
+            chapterNumber={chapter.chapter_number}
+            textType={textType || ''}
           />
         </div>
       </div>
