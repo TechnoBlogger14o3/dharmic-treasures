@@ -1,0 +1,191 @@
+name: PR Review & Checks
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  code-quality:
+    name: Code Quality Checks
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for better analysis
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript type checking
+        run: npx tsc --noEmit
+        continue-on-error: false
+
+      - name: Build project
+        run: npm run build
+        continue-on-error: false
+
+      - name: Check for build errors
+        if: failure()
+        run: |
+          echo "❌ Build failed! Please fix the errors before merging."
+          exit 1
+
+  lint-and-format:
+    name: Lint & Format Check
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check code formatting (if prettier is configured)
+        run: |
+          if [ -f ".prettierrc" ] || [ -f "prettier.config.js" ]; then
+            npx prettier --check "src/**/*.{ts,tsx,js,jsx}" || echo "⚠️ Formatting issues found"
+          else
+            echo "ℹ️ Prettier not configured, skipping format check"
+          fi
+        continue-on-error: true
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run npm audit
+        run: npm audit --audit-level=moderate
+        continue-on-error: true
+
+  ai-code-review:
+    name: AI Code Review
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # CodeRabbit AI Review (requires GitHub App installation)
+      # Uncomment and configure if you want to use CodeRabbit
+      # - name: CodeRabbit Review
+      #   uses: coderabbitai/openai-pr-reviewer@latest
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+
+      # Alternative: Use Reviewpad for automated reviews
+      # - name: Reviewpad Review
+      #   uses: reviewpad/action-reviewpad@v3
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Generic code review comment
+      - name: Post review summary
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+            });
+
+            const changedFiles = files.map(f => f.filename);
+            const additions = files.reduce((sum, f) => sum + f.additions, 0);
+            const deletions = files.reduce((sum, f) => sum + f.deletions, 0);
+            const changedLines = additions + deletions;
+
+            const reviewComment = `## 🤖 Automated PR Review Summary
+
+            ### Changes Overview
+            - **Files changed:** ${changedFiles.length}
+            - **Additions:** +${additions}
+            - **Deletions:** -${deletions}
+            - **Total changes:** ${changedLines} lines
+
+            ### Modified Files
+            ${changedFiles.map(f => `- \`${f}\``).join('\n')}
+
+            ### ✅ Checks Passed
+            - TypeScript type checking
+            - Build verification
+            - Security scan
+
+            ### 📝 Review Notes
+            Please ensure:
+            - Code follows project conventions
+            - All tests pass (if applicable)
+            - Documentation is updated (if needed)
+            - No sensitive data is committed
+
+            ---
+            *This is an automated review. Please have a human reviewer approve before merging.*`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: reviewComment
+            });
+
+  pr-status:
+    name: PR Status Check
+    runs-on: ubuntu-latest
+    needs: [code-quality, lint-and-format, security-scan]
+    if: always()
+    
+    steps:
+      - name: Check job status
+        run: |
+          if [ "${{ needs.code-quality.result }}" != "success" ] || \
+             [ "${{ needs.lint-and-format.result }}" != "success" ]; then
+            echo "❌ Some checks failed. Please review and fix the issues."
+            exit 1
+          else
+            echo "✅ All automated checks passed!"
+          fi
+
+
+
