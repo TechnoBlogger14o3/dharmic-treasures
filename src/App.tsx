@@ -9,6 +9,8 @@ import ChapterList from './components/ChapterList'
 import ChapterView from './components/ChapterView'
 import PDFViewer from './components/PDFViewer'
 import ShaktipeethsView from './components/ShaktipeethsView'
+import CharDhamView from './components/CharDhamView'
+import JyotirlingasView from './components/JyotirlingasView'
 import ErrorBoundary from './components/ErrorBoundary'
 import BackgroundSelector from './components/BackgroundSelector'
 import FontSizeControl from './components/FontSizeControl'
@@ -43,6 +45,16 @@ const textConfigs: Record<TextType, TextConfig> = {
   shaktipeeths: {
     name: 'Shaktipeeths',
     nameHindi: 'शक्तिपीठ',
+    data: [], // Special view, not chapter-based
+  },
+  charDham: {
+    name: 'Char Dham',
+    nameHindi: 'चार धाम',
+    data: [], // Special view, not chapter-based
+  },
+  jyotirlingas: {
+    name: 'Jyotirlingas',
+    nameHindi: 'ज्योतिर्लिंग',
     data: [], // Special view, not chapter-based
   },
 }
@@ -85,7 +97,10 @@ function App() {
   const hasPDF = pdfPaths[textType] !== undefined
   const isPDFViewer = viewMode === 'pdf' && hasPDF
   const isShaktipeethsView = textType === 'shaktipeeths'
-  const isHomePage = selectedChapter === null && !isPDFViewer && !isShaktipeethsView
+  const isCharDhamView = textType === 'charDham'
+  const isJyotirlingasView = textType === 'jyotirlingas'
+  const isSpecialView = isShaktipeethsView || isCharDhamView || isJyotirlingasView
+  const isHomePage = selectedChapter === null && !isPDFViewer && !isSpecialView
 
   const handleChapterSelect = (chapterNumber: number, verseNumber?: number) => {
     setSelectedChapter(chapterNumber)
@@ -161,6 +176,14 @@ function App() {
           {isShaktipeethsView ? (
             <div key="shaktipeeths-view" className="animate-fadeIn">
               <ShaktipeethsView />
+            </div>
+          ) : isCharDhamView ? (
+            <div key="char-dham-view" className="animate-fadeIn">
+              <CharDhamView />
+            </div>
+          ) : isJyotirlingasView ? (
+            <div key="jyotirlingas-view" className="animate-fadeIn">
+              <JyotirlingasView />
             </div>
           ) : isPDFViewer ? (
             <div key="pdf-viewer" className="animate-fadeIn">

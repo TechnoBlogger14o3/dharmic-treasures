@@ -1,0 +1,282 @@
+export interface Jyotirlinga {
+  id: number
+  name: string
+  nameHindi: string
+  location: string
+  state: string
+  country: string
+  significance: string
+  significanceHindi: string
+  bestTimeToVisit: string
+  howToReach: string
+  description: string
+  puranicReference?: string
+  legend?: string
+  legendHindi?: string
+  coordinates?: {
+    lat: number
+    lng: number
+  }
+}
+
+export const jyotirlingaIntroduction = {
+  title: 'ज्योतिर्लिंग का इतिहास',
+  titleEnglish: 'History of Jyotirlingas',
+  content: `ज्योतिर्लिंग हिंदू धर्म में भगवान शिव के सबसे पवित्र रूप हैं। "ज्योति" का अर्थ है प्रकाश और "लिंग" का अर्थ है चिह्न या प्रतीक। इस प्रकार ज्योतिर्लिंग का अर्थ है "प्रकाश का चिह्न"।
+
+हिंदू धर्म में 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न भागों में स्थित हैं। ये सभी ज्योतिर्लिंग भगवान शिव के अलग-अलग रूपों का प्रतिनिधित्व करते हैं।
+
+शिव पुराण के अनुसार, भगवान शिव ने एक बार ब्रह्मा और विष्णु के बीच एक विवाद को सुलझाने के लिए एक अनंत प्रकाश स्तंभ (ज्योतिर्लिंग) प्रकट किया था। इस स्तंभ का कोई आरंभ और अंत नहीं था।
+
+12 ज्योतिर्लिंगों की पूजा करने से भक्तों को मोक्ष प्राप्त होता है और सभी पापों से मुक्ति मिलती है। प्रत्येक ज्योतिर्लिंग का अपना अद्वितीय महत्व और कथा है।`,
+  contentEnglish: `Jyotirlingas are the most sacred forms of Lord Shiva in Hinduism. "Jyoti" means light and "Linga" means sign or symbol. Thus, Jyotirlinga means "sign of light."
+
+There are 12 Jyotirlingas in Hinduism, located in different parts of India. All these Jyotirlingas represent different forms of Lord Shiva.
+
+According to the Shiva Purana, Lord Shiva once manifested an infinite pillar of light (Jyotirlinga) to resolve a dispute between Brahma and Vishnu. This pillar had no beginning or end.
+
+Worshipping the 12 Jyotirlingas grants devotees liberation and freedom from all sins. Each Jyotirlinga has its own unique significance and legend.`
+}
+
+export const jyotirlingas: Jyotirlinga[] = [
+  {
+    id: 1,
+    name: 'Somnath',
+    nameHindi: 'सोमनाथ',
+    location: 'Veraval',
+    state: 'Gujarat',
+    country: 'India',
+    significance: 'The First Jyotirlinga',
+    significanceHindi: 'प्रथम ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Diu, Nearest railway: Veraval, Road: Well connected',
+    description: 'Somnath is the first among the 12 Jyotirlingas. The temple has been destroyed and rebuilt several times throughout history. It is located on the western coast of Gujarat. The temple is mentioned in ancient texts and is believed to have been built by the Moon God (Soma) himself.',
+    puranicReference: 'Shiva Purana, Skanda Purana',
+    legend: 'The Moon God (Soma) was cursed by his father-in-law Daksha. To get rid of the curse, he worshipped Lord Shiva at this place, and Shiva appeared as Somnath.',
+    legendHindi: 'चंद्र देव को उनके ससुर दक्ष ने श्राप दिया था। श्राप से मुक्ति के लिए उन्होंने इस स्थान पर भगवान शिव की पूजा की, और शिव सोमनाथ के रूप में प्रकट हुए।',
+    coordinates: {
+      lat: 20.8880,
+      lng: 70.4010
+    }
+  },
+  {
+    id: 2,
+    name: 'Mallikarjuna',
+    nameHindi: 'मल्लिकार्जुन',
+    location: 'Srisailam',
+    state: 'Andhra Pradesh',
+    country: 'India',
+    significance: 'The Second Jyotirlinga',
+    significanceHindi: 'द्वितीय ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Hyderabad, Nearest railway: Markapur, Road: Well connected',
+    description: 'Mallikarjuna Jyotirlinga is located on the Srisailam mountain in Andhra Pradesh. The temple is dedicated to Lord Shiva and Goddess Parvati. It is one of the 18 Maha Shakti Peethas as well. The temple is situated on the banks of the Krishna River.',
+    puranicReference: 'Shiva Purana',
+    legend: 'Lord Shiva and Goddess Parvati appeared here as Mallikarjuna and Bhramaramba to bless their son Kartikeya.',
+    legendHindi: 'भगवान शिव और देवी पार्वती अपने पुत्र कार्तिकेय को आशीर्वाद देने के लिए मल्लिकार्जुन और भ्रमरांबा के रूप में यहाँ प्रकट हुए।',
+    coordinates: {
+      lat: 16.0739,
+      lng: 78.8681
+    }
+  },
+  {
+    id: 3,
+    name: 'Mahakaleshwar',
+    nameHindi: 'महाकालेश्वर',
+    location: 'Ujjain',
+    state: 'Madhya Pradesh',
+    country: 'India',
+    significance: 'The Third Jyotirlinga',
+    significanceHindi: 'तृतीय ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Indore, Nearest railway: Ujjain, Road: Well connected',
+    description: 'Mahakaleshwar is one of the most powerful Jyotirlingas, located in Ujjain. The temple is unique as the lingam faces south (Dakshinamurti). The temple is situated on the banks of the Shipra River and is one of the seven Moksha-puris in India.',
+    puranicReference: 'Shiva Purana',
+    legend: 'A demon named Dushana was terrorizing the region. Lord Shiva appeared here to protect the devotees and destroyed the demon.',
+    legendHindi: 'दुषण नामक एक राक्षस इस क्षेत्र में आतंक मचा रहा था। भगवान शिव भक्तों की रक्षा के लिए यहाँ प्रकट हुए और राक्षस का वध किया।',
+    coordinates: {
+      lat: 23.1815,
+      lng: 75.7689
+    }
+  },
+  {
+    id: 4,
+    name: 'Omkareshwar',
+    nameHindi: 'ओंकारेश्वर',
+    location: 'Khandwa',
+    state: 'Madhya Pradesh',
+    country: 'India',
+    significance: 'The Fourth Jyotirlinga',
+    significanceHindi: 'चतुर्थ ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Indore, Nearest railway: Khandwa, Road: Well connected',
+    description: 'Omkareshwar is located on an island in the Narmada River, shaped like the sacred symbol "Om". The temple is dedicated to Lord Shiva and is one of the 12 Jyotirlingas. The island is also known as Mandhata.',
+    puranicReference: 'Shiva Purana',
+    legend: 'King Mandhata performed severe penance here, and Lord Shiva appeared as Omkareshwar to bless him.',
+    legendHindi: 'राजा मांधाता ने यहाँ कठोर तपस्या की, और भगवान शिव उन्हें आशीर्वाद देने के लिए ओंकारेश्वर के रूप में प्रकट हुए।',
+    coordinates: {
+      lat: 22.2456,
+      lng: 76.1500
+    }
+  },
+  {
+    id: 5,
+    name: 'Kedarnath',
+    nameHindi: 'केदारनाथ',
+    location: 'Rudraprayag',
+    state: 'Uttarakhand',
+    country: 'India',
+    significance: 'The Fifth Jyotirlinga',
+    significanceHindi: 'पंचम ज्योतिर्लिंग',
+    bestTimeToVisit: 'May to June, September to October',
+    howToReach: 'Nearest airport: Jolly Grant, Nearest railway: Rishikesh, Road: Gaurikund (then 16 km trek)',
+    description: 'Kedarnath is one of the holiest pilgrimage sites, located in the Garhwal Himalayas. The temple is situated at an altitude of 3,583 meters. It is part of the Char Dham and Panch Kedar. The temple is believed to have been built by the Pandavas.',
+    puranicReference: 'Shiva Purana, Mahabharata',
+    legend: 'After the Mahabharata war, the Pandavas sought forgiveness from Lord Shiva. Shiva took the form of a bull and hid. When found, the hump remained at Kedarnath.',
+    legendHindi: 'महाभारत युद्ध के बाद, पांडव भगवान शिव से क्षमा मांगने आए। शिव ने बैल का रूप धारण किया और छुप गए। जब मिले, तो कूबड़ केदारनाथ में रह गया।',
+    coordinates: {
+      lat: 30.7352,
+      lng: 79.0669
+    }
+  },
+  {
+    id: 6,
+    name: 'Bhimashankar',
+    nameHindi: 'भीमाशंकर',
+    location: 'Pune',
+    state: 'Maharashtra',
+    country: 'India',
+    significance: 'The Sixth Jyotirlinga',
+    significanceHindi: 'षष्ठ ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Pune, Nearest railway: Pune, Road: Well connected',
+    description: 'Bhimashankar is located in the Sahyadri hills of Maharashtra. The temple is surrounded by dense forests and is part of the Bhimashankar Wildlife Sanctuary. The temple is believed to be the place where Lord Shiva destroyed the demon Tripurasura.',
+    puranicReference: 'Shiva Purana',
+    legend: 'Lord Shiva appeared here to destroy the demon Bhima, who was terrorizing the region. The temple is named after this legend.',
+    legendHindi: 'भगवान शिव इस क्षेत्र में आतंक मचा रहे राक्षस भीम का वध करने के लिए यहाँ प्रकट हुए। मंदिर का नाम इसी कथा से पड़ा है।',
+    coordinates: {
+      lat: 19.0700,
+      lng: 73.5350
+    }
+  },
+  {
+    id: 7,
+    name: 'Kashi Vishwanath',
+    nameHindi: 'काशी विश्वनाथ',
+    location: 'Varanasi',
+    state: 'Uttar Pradesh',
+    country: 'India',
+    significance: 'The Seventh Jyotirlinga',
+    significanceHindi: 'सप्तम ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Varanasi, Nearest railway: Varanasi, Road: Well connected',
+    description: 'Kashi Vishwanath is one of the most famous Jyotirlingas, located in Varanasi (Kashi), the oldest living city in the world. The temple is dedicated to Lord Shiva as Vishwanath (Lord of the Universe). It is believed that a visit to this temple grants liberation (Moksha).',
+    puranicReference: 'Shiva Purana, Kashi Khanda',
+    legend: 'Varanasi is considered the favorite city of Lord Shiva. It is believed that those who die in Kashi attain Moksha. The temple has been destroyed and rebuilt several times.',
+    legendHindi: 'वाराणसी भगवान शिव की प्रिय नगरी मानी जाती है। मान्यता है कि काशी में मरने वालों को मोक्ष प्राप्त होता है। मंदिर को कई बार नष्ट और पुनर्निर्मित किया गया है।',
+    coordinates: {
+      lat: 25.3176,
+      lng: 83.0058
+    }
+  },
+  {
+    id: 8,
+    name: 'Trimbakeshwar',
+    nameHindi: 'त्र्यंबकेश्वर',
+    location: 'Nashik',
+    state: 'Maharashtra',
+    country: 'India',
+    significance: 'The Eighth Jyotirlinga',
+    significanceHindi: 'अष्टम ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Nashik, Nearest railway: Nashik, Road: Well connected',
+    description: 'Trimbakeshwar is located near Nashik, on the banks of the Godavari River. The temple is unique as it has three lingams representing Brahma, Vishnu, and Shiva. The temple is also the source of the Godavari River, one of the longest rivers in India.',
+    puranicReference: 'Shiva Purana',
+    legend: 'Sage Gautama performed penance here to bring the Ganges to this place. Lord Shiva appeared and the Godavari River was born.',
+    legendHindi: 'ऋषि गौतम ने यहाँ गंगा को इस स्थान पर लाने के लिए तपस्या की। भगवान शिव प्रकट हुए और गोदावरी नदी का जन्म हुआ।',
+    coordinates: {
+      lat: 19.9328,
+      lng: 73.5317
+    }
+  },
+  {
+    id: 9,
+    name: 'Vaidyanath',
+    nameHindi: 'वैद्यनाथ',
+    location: 'Deoghar',
+    state: 'Jharkhand',
+    country: 'India',
+    significance: 'The Ninth Jyotirlinga',
+    significanceHindi: 'नवम ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Ranchi, Nearest railway: Jasidih, Road: Well connected',
+    description: 'Vaidyanath, also known as Baidyanath Dham, is located in Deoghar, Jharkhand. The temple is dedicated to Lord Shiva as Vaidyanath (Lord of Physicians). It is believed that worshipping here cures all diseases. The temple is also one of the 51 Shakti Peethas.',
+    puranicReference: 'Shiva Purana',
+    legend: 'Ravana, the demon king, performed severe penance here. Lord Shiva appeared and granted him a boon. Ravana requested Shiva to come to Lanka, but Shiva gave him a lingam to carry. The lingam was placed here when Ravana rested.',
+    legendHindi: 'राक्षस राजा रावण ने यहाँ कठोर तपस्या की। भगवान शिव प्रकट हुए और उन्हें वरदान दिया। रावण ने शिव से लंका आने का अनुरोध किया, लेकिन शिव ने उन्हें एक लिंग दिया। रावण के विश्राम करने पर लिंग यहाँ रखा गया।',
+    coordinates: {
+      lat: 24.4817,
+      lng: 86.7031
+    }
+  },
+  {
+    id: 10,
+    name: 'Nageshwar',
+    nameHindi: 'नागेश्वर',
+    location: 'Dwarka',
+    state: 'Gujarat',
+    country: 'India',
+    significance: 'The Tenth Jyotirlinga',
+    significanceHindi: 'दशम ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Jamnagar, Nearest railway: Dwarka, Road: Well connected',
+    description: 'Nageshwar is located near Dwarka in Gujarat. The temple is dedicated to Lord Shiva as Nageshwar (Lord of Snakes). The temple has a huge statue of Lord Shiva and is one of the 12 Jyotirlingas. It is believed to protect devotees from snake bites and poison.',
+    puranicReference: 'Shiva Purana',
+    legend: 'A demon named Daruka imprisoned a devotee named Supriya in a city of snakes. Supriya prayed to Lord Shiva, who appeared as Nageshwar and destroyed the demon.',
+    legendHindi: 'दारुक नामक एक राक्षस ने सुप्रिया नामक एक भक्त को सांपों के शहर में कैद कर दिया। सुप्रिया ने भगवान शिव से प्रार्थना की, जो नागेश्वर के रूप में प्रकट हुए और राक्षस का वध किया।',
+    coordinates: {
+      lat: 22.2403,
+      lng: 68.9686
+    }
+  },
+  {
+    id: 11,
+    name: 'Rameshwaram',
+    nameHindi: 'रामेश्वरम',
+    location: 'Rameshwaram',
+    state: 'Tamil Nadu',
+    country: 'India',
+    significance: 'The Eleventh Jyotirlinga',
+    significanceHindi: 'एकादश ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to April',
+    howToReach: 'Nearest airport: Madurai, Nearest railway: Rameshwaram, Road: Well connected',
+    description: 'Rameshwaram is both a Jyotirlinga and one of the Char Dham. According to the Ramayana, Lord Rama installed the lingam here before crossing to Lanka. The temple has the longest corridor among all Hindu temples in India, with 1,212 pillars.',
+    puranicReference: 'Ramayana, Shiva Purana',
+    legend: 'Lord Rama installed a Shiva lingam here before going to Lanka to rescue Sita. Hanuman was sent to bring a lingam from Kailash, but when he was delayed, Sita made a lingam from sand. This is the Rameshwaram Jyotirlinga.',
+    legendHindi: 'लंका जाने से पहले भगवान राम ने यहाँ एक शिव लिंग स्थापित किया। हनुमान को कैलाश से लिंग लाने के लिए भेजा गया, लेकिन देरी होने पर सीता ने रेत से एक लिंग बनाया। यह रामेश्वरम ज्योतिर्लिंग है।',
+    coordinates: {
+      lat: 9.2881,
+      lng: 79.3174
+    }
+  },
+  {
+    id: 12,
+    name: 'Grishneshwar',
+    nameHindi: 'घृष्णेश्वर',
+    location: 'Aurangabad',
+    state: 'Maharashtra',
+    country: 'India',
+    significance: 'The Twelfth Jyotirlinga',
+    significanceHindi: 'द्वादश ज्योतिर्लिंग',
+    bestTimeToVisit: 'October to March',
+    howToReach: 'Nearest airport: Aurangabad, Nearest railway: Aurangabad, Road: Well connected',
+    description: 'Grishneshwar, also known as Ghushmeshwar, is the last of the 12 Jyotirlingas. It is located near the Ellora Caves in Maharashtra. The temple is dedicated to Lord Shiva and is known for its beautiful architecture. The temple is close to the famous Ajanta and Ellora caves.',
+    puranicReference: 'Shiva Purana',
+    legend: 'A devout woman named Kusuma worshipped Lord Shiva daily. Her husband\'s first wife killed her son out of jealousy. Kusuma continued her worship, and Lord Shiva restored her son to life and appeared as Grishneshwar.',
+    legendHindi: 'कुसुमा नामक एक भक्त महिला प्रतिदिन भगवान शिव की पूजा करती थी। उसके पति की पहली पत्नी ने ईर्ष्या से उसके पुत्र की हत्या कर दी। कुसुमा ने अपनी पूजा जारी रखी, और भगवान शिव ने उसके पुत्र को जीवन दिया और घृष्णेश्वर के रूप में प्रकट हुए।',
+    coordinates: {
+      lat: 20.0231,
+      lng: 75.1794
+    }
+  }
+]
