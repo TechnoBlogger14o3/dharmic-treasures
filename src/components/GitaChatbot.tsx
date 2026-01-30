@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import { Chapter, Verse } from '../../types'
 
 interface ChatMessage {
@@ -32,99 +32,130 @@ const keywordMapping: Record<string, string[]> = {
   devotion: ['worship', 'prayer', 'bhakti', 'faith', 'dedication', 'surrender'],
 }
 
+const normalizeText = (text: string) => text.toLowerCase().trim().replace(/\s+/g, ' ')
+
 function expandKeywords(query: string): string[] {
-  const lowerQuery = query.toLowerCase()
-  const keywords = [lowerQuery]
-  
+  const lowerQuery = normalizeText(query)
+  const keywords = new Set<string>([lowerQuery])
+
   for (const [key, expansions] of Object.entries(keywordMapping)) {
     if (lowerQuery.includes(key)) {
-      keywords.push(...expansions)
+      expansions.forEach((term) => keywords.add(term))
     }
     for (const expansion of expansions) {
       if (lowerQuery.includes(expansion)) {
-        keywords.push(key, ...expansions)
+        keywords.add(key)
+        expansions.forEach((term) => keywords.add(term))
       }
     }
   }
-  
-  return [...new Set(keywords)]
+
+  return [...keywords]
+}
+
+interface IndexedVerse {
+  verse: Verse
+  chapter: Chapter
+  textLower: string
+  transliterationLower: string
+  meaningLower: string
+  hindiMeaningLower: string
+  chapterSummaryLower: string
+  chapterNameLower: string
+}
+
+function buildSearchIndex(chapters: Chapter[]): IndexedVerse[] {
+  const indexed: IndexedVerse[] = []
+  chapters.forEach((chapter) => {
+    const chapterSummaryLower = normalizeText(chapter.summary)
+    const chapterNameLower = normalizeText(chapter.name_meaning)
+    chapter.verses.forEach((verse) => {
+      indexed.push({
+        verse,
+        chapter,
+        textLower: normalizeText(verse.text),
+        transliterationLower: normalizeText(verse.transliteration),
+        meaningLower: normalizeText(verse.meaning),
+        hindiMeaningLower: normalizeText(verse.hindi_meaning),
+        chapterSummaryLower,
+        chapterNameLower,
+      })
+    })
+  })
+  return indexed
 }
 
 function searchRelevantVerses(
   query: string,
-  chapters: Chapter[]
+  indexedVerses: IndexedVerse[]
 ): Array<{ verse: Verse; chapter: Chapter; score: number }> {
-  const expandedKeywords = expandKeywords(query)
-  const lowerQuery = query.toLowerCase().trim()
-  const queryWords = lowerQuery.split(/\s+/).filter((w) => w.length > 2)
-  
+  const lowerQuery = normalizeText(query)
+  const expandedKeywords = expandKeywords(lowerQuery)
+  const queryWords = lowerQuery.split(' ').filter((w) => w.length > 2)
+  const wordBoundaryRegex =
+    lowerQuery.length > 2 ? new RegExp(`\\b${lowerQuery.replace(/\s+/g, '\\s+')}\\b`, 'i') : null
+
   const scoredVerses: Array<{ verse: Verse; chapter: Chapter; score: number }> = []
-  
-  chapters.forEach((chapter) => {
-    chapter.verses.forEach((verse) => {
-      let score = 0
-      const verseText = verse.text.toLowerCase()
-      const transliteration = verse.transliteration.toLowerCase()
-      const meaning = verse.meaning.toLowerCase()
-      const hindiMeaning = verse.hindi_meaning.toLowerCase()
-      const chapterSummary = chapter.summary.toLowerCase()
-      const chapterName = chapter.name_meaning.toLowerCase()
-      
-      // Exact phrase match in meaning (highest priority)
-      if (meaning.includes(lowerQuery)) {
-        score += 150
+
+  for (const entry of indexedVerses) {
+    let score = 0
+    const { verse, chapter, textLower, transliterationLower, meaningLower, hindiMeaningLower, chapterSummaryLower, chapterNameLower } = entry
+
+    // Exact phrase match in meaning (highest priority)
+    if (meaningLower.includes(lowerQuery)) {
+      score += 150
+    }
+    if (hindiMeaningLower.includes(lowerQuery)) {
+      score += 120
+    }
+
+    // Exact phrase match in chapter name/summary
+    if (chapterNameLower.includes(lowerQuery) || chapterSummaryLower.includes(lowerQuery)) {
+      score += 80
+    }
+
+    // Word boundary matches (more precise)
+    if (wordBoundaryRegex) {
+      if (wordBoundaryRegex.test(meaningLower)) score += 50
+      if (wordBoundaryRegex.test(hindiMeaningLower)) score += 40
+    }
+
+    // Expanded keyword matches (weighted by importance)
+    for (const keyword of expandedKeywords) {
+      if (meaningLower.includes(keyword)) score += 15
+      if (hindiMeaningLower.includes(keyword)) score += 12
+      if (chapterSummaryLower.includes(keyword)) score += 8
+      if (chapterNameLower.includes(keyword)) score += 10
+    }
+
+    // Original word matches
+    for (const word of queryWords) {
+      if (word.length > 3) { // Longer words are more significant
+        if (meaningLower.includes(word)) score += 8
+        if (hindiMeaningLower.includes(word)) score += 6
+      } else {
+        if (meaningLower.includes(word)) score += 4
+        if (hindiMeaningLower.includes(word)) score += 3
       }
-      if (hindiMeaning.includes(lowerQuery)) {
-        score += 120
-      }
-      
-      // Exact phrase match in chapter name/summary
-      if (chapterName.includes(lowerQuery) || chapterSummary.includes(lowerQuery)) {
-        score += 80
-      }
-      
-      // Word boundary matches (more precise)
-      const wordBoundaryRegex = new RegExp(`\\b${lowerQuery.replace(/\s+/g, '\\s+')}\\b`, 'i')
-      if (wordBoundaryRegex.test(meaning)) score += 50
-      if (wordBoundaryRegex.test(hindiMeaning)) score += 40
-      
-      // Expanded keyword matches (weighted by importance)
-      expandedKeywords.forEach((keyword) => {
-        if (meaning.includes(keyword)) score += 15
-        if (hindiMeaning.includes(keyword)) score += 12
-        if (chapterSummary.includes(keyword)) score += 8
-        if (chapterName.includes(keyword)) score += 10
-      })
-      
-      // Original word matches
-      queryWords.forEach((word) => {
-        if (word.length > 3) { // Longer words are more significant
-          if (meaning.includes(word)) score += 8
-          if (hindiMeaning.includes(word)) score += 6
-        } else {
-          if (meaning.includes(word)) score += 4
-          if (hindiMeaning.includes(word)) score += 3
-        }
-        if (transliteration.includes(word)) score += 3
-        if (verseText.includes(word)) score += 2
-        if (chapterSummary.includes(word)) score += 4
-      })
-      
-      if (score > 0) {
-        scoredVerses.push({ verse, chapter, score })
-      }
-    })
-  })
-  
+      if (transliterationLower.includes(word)) score += 3
+      if (textLower.includes(word)) score += 2
+      if (chapterSummaryLower.includes(word)) score += 4
+    }
+
+    if (score > 0) {
+      scoredVerses.push({ verse, chapter, score })
+    }
+  }
+
   // Sort by score and return top 7 (increased from 5)
   return scoredVerses.sort((a, b) => b.score - a.score).slice(0, 7)
 }
 
 function generateResponse(
   query: string,
-  chapters: Chapter[]
+  indexedVerses: IndexedVerse[]
 ): Array<{ chapter: number; verse: number; meaning: string; chapterName: string; verseId: number }> {
-  const relevantVerses = searchRelevantVerses(query, chapters)
+  const relevantVerses = searchRelevantVerses(query, indexedVerses)
   
   return relevantVerses.map(({ verse, chapter }) => ({
     chapter: chapter.chapter_number,
@@ -151,6 +182,7 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
   ])
   const [inputValue, setInputValue] = useState('')
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const indexedVerses = useMemo(() => buildSearchIndex(chapters), [chapters])
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -179,7 +211,7 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
     // Generate response
     setTimeout(() => {
       setIsLoading(false)
-      const verses = generateResponse(query, chapters)
+      const verses = generateResponse(query, indexedVerses)
       
       // Remove loading message
       setMessages((prev) => prev.filter((msg) => msg.type !== 'loading'))

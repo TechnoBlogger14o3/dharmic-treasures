@@ -226,6 +226,51 @@ function App() {
             <FontSizeControl fontSize={fontSize} onFontSizeChange={setFontSize} />
           </div>
         )}
+
+        <footer className="mt-10 border-t border-gray-200 bg-white/70 backdrop-blur-sm">
+          <div className="container mx-auto px-4 py-6 text-center text-sm text-gray-600">
+            <div className="mb-2 font-medium text-gray-700">
+              Developed by Aman Shekhar aka Techno Blogger
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+              <a
+                href="https://technoblogger14o3.github.io/my-portfolio/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-amber-600 transition-colors"
+              >
+                Portfolio
+              </a>
+              <span className="text-gray-300">|</span>
+              <a
+                href="https://www.linkedin.com/in/aman-shekhar/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-amber-600 transition-colors"
+              >
+                LinkedIn
+              </a>
+              <span className="text-gray-300">|</span>
+              <a
+                href="https://debunkmythology.blogspot.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-amber-600 transition-colors"
+              >
+                Dharmic Blog
+              </a>
+              <span className="text-gray-300">|</span>
+              <a
+                href="https://shekhar14.medium.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-amber-600 transition-colors"
+              >
+                Medium
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
     </ErrorBoundary>
   )
