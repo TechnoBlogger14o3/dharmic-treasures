@@ -227,47 +227,48 @@ function App() {
           </div>
         )}
 
-        <footer className="mt-10 border-t border-gray-200 bg-white/70 backdrop-blur-sm">
-          <div className="container mx-auto px-4 py-6 text-center text-sm text-gray-600">
-            <div className="mb-2 font-medium text-gray-700">
-              Developed by Aman Shekhar aka Techno Blogger
+        <footer className="mt-12 border-t border-amber-200/60 bg-gradient-to-r from-amber-50/80 via-white/80 to-orange-50/80">
+          <div className="container mx-auto px-4 py-8 text-center text-sm text-gray-600">
+            <div className="text-xs uppercase tracking-[0.2em] text-amber-700/70">Connect & Explore</div>
+            <div className="mt-2 text-base font-semibold text-gray-700">
+              Developed by Aman Shekhar
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
               <a
                 href="https://technoblogger14o3.github.io/my-portfolio/"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-amber-600 transition-colors"
+                className="rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-medium text-amber-800 shadow-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-900"
               >
                 Portfolio
               </a>
-              <span className="text-gray-300">|</span>
               <a
                 href="https://www.linkedin.com/in/aman-shekhar/"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-amber-600 transition-colors"
+                className="rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-medium text-amber-800 shadow-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-900"
               >
                 LinkedIn
               </a>
-              <span className="text-gray-300">|</span>
               <a
                 href="https://debunkmythology.blogspot.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-amber-600 transition-colors"
+                className="rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-medium text-amber-800 shadow-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-900"
               >
                 Dharmic Blog
               </a>
-              <span className="text-gray-300">|</span>
               <a
                 href="https://shekhar14.medium.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-amber-600 transition-colors"
+                className="rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-medium text-amber-800 shadow-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-900"
               >
                 Medium
               </a>
+            </div>
+            <div className="mt-4 text-xs text-gray-500">
+              Sharing sacred wisdom with devotion. © {new Date().getFullYear()}
             </div>
           </div>
         </footer>
