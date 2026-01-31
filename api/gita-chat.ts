@@ -30,7 +30,7 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    const response = await fetch('https://router.huggingface.co/v1/chat/completions', {
+    const response = await fetch('https://router.huggingface.co/v1/completions', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${HF_API_TOKEN}`,
@@ -38,10 +38,7 @@ export default async function handler(req: any, res: any) {
       },
       body: JSON.stringify({
         model: MODEL,
-        messages: [
-          { role: 'system', content: 'You are Krishna from the Bhagavad Gita. Answer with spiritual guidance and clarity.' },
-          { role: 'user', content: `Hello Krishna, ${query}` },
-        ],
+        prompt: buildPrompt(query),
         max_tokens: 300,
         temperature: 0.7,
       }),
@@ -54,8 +51,8 @@ export default async function handler(req: any, res: any) {
     }
 
     const generatedText =
-      typeof data?.choices?.[0]?.message?.content === 'string'
-        ? data.choices[0].message.content
+      typeof data?.choices?.[0]?.text === 'string'
+        ? data.choices[0].text
         : Array.isArray(data) && typeof data[0]?.generated_text === 'string'
           ? data[0].generated_text
           : typeof data?.generated_text === 'string'
