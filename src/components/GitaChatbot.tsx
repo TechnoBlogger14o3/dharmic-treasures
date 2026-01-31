@@ -34,6 +34,38 @@ const keywordMapping: Record<string, string[]> = {
 
 const normalizeText = (text: string) => text.toLowerCase().trim().replace(/\s+/g, ' ')
 
+const llmEndpoint = (import.meta.env.VITE_LLM_API_URL as string | undefined)?.trim()
+
+async function fetchLlmResponse(query: string): Promise<string | null> {
+  if (!llmEndpoint) return null
+
+  const controller = new AbortController()
+  const timeout = window.setTimeout(() => controller.abort(), 12000)
+
+  try {
+    const response = await fetch(llmEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query }),
+      signal: controller.signal,
+    })
+
+    if (!response.ok) return null
+    const data = await response.json()
+    if (typeof data?.reply === 'string' && data.reply.trim()) {
+      return data.reply.trim()
+    }
+    if (typeof data?.generated_text === 'string' && data.generated_text.trim()) {
+      return data.generated_text.trim()
+    }
+    return null
+  } catch {
+    return null
+  } finally {
+    window.clearTimeout(timeout)
+  }
+}
+
 function expandKeywords(query: string): string[] {
   const lowerQuery = normalizeText(query)
   const keywords = new Set<string>([lowerQuery])
@@ -188,7 +220,7 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!inputValue.trim() || isLoading) return
 
     const userMessage: ChatMessage = {
@@ -208,23 +240,27 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
     }
     setMessages((prev) => [...prev, loadingMessage])
 
-    // Generate response
-    setTimeout(() => {
-      setIsLoading(false)
-      const verses = generateResponse(query, indexedVerses)
-      
-      // Remove loading message
-      setMessages((prev) => prev.filter((msg) => msg.type !== 'loading'))
-      
+    try {
+      const [llmReply, verses] = await Promise.all([
+        fetchLlmResponse(query),
+        Promise.resolve(generateResponse(query, indexedVerses)),
+      ])
+
       const botMessage: ChatMessage = {
         type: 'bot',
-        content: verses.length > 0
-          ? `I found ${verses.length} relevant verse${verses.length > 1 ? 's' : ''} from the Bhagavad Gita. Click on any verse to read it in detail:`
-          : `I couldn't find specific verses matching "${query}". Try asking about:\n\n• Duty and Dharma\n• Karma and Actions\n• Stress and Worry\n• Happiness and Peace\n• Meditation and Yoga\n• Detachment and Renunciation\n• Knowledge and Wisdom\n• Devotion and Bhakti\n\nOr rephrase your question with different words.`,
+        content: llmReply
+          ? llmReply
+          : verses.length > 0
+            ? `I found ${verses.length} relevant verse${verses.length > 1 ? 's' : ''} from the Bhagavad Gita. Click on any verse to read it in detail:`
+            : `I couldn't find specific verses matching "${query}". Try asking about:\n\n• Duty and Dharma\n• Karma and Actions\n• Stress and Worry\n• Happiness and Peace\n• Meditation and Yoga\n• Detachment and Renunciation\n• Knowledge and Wisdom\n• Devotion and Bhakti\n\nOr rephrase your question with different words.`,
         verses: verses.length > 0 ? verses : undefined,
       }
+
+      setMessages((prev) => prev.filter((msg) => msg.type !== 'loading'))
       setMessages((prev) => [...prev, botMessage])
-    }, 800)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
