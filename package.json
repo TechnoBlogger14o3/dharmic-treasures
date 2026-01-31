@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "VITE_LLM_API_URL=\"https://dharmic-treasures-2nhn.vercel.app/api/gita-chat\" npm run build && gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",
     "tauri:build": "tauri build"
