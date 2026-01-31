@@ -30,7 +30,7 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    const response = await fetch(`https://api-inference.huggingface.co/models/${MODEL}`, {
+    const response = await fetch(`https://router.huggingface.co/models/${MODEL}`, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${HF_API_TOKEN}`,
