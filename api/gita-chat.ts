@@ -30,19 +30,20 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    const response = await fetch(`https://router.huggingface.co/models/${MODEL}`, {
+    const response = await fetch('https://router.huggingface.co/v1/chat/completions', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${HF_API_TOKEN}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        inputs: buildPrompt(query),
-        parameters: {
-          max_new_tokens: 300,
-          temperature: 0.7,
-          return_full_text: false,
-        },
+        model: MODEL,
+        messages: [
+          { role: 'system', content: 'You are Krishna from the Bhagavad Gita. Answer with spiritual guidance and clarity.' },
+          { role: 'user', content: `Hello Krishna, ${query}` },
+        ],
+        max_tokens: 300,
+        temperature: 0.7,
       }),
     })
 
@@ -53,11 +54,13 @@ export default async function handler(req: any, res: any) {
     }
 
     const generatedText =
-      Array.isArray(data) && typeof data[0]?.generated_text === 'string'
-        ? data[0].generated_text
-        : typeof data?.generated_text === 'string'
-          ? data.generated_text
-          : ''
+      typeof data?.choices?.[0]?.message?.content === 'string'
+        ? data.choices[0].message.content
+        : Array.isArray(data) && typeof data[0]?.generated_text === 'string'
+          ? data[0].generated_text
+          : typeof data?.generated_text === 'string'
+            ? data.generated_text
+            : ''
 
     res.status(200).json({
       reply: generatedText.trim(),
