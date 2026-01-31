@@ -30,7 +30,7 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    const response = await fetch('https://router.huggingface.co/v1/completions', {
+    const response = await fetch('https://router.huggingface.co/v1/responses', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${HF_API_TOKEN}`,
@@ -38,21 +38,31 @@ export default async function handler(req: any, res: any) {
       },
       body: JSON.stringify({
         model: MODEL,
-        prompt: buildPrompt(query),
+        instructions: 'You are Krishna from the Bhagavad Gita. Answer with spiritual guidance and clarity.',
+        input: `Hello Krishna, ${query}`,
         max_tokens: 300,
         temperature: 0.7,
       }),
     })
 
-    const data = await response.json()
+    const rawText = await response.text()
+    let data: any = null
+    try {
+      data = rawText ? JSON.parse(rawText) : null
+    } catch {
+      data = null
+    }
+
     if (!response.ok) {
-      res.status(502).json({ error: data?.error || 'Inference failed' })
+      res.status(502).json({ error: data?.error || rawText || 'Inference failed' })
       return
     }
 
     const generatedText =
-      typeof data?.choices?.[0]?.text === 'string'
-        ? data.choices[0].text
+      typeof data?.output_text === 'string'
+        ? data.output_text
+        : Array.isArray(data?.output) && typeof data.output[0]?.content?.[0]?.text === 'string'
+          ? data.output[0].content[0].text
         : Array.isArray(data) && typeof data[0]?.generated_text === 'string'
           ? data[0].generated_text
           : typeof data?.generated_text === 'string'
