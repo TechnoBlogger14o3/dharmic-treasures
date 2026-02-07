@@ -28,6 +28,43 @@ export default defineConfig(({ command, mode }) => {
         ignored: ['**/src-tauri/**'],
       },
     },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: (id) => {
+            // Split vendor chunks for better caching
+            if (id.includes('node_modules')) {
+              // React and React DOM
+              if (id.includes('react') || id.includes('react-dom')) {
+                return 'react-vendor'
+              }
+              // Three.js and related 3D libraries
+              if (id.includes('three') || id.includes('@react-three')) {
+                return 'three-vendor'
+              }
+              // Leaflet and map libraries
+              if (id.includes('leaflet') || id.includes('react-leaflet')) {
+                return 'map-vendor'
+              }
+              // PDF libraries
+              if (id.includes('pdf') || id.includes('pdfjs')) {
+                return 'pdf-vendor'
+              }
+              // Other vendor code
+              return 'vendor'
+            }
+            // Split data files into separate chunks
+            if (id.includes('/data/')) {
+              const match = id.match(/data\/([^/]+)\.ts/)
+              if (match) {
+                return `data-${match[1]}`
+              }
+            }
+          },
+        },
+      },
+      chunkSizeWarningLimit: 600,
+    },
   }
 })
 
