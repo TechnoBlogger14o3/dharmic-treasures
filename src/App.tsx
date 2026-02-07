@@ -1,61 +1,64 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import { TextType, TextConfig } from '../types'
-import { gitaChapters } from '../data/gita'
-import { hanumanChalisa } from '../data/hanumanChalisa'
-import { sunderkandChapters } from '../data/sunderkand'
-import { bajrangBaan } from '../data/bajrangBaan'
-import { yakshaPrashna } from '../data/yakshaPrashn'
-import ChapterList from './components/ChapterList'
-import ChapterView from './components/ChapterView'
-import PDFViewer from './components/PDFViewer'
-import ShaktipeethsView from './components/ShaktipeethsView'
-import CharDhamView from './components/CharDhamView'
-import JyotirlingasView from './components/JyotirlingasView'
 import ErrorBoundary from './components/ErrorBoundary'
 import BackgroundSelector from './components/BackgroundSelector'
 import FontSizeControl from './components/FontSizeControl'
+import LoadingSpinner from './components/LoadingSpinner'
 import { getSettings, saveSettings, getProgress } from './utils/storage'
 
-const textConfigs: Record<TextType, TextConfig> = {
+// Lazy load heavy components - only load when needed
+const ChapterList = lazy(() => import('./components/ChapterList'))
+const ChapterView = lazy(() => import('./components/ChapterView'))
+const PDFViewer = lazy(() => import('./components/PDFViewer'))
+const ShaktipeethsView = lazy(() => import('./components/ShaktipeethsView'))
+const CharDhamView = lazy(() => import('./components/CharDhamView'))
+const JyotirlingasView = lazy(() => import('./components/JyotirlingasView'))
+
+// Lazy load data files - load only when text type is selected
+const loadGitaData = () => import('../data/gita').then(m => ({ default: m.gitaChapters }))
+const loadHanumanChalisaData = () => import('../data/hanumanChalisa').then(m => ({ default: m.hanumanChalisa }))
+const loadSunderkandData = () => import('../data/sunderkand').then(m => ({ default: m.sunderkandChapters }))
+const loadBajrangBaanData = () => import('../data/bajrangBaan').then(m => ({ default: m.bajrangBaan }))
+const loadYakshaPrashnaData = () => import('../data/yakshaPrashn').then(m => ({ default: m.yakshaPrashna }))
+
+// Text configs without data - data will be loaded lazily
+const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?: () => Promise<any> }> = {
   gita: {
     name: 'Bhagavad Gita',
     nameHindi: 'भगवद्गीता',
-    data: gitaChapters,
+    dataLoader: loadGitaData,
   },
   hanumanChalisa: {
     name: 'Hanuman Chalisa',
     nameHindi: 'हनुमान चालीसा',
-    data: hanumanChalisa,
+    dataLoader: loadHanumanChalisaData,
   },
   sunderkand: {
     name: 'Sunderkand',
     nameHindi: 'सुन्दरकाण्ड',
-    data: sunderkandChapters,
+    dataLoader: loadSunderkandData,
   },
   bajrangBaan: {
     name: 'Bajrang Baan',
     nameHindi: 'बजरंग बाण',
-    data: bajrangBaan,
+    dataLoader: loadBajrangBaanData,
   },
   yakshaPrashna: {
     name: 'Yaksha Prashna',
     nameHindi: 'यक्ष प्रश्न',
-    data: yakshaPrashna,
+    dataLoader: loadYakshaPrashnaData,
   },
   shaktipeeths: {
     name: 'Shaktipeeths',
     nameHindi: 'शक्तिपीठ',
-    data: [], // Special view, not chapter-based
   },
   charDham: {
     name: 'Char Dham',
     nameHindi: 'चार धाम',
-    data: [], // Special view, not chapter-based
   },
   jyotirlingas: {
     name: 'Jyotirlingas',
     nameHindi: 'ज्योतिर्लिंग',
-    data: [], // Special view, not chapter-based
   },
 }
 
@@ -73,6 +76,42 @@ function App() {
   const [backgroundTheme, setBackgroundTheme] = useState<string>(savedSettings.backgroundTheme)
   const [fontSize, setFontSize] = useState<number>(savedSettings.fontSize)
   const [viewMode, setViewMode] = useState<'text' | 'pdf'>('text')
+  const [textDataCache, setTextDataCache] = useState<Record<TextType, any[]>>({} as Record<TextType, any[]>)
+  const [isLoadingData, setIsLoadingData] = useState(false)
+
+  // Lazy load data when text type changes
+  useEffect(() => {
+    const config = textConfigsBase[textType]
+    
+    // If data is already cached, skip loading
+    if (textDataCache[textType] && textDataCache[textType].length > 0) {
+      setIsLoadingData(false)
+      return
+    }
+    
+    // If it's a special view (no data), skip
+    if (!config.dataLoader) {
+      setIsLoadingData(false)
+      return
+    }
+    
+    // Load data lazily
+    setIsLoadingData(true)
+    config.dataLoader()
+      .then((data) => {
+        const loadedData = data.default || data
+        setTextDataCache((prev) => ({
+          ...prev,
+          [textType]: loadedData,
+        }))
+      })
+      .catch((error) => {
+        console.error(`Error loading data for ${textType}:`, error)
+      })
+      .finally(() => {
+        setIsLoadingData(false)
+      })
+  }, [textType])
 
   // Restore reading progress on mount
   useEffect(() => {
@@ -93,7 +132,12 @@ function App() {
     })
   }, [fontSize, backgroundTheme])
 
-  const currentText = textConfigs[textType]
+  const currentTextConfig = textConfigsBase[textType]
+  const currentTextData = textDataCache[textType] || []
+  const currentText: TextConfig = {
+    ...currentTextConfig,
+    data: currentTextData,
+  }
   const hasPDF = pdfPaths[textType] !== undefined
   const isPDFViewer = viewMode === 'pdf' && hasPDF
   const isShaktipeethsView = textType === 'shaktipeeths'
@@ -137,7 +181,7 @@ function App() {
               {/* Text Type Selector - Scrollable on mobile */}
               <div className="flex-1 overflow-x-auto scrollbar-hide -mx-3 sm:mx-0 px-3 sm:px-0">
                 <div className="flex items-center gap-2 sm:gap-3 min-w-max sm:flex-wrap sm:justify-center">
-                  {(Object.keys(textConfigs) as TextType[]).map((type) => (
+                  {(Object.keys(textConfigsBase) as TextType[]).map((type) => (
                     <button
                       key={type}
                       onClick={() => {
@@ -152,8 +196,8 @@ function App() {
                           : 'bg-white text-gray-700 hover:bg-amber-100 active:bg-amber-200 border border-gray-200'
                       }`}
                     >
-                      <div className="text-xs sm:text-sm md:text-base whitespace-nowrap">{textConfigs[type].nameHindi}</div>
-                      <div className="text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">{textConfigs[type].name}</div>
+                      <div className="text-xs sm:text-sm md:text-base whitespace-nowrap">{textConfigsBase[type].nameHindi}</div>
+                      <div className="text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">{textConfigsBase[type].name}</div>
                     </button>
                   ))}
                 </div>
@@ -174,49 +218,63 @@ function App() {
         {/* Main Content */}
         <div className="relative z-10">
           {isShaktipeethsView ? (
-            <div key="shaktipeeths-view" className="animate-fadeIn">
-              <ShaktipeethsView />
-            </div>
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="shaktipeeths-view" className="animate-fadeIn">
+                <ShaktipeethsView />
+              </div>
+            </Suspense>
           ) : isCharDhamView ? (
-            <div key="char-dham-view" className="animate-fadeIn">
-              <CharDhamView />
-            </div>
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="char-dham-view" className="animate-fadeIn">
+                <CharDhamView />
+              </div>
+            </Suspense>
           ) : isJyotirlingasView ? (
-            <div key="jyotirlingas-view" className="animate-fadeIn">
-              <JyotirlingasView />
-            </div>
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="jyotirlingas-view" className="animate-fadeIn">
+                <JyotirlingasView />
+              </div>
+            </Suspense>
           ) : isPDFViewer ? (
-            <div key="pdf-viewer" className="animate-fadeIn">
-              <PDFViewer
-                pdfPath={pdfPaths[textType]!}
-                title={currentText.name}
-                titleHindi={currentText.nameHindi}
-                onBack={handleBackToHome}
-              />
-            </div>
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="pdf-viewer" className="animate-fadeIn">
+                <PDFViewer
+                  pdfPath={pdfPaths[textType]!}
+                  title={currentText.name}
+                  titleHindi={currentText.nameHindi}
+                  onBack={handleBackToHome}
+                />
+              </div>
+            </Suspense>
+          ) : isLoadingData || (currentTextConfig.dataLoader && !currentTextData.length) ? (
+            <LoadingSpinner />
           ) : isHomePage ? (
-            <div key="chapter-list" className="animate-fadeIn">
-              <ChapterList
-                chapters={currentText.data}
-                textName={currentText.name}
-                textNameHindi={currentText.nameHindi}
-                onChapterSelect={handleChapterSelect}
-                textType={textType}
-                hasPDF={hasPDF}
-                onViewPDF={handleViewPDF}
-              />
-            </div>
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="chapter-list" className="animate-fadeIn">
+                <ChapterList
+                  chapters={currentText.data}
+                  textName={currentText.name}
+                  textNameHindi={currentText.nameHindi}
+                  onChapterSelect={handleChapterSelect}
+                  textType={textType}
+                  hasPDF={hasPDF}
+                  onViewPDF={handleViewPDF}
+                />
+              </div>
+            </Suspense>
           ) : (
-            <div key="chapter-view" className="animate-fadeIn">
-              <ChapterView
-                chapter={currentText.data.find((ch) => ch.chapter_number === selectedChapter)!}
-                currentVerse={selectedVerse}
-                onVerseChange={setSelectedVerse}
-                onBack={handleBackToHome}
-                fontSize={fontSize}
-                textType={textType}
-              />
-            </div>
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="chapter-view" className="animate-fadeIn">
+                <ChapterView
+                  chapter={currentText.data.find((ch) => ch.chapter_number === selectedChapter)!}
+                  currentVerse={selectedVerse}
+                  onVerseChange={setSelectedVerse}
+                  onBack={handleBackToHome}
+                  fontSize={fontSize}
+                  textType={textType}
+                />
+              </div>
+            </Suspense>
           )}
         </div>
 
