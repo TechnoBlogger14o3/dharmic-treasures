@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useMemo } from 'react'
 import { Chapter, Verse } from '../../types'
+import { generateLLMResponse } from '../utils/browserLLM'
 
 interface ChatMessage {
   type: 'user' | 'bot' | 'loading'
@@ -174,6 +175,8 @@ interface GitaChatbotProps {
 export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbotProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [useLLM, setUseLLM] = useState(false)
+  const [llmStatus, setLlmStatus] = useState<'idle' | 'initializing' | 'ready' | 'error'>('idle')
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       type: 'bot',
@@ -184,11 +187,39 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const indexedVerses = useMemo(() => buildSearchIndex(chapters), [chapters])
 
+  // Initialize LLM when enabled
+  useEffect(() => {
+    if (useLLM && llmStatus === 'idle') {
+      setLlmStatus('initializing')
+      // Dynamically import and initialize LLM
+      import('../utils/browserLLM')
+        .then(async (module) => {
+          try {
+            // Check if already initialized
+            if (!module.isLLMAvailable()) {
+              // Initialize pipeline (this will download model on first use)
+              await module.generateLLMResponse('test', [])
+            }
+            setLlmStatus('ready')
+          } catch (error) {
+            console.error('LLM initialization error:', error)
+            setLlmStatus('error')
+            setUseLLM(false) // Fallback to keyword search
+          }
+        })
+        .catch((error) => {
+          console.error('Failed to load LLM:', error)
+          setLlmStatus('error')
+          setUseLLM(false)
+        })
+    }
+  }, [useLLM, llmStatus])
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!inputValue.trim() || isLoading) return
 
     const userMessage: ChatMessage = {
@@ -201,21 +232,68 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
     setInputValue('')
     setIsLoading(true)
 
+    // First, find relevant verses using keyword search
+    const verses = generateResponse(query, indexedVerses)
+    const verseData = verses.map((v) => ({
+      chapter: v.chapter,
+      verse: v.verse,
+      meaning: v.meaning,
+      chapterName: v.chapterName,
+    }))
+
     // Add loading message
     const loadingMessage: ChatMessage = {
       type: 'loading',
-      content: 'Searching the Bhagavad Gita...',
+      content: useLLM && llmStatus === 'ready' ? 'Generating AI response...' : 'Searching the Bhagavad Gita...',
     }
     setMessages((prev) => [...prev, loadingMessage])
 
-    // Generate response
-    setTimeout(() => {
-      setIsLoading(false)
-      const verses = generateResponse(query, indexedVerses)
+    try {
+      let botContent = ''
+
+      // Try to use LLM if enabled and ready
+      if (useLLM && llmStatus === 'ready' && verses.length > 0) {
+        try {
+          const llmResponse = await generateLLMResponse(query, verseData)
+          
+          if (llmResponse.text && !llmResponse.error) {
+            // LLM generated a response
+            botContent = llmResponse.text
+          } else {
+            // LLM failed, fall back to keyword search
+            botContent = verses.length > 0
+              ? `I found ${verses.length} relevant verse${verses.length > 1 ? 's' : ''} from the Bhagavad Gita. Click on any verse to read it in detail:`
+              : `I couldn't find specific verses matching "${query}". Try asking about:\n\n• Duty and Dharma\n• Karma and Actions\n• Stress and Worry\n• Happiness and Peace\n• Meditation and Yoga\n• Detachment and Renunciation\n• Knowledge and Wisdom\n• Devotion and Bhakti\n\nOr rephrase your question with different words.`
+          }
+        } catch (error) {
+          console.error('LLM error:', error)
+          // Fallback to keyword search
+          botContent = verses.length > 0
+            ? `I found ${verses.length} relevant verse${verses.length > 1 ? 's' : ''} from the Bhagavad Gita. Click on any verse to read it in detail:`
+            : `I couldn't find specific verses matching "${query}". Try asking about:\n\n• Duty and Dharma\n• Karma and Actions\n• Stress and Worry\n• Happiness and Peace\n• Meditation and Yoga\n• Detachment and Renunciation\n• Knowledge and Wisdom\n• Devotion and Bhakti\n\nOr rephrase your question with different words.`
+        }
+      } else {
+        // Use keyword search (default)
+        botContent = verses.length > 0
+          ? `I found ${verses.length} relevant verse${verses.length > 1 ? 's' : ''} from the Bhagavad Gita. Click on any verse to read it in detail:`
+          : `I couldn't find specific verses matching "${query}". Try asking about:\n\n• Duty and Dharma\n• Karma and Actions\n• Stress and Worry\n• Happiness and Peace\n• Meditation and Yoga\n• Detachment and Renunciation\n• Knowledge and Wisdom\n• Devotion and Bhakti\n\nOr rephrase your question with different words.`
+      }
 
       // Remove loading message
       setMessages((prev) => prev.filter((msg) => msg.type !== 'loading'))
 
+      const botMessage: ChatMessage = {
+        type: 'bot',
+        content: botContent,
+        verses: verses.length > 0 ? verses : undefined,
+      }
+      setMessages((prev) => [...prev, botMessage])
+    } catch (error) {
+      console.error('Error generating response:', error)
+      // Remove loading message
+      setMessages((prev) => prev.filter((msg) => msg.type !== 'loading'))
+      
+      // Fallback response
       const botMessage: ChatMessage = {
         type: 'bot',
         content: verses.length > 0
@@ -224,7 +302,9 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
         verses: verses.length > 0 ? verses : undefined,
       }
       setMessages((prev) => [...prev, botMessage])
-    }, 800)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -266,22 +346,54 @@ export default function GitaChatbot({ chapters, onNavigateToVerse }: GitaChatbot
           <div className="bg-amber-500 text-white p-4 sm:rounded-t-xl flex items-center justify-between flex-shrink-0">
             <div>
               <h3 className="font-semibold text-base sm:text-lg">Gita Chatbot</h3>
-              <p className="text-xs text-amber-100">Ask me anything</p>
+              <p className="text-xs text-amber-100">
+                {useLLM && llmStatus === 'ready' ? '🤖 AI-Powered' : 'Ask me anything'}
+              </p>
             </div>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="text-white hover:text-amber-100 active:text-amber-200 transition-colors p-2 -mr-2 touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
-              aria-label="Close Chatbot"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+            <div className="flex items-center gap-2">
+              {/* LLM Toggle */}
+              <button
+                onClick={() => {
+                  if (!useLLM) {
+                    setUseLLM(true)
+                  } else {
+                    setUseLLM(false)
+                  }
+                }}
+                className={`text-white hover:text-amber-100 active:text-amber-200 transition-colors p-2 touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center ${
+                  useLLM && llmStatus === 'ready' ? 'opacity-100' : 'opacity-70'
+                }`}
+                aria-label="Toggle AI Mode"
+                title={useLLM ? 'AI Mode Enabled' : 'Enable AI Mode (requires model download)'}
+              >
+                {llmStatus === 'initializing' ? (
+                  <div className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent"></div>
+                ) : (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
+                  </svg>
+                )}
+              </button>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-white hover:text-amber-100 active:text-amber-200 transition-colors p-2 -mr-2 touch-manipulation min-w-[44px] min-h-[44px] flex items-center justify-center"
+                aria-label="Close Chatbot"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Messages */}
