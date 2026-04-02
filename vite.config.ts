@@ -12,10 +12,13 @@ export default defineConfig(({ command, mode }) => {
     process.env.TAURI_DEBUG
   )
   
+  // Web: default '/' for custom domain / Hostinger root. For GitHub Pages under a subpath, run:
+  //   VITE_BASE=/dharmic-treasures/ npm run build
+  const webBase = (process.env.VITE_BASE ?? '/').replace(/\/?$/, '/')
+
   return {
     plugins: [react()],
-    // Use '/' for Tauri (local file system), '/dharmic-treasures/' for web deployment
-    base: isTauri ? '/' : '/dharmic-treasures/',
+    base: isTauri ? '/' : webBase,
     // Clear screen on restart for better dev experience
     clearScreen: false,
     // Tauri expects a fixed port, fail if that port is not available
