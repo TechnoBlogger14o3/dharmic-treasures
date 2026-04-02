@@ -1,5 +1,16 @@
 # Hostinger MCP setup
 
+## Automation (deploy the website)
+
+**Uploading `dist/` to shared hosting is not done by the Hostinger REST API or MCP.** Use one of these:
+
+- **GitHub Actions + FTP** — see [`DEPLOY.md`](../DEPLOY.md) (workflow [`.github/workflows/deploy-hostinger.yml`](../.github/workflows/deploy-hostinger.yml)).
+- **Manual** — build locally, upload `dist/` in hPanel File Manager.
+
+Use **MCP** below when you want the AI to call the **Hostinger API** (VPS, billing, DNS, etc.), not to replace FTP deploy.
+
+---
+
 ## Option A — Official npm package (recommended by Hostinger)
 
 Uses [`hostinger-api-mcp`](https://www.npmjs.com/package/hostinger-api-mcp) from npm. Environment variable: **`API_TOKEN`**.

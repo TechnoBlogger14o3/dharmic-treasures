@@ -281,6 +281,11 @@ npm run build
 
 This creates an optimized production build in the `dist` directory.
 
+#### Deploy to Hostinger (automated)
+
+GitHub Actions can build and upload `dist/` over **FTP** on every push to `main`. Configure repository secrets and optional AdSense slot as described in **[DEPLOY.md](./DEPLOY.md)**.  
+**Note:** The Hostinger **MCP** uses the Hostinger **API** (VPS, billing, etc.); it does not upload website files—use the workflow or manual upload for that.
+
 ### 5. Preview Production Build
 
 ```bash

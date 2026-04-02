@@ -1,0 +1,55 @@
+# Deploy static Vite build to Hostinger shared hosting via FTP.
+# The Hostinger REST API (MCP) does not upload files to public_html — use this workflow or hPanel/Git.
+
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Optional AdSense slot (bakes into dist via public/)
+        env:
+          ADSENSE_SLOT: ${{ secrets.ADSENSE_SLOT }}
+        run: |
+          if [ -n "$ADSENSE_SLOT" ]; then
+            mkdir -p public
+            node -e "require('fs').writeFileSync('public/adsense-config.json', JSON.stringify({ slot: process.env.ADSENSE_SLOT }))"
+          fi
+
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy dist to Hostinger (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.HOSTINGER_FTP_HOST }}
+          username: ${{ secrets.HOSTINGER_FTP_USER }}
+          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          local-dir: ./dist/
+          # FTP login root differs by account; change if files land in the wrong folder (see DEPLOY.md)
+          server-dir: /public_html/
+          dangerous-clean-slate: false
+          log-level: verbose
