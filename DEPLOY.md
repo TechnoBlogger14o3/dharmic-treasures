@@ -16,12 +16,6 @@ In the repo: **Settings → Secrets and variables → Actions → New repository
 | `HOSTINGER_FTP_USER` | FTP username |
 | `HOSTINGER_FTP_PASSWORD` | FTP password |
 
-Optional:
-
-| Secret | Description |
-|--------|-------------|
-| `ADSENSE_SLOT` | Numeric **ad unit slot** only. If set, CI writes `public/adsense-config.json` before build so ads work without committing that file. |
-
 ### FTP remote folder
 
 The workflow uses `server-dir: /public_html/`. If your FTP user opens **above** `public_html`, you may need to change `server-dir` in the workflow (e.g. `/domains/dharmic-treasures.com/public_html/`). Check in FileZilla or hPanel where `index.html` lives.
@@ -62,13 +56,10 @@ npm run build
 
 Upload everything inside **`dist/`** to `public_html` (see main project README / Hostinger docs).
 
-Optional: add **`adsense-config.json`** next to `index.html` (copy from [`public/adsense-config.example.json`](public/adsense-config.example.json)).
-
 ---
 
 ## 4. AdSense checklist
 
-- Script in `index.html` (publisher id).
-- **Slot** via `ADSENSE_SLOT` secret (CI), or `VITE_ADSENSE_AD_SLOT` in `.env` before local build, or `adsense-config.json` on the server.
+- Publisher id and ad unit slots are in [`src/constants/adsense.ts`](src/constants/adsense.ts); the loader script is in `index.html`.
 - AdSense account **approved**; new sites may show blanks until Google finishes review.
 - Disable ad blockers when testing.

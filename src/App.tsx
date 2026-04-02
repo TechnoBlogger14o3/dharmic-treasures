@@ -1,7 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from 'react'
 import { TextType, TextConfig } from '../types'
 import ErrorBoundary from './components/ErrorBoundary'
-import AdSenseBanner from './components/AdSenseBanner'
+import AdSenseUnit from './components/AdSenseUnit'
 import BackgroundSelector from './components/BackgroundSelector'
 import FontSizeControl from './components/FontSizeControl'
 import LoadingSpinner from './components/LoadingSpinner'
@@ -288,8 +288,8 @@ function App() {
 
         <footer className="mt-12 border-t border-amber-200/60 bg-gradient-to-r from-amber-50/80 via-white/80 to-orange-50/80">
           <div className="container mx-auto px-4 py-8 text-center text-sm text-gray-600">
-            <div className="mb-6 flex justify-center">
-              <AdSenseBanner className="w-full" />
+            <div className="mb-6 flex justify-center px-2">
+              <AdSenseUnit variant="display" className="w-full" />
             </div>
             <div className="text-xs uppercase tracking-[0.2em] text-amber-700/70">Connect & Explore</div>
             <div className="mt-2 text-base font-semibold text-gray-700">

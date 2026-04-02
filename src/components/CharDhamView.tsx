@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import AdSenseUnit from './AdSenseUnit'
 import L from 'leaflet'
 import { charDham, charDhamIntroduction, CharDham } from '../../data/charDham'
 import 'leaflet/dist/leaflet.css'
@@ -161,6 +162,10 @@ export default function CharDhamView() {
             <p className="text-gray-600 text-sm font-semibold mb-2">{charDhamIntroduction.titleEnglish}</p>
             <p className="text-gray-700 leading-relaxed whitespace-pre-line text-sm">{charDhamIntroduction.contentEnglish}</p>
           </div>
+        </div>
+
+        <div className="my-6 flex justify-center px-2">
+          <AdSenseUnit variant="multiplex" className="w-full" />
         </div>
 
         {/* Map Toggle */}
