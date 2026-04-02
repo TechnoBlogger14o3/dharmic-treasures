@@ -28,15 +28,6 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Optional AdSense slot (bakes into dist via public/)
-        env:
-          ADSENSE_SLOT: ${{ secrets.ADSENSE_SLOT }}
-        run: |
-          if [ -n "$ADSENSE_SLOT" ]; then
-            mkdir -p public
-            node -e "require('fs').writeFileSync('public/adsense-config.json', JSON.stringify({ slot: process.env.ADSENSE_SLOT }))"
-          fi
-
       - name: Install and build
         run: |
           npm ci
