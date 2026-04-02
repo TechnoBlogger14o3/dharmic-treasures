@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 declare global {
   interface Window {
@@ -8,14 +8,50 @@ declare global {
 
 const DEFAULT_CLIENT = 'ca-pub-8542326322762354'
 
+type AdsenseJson = { slot?: string }
+
+function configUrl(): string {
+  const base = import.meta.env.BASE_URL || '/'
+  const name = 'adsense-config.json'
+  return base.endsWith('/') ? `${base}${name}` : `${base}/${name}`
+}
+
 /**
- * Display ad unit. Create a unit in AdSense → Ads → By ad unit → copy the **data-ad-slot** value
- * into VITE_ADSENSE_AD_SLOT (see .env.example).
+ * Display ad unit. Slot can be set at **build time** via `VITE_ADSENSE_AD_SLOT` in `.env`,
+ * or at **runtime** by uploading `public/adsense-config.json` next to `index.html` (no rebuild).
+ * Create `adsense-config.json` from `public/adsense-config.example.json`.
  */
 export default function AdSenseBanner({ className = '' }: { className?: string }) {
   const insRef = useRef<HTMLModElement>(null)
   const client = import.meta.env.VITE_ADSENSE_CLIENT_ID || DEFAULT_CLIENT
-  const slot = import.meta.env.VITE_ADSENSE_AD_SLOT?.trim()
+  const envSlot = import.meta.env.VITE_ADSENSE_AD_SLOT?.trim()
+  const [runtimeSlot, setRuntimeSlot] = useState<string | null>(null)
+  const [fetchError, setFetchError] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (envSlot) return
+    let cancelled = false
+    fetch(configUrl(), { cache: 'no-store' })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`)
+        return r.json() as Promise<AdsenseJson>
+      })
+      .then((data) => {
+        if (cancelled || !data?.slot) return
+        const s = String(data.slot).trim()
+        if (s) setRuntimeSlot(s)
+      })
+      .catch(() => {
+        if (!cancelled && import.meta.env.DEV) {
+          setFetchError('Optional adsense-config.json not found or invalid (OK if you use .env only).')
+        }
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [envSlot])
+
+  const slot = envSlot || runtimeSlot
 
   useEffect(() => {
     if (!slot || !insRef.current) return
@@ -32,8 +68,13 @@ export default function AdSenseBanner({ className = '' }: { className?: string }
         <div
           className={`rounded-lg border border-dashed border-amber-300 bg-amber-50/80 px-3 py-2 text-xs text-amber-900 ${className}`}
         >
-          AdSense: set <code className="rounded bg-white/80 px-1">VITE_ADSENSE_AD_SLOT</code> in{' '}
-          <code className="rounded bg-white/80 px-1">.env</code> (from AdSense → Ad units).
+          <p>
+            AdSense: set <code className="rounded bg-white/80 px-1">VITE_ADSENSE_AD_SLOT</code> in{' '}
+            <code className="rounded bg-white/80 px-1">.env</code> and rebuild, <strong>or</strong> add{' '}
+            <code className="rounded bg-white/80 px-1">adsense-config.json</code> to <code className="rounded bg-white/80 px-1">public/</code>{' '}
+            (see <code className="rounded bg-white/80 px-1">adsense-config.example.json</code>) and rebuild once, or upload that JSON to the server with <code className="rounded bg-white/80 px-1">index.html</code>.
+          </p>
+          {fetchError && <p className="mt-1 text-amber-800">{fetchError}</p>}
         </div>
       )
     }
