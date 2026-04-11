@@ -31,3 +31,9 @@ dist-ssr
 src-tauri/target
 src-tauri/Cargo.lock
 
+# Claude Code
+.claude/
+
+# Vite temp files
+*.timestamp-*.mjs
+
