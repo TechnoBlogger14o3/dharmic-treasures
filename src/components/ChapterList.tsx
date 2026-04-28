@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { Chapter, TextType } from '../../types'
 import SearchBar from './SearchBar'
 import GitaChatbot from './GitaChatbot'
-import AdSenseUnit from './AdSenseUnit'
 
 interface ChapterListProps {
   chapters: Chapter[]
@@ -111,10 +110,6 @@ export default function ChapterList({
           <p className="text-gray-500 text-lg">No chapters found matching "{searchQuery}"</p>
         </div>
       )}
-
-      <div className="my-8 flex justify-center px-2">
-        <AdSenseUnit variant="multiplex" className="w-full" />
-      </div>
 
       {/* Gita Chatbot - Only for Bhagavad Gita */}
       {textType === 'gita' && (

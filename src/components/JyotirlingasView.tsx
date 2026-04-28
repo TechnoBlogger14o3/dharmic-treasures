@@ -2,7 +2,6 @@ import { useState, useMemo } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import { jyotirlingas, jyotirlingaIntroduction, Jyotirlinga } from '../../data/jyotirlingas'
-import AdSenseUnit from './AdSenseUnit'
 import 'leaflet/dist/leaflet.css'
 
 // Fix for default marker icons
@@ -184,10 +183,6 @@ export default function JyotirlingasView() {
             <p className="text-gray-600 text-sm font-semibold mb-2">{jyotirlingaIntroduction.titleEnglish}</p>
             <p className="text-gray-700 leading-relaxed whitespace-pre-line text-sm">{jyotirlingaIntroduction.contentEnglish}</p>
           </div>
-        </div>
-
-        <div className="my-6 flex justify-center px-2">
-          <AdSenseUnit variant="multiplex" className="w-full" />
         </div>
 
         {/* Controls */}
