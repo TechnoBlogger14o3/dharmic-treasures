@@ -7,7 +7,6 @@ import BookmarkButton from './BookmarkButton'
 import ExportButton from './ExportButton'
 import { saveProgress } from '../utils/storage'
 import { useEffect } from 'react'
-import AdSenseUnit from './AdSenseUnit'
 
 interface ChapterViewProps {
   chapter: Chapter
@@ -153,10 +152,6 @@ export default function ChapterView({
         <div className="mb-4 sm:mb-6">
           <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Transliteration:</div>
           <div className={`text-base sm:text-lg italic leading-relaxed ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse.transliteration}</div>
-        </div>
-
-        <div className="my-6 flex justify-center px-1">
-          <AdSenseUnit variant="inArticle" className="w-full" />
         </div>
 
         {/* Hindi Meaning */}

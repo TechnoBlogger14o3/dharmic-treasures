@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react'
 import { shaktipeethIntroduction, shaktipeethCountByState, shaktipeeths, Shaktipeeth } from '../../data/shaktipeeths'
 import ShaktipeethsMap from './ShaktipeethsMap'
-import AdSenseUnit from './AdSenseUnit'
 
 interface ShaktipeethModalProps {
   peeth: Shaktipeeth | null
@@ -311,10 +310,6 @@ export default function ShaktipeethsView() {
               <div className="whitespace-pre-line text-gray-600">{shaktipeethIntroduction.contentEnglish}</div>
             </div>
           </div>
-        </div>
-
-        <div className="my-6 flex justify-center px-2">
-          <AdSenseUnit variant="multiplex" className="w-full" />
         </div>
 
         {/* Statistics and Visualizations */}

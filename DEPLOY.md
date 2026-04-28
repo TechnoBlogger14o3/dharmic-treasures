@@ -56,10 +56,3 @@ npm run build
 
 Upload everything inside **`dist/`** to `public_html` (see main project README / Hostinger docs).
 
----
-
-## 4. AdSense checklist
-
-- Publisher id and ad unit slots are in [`src/constants/adsense.ts`](src/constants/adsense.ts); the loader script is in `index.html`.
-- AdSense account **approved**; new sites may show blanks until Google finishes review.
-- Disable ad blockers when testing.

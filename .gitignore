@@ -12,7 +12,6 @@ dist
 .env
 .env.*
 !.env.example
-public/adsense-config.json
 dist-ssr
 *.local
 
