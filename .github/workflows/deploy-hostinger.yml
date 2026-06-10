@@ -33,7 +33,7 @@ jobs:
           username: ${{ secrets.HOSTINGER_FTP_USER }}
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: /public_html/
+          server-dir: /domains/dharmic-treasures.com/public_html/
           dangerous-clean-slate: false
           timeout: 120000
           log-level: verbose
