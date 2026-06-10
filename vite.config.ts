@@ -34,6 +34,12 @@ export default defineConfig(({ command, mode }) => {
     build: {
       rollupOptions: {
         output: {
+          assetFileNames: (assetInfo) => {
+            if (assetInfo.name?.includes('pdf.worker')) {
+              return 'assets/pdf.worker-[hash].js'
+            }
+            return 'assets/[name]-[hash][extname]'
+          },
           manualChunks: (id) => {
             // Split vendor chunks for better caching
             if (id.includes('node_modules')) {
