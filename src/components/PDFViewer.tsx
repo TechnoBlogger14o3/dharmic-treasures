@@ -6,10 +6,12 @@ import ArrowLeftIcon from './icons/ArrowLeftIcon'
 import ChevronLeftIcon from './icons/ChevronLeftIcon'
 import ChevronRightIcon from './icons/ChevronRightIcon'
 
-// Set up PDF.js worker - use local worker file
-const workerPath = `${import.meta.env.BASE_URL}pdf.worker.min.mjs`
-pdfjs.GlobalWorkerOptions.workerSrc = workerPath
-console.log('PDF.js worker path:', workerPath)
+// Worker must match react-pdf's pdfjs-dist version (5.4.296). Vite emits it as .js
+// so Hostinger serves a JavaScript MIME type (root .mjs is text/plain there).
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString()
 
 interface PDFViewerProps {
   pdfPath: string
