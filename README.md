@@ -6,7 +6,7 @@
 
 **An interactive web application to explore the timeless wisdom of Hindu scriptures**
 
-[🌐 Live Site](https://technoblogger14o3.github.io/dharmic-treasures/?v=2) | [📖 Documentation](#-about) | [🚀 Getting Started](#-getting-started)
+[🌐 Live Site](https://dharmic-treasures.com) | [📖 Documentation](#-about) | [🚀 Getting Started](#-getting-started)
 
 </div>
 
@@ -511,9 +511,13 @@ The chatbot formats the response with:
 
 This application can be deployed in multiple ways:
 
-1. **Web**: Deploy to GitHub Pages, Netlify, Vercel, etc.
+1. **Web**: Hostinger (production), GitHub Pages, Netlify, Vercel, etc.
 2. **Desktop**: Build native apps for Windows, macOS, and Linux
 3. **Mobile**: Build native apps for iOS and Android
+
+**Live site:** [https://dharmic-treasures.com](https://dharmic-treasures.com) (Hostinger)
+
+Automated Hostinger deploys run on every push to `main`. See **[DEPLOY.md](./DEPLOY.md)**.
 
 ### Deploy to GitHub Pages
 
@@ -532,13 +536,19 @@ This application can be deployed in multiple ways:
    - Click **Save**
 
 3. **Access Your Site**:
-   Your app will be available at:
+   Production is on Hostinger:
 
    ```
-   https://technoblogger14o3.github.io/dharmic-treasures/?v=2
+   https://dharmic-treasures.com
    ```
 
-> **Note**: It may take a few minutes for the site to become available after enabling GitHub Pages.
+   If GitHub Pages is enabled, the same build can also be served at:
+
+   ```
+   https://technoblogger14o3.github.io/dharmic-treasures/
+   ```
+
+> **Note**: GitHub Pages may take a few minutes to become available after enabling it. The live production site is [https://dharmic-treasures.com](https://dharmic-treasures.com).
 
 ### Build Native Desktop App
 
