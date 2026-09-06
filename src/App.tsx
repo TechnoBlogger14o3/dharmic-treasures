@@ -13,6 +13,7 @@ const PDFViewer = lazy(() => import('./components/PDFViewer'))
 const ShaktipeethsView = lazy(() => import('./components/ShaktipeethsView'))
 const CharDhamView = lazy(() => import('./components/CharDhamView'))
 const JyotirlingasView = lazy(() => import('./components/JyotirlingasView'))
+const SatyanarayanChapterView = lazy(() => import('./components/SatyanarayanChapterView'))
 
 // Lazy load data files - load only when text type is selected
 const loadGitaData = () => import('../data/gita').then(m => ({ default: m.gitaChapters }))
@@ -20,6 +21,7 @@ const loadHanumanChalisaData = () => import('../data/hanumanChalisa').then(m => 
 const loadSunderkandData = () => import('../data/sunderkand').then(m => ({ default: m.sunderkandChapters }))
 const loadBajrangBaanData = () => import('../data/bajrangBaan').then(m => ({ default: m.bajrangBaan }))
 const loadYakshaPrashnaData = () => import('../data/yakshaPrashn').then(m => ({ default: m.yakshaPrashna }))
+const loadSatyanarayanData = () => import('../data/satyanarayan').then(m => ({ default: m.satyanarayanChapters }))
 
 // Text configs without data - data will be loaded lazily
 const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?: () => Promise<any> }> = {
@@ -47,6 +49,11 @@ const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?
     name: 'Yaksha Prashna',
     nameHindi: 'यक्ष प्रश्न',
     dataLoader: loadYakshaPrashnaData,
+  },
+  satyanarayan: {
+    name: 'Satyanarayan Vrat Katha',
+    nameHindi: 'सत्यनारायण व्रत कथा',
+    dataLoader: loadSatyanarayanData,
   },
   shaktipeeths: {
     name: 'Shaktipeeths',
@@ -197,7 +204,9 @@ function App() {
                       }`}
                     >
                       <div className="text-xs sm:text-sm md:text-base whitespace-nowrap">{textConfigsBase[type].nameHindi}</div>
-                      <div className="text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">{textConfigsBase[type].name}</div>
+                      {type !== 'satyanarayan' && (
+                        <div className="text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">{textConfigsBase[type].name}</div>
+                      )}
                     </button>
                   ))}
                 </div>
@@ -259,6 +268,18 @@ function App() {
                   textType={textType}
                   hasPDF={hasPDF}
                   onViewPDF={handleViewPDF}
+                />
+              </div>
+            </Suspense>
+          ) : textType === 'satyanarayan' ? (
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="satyanarayan-chapter-view" className="animate-fadeIn">
+                <SatyanarayanChapterView
+                  chapter={currentText.data.find((ch) => ch.chapter_number === selectedChapter)!}
+                  chapters={currentText.data}
+                  fontSize={fontSize}
+                  onBack={handleBackToHome}
+                  onNavigate={(chapterNumber) => handleChapterSelect(chapterNumber, 1)}
                 />
               </div>
             </Suspense>

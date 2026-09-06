@@ -60,7 +60,9 @@ export default function ChapterList({
       {/* Title */}
       <div className="text-center mb-6 sm:mb-8 animate-fadeIn">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-gray-800 mb-2">{textNameHindi}</h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-4">{textName}</p>
+        {textType !== 'satyanarayan' && (
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-4">{textName}</p>
+        )}
         {hasPDF && onViewPDF && (
           <button
             onClick={onViewPDF}
@@ -97,9 +99,11 @@ export default function ChapterList({
               <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">{chapter.name}</h3>
               <p className="text-sm text-gray-600 mb-2 sm:mb-3">{chapter.name_meaning}</p>
               <p className="text-xs text-gray-500 mb-2 line-clamp-2">{chapter.summary}</p>
-              <div className="text-xs text-amber-600 font-medium">
-                {chapter.verses_count} {chapter.verses_count === 1 ? 'verse' : 'verses'}
-              </div>
+              {textType !== 'satyanarayan' && (
+                <div className="text-xs text-amber-600 font-medium">
+                  {chapter.verses_count} {chapter.verses_count === 1 ? 'verse' : 'verses'}
+                </div>
+              )}
             </div>
           </div>
         ))}

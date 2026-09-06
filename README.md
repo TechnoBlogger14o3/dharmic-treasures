@@ -14,19 +14,20 @@
 
 ## 📖 About
 
-This is a modern, interactive web application that brings the sacred texts of Hindu philosophy to life. The application features multiple scriptures including the Bhagavad Gita, Hanuman Chalisa, Sunderkand, Bajrang Baan, Yaksha Prashna, and an extensive guide to the 51 Shaktipeeths, all with a beautiful UI and an intelligent chatbot that helps answer life's questions using the wisdom of the Bhagavad Gita.
+This is a modern, interactive web application that brings the sacred texts of Hindu philosophy to life. The application features multiple scriptures including the Bhagavad Gita, Hanuman Chalisa, Sunderkand, Bajrang Baan, Yaksha Prashna, Satyanarayan Vrat Katha, and an extensive guide to the 51 Shaktipeeths, all with a beautiful UI and an intelligent chatbot that helps answer life's questions using the wisdom of the Bhagavad Gita.
 
 ## ✨ Features
 
 ### 🎯 Core Features
 
-- **📚 Multiple Sacred Texts**: Access six different sacred texts and guides in one application
+- **📚 Multiple Sacred Texts**: Access sacred texts and pilgrimage guides in one application
 
   - **Bhagavad Gita**: All 18 chapters with 700+ verses, with PDF viewer support
   - **Hanuman Chalisa**: 40 verses of devotion
   - **Sunderkand**: The beautiful chapter from Ramayana
   - **Bajrang Baan**: The powerful prayer to Lord Hanuman
   - **Yaksha Prashna**: 126 questions and answers from Mahabharata
+  - **Satyanarayan Vrat Katha**: Puja vidhi, mantras, five adhyayas, and aarti
   - **Shaktipeeths**: Complete guide to all 51 sacred Shaktipeeths with interactive map
 
 - **🗺️ Interactive Shaktipeeths Explorer**:
@@ -368,6 +369,7 @@ dharmic-treasures/
 │   ├── sunderkand.ts        # Sunderkand data
 │   ├── bajrangBaan.ts       # Bajrang Baan data
 │   ├── yakshaPrashn.ts      # Yaksha Prashna data
+│   ├── satyanarayan.ts      # Satyanarayan Vrat Katha data
 │   ├── shaktipeeths.ts      # Shaktipeeths data and utilities
 │   └── shakti_peethas_51.json  # JSON data for all 51 Shaktipeeths
 ├── public/                   # Static assets
@@ -401,6 +403,7 @@ dharmic-treasures/
    - सुन्दरकाण्ड (Sunderkand)
    - बजरंग बाण (Bajrang Baan)
    - यक्ष प्रश्न (Yaksha Prashna)
+   - सत्यनारायण व्रत कथा (Satyanarayan Vrat Katha)
    - शक्तिपीठ (Shaktipeeths)
 
 2. **Browse Chapters**: Click on any chapter card to view its contents
@@ -603,6 +606,10 @@ Bajrang Baan is a powerful prayer dedicated to Lord Hanuman. It is believed to b
 ### Yaksha Prashna
 
 Yaksha Prashna is a dialogue between Yudhishthira and a Yaksha (a nature spirit) in the Mahabharata. It consists of 126 questions and answers that test Yudhishthira's wisdom and righteousness. The questions cover various aspects of life, duty, and philosophy.
+
+### Satyanarayan Vrat Katha
+
+Satyanarayan Vrat Katha is a traditional worship of Lord Vishnu as Satyanarayan. The path includes puja vidhi, opening mantras, five adhyayas (the origin of the vrat, the Brahmin, the woodcutter, the merchant and Kalyavati, and King Tungadhwaja), and aarti. Previous and Next can walk the whole sitting in order, or any chapter can be opened from the list.
 
 ### Shaktipeeths
 

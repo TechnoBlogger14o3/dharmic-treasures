@@ -13,6 +13,7 @@ graph TB
     Sunderkand[data/sunderkand.ts]
     BajrangBaan[data/bajrangBaan.ts]
     YakshaPrashna[data/yakshaPrashn.ts]
+    Satyanarayan[data/satyanarayan.ts]
     Shaktipeeths[data/shaktipeeths.ts]
     CharDham[data/charDham.ts]
     Jyotirlingas[data/jyotirlingas.ts]
@@ -68,7 +69,7 @@ graph TB
     Types[types.ts<br/>Type Definitions]
 
     %% Text Types
-    TextTypes[TextType Union<br/>gita, hanumanChalisa, sunderkand,<br/>bajrangBaan, yakshaPrashna,<br/>shaktipeeths, charDham, jyotirlingas]
+    TextTypes[TextType Union<br/>gita, hanumanChalisa, sunderkand,<br/>bajrangBaan, yakshaPrashna, satyanarayan,<br/>shaktipeeths, charDham, jyotirlingas]
 
     %% App Connections
     App --> ChapterList

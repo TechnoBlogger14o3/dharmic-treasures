@@ -15,6 +15,8 @@ interface ChapterViewProps {
   onBack: () => void
   fontSize: number
   textType?: TextType
+  pathChapters?: Chapter[]
+  onNavigate?: (chapterNumber: number, verseNumber: number) => void
 }
 
 export default function ChapterView({
@@ -24,43 +26,82 @@ export default function ChapterView({
   onBack,
   fontSize,
   textType,
+  pathChapters,
+  onNavigate,
 }: ChapterViewProps) {
+  const showFullChapter = textType === 'satyanarayan'
   const verse = chapter.verses.find((v) => v.verse_number === currentVerse)
   const totalVerses = chapter.verses.length
+  const pathIndex = pathChapters?.findIndex((item) => item.chapter_number === chapter.chapter_number) ?? -1
+  const isPath = Boolean(pathChapters && onNavigate && pathIndex >= 0)
+  const isFirstInPath = showFullChapter
+    ? !isPath || pathIndex === 0
+    : !isPath || (pathIndex === 0 && currentVerse === 1)
+  const isLastInPath = showFullChapter
+    ? !isPath || pathIndex === pathChapters!.length - 1
+    : !isPath || (pathIndex === pathChapters!.length - 1 && currentVerse === totalVerses)
 
   // Save reading progress
   useEffect(() => {
-    if (textType && chapter.chapter_number && currentVerse) {
+    if (textType && chapter.chapter_number) {
       saveProgress({
         textType,
         chapterNumber: chapter.chapter_number,
-        verseNumber: currentVerse,
+        verseNumber: showFullChapter ? 1 : currentVerse,
         lastRead: Date.now(),
       })
     }
-  }, [textType, chapter.chapter_number, currentVerse])
+  }, [textType, chapter.chapter_number, currentVerse, showFullChapter])
+
+  useEffect(() => {
+    if (showFullChapter) {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, [chapter.chapter_number, showFullChapter])
 
   const handlePrevious = () => {
+    if (showFullChapter) {
+      if (isPath && pathIndex > 0) {
+        onNavigate!(pathChapters![pathIndex - 1].chapter_number, 1)
+      }
+      return
+    }
     if (currentVerse > 1) {
       onVerseChange(currentVerse - 1)
+      return
+    }
+    if (isPath && pathIndex > 0) {
+      const previousChapter = pathChapters![pathIndex - 1]
+      onNavigate!(previousChapter.chapter_number, previousChapter.verses.length)
     }
   }
 
   const handleNext = () => {
+    if (showFullChapter) {
+      if (isPath && pathIndex < pathChapters!.length - 1) {
+        onNavigate!(pathChapters![pathIndex + 1].chapter_number, 1)
+      }
+      return
+    }
     if (currentVerse < totalVerses) {
       onVerseChange(currentVerse + 1)
+      return
+    }
+    if (isPath && pathIndex < pathChapters!.length - 1) {
+      const nextChapter = pathChapters![pathIndex + 1]
+      onNavigate!(nextChapter.chapter_number, 1)
     }
   }
 
-  if (!verse) {
+  if ((showFullChapter && !chapter.verses.length) || (!showFullChapter && !verse)) {
     return (
       <div className="container mx-auto px-4 py-8 text-center">
-        <p className="text-gray-500">Verse not found</p>
+        <p className="text-gray-500">{showFullChapter ? 'पाठ नहीं मिला' : 'Verse not found'}</p>
         <button
           onClick={onBack}
           className="mt-4 px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600"
         >
-          Back to Chapters
+          {showFullChapter ? 'अध्यायों पर जाएँ' : 'Back to Chapters'}
         </button>
       </div>
     )
@@ -115,7 +156,7 @@ export default function ChapterView({
           className={`flex items-center gap-2 transition-all duration-300 mb-3 sm:mb-4 py-2 -ml-2 pl-2 pr-4 rounded-lg touch-manipulation animate-slideInLeft ${isGita ? 'text-white hover:text-amber-200 active:text-amber-300 drop-shadow-md' : 'text-gray-700 hover:text-amber-600 active:text-amber-700'}`}
         >
           <ArrowLeftIcon className="w-5 h-5 flex-shrink-0" />
-          <span className="text-sm sm:text-base">Back to Chapters</span>
+          <span className="text-sm sm:text-base">{showFullChapter ? 'अध्यायों पर जाएँ' : 'Back to Chapters'}</span>
         </button>
         <div className={`${isGita ? 'bg-white/50 backdrop-blur-sm' : 'bg-white/90 backdrop-blur-sm'} rounded-xl shadow-lg p-4 sm:p-6 border border-white/30 animate-scaleIn`}>
           <div className="text-center mb-4">
@@ -124,6 +165,11 @@ export default function ChapterView({
             </div>
             <h1 className={`text-xl sm:text-2xl md:text-3xl font-bold mb-2 ${isGita ? 'text-gray-900 drop-shadow-sm' : 'text-gray-800'}`}>{chapter.name}</h1>
             <p className={`text-base sm:text-lg mb-3 sm:mb-4 ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-600'}`}>{chapter.name_meaning}</p>
+            {isPath && (
+              <p className={`text-xs sm:text-sm font-medium mb-2 ${isGita ? 'text-amber-800' : 'text-amber-700'}`}>
+                {pathIndex + 1} / {pathChapters!.length} · {chapter.name}
+              </p>
+            )}
             <p className={`text-xs sm:text-sm ${isGita ? 'text-gray-700 drop-shadow-sm font-medium' : 'text-gray-500'}`}>{chapter.summary}</p>
           </div>
         </div>
@@ -133,115 +179,123 @@ export default function ChapterView({
       <div
         className={`${isGita ? 'bg-white/50 backdrop-blur-sm' : 'bg-white/90 backdrop-blur-sm'} rounded-xl shadow-lg p-4 sm:p-6 md:p-8 border border-white/30 mb-4 sm:mb-6 animate-fadeIn`}
         style={{ fontSize: `${fontSize}px` }}
-        key={currentVerse}
+        key={showFullChapter ? chapter.chapter_number : currentVerse}
       >
-        <div className="text-center mb-4 sm:mb-6">
-          <div className="inline-block bg-amber-500 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
-            Verse {verse.verse_number}
-          </div>
-        </div>
-
-        {/* Sanskrit Text */}
-        <div className="mb-4 sm:mb-6">
-          <div className={`text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed text-center mb-3 sm:mb-4 ${isGita ? 'text-gray-900 drop-shadow-sm font-bold' : 'text-gray-800 font-medium'}`}>
-            {verse.text}
-          </div>
-        </div>
-
-        {/* Transliteration */}
-        <div className="mb-4 sm:mb-6">
-          <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Transliteration:</div>
-          <div className={`text-base sm:text-lg italic leading-relaxed ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse.transliteration}</div>
-        </div>
-
-        {/* Hindi Meaning */}
-        <div className="mb-4 sm:mb-6">
-          <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Hindi Meaning:</div>
-          {textType === 'yakshaPrashna' && verse.hindi_meaning.includes('\n\n') ? (
-            <div className="text-base sm:text-lg text-gray-700 leading-relaxed">
-              {verse.hindi_meaning.split('\n\n').map((part, index) => {
-                if (part.includes('यक्ष प्रश्न:')) {
-                  return (
-                    <div key={index} className="mb-2">
-                      <div className="font-medium text-amber-700">{part.trim()}</div>
-                    </div>
-                  )
-                } else if (part.includes('युधिष्ठिर उत्तर:')) {
-                  return (
-                    <div key={index} className="ml-0">
-                      <div className="font-medium text-green-700">{part.trim()}</div>
-                    </div>
-                  )
-                }
-                return (
-                  <div key={index} className="mb-2">
-                    {part.trim()}
-                  </div>
-                )
-              })}
+        {!showFullChapter && (
+          <div className="text-center mb-4 sm:mb-6">
+            <div className="inline-block bg-amber-500 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
+              Verse {verse!.verse_number}
             </div>
-          ) : (
-            <div className={`text-base sm:text-lg leading-relaxed whitespace-pre-line ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse.hindi_meaning}</div>
-          )}
-        </div>
+          </div>
+        )}
 
-        {/* English Meaning */}
-        <div className="mb-4 sm:mb-6">
-          <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Meaning:</div>
-          <div className={`text-base sm:text-lg leading-relaxed ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse.meaning}</div>
-        </div>
+        {showFullChapter ? (
+          <div className="mb-4 sm:mb-6">
+            <div className="text-base sm:text-lg md:text-xl leading-[1.9] text-gray-800 font-medium whitespace-pre-line text-left max-w-3xl mx-auto">
+              {chapter.verses.map((item) => item.text).join('\n\n')}
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="mb-4 sm:mb-6">
+              <div className={`text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed text-center mb-3 sm:mb-4 ${isGita ? 'text-gray-900 drop-shadow-sm font-bold' : 'text-gray-800 font-medium'}`}>
+                {verse!.text}
+              </div>
+            </div>
+            <div className="mb-4 sm:mb-6">
+              <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Transliteration:</div>
+              <div className={`text-base sm:text-lg italic leading-relaxed ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse!.transliteration}</div>
+            </div>
+            <div className="mb-4 sm:mb-6">
+              <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Hindi Meaning:</div>
+              {textType === 'yakshaPrashna' && verse!.hindi_meaning.includes('\n\n') ? (
+                <div className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                  {verse!.hindi_meaning.split('\n\n').map((part, index) => {
+                    if (part.includes('यक्ष प्रश्न:')) {
+                      return (
+                        <div key={index} className="mb-2">
+                          <div className="font-medium text-amber-700">{part.trim()}</div>
+                        </div>
+                      )
+                    } else if (part.includes('युधिष्ठिर उत्तर:')) {
+                      return (
+                        <div key={index} className="ml-0">
+                          <div className="font-medium text-green-700">{part.trim()}</div>
+                        </div>
+                      )
+                    }
+                    return (
+                      <div key={index} className="mb-2">
+                        {part.trim()}
+                      </div>
+                    )
+                  })}
+                </div>
+              ) : (
+                <div className={`text-base sm:text-lg leading-relaxed whitespace-pre-line ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse!.hindi_meaning}</div>
+              )}
+            </div>
+            <div className="mb-4 sm:mb-6">
+              <div className={`text-xs sm:text-sm font-semibold mb-2 ${isGita ? 'text-gray-800 drop-shadow-sm' : 'text-gray-600'}`}>Meaning:</div>
+              <div className={`text-base sm:text-lg leading-relaxed ${isGita ? 'text-gray-800 drop-shadow-sm font-semibold' : 'text-gray-700'}`}>{verse!.meaning}</div>
+            </div>
+          </>
+        )}
 
-        {/* Action Buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mt-6">
-          <BookmarkButton
-            textType={textType || ''}
-            chapterNumber={chapter.chapter_number}
-            verseNumber={verse.verse_number}
-            chapterName={chapter.name}
-          />
-          <ShareButton
-            verse={verse}
-            chapterName={chapter.name}
-            chapterNumber={chapter.chapter_number}
-          />
-          <ExportButton
-            verse={verse}
-            chapterName={chapter.name}
-            chapterNumber={chapter.chapter_number}
-            textType={textType || ''}
-          />
-        </div>
+        {!showFullChapter && (
+          <div className="flex flex-wrap justify-center gap-3 mt-6">
+            <BookmarkButton
+              textType={textType || ''}
+              chapterNumber={chapter.chapter_number}
+              verseNumber={verse!.verse_number}
+              chapterName={chapter.name}
+            />
+            <ShareButton
+              verse={verse!}
+              chapterName={chapter.name}
+              chapterNumber={chapter.chapter_number}
+            />
+            <ExportButton
+              verse={verse!}
+              chapterName={chapter.name}
+              chapterNumber={chapter.chapter_number}
+              textType={textType || ''}
+            />
+          </div>
+        )}
       </div>
 
       {/* Navigation - Fixed on mobile, relative on desktop */}
       <div className="fixed bottom-0 left-0 right-0 sm:relative sm:bottom-auto sm:left-auto sm:right-auto flex items-center justify-between bg-white/95 backdrop-blur-md sm:bg-white/90 sm:backdrop-blur-sm rounded-t-xl sm:rounded-xl shadow-lg sm:shadow-lg p-3 sm:p-4 border-t sm:border border-gray-200 animate-slideInRight z-40">
         <button
           onClick={handlePrevious}
-          disabled={currentVerse === 1}
+          disabled={isPath ? isFirstInPath : currentVerse === 1}
           className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium transition-all touch-manipulation min-h-[44px] ${
-            currentVerse === 1
+            (isPath ? isFirstInPath : currentVerse === 1)
               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
               : 'bg-amber-500 text-white hover:bg-amber-600 active:bg-amber-700'
           }`}
         >
           <ChevronLeftIcon className="w-5 h-5 flex-shrink-0" />
-          <span className="text-sm sm:text-base">Previous</span>
+          <span className="text-sm sm:text-base">{showFullChapter ? 'पिछला' : 'Previous'}</span>
         </button>
 
         <div className="text-xs sm:text-sm text-gray-600 font-medium px-2">
-          {currentVerse} / {totalVerses}
+          {showFullChapter && isPath
+            ? `${pathIndex + 1} / ${pathChapters!.length}`
+            : `${currentVerse} / ${totalVerses}`}
         </div>
 
         <button
           onClick={handleNext}
-          disabled={currentVerse === totalVerses}
+          disabled={isPath ? isLastInPath : currentVerse === totalVerses}
           className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium transition-all touch-manipulation min-h-[44px] ${
-            currentVerse === totalVerses
+            (isPath ? isLastInPath : currentVerse === totalVerses)
               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
               : 'bg-amber-500 text-white hover:bg-amber-600 active:bg-amber-700'
           }`}
         >
-          <span className="text-sm sm:text-base">Next</span>
+          <span className="text-sm sm:text-base">{showFullChapter ? 'अगला' : 'Next'}</span>
           <ChevronRightIcon className="w-5 h-5 flex-shrink-0" />
         </button>
       </div>

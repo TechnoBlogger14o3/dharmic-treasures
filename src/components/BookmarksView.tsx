@@ -30,6 +30,7 @@ export default function BookmarksView({ onNavigate, onBack }: BookmarksViewProps
     sunderkand: 'Sunderkand',
     bajrangBaan: 'Bajrang Baan',
     yakshaPrashna: 'Yaksha Prashna',
+    satyanarayan: 'Satyanarayan Vrat Katha',
   }
 
   if (bookmarks.length === 0) {
