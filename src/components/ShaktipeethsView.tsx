@@ -20,7 +20,7 @@ function ShaktipeethModal({ peeth, onClose }: ShaktipeethModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-6 relative">
+        <div className="bg-gradient-to-r from-saffron to-saffron-dark p-6 relative">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors z-10"
@@ -33,7 +33,7 @@ function ShaktipeethModal({ peeth, onClose }: ShaktipeethModalProps) {
           {/* Top Left - ID and Puranic Reference */}
           <div className="absolute top-4 left-4 flex items-center gap-3 z-10">
             <div className="bg-white rounded-lg px-3 py-1.5 shadow-lg border-2 border-white">
-              <span className="text-amber-600 font-bold text-lg">#{peeth.id}</span>
+              <span className="text-saffron font-bold text-lg">#{peeth.id}</span>
             </div>
             <div className="bg-black/40 backdrop-blur-sm rounded-lg px-3 py-1.5 border border-white/30">
               <p className="text-white text-xs font-bold uppercase tracking-wide">{peeth.puranicReference}</p>
@@ -56,7 +56,7 @@ function ShaktipeethModal({ peeth, onClose }: ShaktipeethModalProps) {
         <div className="p-6 space-y-6">
           {/* Basic Information Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
+            <div className="bg-saffron-light rounded-lg p-4 border border-gold">
               <p className="text-xs uppercase text-gray-500 mb-1">Body Part</p>
               <p className="text-sm font-bold text-gray-900">{peeth.bodyPart}</p>
             </div>
@@ -78,7 +78,7 @@ function ShaktipeethModal({ peeth, onClose }: ShaktipeethModalProps) {
           {peeth.description && (
             <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
               <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2">
-                <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-saffron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 Overview
@@ -88,9 +88,9 @@ function ShaktipeethModal({ peeth, onClose }: ShaktipeethModalProps) {
           )}
 
           {/* Historical Significance */}
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg p-5 border border-amber-200">
+          <div className="bg-gradient-to-br from-cream to-saffron-light rounded-lg p-5 border border-gold">
             <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
-              <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-saffron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
               Historical Significance
@@ -287,18 +287,18 @@ export default function ShaktipeethsView() {
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-7xl animate-fadeIn pb-20 sm:pb-8">
         {/* Title */}
         <div className="text-center mb-6 sm:mb-8 animate-fadeIn">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-maroon mb-2">
             शक्तिपीठ
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4">Shaktipeeths</p>
-          <div className="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-lg sm:text-xl shadow-lg">
+          <p className="text-base sm:text-lg md:text-xl text-ink/70 mb-4">Shaktipeeths</p>
+          <div className="inline-block bg-saffron text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-lg sm:text-xl shadow-lg">
             Total: {totalCount} Shaktipeeths {hasActiveFilters && `(${filteredAndSorted.length} filtered)`}
           </div>
         </div>
 
         {/* Introduction */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 md:p-8 border border-gray-200 mb-6 sm:mb-8 animate-scaleIn">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-amber-600 mb-4 text-center">
+        <div className="folio rounded-xl p-4 sm:p-6 md:p-8 mb-6 sm:mb-8 animate-scaleIn">
+          <h2 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-maroon mb-4 text-center">
             {shaktipeethIntroduction.titleEnglish}
           </h2>
           <h3 className="text-lg sm:text-xl font-semibold text-gray-700 mb-3 text-center">
@@ -315,7 +315,7 @@ export default function ShaktipeethsView() {
         {/* Statistics and Visualizations */}
         <div className="space-y-6 mb-6 sm:mb-8">
           {/* Body Part Distribution Chart */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-fadeIn">
+          <div className="folio rounded-xl p-4 sm:p-6 animate-fadeIn">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
               Body Part Distribution | शरीर के अंग वितरण
             </h2>
@@ -327,7 +327,7 @@ export default function ShaktipeethsView() {
                   </div>
                   <div className="flex-1 bg-gray-200 rounded-full h-6 relative overflow-hidden">
                     <div
-                      className="bg-gradient-to-r from-amber-500 to-orange-500 h-full rounded-full flex items-center justify-end pr-2 transition-all duration-500"
+                      className="bg-saffron h-full rounded-full flex items-center justify-end pr-2 transition-all duration-500"
                       style={{ width: `${(stat.count / maxBodyPartCount) * 100}%` }}
                     >
                       <span className="text-xs font-bold text-white">{stat.count}</span>
@@ -339,7 +339,7 @@ export default function ShaktipeethsView() {
           </div>
 
           {/* Country Breakdown Chart */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-fadeIn">
+          <div className="folio rounded-xl p-4 sm:p-6 animate-fadeIn">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
               Country Breakdown | देश-वार वितरण
             </h2>
@@ -363,7 +363,7 @@ export default function ShaktipeethsView() {
           </div>
 
           {/* Interactive Map Visualization */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-fadeIn">
+          <div className="folio rounded-xl p-4 sm:p-6 animate-fadeIn">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
               Interactive Map | इंटरैक्टिव मानचित्र
             </h2>
@@ -377,7 +377,7 @@ export default function ShaktipeethsView() {
           </div>
 
           {/* State-wise Distribution Grid */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-fadeIn">
+          <div className="folio rounded-xl p-4 sm:p-6 animate-fadeIn">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">
               State-wise Distribution | राज्य-वार वितरण
             </h2>
@@ -387,7 +387,7 @@ export default function ShaktipeethsView() {
                 return (
                   <div
                     key={state.stateCountry}
-                    className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg p-3 border-2 border-amber-300 hover:shadow-lg transition-all cursor-pointer"
+                    className="bg-gradient-to-br from-cream to-saffron-light rounded-lg p-3 border-2 border-gold hover:shadow-lg transition-all cursor-pointer"
                     style={{
                       background: `linear-gradient(135deg, rgba(251, 191, 36, ${0.3 + intensity * 0.7}), rgba(249, 115, 22, ${0.3 + intensity * 0.7}))`,
                       borderColor: `rgba(251, 191, 36, ${0.5 + intensity * 0.5})`
@@ -397,7 +397,7 @@ export default function ShaktipeethsView() {
                     <div className="text-center">
                       <div className="font-bold text-gray-800 text-sm mb-1">{state.state}</div>
                       <div className="text-xs text-gray-600 mb-2">{state.country}</div>
-                      <div className="bg-white/80 rounded-full w-10 h-10 flex items-center justify-center mx-auto font-bold text-amber-700">
+                      <div className="bg-cream rounded-full w-10 h-10 flex items-center justify-center mx-auto font-bold text-saffron">
                         {state.count}
                       </div>
                     </div>
@@ -409,7 +409,7 @@ export default function ShaktipeethsView() {
         </div>
 
         {/* Filters and Controls */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 mb-6 sm:mb-8 animate-fadeIn">
+        <div className="folio rounded-xl p-4 sm:p-6 mb-6 sm:mb-8 animate-fadeIn">
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-4">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
               All Shaktipeeths | सभी 51 शक्तिपीठ
@@ -421,7 +421,7 @@ export default function ShaktipeethsView() {
                   onClick={() => setViewMode('grid')}
                   className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
                     viewMode === 'grid'
-                      ? 'bg-amber-500 text-white shadow-md'
+                      ? 'bg-saffron text-white shadow-md'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -433,7 +433,7 @@ export default function ShaktipeethsView() {
                   onClick={() => setViewMode('list')}
                   className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
                     viewMode === 'list'
-                      ? 'bg-amber-500 text-white shadow-md'
+                      ? 'bg-saffron text-white shadow-md'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -447,7 +447,7 @@ export default function ShaktipeethsView() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as SortOption)}
-                className="px-3 py-2 border border-gray-300 rounded-lg bg-white text-sm font-medium text-gray-700 focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                className="px-3 py-2 border border-gold rounded-lg bg-cream text-sm font-medium text-ink focus:ring-2 focus:ring-saffron focus:border-transparent outline-none"
               >
                 <option value="id">Sort by ID</option>
                 <option value="name">Sort by Name (A-Z)</option>
@@ -469,7 +469,7 @@ export default function ShaktipeethsView() {
                     onClick={() => toggleFilter('state', state)}
                     className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
                       filters.state === state
-                        ? 'bg-amber-500 text-white shadow-md'
+                        ? 'bg-saffron text-white shadow-md'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
@@ -538,23 +538,23 @@ export default function ShaktipeethsView() {
               {filteredAndSorted.map((peeth, index) => (
                 <div
                   key={peeth.id}
-                  className="bg-white rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden animate-fadeIn"
+                  className="folio rounded-xl hover:shadow-xl transition-all duration-300 overflow-hidden animate-fadeIn"
                   style={{ animationDelay: `${index * 0.03}s` }}
                 >
                   {/* Card content - same as before */}
-                  <div className="bg-gradient-to-br from-amber-50 to-yellow-50 p-4 sm:p-5 relative">
+                  <div className="bg-gradient-to-br from-cream to-saffron-light p-4 sm:p-5 relative">
                     <div className="absolute top-3 right-3">
                       <p className="text-xs uppercase tracking-wide text-gray-400 font-medium">
                         {peeth.puranicReference}
                       </p>
                     </div>
                     <div className="absolute top-3 left-3">
-                      <div className="bg-orange-400 border border-orange-500 rounded-lg px-2 py-1">
+                      <div className="bg-saffron border border-saffron-dark rounded-lg px-2 py-1">
                         <span className="text-white font-bold text-sm">#{peeth.id}</span>
                       </div>
                     </div>
                     <div className="pt-8 pb-2">
-                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+                      <h3 className="font-serif text-xl sm:text-2xl font-bold text-maroon">
                         {peeth.name}
                       </h3>
                     </div>
@@ -631,18 +631,18 @@ export default function ShaktipeethsView() {
               {filteredAndSorted.map((peeth, index) => (
                 <div
                   key={peeth.id}
-                  className="bg-white rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden animate-fadeIn p-4 sm:p-6"
+                  className="folio rounded-xl hover:shadow-xl transition-all duration-300 overflow-hidden animate-fadeIn p-4 sm:p-6"
                   style={{ animationDelay: `${index * 0.03}s` }}
                 >
                   <div className="flex flex-col sm:flex-row gap-4">
                     <div className="flex-shrink-0">
-                      <div className="bg-orange-400 border border-orange-500 rounded-lg px-3 py-1 inline-block">
+                      <div className="bg-saffron border border-saffron-dark rounded-lg px-3 py-1 inline-block">
                         <span className="text-white font-bold">#{peeth.id}</span>
                       </div>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-                        <h3 className="text-xl sm:text-2xl font-bold text-gray-900">{peeth.name}</h3>
+                        <h3 className="font-serif text-xl sm:text-2xl font-bold text-maroon">{peeth.name}</h3>
                         <p className="text-xs uppercase text-gray-400">{peeth.puranicReference}</p>
                       </div>
                       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-3">

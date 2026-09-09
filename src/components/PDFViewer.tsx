@@ -101,21 +101,21 @@ export default function PDFViewer({ pdfPath, title, titleHindi, onBack }: PDFVie
       <div className="mb-4 sm:mb-6">
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-gray-700 hover:text-amber-600 active:text-amber-700 transition-all duration-300 mb-3 sm:mb-4 py-2 -ml-2 pl-2 pr-4 rounded-lg touch-manipulation animate-slideInLeft"
+          className="flex items-center gap-2 text-maroon hover:text-saffron active:text-saffron-dark transition-all duration-300 mb-3 sm:mb-4 py-2 -ml-2 pl-2 pr-4 rounded-lg touch-manipulation animate-slideInLeft"
         >
           <ArrowLeftIcon className="w-5 h-5 flex-shrink-0" />
           <span className="text-sm sm:text-base">Back</span>
         </button>
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 animate-scaleIn">
+        <div className="folio rounded-xl p-4 sm:p-6 animate-scaleIn">
           <div className="text-center">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">{titleHindi}</h1>
-            <p className="text-base sm:text-lg text-gray-600">{title}</p>
+            <h1 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-maroon mb-2">{titleHindi}</h1>
+            <p className="text-base sm:text-lg text-ink/70">{title}</p>
           </div>
         </div>
       </div>
 
       {/* PDF Viewer */}
-      <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 mb-4 sm:mb-6">
+      <div className="folio rounded-xl p-4 sm:p-6 mb-4 sm:mb-6">
         {error ? (
           <div className="flex items-center justify-center py-20">
             <div className="text-center">
@@ -139,14 +139,14 @@ export default function PDFViewer({ pdfPath, title, titleHindi, onBack }: PDFVie
                     <div className="text-center">
                       <div className="flex items-center justify-center mb-4">
                         <div className="spinner-pulse">
-                          <svg className="w-12 h-12 text-amber-500" fill="none" viewBox="0 0 24 24">
+                          <svg className="w-12 h-12 text-saffron" fill="none" viewBox="0 0 24 24">
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                             <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                           </svg>
                         </div>
                       </div>
-                      <div className="animate-pulse-slow text-amber-500 text-lg mb-2">Loading PDF...</div>
-                      <div className="text-sm text-gray-500">Please wait</div>
+                      <div className="animate-pulse-slow text-saffron text-lg mb-2">Loading PDF...</div>
+                      <div className="text-sm text-ink/50">Please wait</div>
                     </div>
                   </div>
                 }
@@ -188,9 +188,9 @@ export default function PDFViewer({ pdfPath, title, titleHindi, onBack }: PDFVie
                       />
                     </div>
                     {/* Page Info */}
-                    <div className="text-sm sm:text-base text-gray-600 font-medium mb-4 mt-4">
+                    <div className="text-sm sm:text-base text-ink/70 font-medium mb-4 mt-4">
                       Page {pageNumber} of {numPages}
-                      <span className="text-xs text-gray-400 ml-2 block sm:inline">(Tap left/right side to turn page)</span>
+                      <span className="text-xs text-ink/40 ml-2 block sm:inline">(Tap left/right side to turn page)</span>
                     </div>
                   </>
                 )}
@@ -201,21 +201,21 @@ export default function PDFViewer({ pdfPath, title, titleHindi, onBack }: PDFVie
       </div>
 
       {/* Navigation - Fixed on mobile, relative on desktop */}
-      <div className="fixed bottom-0 left-0 right-0 sm:relative sm:bottom-auto sm:left-auto sm:right-auto flex items-center justify-between bg-white/95 backdrop-blur-md sm:bg-white/90 sm:backdrop-blur-sm rounded-t-xl sm:rounded-xl shadow-lg sm:shadow-lg p-3 sm:p-4 border-t sm:border border-gray-200 animate-slideInRight z-40">
+      <div className="fixed bottom-0 left-0 right-0 sm:relative sm:bottom-auto sm:left-auto sm:right-auto flex items-center justify-between bg-cream/95 backdrop-blur-md sm:bg-cream rounded-t-xl sm:rounded-xl shadow-lg p-3 sm:p-4 border-t sm:border border-gold animate-slideInRight z-40">
         <button
           onClick={handlePrevious}
           disabled={pageNumber === 1 || loading}
           className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium transition-all duration-200 touch-manipulation min-h-[44px] transform hover:scale-105 active:scale-95 ${
             pageNumber === 1 || loading
-              ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-              : 'bg-amber-500 text-white hover:bg-amber-600 active:bg-amber-700 shadow-md hover:shadow-lg'
+              ? 'bg-saffron-light text-ink/40 cursor-not-allowed'
+              : 'bg-saffron text-white hover:bg-saffron-dark active:bg-saffron-dark shadow-md hover:shadow-lg'
           }`}
         >
           <ChevronLeftIcon className="w-5 h-5 flex-shrink-0 transition-transform duration-200 group-hover:-translate-x-1" />
           <span className="text-sm sm:text-base">Previous</span>
         </button>
 
-        <div className="text-xs sm:text-sm text-gray-600 font-medium px-2">
+        <div className="text-xs sm:text-sm text-ink/70 font-medium px-2">
           {pageNumber} / {numPages || '...'}
         </div>
 
@@ -224,8 +224,8 @@ export default function PDFViewer({ pdfPath, title, titleHindi, onBack }: PDFVie
           disabled={pageNumber === numPages || loading}
           className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium transition-all duration-200 touch-manipulation min-h-[44px] transform hover:scale-105 active:scale-95 ${
             pageNumber === numPages || loading
-              ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-              : 'bg-amber-500 text-white hover:bg-amber-600 active:bg-amber-700 shadow-md hover:shadow-lg'
+              ? 'bg-saffron-light text-ink/40 cursor-not-allowed'
+              : 'bg-saffron text-white hover:bg-saffron-dark active:bg-saffron-dark shadow-md hover:shadow-lg'
           }`}
         >
           <span className="text-sm sm:text-base">Next</span>

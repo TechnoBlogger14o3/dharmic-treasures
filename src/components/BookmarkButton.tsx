@@ -42,8 +42,8 @@ export default function BookmarkButton({
       onClick={handleToggleBookmark}
       className={`flex items-center gap-2 px-4 py-2.5 sm:py-2 rounded-lg transition-colors text-sm font-medium touch-manipulation min-h-[44px] ${
         bookmarked
-          ? 'bg-amber-500 text-white hover:bg-amber-600'
-          : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+          ? 'bg-saffron text-white hover:bg-saffron-dark'
+          : 'bg-saffron-light text-maroon hover:bg-gold-light'
       }`}
       title={bookmarked ? 'Remove bookmark' : 'Add bookmark'}
     >

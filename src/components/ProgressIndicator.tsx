@@ -12,14 +12,14 @@ export default function ProgressIndicator({
   return (
     <div className="mb-4 sm:mb-6">
       <div className="flex items-center justify-between mb-2">
-        <span className="text-xs sm:text-sm font-medium text-gray-700">Reading Progress</span>
-        <span className="text-xs sm:text-sm text-gray-600">
+        <span className="text-xs sm:text-sm font-medium text-ink">Reading Progress</span>
+        <span className="text-xs sm:text-sm text-ink/70">
           {currentVerse} / {totalVerses}
         </span>
       </div>
-      <div className="w-full bg-gray-200 rounded-full h-2 sm:h-2.5 overflow-hidden">
+      <div className="w-full bg-saffron-light rounded-full h-2 sm:h-2.5 overflow-hidden">
         <div
-          className="bg-amber-500 h-2 sm:h-2.5 rounded-full transition-all duration-500 ease-out animate-fadeIn"
+          className="bg-saffron h-2 sm:h-2.5 rounded-full transition-all duration-500 ease-out animate-fadeIn"
           style={{ width: `${progress}%` }}
         />
       </div>

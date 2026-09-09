@@ -95,7 +95,7 @@ function CharDhamModal({ dham, onClose }: CharDhamModalProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-amber-50 rounded-lg p-5 border border-amber-200">
               <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2">
-                <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-saffron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 Best Time to Visit
@@ -144,22 +144,22 @@ export default function CharDhamView() {
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-7xl animate-fadeIn pb-20 sm:pb-8">
         {/* Title */}
         <div className="text-center mb-6 sm:mb-8 animate-fadeIn">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-maroon mb-2">
             चार धाम
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4">Char Dham</p>
-          <div className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-lg sm:text-xl shadow-lg">
+          <p className="text-base sm:text-lg md:text-xl text-ink/70 mb-4">Char Dham</p>
+          <div className="inline-block bg-saffron text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-lg sm:text-xl shadow-lg">
             Total: 4 Dhams
           </div>
         </div>
 
         {/* Introduction */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 mb-6 border border-gray-200">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3">{charDhamIntroduction.title}</h2>
-          <p className="text-gray-700 leading-relaxed mb-3 whitespace-pre-line">{charDhamIntroduction.content}</p>
-          <div className="border-t border-gray-200 pt-3 mt-3">
-            <p className="text-gray-600 text-sm font-semibold mb-2">{charDhamIntroduction.titleEnglish}</p>
-            <p className="text-gray-700 leading-relaxed whitespace-pre-line text-sm">{charDhamIntroduction.contentEnglish}</p>
+        <div className="folio rounded-xl p-4 sm:p-6 mb-6">
+          <h2 className="font-serif text-xl sm:text-2xl font-bold text-maroon mb-3">{charDhamIntroduction.title}</h2>
+          <p className="text-ink leading-relaxed mb-3 whitespace-pre-line">{charDhamIntroduction.content}</p>
+          <div className="border-t border-gold pt-3 mt-3">
+            <p className="text-ink/70 text-sm font-semibold mb-2">{charDhamIntroduction.titleEnglish}</p>
+            <p className="text-ink leading-relaxed whitespace-pre-line text-sm">{charDhamIntroduction.contentEnglish}</p>
           </div>
         </div>
 
@@ -167,7 +167,7 @@ export default function CharDhamView() {
         <div className="flex justify-center mb-6">
           <button
             onClick={() => setShowMap(!showMap)}
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium flex items-center gap-2"
+            className="px-6 py-3 bg-saffron text-white rounded-lg hover:bg-saffron-dark transition-colors font-medium flex items-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -178,7 +178,7 @@ export default function CharDhamView() {
 
         {/* Map */}
         {showMap && (
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 mb-6 border border-gray-200 h-96">
+          <div className="folio rounded-xl p-4 sm:p-6 mb-6 h-96">
             <MapContainer
               center={[centerLat, centerLng]}
               zoom={5}
@@ -212,20 +212,20 @@ export default function CharDhamView() {
             <div
               key={dham.id}
               onClick={() => setSelectedDham(dham)}
-              className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 hover:shadow-xl transition-all cursor-pointer animate-fadeIn"
+              className="folio lotus-corner rounded-xl p-4 sm:p-6 hover:shadow-xl transition-all cursor-pointer animate-fadeIn"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1 rounded-lg font-bold text-lg">
+                    <span className="bg-saffron text-white px-3 py-1 rounded-lg font-bold text-lg">
                       #{dham.id}
                     </span>
                     <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-semibold">
                       {dham.significance}
                     </span>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1">{dham.nameHindi}</h3>
-                  <p className="text-lg text-gray-600 mb-2">{dham.name}</p>
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-maroon mb-1">{dham.nameHindi}</h3>
+                  <p className="text-lg text-ink/70 mb-2">{dham.name}</p>
                 </div>
               </div>
               

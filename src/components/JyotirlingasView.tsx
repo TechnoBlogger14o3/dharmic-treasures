@@ -113,7 +113,7 @@ function JyotirlingaModal({ jyotirlinga, onClose }: JyotirlingaModalProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-amber-50 rounded-lg p-5 border border-amber-200">
               <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2">
-                <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-saffron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 Best Time to Visit
@@ -166,22 +166,22 @@ export default function JyotirlingasView() {
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-7xl animate-fadeIn pb-20 sm:pb-8">
         {/* Title */}
         <div className="text-center mb-6 sm:mb-8 animate-fadeIn">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-maroon mb-2">
             ज्योतिर्लिंग
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4">Jyotirlingas</p>
-          <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-lg sm:text-xl shadow-lg">
+          <p className="text-base sm:text-lg md:text-xl text-ink/70 mb-4">Jyotirlingas</p>
+          <div className="inline-block bg-saffron text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-lg sm:text-xl shadow-lg">
             Total: 12 Jyotirlingas
           </div>
         </div>
 
         {/* Introduction */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 mb-6 border border-gray-200">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3">{jyotirlingaIntroduction.title}</h2>
-          <p className="text-gray-700 leading-relaxed mb-3 whitespace-pre-line">{jyotirlingaIntroduction.content}</p>
-          <div className="border-t border-gray-200 pt-3 mt-3">
-            <p className="text-gray-600 text-sm font-semibold mb-2">{jyotirlingaIntroduction.titleEnglish}</p>
-            <p className="text-gray-700 leading-relaxed whitespace-pre-line text-sm">{jyotirlingaIntroduction.contentEnglish}</p>
+        <div className="folio rounded-xl p-4 sm:p-6 mb-6">
+          <h2 className="font-serif text-xl sm:text-2xl font-bold text-maroon mb-3">{jyotirlingaIntroduction.title}</h2>
+          <p className="text-ink leading-relaxed mb-3 whitespace-pre-line">{jyotirlingaIntroduction.content}</p>
+          <div className="border-t border-gold pt-3 mt-3">
+            <p className="text-ink/70 text-sm font-semibold mb-2">{jyotirlingaIntroduction.titleEnglish}</p>
+            <p className="text-ink leading-relaxed whitespace-pre-line text-sm">{jyotirlingaIntroduction.contentEnglish}</p>
           </div>
         </div>
 
@@ -189,11 +189,11 @@ export default function JyotirlingasView() {
         <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
           {/* Sort */}
           <div className="flex items-center gap-2">
-            <label className="text-sm font-medium text-gray-700">Sort by:</label>
+            <label className="text-sm font-medium text-ink">Sort by:</label>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as 'id' | 'name' | 'state')}
-              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="px-3 py-2 border border-gold rounded-lg bg-cream focus:outline-none focus:ring-2 focus:ring-saffron"
             >
               <option value="id">ID</option>
               <option value="name">Name</option>
@@ -204,7 +204,7 @@ export default function JyotirlingasView() {
           {/* Map Toggle */}
           <button
             onClick={() => setShowMap(!showMap)}
-            className="px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors font-medium flex items-center gap-2"
+            className="px-6 py-2 bg-saffron text-white rounded-lg hover:bg-saffron-dark transition-colors font-medium flex items-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -215,7 +215,7 @@ export default function JyotirlingasView() {
 
         {/* Map */}
         {showMap && (
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 mb-6 border border-gray-200 h-96">
+          <div className="folio rounded-xl p-4 sm:p-6 mb-6 h-96">
             <MapContainer
               center={[centerLat, centerLng]}
               zoom={5}
@@ -249,20 +249,20 @@ export default function JyotirlingasView() {
             <div
               key={jyotirlinga.id}
               onClick={() => setSelectedJyotirlinga(jyotirlinga)}
-              className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200 hover:shadow-xl transition-all cursor-pointer animate-fadeIn"
+              className="folio lotus-corner rounded-xl p-4 sm:p-6 hover:shadow-xl transition-all cursor-pointer animate-fadeIn"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-lg font-bold text-lg">
+                    <span className="bg-saffron text-white px-3 py-1 rounded-lg font-bold text-lg">
                       #{jyotirlinga.id}
                     </span>
                     <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-semibold">
                       {jyotirlinga.significance}
                     </span>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1">{jyotirlinga.nameHindi}</h3>
-                  <p className="text-lg text-gray-600 mb-2">{jyotirlinga.name}</p>
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-maroon mb-1">{jyotirlinga.nameHindi}</h3>
+                  <p className="text-lg text-ink/70 mb-2">{jyotirlinga.name}</p>
                 </div>
               </div>
               
@@ -281,7 +281,7 @@ export default function JyotirlingasView() {
               
               <p className="text-sm text-gray-600 line-clamp-3 mb-4">{jyotirlinga.description.substring(0, 120)}...</p>
               
-              <button className="mt-2 w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg hover:from-orange-600 hover:to-red-600 transition-colors font-medium">
+              <button className="mt-2 w-full bg-saffron text-white px-4 py-2 rounded-lg hover:bg-saffron-dark transition-colors font-medium">
                 View Details
               </button>
             </div>

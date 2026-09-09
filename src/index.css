@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #3B2A1A;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -131,4 +132,44 @@ body {
 .leaflet-popup-content {
   margin: 0;
   padding: 0;
+}
+
+.paper-grain {
+  background-image:
+    radial-gradient(ellipse at top, rgba(196, 92, 38, 0.12), transparent 55%),
+    radial-gradient(ellipse at bottom, rgba(201, 162, 39, 0.1), transparent 50%);
+}
+
+.folio {
+  background-color: rgba(251, 246, 234, 0.95);
+  border: 1px solid #C9A227;
+  box-shadow: 0 8px 24px rgba(107, 43, 31, 0.08);
+}
+
+.lotus-corner {
+  position: relative;
+}
+
+.lotus-corner::before,
+.lotus-corner::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: #C9A227;
+  pointer-events: none;
+}
+
+.lotus-corner::before {
+  top: 8px;
+  left: 8px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.lotus-corner::after {
+  bottom: 8px;
+  right: 8px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
 }

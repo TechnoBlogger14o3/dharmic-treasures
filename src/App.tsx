@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from 'react'
+import { useState, useEffect, lazy, Suspense, useRef } from 'react'
 import { TextType, TextConfig } from '../types'
 import ErrorBoundary from './components/ErrorBoundary'
 import BackgroundSelector from './components/BackgroundSelector'
@@ -120,8 +120,11 @@ function App() {
       })
   }, [textType])
 
-  // Restore reading progress on mount
+  // Restore last-read verse only on first load, not when switching texts
+  const didRestoreInitialProgress = useRef(false)
   useEffect(() => {
+    if (didRestoreInitialProgress.current) return
+    didRestoreInitialProgress.current = true
     const progress = getProgress(textType)
     if (progress) {
       setSelectedChapter(progress.chapterNumber)
@@ -171,7 +174,7 @@ function App() {
   }
 
   const backgroundClasses: Record<string, string> = {
-    'gradient-1': 'bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50',
+    'gradient-1': 'bg-cream paper-grain',
     'gradient-2': 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50',
     'gradient-3': 'bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50',
     'gradient-4': 'bg-gradient-to-br from-pink-50 via-rose-50 to-red-50',
@@ -182,9 +185,10 @@ function App() {
     <ErrorBoundary>
       <div className={`min-h-screen transition-colors duration-500 ${backgroundClasses[backgroundTheme]}`}>
         {/* Header with Text Type Selector */}
-        <div className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-gray-200">
+        <div className="sticky top-0 z-50 bg-saffron shadow-md border-b border-gold">
           <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
             <div className="flex items-center justify-between gap-2">
+              <span className="flex-shrink-0 text-cream text-lg sm:text-xl leading-none pr-1 sm:pr-2" aria-hidden="true">ॐ</span>
               {/* Text Type Selector - Scrollable on mobile */}
               <div className="flex-1 overflow-x-auto scrollbar-hide -mx-3 sm:mx-0 px-3 sm:px-0">
                 <div className="flex items-center gap-2 sm:gap-3 min-w-max sm:flex-wrap sm:justify-center">
@@ -199,14 +203,12 @@ function App() {
                       }}
                       className={`px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium transition-all duration-300 cursor-pointer touch-manipulation min-w-[80px] sm:min-w-0 flex-shrink-0 ${
                         textType === type && viewMode === 'text'
-                          ? 'bg-amber-500 text-white shadow-lg scale-105'
-                          : 'bg-white text-gray-700 hover:bg-amber-100 active:bg-amber-200 border border-gray-200'
+                          ? 'bg-cream text-maroon shadow-lg border-2 border-gold underline decoration-gold decoration-2 underline-offset-4'
+                          : 'bg-cream/90 text-ink hover:bg-saffron-light active:bg-saffron-light border border-gold/70'
                       }`}
                     >
-                      <div className="text-xs sm:text-sm md:text-base whitespace-nowrap">{textConfigsBase[type].nameHindi}</div>
-                      {type !== 'satyanarayan' && (
-                        <div className="text-[10px] sm:text-xs text-gray-500 whitespace-nowrap">{textConfigsBase[type].name}</div>
-                      )}
+                      <div className="font-serif text-xs sm:text-sm md:text-base whitespace-nowrap">{textConfigsBase[type].nameHindi}</div>
+                      <div className={`text-[10px] sm:text-xs whitespace-nowrap ${textType === type && viewMode === 'text' ? 'text-saffron-dark' : 'text-ink/60'}`}>{textConfigsBase[type].name}</div>
                     </button>
                   ))}
                 </div>
@@ -259,7 +261,7 @@ function App() {
             <LoadingSpinner />
           ) : isHomePage ? (
             <Suspense fallback={<LoadingSpinner />}>
-              <div key="chapter-list" className="animate-fadeIn">
+              <div key={`chapter-list-${textType}`} className="animate-fadeIn">
                 <ChapterList
                   chapters={currentText.data}
                   textName={currentText.name}
@@ -306,10 +308,10 @@ function App() {
           </div>
         )}
 
-        <footer className="mt-12 border-t border-amber-200/60 bg-gradient-to-r from-amber-50/80 via-white/80 to-orange-50/80">
-          <div className="container mx-auto px-4 py-8 text-center text-sm text-gray-600">
-            <div className="text-xs uppercase tracking-[0.2em] text-amber-700/70">Connect & Explore</div>
-            <div className="mt-2 text-base font-semibold text-gray-700">
+        <footer className="mt-12 border-t border-gold bg-cream">
+          <div className="container mx-auto px-4 py-8 text-center text-sm text-ink">
+            <div className="text-xs uppercase tracking-[0.2em] text-maroon/80 font-serif">Connect & Explore</div>
+            <div className="mt-2 text-base font-semibold text-maroon">
               Developed by Aman Shekhar
             </div>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
@@ -317,7 +319,7 @@ function App() {
                 href="https://technoblogger14o3.github.io/my-portfolio/"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-medium text-amber-800 shadow-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-900"
+                className="rounded-full border border-gold bg-cream px-4 py-2 text-xs font-medium text-maroon shadow-sm transition-all hover:border-saffron hover:bg-saffron-light"
               >
                 Portfolio
               </a>
@@ -325,7 +327,7 @@ function App() {
                 href="https://www.linkedin.com/in/aman-shekhar/"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-medium text-amber-800 shadow-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-900"
+                className="rounded-full border border-gold bg-cream px-4 py-2 text-xs font-medium text-maroon shadow-sm transition-all hover:border-saffron hover:bg-saffron-light"
               >
                 LinkedIn
               </a>
@@ -333,7 +335,7 @@ function App() {
                 href="https://debunkmythology.blogspot.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-medium text-amber-800 shadow-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-900"
+                className="rounded-full border border-gold bg-cream px-4 py-2 text-xs font-medium text-maroon shadow-sm transition-all hover:border-saffron hover:bg-saffron-light"
               >
                 Dharmic Blog
               </a>
@@ -341,12 +343,12 @@ function App() {
                 href="https://shekhar14.medium.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-amber-200 bg-white/70 px-4 py-2 text-xs font-medium text-amber-800 shadow-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-900"
+                className="rounded-full border border-gold bg-cream px-4 py-2 text-xs font-medium text-maroon shadow-sm transition-all hover:border-saffron hover:bg-saffron-light"
               >
                 Medium
               </a>
             </div>
-            <div className="mt-4 text-xs text-gray-500">
+            <div className="mt-4 text-xs text-ink/60">
               Sharing sacred wisdom with devotion. © {new Date().getFullYear()}
             </div>
           </div>

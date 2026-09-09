@@ -241,7 +241,7 @@ export default function ShaktipeethsMap({ shaktipeeths, onMarkerClick }: Shaktip
                 {onMarkerClick && (
                   <button
                     onClick={() => onMarkerClick(peeth)}
-                    className="mt-2 w-full bg-amber-500 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-amber-600 transition-colors"
+                    className="mt-2 w-full bg-saffron text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-saffron-dark transition-colors"
                   >
                     View Details
                   </button>

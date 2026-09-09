@@ -83,7 +83,7 @@ ${new Date().toLocaleString()}
       <button
         onClick={() => handleExport('file')}
         disabled={exporting}
-        className="flex items-center gap-2 px-4 py-2.5 sm:py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 active:bg-green-700 transition-colors text-sm font-medium touch-manipulation min-h-[44px] disabled:opacity-50"
+        className="flex items-center gap-2 px-4 py-2.5 sm:py-2 bg-maroon text-cream rounded-lg hover:bg-maroon/90 active:bg-maroon/80 transition-colors text-sm font-medium touch-manipulation min-h-[44px] disabled:opacity-50"
         title="Save verse to file"
       >
         {exporting ? (
@@ -111,7 +111,7 @@ ${new Date().toLocaleString()}
       <button
         onClick={() => handleExport('print')}
         disabled={exporting}
-        className="flex items-center gap-2 px-4 py-2.5 sm:py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 active:bg-purple-700 transition-colors text-sm font-medium touch-manipulation min-h-[44px] disabled:opacity-50"
+        className="flex items-center gap-2 px-4 py-2.5 sm:py-2 bg-gold text-maroon rounded-lg hover:bg-gold-light active:bg-gold-light transition-colors text-sm font-medium touch-manipulation min-h-[44px] disabled:opacity-50"
         title="Print verse"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
