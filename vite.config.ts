@@ -20,13 +20,31 @@ function loadPdfSources(): PdfSource[] {
 }
 
 function copyShastraPdfs(distRoot?: string) {
+  const missing: string[] = []
   for (const source of loadPdfSources()) {
-    const src = path.join(root, source.path)
-    if (!existsSync(src) || !source.publicPdf) continue
+    if (!source.publicPdf) continue
+    const fromData = path.join(root, source.path)
+    const fromPublic = path.join(root, 'public', source.publicPdf)
+    const from = existsSync(fromData) ? fromData : existsSync(fromPublic) ? fromPublic : null
+    if (!from) {
+      missing.push(source.publicPdf)
+      continue
+    }
     const dest = path.join(distRoot ?? root, distRoot ? source.publicPdf : path.join('public', source.publicPdf))
     mkdirSync(path.dirname(dest), { recursive: true })
-    if (existsSync(dest) && statSync(dest).mtimeMs >= statSync(src).mtimeMs) continue
-    copyFileSync(src, dest)
+    if (existsSync(dest) && dest === from) continue
+    if (existsSync(dest) && statSync(dest).mtimeMs >= statSync(from).mtimeMs && statSync(dest).size === statSync(from).size) {
+      continue
+    }
+    copyFileSync(from, dest)
+  }
+  if (missing.length && process.env.CI) {
+    throw new Error(
+      `Missing shastra PDFs: ${missing.join(', ')}. Commit the files under public/pdfs/ so deploy can serve them.`
+    )
+  }
+  if (missing.length) {
+    console.warn(`Missing shastra PDFs (they will 404 in the app): ${missing.join(', ')}`)
   }
 }
 

@@ -56,3 +56,5 @@ npm run build
 
 Upload everything inside **`dist/`** to `public_html` (see main project README / Hostinger docs).
 
+Shastra PDFs must be in **`public/pdfs/`** and committed. `data/*.pdf` stays local/gitignored; GitHub Actions cannot copy files that are not in the repo. A missing PDF URL returns the homepage HTML, so the viewer fails.
+

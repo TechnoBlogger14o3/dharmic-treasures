@@ -33,12 +33,13 @@ src-tauri/Cargo.lock
 # Claude Code
 .claude/
 
-# Source scripture PDFs — keep locally in data/; Vite copies them at dev/build
+# Source scripture PDFs stay local. The site is served from public/pdfs/,
+# which MUST be committed so GitHub Actions / Hostinger can open the books.
 data/*.pdf
 
-# Copied/served PDFs (from data/)
-public/pdfs/
+# Leftover root-level copies (use public/pdfs/ instead)
 public/*.pdf
+!public/pdfs/
 
 # Generated shastra search index (npm run index:shastras)
 public/rag/

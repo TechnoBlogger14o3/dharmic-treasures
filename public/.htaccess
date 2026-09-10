@@ -15,10 +15,16 @@
   RewriteRule . /index.html [L]
 </IfModule>
 
+# Do not send missing/existing PDF requests through the SPA fallback
+<IfModule mod_rewrite.c>
+  RewriteRule \.pdf$ - [L]
+</IfModule>
+
 # JavaScript MIME types (.mjs is often served as text/plain on Hostinger/LiteSpeed)
 <IfModule mod_mime.c>
   AddType text/javascript .mjs .js
   AddType application/wasm .wasm
+  AddType application/pdf .pdf
 </IfModule>
 
 <IfModule mod_headers.c>

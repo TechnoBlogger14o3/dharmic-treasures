@@ -72,7 +72,9 @@ export default function PDFViewer({ pdfPath, title, titleHindi, onBack, initialP
     console.error('PDF load error:', error)
     console.error('PDF path:', fullPdfPath)
     const errorMessage = error.message || 'Unknown error'
-    setError(`Failed to load PDF: ${errorMessage}. Please check if the file exists.`)
+    setError(
+      `This PDF is not on the server yet (deploy only uploads files that are in git under public/pdfs/). ${errorMessage}`
+    )
     setLoading(false)
   }
 

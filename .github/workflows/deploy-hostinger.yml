@@ -26,6 +26,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Ensure shastra PDFs are in the build
+        run: |
+          ls -lh dist/pdfs || true
+          test -f dist/pdfs/sadhak-sanjeevani.pdf
+          test -f dist/pdfs/shiv-puran.pdf
+          test -f dist/pdfs/valmiki-ramayan.pdf
+          test -f dist/pdfs/vishnu-puran.pdf
+
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -35,7 +43,7 @@ jobs:
           local-dir: ./dist/
           server-dir: /domains/dharmic-treasures.com/public_html/
           dangerous-clean-slate: false
-          timeout: 120000
+          timeout: 600000
           log-level: verbose
           exclude: |
             **/.git*
