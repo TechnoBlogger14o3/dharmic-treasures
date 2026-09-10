@@ -18,11 +18,12 @@ interface PDFViewerProps {
   title: string
   titleHindi: string
   onBack: () => void
+  initialPage?: number
 }
 
-export default function PDFViewer({ pdfPath, title, titleHindi, onBack }: PDFViewerProps) {
+export default function PDFViewer({ pdfPath, title, titleHindi, onBack, initialPage = 1 }: PDFViewerProps) {
   const [numPages, setNumPages] = useState<number>(0)
-  const [pageNumber, setPageNumber] = useState<number>(1)
+  const [pageNumber, setPageNumber] = useState<number>(initialPage > 0 ? initialPage : 1)
   const [pageWidth, setPageWidth] = useState<number>(800)
   const [loading, setLoading] = useState<boolean>(true)
   const [error, setError] = useState<string | null>(null)
@@ -53,8 +54,16 @@ export default function PDFViewer({ pdfPath, title, titleHindi, onBack }: PDFVie
     return () => window.removeEventListener('resize', calculateWidth)
   }, [])
 
+  useEffect(() => {
+    if (!numPages) return
+    const startPage = Math.min(Math.max(initialPage || 1, 1), numPages)
+    setPageNumber(startPage)
+  }, [initialPage, numPages])
+
   const onDocumentLoadSuccess = (data: { numPages: number }) => {
     setNumPages(data.numPages)
+    const startPage = Math.min(Math.max(initialPage || 1, 1), data.numPages)
+    setPageNumber(startPage)
     setLoading(false)
     setError(null)
   }

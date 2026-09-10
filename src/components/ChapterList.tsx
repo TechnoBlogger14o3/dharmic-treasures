@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Chapter, TextType } from '../../types'
 import SearchBar from './SearchBar'
-import GitaChatbot from './GitaChatbot'
 
 interface ChapterListProps {
   chapters: Chapter[]
@@ -115,16 +114,6 @@ export default function ChapterList({
         <div className="text-center py-12">
           <p className="text-ink/60 text-lg">No chapters found matching "{searchQuery}"</p>
         </div>
-      )}
-
-      {/* Gita Chatbot - Only for Bhagavad Gita */}
-      {textType === 'gita' && (
-        <GitaChatbot
-          chapters={chapters}
-          onNavigateToVerse={(chapterNumber, verseNumber) => {
-            onChapterSelect(chapterNumber, verseNumber)
-          }}
-        />
       )}
     </div>
   )

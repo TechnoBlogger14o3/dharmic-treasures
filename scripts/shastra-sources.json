@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "id": "gita",
+      "title": "Bhagavad Gita",
+      "titleHindi": "भगवद्गीता",
+      "kind": "gita-json",
+      "path": "data/gita.ts"
+    },
+    {
+      "id": "gita-pdf",
+      "title": "Bhagavad Gita (Sadhak Sanjeevani)",
+      "titleHindi": "भगवद्गीता — साधक संजीवनी",
+      "kind": "pdf",
+      "path": "data/Sadhak Sanjeevani.pdf",
+      "publicPdf": "pdfs/sadhak-sanjeevani.pdf",
+      "index": false
+    },
+    {
+      "id": "ramayan",
+      "title": "Shrimad Valmiki Ramayan",
+      "titleHindi": "श्रीमद् वाल्मीकि रामायण",
+      "kind": "pdf",
+      "path": "data/Shrimad Valmiki Ramayan.pdf",
+      "publicPdf": "pdfs/valmiki-ramayan.pdf"
+    },
+    {
+      "id": "shiv-puran",
+      "title": "Shiv Puran",
+      "titleHindi": "शिव पुराण",
+      "kind": "pdf",
+      "path": "data/शिव पुराण.pdf",
+      "publicPdf": "pdfs/shiv-puran.pdf"
+    },
+    {
+      "id": "vishnu-puran",
+      "title": "Vishnu Puran",
+      "titleHindi": "विष्णु पुराण",
+      "kind": "pdf",
+      "path": "data/Vishnu Puran - Gita Press.pdf",
+      "publicPdf": "pdfs/vishnu-puran.pdf"
+    }
+  ]
+}

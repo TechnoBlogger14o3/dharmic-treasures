@@ -348,7 +348,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् |\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ||१-३८||",
         "transliteration": "kathaṁ na jñeyam asmābhiḥ pāpād asmān nivartitum\nkula-kṣhaya-kṛitaṁ doṣhaṁ prapaśhyadbhir janārdana",
-        "hindi_meaning": "हे वार्ष्णेय! अधर्म में लिप्त लोगों के कारण कुल की स्त्रियाँ भ्रष्ट हो जाएँगी और स्त्रियों के भ्रष्ट होने पर वर्णसंकर उत्पन्न होगा।",
+        "hindi_meaning": "हे जनार्दन! कुलक्षय के दोष को देखते हुए हम इस पाप से क्यों न बचें?",
         "meaning": "Why should we, who can see the crime in destroying a family, engage in these acts of sin?"
       },
       {
@@ -357,7 +357,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः |\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ||१-३९||",
         "transliteration": "kula-kṣhaye praṇaśhyanti kula-dharmāḥ sanātanāḥ\ndharme naṣhṭe kulaṁ kṛitsnam adharmo ’bhibhavaty uta",
-        "hindi_meaning": "हे जनार्दन! वर्णसंकर नरक में ले जाता है, जिससे कुल के पूर्वज भी नीचे गिर जाते हैं, क्योंकि उनके पिंड और जल का अर्पण नहीं होता।",
+        "hindi_meaning": "कुल के नाश से सनातन कुलधर्म नष्ट हो जाते हैं और धर्म के नष्ट होने पर सम्पूर्ण कुल में अधर्म फैल जाता है।",
         "meaning": "With the destruction of dynasty, the eternal family tradition is vanquished, and thus the rest of the family becomes involved in irreligion."
       },
       {
@@ -366,7 +366,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः |\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः ||१-४०||",
         "transliteration": "adharmābhibhavāt kṛiṣhṇa praduṣhyanti kula-striyaḥ\nstrīṣhu duṣhṭāsu vārṣhṇeya jāyate varṇa-saṅkaraḥ",
-        "hindi_meaning": "हे कृष्ण! कुल के विनाश से उत्पन्न वर्णसंकर के कारण, कुल के पूर्वज नरक में गिर जाते हैं।",
+        "hindi_meaning": "हे कृष्ण! अधर्म बढ़ने पर कुल की स्त्रियाँ भ्रष्ट हो जाती हैं और हे वार्ष्णेय! स्त्रियों के भ्रष्ट होने से वर्णसंकर उत्पन्न होता है।",
         "meaning": "When irreligion is prominent in the family, O Krishna, the women of the family become polluted, and from the degradation of womanhood, O descendant of Vrishni, comes unwanted progeny."
       },
       {
@@ -375,7 +375,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च |\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः ||१-४१||",
         "transliteration": "saṅkaro narakāyaiva kula-ghnānāṁ kulasya cha\npatanti pitaro hy eṣhāṁ lupta-piṇḍodaka-kriyāḥ",
-        "hindi_meaning": "हे अर्जुन! हमने महान पाप किया है, जो अपने कुल के लोगों को मारने के लिए तैयार हैं।",
+        "hindi_meaning": "वर्णसंकर कुलघातियों और कुल दोनों को नरक में ले जाता है। ऐसे भ्रष्ट कुलों के पितर भी गिर जाते हैं, क्योंकि उनका पिंड और जलक्रिया लुप्त हो जाती है।",
         "meaning": "An increase of unwanted population certainly causes hellish life both for the family and for those who destroy the family tradition. The ancestors of such corrupt families fall down, because the performances for offering them food and water are entirely stopped."
       },
       {
@@ -384,7 +384,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः |\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः ||१-४२||",
         "transliteration": "doṣhair etaiḥ kula-ghnānāṁ varṇa-saṅkara-kārakaiḥ\nutsādyante jāti-dharmāḥ kula-dharmāśh cha śhāśhvatāḥ",
-        "hindi_meaning": "हे माधव! यदि धृतराष्ट्र के पुत्र हथियारों से मुझे मार दें, तो मुझे यह अधिक प्रिय होगा।",
+        "hindi_meaning": "कुलघातियों के इन दोषों से, जो वर्णसंकर उत्पन्न करते हैं, शाश्वत जातिधर्म और कुलधर्म नष्ट हो जाते हैं।",
         "meaning": "By the evil deeds of those who destroy the family tradition and thus give rise to unwanted children, all kinds of community projects and family welfare activities are devastated."
       },
       {
@@ -393,7 +393,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन |\nनरके नियतं वासो भवतीत्यनुशुश्रुम ||१-४३||",
         "transliteration": "utsanna-kula-dharmāṇāṁ manuṣhyāṇāṁ janārdana\nnarake niyataṁ vāso bhavatīty anuśhuśhruma",
-        "hindi_meaning": "संजय ने कहा: हे राजन्! इस प्रकार कहकर, युद्ध के मैदान में अर्जुन ने अपने धनुष-बाण को छोड़ दिया और रथ के पिछले भाग में बैठ गया, मन में दुःख से भरकर।",
+        "hindi_meaning": "हे जनार्दन! हमने सुना है कि जिनके कुलधर्म नष्ट हो जाते हैं, उनका नरक में सदा वास होता है।",
         "meaning": "O Krishna, maintainer of the people, I have heard by disciplic succession that those who destroy family traditions dwell always in hell."
       },
       {
@@ -402,7 +402,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "अहो बत महत्पापं कर्तुं व्यवसिता वयम् |\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ||१-४४||",
         "transliteration": "aho bata mahat pāpaṁ kartuṁ vyavasitā vayam\nyad rājya-sukha-lobhena hantuṁ sva-janam udyatāḥ",
-        "hindi_meaning": "हे अर्जुन! तुम्हें इस समय यह कायरता कैसी? यह तुम्हारे लिए उचित नहीं है। यह तुम्हारी प्रतिष्ठा को नष्ट करेगी।",
+        "hindi_meaning": "अहो! हम कितना बड़ा पाप करने को तैयार हैं कि राज्यसुख के लोभ से अपने ही स्वजनों को मारने के लिए उद्यत हैं।",
         "meaning": "Alas, how strange it is that we are preparing to commit greatly sinful acts. Driven by the desire to enjoy royal happiness, we are intent on killing our own kinsmen."
       },
       {
@@ -411,7 +411,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः |\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ||१-४५||",
         "transliteration": "yadi mām apratīkāram aśhastraṁ śhastra-pāṇayaḥ\ndhārtarāṣhṭrā raṇe hanyus tan me kṣhemataraṁ bhavet",
-        "hindi_meaning": "हे पार्थ! तुम इस कायरता को त्याग दो, क्योंकि यह तुम्हारे लिए उचित नहीं है। अपने हृदय की दुर्बलता को त्यागकर उठ खड़े हो।",
+        "hindi_meaning": "यदि शस्त्रधारी धृतराष्ट्र के पुत्र मुझे अशस्त्र और बिना प्रतिकार किए युद्ध में मार दें, तो वह मेरे लिए अधिक कल्याणकारी होगा।",
         "meaning": "Better for me if the sons of Dhritarashtra, weapons in hand, were to kill me unarmed and unresisting on the battlefield."
       },
       {
@@ -420,7 +420,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "सञ्जय उवाच |\nएवमुक्त्वार्जुनः संख्ये रथोपस्थ उपाविशत् |\nविसृज्य सशरं चापं शोकसंविग्नमानसः ||१-४६||",
         "transliteration": "sañjaya uvācha\nevam uktvā ’rjunaḥ saṅkhye rathopastha upāviśhat\nvisṛijya sa-śharaṁ chāpaṁ śhoka-saṁvigna-mānasaḥ",
-        "hindi_meaning": "हे अर्जुन! तुम्हारे मन में यह कायरता क्यों है? यह तुम्हारे लिए उचित नहीं है। यह तुम्हारी प्रतिष्ठा को नष्ट करेगी।",
+        "hindi_meaning": "संजय ने कहा: इस प्रकार कहकर अर्जुन ने युद्धभूमि में धनुष-बाण त्याग दिया और शोक से व्याकुल मन होकर रथ के पीछे बैठ गया।",
         "meaning": "Sanjaya said: Arjuna, having thus spoken on the battlefield, cast aside his bow and arrows and sat down on the chariot, his mind overwhelmed with grief."
       },
       {
@@ -429,7 +429,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 1,
         "text": "ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु\nब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे\nअर्जुनविषादयोगो नाम प्रथमोऽध्यायः",
         "transliteration": "oṁ tat sad iti śhrīmad bhagavad gītāsūpaniṣhatsu\nbrahma vidyāyāṁ yoga śhāstre śhrī kṛiṣhṇārjuna saṁvāde\narjuna viṣhādayogo nāma prathamo ’dhyāyaḥ",
-        "hindi_meaning": "हे अर्जुन! तुम्हें इस समय यह कायरता कैसी? यह तुम्हारे लिए उचित नहीं है। यह तुम्हारी प्रतिष्ठा को नष्ट करेगी।",
+        "hindi_meaning": "इस प्रकार श्रीमद्भगवद्गीता रूपी उपनिषद् में, ब्रह्मविद्या, योगशास्त्र तथा श्रीकृष्ण और अर्जुन के संवाद में अर्जुन-विषाद-योग नामक प्रथम अध्याय पूर्ण हुआ।",
         "meaning": "Thus in the Upanishads of the glorious Bhagavad Gita, the science of the Eternal, the scripture of Yoga, the dialogue between Sri Krishna and Arjuna, ends the first discourse entitled: The Yoga of Arjuna's Dejection."
       }
     ]
@@ -475,7 +475,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 2,
         "text": "अर्जुन उवाच |\nकथं भीष्ममहं संख्ये द्रोणं च मधुसूदन |\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन ||२-४||",
         "transliteration": "arjuna uvācha\nkathaṁ bhīṣhmam ahaṁ saṅkhye droṇaṁ cha madhusūdana\niṣhubhiḥ pratiyotsyāmi pūjārhāv arisūdana",
-        "hindi_meaning": "संजय ने कहा: करुणा से व्याप्त, आँसुओं से भरी आँखों वाले और व्याकुल अर्जुन को देखकर, मधुसूदन ने यह वचन कहा।",
+        "hindi_meaning": "अर्जुन ने कहा: हे मधुसूदन! हे शत्रुओं के संहारक! युद्ध में मैं भीष्म और द्रोण जैसे पूजनीय पुरुषों पर बाणों से प्रत्याक्रमण कैसे करूँ?",
         "meaning": "Arjuna said: O killer of enemies, O killer of Madhu, how can I counterattack with arrows in battle men like Bhishma and Drona, who are worthy of my worship?"
       },
       {
@@ -484,7 +484,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 2,
         "text": "गुरूनहत्वा हि महानुभावान्\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके |\nहत्वार्थकामांस्तु गुरूनिहैव\nभुञ्जीय भोगान्रुधिरप्रदिग्धान् ||२-५||",
         "transliteration": "gurūn ahatvā hi mahānubhāvān\nśhreyo bhoktuṁ bhaikṣhyam apīha loke\nhatvārtha-kāmāṁs tu gurūn ihaiva\nbhuñjīya bhogān rudhira-pradigdhān",
-        "hindi_meaning": "श्री भगवान ने कहा: हे अर्जुन! इस कष्टप्रद समय में तुम्हारे मन में यह कायरता कहाँ से आई? यह आर्यों के लिए उचित नहीं है, स्वर्ग को न देने वाली और कीर्ति को नष्ट करने वाली है।",
+        "hindi_meaning": "अपने महान गुरुजनों का वध करके जीने की अपेक्षा इस संसार में भिक्षा माँगकर जीना अच्छा है। यद्यपि वे सांसारिक लाभ चाहते हैं, फिर भी वे श्रेष्ठ हैं; उनका वध करने पर हमारे सभी भोग रक्त से सने होंगे।",
         "meaning": "It would be better to live in this world by begging than to live at the cost of the lives of great souls who are my teachers. Even though desiring worldly gain, they are superiors. If they are killed, everything we enjoy will be tainted with blood."
       },
       {
@@ -493,7 +493,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 2,
         "text": "न चैतद्विद्मः कतरन्नो गरीयो\nयद्वा जयेम यदि वा नो जयेयुः |\nयानेव हत्वा न जिजीविषामस्\nतेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ||२-६||",
         "transliteration": "na chaitad vidmaḥ kataran no garīyo\nyad vā jayema yadi vā no jayeyuḥ\nyān eva hatvā na jijīviṣhāmas\nte ’vasthitāḥ pramukhe dhārtarāṣhṭrāḥ",
-        "hindi_meaning": "हे पार्थ! कायरता मत करो, यह तुम्हारे लिए उचित नहीं है। हृदय की इस तुच्छ दुर्बलता को त्यागकर उठो, हे परंतप!",
+        "hindi_meaning": "हम यह भी नहीं जानते कि उन्हें जीतना अच्छा है या उनसे हार जाना। यदि हम धृतराष्ट्र के पुत्रों को मार दें तो हम जीवित रहना भी नहीं चाहेंगे, फिर भी वे युद्धभूमि में हमारे सामने खड़े हैं।",
         "meaning": "Nor do we know which is better–conquering them or being conquered by them. If we killed the sons of Dhritarashtra, we should not care to live. Yet they are now standing before us on the battlefield."
       },
       {
@@ -520,7 +520,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 2,
         "text": "सञ्जय उवाच |\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप |\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह ||२-९||",
         "transliteration": "sañjaya uvācha\nevam uktvā hṛiṣhīkeśhaṁ guḍākeśhaḥ parantapa\nna yotsya iti govindam uktvā tūṣhṇīṁ babhūva ha",
-        "hindi_meaning": "संजय ने कहा: करुणा से व्याप्त, आँसुओं से भरी आँखों वाले और व्याकुल अर्जुन को देखकर, मधुसूदन ने यह वचन कहा।",
+        "hindi_meaning": "संजय ने कहा: ऐसा कहकर शत्रुओं का दमन करने वाले अर्जुन ने कृष्ण से कहा, हे गोविन्द! मैं युद्ध नहीं करूँगा, और फिर मौन हो गए।",
         "meaning": "Sanjaya said: Having spoken thus, Arjuna, chastiser of enemies, told Krishna, 'Govinda, I shall not fight,' and fell silent."
       },
       {
@@ -529,7 +529,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 2,
         "text": "तमुवाच हृषीकेशः प्रहसन्निव भारत |\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः ||२-१०||",
         "transliteration": "tam uvācha hṛiṣhīkeśhaḥ prahasann iva bhārata\nsenayor ubhayor madhye viṣhīdantam idaṁ vachaḥ",
-        "hindi_meaning": "श्री भगवान ने कहा: हे अर्जुन! इस कष्टप्रद समय में तुम्हारे मन में यह कायरता कहाँ से आई? यह आर्यों के लिए उचित नहीं है, स्वर्ग को न देने वाली और कीर्ति को नष्ट करने वाली है।",
+        "hindi_meaning": "हे भरतवंशी! उस समय दोनों सेनाओं के मध्य श्रीकृष्ण ने मुस्कुराते हुए शोकाकुल अर्जुन से ये वचन कहे।",
         "meaning": "O descendant of Bharata, at that time Krishna, smiling, in the midst of both the armies, spoke the following words to the grief-stricken Arjuna."
       },
       {
@@ -1106,7 +1106,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "अर्जुन उवाच |\nज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन |\nतत्किं कर्मणि घोरे मां नियोजयसि केशव ||३-१||",
         "transliteration": "arjuna uvācha\njyāyasī chet karmaṇas te matā buddhir janārdana\ntat kiṁ karmaṇi ghore māṁ niyojayasi keśhava",
-        "hindi_meaning": "श्री भगवान ने कहा: तुम विद्वानों जैसी बातें कर रहे हो, लेकिन जो शोक के योग्य नहीं है उसके लिए शोक कर रहे हो। ज्ञानी लोग न तो जीवितों के लिए और न ही मृतकों के लिए शोक करते हैं।",
+        "hindi_meaning": "अर्जुन ने कहा: हे जनार्दन! हे केशव! यदि आप बुद्धि को सकाम कर्म से श्रेष्ठ मानते हैं, तो मुझे इस घोर युद्ध में क्यों लगाना चाहते हैं?",
         "meaning": "Arjuna said: O Janardana, O Kesava, why do You want to engage me in this ghastly warfare, if You think that intelligence is better than fruitive work?"
       },
       {
@@ -1115,7 +1115,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे |\nतदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम् ||३-२||",
         "transliteration": "vyāmiśhreṇeva vākyena buddhiṁ mohayasīva me\ntad ekaṁ vada niśhchitya yena śhreyo ’ham āpnuyām",
-        "hindi_meaning": "न तो मैं कभी नहीं था, न तुम, न ये सभी राजा; और न भविष्य में हम में से कोई कभी नहीं होगा।",
+        "hindi_meaning": "आपके द्वयर्थी उपदेशों से मेरी बुद्धि भ्रमित हो गई है। अतः कृपा करके निश्चयपूर्वक बताइए कि मेरे लिए सर्वाधिक कल्याणकारी क्या है।",
         "meaning": "My intelligence is bewildered by Your equivocal instructions. Therefore, please tell me decisively which will be most beneficial for me."
       },
       {
@@ -1124,7 +1124,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "श्रीभगवानुवाच |\nलोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ |\nज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम् ||३-३||",
         "transliteration": "śhrī bhagavān uvācha\nloke ’smin dvi-vidhā niṣhṭhā purā proktā mayānagha\njñāna-yogena sāṅkhyānāṁ karma-yogena yoginām",
-        "hindi_meaning": "जैसे इस शरीर में देही (आत्मा) बाल्यावस्था, यौवन और वृद्धावस्था से गुजरता है, वैसे ही मृत्यु के समय वह दूसरे शरीर को प्राप्त करता है। धीर पुरुष ऐसे परिवर्तन से विचलित नहीं होता।",
+        "hindi_meaning": "श्रीभगवान ने कहा: हे निष्पाप अर्जुन! मैं पहले ही बता चुका हूँ कि आत्म-साक्षात्कार का प्रयत्न करने वाले मनुष्य दो प्रकार के होते हैं—कुछ ज्ञान और दार्शनिक चिंतन द्वारा तथा अन्य भक्ति द्वारा इसे समझने का प्रयास करते हैं।",
         "meaning": "The Supreme Personality of Godhead said: O sinless Arjuna, I have already explained that there are two classes of men who try to realize the self. Some are inclined to understand it by empirical, philosophical speculation, and others by devotional service."
       },
       {
@@ -1133,7 +1133,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते |\nन च संन्यसनादेव सिद्धिं समधिगच्छति ||३-४||",
         "transliteration": "na karmaṇām anārambhān naiṣhkarmyaṁ puruṣho ’śhnute\nna cha sannyasanād eva siddhiṁ samadhigachchhati",
-        "hindi_meaning": "हे कौन्तेय! इन्द्रियों के संपर्क से उत्पन्न सुख-दुःख, शीत-उष्ण आदि आते-जाते रहते हैं, अनित्य हैं। हे भारत! तुम उन्हें सहन करो।",
+        "hindi_meaning": "केवल कर्म न करने से मनुष्य कर्मफल से मुक्त नहीं हो सकता और न केवल संन्यास से सिद्धि प्राप्त कर सकता है।",
         "meaning": "Not by merely abstaining from work can one achieve freedom from reaction, nor by renunciation alone can one attain perfection."
       },
       {
@@ -1142,7 +1142,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत् |\nकार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः ||३-५||",
         "transliteration": "na hi kaśhchit kṣhaṇam api jātu tiṣhṭhaty akarma-kṛit\nkāryate hy avaśhaḥ karma sarvaḥ prakṛiti-jair guṇaiḥ",
-        "hindi_meaning": "हे पुरुषर्षभ! जिस पुरुष को ये (सुख-दुःख) व्यथित नहीं करते, जो सुख-दुःख में सम है और धीर है, वह मोक्ष के योग्य है।",
+        "hindi_meaning": "प्रत्येक व्यक्ति भौतिक प्रकृति के गुणों से प्राप्त स्वभाव के अनुसार विवश होकर कर्म करता है; अतः कोई भी क्षणभर के लिए भी कर्म किए बिना नहीं रह सकता।",
         "meaning": "Everyone is forced to act helplessly according to the qualities he has acquired from the modes of material nature; therefore no one can refrain from doing something, not even for a moment."
       },
       {
@@ -1151,7 +1151,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन् |\nइन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते ||३-६||",
         "transliteration": "karmendriyāṇi saṁyamya ya āste manasā smaran\nindriyārthān vimūḍhātmā mithyāchāraḥ sa uchyate",
-        "hindi_meaning": "जो तत्त्वदर्शी हैं, उन्होंने देखा है कि असत् (शरीर) का कोई स्थायी भाव नहीं है और सत् (आत्मा) का कोई अभाव नहीं है।",
+        "hindi_meaning": "जो कर्मेन्द्रियों को रोकता है, किन्तु मन में इन्द्रिय-विषयों का चिंतन करता रहता है, वह निश्चय ही स्वयं को धोखा देता है और मिथ्याचारी कहलाता है।",
         "meaning": "One who restrains the senses of action but whose mind dwells on sense objects certainly deludes himself and is called a pretender."
       },
       {
@@ -1160,7 +1160,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन |\nकर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते ||३-७||",
         "transliteration": "yas tv indriyāṇi manasā niyamyārabhate ’rjuna\nkarmendriyaiḥ karma-yogam asaktaḥ sa viśhiṣhyate",
-        "hindi_meaning": "जान लो कि जो इस सम्पूर्ण शरीर में व्याप्त है, वह अविनाशी है। इस अव्यय आत्मा का विनाश कोई नहीं कर सकता।",
+        "hindi_meaning": "इसके विपरीत, जो निष्कपट व्यक्ति मन द्वारा कर्मेन्द्रियों को वश में करके आसक्ति-रहित कृष्णभावनामय कर्मयोग आरम्भ करता है, वह कहीं श्रेष्ठ है।",
         "meaning": "On the other hand, if a sincere person tries to control the active senses by the mind and begins karma-yoga [in Krishna consciousness] without attachment, he is by far superior."
       },
       {
@@ -1169,7 +1169,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः |\nशरीरयात्रापि च ते न प्रसिद्धयेदकर्मणः ||३-८||",
         "transliteration": "niyataṁ kuru karma tvaṁ karma jyāyo hy akarmaṇaḥ\nśharīra-yātrāpi cha te na prasiddhyed akarmaṇaḥ",
-        "hindi_meaning": "हे भारत! ये शरीर नित्य, अविनाशी और अप्रमेय आत्मा के लिए नाशवान कहे गए हैं; इसलिए तुम युद्ध करो।",
+        "hindi_meaning": "अपना नियत कर्तव्य करो, क्योंकि कर्म करना निष्क्रिय रहने से श्रेष्ठ है। कर्म के बिना मनुष्य अपने शरीर का निर्वाह भी नहीं कर सकता।",
         "meaning": "Perform your prescribed duty, for doing so is better than not working. One cannot even maintain one’s physical body without work."
       },
       {
@@ -1178,7 +1178,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः |\nतदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर ||३-९||",
         "transliteration": "yajñārthāt karmaṇo ’nyatra loko ’yaṁ karma-bandhanaḥ\ntad-arthaṁ karma kaunteya mukta-saṅgaḥ samāchara",
-        "hindi_meaning": "जो इसे हन्ता मानता है और जो इसे हत मानता है, दोनों ही अज्ञानी हैं; क्योंकि यह न तो किसी को मारता है और न मारा जाता है।",
+        "hindi_meaning": "विष्णु के लिए यज्ञ के रूप में कर्म करना चाहिए, अन्यथा कर्म इस भौतिक जगत में बन्धन का कारण बनता है। अतः हे कुन्तीपुत्र! उनकी प्रसन्नता के लिए अपने नियत कर्तव्य करो और इस प्रकार सदा बन्धन से मुक्त रहो।",
         "meaning": "Work done as a sacrifice for Vishnu has to be performed; otherwise work causes bondage in this material world. Therefore, O son of Kunti, perform your prescribed duties for His satisfaction, and in that way you will always remain free from bondage."
       },
       {
@@ -1187,7 +1187,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः |\nअनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक् ||३-१०||",
         "transliteration": "saha-yajñāḥ prajāḥ sṛiṣhṭvā purovācha prajāpatiḥ\nanena prasaviṣhyadhvam eṣha vo ’stv iṣhṭa-kāma-dhuk",
-        "hindi_meaning": "यह आत्मा कभी जन्म नहीं लेता और न कभी मरता है। यह उत्पन्न नहीं हुआ, न होगा और न पहले था। यह अजन्मा, नित्य, शाश्वत और पुरातन है। शरीर के मारे जाने पर भी यह नहीं मारा जाता।",
+        "hindi_meaning": "सृष्टि के आरम्भ में प्रजापति ने विष्णु के लिए यज्ञ सहित मनुष्यों और देवताओं की संततियाँ उत्पन्न करके उन्हें आशीर्वाद दिया: इस यज्ञ से सुखी होओ, क्योंकि इससे तुम्हें सुखपूर्वक जीवन और मुक्ति के लिए सभी वांछित वस्तुएँ मिलेंगी।",
         "meaning": "In the beginning of creation, the Lord of all creatures sent forth generations of men and demigods, along with sacrifices for Vishnu, and blessed them by saying, “Be thou happy by this yajna [sacrifice] because its performance will bestow upon you everything desirable for living happily and achieving liberation.”"
       },
       {
@@ -1196,7 +1196,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "देवान्भावयतानेन ते देवा भावयन्तु वः |\nपरस्परं भावयन्तः श्रेयः परमवाप्स्यथ ||३-११||",
         "transliteration": "devān bhāvayatānena te devā bhāvayantu vaḥ\nparasparaṁ bhāvayantaḥ śhreyaḥ param avāpsyatha",
-        "hindi_meaning": "हे पार्थ! जो पुरुष इस अजन्मा, अव्यय और नित्य आत्मा को जानता है, वह कैसे किसी को मार सकता है या मरवा सकता है?",
+        "hindi_meaning": "यज्ञों से प्रसन्न होकर देवता भी तुम्हें प्रसन्न करेंगे और मनुष्यों तथा देवताओं के इस सहयोग से सबके लिए समृद्धि होगी।",
         "meaning": "The demigods, being pleased by sacrifices, will also please you, and thus, by cooperation between men and demigods, prosperity will reign for all."
       },
       {
@@ -1205,7 +1205,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः |\nतैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः ||३-१२||",
         "transliteration": "iṣhṭān bhogān hi vo devā dāsyante yajña-bhāvitāḥ\ntair dattān apradāyaibhyo yo bhuṅkte stena eva saḥ",
-        "hindi_meaning": "जैसे मनुष्य पुराने वस्त्रों को त्यागकर नए वस्त्र ग्रहण करता है, वैसे ही देही (आत्मा) पुराने शरीरों को त्यागकर नए शरीरों को प्राप्त करता है।",
+        "hindi_meaning": "जीवन की विविध आवश्यकताओं के अधिकारी देवता यज्ञ से संतुष्ट होकर तुम्हें सभी आवश्यक वस्तुएँ देंगे। किन्तु जो उनके दिए उपहार उन्हें अर्पित किए बिना भोगता है, वह निश्चय ही चोर है।",
         "meaning": "In charge of the various necessities of life, the demigods, being satisfied by the performance of yajna [sacrifice], will supply all necessities to you. But he who enjoys such gifts without offering them to the demigods in return is certainly a thief."
       },
       {
@@ -1214,7 +1214,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः |\nभुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात् ||३-१३||",
         "transliteration": "yajña-śhiṣhṭāśhinaḥ santo muchyante sarva-kilbiṣhaiḥ\nbhuñjate te tv aghaṁ pāpā ye pachanty ātma-kāraṇāt",
-        "hindi_meaning": "इस आत्मा को शस्त्र काट नहीं सकते, अग्नि जला नहीं सकती, जल गीला नहीं कर सकता और वायु सुखा नहीं सकती।",
+        "hindi_meaning": "भगवान के भक्त यज्ञ में पहले अर्पित भोजन को खाने से सभी पापों से मुक्त हो जाते हैं। जो लोग केवल अपने इन्द्रिय-सुख के लिए भोजन बनाते हैं, वे वास्तव में केवल पाप खाते हैं।",
         "meaning": "The devotees of the Lord are released from all kinds of sins because they eat food which is offered first for sacrifice. Others, who prepare food for personal sense enjoyment, verily eat only sin."
       },
       {
@@ -1223,7 +1223,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः |\nयज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ||३-१४||",
         "transliteration": "annād bhavanti bhūtāni parjanyād anna-sambhavaḥ\nyajñād bhavati parjanyo yajñaḥ karma-samudbhavaḥ",
-        "hindi_meaning": "यह अच्छेद्य, अदाह्य, अक्लेद्य और अशोष्य है तथा नित्य, सर्वगत, स्थिर, अचल और सनातन है।",
+        "hindi_meaning": "सभी जीवित शरीर अन्न पर निर्भर हैं, जो वर्षा से उत्पन्न होता है। वर्षा यज्ञ से होती है और यज्ञ नियत कर्मों से उत्पन्न होता है।",
         "meaning": "All living bodies subsist on food grains, which are produced from rains. Rains are produced by performance of yajna [sacrifice], and yajna is born of prescribed duties."
       },
       {
@@ -1232,7 +1232,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम् |\nतस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम् ||३-१५||",
         "transliteration": "karma brahmodbhavaṁ viddhi brahmākṣhara-samudbhavam\ntasmāt sarva-gataṁ brahma nityaṁ yajñe pratiṣhṭhitam",
-        "hindi_meaning": "यह अव्यक्त, अचिन्त्य और अविकारी कहा जाता है। इसलिए इसे इस प्रकार जानकर तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "नियत कर्मों का विधान वेदों में है और वेद साक्षात् श्रीभगवान से प्रकट हुए हैं। अतः सर्वव्यापी परम तत्त्व यज्ञ-कर्मों में सदा स्थित रहता है।",
         "meaning": "Regulated activities are prescribed in the Vedas, and the Vedas are directly manifested from the Supreme Personality of Godhead. Consequently the all-pervading Transcendence is eternally situated in acts of sacrifice."
       },
       {
@@ -1241,7 +1241,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः |\nअघायुरिन्द्रियारामो मोघं पार्थ स जीवति ||३-१६||",
         "transliteration": "evaṁ pravartitaṁ chakraṁ nānuvartayatīha yaḥ\naghāyur indriyārāmo moghaṁ pārtha sa jīvati",
-        "hindi_meaning": "हे महाबाहो! यदि तुम इसे सदा जन्म लेने वाला या सदा मरने वाला मानते हो, तो भी तुम्हें इसके लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "हे प्रिय अर्जुन! जो मनुष्य जीवन में वेदों द्वारा स्थापित यज्ञ-चक्र का पालन नहीं करता, वह पापमय जीवन बिताता है। केवल इन्द्रिय-तृप्ति के लिए जीने वाले ऐसे व्यक्ति का जीवन व्यर्थ है।",
         "meaning": "My dear Arjuna, one who does not follow in human life the cycle of sacrifice thus established by the Vedas certainly leads a life full of sin. Living only for the satisfaction of the senses, such a person lives in vain."
       },
       {
@@ -1250,7 +1250,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः |\nआत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते ||३-१७||",
         "transliteration": "yas tv ātma-ratir eva syād ātma-tṛiptaśh cha mānavaḥ\nātmany eva cha santuṣhṭas tasya kāryaṁ na vidyate",
-        "hindi_meaning": "जन्म लेने वाले की मृत्यु निश्चित है और मरने वाले का जन्म निश्चित है। इसलिए इस अपरिहार्य विषय में तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "किन्तु जो आत्मा में आनन्दित, आत्म-साक्षात्कार में स्थित और केवल आत्मा में ही पूर्ण संतुष्ट है, उसके लिए कोई कर्तव्य नहीं रहता।",
         "meaning": "But for one who takes pleasure in the self, whose human life is one of self-realization, and who is satisfied in the self only, fully satiated—for him there is no duty."
       },
       {
@@ -1259,7 +1259,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन |\nन चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः ||३-१८||",
         "transliteration": "naiva tasya kṛitenārtho nākṛiteneha kaśhchana\nna chāsya sarva-bhūteṣhu kaśhchid artha-vyapāśhrayaḥ",
-        "hindi_meaning": "हे भारत! सभी प्राणी आदि में अव्यक्त, मध्य में व्यक्त और अन्त में अव्यक्त हो जाते हैं। फिर यहाँ शोक क्यों?",
+        "hindi_meaning": "आत्म-साक्षात्कारी मनुष्य को नियत कर्तव्य करने से कोई प्रयोजन सिद्ध नहीं करना होता और न उन्हें न करने का कोई कारण होता है। उसे किसी अन्य जीव पर निर्भर रहने की भी आवश्यकता नहीं होती।",
         "meaning": "A self-realized man has no purpose to fulfill in the discharge of his prescribed duties, nor has he any reason not to perform such work. Nor has he any need to depend on any other living being."
       },
       {
@@ -1268,7 +1268,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "तस्मादसक्तः सततं कार्यं कर्म समाचर |\nअसक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ||३-१९||",
         "transliteration": "tasmād asaktaḥ satataṁ kāryaṁ karma samāchara\nasakto hy ācharan karma param āpnoti pūruṣhaḥ",
-        "hindi_meaning": "कोई इसे आश्चर्य की तरह देखता है, कोई आश्चर्य की तरह कहता है, कोई आश्चर्य की तरह सुनता है और कोई सुनकर भी इसे नहीं जानता।",
+        "hindi_meaning": "अतः कर्मफलों में आसक्त हुए बिना कर्तव्य समझकर कर्म करना चाहिए, क्योंकि अनासक्त होकर कर्म करने से मनुष्य परम पद प्राप्त करता है।",
         "meaning": "Therefore, without being attached to the fruits of activities, one should act as a matter of duty, for by working without attachment one attains the Supreme."
       },
       {
@@ -1277,7 +1277,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "कर्मणैव हि संसिद्धिमास्थिता जनकादयः |\nलोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि ||३-२०||",
         "transliteration": "karmaṇaiva hi saṁsiddhim āsthitā janakādayaḥ\nloka-saṅgraham evāpi sampaśhyan kartum arhasi",
-        "hindi_meaning": "हे भारत! सभी के शरीर में रहने वाला यह देही अवध्य है। इसलिए तुम्हें किसी भी प्राणी के लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "जनक जैसे राजाओं ने केवल नियत कर्तव्यों का पालन करके सिद्धि प्राप्त की। अतः सामान्य लोगों को शिक्षा देने के लिए भी तुम्हें कर्म करना चाहिए।",
         "meaning": "Kings such as Janaka attained perfection solely by performance of prescribed duties. Therefore, just for the sake of educating the people in general, you should perform your work."
       },
       {
@@ -1286,7 +1286,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः |\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ||३-२१||",
         "transliteration": "yad yad ācharati śhreṣhṭhas tat tad evetaro janaḥ\nsa yat pramāṇaṁ kurute lokas tad anuvartate",
-        "hindi_meaning": "हे पार्थ! अपने स्वधर्म पर भी दृष्टि रखकर तुम्हें कंपित नहीं होना चाहिए; क्योंकि क्षत्रिय के लिए धर्मयुद्ध से बढ़कर और कोई श्रेयस्कर नहीं है।",
+        "hindi_meaning": "श्रेष्ठ पुरुष जैसा आचरण करता है, सामान्य लोग उसी का अनुसरण करते हैं। वह अपने आदर्श कर्मों से जो मानक स्थापित करता है, समस्त संसार उसी के पीछे चलता है।",
         "meaning": "Whatever action a great man performs, common men follow. And whatever standards he sets by exemplary acts, all the world pursues."
       },
       {
@@ -1295,7 +1295,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन |\nनानवाप्तमवाप्तव्यं वर्त एव च कर्मणि ||३-२२||",
         "transliteration": "na me pārthāsti kartavyaṁ triṣhu lokeṣhu kiñchana\nnānavāptam avāptavyaṁ varta eva cha karmaṇi",
-        "hindi_meaning": "हे पार्थ! ऐसे युद्ध को क्षत्रिय सुख से प्राप्त करते हैं, जो स्वर्ग के द्वार को खोलने वाला है और जो स्वयं प्राप्त हो जाता है।",
+        "hindi_meaning": "हे पृथापुत्र! तीनों लोकों में मेरे लिए कोई नियत कर्म नहीं है, न मुझे किसी वस्तु की कमी है और न कुछ प्राप्त करने की आवश्यकता है, फिर भी मैं नियत कर्मों में लगा रहता हूँ।",
         "meaning": "O son of Pritha, there is no work prescribed for Me within all the three planetary systems. Nor am I in want of anything, nor have I a need to obtain anything—and yet I am engaged in prescribed duties."
       },
       {
@@ -1304,7 +1304,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः |\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ||३-२३||",
         "transliteration": "yadi hy ahaṁ na varteyaṁ jātu karmaṇy atandritaḥ\nmama vartmānuvartante manuṣhyāḥ pārtha sarvaśhaḥ",
-        "hindi_meaning": "यदि तुम इस धर्मयुद्ध को नहीं करोगे, तो अपने स्वधर्म और कीर्ति को खोकर पाप को प्राप्त होगे।",
+        "hindi_meaning": "हे पार्थ! यदि मैं कभी सावधानीपूर्वक नियत कर्म न करूँ, तो निश्चय ही सभी मनुष्य मेरे मार्ग का अनुसरण करेंगे।",
         "meaning": "For if I ever failed to engage in carefully performing prescribed duties, O Partha, certainly all men would follow My path."
       },
       {
@@ -1313,7 +1313,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम् |\nसङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः ||३-२४||",
         "transliteration": "utsīdeyur ime lokā na kuryāṁ karma ched aham\nsaṅkarasya cha kartā syām upahanyām imāḥ prajāḥ",
-        "hindi_meaning": "लोग तुम्हारी कीर्ति की निन्दा करेंगे और नाम के लिए जो कीर्ति होती है, वह भी नष्ट हो जाएगी।",
+        "hindi_meaning": "यदि मैं नियत कर्म न करूँ तो ये सभी लोक नष्ट हो जाएँगे। मैं अवांछित संतति उत्पन्न करने का कारण बनूँगा और इस प्रकार सभी जीवों की शान्ति नष्ट कर दूँगा।",
         "meaning": "If I did not perform prescribed duties, all these worlds would be put to ruination. I would be the cause of creating unwanted population, and I would thereby destroy the peace of all living beings."
       },
       {
@@ -1322,7 +1322,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत |\nकुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसंग्रहम् ||३-२५||",
         "transliteration": "saktāḥ karmaṇy avidvāṁso yathā kurvanti bhārata\nkuryād vidvāṁs tathāsaktaśh chikīrṣhur loka-saṅgraham",
-        "hindi_meaning": "महान योद्धाओं के लिए तुम्हारी निन्दा होगी और तुम्हारा सम्मान अपमान में बदल जाएगा।",
+        "hindi_meaning": "जिस प्रकार अज्ञानी कर्मफलों में आसक्त होकर अपने कर्तव्य करते हैं, उसी प्रकार विद्वान भी लोगों को सही मार्ग दिखाने के लिए कर्म करें, किन्तु आसक्ति के बिना।",
         "meaning": "As the ignorant perform their duties with attachment to results, the learned may similarly act, but without attachment, for the sake of leading people on the right path."
       },
       {
@@ -1331,7 +1331,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम् |\nजोषयेत्सर्वकर्माणि विद्वान्युक्तः समाचरन् ||३-२६||",
         "transliteration": "na buddhi-bhedaṁ janayed ajñānāṁ karma-saṅginām\njoṣhayet sarva-karmāṇi vidvān yuktaḥ samācharan",
-        "hindi_meaning": "शत्रु तुम्हारे बारे में अनेक अपशब्द कहेंगे और तुम्हारी वीरता की निन्दा करेंगे। तुम्हारे लिए इससे बढ़कर दुःख और क्या हो सकता है?",
+        "hindi_meaning": "विद्वान व्यक्ति को सकाम कर्मफलों में आसक्त अज्ञानियों की बुद्धि विचलित करके उन्हें कर्म छोड़ने के लिए प्रेरित नहीं करना चाहिए। अपितु भक्ति-भाव से कर्म करते हुए उन्हें क्रमशः कृष्णभावना विकसित करने के लिए सभी प्रकार के कर्मों में लगाना चाहिए।",
         "meaning": "So as not to disrupt the minds of ignorant men attached to the fruitive results of prescribed duties, a learned person should not induce them to stop work. Rather, by working in the spirit of devotion, he should engage them in all sorts of activities [for the gradual development of Krishna consciousness]."
       },
       {
@@ -1340,7 +1340,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः |\nअहङ्कारविमूढात्मा कर्ताहमिति मन्यते ||३-२७||",
         "transliteration": "prakṛiteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśhaḥ\nahaṅkāra-vimūḍhātmā kartāham iti manyate",
-        "hindi_meaning": "हे अर्जुन! यदि तुम मारे जाओगे, तो स्वर्ग को प्राप्त करोगे; यदि विजयी होगे, तो पृथ्वी का भोग करोगे। इसलिए उठो और निश्चयपूर्वक युद्ध करो।",
+        "hindi_meaning": "मिथ्या अहंकार से मोहित जीवात्मा स्वयं को उन कर्मों का कर्ता मानती है, जो वास्तव में भौतिक प्रकृति के तीन गुणों द्वारा किए जाते हैं।",
         "meaning": "The spirit soul bewildered by the influence of false ego thinks himself the doer of activities that are in actuality carried out by the three modes of material nature."
       },
       {
@@ -1349,7 +1349,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः |\nगुणा गुणेषु वर्तन्त इति मत्वा न सज्जते ||३-२८||",
         "transliteration": "tattva-vit tu mahā-bāho guṇa-karma-vibhāgayoḥ\nguṇā guṇeṣhu vartanta iti matvā na sajjate",
-        "hindi_meaning": "सुख-दुःख, लाभ-हानि, जय-पराजय को समान समझकर युद्ध के लिए तैयार हो जाओ। इस प्रकार करने से तुम पाप नहीं करोगे।",
+        "hindi_meaning": "हे महाबाहु! परम सत्य को जानने वाला व्यक्ति भक्ति-कर्म और सकाम कर्म का भेद समझकर इन्द्रियों तथा इन्द्रिय-तृप्ति में लिप्त नहीं होता।",
         "meaning": "One who is in knowledge of the Absolute Truth, O mighty-armed, does not engage himself in the senses and sense gratification, knowing well the differences between work in devotion and work for fruitive results."
       },
       {
@@ -1358,7 +1358,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु |\nतानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत् ||३-२९||",
         "transliteration": "prakṛiter guṇa-sammūḍhāḥ sajjante guṇa-karmasu\ntān akṛitsna-vido mandān kṛitsna-vin na vichālayet",
-        "hindi_meaning": "हे पार्थ! अब तक मैंने तुम्हें सांख्य योग (ज्ञान) बताया है। अब कर्मयोग सुनो, जिसे जानकर तुम कर्मबन्धन से मुक्त हो जाओगे।",
+        "hindi_meaning": "भौतिक प्रकृति के गुणों से मोहित अज्ञानी भौतिक कर्मों में पूरी तरह लगकर आसक्त हो जाते हैं। यद्यपि अज्ञान के कारण उनके कर्म निम्न हैं, फिर भी ज्ञानी को उन्हें विचलित नहीं करना चाहिए।",
         "meaning": "Bewildered by the modes of material nature, the ignorant fully engage themselves in material activities and become attached. But the wise should not unsettle them, although these duties are inferior due to the performers’ lack of knowledge."
       },
       {
@@ -1367,7 +1367,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा |\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ||३-३०||",
         "transliteration": "mayi sarvāṇi karmāṇi sannyasyādhyātma-chetasā\nnirāśhīr nirmamo bhūtvā yudhyasva vigata-jvaraḥ",
-        "hindi_meaning": "इसमें कोई हानि नहीं है और यह आरम्भ में थोड़ा सा भी हो, तो भी संसार के भय से रक्षा करता है।",
+        "hindi_meaning": "अतः हे अर्जुन! अपने सभी कर्म मुझे समर्पित करके, मेरा पूर्ण ज्ञान रखते हुए, लाभ की इच्छा, स्वामित्व के दावे और आलस्य से मुक्त होकर युद्ध करो।",
         "meaning": "Therefore, O Arjuna, surrendering all your works unto Me, with full knowledge of Me, without desires for profit, with no claims to proprietorship, and free from lethargy, fight."
       },
       {
@@ -1376,7 +1376,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः |\nश्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः ||३-३१||",
         "transliteration": "ye me matam idaṁ nityam anutiṣhṭhanti mānavāḥ\nśhraddhāvanto ’nasūyanto muchyante te ’pi karmabhiḥ",
-        "hindi_meaning": "हे कुरुनन्दन! इस कर्मयोग में निश्चयात्मक बुद्धि एक ही है, लेकिन अविश्वासियों की बुद्धि अनेक शाखाओं वाली और अनन्त है।",
+        "hindi_meaning": "जो व्यक्ति मेरे आदेशों के अनुसार अपने कर्तव्य करते और ईर्ष्यारहित होकर श्रद्धापूर्वक इस शिक्षा का पालन करते हैं, वे सकाम कर्मों के बन्धन से मुक्त हो जाते हैं।",
         "meaning": "Those persons who execute their duties according to My injunctions and who follow this teaching faithfully, without envy, become free from the bondage of fruitive actions."
       },
       {
@@ -1385,7 +1385,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम् |\nसर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः ||३-३२||",
         "transliteration": "ye tv etad abhyasūyanto nānutiṣhṭhanti me matam\nsarva-jñāna-vimūḍhāṁs tān viddhi naṣhṭān achetasaḥ",
-        "hindi_meaning": "हे पार्थ! जो लोग वेदों के शब्दज्ञान में मोहित होकर कहते हैं कि इसके सिवा और कुछ नहीं है, वे कामनाओं से युक्त हैं।",
+        "hindi_meaning": "किन्तु जो ईर्ष्यावश इन शिक्षाओं की उपेक्षा करते और उनका पालन नहीं करते, उन्हें समस्त ज्ञान से रहित, मूर्ख और सिद्धि के प्रयास में नष्ट हुआ समझना चाहिए।",
         "meaning": "But those who, out of envy, disregard these teachings and do not follow them are to be considered bereft of all knowledge, befooled, and ruined in their endeavors for perfection."
       },
       {
@@ -1394,7 +1394,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि |\nप्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति ||३-३३||",
         "transliteration": "sadṛiśhaṁ cheṣhṭate svasyāḥ prakṛiter jñānavān api\nprakṛitiṁ yānti bhūtāni nigrahaḥ kiṁ kariṣhyati",
-        "hindi_meaning": "जिनकी बुद्धि उन कामनाओं में लगी हुई है, जिनका परम लक्ष्य स्वर्ग है, वे जन्म-मृत्यु के चक्र में बने रहते हैं।",
+        "hindi_meaning": "ज्ञानी मनुष्य भी अपने स्वभाव के अनुसार कर्म करता है, क्योंकि प्रत्येक व्यक्ति तीन गुणों से प्राप्त अपनी प्रकृति का अनुसरण करता है। दमन से क्या सिद्ध होगा?",
         "meaning": "Even a man of knowledge acts according to his own nature, for everyone follows the nature he has acquired from the three modes. What can repression accomplish?"
       },
       {
@@ -1403,7 +1403,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ |\nतयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ||३-३४||",
         "transliteration": "indriyasyendriyasyārthe rāga-dveṣhau vyavasthitau\ntayor na vaśham āgachchhet tau hy asya paripanthinau",
-        "hindi_meaning": "जो लोग इन्द्रियों और इन्द्रियों के विषयों में आसक्त हैं, उनकी बुद्धि स्थिर नहीं होती।",
+        "hindi_meaning": "इन्द्रियों और उनके विषयों से सम्बन्धित आसक्ति तथा द्वेष को नियंत्रित करने के नियम हैं। मनुष्य को उनके वश में नहीं होना चाहिए, क्योंकि वे आत्म-साक्षात्कार के मार्ग की बाधाएँ हैं।",
         "meaning": "There are principles to regulate attachment and aversion pertaining to the senses and their objects. One should not come under the control of such attachment and aversion, because they are stumbling blocks on the path of self-realization."
       },
       {
@@ -1412,7 +1412,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् |\nस्वधर्मे निधनं श्रेयः परधर्मो भयावहः ||३-३५||",
         "transliteration": "śhreyān sva-dharmo viguṇaḥ para-dharmāt sv-anuṣhṭhitāt\nsva-dharme nidhanaṁ śhreyaḥ para-dharmo bhayāvahaḥ",
-        "hindi_meaning": "वेद तीन गुणों (सत्, रज, तम) के विषय में हैं। हे अर्जुन! तुम इन तीनों गुणों से परे हो जाओ, नित्य सत्ता में स्थित रहो, द्रव्य के लिए चिंतित न रहो और आत्म-स्वरूप में स्थित रहो।",
+        "hindi_meaning": "दूसरे के कर्तव्य को पूर्णता से करने की अपेक्षा अपने नियत कर्तव्य को दोषपूर्ण ढंग से करना कहीं अच्छा है। अपने कर्तव्य का पालन करते हुए विनाश भी दूसरे के कर्तव्य में लगने से श्रेष्ठ है, क्योंकि दूसरे के मार्ग पर चलना भयावह है।",
         "meaning": "It is far better to discharge one’s prescribed duties, even though faultily, than another’s duties perfectly. Destruction in the course of performing one’s own duty is better than engaging in another’s duties, for to follow another’s path is dangerous."
       },
       {
@@ -1421,7 +1421,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "अर्जुन उवाच |\nअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः |\nअनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः ||३-३६||",
         "transliteration": "arjuna uvācha\natha kena prayukto ’yaṁ pāpaṁ charati pūruṣhaḥ\nanichchhann api vārṣhṇeya balād iva niyojitaḥ",
-        "hindi_meaning": "जैसे सभी जलाशयों के लिए एक छोटा तालाब पर्याप्त है, वैसे ही सभी वेदों के लिए ज्ञानी ब्राह्मण के लिए वेदों का ज्ञान पर्याप्त है।",
+        "hindi_meaning": "अर्जुन ने कहा: हे वृष्णिवंशी! मनुष्य न चाहते हुए भी मानो बलपूर्वक प्रेरित होकर किसके कारण पाप करता है?",
         "meaning": "Arjuna said: O descendant of Vrishni, by what is one impelled to sinful acts, even unwillingly, as if engaged by force?"
       },
       {
@@ -1430,7 +1430,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "श्रीभगवानुवाच |\nकाम एष क्रोध एष रजोगुणसमुद्भवः |\nमहाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ||३-३७||",
         "transliteration": "śhrī bhagavān uvācha\nkāma eṣha krodha eṣha rajo-guṇa-samudbhavaḥ\nmahāśhano mahā-pāpmā viddhy enam iha vairiṇam",
-        "hindi_meaning": "तुम्हारा कर्म करने में ही अधिकार है, कर्म के फल में कभी नहीं। कर्म के फल का कारण मत बनो और कर्म न करने में आसक्ति मत रखो।",
+        "hindi_meaning": "श्रीभगवान ने कहा: हे अर्जुन! यह केवल काम है, जो रजोगुण के सम्पर्क से उत्पन्न होकर बाद में क्रोध में बदलता है; यही संसार का सर्वभक्षी पापी शत्रु है।",
         "meaning": "The Supreme Personality of Godhead said: It is lust only, Arjuna, which is born of contact with the material mode of passion and later transformed into wrath, and which is the all-devouring sinful enemy of this world."
       },
       {
@@ -1439,7 +1439,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "धूमेनाव्रियते वह्निर्यथादर्शो मलेन च |\nयथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम् ||३-३८||",
         "transliteration": "dhūmenāvriyate vahnir yathādarśho malena cha\nyatholbenāvṛito garbhas tathā tenedam āvṛitam",
-        "hindi_meaning": "हे अर्जुन! योग में स्थित होकर कर्म करो, सफलता-असफलता को त्याग दो। ऐसी समता को योग कहते हैं।",
+        "hindi_meaning": "जिस प्रकार अग्नि धुएँ से, दर्पण धूल से और भ्रूण गर्भ से ढका रहता है, उसी प्रकार जीव इस काम से विभिन्न मात्राओं में ढका रहता है।",
         "meaning": "As fire is covered by smoke, as a mirror is covered by dust, or as the embryo is covered by the womb, the living entity is similarly covered by different degrees of this lust."
       },
       {
@@ -1448,7 +1448,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा |\nकामरूपेण कौन्तेय दुष्पूरेणानलेन च ||३-३९||",
         "transliteration": "āvṛitaṁ jñānam etena jñānino nitya-vairiṇā\nkāma-rūpeṇa kaunteya duṣhpūreṇānalena cha",
-        "hindi_meaning": "हे धनञ्जय! कर्मफल की इच्छा से किए गए कर्म से बुद्धि (ज्ञानयोग) बहुत श्रेष्ठ है। ज्ञानयोग में शरण लो, क्योंकि कर्म करने वाले लोग दुःखी होते हैं।",
+        "hindi_meaning": "इस प्रकार ज्ञानी जीव की शुद्ध चेतना कामरूपी उसके सनातन शत्रु से ढक जाती है, जो कभी तृप्त नहीं होता और अग्नि के समान जलता रहता है।",
         "meaning": "Thus the wise living entity’s pure consciousness becomes covered by his eternal enemy in the form of lust, which is never satisfied and which burns like fire."
       },
       {
@@ -1457,7 +1457,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते |\nएतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम् ||३-४०||",
         "transliteration": "indriyāṇi mano buddhir asyādhiṣhṭhānam uchyate\netair vimohayaty eṣha jñānam āvṛitya dehinam",
-        "hindi_meaning": "जो व्यक्ति कर्मफल से मुक्त है, वह ज्ञानयोग द्वारा पाप और पुण्य दोनों से मुक्त हो जाता है। इसलिए तुम योग में स्थित होकर कर्म करो।",
+        "hindi_meaning": "इन्द्रियाँ, मन और बुद्धि इस काम के निवास-स्थान हैं। इनके द्वारा काम जीव के वास्तविक ज्ञान को ढककर उसे मोहित करता है।",
         "meaning": "The senses, the mind and the intelligence are the sitting places of this lust. Through them lust covers the real knowledge of the living entity and bewilders him."
       },
       {
@@ -1466,7 +1466,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ |\nपाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम् ||३-४१||",
         "transliteration": "tasmāt tvam indriyāṇy ādau niyamya bharatarṣhabha\npāpmānaṁ prajahi hy enaṁ jñāna-vijñāna-nāśhanam",
-        "hindi_meaning": "ज्ञानी लोग कर्मफल का त्याग करके जन्म और मृत्यु के चक्र से मुक्त हो जाते हैं और वे उस स्थान को प्राप्त करते हैं, जहाँ दुःख नहीं है।",
+        "hindi_meaning": "अतः हे अर्जुन! हे भरतश्रेष्ठ! प्रारम्भ में ही इन्द्रियों को नियमित करके इस महान पापरूपी काम को वश में करो और ज्ञान तथा आत्म-साक्षात्कार के इस विनाशक का वध करो।",
         "meaning": "Therefore, O Arjuna, best of the Bharatas, in the very beginning curb this great symbol of sin [lust] by regulating the senses, and slay this destroyer of knowledge and self-realization."
       },
       {
@@ -1475,7 +1475,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः |\nमनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः ||३-४२||",
         "transliteration": "indriyāṇi parāṇy āhur indriyebhyaḥ paraṁ manaḥ\nmanasas tu parā buddhir yo buddheḥ paratas tu saḥ",
-        "hindi_meaning": "जब तुम्हारी बुद्धि भ्रम से मुक्त हो जाएगी, तो तुम वैराग्य और श्रवण दोनों में ही उदासीन हो जाओगे।",
+        "hindi_meaning": "कर्मेन्द्रियाँ जड़ पदार्थ से श्रेष्ठ हैं, मन इन्द्रियों से ऊँचा है, बुद्धि मन से भी ऊँची है और आत्मा बुद्धि से भी श्रेष्ठ है।",
         "meaning": "The working senses are superior to dull matter; mind is higher than the senses; intelligence is still higher than the mind; and he [the soul] is even higher than the intelligence."
       },
       {
@@ -1484,7 +1484,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 3,
         "text": "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना |\nजहि शत्रुं महाबाहो कामरूपं दुरासदम् ||३-४३||",
         "transliteration": "evaṁ buddheḥ paraṁ buddhvā saṁstabhyātmānam ātmanā\njahi śhatruṁ mahā-bāho kāma-rūpaṁ durāsadam",
-        "hindi_meaning": "हे अर्जुन! जब तुम्हारी बुद्धि वेदों के शब्दज्ञान से विचलित नहीं होगी और तुम आत्मा में स्थित हो जाओगे, तो तुम्हें दिव्य ज्ञान प्राप्त होगा।",
+        "hindi_meaning": "हे महाबाहु अर्जुन! इस प्रकार स्वयं को भौतिक इन्द्रियों, मन और बुद्धि से परे जानकर आध्यात्मिक बुद्धि अर्थात् कृष्णभावना से मन को स्थिर करो और आध्यात्मिक शक्ति द्वारा काम नामक इस अतृप्त शत्रु को जीत लो।",
         "meaning": "Thus knowing oneself to be transcendental to the material senses, mind and intelligence, O mighty-armed Arjuna, one should steady the mind by deliberate spiritual intelligence [Krishna consciousness] and thus—by spiritual strength—conquer this insatiable enemy known as lust."
       }
     ]
@@ -1503,7 +1503,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "श्रीभगवानुवाच |\nइमं विवस्वते योगं प्रोक्तवानहमव्ययम् |\nविवस्वान्मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत् ||४-१||",
         "transliteration": "śhrī bhagavān uvācha\nimaṁ vivasvate yogaṁ proktavān aham avyayam\nvivasvān manave prāha manur ikṣhvākave ’bravīt",
-        "hindi_meaning": "अर्जुन ने कहा: हे केशव! जो व्यक्ति आत्मा में स्थित है, जिसकी बुद्धि स्थिर है, वह कैसा होता है? वह कैसे बोलता है, कैसे बैठता है और कैसे चलता है?",
+        "hindi_meaning": "श्रीभगवान ने कहा: मैंने योग की इस अविनाशी विद्या का उपदेश सूर्यदेव विवस्वान को दिया, विवस्वान ने मनुष्यों के पिता मनु को और मनु ने इक्ष्वाकु को इसका उपदेश दिया।",
         "meaning": "The Personality of Godhead, Lord Sri Krishna, said: I instructed this imperishable science of yoga to the sun-god, Vivasvan, and Vivasvan instructed it to Manu, the father of mankind, and Manu in turn instructed it to Iksvaku."
       },
       {
@@ -1512,7 +1512,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "एवं परम्पराप्राप्तमिमं राजर्षयो विदुः |\nस कालेनेह महता योगो नष्टः परन्तप ||४-२||",
         "transliteration": "evaṁ paramparā-prāptam imaṁ rājarṣhayo viduḥ\nsa kāleneha mahatā yogo naṣhṭaḥ parantapa",
-        "hindi_meaning": "श्री भगवान ने कहा: हे पार्थ! जब मनुष्य सभी इच्छाओं को त्याग देता है और आत्मा में ही संतुष्ट रहता है, तो उसे आत्मस्थिति कहते हैं।",
+        "hindi_meaning": "यह परम विद्या इस प्रकार गुरु-शिष्य परम्परा से प्राप्त हुई और राजर्षियों ने इसी विधि से इसे समझा। किन्तु कालक्रम में यह परम्परा टूट गई, इसलिए यह विद्या अपने वास्तविक रूप में लुप्त प्रतीत होती है।",
         "meaning": "This supreme science was thus received through the chain of disciplic succession, and the saintly kings understood it in that way. But in course of time the succession was broken, and therefore the science as it is appears to be lost."
       },
       {
@@ -1521,7 +1521,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः |\nभक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम् ||४-३||",
         "transliteration": "sa evāyaṁ mayā te ’dya yogaḥ proktaḥ purātanaḥ\nbhakto ’si me sakhā cheti rahasyaṁ hy etad uttamam",
-        "hindi_meaning": "जो दुःख में विचलित नहीं होता, सुख में हर्षित नहीं होता, जो राग, भय और क्रोध से मुक्त है, वह स्थिरबुद्धि कहलाता है।",
+        "hindi_meaning": "परमेश्वर के साथ सम्बन्ध की वही अत्यन्त प्राचीन विद्या आज मैं तुम्हें बता रहा हूँ, क्योंकि तुम मेरे भक्त और मित्र हो और इसलिए इसके दिव्य रहस्य को समझ सकते हो।",
         "meaning": "That very ancient science of the relationship with the Supreme is today told by Me to you because you are My devotee as well as My friend and can therefore understand the transcendental mystery of this science."
       },
       {
@@ -1530,7 +1530,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "अर्जुन उवाच |\nअपरं भवतो जन्म परं जन्म विवस्वतः |\nकथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति ||४-४||",
         "transliteration": "arjuna uvācha\naparaṁ bhavato janma paraṁ janma vivasvataḥ\nkatham etad vijānīyāṁ tvam ādau proktavān iti",
-        "hindi_meaning": "जो सभी प्राणियों में समभाव रखता है, सुख-दुःख में समान रहता है, वह मुझे अत्यंत प्रिय है।",
+        "hindi_meaning": "अर्जुन ने कहा: सूर्यदेव विवस्वान का जन्म आपसे बहुत पहले हुआ था। फिर मैं कैसे समझूँ कि सृष्टि के आरम्भ में आपने उन्हें इस विद्या का उपदेश दिया था?",
         "meaning": "Arjuna said: The sun-god Vivasvan is senior by birth to You. How am I to understand that in the beginning You instructed this science to him?"
       },
       {
@@ -1539,7 +1539,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "श्रीभगवानुवाच |\nबहूनि मे व्यतीतानि जन्मानि तव चार्जुन |\nतान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप ||४-५||",
         "transliteration": "śhrī bhagavān uvācha\nbahūni me vyatītāni janmāni tava chārjuna\ntāny ahaṁ veda sarvāṇi na tvaṁ vettha parantapa",
-        "hindi_meaning": "जो मनुष्य सभी इन्द्रियों को इन्द्रिय-विषयों से हटाकर, कछुए की तरह अपने अंगों को समेट लेता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "श्रीभगवान ने कहा: हे अर्जुन! मेरे और तुम्हारे बहुत से जन्म हो चुके हैं। मैं उन सभी को जानता हूँ, परन्तु हे परंतप! तुम नहीं जानते।",
         "meaning": "The Personality of Godhead said: Many, many births both you and I have passed. I can remember all of them, but you cannot, O subduer of the enemy!"
       },
       {
@@ -1548,7 +1548,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन् |\nप्रकृतिं स्वामधिष्ठाय सम्भवाम्यात्ममायया ||४-६||",
         "transliteration": "ajo ’pi sann avyayātmā bhūtānām īśhvaro ’pi san\nprakṛitiṁ svām adhiṣhṭhāya sambhavāmy ātma-māyayā",
-        "hindi_meaning": "विषय-भोगों से वस्तुतः विरक्त व्यक्ति रुचि को त्याग देता है, लेकिन रुचि का स्वाद बना रहता है। यह रुचि भी परमात्मा को देखकर समाप्त हो जाती है।",
+        "hindi_meaning": "यद्यपि मैं अजन्मा हूँ, मेरा दिव्य शरीर कभी नष्ट नहीं होता और मैं सभी जीवों का स्वामी हूँ, फिर भी प्रत्येक युग में अपने मूल दिव्य स्वरूप में प्रकट होता हूँ।",
         "meaning": "Although I am unborn and My transcendental body never deteriorates, and although I am the Lord of all living entities, I still appear in every millennium in My original transcendental form."
       },
       {
@@ -1557,7 +1557,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत |\nअभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ||४-७||",
         "transliteration": "yadā yadā hi dharmasya glānir bhavati bhārata\nabhyutthānam adharmasya tadātmānaṁ sṛijāmy aham",
-        "hindi_meaning": "हे अर्जुन! चंचल इन्द्रियाँ बलवान मन को भी बलपूर्वक अपने वश में कर लेती हैं।",
+        "hindi_meaning": "हे भरतवंशी! जब-जब और जहाँ-जहाँ धर्म का पतन तथा अधर्म की प्रधानता होती है, तब-तब मैं स्वयं अवतरित होता हूँ।",
         "meaning": "Whenever and wherever there is a decline in religious practice, O descendant of Bharata, and a predominant rise of irreligion—at that time I descend Myself."
       },
       {
@@ -1566,7 +1566,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "परित्राणाय साधूनां विनाशाय च दुष्कृताम् |\nधर्मसंस्थापनार्थाय सम्भवामि युगे युगे ||४-८||",
         "transliteration": "paritrāṇāya sādhūnāṁ vināśhāya cha duṣhkṛitām\ndharma-saṁsthāpanārthāya sambhavāmi yuge yuge",
-        "hindi_meaning": "हे अर्जुन! जो व्यक्ति सभी इन्द्रियों को वश में करके मुझमें मन लगाता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "साधुओं का उद्धार, दुष्टों का विनाश और धर्म के सिद्धान्तों की पुनः स्थापना करने के लिए मैं प्रत्येक युग में प्रकट होता हूँ।",
         "meaning": "To deliver the pious and to annihilate the miscreants, as well as to reestablish the principles of religion, I Myself appear, millennium after millennium."
       },
       {
@@ -1575,7 +1575,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः |\nत्यक्त्वा देhं पुनर्जन्म नैति मामेति सोऽर्जुन ||४-९||",
         "transliteration": "janma karma cha me divyam evaṁ yo vetti tattvataḥ\ntyaktvā dehaṁ punar janma naiti mām eti so ’rjuna",
-        "hindi_meaning": "हे अर्जुन! जब मनुष्य विषयों का चिन्तन करता है, तो उनके प्रति आसक्ति उत्पन्न होती है। आसक्ति से कामना उत्पन्न होती है और कामना से क्रोध उत्पन्न होता है।",
+        "hindi_meaning": "हे अर्जुन! जो मेरे प्राकट्य और कर्मों की दिव्य प्रकृति को जानता है, वह शरीर त्यागने के बाद इस भौतिक संसार में पुनः जन्म नहीं लेता, अपितु मेरे सनातन धाम को प्राप्त होता है।",
         "meaning": "One who knows the transcendental nature of My appearance and activities does not, upon leaving the body, take his birth again in this material world, but attains My eternal abode, O Arjuna."
       },
       {
@@ -1584,7 +1584,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः |\nबहवो ज्ञानतपसा पूता मद्भावमागताः ||४-१०||",
         "transliteration": "vīta-rāga-bhaya-krodhā man-mayā mām upāśhritāḥ\nbahavo jñāna-tapasā pūtā mad-bhāvam āgatāḥ",
-        "hindi_meaning": "क्रोध से भ्रम उत्पन्न होता है, भ्रम से स्मृति भ्रष्ट होती है, स्मृति के नष्ट होने से बुद्धि नष्ट हो जाती है और बुद्धि के नष्ट होने से मनुष्य का पतन हो जाता है।",
+        "hindi_meaning": "आसक्ति, भय और क्रोध से मुक्त होकर, मुझमें पूर्णतया लीन और मेरी शरण लेकर अतीत में अनेक व्यक्ति मेरे ज्ञान से शुद्ध हुए और इस प्रकार मेरे प्रति दिव्य प्रेम को प्राप्त हुए।",
         "meaning": "Being freed from attachment, fear and anger, being fully absorbed in Me and taking refuge in Me, many, many persons in the past became purified by knowledge of Me—and thus they all attained transcendental love for Me."
       },
       {
@@ -1593,7 +1593,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् |\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ||४-११||",
         "transliteration": "ye yathā māṁ prapadyante tāṁs tathaiva bhajāmy aham\nmama vartmānuvartante manuṣhyāḥ pārtha sarvaśhaḥ",
-        "hindi_meaning": "लेकिन जो व्यक्ति इन्द्रियों को वश में करके, राग-द्वेष से रहित होकर, अपने स्वरूप में स्थित रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "हे पृथापुत्र! जो जिस प्रकार मेरी शरण ग्रहण करता है, मैं उसे उसी के अनुसार फल देता हूँ। प्रत्येक व्यक्ति सभी प्रकार से मेरे ही मार्ग का अनुसरण करता है।",
         "meaning": "As all surrender unto Me, I reward them accordingly. Everyone follows My path in all respects, O son of Pritha."
       },
       {
@@ -1602,7 +1602,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवताः |\nक्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा ||४-१२||",
         "transliteration": "kāṅkṣhantaḥ karmaṇāṁ siddhiṁ yajanta iha devatāḥ\nkṣhipraṁ hi mānuṣhe loke siddhir bhavati karma-jā",
-        "hindi_meaning": "शान्ति प्राप्त होने पर सभी दुःखों का अन्त हो जाता है और शान्त चित्त वाले की बुद्धि शीघ्र स्थिर हो जाती है।",
+        "hindi_meaning": "इस संसार में मनुष्य सकाम कर्मों में शीघ्र सफलता चाहते हैं, इसलिए वे देवताओं की पूजा करते हैं। निस्सन्देह इस जगत में सकाम कर्मों के फल शीघ्र मिलते हैं।",
         "meaning": "Men in this world desire success in fruitive activities, and therefore they worship the demigods. Quickly, of course, men get results from fruitive work in this world."
       },
       {
@@ -1611,7 +1611,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः |\nतस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम् ||४-१३||",
         "transliteration": "chātur-varṇyaṁ mayā sṛiṣhṭaṁ guṇa-karma-vibhāgaśhaḥ\ntasya kartāram api māṁ viddhy akartāram avyayam",
-        "hindi_meaning": "जो व्यक्ति योग में स्थित नहीं है, उसकी बुद्धि स्थिर नहीं होती और उसके लिए आत्मज्ञान नहीं है। आत्मज्ञान के बिना शान्ति नहीं है और शान्ति के बिना सुख कहाँ?",
+        "hindi_meaning": "भौतिक प्रकृति के तीन गुणों और उनसे सम्बन्धित कर्मों के अनुसार मानव समाज के चार विभाग मैंने बनाए हैं। यद्यपि मैं इस व्यवस्था का स्रष्टा हूँ, फिर भी मुझे अविनाशी और अकर्ता जानो।",
         "meaning": "According to the three modes of material nature and the work associated with them, the four divisions of human society are created by Me. And although I am the creator of this system, you should know that I am yet the nondoer, being unchangeable."
       },
       {
@@ -1620,7 +1620,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा |\nइति मां योऽभिजानाति कर्मभिर्न स बध्यते ||४-१४||",
         "transliteration": "na māṁ karmāṇi limpanti na me karma-phale spṛihā\niti māṁ yo ’bhijānāti karmabhir na sa badhyate",
-        "hindi_meaning": "जो इन्द्रियाँ चंचल हैं, उन्हें वश में न करने पर मन भी उनके पीछे-पीछे भटकता है, जैसे वायु नाव को बहा ले जाती है।",
+        "hindi_meaning": "कोई कर्म मुझे प्रभावित नहीं करता और न मैं कर्मफल की इच्छा रखता हूँ। जो मेरे विषय में इस सत्य को समझता है, वह भी कर्मफलों के बन्धन में नहीं पड़ता।",
         "meaning": "There is no work that affects Me; nor do I aspire for the fruits of action. One who understands this truth about Me also does not become entangled in the fruitive reactions of work."
       },
       {
@@ -1629,7 +1629,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः |\nकुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम् ||४-१५||",
         "transliteration": "evaṁ jñātvā kṛitaṁ karma pūrvair api mumukṣhubhiḥ\nkuru karmaiva tasmāt tvaṁ pūrvaiḥ pūrvataraṁ kṛitam",
-        "hindi_meaning": "हे महाबाहो! इसलिए जो व्यक्ति सभी इन्द्रियों को इन्द्रिय-विषयों से पूर्णतः हटा देता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "प्राचीन काल में सभी मुक्तात्माओं ने मेरे दिव्य स्वभाव की इसी समझ से कर्म किया था। अतः तुम्हें भी उनके पदचिह्नों पर चलते हुए अपना कर्तव्य करना चाहिए।",
         "meaning": "All the liberated souls in ancient times acted with this understanding of My transcendental nature. Therefore you should perform your duty, following in their footsteps."
       },
       {
@@ -1638,7 +1638,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः |\nतत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात् ||४-१६||",
         "transliteration": "kiṁ karma kim akarmeti kavayo ’py atra mohitāḥ\ntat te karma pravakṣhyāmi yaj jñātvā mokṣhyase ’śhubhāt",
-        "hindi_meaning": "जो सभी प्राणियों के लिए रात्रि है, वही जागृत पुरुष के लिए दिन है और जो सभी प्राणियों के लिए दिन है, वही जागृत पुरुष के लिए रात्रि है।",
+        "hindi_meaning": "कर्म क्या है और अकर्म क्या है, इसका निर्णय करने में बुद्धिमान भी मोहित हो जाते हैं। अब मैं तुम्हें कर्म समझाऊँगा, जिसे जानकर तुम समस्त अशुभ से मुक्त हो जाओगे।",
         "meaning": "Even the intelligent are bewildered in determining what is action and what is inaction. Now I shall explain to you what action is, knowing which you shall be liberated from all misfortune."
       },
       {
@@ -1647,7 +1647,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः |\nअकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः ||४-१७||",
         "transliteration": "karmaṇo hy api boddhavyaṁ boddhavyaṁ cha vikarmaṇaḥ\nakarmaṇaśh cha boddhavyaṁ gahanā karmaṇo gatiḥ",
-        "hindi_meaning": "जैसे सभी नदियाँ समुद्र में मिलकर अपना नाम-रूप खो देती हैं, वैसे ही ज्ञानी पुरुष सभी इच्छाओं को त्यागकर शान्ति प्राप्त करता है, न कि इच्छा करने वाला।",
+        "hindi_meaning": "कर्म की जटिलताओं को समझना अत्यन्त कठिन है। इसलिए कर्म, विकर्म और अकर्म क्या हैं, इन्हें ठीक से जानना चाहिए।",
         "meaning": "The intricacies of action are very hard to understand. Therefore one should know properly what action is, what forbidden action is, and what inaction is."
       },
       {
@@ -1656,7 +1656,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः |\nस बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत् ||४-१८||",
         "transliteration": "karmaṇy akarma yaḥ paśhyed akarmaṇi cha karma yaḥ\nsa buddhimān manuṣhyeṣhu sa yuktaḥ kṛitsna-karma-kṛit",
-        "hindi_meaning": "हे पार्थ! जो व्यक्ति सभी इच्छाओं को त्यागकर, स्वयं में ही संतुष्ट रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "जो कर्म में अकर्म और अकर्म में कर्म देखता है, वही मनुष्यों में बुद्धिमान है और सभी प्रकार के कर्मों में लगा रहकर भी दिव्य स्थिति में रहता है।",
         "meaning": "One who sees inaction in action, and action in inaction, is intelligent among men, and he is in the transcendental position, although engaged in all sorts of activities."
       },
       {
@@ -1665,7 +1665,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः |\nज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः ||४-१९||",
         "transliteration": "yasya sarve samārambhāḥ kāma-saṅkalpa-varjitāḥ\njñānāgni-dagdha-karmāṇaṁ tam āhuḥ paṇḍitaṁ budhāḥ",
-        "hindi_meaning": "हे अर्जुन! यह ब्रह्म की स्थिति है। इसे प्राप्त करके मनुष्य मोहित नहीं होता। इस अवस्था में स्थित रहकर, अन्त समय में भी, वह ब्रह्म-निर्वाण को प्राप्त करता है।",
+        "hindi_meaning": "जिसका प्रत्येक प्रयास इन्द्रिय-तृप्ति की इच्छा से रहित है, उसे पूर्ण ज्ञान में स्थित समझना चाहिए। मुनिजन उसे ऐसा कर्मयोगी कहते हैं, जिसके कर्मफल पूर्ण ज्ञान की अग्नि में भस्म हो चुके हैं।",
         "meaning": "One is understood to be in full knowledge whose every endeavor is devoid of desire for sense gratification. He is said by sages to be a worker for whom the reactions of work have been burned up by the fire of perfect knowledge."
       },
       {
@@ -1674,7 +1674,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः |\nकर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ||४-२०||",
         "transliteration": "tyaktvā karma-phalāsaṅgaṁ nitya-tṛipto nirāśhrayaḥ\nkarmaṇy abhipravṛitto ’pi naiva kiñchit karoti saḥ",
-        "hindi_meaning": "श्री भगवान ने कहा: तुम विद्वानों जैसी बातें कर रहे हो, लेकिन जो शोक के योग्य नहीं है उसके लिए शोक कर रहे हो। ज्ञानी लोग न तो जीवितों के लिए और न ही मृतकों के लिए शोक करते हैं।",
+        "hindi_meaning": "अपने कर्मफलों की सारी आसक्ति त्यागकर, सदा संतुष्ट और स्वतन्त्र रहकर वह सभी प्रकार के कार्यों में लगा होने पर भी कोई सकाम कर्म नहीं करता।",
         "meaning": "Abandoning all attachment to the results of his activities, ever satisfied and independent, he performs no fruitive action, although engaged in all kinds of undertakings."
       },
       {
@@ -1683,7 +1683,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः |\nशारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम् ||४-२१||",
         "transliteration": "nirāśhīr yata-chittātmā tyakta-sarva-parigrahaḥ\nśhārīraṁ kevalaṁ karma kurvan nāpnoti kilbiṣham",
-        "hindi_meaning": "न तो मैं कभी नहीं था, न तुम, न ये सभी राजा; और न भविष्य में हम में से कोई कभी नहीं होगा।",
+        "hindi_meaning": "ऐसा ज्ञानी मनुष्य मन और बुद्धि को पूर्णतः वश में रखकर, अपनी सम्पत्ति पर स्वामित्व का भाव छोड़कर केवल जीवन की आवश्यकताओं के लिए कर्म करता है। इस प्रकार कर्म करने पर वह पापफल से प्रभावित नहीं होता।",
         "meaning": "Such a man of understanding acts with mind and intelligence perfectly controlled, gives up all sense of proprietorship over his possessions, and acts only for the bare necessities of life. Thus working, he is not affected by sinful reactions."
       },
       {
@@ -1692,7 +1692,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः |\nसमः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ||४-२२||",
         "transliteration": "yadṛichchhā-lābha-santuṣhṭo dvandvātīto vimatsaraḥ\nsamaḥ siddhāv asiddhau cha kṛitvāpi na nibadhyate",
-        "hindi_meaning": "जैसे इस शरीर में देही (आत्मा) बाल्यावस्था, यौवन और वृद्धावस्था से गुजरता है, वैसे ही मृत्यु के समय वह दूसरे शरीर को प्राप्त करता है। धीर पुरुष ऐसे परिवर्तन से विचलित नहीं होता।",
+        "hindi_meaning": "जो स्वतः प्राप्त लाभ से संतुष्ट, द्वन्द्व और ईर्ष्या से मुक्त तथा सफलता और विफलता दोनों में स्थिर है, वह कर्म करते हुए भी कभी बँधता नहीं।",
         "meaning": "He who is satisfied with gain which comes of its own accord, who is free from duality and does not envy, who is steady in both success and failure, is never entangled, although performing actions."
       },
       {
@@ -1701,7 +1701,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः |\nयज्ञायाचरतः कर्म समग्रं प्रविलीयते ||४-२३||",
         "transliteration": "gata-saṅgasya muktasya jñānāvasthita-chetasaḥ\nyajñāyācharataḥ karma samagraṁ pravilīyate",
-        "hindi_meaning": "हे कौन्तेय! इन्द्रियों के संपर्क से उत्पन्न सुख-दुःख, शीत-उष्ण आदि आते-जाते रहते हैं, अनित्य हैं। हे भारत! तुम उन्हें सहन करो।",
+        "hindi_meaning": "जो भौतिक प्रकृति के गुणों से अनासक्त और दिव्य ज्ञान में पूर्णतः स्थित है, उसके कर्म पूर्ण रूप से दिव्यता में विलीन हो जाते हैं।",
         "meaning": "The work of a man who is unattached to the modes of material nature and who is fully situated in transcendental knowledge merges entirely into transcendence."
       },
       {
@@ -1710,7 +1710,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्नौ ब्रह्मणा हुतम् |\nब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना ||४-२४||",
         "transliteration": "brahmārpaṇaṁ brahma havir brahmāgnau brahmaṇā hutam\nbrahmaiva tena gantavyaṁ brahma-karma-samādhinā",
-        "hindi_meaning": "हे पुरुषर्षभ! जिस पुरुष को ये (सुख-दुःख) व्यथित नहीं करते, जो सुख-दुःख में सम है और धीर है, वह मोक्ष के योग्य है।",
+        "hindi_meaning": "कृष्णभावना में पूर्णतः लीन व्यक्ति आध्यात्मिक कर्मों में अपने पूर्ण योगदान के कारण आध्यात्मिक जगत को अवश्य प्राप्त करता है, जहाँ यज्ञ का लक्ष्य परम है और अर्पित वस्तु भी उसी आध्यात्मिक प्रकृति की है।",
         "meaning": "A person who is fully absorbed in Krishna consciousness is sure to attain the spiritual kingdom because of his full contribution to spiritual activities, in which the consummation is absolute and that which is offered is of the same spiritual nature."
       },
       {
@@ -1719,7 +1719,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "दैवमेवापरे यज्ञं योगिनः पर्युपासते |\nब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति ||४-२५||",
         "transliteration": "daivam evāpare yajñaṁ yoginaḥ paryupāsate\nbrahmāgnāv apare yajñaṁ yajñenaivopajuhvati",
-        "hindi_meaning": "जो तत्त्वदर्शी हैं, उन्होंने देखा है कि असत् (शरीर) का कोई स्थायी भाव नहीं है और सत् (आत्मा) का कोई अभाव नहीं है।",
+        "hindi_meaning": "कुछ योगी विविध यज्ञों द्वारा देवताओं की पूर्णतः पूजा करते हैं और कुछ परम ब्रह्म की अग्नि में यज्ञ अर्पित करते हैं।",
         "meaning": "Some yogis perfectly worship the demigods by offering different sacrifices to them, and some of them offer sacrifices in the fire of the Supreme Brahman."
       },
       {
@@ -1728,7 +1728,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्निषु जुह्वति |\nशब्दादीन्विषयानन्य इन्द्रियाग्निषु जुह्वति ||४-२६||",
         "transliteration": "śhrotrādīnīndriyāṇy anye saṁyamāgniṣhu juhvati\nśhabdādīn viṣhayān anya indriyāgniṣhu juhvati",
-        "hindi_meaning": "जान लो कि जो इस सम्पूर्ण शरीर में व्याप्त है, वह अविनाशी है। इस अव्यय आत्मा का विनाश कोई नहीं कर सकता।",
+        "hindi_meaning": "कुछ निष्कलंक ब्रह्मचारी श्रवण-प्रक्रिया और इन्द्रियों को मनोनिग्रह की अग्नि में अर्पित करते हैं, जबकि नियमित गृहस्थ इन्द्रिय-विषयों को इन्द्रियों की अग्नि में अर्पित करते हैं।",
         "meaning": "Some [the unadulterated brahmacharis] sacrifice the hearing process and the senses in the fire of mental control, and others [the regulated householders] sacrifice the objects of the senses in the fire of the senses."
       },
       {
@@ -1737,7 +1737,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे |\nआत्मसंयमयोगाग्नौ जुह्वति ज्ञानदीपिते ||४-२७||",
         "transliteration": "sarvāṇīndriya-karmāṇi prāṇa-karmāṇi chāpare\nātma-saṁyama-yogāgnau juhvati jñāna-dīpite",
-        "hindi_meaning": "हे भारत! ये शरीर नित्य, अविनाशी और अप्रमेय आत्मा के लिए नाशवान कहे गए हैं; इसलिए तुम युद्ध करो।",
+        "hindi_meaning": "मन और इन्द्रियों को वश में करके आत्म-साक्षात्कार पाने के इच्छुक अन्य लोग सभी इन्द्रियों तथा प्राणवायु के कार्यों को संयमित मन की अग्नि में आहुति देते हैं।",
         "meaning": "Others, who are interested in achieving self-realization through control of the mind and senses, offer the functions of all the senses, and of the life breath, as oblations into the fire of the controlled mind."
       },
       {
@@ -1746,7 +1746,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे |\nस्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः ||४-२८||",
         "transliteration": "dravya-yajñās tapo-yajñā yoga-yajñās tathāpare\nsvādhyāya-jñāna-yajñāśh cha yatayaḥ saṁśhita-vratāḥ",
-        "hindi_meaning": "जो इसे हन्ता मानता है और जो इसे हत मानता है, दोनों ही अज्ञानी हैं; क्योंकि यह न तो किसी को मारता है और न मारा जाता है।",
+        "hindi_meaning": "कठोर व्रत स्वीकार करके कुछ लोग अपनी सम्पत्ति के यज्ञ से, कुछ कठिन तपस्या से, कुछ अष्टांग योग के अभ्यास से और कुछ दिव्य ज्ञान में उन्नति के लिए वेदाध्ययन से प्रबुद्ध होते हैं।",
         "meaning": "Having accepted strict vows, some become enlightened by sacrificing their possessions, and others by performing severe austerities, by practicing the yoga of eightfold mysticism, or by studying the Vedas to advance in transcendental knowledge."
       },
       {
@@ -1755,7 +1755,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "अपाने जुह्वति प्राणं प्राणेऽपानं तथापरे |\nप्राणापानगती रुद्ध्वा प्राणायामपरायणाः |\nअपरे नियताहाराः प्राणान्प्राणेषु जुह्वति ||४-२९||",
         "transliteration": "apāne juhvati prāṇaṁ prāṇe ’pānaṁ tathāpare\nprāṇāpāna-gatī ruddhvā prāṇāyāma-parāyaṇāḥ\napare niyatāhārāḥ prāṇān prāṇeṣhu juhvati",
-        "hindi_meaning": "यह आत्मा कभी जन्म नहीं लेता और न कभी मरता है। यह उत्पन्न नहीं हुआ, न होगा और न पहले था। यह अजन्मा, नित्य, शाश्वत और पुरातन है। शरीर के मारे जाने पर भी यह नहीं मारा जाता।",
+        "hindi_meaning": "कुछ समाधि के लिए प्राणायाम का अभ्यास करते हुए बाहर जाने वाली श्वास को भीतर आने वाली श्वास में और भीतर आने वाली श्वास को बाहर जाने वाली श्वास में अर्पित करते हैं तथा अन्ततः श्वास रोककर समाधि में स्थित होते हैं। अन्य लोग आहार घटाकर बाहर जाने वाली श्वास को उसी में यज्ञस्वरूप अर्पित करते हैं।",
         "meaning": "Still others, who are inclined to the process of breath restraint to remain in trance, practice by offering the movement of the outgoing breath into the incoming, and the incoming breath into the outgoing, and thus at last remain in trance, stopping all breathing. Others, curtailing the eating process, offer the outgoing breath into itself as a sacrifice."
       },
       {
@@ -1764,7 +1764,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "सर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः |\nयज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम् ||४-३०||",
         "transliteration": "sarve ’py ete yajña-vido yajña-kṣhapita-kalmaṣhāḥ\nyajña-śhiṣhṭāmṛita-bhujo yānti brahma sanātanam",
-        "hindi_meaning": "हे पार्थ! जो पुरुष इस अजन्मा, अव्यय और नित्य आत्मा को जानता है, वह कैसे किसी को मार सकता है या मरवा सकता है?",
+        "hindi_meaning": "यज्ञ का अर्थ जानने वाले ये सभी साधक पापफलों से शुद्ध हो जाते हैं और यज्ञफल के अमृत का आस्वादन करके परम सनातन धाम की ओर बढ़ते हैं।",
         "meaning": "All these performers who know the meaning of sacrifice become cleansed of sinful reactions, and, having tasted the nectar of the results of sacrifices, they advance toward the supreme eternal atmosphere."
       },
       {
@@ -1773,7 +1773,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "नायं लोकोऽस्त्ययज्ञस्य कुतोऽन्यः कुरुसत्तम ||४-३१||",
         "transliteration": "nāyaṁ loko ’sty ayajñasya kuto ’nyaḥ kuru-sattama",
-        "hindi_meaning": "जैसे मनुष्य पुराने वस्त्रों को त्यागकर नए वस्त्र ग्रहण करता है, वैसे ही देही (आत्मा) पुराने शरीरों को त्यागकर नए शरीरों को प्राप्त करता है।",
+        "hindi_meaning": "हे कुरुश्रेष्ठ! यज्ञ के बिना मनुष्य इस लोक और इस जीवन में भी सुखी नहीं रह सकता, फिर अगले जीवन की तो बात ही क्या है?",
         "meaning": "O best of the Kuru dynasty, without sacrifice one can never live happily on this planet or in this life: what then of the next?"
       },
       {
@@ -1782,7 +1782,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे |\nकर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे ||४-३२||",
         "transliteration": "evaṁ bahu-vidhā yajñā vitatā brahmaṇo mukhe\nkarma-jān viddhi tān sarvān evaṁ jñātvā vimokṣhyase",
-        "hindi_meaning": "इस आत्मा को शस्त्र काट नहीं सकते, अग्नि जला नहीं सकती, जल गीला नहीं कर सकता और वायु सुखा नहीं सकती।",
+        "hindi_meaning": "ये सभी विविध प्रकार के यज्ञ वेदों द्वारा अनुमोदित हैं और भिन्न-भिन्न कर्मों से उत्पन्न होते हैं। इन्हें इस प्रकार जानकर तुम मुक्त हो जाओगे।",
         "meaning": "All these different types of sacrifice are approved by the Vedas, and all of them are born of different types of work. Knowing them as such, you will become liberated."
       },
       {
@@ -1791,7 +1791,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप |\nसर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते ||४-३३||",
         "transliteration": "śhreyān dravya-mayād yajñāj jñāna-yajñaḥ parantapa\nsarvaṁ karmākhilaṁ pārtha jñāne parisamāpyate",
-        "hindi_meaning": "यह अच्छेद्य, अदाह्य, अक्लेद्य और अशोष्य है तथा नित्य, सर्वगत, स्थिर, अचल और सनातन है।",
+        "hindi_meaning": "हे शत्रुदमन! ज्ञानपूर्वक किया गया यज्ञ केवल भौतिक सम्पत्ति के यज्ञ से श्रेष्ठ है। हे पृथापुत्र! अन्ततः सभी कर्मयज्ञ दिव्य ज्ञान में समाप्त होते हैं।",
         "meaning": "O chastiser of the enemy, the sacrifice performed in knowledge is better than the mere sacrifice of material possessions. After all, O son of Pritha, all sacrifices of work culminate in transcendental knowledge."
       },
       {
@@ -1800,7 +1800,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया |\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ||४-३४||",
         "transliteration": "tad viddhi praṇipātena paripraśhnena sevayā\nupadekṣhyanti te jñānaṁ jñāninas tattva-darśhinaḥ",
-        "hindi_meaning": "यह अव्यक्त, अचिन्त्य और अविकारी कहा जाता है। इसलिए इसे इस प्रकार जानकर तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "आध्यात्मिक गुरु के पास जाकर सत्य जानने का प्रयास करो। उनसे विनम्रतापूर्वक प्रश्न करो और उनकी सेवा करो; आत्म-साक्षात्कारी महात्मा तुम्हें ज्ञान दे सकते हैं, क्योंकि उन्होंने सत्य को देखा है।",
         "meaning": "Just try to learn the truth by approaching a spiritual master. Inquire from him submissively and render service unto him. The self-realized souls can impart knowledge unto you because they have seen the truth."
       },
       {
@@ -1809,7 +1809,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव |\nयेन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि ||४-३५||",
         "transliteration": "yaj jñātvā na punar moham evaṁ yāsyasi pāṇḍava\nyena bhūtāny aśheṣheṇa drakṣhyasy ātmany atho mayi",
-        "hindi_meaning": "हे महाबाहो! यदि तुम इसे सदा जन्म लेने वाला या सदा मरने वाला मानते हो, तो भी तुम्हें इसके लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "आत्म-साक्षात्कारी महात्मा से वास्तविक ज्ञान प्राप्त करने पर तुम फिर कभी ऐसे मोह में नहीं पड़ोगे। इस ज्ञान से तुम देखोगे कि सभी जीव परमेश्वर के अंश हैं, अर्थात् वे मेरे हैं।",
         "meaning": "Having obtained real knowledge from a self-realized soul, you will never fall again into such illusion, for by this knowledge you will see that all living beings are but part of the Supreme, or, in other words, that they are Mine."
       },
       {
@@ -1818,7 +1818,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः |\nसर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि ||४-३६||",
         "transliteration": "api ched asi pāpebhyaḥ sarvebhyaḥ pāpa-kṛit-tamaḥ\nsarvaṁ jñāna-plavenaiva vṛijinaṁ santariṣhyasi",
-        "hindi_meaning": "जन्म लेने वाले की मृत्यु निश्चित है और मरने वाले का जन्म निश्चित है। इसलिए इस अपरिहार्य विषय में तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "यदि तुम समस्त पापियों में सबसे अधिक पापी भी माने जाओ, तो दिव्य ज्ञान की नौका में स्थित होकर दुःख-सागर को पार कर सकोगे।",
         "meaning": "Even if you are considered to be the most sinful of all sinners, when you are situated in the boat of transcendental knowledge you will be able to cross over the ocean of miseries."
       },
       {
@@ -1827,7 +1827,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन |\nज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ||४-३७||",
         "transliteration": "yathaidhāṁsi samiddho ’gnir bhasma-sāt kurute ’rjuna\njñānāgniḥ sarva-karmāṇi bhasma-sāt kurute tathā",
-        "hindi_meaning": "हे भारत! सभी प्राणी आदि में अव्यक्त, मध्य में व्यक्त और अन्त में अव्यक्त हो जाते हैं। फिर यहाँ शोक क्यों?",
+        "hindi_meaning": "हे अर्जुन! जिस प्रकार प्रज्वलित अग्नि लकड़ी को राख कर देती है, उसी प्रकार ज्ञान की अग्नि भौतिक कर्मों के सभी फलों को भस्म कर देती है।",
         "meaning": "As a blazing fire turns firewood to ashes, O Arjuna, so does the fire of knowledge burn to ashes all reactions to material activities."
       },
       {
@@ -1836,7 +1836,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते |\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ||४-३८||",
         "transliteration": "na hi jñānena sadṛiśhaṁ pavitram iha vidyate\ntat svayaṁ yoga-saṁsiddhaḥ kālenātmani vindati",
-        "hindi_meaning": "कोई इसे आश्चर्य की तरह देखता है, कोई आश्चर्य की तरह कहता है, कोई आश्चर्य की तरह सुनता है और कोई सुनकर भी इसे नहीं जानता।",
+        "hindi_meaning": "इस संसार में दिव्य ज्ञान के समान उदात्त और पवित्र कुछ नहीं है; यह समस्त योग का परिपक्व फल है। भक्ति के अभ्यास में सिद्ध व्यक्ति समय आने पर अपने भीतर इस ज्ञान का आस्वादन करता है।",
         "meaning": "In this world, there is nothing so sublime and pure as transcendental knowledge. Such knowledge is the mature fruit of all mysticism. And one who has become accomplished in the practice of devotional service enjoys this knowledge within himself in due course of time."
       },
       {
@@ -1845,7 +1845,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः |\nज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति ||४-३९||",
         "transliteration": "śhraddhāvāḻ labhate jñānaṁ tat-paraḥ saṁyatendriyaḥ\njñānaṁ labdhvā parāṁ śhāntim achireṇādhigachchhati",
-        "hindi_meaning": "हे भारत! सभी के शरीर में रहने वाला यह देही अवध्य है। इसलिए तुम्हें किसी भी प्राणी के लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "दिव्य ज्ञान के प्रति समर्पित, श्रद्धावान और इन्द्रियों को वश में रखने वाला मनुष्य ऐसा ज्ञान पाने का अधिकारी है। इसे प्राप्त करके वह शीघ्र ही परम आध्यात्मिक शान्ति पाता है।",
         "meaning": "A faithful man who is dedicated to transcendental knowledge and who subdues his senses is eligible to achieve such knowledge, and having achieved it he quickly attains the supreme spiritual peace."
       },
       {
@@ -1854,7 +1854,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति |\nनायं लोकोऽस्ति न परो न सुखं संशयात्मनः ||४-४०||",
         "transliteration": "ajñaśh chāśhraddadhānaśh cha saṁśhayātmā vinaśhyati\nnāyaṁ loko ’sti na paro na sukhaṁ saṁśhayātmanaḥ",
-        "hindi_meaning": "हे पार्थ! अपने स्वधर्म पर भी दृष्टि रखकर तुम्हें कंपित नहीं होना चाहिए; क्योंकि क्षत्रिय के लिए धर्मयुद्ध से बढ़कर और कोई श्रेयस्कर नहीं है।",
+        "hindi_meaning": "किन्तु प्रकट शास्त्रों पर सन्देह करने वाले अज्ञानी और श्रद्धाहीन व्यक्ति कृष्णभावना को प्राप्त नहीं करते, अपितु पतित हो जाते हैं। संशयग्रस्त आत्मा के लिए न इस लोक में सुख है, न परलोक में।",
         "meaning": "But ignorant and faithless persons who doubt the revealed scriptures do not attain God consciousness; they fall down. For the doubting soul there is happiness neither in this world nor in the next."
       },
       {
@@ -1863,7 +1863,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "योगसंन्यस्तकर्माणं ज्ञानसञ्छिन्नसंशयम् |\nआत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय ||४-४१||",
         "transliteration": "yoga-sannyasta-karmāṇaṁ jñāna-sañchhinna-saṁśhayam\nātmavantaṁ na karmāṇi nibadhnanti dhanañjaya",
-        "hindi_meaning": "हे पार्थ! ऐसे युद्ध को क्षत्रिय सुख से प्राप्त करते हैं, जो स्वर्ग के द्वार को खोलने वाला है और जो स्वयं प्राप्त हो जाता है।",
+        "hindi_meaning": "हे धनञ्जय! जो भक्ति में कर्म करते हुए कर्मफल त्याग देता है और जिसके सन्देह दिव्य ज्ञान से नष्ट हो चुके हैं, वह वास्तव में आत्मा में स्थित है; अतः वह कर्मफलों से नहीं बँधता।",
         "meaning": "One who acts in devotional service, renouncing the fruits of his actions, and whose doubts have been destroyed by transcendental knowledge, is situated factually in the self. Thus he is not bound by the reactions of work, O conqueror of riches."
       },
       {
@@ -1872,7 +1872,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 4,
         "text": "तस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानासिनात्मनः |\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ||४-४२||",
         "transliteration": "tasmād ajñāna-sambhūtaṁ hṛit-sthaṁ jñānāsinātmanaḥ\nchhittvainaṁ saṁśhayaṁ yogam ātiṣhṭhottiṣhṭha bhārata",
-        "hindi_meaning": "यदि तुम इस धर्मयुद्ध को नहीं करोगे, तो अपने स्वधर्म और कीर्ति को खोकर पाप को प्राप्त होगे।",
+        "hindi_meaning": "अतः अज्ञान से तुम्हारे हृदय में उत्पन्न सन्देहों को ज्ञानरूपी शस्त्र से काट डालो। हे भारत! योग से सुसज्जित होकर उठो और युद्ध करो।",
         "meaning": "Therefore the doubts which have arisen in your heart out of ignorance should be slashed by the weapon of knowledge. Armed with yoga, O Bharata, stand and fight."
       }
     ]
@@ -1891,7 +1891,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "अर्जुन उवाच |\nसंन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि |\nयच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम् ||५-१||",
         "transliteration": "arjuna uvācha\nsannyāsaṁ karmaṇāṁ kṛiṣhṇa punar yogaṁ cha śhaṁsasi\nyach chhreya etayor ekaṁ tan me brūhi suniśhchitam",
-        "hindi_meaning": "लोग तुम्हारी कीर्ति की निन्दा करेंगे और नाम के लिए जो कीर्ति होती है, वह भी नष्ट हो जाएगी।",
+        "hindi_meaning": "अर्जुन ने कहा: हे कृष्ण! पहले आप मुझे कर्म त्यागने को कहते हैं और फिर भक्तिपूर्वक कर्म करने की संस्तुति करते हैं। अब कृपा करके निश्चित रूप से बताइए कि इन दोनों में कौन अधिक कल्याणकारी है।",
         "meaning": "Arjuna said: O Krishna, first of all You ask me to renounce work, and then again You recommend work with devotion. Now will You kindly tell me definitely which of the two is more beneficial?"
       },
       {
@@ -1900,7 +1900,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "श्रीभगवानुवाच |\nसंन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ |\nतयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते ||५-२||",
         "transliteration": "śhrī bhagavān uvācha\nsannyāsaḥ karma-yogaśh cha niḥśhreyasa-karāv ubhau\ntayos tu karma-sannyāsāt karma-yogo viśhiṣhyate",
-        "hindi_meaning": "महान योद्धाओं के लिए तुम्हारी निन्दा होगी और तुम्हारा सम्मान अपमान में बदल जाएगा।",
+        "hindi_meaning": "श्रीभगवान ने कहा: कर्म का त्याग और भक्तिपूर्वक कर्म, दोनों ही मुक्ति के लिए शुभ हैं; किन्तु इन दोनों में भक्ति-युक्त कर्म, कर्म-संन्यास से श्रेष्ठ है।",
         "meaning": "The Personality of Godhead replied: The renunciation of work and work in devotion are both good for liberation. But, of the two, work in devotional service is better than renunciation of work."
       },
       {
@@ -1909,7 +1909,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति |\nनिर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते ||५-३||",
         "transliteration": "jñeyaḥ sa nitya-sannyāsī yo na dveṣhṭi na kāṅkṣhati\nnirdvandvo hi mahā-bāho sukhaṁ bandhāt pramuchyate",
-        "hindi_meaning": "शत्रु तुम्हारे बारे में अनेक अपशब्द कहेंगे और तुम्हारी वीरता की निन्दा करेंगे। तुम्हारे लिए इससे बढ़कर दुःख और क्या हो सकता है?",
+        "hindi_meaning": "हे महाबाहु अर्जुन! जो अपने कर्मफलों से न तो घृणा करता है और न उनकी इच्छा करता है, वह सदा संन्यासी माना जाता है। समस्त द्वन्द्वों से मुक्त ऐसा व्यक्ति भौतिक बन्धन को सरलता से पार करके पूर्णतः मुक्त हो जाता है।",
         "meaning": "One who neither hates nor desires the fruits of his activities is known to be always renounced. Such a person, free from all dualities, easily overcomes material bondage and is completely liberated, O mighty-armed Arjuna."
       },
       {
@@ -1918,7 +1918,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "सांख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः |\nएकमप्यास्थितः सम्यगुभयोर्विन्दते फलम् ||५-४||",
         "transliteration": "sāṅkhya-yogau pṛithag bālāḥ pravadanti na paṇḍitāḥ\nekam apy āsthitaḥ samyag ubhayor vindate phalam",
-        "hindi_meaning": "हे अर्जुन! यदि तुम मारे जाओगे, तो स्वर्ग को प्राप्त करोगे; यदि विजयी होगे, तो पृथ्वी का भोग करोगे। इसलिए उठो और निश्चयपूर्वक युद्ध करो।",
+        "hindi_meaning": "केवल अज्ञानी ही भक्ति-युक्त कर्मयोग को भौतिक जगत के सांख्य-विश्लेषण से भिन्न कहते हैं। वास्तविक विद्वान कहते हैं कि इनमें से किसी एक मार्ग में भलीभाँति स्थित व्यक्ति दोनों का फल प्राप्त करता है।",
         "meaning": "Only the ignorant speak of devotional service [karma-yoga] as being different from the analytical study of the material world [Sankhya]. Those who are actually learned say that he who applies himself well to one of these paths achieves the results of both."
       },
       {
@@ -1927,7 +1927,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "यत्सांख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते |\nएकं सांख्यं च योगं च यः पश्यति स पश्यति ||५-५||",
         "transliteration": "yat sāṅkhyaiḥ prāpyate sthānaṁ tad yogair api gamyate\nekaṁ sāṅkhyaṁ cha yogaṁ cha yaḥ paśhyati sa paśhyati",
-        "hindi_meaning": "सुख-दुःख, लाभ-हानि, जय-पराजय को समान समझकर युद्ध के लिए तैयार हो जाओ। इस प्रकार करने से तुम पाप नहीं करोगे।",
+        "hindi_meaning": "जो जानता है कि सांख्य-विश्लेषण से प्राप्त पद भक्तिपूर्वक कर्म द्वारा भी पाया जा सकता है और इस प्रकार दोनों को समान स्तर पर देखता है, वही वस्तुओं को यथार्थ रूप में देखता है।",
         "meaning": "One who knows that the position reached by means of analytical study can also be attained by devotional service, and who therefore sees analytical study and devotional service to be on the same level, sees things as they are."
       },
       {
@@ -1936,7 +1936,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः |\nयोगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति ||५-६||",
         "transliteration": "sannyāsas tu mahā-bāho duḥkham āptum ayogataḥ\nyoga-yukto munir brahma na chireṇādhigachchhati",
-        "hindi_meaning": "हे पार्थ! अब तक मैंने तुम्हें सांख्य योग (ज्ञान) बताया है। अब कर्मयोग सुनो, जिसे जानकर तुम कर्मबन्धन से मुक्त हो जाओगे।",
+        "hindi_meaning": "भगवान की भक्ति में लगे बिना केवल सभी कर्मों का त्याग करने से कोई सुखी नहीं हो सकता। किन्तु भक्ति में लगा विचारशील व्यक्ति शीघ्र ही परमेश्वर को प्राप्त कर सकता है।",
         "meaning": "Merely renouncing all activities yet not engaging in the devotional service of the Lord cannot make one happy. But a thoughtful person engaged in devotional service can achieve the Supreme without delay."
       },
       {
@@ -1945,7 +1945,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः |\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते ||५-७||",
         "transliteration": "yoga-yukto viśhuddhātmā vijitātmā jitendriyaḥ\nsarva-bhūtātma-bhūtātmā kurvann api na lipyate",
-        "hindi_meaning": "इसमें कोई हानि नहीं है और यह आरम्भ में थोड़ा सा भी हो, तो भी संसार के भय से रक्षा करता है।",
+        "hindi_meaning": "जो भक्ति में कर्म करता है, शुद्धात्मा है तथा मन और इन्द्रियों को वश में रखता है, वह सबको प्रिय है और सभी उसे प्रिय हैं। सदा कर्म करते हुए भी ऐसा व्यक्ति कभी बँधता नहीं।",
         "meaning": "One who works in devotion, who is a pure soul, and who controls his mind and senses is dear to everyone, and everyone is dear to him. Though always working, such a man is never entangled."
       },
       {
@@ -1954,7 +1954,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "नैव किञ्चित्करोमीति युक्तो मन्येत तत्त्ववित् |\nपश्यञ्शृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपञ्श्वसन् ||५-८||",
         "transliteration": "naiva kiñchit karomīti yukto manyeta tattva-vit\npaśhyañ śhṛiṇvan spṛiśhañ jighrann aśhnan gachchhan svapan śhvasan",
-        "hindi_meaning": "हे कुरुनन्दन! इस कर्मयोग में निश्चयात्मक बुद्धि एक ही है, लेकिन अविश्वासियों की बुद्धि अनेक शाखाओं वाली और अनन्त है।",
+        "hindi_meaning": "दिव्य चेतना में स्थित व्यक्ति देखते, सुनते, छूते, सूँघते, खाते, चलते, सोते और श्वास लेते हुए भी भीतर से सदा जानता है कि वास्तव में वह कुछ नहीं करता।",
         "meaning": "A person in the divine consciousness, although engaged in seeing, hearing, touching, smelling, eating, moving about, sleeping and breathing, always knows within himself that he actually does nothing at all."
       },
       {
@@ -1963,7 +1963,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि |\nइन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन् ||५-९||",
         "transliteration": "pralapan visṛijan gṛihṇann unmiṣhan nimiṣhann api\nindriyāṇīndriyārtheṣhu vartanta iti dhārayan",
-        "hindi_meaning": "हे पार्थ! जो लोग वेदों के शब्दज्ञान में मोहित होकर कहते हैं कि इसके सिवा और कुछ नहीं है, वे कामनाओं से युक्त हैं।",
+        "hindi_meaning": "बोलते, त्याग करते, ग्रहण करते अथवा आँखें खोलते-बन्द करते समय वह सदा जानता है कि केवल भौतिक इन्द्रियाँ अपने विषयों में लगी हैं और वह उनसे पृथक है।",
         "meaning": "Because while speaking, evacuating, receiving, or opening or closing his eyes, he always knows that only the material senses are engaged with their objects and that he is aloof from them."
       },
       {
@@ -1972,7 +1972,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः |\nलिप्यते न स पापेन पद्मपत्रमिवाम्भसा ||५-१०||",
         "transliteration": "brahmaṇy ādhāya karmāṇi saṅgaṁ tyaktvā karoti yaḥ\nlipyate na sa pāpena padma-patram ivāmbhasā",
-        "hindi_meaning": "जिनकी बुद्धि उन कामनाओं में लगी हुई है, जिनका परम लक्ष्य स्वर्ग है, वे जन्म-मृत्यु के चक्र में बने रहते हैं।",
+        "hindi_meaning": "जो आसक्ति के बिना अपना कर्तव्य करते हुए उसके फल परमेश्वर को समर्पित करता है, वह पापकर्म से वैसे ही अछूता रहता है जैसे कमलपत्र जल से।",
         "meaning": "One who performs his duty without attachment, surrendering the results unto the Supreme Lord, is unaffected by sinful action, as the lotus leaf is untouched by water."
       },
       {
@@ -1981,7 +1981,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि |\nयोगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वात्मशुद्धये ||५-११||",
         "transliteration": "kāyena manasā buddhyā kevalair indriyair api\nyoginaḥ karma kurvanti saṅgaṁ tyaktvātma-śhuddhaye",
-        "hindi_meaning": "जो लोग इन्द्रियों और इन्द्रियों के विषयों में आसक्त हैं, उनकी बुद्धि स्थिर नहीं होती।",
+        "hindi_meaning": "योगी आसक्ति त्यागकर केवल आत्मशुद्धि के लिए शरीर, मन, बुद्धि और इन्द्रियों द्वारा कर्म करते हैं।",
         "meaning": "The yogis, abandoning attachment, act with body, mind, intelligence and even with the senses, only for the purpose of purification."
       },
       {
@@ -1990,7 +1990,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम् |\nअयुक्तः कामकारेण फले सक्तो निबध्यते ||५-१२||",
         "transliteration": "yuktaḥ karma-phalaṁ tyaktvā śhāntim āpnoti naiṣhṭhikīm\nayuktaḥ kāma-kāreṇa phale sakto nibadhyate",
-        "hindi_meaning": "वेद तीन गुणों (सत्, रज, तम) के विषय में हैं। हे अर्जुन! तुम इन तीनों गुणों से परे हो जाओ, नित्य सत्ता में स्थित रहो, द्रव्य के लिए चिंतित न रहो और आत्म-स्वरूप में स्थित रहो।",
+        "hindi_meaning": "स्थिर भक्त अपने सभी कर्मों के फल मुझे अर्पित करके विशुद्ध शान्ति प्राप्त करता है, जबकि दिव्य चेतना से रहित और कर्मफल का लोभी व्यक्ति बन्धन में पड़ जाता है।",
         "meaning": "The steadily devoted soul attains unadulterated peace because he offers the result of all activities to Me; whereas a person who is not in union with the Divine, who is greedy for the fruits of his labor, becomes entangled."
       },
       {
@@ -1999,7 +1999,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी |\nनवद्वारे पुरे देही नैव कुर्वन्न कारयन् ||५-१३||",
         "transliteration": "sarva-karmāṇi manasā sannyasyāste sukhaṁ vaśhī\nnava-dvāre pure dehī naiva kurvan na kārayan",
-        "hindi_meaning": "जैसे सभी जलाशयों के लिए एक छोटा तालाब पर्याप्त है, वैसे ही सभी वेदों के लिए ज्ञानी ब्राह्मण के लिए वेदों का ज्ञान पर्याप्त है।",
+        "hindi_meaning": "जब देहधारी जीव अपनी प्रकृति को वश में करके मन से सभी कर्मों का त्याग कर देता है, तब वह नौ द्वारों वाले नगर अर्थात् भौतिक शरीर में सुखपूर्वक रहता है और न कर्म करता है, न करवाता है।",
         "meaning": "When the embodied living being controls his nature and mentally renounces all actions, he resides happily in the city of nine gates [the material body], neither working nor causing work to be done."
       },
       {
@@ -2008,7 +2008,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः |\nन कर्मफलसंयोगं स्वभावस्तु प्रवर्तते ||५-१४||",
         "transliteration": "na kartṛitvaṁ na karmāṇi lokasya sṛijati prabhuḥ\nna karma-phala-saṁyogaṁ svabhāvas tu pravartate",
-        "hindi_meaning": "तुम्हारा कर्म करने में ही अधिकार है, कर्म के फल में कभी नहीं। कर्म के फल का कारण मत बनो और कर्म न करने में आसक्ति मत रखो।",
+        "hindi_meaning": "शरीररूपी नगर का स्वामी देहधारी जीव न कर्मों की रचना करता है, न लोगों को कर्म में लगाता है और न कर्मफल उत्पन्न करता है। यह सब भौतिक प्रकृति के गुणों द्वारा होता है।",
         "meaning": "The embodied spirit, master of the city of his body, does not create activities, nor does he induce people to act, nor does he create the fruits of action. All this is enacted by the modes of material nature."
       },
       {
@@ -2017,7 +2017,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः |\nअज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः ||५-१५||",
         "transliteration": "nādatte kasyachit pāpaṁ na chaiva sukṛitaṁ vibhuḥ\najñānenāvṛitaṁ jñānaṁ tena muhyanti jantavaḥ",
-        "hindi_meaning": "हे अर्जुन! योग में स्थित होकर कर्म करो, सफलता-असफलता को त्याग दो। ऐसी समता को योग कहते हैं।",
+        "hindi_meaning": "परमेश्वर किसी के पाप या पुण्य कर्मों को ग्रहण नहीं करते। किन्तु जीव उस अज्ञान से मोहित हैं, जो उनके वास्तविक ज्ञान को ढकता है।",
         "meaning": "Nor does the Supreme Lord assume anyone’s sinful or pious activities. Embodied beings, however, are bewildered because of the ignorance which covers their real knowledge."
       },
       {
@@ -2026,7 +2026,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः |\nतेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम् ||५-१६||",
         "transliteration": "jñānena tu tad ajñānaṁ yeṣhāṁ nāśhitam ātmanaḥ\nteṣhām āditya-vaj jñānaṁ prakāśhayati tat param",
-        "hindi_meaning": "हे धनञ्जय! कर्मफल की इच्छा से किए गए कर्म से बुद्धि (ज्ञानयोग) बहुत श्रेष्ठ है। ज्ञानयोग में शरण लो, क्योंकि कर्म करने वाले लोग दुःखी होते हैं।",
+        "hindi_meaning": "किन्तु जब मनुष्य उस ज्ञान से प्रकाशित होता है जो अज्ञान को नष्ट करता है, तब उसका ज्ञान सूर्य के समान सब कुछ प्रकाशित कर देता है।",
         "meaning": "When, however, one is enlightened with the knowledge by which nescience is destroyed, then his knowledge reveals everything, as the sun lights up everything in the daytime."
       },
       {
@@ -2035,7 +2035,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः |\nगच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः ||५-१७||",
         "transliteration": "tad-buddhayas tad-ātmānas tan-niṣhṭhās tat-parāyaṇāḥ\ngachchhanty apunar-āvṛittiṁ jñāna-nirdhūta-kalmaṣhāḥ",
-        "hindi_meaning": "जो व्यक्ति कर्मफल से मुक्त है, वह ज्ञानयोग द्वारा पाप और पुण्य दोनों से मुक्त हो जाता है। इसलिए तुम योग में स्थित होकर कर्म करो।",
+        "hindi_meaning": "जिसकी बुद्धि, मन, श्रद्धा और आश्रय सभी परमेश्वर में स्थिर हैं, वह पूर्ण ज्ञान द्वारा समस्त संशयों से शुद्ध होकर सीधे मुक्ति-पथ पर आगे बढ़ता है।",
         "meaning": "When one’s intelligence, mind, faith and refuge are all fixed in the Supreme, then one becomes fully cleansed of misgivings through complete knowledge and thus proceeds straight on the path of liberation."
       },
       {
@@ -2044,7 +2044,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि |\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः ||५-१८||",
         "transliteration": "vidyā-vinaya-sampanne brāhmaṇe gavi hastini\nśhuni chaiva śhva-pāke cha paṇḍitāḥ sama-darśhinaḥ",
-        "hindi_meaning": "ज्ञानी लोग कर्मफल का त्याग करके जन्म और मृत्यु के चक्र से मुक्त हो जाते हैं और वे उस स्थान को प्राप्त करते हैं, जहाँ दुःख नहीं है।",
+        "hindi_meaning": "विनम्र ज्ञानी अपने वास्तविक ज्ञान के कारण विद्वान और विनीत ब्राह्मण, गाय, हाथी, कुत्ते तथा चाण्डाल को समान दृष्टि से देखते हैं।",
         "meaning": "The humble sages, by virtue of true knowledge, see with equal vision a learned and gentle brahmana, a cow, an elephant, a dog and a dog-eater [outcaste]."
       },
       {
@@ -2053,7 +2053,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः |\nनिर्दोषं हि समं ब्रह्म तस्माद्ब्रह्मणि ते स्थिताः ||५-१९||",
         "transliteration": "ihaiva tair jitaḥ sargo yeṣhāṁ sāmye sthitaṁ manaḥ\nnirdoṣhaṁ hi samaṁ brahma tasmād brahmaṇi te sthitāḥ",
-        "hindi_meaning": "जब तुम्हारी बुद्धि भ्रम से मुक्त हो जाएगी, तो तुम वैराग्य और श्रवण दोनों में ही उदासीन हो जाओगे।",
+        "hindi_meaning": "जिनका मन समता और समभाव में स्थित है, वे जन्म-मृत्यु की अवस्थाओं को पहले ही जीत चुके हैं। वे ब्रह्म के समान निर्दोष हैं और इस प्रकार ब्रह्म में स्थित हैं।",
         "meaning": "Those whose minds are established in sameness and equanimity have already conquered the conditions of birth and death. They are flawless like Brahman, and thus they are already situated in Brahman."
       },
       {
@@ -2062,7 +2062,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् |\nस्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः ||५-२०||",
         "transliteration": "na prahṛiṣhyet priyaṁ prāpya nodvijet prāpya chāpriyam\nsthira-buddhir asammūḍho brahma-vid brahmaṇi sthitaḥ",
-        "hindi_meaning": "हे अर्जुन! जब तुम्हारी बुद्धि वेदों के शब्दज्ञान से विचलित नहीं होगी और तुम आत्मा में स्थित हो जाओगे, तो तुम्हें दिव्य ज्ञान प्राप्त होगा।",
+        "hindi_meaning": "जो प्रिय वस्तु पाकर हर्षित नहीं होता और अप्रिय वस्तु पाकर शोक नहीं करता, जो आत्मबुद्धि-युक्त, मोहरहित और ईश्वर-विज्ञान को जानने वाला है, वह पहले ही दिव्य स्थिति में है।",
         "meaning": "A person who neither rejoices upon achieving something pleasant nor laments upon obtaining something unpleasant, who is self-intelligent, who is unbewildered, and who knows the science of God, is already situated in transcendence."
       },
       {
@@ -2071,7 +2071,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम् |\nस ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते ||५-२१||",
         "transliteration": "bāhya-sparśheṣhv asaktātmā vindaty ātmani yat sukham\nsa brahma-yoga-yuktātmā sukham akṣhayam aśhnute",
-        "hindi_meaning": "अर्जुन ने कहा: हे केशव! जो व्यक्ति आत्मा में स्थित है, जिसकी बुद्धि स्थिर है, वह कैसा होता है? वह कैसे बोलता है, कैसे बैठता है और कैसे चलता है?",
+        "hindi_meaning": "ऐसा मुक्त व्यक्ति भौतिक इन्द्रिय-सुख में आसक्त नहीं होता, अपितु अपने भीतर के आनन्द का अनुभव करते हुए सदा समाधि में रहता है। परमेश्वर पर मन एकाग्र करके आत्म-साक्षात्कारी व्यक्ति इस प्रकार असीम सुख भोगता है।",
         "meaning": "Such a liberated person is not attracted to material sense pleasure but is always in trance, enjoying the pleasure within. In this way the self-realized person enjoys unlimited happiness, for he concentrates on the Supreme."
       },
       {
@@ -2080,7 +2080,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते |\nआद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः ||५-२२||",
         "transliteration": "ye hi saṁsparśha-jā bhogā duḥkha-yonaya eva te\nādy-antavantaḥ kaunteya na teṣhu ramate budhaḥ",
-        "hindi_meaning": "श्री भगवान ने कहा: हे पार्थ! जब मनुष्य सभी इच्छाओं को त्याग देता है और आत्मा में ही संतुष्ट रहता है, तो उसे आत्मस्थिति कहते हैं।",
+        "hindi_meaning": "बुद्धिमान व्यक्ति भौतिक इन्द्रियों के सम्पर्क से उत्पन्न दुःख के स्रोतों में भाग नहीं लेता। हे कुन्तीपुत्र! ऐसे सुखों का आदि और अन्त होता है, इसलिए ज्ञानी उनमें आनन्द नहीं लेता।",
         "meaning": "An intelligent person does not take part in the sources of misery, which are due to contact with the material senses. O son of Kunti, such pleasures have a beginning and an end, and so the wise man does not delight in them."
       },
       {
@@ -2089,7 +2089,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात् |\nकामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः ||५-२३||",
         "transliteration": "śhaknotīhaiva yaḥ soḍhuṁ prāk śharīra-vimokṣhaṇāt\nkāma-krodhodbhavaṁ vegaṁ sa yuktaḥ sa sukhī naraḥ",
-        "hindi_meaning": "जो दुःख में विचलित नहीं होता, सुख में हर्षित नहीं होता, जो राग, भय और क्रोध से मुक्त है, वह स्थिरबुद्धि कहलाता है।",
+        "hindi_meaning": "यदि कोई इस शरीर को त्यागने से पहले भौतिक इन्द्रियों के वेग को सहन कर सके और काम तथा क्रोध के बल को रोक सके, तो वह इस संसार में सुस्थित और सुखी है।",
         "meaning": "Before giving up this present body, if one is able to tolerate the urges of the material senses and check the force of desire and anger, he is well situated and is happy in this world."
       },
       {
@@ -2098,7 +2098,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः |\nस योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ||५-२४||",
         "transliteration": "yo ’ntaḥ-sukho ’ntar-ārāmas tathāntar-jyotir eva yaḥ\nsa yogī brahma-nirvāṇaṁ brahma-bhūto ’dhigachchhati",
-        "hindi_meaning": "जो सभी प्राणियों में समभाव रखता है, सुख-दुःख में समान रहता है, वह मुझे अत्यंत प्रिय है।",
+        "hindi_meaning": "जिसका सुख, कर्म और आनन्द भीतर है तथा जिसका लक्ष्य अन्तर्मुखी है, वही वास्तव में सिद्ध योगी है। वह परमेश्वर में मुक्त होता है और अन्ततः परमेश्वर को प्राप्त करता है।",
         "meaning": "One whose happiness is within, who is active and rejoices within, and whose aim is inward is actually the perfect mystic. He is liberated in the Supreme, and ultimately he attains the Supreme."
       },
       {
@@ -2107,7 +2107,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः |\nछिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः ||५-२५||",
         "transliteration": "labhante brahma-nirvāṇam ṛiṣhayaḥ kṣhīṇa-kalmaṣhāḥ\nchhinna-dvaidhā yatātmānaḥ sarva-bhūta-hite ratāḥ",
-        "hindi_meaning": "जो मनुष्य सभी इन्द्रियों को इन्द्रिय-विषयों से हटाकर, कछुए की तरह अपने अंगों को समेट लेता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "जो सन्देह से उत्पन्न द्वन्द्वों से परे हैं, जिनका मन भीतर लगा है, जो सदा सभी जीवों के कल्याण में कार्यरत हैं और सभी पापों से मुक्त हैं, वे परमेश्वर में मुक्ति प्राप्त करते हैं।",
         "meaning": "Those who are beyond the dualities that arise from doubts, whose minds are engaged within, who are always busy working for the welfare of all living beings, and who are free from all sins achieve liberation in the Supreme."
       },
       {
@@ -2116,7 +2116,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "कामक्रोधविमुक्तानां यतीनां यतचेतसाम् |\nअभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम् ||५-२६||",
         "transliteration": "kāma-krodha-vimuktānāṁ yatīnāṁ yata-chetasām\nabhito brahma-nirvāṇaṁ vartate viditātmanām",
-        "hindi_meaning": "विषय-भोगों से वस्तुतः विरक्त व्यक्ति रुचि को त्याग देता है, लेकिन रुचि का स्वाद बना रहता है। यह रुचि भी परमात्मा को देखकर समाप्त हो जाती है।",
+        "hindi_meaning": "जो क्रोध और समस्त भौतिक इच्छाओं से मुक्त, आत्म-साक्षात्कारी, आत्मसंयमी और सिद्धि के लिए निरन्तर प्रयत्नशील हैं, उन्हें निकट भविष्य में परमेश्वर में मुक्ति अवश्य मिलती है।",
         "meaning": "Those who are free from anger and all material desires, who are self-realized, self-disciplined and constantly endeavoring for perfection, are assured of liberation in the Supreme in the very near future."
       },
       {
@@ -2125,7 +2125,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः |\nप्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ ||५-२७||",
         "transliteration": "sparśhān kṛitvā bahir bāhyāṁśh chakṣhuśh chaivāntare bhruvoḥ\nprāṇāpānau samau kṛitvā nāsābhyantara-chāriṇau",
-        "hindi_meaning": "हे अर्जुन! चंचल इन्द्रियाँ बलवान मन को भी बलपूर्वक अपने वश में कर लेती हैं।",
+        "hindi_meaning": "समस्त बाहरी इन्द्रिय-विषयों को बाहर रखकर, दृष्टि को दोनों भौंहों के मध्य स्थिर करके और नासिका के भीतर आने-जाने वाली श्वास को रोककर...",
         "meaning": "Shutting out all external sense objects, keeping the eyes and vision concentrated between the two eyebrows, suspending the inward and outward breaths within the nostrils..."
       },
       {
@@ -2134,7 +2134,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः |\nविगतेच्छाभयक्रोधो यः सदा मुक्त एव सः ||५-२८||",
         "transliteration": "yatendriya-mano-buddhir munir mokṣha-parāyaṇaḥ\nvigatechchhā-bhaya-krodho yaḥ sadā mukta eva saḥ",
-        "hindi_meaning": "हे अर्जुन! जो व्यक्ति सभी इन्द्रियों को वश में करके मुझमें मन लगाता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "...इस प्रकार मन, इन्द्रियों और बुद्धि को वश में करने वाला, मुक्ति को लक्ष्य बनाने वाला अध्यात्मवादी इच्छा, भय और क्रोध से मुक्त हो जाता है। जो सदा इस अवस्था में रहता है, वह निश्चय ही मुक्त है।",
         "meaning": "...and thus controlling the mind, senses and intelligence, the transcendentalist aiming at liberation becomes free from desire, fear and anger. One who is always in this state is certainly liberated."
       },
       {
@@ -2143,7 +2143,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 5,
         "text": "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम् |\nसुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति ||५-২৯||",
         "transliteration": "bhoktāraṁ yajña-tapasāṁ sarva-loka-maheśhvaram\nsuhṛidaṁ sarva-bhūtānāṁ jñātvā māṁ śhāntim ṛichchhati",
-        "hindi_meaning": "हे अर्जुन! जब मनुष्य विषयों का चिन्तन करता है, तो उनके प्रति आसक्ति उत्पन्न होती है। आसक्ति से कामना उत्पन्न होती है और कामना से क्रोध उत्पन्न होता है।",
+        "hindi_meaning": "जो मुझे सभी यज्ञों और तपस्याओं का परम भोक्ता, समस्त लोकों और देवताओं का परम स्वामी तथा सभी जीवों का हितैषी और शुभचिन्तक जानता है, वह भौतिक दुःखों की पीड़ा से शान्ति प्राप्त करता है।",
         "meaning": "A person in full consciousness of Me, knowing Me to be the ultimate beneficiary of all sacrifices and austerities, the Supreme Lord of all planets and demigods, and the benefactor and well-wisher of all living entities, attains peace from the pangs of material miseries."
       }
     ]
@@ -2162,7 +2162,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "श्रीभगवानुवाच |\nअनाश्रितः कर्मफलं कार्यं कर्म करोति यः |\nस संन्यासी च योगी च न निरग्निर्न चाक्रियः ||६-१||",
         "transliteration": "śhrī bhagavān uvācha\nanāśhritaḥ karma-phalaṁ kāryaṁ karma karoti yaḥ\nsa sannyāsī cha yogī cha na niragnir na chākriyaḥ",
-        "hindi_meaning": "क्रोध से भ्रम उत्पन्न होता है, भ्रम से स्मृति भ्रष्ट होती है, स्मृति के नष्ट होने से बुद्धि नष्ट हो जाती है और बुद्धि के नष्ट होने से मनुष्य का पतन हो जाता है।",
+        "hindi_meaning": "श्रीभगवान ने कहा: जो अपने कर्मफल से अनासक्त रहकर अपना कर्तव्य करता है, वही संन्यासी और सच्चा योगी है, न कि वह जो अग्नि नहीं जलाता और कोई कर्म नहीं करता।",
         "meaning": "The Supreme Personality of Godhead said: One who is unattached to the fruits of his work and who works as he is obligated is in the renounced order of life, and he is the true mystic, not he who lights no fire and performs no duty."
       },
       {
@@ -2171,7 +2171,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव |\nन ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन ||६-२||",
         "transliteration": "yaṁ sannyāsam iti prāhur yogaṁ taṁ viddhi pāṇḍava\nna hy asannyasta-saṅkalpo yogī bhavati kaśhchana",
-        "hindi_meaning": "लेकिन जो व्यक्ति इन्द्रियों को वश में करके, राग-द्वेष से रहित होकर, अपने स्वरूप में स्थित रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "हे पाण्डुपुत्र! जिसे संन्यास कहते हैं, उसे ही योग अर्थात् परमेश्वर से जुड़ना जानो, क्योंकि इन्द्रियतृप्ति की इच्छा त्यागे बिना कोई योगी नहीं बन सकता।",
         "meaning": "What is called renunciation you should know to be the same as yoga, or linking oneself with the Supreme, O son of Pandu, for one can never become a yogi unless he renounces the desire for sense gratification."
       },
       {
@@ -2180,7 +2180,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते |\nयोगारूढस्य तस्यैव शमः कारणमुच्यते ||६-३||",
         "transliteration": "ārurukṣhor muner yogaṁ karma kāraṇam uchyate\nyogārūḍhasya tasyaiva śhamaḥ kāraṇam uchyate",
-        "hindi_meaning": "शान्ति प्राप्त होने पर सभी दुःखों का अन्त हो जाता है और शान्त चित्त वाले की बुद्धि शीघ्र स्थिर हो जाती है।",
+        "hindi_meaning": "अष्टांगयोग में आरम्भ करने वाले के लिए कर्म साधन कहा गया है और योग में उन्नत व्यक्ति के लिए समस्त भौतिक कर्मों का त्याग साधन कहा गया है।",
         "meaning": "For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who is already elevated in yoga, cessation of all material activities is said to be the means."
       },
       {
@@ -2189,7 +2189,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते |\nसर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते ||६-४||",
         "transliteration": "yadā hi nendriyārtheṣhu na karmasv anuṣhajjate\nsarva-saṅkalpa-sannyāsī yogārūḍhas tadochyate",
-        "hindi_meaning": "जो व्यक्ति योग में स्थित नहीं है, उसकी बुद्धि स्थिर नहीं होती और उसके लिए आत्मज्ञान नहीं है। आत्मज्ञान के बिना शान्ति नहीं है और शान्ति के बिना सुख कहाँ?",
+        "hindi_meaning": "जब मनुष्य समस्त भौतिक इच्छाओं को त्यागकर न तो इन्द्रियतृप्ति के लिए कर्म करता है, न सकाम कर्मों में लगता है, तब वह योग में उन्नत कहलाता है।",
         "meaning": "A person is said to be elevated in yoga when, having renounced all material desires, he neither acts for sense gratification nor engages in fruitive activities."
       },
       {
@@ -2198,7 +2198,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "उद्धरेदात्मनात्मानं नात्मानमवसादयेत् |\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ||६-५||",
         "transliteration": "uddhared ātmanātmānaṁ nātmānam avasādayet\nātmaiva hy ātmano bandhur ātmaiva ripur ātmanaḥ",
-        "hindi_meaning": "जो इन्द्रियाँ चंचल हैं, उन्हें वश में न करने पर मन भी उनके पीछे-पीछे भटकता है, जैसे वायु नाव को बहा ले जाती है।",
+        "hindi_meaning": "मनुष्य को मन की सहायता से अपना उद्धार करना चाहिए, अपना पतन नहीं। मन बद्धजीव का मित्र भी है और शत्रु भी।",
         "meaning": "One must deliver himself with the help of his mind, and not degrade himself. The mind is the friend of the conditioned soul, and his enemy as well."
       },
       {
@@ -2207,7 +2207,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जितः |\nअनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत् ||६-६||",
         "transliteration": "bandhur ātmātmanas tasya yenātmaivātmanā jitaḥ\nanātmanas tu śhatrutve vartetātmaiva śhatru-vat",
-        "hindi_meaning": "हे महाबाहो! इसलिए जो व्यक्ति सभी इन्द्रियों को इन्द्रिय-विषयों से पूर्णतः हटा देता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "जिसने मन को जीत लिया है, उसके लिए मन सबसे अच्छा मित्र है; किन्तु जो ऐसा नहीं कर पाया, उसके लिए वही सबसे बड़ा शत्रु बना रहता है।",
         "meaning": "For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his mind will remain the greatest enemy."
       },
       {
@@ -2216,7 +2216,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः |\nशीतोष्णसुखदुःखेषु तथा मानापमानयोः ||६-७||",
         "transliteration": "jitātmanaḥ praśhāntasya paramātmā samāhitaḥ\nśhītoṣhṇa-sukha-duḥkheṣhu tathā mānāpamānayoḥ",
-        "hindi_meaning": "जो सभी प्राणियों के लिए रात्रि है, वही जागृत पुरुष के लिए दिन है और जो सभी प्राणियों के लिए दिन है, वही जागृत पुरुष के लिए रात्रि है।",
+        "hindi_meaning": "जिसने मन को जीत लिया है, उसने परमात्मा को पा लिया है, क्योंकि वह शान्ति प्राप्त कर चुका है। उसके लिए सुख और दुःख, सर्दी और गर्मी तथा मान और अपमान समान हैं।",
         "meaning": "For one who has conquered the mind, the Supersoul is already reached, for he has attained tranquility. To such a man happiness and distress, heat and cold, honor and dishonor are all the same."
       },
       {
@@ -2225,7 +2225,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः |\nयुक्त इत्युच्यते योगी समलोष्ट्राश्मकाञ्चनः ||६-८||",
         "transliteration": "jñāna-vijñāna-tṛiptātmā kūṭa-stho vijitendriyaḥ\nyukta ity uchyate yogī sama-loṣhṭrāśhma-kāñchanaḥ",
-        "hindi_meaning": "जैसे सभी नदियाँ समुद्र में मिलकर अपना नाम-रूप खो देती हैं, वैसे ही ज्ञानी पुरुष सभी इच्छाओं को त्यागकर शान्ति प्राप्त करता है, न कि इच्छा करने वाला।",
+        "hindi_meaning": "प्राप्त ज्ञान और अनुभूति से पूर्णतः सन्तुष्ट व्यक्ति आत्मसाक्षात्कार में स्थित योगी कहलाता है। वह दिव्य पद पर स्थित, आत्मसंयमी और कंकड़, पत्थर तथा सोने को समान देखने वाला होता है।",
         "meaning": "A person is said to be established in self-realization and is called a yogi [or mystic] when he is fully satisfied by virtue of acquired knowledge and realization. Such a person is situated in transcendence and is self-controlled. He sees everything—whether it be pebbles, stones or gold—as the same."
       },
       {
@@ -2234,7 +2234,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु |\nसाधुष्वपि च पापेषु समबुद्धिर्विशिष्यते ||६-९||",
         "transliteration": "suhṛin-mitrāry-udāsīna-madhyastha-dveṣhya-bandhuṣhu\nsādhuṣhv api cha pāpeṣhu sama-buddhir viśhiṣhyate",
-        "hindi_meaning": "हे पार्थ! जो व्यक्ति सभी इच्छाओं को त्यागकर, स्वयं में ही संतुष्ट रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "जो निष्कपट हितैषी, मित्र, शत्रु, ईर्ष्यालु, पुण्यात्मा, पापी, उदासीन और निष्पक्ष—सबको समान दृष्टि से देखता है, वह और भी उन्नत माना जाता है।",
         "meaning": "A person is considered still further advanced when he regards all—the honest well-wisher, friends and enemies, the envious, the pious, the sinner and those who are indifferent and impartial—with an equal mind."
       },
       {
@@ -2243,7 +2243,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "योगी युञ्जीत सततमात्मानं रहसि स्थितः |\nएकाकी यतचित्तात्मा निराशीरपरिग्रहः ||६-१०||",
         "transliteration": "yogī yuñjīta satatam ātmānaṁ rahasi sthitaḥ\nekākī yata-chittātmā nirāśhīr aparigrahaḥ",
-        "hindi_meaning": "हे अर्जुन! यह ब्रह्म की स्थिति है। इसे प्राप्त करके मनुष्य मोहित नहीं होता। इस अवस्था में स्थित रहकर, अन्त समय में भी, वह ब्रह्म-निर्वाण को प्राप्त करता है।",
+        "hindi_meaning": "योगी को अपने शरीर, मन और आत्मा को सदा परमेश्वर से जोड़ना चाहिए। उसे एकान्त स्थान में अकेले रहकर सावधानी से मन को वश में रखना और इच्छाओं तथा संग्रहभाव से मुक्त रहना चाहिए।",
         "meaning": "A transcendentalist should always engage his body, mind and self in relationship with the Supreme; he should live alone in a secluded place and should always carefully control his mind. He should be free from desires and feelings of possessiveness."
       },
       {
@@ -2252,7 +2252,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः |\nनात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम् ||६-११||",
         "transliteration": "śhuchau deśhe pratiṣhṭhāpya sthiram āsanam ātmanaḥ\nnāty-uchchhritaṁ nāti-nīchaṁ chailājina-kuśhottaram",
-        "hindi_meaning": "श्री भगवान ने कहा: तुम विद्वानों जैसी बातें कर रहे हो, लेकिन जो शोक के योग्य नहीं है उसके लिए शोक कर रहे हो। ज्ञानी लोग न तो जीवितों के लिए और न ही मृतकों के लिए शोक करते हैं।",
+        "hindi_meaning": "योगाभ्यास के लिए एकान्त पवित्र स्थान में भूमि पर कुशा बिछाकर उस पर मृगछाला और कोमल वस्त्र रखना चाहिए। आसन न बहुत ऊँचा हो, न बहुत नीचा।",
         "meaning": "To practice yoga, one should go to a secluded place and should lay kusa grass on the ground and then cover it with a deerskin and a soft cloth. The seat should be neither too high nor too low and should be situated in a sacred place."
       },
       {
@@ -2261,7 +2261,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः |\nउपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये ||६-१२||",
         "transliteration": "tatraikāgraṁ manaḥ kṛitvā yata-chittendriya-kriyaḥ\nupaviśhyāsane yuñjyād yogam ātma-viśhuddhaye",
-        "hindi_meaning": "न तो मैं कभी नहीं था, न तुम, न ये सभी राजा; और न भविष्य में हम में से कोई कभी नहीं होगा।",
+        "hindi_meaning": "तब योगी उस आसन पर दृढ़तापूर्वक बैठकर मन, इन्द्रियों और कर्मों को वश में करे तथा मन को एक बिन्दु पर स्थिर करके हृदय की शुद्धि के लिए योगाभ्यास करे।",
         "meaning": "The yogi should then sit on it very firmly and practice yoga to purify the heart by controlling his mind, senses and activities and fixing the mind on one point."
       },
       {
@@ -2270,7 +2270,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः |\nसम्प्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन् ||६-१३||",
         "transliteration": "samaṁ kāya-śhiro-grīvaṁ dhārayann achalaṁ sthiraḥ\nsamprekṣhya nāsikāgraṁ svaṁ diśhaśh chānavalokayan",
-        "hindi_meaning": "जैसे इस शरीर में देही (आत्मा) बाल्यावस्था, यौवन और वृद्धावस्था से गुजरता है, वैसे ही मृत्यु के समय वह दूसरे शरीर को प्राप्त करता है। धीर पुरुष ऐसे परिवर्तन से विचलित नहीं होता।",
+        "hindi_meaning": "मनुष्य को शरीर, गर्दन और सिर को एक सीधी रेखा में स्थिर रखकर नासिका के अग्रभाग पर दृष्टि जमानी चाहिए।",
         "meaning": "One should hold one’s body, neck and head erect in a straight line and stare steadily at the tip of the nose."
       },
       {
@@ -2279,7 +2279,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः |\nमनः संयम्य मच्चित्तो युक्त आसीत मत्परः ||६-१४||",
         "transliteration": "praśhāntātmā vigata-bhīr brahmachāri-vrate sthitaḥ\nmanaḥ saṁyamya mach-chitto yukta āsīta mat-paraḥ",
-        "hindi_meaning": "हे कौन्तेय! इन्द्रियों के संपर्क से उत्पन्न सुख-दुःख, शीत-उष्ण आदि आते-जाते रहते हैं, अनित्य हैं। हे भारत! तुम उन्हें सहन करो।",
+        "hindi_meaning": "इस प्रकार शान्त और संयमित मन, निर्भयता तथा पूर्ण ब्रह्मचर्य के साथ मनुष्य को हृदय में मेरा ध्यान करना और मुझे जीवन का परम लक्ष्य बनाना चाहिए।",
         "meaning": "Thus, with an unagitated, subdued mind, devoid of fear, completely free from sex life, one should meditate upon Me within the heart and make Me the ultimate goal of life."
       },
       {
@@ -2288,7 +2288,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "युञ्जन्नेवं सदात्मानं योगी नियतमानसः |\nशान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति ||६-१५||",
         "transliteration": "yuñjann evaṁ sadātmānaṁ yogī niyata-mānasaḥ\nśhāntiṁ nirvāṇa-paramāṁ mat-saṁsthām adhigachchhati",
-        "hindi_meaning": "हे पुरुषर्षभ! जिस पुरुष को ये (सुख-दुःख) व्यथित नहीं करते, जो सुख-दुःख में सम है और धीर है, वह मोक्ष के योग्य है।",
+        "hindi_meaning": "इस प्रकार शरीर, मन और कर्मों को निरन्तर संयमित रखने वाला नियमित मन का योगी भौतिक अस्तित्व से मुक्त होकर भगवान के धाम अर्थात् कृष्णधाम को प्राप्त करता है।",
         "meaning": "Thus practicing constant control of the body, mind and activities, the mystic transcendentalist, his mind regulated, attains to the kingdom of God [or the abode of Krishna] by cessation of material existence."
       },
       {
@@ -2297,7 +2297,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः |\nन चाति स्वप्नशीलस्य जाग्रतो नैव चार्जुन ||६-१६||",
         "transliteration": "nātyaśhnatas tu yogo ’sti na chaikāntam anaśhnataḥ\nna chāti-svapna-śhīlasya jāgrato naiva chārjuna",
-        "hindi_meaning": "जो तत्त्वदर्शी हैं, उन्होंने देखा है कि असत् (शरीर) का कोई स्थायी भाव नहीं है और सत् (आत्मा) का कोई अभाव नहीं है।",
+        "hindi_meaning": "हे अर्जुन! जो बहुत अधिक या बहुत कम खाता है और बहुत अधिक या पर्याप्त नहीं सोता, उसके योगी बनने की सम्भावना नहीं है।",
         "meaning": "There is no possibility of one’s becoming a yogi, O Arjuna, if one eats too much or eats too little, sleeps too much or does not sleep enough."
       },
       {
@@ -2306,7 +2306,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु |\nयुक्तस्वप्नावबोधस्य योगो भवति दुःखहा ||६-१७||",
         "transliteration": "yuktāhāra-vihārasya yukta-cheṣhṭasya karmasu\nyukta-svapnāvabodhasya yogo bhavati duḥkha-hā",
-        "hindi_meaning": "जान लो कि जो इस सम्पूर्ण शरीर में व्याप्त है, वह अविनाशी है। इस अव्यय आत्मा का विनाश कोई नहीं कर सकता।",
+        "hindi_meaning": "जो भोजन, निद्रा, मनोरंजन और कार्य की आदतों में नियमित रहता है, वह योगाभ्यास द्वारा समस्त भौतिक दुःखों को कम कर सकता है।",
         "meaning": "He who is regulated in his habits of eating, sleeping, recreation and work can mitigate all material pains by practicing the yoga system."
       },
       {
@@ -2315,7 +2315,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "यदा विनियतं चित्तमात्मन्येवावतिष्ठते |\nनिःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा ||६-१८||",
         "transliteration": "yadā viniyataṁ chittam ātmany evāvatiṣhṭhate\nniḥspṛihaḥ sarva-kāmebhyo yukta ity uchyate tadā",
-        "hindi_meaning": "हे भारत! ये शरीर नित्य, अविनाशी और अप्रमेय आत्मा के लिए नाशवान कहे गए हैं; इसलिए तुम युद्ध करो।",
+        "hindi_meaning": "जब योगी योगाभ्यास से अपनी मानसिक क्रियाओं को अनुशासित करके समस्त भौतिक इच्छाओं से रहित दिव्य पद पर स्थित होता है, तब वह योग में सुस्थिर कहलाता है।",
         "meaning": "When the yogi, by practice of yoga, disciplines his mental activities and becomes situated in transcendence—devoid of all material desires—he is said to be well established in yoga."
       },
       {
@@ -2324,7 +2324,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता |\nयोगिनो यतचित्तस्य युञ्जतो योगमात्मनः ||६-१९||",
         "transliteration": "yathā dīpo nivāta-stho neṅgate sopamā smṛitā\nyogino yata-chittasya yuñjato yogam ātmanaḥ",
-        "hindi_meaning": "जो इसे हन्ता मानता है और जो इसे हत मानता है, दोनों ही अज्ञानी हैं; क्योंकि यह न तो किसी को मारता है और न मारा जाता है।",
+        "hindi_meaning": "जैसे वायुरहित स्थान में दीपक नहीं डगमगाता, वैसे ही वश में किए मन वाला योगी दिव्य आत्मा के ध्यान में सदा स्थिर रहता है।",
         "meaning": "As a lamp in a windless place does not waver, so the transcendentalist, whose mind is controlled, remains always steady in his meditation on the transcendent self."
       },
       {
@@ -2333,7 +2333,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "यत्रोपरमते चित्तं निरुद्धं योगसेवया |\nयत्र चैवात्मनात्मानं पश्यन्नात्मनि तुष्यति ||६-२०||",
         "transliteration": "yatroparamate chittaṁ niruddhaṁ yoga-sevayā\nyatra chaivātmanātmānaṁ paśhyann ātmani tuṣhyati",
-        "hindi_meaning": "यह आत्मा कभी जन्म नहीं लेता और न कभी मरता है। यह उत्पन्न नहीं हुआ, न होगा और न पहले था। यह अजन्मा, नित्य, शाश्वत और पुरातन है। शरीर के मारे जाने पर भी यह नहीं मारा जाता।",
+        "hindi_meaning": "समाधि की सिद्ध अवस्था में योगाभ्यास से मन भौतिक मानसिक क्रियाओं से पूर्णतः रुक जाता है। तब मनुष्य शुद्ध मन से आत्मा को देखता और आत्मा में ही आनन्द अनुभव करता है।",
         "meaning": "In the stage of perfection called trance, or samadhi, one’s mind is completely restrained from material mental activities by practice of yoga. This perfection is characterized by one’s ability to see the self by the pure mind and to relish and rejoice in the self."
       },
       {
@@ -2342,7 +2342,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "सुखमात्यन्तिकं यत्तद्बुद्धिग्राह्यमतीन्द्रियम् |\nवेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः ||६-२१||",
         "transliteration": "sukham ātyantikaṁ yat tad buddhi-grāhyam atīndriyam\nvetti yatra na chaivāyaṁ sthitaśh chalati tattvataḥ",
-        "hindi_meaning": "हे पार्थ! जो पुरुष इस अजन्मा, अव्यय और नित्य आत्मा को जानता है, वह कैसे किसी को मार सकता है या मरवा सकता है?",
+        "hindi_meaning": "उस आनन्दमय अवस्था में मनुष्य असीम दिव्य सुख में स्थित होकर दिव्य इन्द्रियों से आनन्द लेता है। इस प्रकार स्थित होकर वह सत्य से कभी विचलित नहीं होता।",
         "meaning": "In that joyous state, one is situated in boundless transcendental happiness and enjoys himself through transcendental senses. Established thus, one never departs from the truth."
       },
       {
@@ -2351,7 +2351,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः |\nयस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते ||६-२२||",
         "transliteration": "yaṁ labdhvā chāparaṁ lābhaṁ manyate nādhikaṁ tataḥ\nyasmin sthito na duḥkhena guruṇāpi vichālyate",
-        "hindi_meaning": "जैसे मनुष्य पुराने वस्त्रों को त्यागकर नए वस्त्र ग्रहण करता है, वैसे ही देही (आत्मा) पुराने शरीरों को त्यागकर नए शरीरों को प्राप्त करता है।",
+        "hindi_meaning": "इसे प्राप्त करके वह किसी अन्य लाभ को इससे बड़ा नहीं मानता। ऐसी स्थिति में रहकर वह बड़ी से बड़ी कठिनाई में भी विचलित नहीं होता।",
         "meaning": "And upon gaining this he thinks there is no greater gain. Being situated in such a position, one is never shaken, even in the midst of greatest difficulty."
       },
       {
@@ -2360,7 +2360,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "तं विद्याद्दुःखसंयोगवियोगं योगसंज्ञितम् |\nस निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा ||६-२३||",
         "transliteration": "taṁ vidyād duḥkha-saṁyoga-viyogaṁ yoga-saṁjñitam\nsa niśhchayena yoktavyo yogo ’nirviṇṇa-chetasā",
-        "hindi_meaning": "इस आत्मा को शस्त्र काट नहीं सकते, अग्नि जला नहीं सकती, जल गीला नहीं कर सकता और वायु सुखा नहीं सकती।",
+        "hindi_meaning": "भौतिक संसर्ग से उत्पन्न समस्त दुःखों से वास्तविक मुक्ति यही है। मनुष्य को दृढ़ निश्चय और श्रद्धा से योगाभ्यास करना चाहिए तथा मार्ग से विचलित नहीं होना चाहिए।",
         "meaning": "This indeed is actual freedom from all miseries arising from material contact. One should engage oneself in the practice of yoga with determination and faith and not be deviated from the path."
       },
       {
@@ -2369,7 +2369,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः |\nमनसैवेन्द्रियग्रामं विनियम्य समन्ततः ||६-२४||",
         "transliteration": "saṅkalpa-prabhavān kāmāṁs tyaktvā sarvān aśheṣhataḥ\nmanasaivendriya-grāmaṁ viniyamya samantataḥ",
-        "hindi_meaning": "यह अच्छेद्य, अदाह्य, अक्लेद्य और अशोष्य है तथा नित्य, सर्वगत, स्थिर, अचल और सनातन है।",
+        "hindi_meaning": "मनुष्य को मनोकल्पना से उत्पन्न समस्त भौतिक इच्छाओं का पूर्ण त्याग करके मन द्वारा सभी ओर से इन्द्रियों को वश में करना चाहिए।",
         "meaning": "One should abandon without exception all material desires born of mental speculation and thus control all the senses on all sides by the mind."
       },
       {
@@ -2378,7 +2378,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "शनैः शनैरुपरमेद्बुद्ध्या धृतिगृहीतया |\nआत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ||६-२५||",
         "transliteration": "śhanaiḥ śhanair uparamed buddhyā dhṛiti-gṛihītayā\nātma-saṁsthaṁ manaḥ kṛitvā na kiñchid api chintayet",
-        "hindi_meaning": "यह अव्यक्त, अचिन्त्य और अविकारी कहा जाता है। इसलिए इसे इस प्रकार जानकर तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "पूर्ण विश्वास से दृढ़ बुद्धि द्वारा मनुष्य को धीरे-धीरे समाधि में स्थित होना चाहिए और मन को केवल आत्मा पर स्थिर करके अन्य कुछ नहीं सोचना चाहिए।",
         "meaning": "Gradually, step by step, one should become situated in trance by means of intelligence sustained by full conviction, and thus the mind should be fixed on the self alone and should think of nothing else."
       },
       {
@@ -2387,7 +2387,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् |\nततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ||६-२६||",
         "transliteration": "yato yato niśhcharati manaśh chañchalam asthiram\ntatas tato niyamyaitad ātmany eva vaśhaṁ nayet",
-        "hindi_meaning": "हे महाबाहो! यदि तुम इसे सदा जन्म लेने वाला या सदा मरने वाला मानते हो, तो भी तुम्हें इसके लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "चंचल और अस्थिर स्वभाव के कारण मन जहाँ-जहाँ भटके, वहाँ से उसे निश्चित रूप से हटाकर आत्मा के वश में वापस लाना चाहिए।",
         "meaning": "From wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the self."
       },
       {
@@ -2396,7 +2396,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम् |\nउपैति शान्तरजसं ब्रह्मभूतमकल्मषम् ||६-२७||",
         "transliteration": "praśhānta-manasaṁ hy enaṁ yoginaṁ sukham uttamam\nupaiti śhānta-rajasaṁ brahma-bhūtam akalmaṣham",
-        "hindi_meaning": "जन्म लेने वाले की मृत्यु निश्चित है और मरने वाले का जन्म निश्चित है। इसलिए इस अपरिहार्य विषय में तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "जिस योगी का मन मुझमें स्थिर है, वह दिव्य सुख की सर्वोच्च सिद्धि प्राप्त करता है। वह रजोगुण से परे होकर परमेश्वर के साथ अपनी गुणात्मक एकता समझता और पूर्व कर्मों की समस्त प्रतिक्रियाओं से मुक्त हो जाता है।",
         "meaning": "The yogi whose mind is fixed on Me verily attains the highest perfection of transcendental happiness. He is beyond the mode of passion, he realizes his qualitative identity with the Supreme, and thus he is freed from all reactions to past deeds."
       },
       {
@@ -2405,7 +2405,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "युञ्जन्नेवं सदात्मानं योगी विगतकल्मषः |\nसुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते ||६-२८||",
         "transliteration": "yuñjann evaṁ sadātmānaṁ yogī vigata-kalmaṣhaḥ\nsukhena brahma-saṁsparśham atyantaṁ sukham aśhnute",
-        "hindi_meaning": "हे भारत! सभी प्राणी आदि में अव्यक्त, मध्य में व्यक्त और अन्त में अव्यक्त हो जाते हैं। फिर यहाँ शोक क्यों?",
+        "hindi_meaning": "इस प्रकार आत्मसंयमी योगी निरन्तर योगाभ्यास करते हुए समस्त भौतिक कल्मष से मुक्त होकर भगवान की दिव्य प्रेममयी सेवा में पूर्ण सुख की सर्वोच्च अवस्था प्राप्त करता है।",
         "meaning": "Thus the self-controlled yogi, constantly engaged in yoga practice, becomes free from all material contamination and achieves the highest stage of perfect happiness in transcendental loving service to the Lord."
       },
       {
@@ -2414,7 +2414,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि |\nईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ||६-२९||",
         "transliteration": "sarva-bhūta-stham ātmānaṁ sarva-bhūtāni chātmani\nīkṣhate yoga-yuktātmā sarvatra sama-darśhanaḥ",
-        "hindi_meaning": "कोई इसे आश्चर्य की तरह देखता है, कोई आश्चर्य की तरह कहता है, कोई आश्चर्य की तरह सुनता है और कोई सुनकर भी इसे नहीं जानता।",
+        "hindi_meaning": "सच्चा योगी मुझे सभी जीवों में और सभी जीवों को मुझमें देखता है। आत्मसाक्षात्कारी व्यक्ति उसी परमेश्वर को सर्वत्र देखता है।",
         "meaning": "A true yogi observes Me in all beings and also sees every being in Me. Indeed, the self-realized person sees Me, the same Supreme Lord, everywhere."
       },
       {
@@ -2423,7 +2423,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति |\nतस्याहं न प्रणश्यामि स च मे न प्रणश्यति ||६-३०||",
         "transliteration": "yo māṁ paśhyati sarvatra sarvaṁ cha mayi paśhyati\ntasyāhaṁ na praṇaśhyāmi sa cha me na praṇaśhyati",
-        "hindi_meaning": "हे भारत! सभी के शरीर में रहने वाला यह देही अवध्य है। इसलिए तुम्हें किसी भी प्राणी के लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "जो मुझे सर्वत्र और सब कुछ मुझमें देखता है, उसके लिए मैं कभी खोता नहीं और वह मेरे लिए कभी खोता नहीं।",
         "meaning": "For one who sees Me everywhere and sees everything in Me, I am never lost, nor is he ever lost to Me."
       },
       {
@@ -2432,7 +2432,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः |\nसर्वथा वर्तमानोऽपि स योगी मयि वर्तते ||६-৩১||",
         "transliteration": "sarva-bhūta-sthitaṁ yo māṁ bhajaty ekatvam āsthitaḥ\nsarvathā vartamāno ’pi sa yogī mayi vartate",
-        "hindi_meaning": "हे पार्थ! अपने स्वधर्म पर भी दृष्टि रखकर तुम्हें कंपित नहीं होना चाहिए; क्योंकि क्षत्रिय के लिए धर्मयुद्ध से बढ़कर और कोई श्रेयस्कर नहीं है।",
+        "hindi_meaning": "जो योगी मुझे और परमात्मा को एक जानकर परमात्मा की आराधनामयी सेवा करता है, वह हर परिस्थिति में सदा मुझमें स्थित रहता है।",
         "meaning": "Such a yogi, who engages in the worshipful service of the Supersoul, knowing that I and the Supersoul are one, remains always in Me in all circumstances."
       },
       {
@@ -2441,7 +2441,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन |\nसुखं वा यदि वा दुःखं स योगी परमो मतः ||६-३२||",
         "transliteration": "ātmaupamyena sarvatra samaṁ paśhyati yo ’rjuna\nsukhaṁ vā yadi vā duḥkhaṁ sa yogī paramo mataḥ",
-        "hindi_meaning": "हे पार्थ! ऐसे युद्ध को क्षत्रिय सुख से प्राप्त करते हैं, जो स्वर्ग के द्वार को खोलने वाला है और जो स्वयं प्राप्त हो जाता है।",
+        "hindi_meaning": "हे अर्जुन! जो अपने समान सभी जीवों के सुख और दुःख को वास्तविक रूप से समान देखता है, वही पूर्ण योगी है।",
         "meaning": "He is a perfect yogi who, by comparison to his own self, sees the true equality of all beings, in both their happiness and their distress, O Arjuna!"
       },
       {
@@ -2450,7 +2450,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "अर्जुन उवाच |\nयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन |\nएतस्याहं न पश्यामि चञ्चलत्वात्स्थितिं स्थिराम् ||६-३३||",
         "transliteration": "arjuna uvācha\nyo ’yaṁ yogas tvayā proktaḥ sāmyena madhusūdana\netasyāhaṁ na paśhyāmi chañchalatvāt sthitiṁ sthirām",
-        "hindi_meaning": "यदि तुम इस धर्मयुद्ध को नहीं करोगे, तो अपने स्वधर्म और कीर्ति को खोकर पाप को प्राप्त होगे।",
+        "hindi_meaning": "अर्जुन ने कहा: हे मधुसूदन! आपने जिस योगपद्धति का संक्षेप में वर्णन किया है, वह मन की चंचलता और अस्थिरता के कारण मुझे अव्यावहारिक और असहनीय लगती है।",
         "meaning": "Arjuna said: O Madhusudana, the system of yoga which You have summarized appears impractical and unendurable to me, for the mind is restless and unsteady."
       },
       {
@@ -2459,7 +2459,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम् |\nतस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ||६-३४||",
         "transliteration": "chañchalaṁ hi manaḥ kṛiṣhṇa pramāthi balavad dṛiḍham\ntasyāhaṁ nigrahaṁ manye vāyor iva su-duṣhkaram",
-        "hindi_meaning": "लोग तुम्हारी कीर्ति की निन्दा करेंगे और नाम के लिए जो कीर्ति होती है, वह भी नष्ट हो जाएगी।",
+        "hindi_meaning": "हे कृष्ण! मन चंचल, अशान्त, हठी और अत्यन्त बलवान है। इसे वश में करना मुझे वायु को रोकने से भी कठिन लगता है।",
         "meaning": "For the mind is restless, turbulent, obstinate and very strong, O Krishna, and to subdue it, I think, is more difficult than controlling the wind."
       },
       {
@@ -2468,7 +2468,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "श्रीभगवानुवाच |\nअसंशयं महाबाहो मनो दुर्निग्रहं चलम् |\nअभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ||६-३५||",
         "transliteration": "śhrī bhagavān uvācha\nasaṁśhayaṁ mahā-bāho mano durnigrahaṁ chalam\nabhyāsena tu kaunteya vairāgyeṇa cha gṛihyate",
-        "hindi_meaning": "महान योद्धाओं के लिए तुम्हारी निन्दा होगी और तुम्हारा सम्मान अपमान में बदल जाएगा।",
+        "hindi_meaning": "भगवान श्रीकृष्ण ने कहा: हे महाबाहु कुन्तीपुत्र! निस्सन्देह चंचल मन को रोकना बहुत कठिन है, किन्तु उचित अभ्यास और वैराग्य से यह सम्भव है।",
         "meaning": "Lord Sri Krishna said: O mighty-armed son of Kunti, it is undoubtedly very difficult to curb the restless mind, but it is possible by suitable practice and by detachment."
       },
       {
@@ -2477,7 +2477,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "असंयतात्मना योगो दुष्प्राप इति मे मतिः |\nवश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः ||६-३६||",
         "transliteration": "asaṁyatātmanā yogo duṣhprāpa iti me matiḥ\nvaśhyātmanā tu yatatā śhakyo ’vāptum upāyataḥ",
-        "hindi_meaning": "शत्रु तुम्हारे बारे में अनेक अपशब्द कहेंगे और तुम्हारी वीरता की निन्दा करेंगे। तुम्हारे लिए इससे बढ़कर दुःख और क्या हो सकता है?",
+        "hindi_meaning": "जिसका मन निरंकुश है, उसके लिए आत्मसाक्षात्कार कठिन है; किन्तु संयमित मन वाला उचित उपाय से प्रयत्न करे तो उसकी सफलता निश्चित है। यह मेरा मत है।",
         "meaning": "For one whose mind is unbridled, self-realization is difficult work. But he whose mind is controlled and who strives by appropriate means is assured of success. That is My opinion."
       },
       {
@@ -2486,7 +2486,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "अर्जुन उवाच |\nअयतिः श्रद्धयोपेतो योगाच्चलितमानसः |\nअप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ||६-३७||",
         "transliteration": "arjuna uvācha\nayatiḥ śhraddhayopeto yogāch chalita-mānasaḥ\naprāpya yoga-saṁsiddhiṁ kāṁ gatiṁ kṛiṣhṇa gachchhati",
-        "hindi_meaning": "हे अर्जुन! यदि तुम मारे जाओगे, तो स्वर्ग को प्राप्त करोगे; यदि विजयी होगे, तो पृथ्वी का भोग करोगे। इसलिए उठो और निश्चयपूर्वक युद्ध करो।",
+        "hindi_meaning": "अर्जुन ने कहा: हे कृष्ण! जो आरम्भ में श्रद्धापूर्वक आत्मसाक्षात्कार का मार्ग अपनाता है, पर बाद में सांसारिक मनोवृत्ति से हट जाता और योगसिद्धि प्राप्त नहीं करता, उस असफल योगी की गति क्या होती है?",
         "meaning": "Arjuna said: O Krishna, what is the destination of the unsuccessful transcendentalist, who in the beginning takes to the process of self-realization with faith but who later desists due to worldly-mindedness and thus does not attain perfection in mysticism?"
       },
       {
@@ -2495,7 +2495,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति |\nअप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि ||६-३८||",
         "transliteration": "kachchin nobhaya-vibhraṣhṭaśh chhinnābhram iva naśhyati\napratiṣhṭho mahā-bāho vimūḍho brahmaṇaḥ pathi",
-        "hindi_meaning": "सुख-दुःख, लाभ-हानि, जय-पराजय को समान समझकर युद्ध के लिए तैयार हो जाओ। इस प्रकार करने से तुम पाप नहीं करोगे।",
+        "hindi_meaning": "हे महाबाहु कृष्ण! क्या दिव्य मार्ग से विचलित ऐसा मनुष्य छिन्न-भिन्न बादल की भाँति किसी भी लोक में आश्रय न पाकर नष्ट नहीं हो जाता?",
         "meaning": "O mighty-armed Krishna, does not such a man, being deviated from the path of Transcendence, perish like a riven cloud, with no position in any sphere?"
       },
       {
@@ -2504,7 +2504,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः |\nत्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते ||६-३९||",
         "transliteration": "etan me saṁśhayaṁ kṛiṣhṇa chhettum arhasy aśheṣhataḥ\ntvad-anyaḥ saṁśhayasyāsya chhettā na hy upapadyate",
-        "hindi_meaning": "हे पार्थ! अब तक मैंने तुम्हें सांख्य योग (ज्ञान) बताया है। अब कर्मयोग सुनो, जिसे जानकर तुम कर्मबन्धन से मुक्त हो जाओगे।",
+        "hindi_meaning": "हे कृष्ण! यह मेरा संशय है। कृपया इसे पूर्णतः दूर करें, क्योंकि आपके अतिरिक्त इस संशय का नाश करने वाला कोई नहीं है।",
         "meaning": "This is my doubt, O Krishna, and I ask You to dispel it completely. But for You, no one is to be found who can destroy this doubt."
       },
       {
@@ -2513,7 +2513,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "श्रीभगवानुवाच |\nपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते |\nन हि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति ||६-४०||",
         "transliteration": "śhrī bhagavān uvācha\npārtha naiveha nāmutra vināśhas tasya vidyate\nna hi kalyāṇa-kṛit kaśhchid durgatiṁ tāta gachchhati",
-        "hindi_meaning": "इसमें कोई हानि नहीं है और यह आरम्भ में थोड़ा सा भी हो, तो भी संसार के भय से रक्षा करता है।",
+        "hindi_meaning": "श्रीभगवान ने कहा: हे पृथापुत्र! शुभ कर्मों में लगा योगी न इस लोक में न आध्यात्मिक लोक में नष्ट होता है। हे मित्र! भलाई करने वाला कभी बुराई से पराजित नहीं होता।",
         "meaning": "The Supreme Personality of Godhead said: Son of Pritha, a transcendentalist engaged in auspicious activities does not meet with destruction either in this world or in the spiritual world; one who does good, My friend, is never overcome by evil."
       },
       {
@@ -2522,7 +2522,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः |\nशुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते ||६-४१||",
         "transliteration": "prāpya puṇya-kṛitāṁ lokān uṣhitvā śhāśhvatīḥ samāḥ\nśhuchīnāṁ śhrīmatāṁ gehe yoga-bhraṣhṭo ’bhijāyate",
-        "hindi_meaning": "हे कुरुनन्दन! इस कर्मयोग में निश्चयात्मक बुद्धि एक ही है, लेकिन अविश्वासियों की बुद्धि अनेक शाखाओं वाली और अनन्त है।",
+        "hindi_meaning": "असफल योगी पुण्यात्माओं के लोकों में अनेक वर्षों तक भोग करने के बाद धार्मिक लोगों के परिवार में अथवा धनी कुलीन परिवार में जन्म लेता है।",
         "meaning": "The unsuccessful yogi, after many, many years of enjoyment on the planets of the pious living entities, is born into a family of righteous people, or into a family of rich aristocracy."
       },
       {
@@ -2531,7 +2531,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "अथवा योगिनामेव कुले भवति धीमताम् |\nएतद्धि दुर्लभतरं लोके जन्म यदीदृशम् ||६-४२||",
         "transliteration": "athavā yoginām eva kule bhavati dhīmatām\netad dhi durlabhataraṁ loke janma yad īdṛiśham",
-        "hindi_meaning": "हे पार्थ! जो लोग वेदों के शब्दज्ञान में मोहित होकर कहते हैं कि इसके सिवा और कुछ नहीं है, वे कामनाओं से युक्त हैं।",
+        "hindi_meaning": "अथवा दीर्घ योगाभ्यास के बाद असफल होने पर वह अत्यन्त बुद्धिमान योगियों के परिवार में जन्म लेता है। निश्चय ही संसार में ऐसा जन्म दुर्लभ है।",
         "meaning": "Or [if unsuccessful after long practice of yoga] he takes his birth in a family of transcendentalists who are surely great in wisdom. Certainly, such a birth is rare in this world."
       },
       {
@@ -2540,7 +2540,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् |\nयतते च ततो भूयः संसिद्धौ कुरुनन्दन ||६-४३||",
         "transliteration": "tatra taṁ buddhi-saṁyogaṁ labhate paurva-dehikam\nyatate cha tato bhūyaḥ saṁsiddhau kuru-nandana",
-        "hindi_meaning": "जिनकी बुद्धि उन कामनाओं में लगी हुई है, जिनका परम लक्ष्य स्वर्ग है, वे जन्म-मृत्यु के चक्र में बने रहते हैं।",
+        "hindi_meaning": "हे कुरुपुत्र! ऐसा जन्म पाकर वह पिछले जीवन की दिव्य चेतना फिर प्राप्त करता है और पूर्ण सफलता के लिए पुनः उन्नति का प्रयास करता है।",
         "meaning": "On taking such a birth, he revives the divine consciousness of his previous life, and he again tries to make further progress in order to achieve complete success, O son of Kuru."
       },
       {
@@ -2549,7 +2549,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः |\nजिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते ||६-४४||",
         "transliteration": "pūrvābhyāsena tenaiva hriyate hy avaśho ’pi saḥ\njijñāsur api yogasya śhabda-brahmātivartate",
-        "hindi_meaning": "जो लोग इन्द्रियों और इन्द्रियों के विषयों में आसक्त हैं, उनकी बुद्धि स्थिर नहीं होती।",
+        "hindi_meaning": "पूर्वजन्म की दिव्य चेतना के कारण वह बिना खोजे ही योग के सिद्धान्तों की ओर आकर्षित होता है। ऐसा जिज्ञासु योगी शास्त्रों के कर्मकाण्डीय नियमों से सदा ऊपर रहता है।",
         "meaning": "By virtue of the divine consciousness of his previous life, he automatically becomes attracted to the yogic principles—even without seeking them. Such an inquisitive transcendentalist stands always above the ritualistic principles of the scriptures."
       },
       {
@@ -2558,7 +2558,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः |\nअनेकजन्मसंसिद्धस्ततो याति परां गतिम् ||६-४५||",
         "transliteration": "prayatnād yatamānas tu yogī saṁśhuddha-kilbiṣhaḥ\naneka-janma-saṁsiddhas tato yāti parāṁ gatim",
-        "hindi_meaning": "वेद तीन गुणों (सत्, रज, तम) के विषय में हैं। हे अर्जुन! तुम इन तीनों गुणों से परे हो जाओ, नित्य सत्ता में स्थित रहो, द्रव्य के लिए चिंतित न रहो और आत्म-स्वरूप में स्थित रहो।",
+        "hindi_meaning": "जब योगी सच्चे प्रयास से आगे बढ़ता और समस्त कल्मष से शुद्ध होता है, तब अनेक जन्मों के अभ्यास के बाद अन्ततः सिद्ध होकर परम लक्ष्य प्राप्त करता है।",
         "meaning": "And when the yogi engages himself with sincere endeavor in making further progress, being washed of all contaminations, then ultimately, achieving perfection after many, many births of practice, he attains the supreme goal."
       },
       {
@@ -2567,7 +2567,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः |\nकर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन ||६-४६||",
         "transliteration": "tapasvibhyo ’dhiko yogī jñānibhyo ’pi mato ’dhikaḥ\nkarmibhyaśh chādhiko yogī tasmād yogī bhavārjuna",
-        "hindi_meaning": "जैसे सभी जलाशयों के लिए एक छोटा तालाब पर्याप्त है, वैसे ही सभी वेदों के लिए ज्ञानी ब्राह्मण के लिए वेदों का ज्ञान पर्याप्त है।",
+        "hindi_meaning": "योगी तपस्वी, अनुभववादी ज्ञानी और सकाम कर्मी से श्रेष्ठ है। अतः हे अर्जुन! प्रत्येक परिस्थिति में योगी बनो।",
         "meaning": "A yogi is greater than the ascetic, greater than the empiricist and greater than the fruitive worker. Therefore, O Arjuna, in all circumstances, be a yogi."
       },
       {
@@ -2576,7 +2576,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 6,
         "text": "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना |\nश्रद्धावान्भजते यो मां स मे युक्ततमो मतः ||६-४७||",
         "transliteration": "yoginām api sarveṣhāṁ mad-gatenāntar-ātmanā\nśhraddhāvān bhajate yo māṁ sa me yuktatamo mataḥ",
-        "hindi_meaning": "तुम्हारा कर्म करने में ही अधिकार है, कर्म के फल में कभी नहीं। कर्म के फल का कारण मत बनो और कर्म न करने में आसक्ति मत रखो।",
+        "hindi_meaning": "समस्त योगियों में जो महान श्रद्धा से सदा मुझमें स्थित रहता, अपने भीतर मेरा चिन्तन करता और मेरी दिव्य प्रेममयी सेवा करता है, वही योग में मुझसे सबसे घनिष्ठ रूप से जुड़ा और सबसे श्रेष्ठ है। यह मेरा मत है।",
         "meaning": "And of all yogis, the one with great faith who always abides in Me, thinks of Me within himself, and renders transcendental loving service to Me—he is the most intimately united with Me in yoga and is the highest of all. That is My opinion."
       }
     ]
@@ -2595,7 +2595,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "श्रीभगवानुवाच |\nमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः |\nअसंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ||७-१||",
         "transliteration": "śhrī bhagavān uvācha\nmayy āsakta-manāḥ pārtha yogaṁ yuñjan mad-āśhrayaḥ\nasaṁśhayaṁ samagraṁ māṁ yathā jñāsyasi tach chhṛiṇu",
-        "hindi_meaning": "हे अर्जुन! योग में स्थित होकर कर्म करो, सफलता-असफलता को त्याग दो। ऐसी समता को योग कहते हैं।",
+        "hindi_meaning": "श्रीभगवान ने कहा: हे पृथापुत्र! अब सुनो कि मुझमें पूर्ण चेतना रखते, मन को मुझमें आसक्त करके योगाभ्यास करते हुए तुम मुझे संशयरहित और पूर्णतः कैसे जान सकते हो।",
         "meaning": "The Supreme Personality of Godhead said: Now hear, O son of Pritha, how by practicing yoga in full consciousness of Me, with mind attached to Me, you can know Me in full, free from doubt."
       },
       {
@@ -2604,7 +2604,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "ज्ञानं तेऽहं सविज्ञानमिदं वक्ष्याम्यशेषतः |\nयज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते ||७-२||",
         "transliteration": "jñānaṁ te ’haṁ sa-vijñānam idaṁ vakṣhyāmy aśheṣhataḥ\nyaj jñātvā neha bhūyo ’nyaj jñātavyam avaśhiṣhyate",
-        "hindi_meaning": "हे धनञ्जय! कर्मफल की इच्छा से किए गए कर्म से बुद्धि (ज्ञानयोग) बहुत श्रेष्ठ है। ज्ञानयोग में शरण लो, क्योंकि कर्म करने वाले लोग दुःखी होते हैं।",
+        "hindi_meaning": "अब मैं तुम्हें भौतिक और आध्यात्मिक दोनों प्रकार का यह ज्ञान पूर्ण रूप से बताऊँगा। इसे जान लेने पर तुम्हारे लिए और कुछ जानना शेष नहीं रहेगा।",
         "meaning": "I shall now declare unto you in full this knowledge, both phenomenal and numinous. This being known, nothing further shall remain for you to know."
       },
       {
@@ -2613,7 +2613,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये |\nयततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः ||७-३||",
         "transliteration": "manuṣhyāṇāṁ sahasreṣhu kaśhchid yatati siddhaye\nyatatām api siddhānāṁ kaśhchin māṁ vetti tattvataḥ",
-        "hindi_meaning": "जो व्यक्ति कर्मफल से मुक्त है, वह ज्ञानयोग द्वारा पाप और पुण्य दोनों से मुक्त हो जाता है। इसलिए तुम योग में स्थित होकर कर्म करो।",
+        "hindi_meaning": "हजारों मनुष्यों में कोई एक सिद्धि के लिए प्रयत्न करता है और सिद्धि प्राप्त करने वालों में भी कोई विरला ही मुझे तत्त्वतः जानता है।",
         "meaning": "Out of many thousands among men, one may endeavor for perfection, and of those who have achieved perfection, hardly one knows Me in truth."
       },
       {
@@ -2622,7 +2622,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च |\nअहङ्कार इतीयं मे भिन्ना प्रकृतिरष्टधा ||७-४||",
         "transliteration": "bhūmir āpo ’nalo vāyuḥ khaṁ mano buddhir eva cha\nahaṅkāra itīyaṁ me bhinnā prakṛitir aṣhṭadhā",
-        "hindi_meaning": "ज्ञानी लोग कर्मफल का त्याग करके जन्म और मृत्यु के चक्र से मुक्त हो जाते हैं और वे उस स्थान को प्राप्त करते हैं, जहाँ दुःख नहीं है।",
+        "hindi_meaning": "पृथ्वी, जल, अग्नि, वायु, आकाश, मन, बुद्धि और मिथ्या अहंकार—ये आठों मिलकर मेरी पृथक् भौतिक शक्तियाँ हैं।",
         "meaning": "Earth, water, fire, air, ether, mind, intelligence and false ego—all together these eight constitute My separated material energies."
       },
       {
@@ -2631,7 +2631,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम् |\nजीवभूतां महाबाहो ययेदं धार्यते जगत् ||७-५||",
         "transliteration": "apareyam itas tv anyāṁ prakṛitiṁ viddhi me parām\njīva-bhūtāṁ mahā-bāho yayedaṁ dhāryate jagat",
-        "hindi_meaning": "जब तुम्हारी बुद्धि भ्रम से मुक्त हो जाएगी, तो तुम वैराग्य और श्रवण दोनों में ही उदासीन हो जाओगे।",
+        "hindi_meaning": "हे महाबाहु अर्जुन! इनके अतिरिक्त मेरी एक अन्य परा शक्ति है, जिसमें वे जीव आते हैं जो इस भौतिक अपरा प्रकृति के साधनों का उपभोग कर रहे हैं।",
         "meaning": "Besides these, O mighty-armed Arjuna, there is another, superior energy of Mine, which comprises the living entities who are exploiting the resources of this material, inferior nature."
       },
       {
@@ -2640,7 +2640,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "एतद्योनीनि भूतानि सर्वाणीत्युपधारय |\nअहं कृत्स्नस्य जगतः प्रभवः प्रलयस्तथा ||७-६||",
         "transliteration": "etad-yonīni bhūtāni sarvāṇīty upadhāraya\nahaṁ kṛitsnasya jagataḥ prabhavaḥ pralayas tathā",
-        "hindi_meaning": "हे अर्जुन! जब तुम्हारी बुद्धि वेदों के शब्दज्ञान से विचलित नहीं होगी और तुम आत्मा में स्थित हो जाओगे, तो तुम्हें दिव्य ज्ञान प्राप्त होगा।",
+        "hindi_meaning": "समस्त उत्पन्न प्राणियों का स्रोत ये दोनों प्रकृतियाँ हैं। इस संसार में जो भौतिक और आध्यात्मिक है, उसका उद्गम और प्रलय दोनों मुझे ही निश्चित रूप से जानो।",
         "meaning": "All created beings have their source in these two natures. Of all that is material and all that is spiritual in this world, know for certain that I am both the origin and the dissolution."
       },
       {
@@ -2649,7 +2649,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय |\nमयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ||७-७||",
         "transliteration": "mattaḥ parataraṁ nānyat kiñchid asti dhanañjaya\nmayi sarvam idaṁ protaṁ sūtre maṇi-gaṇā iva",
-        "hindi_meaning": "अर्जुन ने कहा: हे केशव! जो व्यक्ति आत्मा में स्थित है, जिसकी बुद्धि स्थिर है, वह कैसा होता है? वह कैसे बोलता है, कैसे बैठता है और कैसे चलता है?",
+        "hindi_meaning": "हे धनंजय! मुझसे श्रेष्ठ कोई सत्य नहीं है। जिस प्रकार मोती धागे में पिरोए रहते हैं, उसी प्रकार सब कुछ मुझ पर आश्रित है।",
         "meaning": "O conqueror of wealth, there is no truth superior to Me. Everything rests upon Me, as pearls are strung on a thread."
       },
       {
@@ -2658,7 +2658,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः |\nप्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु ||७-८||",
         "transliteration": "raso ’ham apsu kaunteya prabhāsmi śhaśhi-sūryayoḥ\npraṇavaḥ sarva-vedeṣhu śhabdaḥ khe pauruṣhaṁ nṛiṣhu",
-        "hindi_meaning": "श्री भगवान ने कहा: हे पार्थ! जब मनुष्य सभी इच्छाओं को त्याग देता है और आत्मा में ही संतुष्ट रहता है, तो उसे आत्मस्थिति कहते हैं।",
+        "hindi_meaning": "हे कुन्तीपुत्र! मैं जल का स्वाद, सूर्य और चन्द्रमा का प्रकाश तथा वैदिक मन्त्रों में ओंकार हूँ। मैं आकाश में ध्वनि और मनुष्य में सामर्थ्य हूँ।",
         "meaning": "O son of Kunti, I am the taste of water, the light of the sun and the moon, the syllable om in the Vedic mantras; I am the sound in ether and ability in man."
       },
       {
@@ -2667,7 +2667,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ |\nजीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु ||७-९||",
         "transliteration": "puṇyo gandhaḥ pṛithivyāṁ cha tejaśh chāsmi vibhāvasau\njīvanaṁ sarva-bhūteṣhu tapaśh chāsmi tapasviṣhu",
-        "hindi_meaning": "जो दुःख में विचलित नहीं होता, सुख में हर्षित नहीं होता, जो राग, भय और क्रोध से मुक्त है, वह स्थिरबुद्धि कहलाता है।",
+        "hindi_meaning": "मैं पृथ्वी की मूल सुगन्ध और अग्नि की ऊष्मा हूँ। मैं सभी जीवित प्राणियों का जीवन और समस्त तपस्वियों का तप हूँ।",
         "meaning": "I am the original fragrance of the earth, and I am the heat in fire. I am the life of all that lives, and I am the penances of all ascetics."
       },
       {
@@ -2676,7 +2676,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम् |\nबुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम् ||७-१०||",
         "transliteration": "bījaṁ māṁ sarva-bhūtānāṁ viddhi pārtha sanātanam\nbuddhir buddhimatām asmi tejas tejasvinām aham",
-        "hindi_meaning": "जो सभी प्राणियों में समभाव रखता है, सुख-दुःख में समान रहता है, वह मुझे अत्यंत प्रिय है।",
+        "hindi_meaning": "हे पृथापुत्र! मुझे समस्त अस्तित्वों का मूल बीज, बुद्धिमानों की बुद्धि और समस्त शक्तिशाली पुरुषों का पराक्रम जानो।",
         "meaning": "O son of Pritha, know that I am the original seed of all existences, the intelligence of the intelligent, and the prowess of all powerful men."
       },
       {
@@ -2685,7 +2685,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "बलं बलवतां चाहं कामरागविवर्जितम् |\nधर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ ||७-११||",
         "transliteration": "balaṁ balavatāṁ chāhaṁ kāma-rāga-vivarjitam\ndharmāviruddho bhūteṣhu kāmo ’smi bharatarṣhabha",
-        "hindi_meaning": "जो मनुष्य सभी इन्द्रियों को इन्द्रिय-विषयों से हटाकर, कछुए की तरह अपने अंगों को समेट लेता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "मैं कामना और आसक्ति से रहित बलवानों का बल हूँ। हे भरतश्रेष्ठ अर्जुन! मैं धर्म के विरुद्ध न होने वाला काम हूँ।",
         "meaning": "I am the strength of the strong, devoid of passion and desire. I am sex life which is not contrary to religious principles, O lord of the Bharatas [Arjuna]."
       },
       {
@@ -2694,7 +2694,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "ये चैव सात्त्विका भावा राजसास्तामसाश्च ये |\nमत्त एवेति तान्विद्धि न त्वहं तेषु ते मयि ||७-१२||",
         "transliteration": "ye chaiva sāttvikā bhāvā rājasās tāmasāśh cha ye\nmatta eveti tān viddhi na tv ahaṁ teṣhu te mayi",
-        "hindi_meaning": "विषय-भोगों से वस्तुतः विरक्त व्यक्ति रुचि को त्याग देता है, लेकिन रुचि का स्वाद बना रहता है। यह रुचि भी परमात्मा को देखकर समाप्त हो जाती है।",
+        "hindi_meaning": "सत्त्व, रज और तम—अस्तित्व की सभी अवस्थाएँ मेरी शक्ति से प्रकट होती हैं। एक अर्थ में मैं सब कुछ हूँ, फिर भी स्वतन्त्र हूँ। मैं प्रकृति के गुणों के अधीन नहीं, बल्कि वे मेरे भीतर हैं।",
         "meaning": "Know that all states of being—be they of goodness, passion or ignorance—are manifested by My energy. I am, in one sense, everything, but I am independent. I am not under the modes of material nature, for they, on the contrary, are within Me."
       },
       {
@@ -2703,7 +2703,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत् |\nमोहितं नाभिजानाति मामेभ्यः परमव्ययम् ||७-१३||",
         "transliteration": "tribhir guṇa-mayair bhāvair ebhiḥ sarvam idaṁ jagat\nmohitaṁ nābhijānāti mām ebhyaḥ param avyayam",
-        "hindi_meaning": "हे अर्जुन! चंचल इन्द्रियाँ बलवान मन को भी बलपूर्वक अपने वश में कर लेती हैं।",
+        "hindi_meaning": "सत्त्व, रज और तम इन तीन गुणों से मोहित सम्पूर्ण संसार मुझ गुणातीत और अविनाशी को नहीं जानता।",
         "meaning": "Deluded by the three modes [goodness, passion and ignorance], the whole world does not know Me, who am above the modes and inexhaustible."
       },
       {
@@ -2712,7 +2712,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "दैवी ह्येषा गुणमयी मम माया दुरत्यया |\nमामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ||७-१४||",
         "transliteration": "daivī hy eṣhā guṇa-mayī mama māyā duratyayā\nmām eva ye prapadyante māyām etāṁ taranti te",
-        "hindi_meaning": "हे अर्जुन! जो व्यक्ति सभी इन्द्रियों को वश में करके मुझमें मन लगाता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "तीन भौतिक गुणों से बनी मेरी यह दैवी शक्ति पार करना कठिन है, किन्तु जो मेरी शरण लेते हैं वे इसे सरलता से पार कर जाते हैं।",
         "meaning": "This divine energy of Mine, consisting of the three modes of material nature, is difficult to overcome. But those who have surrendered unto Me can easily cross beyond it."
       },
       {
@@ -2721,7 +2721,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः |\nमाययापहृतज्ञाना आसुरं भावमाश्रिताः ||७-१५||",
         "transliteration": "na māṁ duṣhkṛitino mūḍhāḥ prapadyante narādhamāḥ\nmāyayāpahṛita-jñānā āsuraṁ bhāvam āśhritāḥ",
-        "hindi_meaning": "हे अर्जुन! जब मनुष्य विषयों का चिन्तन करता है, तो उनके प्रति आसक्ति उत्पन्न होती है। आसक्ति से कामना उत्पन्न होती है और कामना से क्रोध उत्पन्न होता है।",
+        "hindi_meaning": "जो दुष्ट अत्यन्त मूर्ख, मनुष्यों में अधम, माया से ज्ञान खो चुके और आसुरी नास्तिक स्वभाव वाले हैं, वे मेरी शरण नहीं लेते।",
         "meaning": "Those miscreants who are grossly foolish, who are lowest among mankind, whose knowledge is stolen by illusion, and who partake of the atheistic nature of demons do not surrender unto Me."
       },
       {
@@ -2730,7 +2730,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन |\nआर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ||७-१६||",
         "transliteration": "chatur-vidhā bhajante māṁ janāḥ sukṛitino ’rjuna\nārto jijñāsur arthārthī jñānī cha bharatarṣhabha",
-        "hindi_meaning": "क्रोध से भ्रम उत्पन्न होता है, भ्रम से स्मृति भ्रष्ट होती है, स्मृति के नष्ट होने से बुद्धि नष्ट हो जाती है और बुद्धि के नष्ट होने से मनुष्य का पतन हो जाता है।",
+        "hindi_meaning": "हे भरतश्रेष्ठ! चार प्रकार के पुण्यात्मा मेरी भक्ति करने लगते हैं—दुःखी, धन चाहने वाला, जिज्ञासु और परम सत्य के ज्ञान का खोजी।",
         "meaning": "O best among the Bharatas, four kinds of pious men begin to render devotional service unto Me—the distressed, the desirer of wealth, the inquisitive, and he who is searching for knowledge of the Absolute."
       },
       {
@@ -2739,7 +2739,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते |\nप्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ||७-१७||",
         "transliteration": "teṣhāṁ jñānī nitya-yukta eka-bhaktir viśhiṣhyate\npriyo hi jñānino ’tyartham ahaṁ sa cha mama priyaḥ",
-        "hindi_meaning": "लेकिन जो व्यक्ति इन्द्रियों को वश में करके, राग-द्वेष से रहित होकर, अपने स्वरूप में स्थित रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "इनमें पूर्ण ज्ञान वाला और सदा शुद्ध भक्ति में लगा व्यक्ति श्रेष्ठ है, क्योंकि मैं उसे अत्यन्त प्रिय हूँ और वह मुझे प्रिय है।",
         "meaning": "Of these, the one who is in full knowledge and who is always engaged in pure devotional service is the best. For I am very dear to him, and he is dear to Me."
       },
       {
@@ -2748,7 +2748,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "उदाराः सर्व एवैते ज्ञानी त्वात्मैव मे मतम् |\nआस्थितः स हि युक्तात्मा मामेवानुत्तमां गतिम् ||७-१८||",
         "transliteration": "udārāḥ sarva evaite jñānī tv ātmaiva me matam\nāsthitaḥ sa hi yuktātmā mām evānuttamāṁ gatim",
-        "hindi_meaning": "शान्ति प्राप्त होने पर सभी दुःखों का अन्त हो जाता है और शान्त चित्त वाले की बुद्धि शीघ्र स्थिर हो जाती है।",
+        "hindi_meaning": "ये सभी भक्त निस्सन्देह उदार आत्माएँ हैं, किन्तु जो मेरे ज्ञान में स्थित है उसे मैं अपने समान मानता हूँ। मेरी दिव्य सेवा में लगा वह मुझ सर्वोच्च और पूर्ण लक्ष्य को निश्चित रूप से प्राप्त करता है।",
         "meaning": "All these devotees are undoubtedly magnanimous souls, but he who is situated in knowledge of Me I consider to be just like My own self. Being engaged in My transcendental service, he is sure to attain Me, the highest and most perfect goal."
       },
       {
@@ -2757,7 +2757,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते |\nवासुदेवः सर्वमिति स महात्मा सुदुर्लभः ||७-१९||",
         "transliteration": "bahūnāṁ janmanām ante jñānavān māṁ prapadyate\nvāsudevaḥ sarvam iti sa mahātmā su-durlabhaḥ",
-        "hindi_meaning": "जो व्यक्ति योग में स्थित नहीं है, उसकी बुद्धि स्थिर नहीं होती और उसके लिए आत्मज्ञान नहीं है। आत्मज्ञान के बिना शान्ति नहीं है और शान्ति के बिना सुख कहाँ?",
+        "hindi_meaning": "अनेक जन्म-मृत्यु के बाद वास्तविक ज्ञानी मुझे समस्त कारणों का कारण और सब कुछ जानकर मेरी शरण लेता है। ऐसी महात्मा अत्यन्त दुर्लभ है।",
         "meaning": "After many births and deaths, he who is actually in knowledge surrenders unto Me, knowing Me to be the cause of all causes and all that is. Such a great soul is very rare."
       },
       {
@@ -2766,7 +2766,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "कामैस्तैस्तैर्हृतज्ञानाः प्रपद्यन्तेऽन्यदेवताः |\nतं तं नियममास्थाय प्रकृत्या नियताः स्वया ||७-२०||",
         "transliteration": "kāmais tais tair hṛita-jñānāḥ prapadyante ’nya-devatāḥ\ntaṁ taṁ niyamam āsthāya prakṛityā niyatāḥ svayā",
-        "hindi_meaning": "जो इन्द्रियाँ चंचल हैं, उन्हें वश में न करने पर मन भी उनके पीछे-पीछे भटकता है, जैसे वायु नाव को बहा ले जाती है।",
+        "hindi_meaning": "भौतिक इच्छाओं से जिनकी बुद्धि हर ली गई है, वे देवताओं की शरण लेते और अपने स्वभाव के अनुसार उनकी पूजा के विशेष नियमों का पालन करते हैं।",
         "meaning": "Those whose intelligence has been stolen by material desires surrender unto demigods and follow the particular rules and regulations of worship according to their own natures."
       },
       {
@@ -2775,7 +2775,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति |\nतस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम् ||७-२१||",
         "transliteration": "yo yo yāṁ yāṁ tanuṁ bhaktaḥ śhraddhayārchitum ichchhati\ntasya tasyāchalāṁ śhraddhāṁ tām eva vidadhāmy aham",
-        "hindi_meaning": "हे महाबाहो! इसलिए जो व्यक्ति सभी इन्द्रियों को इन्द्रिय-विषयों से पूर्णतः हटा देता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "मैं परमात्मा रूप में सबके हृदय में हूँ। जैसे ही कोई किसी देवता की पूजा करना चाहता है, मैं उसकी श्रद्धा स्थिर कर देता हूँ ताकि वह उसी देवता की भक्ति कर सके।",
         "meaning": "I am in everyone’s heart as the Supersoul. As soon as one desires to worship some demigod, I make his faith steady so that he can devote himself to that particular deity."
       },
       {
@@ -2784,7 +2784,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "स तया श्रद्धया युक्तस्तस्याराधनमीहते |\nलभते च ततः कामान्मयैव विहितान्हि तान् ||७-२२||",
         "transliteration": "sa tayā śhraddhayā yuktas tasyārādhanam īhate\nlabhate cha tataḥ kāmān mayaiva vihitān hi tān",
-        "hindi_meaning": "जो सभी प्राणियों के लिए रात्रि है, वही जागृत पुरुष के लिए दिन है और जो सभी प्राणियों के लिए दिन है, वही जागृत पुरुष के लिए रात्रि है।",
+        "hindi_meaning": "ऐसी श्रद्धा से युक्त होकर वह किसी विशेष देवता की पूजा करता और इच्छित फल पाता है, किन्तु वास्तव में ये लाभ केवल मेरे द्वारा दिए जाते हैं।",
         "meaning": "Endowed with such a faith, he endeavors to worship a particular demigod and obtains his desires. But in actuality these benefits are bestowed by Me alone."
       },
       {
@@ -2793,7 +2793,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम् |\nदेवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि ||७-२३||",
         "transliteration": "antavat tu phalaṁ teṣhāṁ tad bhavaty alpa-medhasām\ndevān deva-yajo yānti mad-bhaktā yānti mām api",
-        "hindi_meaning": "जैसे सभी नदियाँ समुद्र में मिलकर अपना नाम-रूप खो देती हैं, वैसे ही ज्ञानी पुरुष सभी इच्छाओं को त्यागकर शान्ति प्राप्त करता है, न कि इच्छा करने वाला।",
+        "hindi_meaning": "अल्पबुद्धि लोग देवताओं की पूजा करते हैं और उनके फल सीमित तथा अस्थायी होते हैं। देवताओं के उपासक उनके लोकों को जाते हैं, किन्तु मेरे भक्त अन्ततः मेरे परम धाम पहुँचते हैं।",
         "meaning": "Men of small intelligence worship the demigods, and their fruits are limited and temporary. Those who worship the demigods go to the planets of the demigods, but My devotees ultimately reach My supreme planet."
       },
       {
@@ -2802,7 +2802,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "अव्यक्तं व्यक्तिमापन्नं मन्यन्ते मामबुद्धयः |\nपरं भावमजानन्तो ममाव्ययमनुत्तमम् ||७-२४||",
         "transliteration": "avyaktaṁ vyaktim āpannaṁ manyante mām abuddhayaḥ\nparaṁ bhāvam ajānanto mamāvyayam anuttamam",
-        "hindi_meaning": "हे पार्थ! जो व्यक्ति सभी इच्छाओं को त्यागकर, स्वयं में ही संतुष्ट रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "अल्पबुद्धि लोग मुझे पूर्णतः न जानकर सोचते हैं कि मैं परम पुरुषोत्तम भगवान कृष्ण पहले निराकार था और अब व्यक्तित्व धारण किया है। वे मेरे अविनाशी और परम उच्चतर स्वभाव को नहीं जानते।",
         "meaning": "Unintelligent men, who do not know Me perfectly, think that I, the Supreme Personality of Godhead, Krishna, was impersonal before and have now assumed this personality. Due to their small knowledge, they do not know My higher nature, which is imperishable and supreme."
       },
       {
@@ -2811,7 +2811,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "नाहं प्रकाशः सर्वस्य योगमायासमावृतः |\nमूढोऽयं नाभिजानाति लोको मामजमव्ययम् ||७-२५||",
         "transliteration": "nāhaṁ prakāśhaḥ sarvasya yoga-māyā-samāvṛitaḥ\nmūḍho ’yaṁ nābhijānāti loko mām ajam avyayam",
-        "hindi_meaning": "हे अर्जुन! यह ब्रह्म की स्थिति है। इसे प्राप्त करके मनुष्य मोहित नहीं होता। इस अवस्था में स्थित रहकर, अन्त समय में भी, वह ब्रह्म-निर्वाण को प्राप्त करता है।",
+        "hindi_meaning": "मैं मूर्ख और बुद्धिहीन लोगों के सामने कभी प्रकट नहीं होता। उनके लिए मैं अपनी अन्तरंगा शक्ति से ढका रहता हूँ, इसलिए वे मुझे अजन्मा और अच्युत नहीं जानते।",
         "meaning": "I am never manifest to the foolish and unintelligent. For them I am covered by My internal potency, and therefore they do not know that I am unborn and infallible."
       },
       {
@@ -2820,7 +2820,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "वेदाहं समतीतानि वर्तमानानि चार्जुन |\nभविष्याणि च भूतानि मां तु वेद न कश्चन ||७-२६||",
         "transliteration": "vedāhaṁ samatītāni vartamānāni chārjuna\nbhaviṣhyāṇi cha bhūtāni māṁ tu veda na kaśhchana",
-        "hindi_meaning": "अर्जुन ने कहा: हे जनार्दन! हे केशव! यदि आपकी दृष्टि में कर्म से बुद्धि (ज्ञान) श्रेष्ठ है, तो आप मुझे इस भयंकर युद्ध में क्यों लगा रहे हैं?",
+        "hindi_meaning": "हे अर्जुन! परम पुरुषोत्तम भगवान होने के कारण मैं भूत, वर्तमान और भविष्य की सभी बातें तथा समस्त जीवों को जानता हूँ, किन्तु मुझे कोई नहीं जानता।",
         "meaning": "O Arjuna, as the Supreme Personality of Godhead, I know everything that has happened in the past, all that is happening in the present, and all things that are yet to come. I also know all living entities; but Me no one knows."
       },
       {
@@ -2829,7 +2829,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत |\nसर्वभूतानि सम्मोहं सर्गे यान्ति परन्तप ||७-२७||",
         "transliteration": "ichchhā-dveṣha-samutthena dvandva-mohena bhārata\nsarva-bhūtāni sammohaṁ sarge yānti parantapa",
-        "hindi_meaning": "आपके मिश्रित वचनों से मेरी बुद्धि मोहित हो रही है। इसलिए निश्चयपूर्वक एक ही बात कहिए, जिससे मैं श्रेय प्राप्त करूँ।",
+        "hindi_meaning": "हे भरतवंशी! हे शत्रुविजेता! इच्छा और द्वेष से उत्पन्न द्वन्द्वों से मोहित होकर सभी जीव भ्रम में जन्म लेते हैं।",
         "meaning": "O scion of Bharata, O conqueror of the foe, all living entities are born into delusion, bewildered by the dualities arising from desire and hate."
       },
       {
@@ -2838,7 +2838,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम् |\nते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः ||७-२८||",
         "transliteration": "yeṣhāṁ tv anta-gataṁ pāpaṁ janānāṁ puṇya-karmaṇām\nte dvandva-moha-nirmuktā bhajante māṁ dṛiḍha-vratāḥ",
-        "hindi_meaning": "श्री भगवान ने कहा: हे निष्पाप अर्जुन! मैंने पहले दो प्रकार की निष्ठा बताई है - सांख्ययोगियों के लिए ज्ञानयोग और योगियों के लिए कर्मयोग।",
+        "hindi_meaning": "जिन्होंने पूर्वजन्मों और इस जन्म में पुण्यकर्म किए हैं तथा जिनके पापकर्म पूर्णतः मिट गए हैं, वे मोह के द्वन्द्वों से मुक्त होकर दृढ़ निश्चय से मेरी सेवा करते हैं।",
         "meaning": "Persons who have acted piously in previous lives and in this life and whose sinful actions are completely eradicated are freed from the dualities of delusion, and they engage themselves in My service with determination."
       },
       {
@@ -2847,7 +2847,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "जरामरणमोक्षाय मामाश्रित्य यतन्ति ये |\nते ब्रह्म तद्विदुः कृत्स्नमध्यात्मं कर्म चाखिलम् ||७-२९||",
         "transliteration": "jarā-maraṇa-mokṣhāya mām āśhritya yatanti ye\nte brahma tad viduḥ kṛitsnam adhyātmaṁ karma chākhilam",
-        "hindi_meaning": "मनुष्य केवल कर्म न करने से कर्मफल से मुक्त नहीं होता और न ही केवल संन्यास से सिद्धि प्राप्त करता है।",
+        "hindi_meaning": "जो बुद्धिमान वृद्धावस्था और मृत्यु से मुक्ति पाने का प्रयत्न करते हैं, वे भक्तिपूर्वक मेरी शरण लेते हैं। दिव्य कर्मों के विषय में सब कुछ जानने से वे वास्तव में ब्रह्मस्वरूप हैं।",
         "meaning": "Intelligent persons who are endeavoring for liberation from old age and death take refuge in Me in devotional service. They are actually Brahman because they entirely know everything about transcendental activities."
       },
       {
@@ -2856,7 +2856,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 7,
         "text": "साधिभूताधिदैवं मां साधियज्ञं च ये विदुः |\nप्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः ||७-३०||",
         "transliteration": "sādhibhūtādhidaivaṁ māṁ sādhiyajñaṁ cha ye viduḥ\nprayāṇa-kāle ’pi cha māṁ te vidur yukta-chetasaḥ",
-        "hindi_meaning": "कोई भी क्षणभर भी बिना कर्म किए नहीं रह सकता, क्योंकि सभी प्रकृति के गुणों से बाध्य होकर कर्म करने को विवश हैं।",
+        "hindi_meaning": "जो मेरी पूर्ण चेतना में रहते और मुझे भौतिक जगत्, देवताओं तथा सभी यज्ञविधियों का नियामक परमेश्वर जानते हैं, वे मृत्यु के समय भी मुझ परम पुरुषोत्तम भगवान को समझ और जान सकते हैं।",
         "meaning": "Those in full consciousness of Me, who know Me, the Supreme Lord, to be the governing principle of the material manifestation, of the demigods, and of all methods of sacrifice, can understand and know Me, the Supreme Personality of Godhead, even at the time of death."
       }
     ]
@@ -2875,7 +2875,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अर्जुन उवाच |\nकिं तद्ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम |\nअधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते ||८-१||",
         "transliteration": "arjuna uvācha\nkiṁ tad brahma kim adhyātmaṁ kiṁ karma puruṣhottama\nadhibhūtaṁ cha kiṁ proktam adhidaivaṁ kim uchyate",
-        "hindi_meaning": "जो व्यक्ति कर्मेन्द्रियों को वश में करके मन से इन्द्रिय-विषयों का चिन्तन करता है, वह मूढ़ात्मा और मिथ्याचारी कहलाता है।",
+        "hindi_meaning": "अर्जुन ने पूछा: हे प्रभु! हे परम पुरुष! ब्रह्म क्या है? आत्मा क्या है? सकाम कर्म क्या हैं? यह भौतिक जगत् क्या है और देवता कौन हैं? कृपया मुझे समझाइए।",
         "meaning": "Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me."
       },
       {
@@ -2884,7 +2884,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन |\nप्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः ||८-२||",
         "transliteration": "adhiyajñaḥ kathaṁ ko ’tra dehe ’smin madhusūdana\nprayāṇa-kāle cha kathaṁ jñeyo ’si niyatātmabhiḥ",
-        "hindi_meaning": "हे अर्जुन! जो व्यक्ति मन से इन्द्रियों को वश में करके कर्मेन्द्रियों से कर्मयोग करता है, वह श्रेष्ठ है।",
+        "hindi_meaning": "हे मधुसूदन! यज्ञ के स्वामी कौन हैं और वे शरीर में कैसे रहते हैं? भक्ति में लगे लोग मृत्यु के समय आपको कैसे जान सकते हैं?",
         "meaning": "Who is the Lord of sacrifice, and how does He live in the body, O Madhusudana? And how can those engaged in devotional service know You at the time of death?"
       },
       {
@@ -2893,7 +2893,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "श्रीभगवानुवाच |\nअक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते |\nभूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः ||८-३||",
         "transliteration": "śhrī bhagavān uvācha\nakṣharaṁ brahma paramaṁ svabhāvo ’dhyātmam uchyate\nbhūta-bhāvodbhava-karo visargaḥ karma-saṁjñitaḥ",
-        "hindi_meaning": "तुम नियत कर्म करो, क्योंकि कर्म न करने से श्रेष्ठ है कर्म करना। कर्म न करने से तुम्हारा शरीर-निर्वाह भी नहीं हो सकता।",
+        "hindi_meaning": "श्रीभगवान ने कहा: अविनाशी दिव्य जीव ब्रह्म कहलाता है और उसका शाश्वत स्वभाव अध्यात्म अर्थात् आत्मा कहलाता है। जीवों के भौतिक शरीरों के विकास से सम्बन्धित कर्म को कर्म अर्थात् सकाम क्रिया कहते हैं।",
         "meaning": "The Supreme Personality of Godhead said: The indestructible, transcendental living entity is called Brahman, and his eternal nature is called adhyatma, the self. Action pertaining to the development of the material bodies of the living entities is called karma, or fruitive activities."
       },
       {
@@ -2902,7 +2902,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम् |\nअधियज्ञोऽहमेवात्र देहे देहभृतां वर ||८-४||",
         "transliteration": "adhibhūtaṁ kṣharo bhāvaḥ puruṣhaśh chādhidaivatam\nadhiyajño ’ham evātra dehe deha-bhṛitāṁ vara",
-        "hindi_meaning": "हे कौन्तेय! यज्ञ के अतिरिक्त कर्म करने से यह लोक कर्मबन्धन में बँध जाता है। इसलिए यज्ञ के लिए कर्म करो, आसक्ति रहित होकर।",
+        "hindi_meaning": "हे देहधारियों में श्रेष्ठ! निरन्तर बदलने वाली भौतिक प्रकृति अधिभूत कहलाती है। सूर्य और चन्द्रमा जैसे समस्त देवताओं को समेटे भगवान का विराट रूप अधिदैव कहलाता है। प्रत्येक देहधारी के हृदय में परमात्मा रूप में स्थित मैं परमेश्वर अधियज्ञ कहलाता हूँ।",
         "meaning": "O best of the embodied beings, the physical nature, which is constantly changing, is called adhibhuta [the material manifestation]. The universal form of the Lord, which includes all the demigods, like the sun and moon, is called adhidaiva. And I, the Supreme Lord, represented as the Supersoul in the heart of every embodied being, am called adhiyajna [the Lord of sacrifice]."
       },
       {
@@ -2911,7 +2911,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् |\nयः प्रयाति स मद्भावं याति नास्त्यत्र संशयः ||८-५||",
         "transliteration": "anta-kāle cha mām eva smaran muktvā kalevaram\nyaḥ prayāti sa mad-bhāvaṁ yāti nāsty atra saṁśhayaḥ",
-        "hindi_meaning": "प्रजापति ने प्रजाओं को यज्ञ सहित सृष्ट करके कहा: इससे तुम लोग वृद्धि को प्राप्त हो और यह तुम्हारा इष्टकामधुक (सभी इच्छाओं को पूर्ण करने वाला) हो।",
+        "hindi_meaning": "जो जीवन के अन्त में केवल मेरा स्मरण करते हुए शरीर छोड़ता है, वह तुरन्त मेरे स्वभाव को प्राप्त करता है। इसमें कोई सन्देह नहीं।",
         "meaning": "And whoever, at the end of his life, quits his body, remembering Me alone, at once attains My nature. Of this there is no doubt."
       },
       {
@@ -2920,7 +2920,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् |\nतं तमेवैति कौन्तेय सदा तद्भावभावितः ||८-६||",
         "transliteration": "yaṁ yaṁ vāpi smaran bhāvaṁ tyajaty ante kalevaram\ntaṁ tam evaiti kaunteya sadā tad-bhāva-bhāvitaḥ",
-        "hindi_meaning": "इससे देवताओं को तृप्त करो और देवता तुम्हें तृप्त करेंगे। इस प्रकार एक-दूसरे को तृप्त करके तुम परम श्रेय को प्राप्त होगे।",
+        "hindi_meaning": "हे कुन्तीपुत्र! शरीर छोड़ते समय मनुष्य जिस भाव का स्मरण करता है, वह निश्चय ही उसी भाव को प्राप्त होता है।",
         "meaning": "Whatever state of being one remembers when he quits his body, O son of Kunti, that state he will attain without fail."
       },
       {
@@ -2929,7 +2929,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च |\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम् ||८-७||",
         "transliteration": "tasmāt sarveṣhu kāleṣhu mām anusmara yudhya cha\nmayy arpita-mano-buddhir mām evaiṣhyasy asaṁśhayam",
-        "hindi_meaning": "यज्ञ से तृप्त देवता तुम्हें सभी वांछित वस्तुएँ प्रदान करेंगे। जो उनके द्वारा दी गई वस्तुओं का भोग करके उन्हें नहीं देता, वह चोर है।",
+        "hindi_meaning": "अतः हे अर्जुन! सदा कृष्ण रूप में मेरा चिन्तन करो और साथ ही युद्ध का नियत कर्तव्य निभाओ। कर्मों को मुझे समर्पित करके तथा मन और बुद्धि मुझमें स्थिर रखकर तुम निस्सन्देह मुझे प्राप्त करोगे।",
         "meaning": "Therefore, Arjuna, you should always think of Me in the form of Krishna and at the same time carry out your prescribed duty of fighting. With your activities dedicated to Me and your mind and intelligence fixed on Me, you will attain Me without doubt."
       },
       {
@@ -2938,7 +2938,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना |\nपरमं पुरुषं दिव्यं याति पार्थानुचिन्तयन् ||८-८||",
         "transliteration": "abhyāsa-yoga-yuktena chetasā nānya-gāminā\nparamaṁ puruṣhaṁ divyaṁ yāti pārthānuchintayan",
-        "hindi_meaning": "यज्ञशेष से भोजन करने वाले साधु सभी पापों से मुक्त हो जाते हैं, लेकिन जो अपने लिए ही पकाते हैं, वे पाप को भोगते हैं।",
+        "hindi_meaning": "हे पार्थ! जो मार्ग से विचलित हुए बिना निरन्तर मेरा स्मरण करते हुए परम पुरुषोत्तम भगवान के रूप में मेरा ध्यान करता है, वह निश्चित रूप से मुझे प्राप्त होता है।",
         "meaning": "He who meditates on Me as the Supreme Personality of Godhead, his mind constantly engaged in remembering Me, undeviated from the path, he, O Partha, is sure to reach Me."
       },
       {
@@ -2947,7 +2947,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "कविं पुराणमनुशासितारं\nमणोरणीयांसमनुस्मरेद्यः |\nसर्वस्य धातारमचिन्त्यरूप-\nमादित्यवर्णं तमसः परस्तात् ||८-९||",
         "transliteration": "kaviṁ purāṇam anuśhāsitāraṁ\naṇor aṇīyānsam anusmared yaḥ\nsarvasya dhātāram achintya-rūpam\nāditya-varṇaṁ tamasaḥ parastāt",
-        "hindi_meaning": "प्राणियों की उत्पत्ति अन्न से होती है, अन्न की उत्पत्ति वर्षा से होती है, वर्षा यज्ञ से होती है और यज्ञ कर्म से होता है।",
+        "hindi_meaning": "मनुष्य को परम पुरुष का ध्यान सर्वज्ञ, पुरातनतम, नियन्ता, सूक्ष्मतम से भी सूक्ष्म, सबका पालनकर्ता, समस्त भौतिक धारणा से परे, अचिन्त्य और शाश्वत पुरुष के रूप में करना चाहिए। वे सूर्य के समान तेजस्वी और भौतिक प्रकृति से परे दिव्य हैं।",
         "meaning": "One should meditate upon the Supreme Person as the one who knows everything, as He who is the oldest, who is the controller, who is smaller than the smallest, who is the maintainer of everything, who is beyond all material conception, who is inconceivable, and who is always a person. He is luminous like the sun, and He is transcendental, beyond this material nature."
       },
       {
@@ -2956,7 +2956,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "प्रयाणकाले मनसाचलेन\nभक्त्या युक्तो योगबलेन चैव |\nभ्रुवोर्मध्ये प्राणमावेश्य सम्यक्\nस तं परं पुरुषमुपैति दिव्यम् ||८-१०||",
         "transliteration": "prayāṇa-kāle manasāchalena\nbhaktyā yukto yoga-balena chaiva\nbhruvor madhye prāṇam āveśhya samyak\nsa taṁ paraṁ puruṣham upaiti divyam",
-        "hindi_meaning": "कर्म ब्रह्म से उत्पन्न होता है, ब्रह्म अक्षर (परमात्मा) से उत्पन्न होता है। इसलिए सर्वव्यापी ब्रह्म सदैव यज्ञ में स्थित है।",
+        "hindi_meaning": "जो मृत्यु के समय प्राणवायु को भौंहों के बीच स्थिर करके योगबल से पूर्ण भक्ति सहित परमेश्वर का स्मरण करता है, वह निश्चित रूप से परम पुरुषोत्तम भगवान को प्राप्त होता है।",
         "meaning": "One who, at the time of death, fixes his life air between the eyebrows and, by the strength of yoga, engages himself in remembering the Supreme Lord with full devotion, will certainly attain to the Supreme Personality of Godhead."
       },
       {
@@ -2965,7 +2965,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "यदक्षरं वेदविदो वदन्ति\nविशन्ति यद्यतयो वीतरागाः |\nयदिच्छन्तो ब्रह्मचर्यं चरन्ति\nतत्ते पदं सङ्ग्रहेण प्रवक्ष्ये ||८-११||",
         "transliteration": "yad akṣharaṁ veda-vido vadanti\nviśhanti yad yatayo vīta-rāgāḥ\nyad ichchhanto brahmacharyaṁ charanti\ntat te padaṁ saṅgraheṇa pravakṣhye",
-        "hindi_meaning": "हे पार्थ! जो व्यक्ति इस प्रकार यज्ञ चक्र का अनुसरण नहीं करता, वह पापी जीवन बिताता है और केवल इन्द्रिय-सुख में लिप्त रहता है, वह व्यर्थ जीवन जीता है।",
+        "hindi_meaning": "वेदों के ज्ञाता, ओंकार का उच्चारण करने वाले और संन्यासी महर्षि ब्रह्म में प्रवेश करते हैं। ऐसी सिद्धि की इच्छा से मनुष्य ब्रह्मचर्य का अभ्यास करता है। अब मैं मुक्ति पाने की यह विधि संक्षेप में बताऊँगा।",
         "meaning": "Persons who are learned in the Vedas, who utter omkara and who are great sages in the renounced order enter into Brahman. Desiring such perfection, one practices celibacy. I shall now briefly explain to you this process by which one may attain salvation."
       },
       {
@@ -2974,7 +2974,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च |\nमूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम् ||८-१२||",
         "transliteration": "sarva-dvārāṇi saṁyamya mano hṛidi nirudhya cha\nmūrdhny ādhāyātmanaḥ prāṇam āsthito yoga-dhāraṇām",
-        "hindi_meaning": "लेकिन जो व्यक्ति आत्मा में आनन्दित है, आत्मा में तृप्त है और आत्मा में ही संतुष्ट है, उसके लिए कोई कर्तव्य नहीं है।",
+        "hindi_meaning": "समस्त इन्द्रिय-विषयों से विरक्ति ही योग की स्थिति है। इन्द्रियों के सभी द्वार बन्द करके, मन को हृदय में और प्राणवायु को सिर के शीर्ष पर स्थिर करके मनुष्य योग में स्थित होता है।",
         "meaning": "The yogic situation is that of detachment from all sensual engagements. Closing all the doors of the senses and fixing the mind on the heart and the life air at the top of the head, one establishes himself in yoga."
       },
       {
@@ -2983,7 +2983,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन् |\nयः प्रयाति त्यजन्देहं स याति परमां गतिम् ||८-१३||",
         "transliteration": "oṁ ity ekākṣharaṁ brahma vyāharan mām anusmaran\nyaḥ prayāti tyajan dehaṁ sa yāti paramāṁ gatim",
-        "hindi_meaning": "उसके लिए कर्म करने में कोई प्रयोजन नहीं है और कर्म न करने में भी कोई प्रयोजन नहीं है। उसे किसी भी प्राणी पर निर्भर नहीं रहना पड़ता।",
+        "hindi_meaning": "इस योगाभ्यास में स्थित होकर अक्षरों के परम संयोग पवित्र ओम् का उच्चारण करते हुए जो परम पुरुषोत्तम भगवान का चिन्तन करके शरीर छोड़ता है, वह निश्चित रूप से आध्यात्मिक लोकों को प्राप्त करता है।",
         "meaning": "After being situated in this yoga practice and vibrating the sacred syllable om, the supreme combination of letters, if one thinks of the Supreme Personality of Godhead and quits his body, he will certainly reach the spiritual planets."
       },
       {
@@ -2992,7 +2992,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अनन्यचेताः सततं यो मां स्मरति नित्यशः |\nतस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः ||८-१४||",
         "transliteration": "ananya-chetāḥ satataṁ yo māṁ smarati nityaśhaḥ\ntasyāhaṁ sulabhaḥ pārtha nitya-yuktasya yoginaḥ",
-        "hindi_meaning": "इसलिए सदैव कर्तव्यपूर्वक कर्म करो, बिना आसक्ति के। बिना आसक्ति के कर्म करने से मनुष्य परम को प्राप्त करता है।",
+        "hindi_meaning": "हे पृथापुत्र! जो अविचल भाव से सदा मेरा स्मरण करता है, उसके लिए मैं आसानी से प्राप्त हूँ, क्योंकि वह निरन्तर भक्ति में लगा रहता है।",
         "meaning": "For one who always remembers Me without deviation, I am easy to obtain, O son of Pritha, because of his constant engagement in devotional service."
       },
       {
@@ -3001,7 +3001,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम् |\nनाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः ||८-१५||",
         "transliteration": "mām upetya punar janma duḥkhālayam aśhāśhvatam\nnāpnuvanti mahātmānaḥ saṁsiddhiṁ paramāṁ gatāḥ",
-        "hindi_meaning": "राजा जनक आदि ने केवल कर्म करके ही सिद्धि प्राप्त की थी। लोक की स्थिति के लिए भी तुम्हें कर्म करना चाहिए।",
+        "hindi_meaning": "मुझे प्राप्त करके भक्तियोगी महात्मा दुःखों से भरे इस अस्थायी संसार में कभी नहीं लौटते, क्योंकि वे परम सिद्धि पा चुके होते हैं।",
         "meaning": "After attaining Me, the great souls, who are yogis in devotion, never return to this temporary world, which is full of miseries, because they have attained the highest perfection."
       },
       {
@@ -3010,7 +3010,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन |\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते ||८-१६||",
         "transliteration": "ā-brahma-bhuvanāl lokāḥ punar āvartino ’rjuna\nmām upetya tu kaunteya punar janma na vidyate",
-        "hindi_meaning": "जो श्रेष्ठ व्यक्ति जैसा करता है, सामान्य लोग भी वैसा ही करते हैं। जो वह मानकर चलता है, लोग उसका अनुसरण करते हैं।",
+        "hindi_meaning": "भौतिक जगत् के सर्वोच्च लोक से निम्नतम लोक तक सभी दुःख के स्थान हैं, जहाँ बार-बार जन्म और मृत्यु होती है। किन्तु हे कुन्तीपुत्र! मेरे धाम को प्राप्त व्यक्ति फिर जन्म नहीं लेता।",
         "meaning": "From the highest planet in the material world down to the lowest, all are places of misery wherein repeated birth and death take place. But one who attains to My abode, O son of Kunti, never takes birth again."
       },
       {
@@ -3019,7 +3019,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः |\nरात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः ||८-१७||",
         "transliteration": "sahasra-yuga-paryantam ahar yad brahmaṇo viduḥ\nrātriṁ yuga-sahasrāntāṁ te ’ho-rātra-vido janāḥ",
-        "hindi_meaning": "हे पार्थ! तीनों लोकों में मेरे लिए कोई कर्तव्य नहीं है, न ही मुझे कुछ प्राप्त करना है या प्राप्त नहीं करना है, फिर भी मैं कर्म में लगा रहता हूँ।",
+        "hindi_meaning": "मानवीय गणना के अनुसार एक हजार युग मिलकर ब्रह्मा के एक दिन की अवधि होते हैं और उनकी रात भी इतनी ही लम्बी होती है।",
         "meaning": "By human calculation, a thousand ages taken together form the duration of Brahma’s one day. And such also is the duration of his night."
       },
       {
@@ -3028,7 +3028,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे |\nरात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके ||८-१८||",
         "transliteration": "avyaktād vyaktayaḥ sarvāḥ prabhavanty ahar-āgame\nrātry-āgame pralīyante tatraivāvyakta-saṁjñake",
-        "hindi_meaning": "हे पार्थ! यदि मैं नियत कर्म न करूँ, तो सभी लोग मेरे मार्ग का अनुसरण करेंगे और यह लोक नष्ट हो जाएगा।",
+        "hindi_meaning": "ब्रह्मा के दिन के आरम्भ में सभी जीव अव्यक्त अवस्था से प्रकट होते हैं और रात होने पर फिर उसी अव्यक्त में विलीन हो जाते हैं।",
         "meaning": "At the beginning of Brahma’s day, all living entities become manifest from the unmanifest state, and thereafter, when the night falls, they are merged into the unmanifest again."
       },
       {
@@ -3037,7 +3037,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते |\nरात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे ||८-१९||",
         "transliteration": "bhūta-grāmaḥ sa evāyaṁ bhūtvā bhūtvā pralīyate\nrātry-āgame ’vaśhaḥ pārtha prabhavaty ahar-āgame",
-        "hindi_meaning": "हे भारत! जैसे अज्ञानी लोग कर्मफल में आसक्त होकर कर्म करते हैं, वैसे ही ज्ञानी व्यक्ति को भी लोक की स्थिति के लिए कर्म करना चाहिए, बिना आसक्ति के।",
+        "hindi_meaning": "ब्रह्मा का दिन आने पर सभी जीव बार-बार प्रकट होते हैं और उनकी रात आने पर असहाय होकर नष्ट हो जाते हैं।",
         "meaning": "Again and again, when Brahma’s day arrives, all living entities come into being, and with the arrival of Brahma’s night they are helplessly annihilated."
       },
       {
@@ -3046,7 +3046,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः |\nयः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति ||८-२०||",
         "transliteration": "paras tasmāt tu bhāvo ’nyo ’vyakto ’vyaktāt sanātanaḥ\nyaḥ sa sarveṣhu bhūteṣhu naśhyatsu na vinaśhyati",
-        "hindi_meaning": "ज्ञानी व्यक्ति अज्ञानियों को कर्म में लगाए रखने के लिए स्वयं कर्म करता है। सभी कर्म मुझमें अर्पित करके कर्म करो।",
+        "hindi_meaning": "फिर भी एक अन्य अव्यक्त प्रकृति है, जो शाश्वत और इस व्यक्त-अव्यक्त पदार्थ से परे है। वह परम है और कभी नष्ट नहीं होती। इस संसार में सब नष्ट होने पर भी वह ज्यों की त्यों रहती है।",
         "meaning": "Yet there is another unmanifest nature, which is eternal and is transcendental to this manifested and unmanifested matter. It is supreme and is never annihilated. When all in this world is annihilated, that part remains as it is."
       },
       {
@@ -3055,7 +3055,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् |\nयं प्राप्य न निवर्तन्ते तद्धाम परमं मम ||८-२१||",
         "transliteration": "avyakto ’kṣhara ity uktas tam āhuḥ paramāṁ gatim\nyaṁ prāpya na nivartante tad dhāma paramaṁ mama",
-        "hindi_meaning": "जो व्यक्ति अहंकार से मोहित है, वह सोचता है कि मैं कर्ता हूँ, लेकिन वास्तव में सभी कर्म प्रकृति के गुणों द्वारा किए जाते हैं।",
+        "hindi_meaning": "वेदान्ती जिसे अव्यक्त और अच्युत कहते हैं, जो परम गति कहलाती है और जिसे पाकर कोई नहीं लौटता—वही मेरा परम धाम है।",
         "meaning": "That which the Vedantists describe as unmanifest and infallible, that which is known as the supreme destination, that place from which, having attained it, one never returns—that is My supreme abode."
       },
       {
@@ -3064,7 +3064,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया |\nयस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम् ||८-२२||",
         "transliteration": "puruṣhaḥ sa paraḥ pārtha bhaktyā labhyas tv ananyayā\nyasyāntaḥ-sthāni bhūtāni yena sarvam idaṁ tatam",
-        "hindi_meaning": "हे महाबाहो! जो व्यक्ति गुणों और कर्मों के स्वभाव को जानता है, वह सोचता है कि गुण गुणों में ही कर्म कर रहे हैं और आसक्त नहीं होता।",
+        "hindi_meaning": "सबसे महान परम पुरुषोत्तम भगवान अनन्य भक्ति से प्राप्त होते हैं। अपने धाम में स्थित रहते हुए भी वे सर्वव्यापी हैं और सब कुछ उनमें स्थित है।",
         "meaning": "The Supreme Personality of Godhead, who is greater than all, is attainable by unalloyed devotion. Although He is present in His abode, He is all-pervading, and everything is situated within Him."
       },
       {
@@ -3073,7 +3073,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः |\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ ||८-२३||",
         "transliteration": "yatra kāle tv anāvṛittim āvṛittiṁ chaiva yoginaḥ\nprayātā yānti taṁ kālaṁ vakṣhyāmi bharatarṣhabha",
-        "hindi_meaning": "हे गुणातीत! जो व्यक्ति गुणों में स्थित है, वह गुणों द्वारा किए गए कर्मों में आसक्त हो जाता है, लेकिन जो गुणातीत है, वह आसक्त नहीं होता।",
+        "hindi_meaning": "हे भरतश्रेष्ठ! अब मैं वे विभिन्न समय बताऊँगा जिनमें संसार से प्रस्थान करने पर योगी लौटता या नहीं लौटता।",
         "meaning": "O best of the Bharatas, I shall now explain to you the different times at which, passing away from this world, the yogi does or does not come back."
       },
       {
@@ -3082,7 +3082,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम् |\nतत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः ||८-२४||",
         "transliteration": "agnir jyotir ahaḥ śhuklaḥ ṣhaṇ-māsā uttarāyaṇam\ntatra prayātā gachchhanti brahma brahma-vido janāḥ",
-        "hindi_meaning": "जो व्यक्ति गुणों में मोहित है, वह गुणों के कर्मों में आसक्त हो जाता है। जो व्यक्ति गुणातीत है, वह जानता है कि गुण गुणों में ही कर्म कर रहे हैं।",
+        "hindi_meaning": "परब्रह्म के ज्ञाता अग्निदेव के प्रभाव, प्रकाश, दिन के शुभ समय, शुक्लपक्ष अथवा सूर्य के उत्तरायण के छह महीनों में संसार से प्रस्थान करके उस परम को प्राप्त करते हैं।",
         "meaning": "Those who know the Supreme Brahman attain that Supreme by passing away from the world during the influence of the fiery god, in the light, at an auspicious moment of the day, during the fortnight of the waxing moon, or during the six months when the sun travels in the north."
       },
       {
@@ -3091,7 +3091,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम् |\nतत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते ||८-२५||",
         "transliteration": "dhūmo rātris tathā kṛiṣhṇaḥ ṣhaṇ-māsā dakṣhiṇāyanam\ntatra chāndramasaṁ jyotir yogī prāpya nivartate",
-        "hindi_meaning": "हे अर्जुन! मुझमें अपने सभी कर्म अर्पित करो, मुझमें मन लगाओ, भक्ति करो, मुझे नमस्कार करो और मुझसे युक्त हो जाओ। इस प्रकार मुझसे युक्त होकर तुम मुझे प्राप्त करोगे।",
+        "hindi_meaning": "जो योगी धुएँ, रात, कृष्णपक्ष अथवा सूर्य के दक्षिणायण के छह महीनों में संसार से जाता है, वह चन्द्रलोक पहुँचकर फिर लौट आता है।",
         "meaning": "The mystic who passes away from this world during the smoke, the night, the fortnight of the waning moon, or the six months when the sun passes to the south reaches the moon planet but again comes back."
       },
       {
@@ -3100,7 +3100,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते |\nएकया यात्यनावृत्तिमन्ययावर्तते पुनः ||८-२६||",
         "transliteration": "śhukla-kṛiṣhṇe gatī hy ete jagataḥ śhāśhvate mate\nekayā yāty anāvṛittim anyayāvartate punaḥ",
-        "hindi_meaning": "हे अर्जुन! यदि तुम मेरे इस उपदेश का श्रद्धापूर्वक अनुसरण करोगे, तो तुम मुझे प्राप्त करोगे, क्योंकि तुम मुझसे प्रिय हो।",
+        "hindi_meaning": "वैदिक मतानुसार संसार से जाने के दो मार्ग हैं—एक प्रकाश का और दूसरा अन्धकार का। प्रकाश के मार्ग से जाने वाला नहीं लौटता, किन्तु अन्धकार के मार्ग से जाने वाला लौट आता है।",
         "meaning": "According to Vedic opinion, there are two ways of passing from this world—one in light and one in darkness. When one passes in light, he does not come back; but when one passes in darkness, he returns."
       },
       {
@@ -3109,7 +3109,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन |\nतस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन ||८-२७||",
         "transliteration": "naite sṛitī pārtha jānan yogī muhyati kaśhchana\ntasmāt sarveṣhu kāleṣhu yoga-yukto bhavārjuna",
-        "hindi_meaning": "लेकिन यदि तुम अहंकार के कारण मेरी बात नहीं मानोगे, तो तुम नष्ट हो जाओगे।",
+        "hindi_meaning": "हे अर्जुन! भक्त इन दोनों मार्गों को जानकर भी कभी मोहित नहीं होते। अतः सदा भक्ति में स्थिर रहो।",
         "meaning": "Although the devotees know these two paths, O Arjuna, they are never bewildered. Therefore be always fixed in devotion."
       },
       {
@@ -3118,7 +3118,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 8,
         "text": "वेदेषु यज्ञेषु तपःसु चैव\nदानेषु यत्पुण्यफलं प्रदिष्टम् |\nअत्येति तत्सर्वमिदं विदित्वा\nयोगी परं स्थानमुपैति चाद्यम् ||८-२८||",
         "transliteration": "vedeṣhu yajñeṣhu tapaḥsu chaiva\ndāneṣhu yat puṇya-phalaṁ pradiṣhṭam\natyeti tat sarvam idaṁ viditvā\nyogī paraṁ sthānam upaiti chādyam",
-        "hindi_meaning": "सभी प्राणी अपनी प्रकृति के अनुसार कर्म करते हैं, भले ही वे ज्ञानी हों या अज्ञानी। दमन से क्या होगा?",
+        "hindi_meaning": "भक्तिमार्ग स्वीकार करने वाला वेदाध्ययन, कठोर यज्ञ, दान अथवा दार्शनिक और सकाम कर्मों से मिलने वाले फलों से वंचित नहीं होता। केवल भक्ति करके वह ये सभी फल पाता और अन्त में परम शाश्वत धाम को प्राप्त होता है।",
         "meaning": "A person who accepts the path of devotional service is not bereft of the results derived from studying the Vedas, performing austere sacrifices, giving charity or pursuing philosophical and fruitive activities. Simply by performing devotional service, he attains all these, and at the end he reaches the supreme eternal abode."
       }
     ]
@@ -3137,7 +3137,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "श्रीभगवानुवाच |\nइदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे |\nज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात् ||९-१||",
         "transliteration": "śhrī bhagavān uvācha\nidaṁ tu te guhyatamaṁ pravakṣhyāmy anasūyave\njñānaṁ vijñāna-sahitaṁ yaj jñātvā mokṣhyase ’śhubhāt",
-        "hindi_meaning": "इन्द्रियों और इन्द्रिय-विषयों के प्रति राग-द्वेष को वश में करो, क्योंकि ये दोनों ही ज्ञान प्राप्ति में बाधक हैं।",
+        "hindi_meaning": "श्रीभगवान ने कहा: मेरे प्रिय अर्जुन, क्योंकि तुम मुझसे कभी ईर्ष्या नहीं करते, इसलिए मैं तुम्हें यह परम गोपनीय ज्ञान और अनुभूति बताऊँगा, जिसे जानकर तुम भौतिक अस्तित्व के दुःखों से मुक्त हो जाओगे।",
         "meaning": "The Supreme Personality of Godhead said: My dear Arjuna, because you are never envious of Me, I shall impart to you this most confidential knowledge and realization, knowing which you shall be relieved of the miseries of material existence."
       },
       {
@@ -3146,7 +3146,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् |\nप्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम् ||९-२||",
         "transliteration": "rāja-vidyā rāja-guhyaṁ pavitram idam uttamam\npratyakṣhāvagamaṁ dharmyaṁ su-sukhaṁ kartum avyayam",
-        "hindi_meaning": "अपने स्वधर्म का पालन करना, भले ही वह दोषपूर्ण हो, दूसरे के धर्म से श्रेष्ठ है। दूसरे के धर्म में मृत्यु भी भयानक है।",
+        "hindi_meaning": "यह ज्ञान समस्त विद्याओं का राजा और सभी रहस्यों में परम गुह्य है। यह परम शुद्ध है और अनुभूति द्वारा आत्मा का प्रत्यक्ष बोध कराता है, इसलिए धर्म की पूर्णता है। यह शाश्वत है और आनंदपूर्वक किया जाता है।",
         "meaning": "This knowledge is the king of education, the most secret of all secrets. It is the purest knowledge, and because it gives direct perception of the self by realization, it is the perfection of religion. It is everlasting, and it is joyfully performed."
       },
       {
@@ -3155,7 +3155,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप |\nअप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि ||९-३||",
         "transliteration": "aśhraddadhānāḥ puruṣhā dharmasyāsya parantapa\naprāpya māṁ nivartante mṛityu-saṁsāra-vartmani",
-        "hindi_meaning": "अर्जुन ने कहा: हे वार्ष्णेय! मनुष्य बिना इच्छा के भी पाप करने को क्यों प्रेरित होता है, जैसे बलपूर्वक ले जाया जा रहा हो?",
+        "hindi_meaning": "हे शत्रु-विजेता, जो इस भक्ति में श्रद्धा नहीं रखते, वे मुझे प्राप्त नहीं कर सकते। अतः वे इस भौतिक जगत में जन्म-मृत्यु के मार्ग पर लौटते रहते हैं।",
         "meaning": "Those who are not faithful in this devotional service cannot attain Me, O conqueror of enemies. Therefore they return to the path of birth and death in this material world."
       },
       {
@@ -3164,7 +3164,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना |\nमत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः ||९-४||",
         "transliteration": "mayā tatam idaṁ sarvaṁ jagad avyakta-mūrtinā\nmat-sthāni sarva-bhūtāni na chāhaṁ teṣhv avasthitaḥ",
-        "hindi_meaning": "श्री भगवान ने कहा: यह काम है, यह क्रोध है, जो रजोगुण से उत्पन्न होता है और बहुत ही पापी और भक्षक है। इसे इस लोक में शत्रु समझो।",
+        "hindi_meaning": "मैं अपने अव्यक्त रूप में इस संपूर्ण ब्रह्मांड में व्याप्त हूँ। सभी प्राणी मुझमें स्थित हैं, किंतु मैं उनमें नहीं हूँ।",
         "meaning": "By Me, in My unmanifested form, this entire universe is pervaded. All beings are in Me, but I am not in them."
       },
       {
@@ -3173,7 +3173,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम् |\nभूतभृन्न च भूतस्थो ममात्मा भूतभावनः ||९-५||",
         "transliteration": "na cha mat-sthāni bhūtāni paśhya me yogam aiśhvaram\nbhūta-bhṛin na cha bhūta-stho mamātmā bhūta-bhāvanaḥ",
-        "hindi_meaning": "जैसे धुँआ अग्नि को, धूल दर्पण को और गर्भ गर्भाशय को ढक लेता है, वैसे ही यह लोक काम से ढका हुआ है।",
+        "hindi_meaning": "फिर भी समस्त सृष्ट वस्तुएँ मुझमें स्थित नहीं हैं। मेरी योगमयी ऐश्वर्य को देखो। यद्यपि मैं सभी जीवों का पालनकर्ता और सर्वत्र स्थित हूँ, फिर भी मैं इस जगत का अंश नहीं हूँ, क्योंकि मेरा स्वरूप ही सृष्टि का स्रोत है।",
         "meaning": "And yet everything that is created does not rest in Me. Behold My mystic opulence! Although I am the maintainer of all living entities and although I am everywhere, I am not a part of this cosmic manifestation, for My Self is the very source of creation."
       },
       {
@@ -3182,7 +3182,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "यथाकाशस्थितो नित्यं वायुः सर्वत्रगो महान् |\nतथा सर्वाणि भूतानि मत्स्थानीत्युपधारय ||९-६||",
         "transliteration": "yathākāśha-sthito nityaṁ vāyuḥ sarvatra-go mahān\ntathā sarvāṇi bhūtāni mat-sthānīty upadhāraya",
-        "hindi_meaning": "हे कौन्तेय! ज्ञानी व्यक्ति की बुद्धि भी काम से ढकी हुई है, जो शाश्वत शत्रु है और इन्द्रियों की तरह अग्नि है।",
+        "hindi_meaning": "समझो कि जिस प्रकार सर्वत्र बहने वाली प्रबल वायु सदैव आकाश में स्थित रहती है, उसी प्रकार सभी सृष्ट प्राणी मुझमें स्थित रहते हैं।",
         "meaning": "Understand that as the mighty wind, blowing everywhere, rests always in the sky, all created beings rest in Me."
       },
       {
@@ -3191,7 +3191,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम् |\nकल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम् ||९-७||",
         "transliteration": "sarva-bhūtāni kaunteya prakṛitiṁ yānti māmikām\nkalpa-kṣhaye punas tāni kalpādau visṛijāmy aham",
-        "hindi_meaning": "इन्द्रियाँ, मन और बुद्धि इसके निवास स्थान हैं। इनके द्वारा यह ज्ञान को ढककर जीव को मोहित करता है।",
+        "hindi_meaning": "हे कुंतीपुत्र, कल्प के अंत में सभी भौतिक अभिव्यक्तियाँ मेरी प्रकृति में प्रवेश करती हैं और अगले कल्प के आरंभ में मैं अपनी शक्ति से उन्हें पुनः उत्पन्न करता हूँ।",
         "meaning": "O son of Kunti, at the end of the millennium all material manifestations enter into My nature, and at the beginning of another millennium, by My potency, I create them again."
       },
       {
@@ -3200,7 +3200,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः |\nभूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात् ||९-८||",
         "transliteration": "prakṛitiṁ svām avaṣhṭabhya visṛijāmi punaḥ punaḥ\nbhūta-grāmam imaṁ kṛitsnam avaśhaṁ prakṛiter vaśhāt",
-        "hindi_meaning": "हे अर्जुन! इसलिए सबसे पहले इन्द्रियों को वश में करो और इस पापी काम को नष्ट करो, जो ज्ञान और आत्मज्ञान का नाशक है।",
+        "hindi_meaning": "संपूर्ण जगत मेरी अधीनता में है। मेरी इच्छा से वह बार-बार स्वतः प्रकट होता है और अंत में मेरी ही इच्छा से उसका विनाश होता है।",
         "meaning": "The whole cosmic order is under Me. Under My will it is automatically manifested again and again, and under My will it is annihilated at the end."
       },
       {
@@ -3209,7 +3209,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "न च मां तानि कर्माणि निबध्नन्ति धनञ्जय |\nउदासीनवदासीनमसक्तं तेषु कर्मसु ||९-९||",
         "transliteration": "na cha māṁ tāni karmāṇi nibadhnanti dhanañjaya\nudāsīna-vad āsīnam asaktaṁ teṣhu karmasu",
-        "hindi_meaning": "हे अर्जुन! इन्द्रियाँ मन से श्रेष्ठ हैं, मन बुद्धि से श्रेष्ठ है और बुद्धि से श्रेष्ठ आत्मा है।",
+        "hindi_meaning": "हे धनंजय, ये सभी कर्म मुझे बाँध नहीं सकते। मैं इन समस्त भौतिक कर्मों से सदा विरक्त और उदासीनवत स्थित रहता हूँ।",
         "meaning": "O Dhananjaya, all this work cannot bind Me. I am ever detached from all these material activities, seated as though neutral."
       },
       {
@@ -3218,7 +3218,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "मयाध्यक्षेण प्रकृतिः सूयते सचराचरम् |\nहेतुनानेन कौन्तेय जगद्विपरिवर्तते ||९-१०||",
         "transliteration": "mayādhyakṣheṇa prakṛitiḥ sūyate sa-charācharam\nhetunānena kaunteya jagad viparivartate",
-        "hindi_meaning": "इसलिए हे महाबाहो! आत्मा को जानकर बुद्धि से मन को वश में करो और इस शत्रु काम को मारो, जो ज्ञान और आत्मज्ञान को नष्ट करता है।",
+        "hindi_meaning": "हे कुंतीपुत्र, मेरी शक्तियों में से एक यह भौतिक प्रकृति मेरे निर्देशन में समस्त चर और अचर प्राणियों को उत्पन्न करती है। उसी के अधीन यह जगत बार-बार सृजित और विनष्ट होता है।",
         "meaning": "This material nature, which is one of My energies, is working under My direction, O son of Kunti, producing all moving and nonmoving beings. Under its rule this manifestation is created and annihilated again and again."
       },
       {
@@ -3227,7 +3227,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् |\nपरं भावमजानन्तो मम भूतमहेश्वरम् ||९-११||",
         "transliteration": "avajānanti māṁ mūḍhā mānuṣhīṁ tanum āśhritam\nparaṁ bhāvam ajānanto mama bhūta-maheśhvaram",
-        "hindi_meaning": "श्री भगवान ने कहा: तुम विद्वानों जैसी बातें कर रहे हो, लेकिन जो शोक के योग्य नहीं है उसके लिए शोक कर रहे हो। ज्ञानी लोग न तो जीवितों के लिए और न ही मृतकों के लिए शोक करते हैं।",
+        "hindi_meaning": "मूर्ख लोग मेरे मनुष्य रूप में अवतरित होने पर मेरा उपहास करते हैं। वे समस्त प्राणियों के परम स्वामी के रूप में मेरी दिव्य प्रकृति को नहीं जानते।",
         "meaning": "Fools deride Me when I descend in the human form. They do not know My transcendental nature as the Supreme Lord of all that be."
       },
       {
@@ -3236,7 +3236,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः |\nराक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः ||९-१२||",
         "transliteration": "moghāśhā mogha-karmāṇo mogha-jñānā vichetasaḥ\nrākṣhasīm āsurīṁ chaiva prakṛitiṁ mohinīṁ śhritāḥ",
-        "hindi_meaning": "न तो मैं कभी नहीं था, न तुम, न ये सभी राजा; और न भविष्य में हम में से कोई कभी नहीं होगा।",
+        "hindi_meaning": "इस प्रकार मोहित लोग आसुरी और नास्तिक विचारों की ओर आकर्षित होते हैं। उस भ्रमित अवस्था में उनकी मुक्ति की आशाएँ, सकाम कर्म और ज्ञान की साधना सब निष्फल हो जाते हैं।",
         "meaning": "Those who are thus bewildered are attracted by demonic and atheistic views. In that deluded condition, their hopes for liberation, their fruitive activities, and their culture of knowledge are all defeated."
       },
       {
@@ -3245,7 +3245,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः |\nभजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम् ||९-१३||",
         "transliteration": "mahātmānas tu māṁ pārtha daivīṁ prakṛitim āśhritāḥ\nbhajanty ananya-manaso jñātvā bhūtādim avyayam",
-        "hindi_meaning": "जैसे इस शरीर में देही (आत्मा) बाल्यावस्था, यौवन और वृद्धावस्था से गुजरता है, वैसे ही मृत्यु के समय वह दूसरे शरीर को प्राप्त करता है। धीर पुरुष ऐसे परिवर्तन से विचलित नहीं होता।",
+        "hindi_meaning": "हे पृथापुत्र, जो मोहित नहीं हैं, वे महात्मा दैवी प्रकृति के संरक्षण में रहते हैं। मुझे आदि और अविनाशी पूर्ण पुरुषोत्तम भगवान जानकर वे पूरी तरह मेरी भक्ति में लगे रहते हैं।",
         "meaning": "O son of Pritha, those who are not deluded, the great souls, are under the protection of the divine nature. They are fully engaged in devotional service because they know Me as the Supreme Personality of Godhead, original and inexhaustible."
       },
       {
@@ -3254,7 +3254,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः |\nनमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते ||९-१४||",
         "transliteration": "satataṁ kīrtayanto māṁ yatantaśh cha dṛiḍha-vratāḥ\nnamasyantaśh cha māṁ bhaktyā nitya-yuktā upāsate",
-        "hindi_meaning": "हे कौन्तेय! इन्द्रियों के संपर्क से उत्पन्न सुख-दुःख, शीत-उष्ण आदि आते-जाते रहते हैं, अनित्य हैं। हे भारत! तुम उन्हें सहन करो।",
+        "hindi_meaning": "सदा मेरी महिमा का कीर्तन करते हुए, दृढ़ संकल्प से प्रयास करते हुए और मेरे समक्ष नतमस्तक होकर ये महात्मा निरंतर भक्तिपूर्वक मेरी पूजा करते हैं।",
         "meaning": "Always chanting My glories, endeavoring with great determination, bowing down before Me, these great souls perpetually worship Me with devotion."
       },
       {
@@ -3263,7 +3263,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते |\nएकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम् ||९-१५||",
         "transliteration": "jñāna-yajñena chāpy anye yajanto mām upāsate\nekatvena pṛithaktvena bahudhā viśhvato-mukham",
-        "hindi_meaning": "हे पुरुषर्षभ! जिस पुरुष को ये (सुख-दुःख) व्यथित नहीं करते, जो सुख-दुःख में सम है और धीर है, वह मोक्ष के योग्य है।",
+        "hindi_meaning": "अन्य लोग ज्ञानरूपी यज्ञ द्वारा परमेश्वर की उपासना अभिन्न, अनेक रूपों में विविध और विश्वरूप के रूप में करते हैं।",
         "meaning": "Others, who engage in sacrifice by the cultivation of knowledge, worship the Supreme Lord as the one without a second, as diverse in many, and in the universal form."
       },
       {
@@ -3272,7 +3272,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "अहं क्रतुरहं यज्ञः स्वधाहमहमौषधम् |\nमन्त्रोऽहमहमेवाज्यमहमग्निरहं हुतम् ||९-१६||",
         "transliteration": "ahaṁ kratur ahaṁ yajñaḥ svadhāham aham auṣhadham\nmantro ’ham aham evājyam aham agnir ahaṁ hutam",
-        "hindi_meaning": "जो तत्त्वदर्शी हैं, उन्होंने देखा है कि असत् (शरीर) का कोई स्थायी भाव नहीं है और सत् (आत्मा) का कोई अभाव नहीं है।",
+        "hindi_meaning": "किंतु कर्मकांड मैं हूँ, यज्ञ मैं हूँ, पितरों को दिया जाने वाला अर्पण, औषधि और दिव्य मंत्र भी मैं हूँ। घी, अग्नि और आहुति भी मैं ही हूँ।",
         "meaning": "But it is I who am the ritual, I the sacrifice, the offering to the ancestors, the healing herb, the transcendental chant. I am the butter and the fire and the offering."
       },
       {
@@ -3281,7 +3281,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "पिताहमस्य जगतो माता धाता पितामहः |\nवेद्यं पवित्रमोंकार ऋक्साम यजुरेव च ||९-१७||",
         "transliteration": "pitāham asya jagato mātā dhātā pitāmahaḥ\nvedyaṁ pavitram oṁkāra ṛik sāma yajur eva cha",
-        "hindi_meaning": "जान लो कि जो इस सम्पूर्ण शरीर में व्याप्त है, वह अविनाशी है। इस अव्यय आत्मा का विनाश कोई नहीं कर सकता।",
+        "hindi_meaning": "मैं इस ब्रह्मांड का पिता, माता, आधार और पितामह हूँ। मैं ज्ञेय, पवित्र करने वाला और ओंकार हूँ। मैं ऋग्वेद, सामवेद और यजुर्वेद भी हूँ।",
         "meaning": "I am the father of this universe, the mother, the support and the grandsire. I am the object of knowledge, the purifier and the syllable om. I am also the Rig, the Sama and the Yajur Vedas."
       },
       {
@@ -3290,7 +3290,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत् |\nप्रभवः प्रलयः स्थानं निधानं बीजमव्ययम् ||९-१८||",
         "transliteration": "gatir bhartā prabhuḥ sākṣhī nivāsaḥ śharaṇaṁ suhṛit\nprabhavaḥ pralayaḥ sthānaṁ nidhānaṁ bījam avyayam",
-        "hindi_meaning": "हे भारत! ये शरीर नित्य, अविनाशी और अप्रमेय आत्मा के लिए नाशवान कहे गए हैं; इसलिए तुम युद्ध करो।",
+        "hindi_meaning": "मैं लक्ष्य, पालनकर्ता, स्वामी, साक्षी, धाम, शरण और परम प्रिय मित्र हूँ। मैं सृष्टि और प्रलय, सबका आधार, विश्रामस्थल और सनातन बीज हूँ।",
         "meaning": "I am the goal, the sustainer, the master, the witness, the abode, the refuge and the most dear friend. I am the creation and the annihilation, the basis of everything, the resting place and the eternal seed."
       },
       {
@@ -3299,7 +3299,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च |\nअमृतं चैव मृत्युश्च सदसच्चाहमर्जुन ||९-१९||",
         "transliteration": "tapāmy aham ahaṁ varṣhaṁ nigṛihṇāmy utsṛijāmi cha\namṛitaṁ chaiva mṛityuśh cha sad asach chāham arjuna",
-        "hindi_meaning": "जो इसे हन्ता मानता है और जो इसे हत मानता है, दोनों ही अज्ञानी हैं; क्योंकि यह न तो किसी को मारता है और न मारा जाता है।",
+        "hindi_meaning": "हे अर्जुन, मैं ताप देता हूँ और वर्षा को रोकता तथा बरसाता हूँ। मैं अमरत्व हूँ और साक्षात् मृत्यु भी हूँ। चेतन और जड़ दोनों मुझमें हैं।",
         "meaning": "O Arjuna, I give heat, and I withhold and send forth the rain. I am immortality, and I am also death personified. Both spirit and matter are in Me."
       },
       {
@@ -3308,7 +3308,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "त्रैविद्या मां सोमपाः पूतपापा\nयज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते |\nते पुण्यमासाद्य सुरेन्द्रलोक\nमश्नन्ति दिव्यान्दिवि देवभोगान् ||९-२०||",
         "transliteration": "trai-vidyā māṁ soma-pāḥ pūta-pāpā\nyajñair iṣhṭvā svar-gatiṁ prārthayante\nte puṇyam āsādya surendra-lokam\naśhnanti divyān divi deva-bhogān",
-        "hindi_meaning": "यह आत्मा कभी जन्म नहीं लेता और न कभी मरता है। यह उत्पन्न नहीं हुआ, न होगा और न पहले था। यह अजन्मा, नित्य, शाश्वत और पुरातन है। शरीर के मारे जाने पर भी यह नहीं मारा जाता।",
+        "hindi_meaning": "जो वेदों का अध्ययन और सोमरस पान करके स्वर्गलोक चाहते हैं, वे परोक्ष रूप से मेरी पूजा करते हैं। पापों से शुद्ध होकर वे इंद्र के पुण्यमय स्वर्गलोक में जन्म लेते और दिव्य सुख भोगते हैं।",
         "meaning": "Those who study the Vedas and drink the soma juice, seeking the heavenly planets, worship Me indirectly. Purified of sinful reactions, they take birth on the pious, heavenly planet of Indra, where they enjoy godly delights."
       },
       {
@@ -3317,7 +3317,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "ते तं भुक्त्वा स्वर्गलोकं विशालं\nक्षीणे पुण्ये मर्त्यलोकं विशन्ति |\nएवं त्रयीधर्ममनुप्रपन्ना\nगतागतं कामकामा लभन्ते ||९-२१||",
         "transliteration": "te taṁ bhuktvā svarga-lokaṁ viśhālaṁ\nkṣhīṇe puṇye martya-lokaṁ viśhanti\nevaṁ trayī-dharmam anuprapannā\ngatāgataṁ kāma-kāmā labhante",
-        "hindi_meaning": "हे पार्थ! जो पुरुष इस अजन्मा, अव्यय और नित्य आत्मा को जानता है, वह कैसे किसी को मार सकता है या मरवा सकता है?",
+        "hindi_meaning": "विशाल स्वर्गीय इंद्रिय-सुख भोगकर, जब उनके पुण्य समाप्त हो जाते हैं, तब वे फिर इस मर्त्यलोक में लौट आते हैं। इस प्रकार तीनों वेदों के नियमों से इंद्रिय-सुख चाहने वाले केवल बार-बार जन्म और मृत्यु पाते हैं।",
         "meaning": "When they have thus enjoyed vast heavenly sense pleasure and the results of their pious activities are exhausted, they return to this mortal planet again. Thus those who seek sense enjoyment by adhering to the principles of the three Vedas achieve only repeated birth and death."
       },
       {
@@ -3326,7 +3326,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते |\nतेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ||९-२२||",
         "transliteration": "ananyāśh chintayanto māṁ ye janāḥ paryupāsate\nteṣhāṁ nityābhiyuktānāṁ yoga-kṣhemaṁ vahāmy aham",
-        "hindi_meaning": "जैसे मनुष्य पुराने वस्त्रों को त्यागकर नए वस्त्र ग्रहण करता है, वैसे ही देही (आत्मा) पुराने शरीरों को त्यागकर नए शरीरों को प्राप्त करता है।",
+        "hindi_meaning": "किंतु जो मेरे दिव्य रूप का ध्यान करते हुए अनन्य भाव से सदा मेरी पूजा करते हैं, उनकी आवश्यकताओं को मैं पूरा करता हूँ और जो उनके पास है उसकी रक्षा करता हूँ।",
         "meaning": "But those who always worship Me with exclusive devotion, meditating on My transcendental form—to them I carry what they lack, and I preserve what they have."
       },
       {
@@ -3335,7 +3335,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "येऽप्यन्यदेवताभक्ता यजन्ते श्रद्धयान्विताः |\nतेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम् ||९-२३||",
         "transliteration": "ye ’py anya-devatā-bhaktā yajante śhraddhayānvitāḥ\nte ’pi mām eva kaunteya yajanty avidhi-pūrvakam",
-        "hindi_meaning": "इस आत्मा को शस्त्र काट नहीं सकते, अग्नि जला नहीं सकती, जल गीला नहीं कर सकता और वायु सुखा नहीं सकती।",
+        "hindi_meaning": "हे कुंतीपुत्र, जो अन्य देवताओं के भक्त श्रद्धापूर्वक उनकी पूजा करते हैं, वे वास्तव में केवल मेरी ही पूजा करते हैं, किंतु अनुचित विधि से।",
         "meaning": "Those who are devotees of other gods and who worship them with faith actually worship only Me, O son of Kunti, but they do so in a wrong way."
       },
       {
@@ -3344,7 +3344,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च |\nन तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते ||९-२४||",
         "transliteration": "ahaṁ hi sarva-yajñānāṁ bhoktā cha prabhur eva cha\nna tu mām abhijānanti tattvenātaśh chyavanti te",
-        "hindi_meaning": "यह अच्छेद्य, अदाह्य, अक्लेद्य और अशोष्य है तथा नित्य, सर्वगत, स्थिर, अचल और सनातन है।",
+        "hindi_meaning": "मैं ही समस्त यज्ञों का एकमात्र भोक्ता और स्वामी हूँ। अतः जो मेरे वास्तविक दिव्य स्वरूप को नहीं पहचानते, वे पतित हो जाते हैं।",
         "meaning": "I am the only enjoyer and master of all sacrifices. Therefore, those who do not recognize My true transcendental nature fall down."
       },
       {
@@ -3353,7 +3353,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "यान्ति देवव्रता देवान्पितॄन्यान्ति पितृव्रताः |\nभूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम् ||९-२५||",
         "transliteration": "yānti deva-vratā devān pitṝīn yānti pitṛi-vratāḥ\nbhūtāni yānti bhūtejyā yānti mad-yājino ’pi mām",
-        "hindi_meaning": "यह अव्यक्त, अचिन्त्य और अविकारी कहा जाता है। इसलिए इसे इस प्रकार जानकर तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "देवताओं की पूजा करने वाले देवताओं में जन्म लेते हैं, पितरों की पूजा करने वाले पितरों के पास जाते हैं, भूत-प्रेतों की पूजा करने वाले उन्हीं में जन्म लेते हैं और मेरी पूजा करने वाले मेरे साथ रहते हैं।",
         "meaning": "Those who worship the demigods will take birth among the demigods; those who worship the ancestors go to the ancestors; those who worship ghosts and spirits will take birth among such beings; and those who worship Me will live with Me."
       },
       {
@@ -3362,7 +3362,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति |\nतदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ||९-२६||",
         "transliteration": "patraṁ puṣhpaṁ phalaṁ toyaṁ yo me bhaktyā prayachchhati\ntad ahaṁ bhakty-upahṛitam aśhnāmi prayatātmanaḥ",
-        "hindi_meaning": "हे महाबाहो! यदि तुम इसे सदा जन्म लेने वाला या सदा मरने वाला मानते हो, तो भी तुम्हें इसके लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "यदि कोई मुझे प्रेम और भक्ति से पत्र, पुष्प, फल अथवा जल अर्पित करता है, तो मैं उसे स्वीकार करता हूँ।",
         "meaning": "If one offers Me with love and devotion a leaf, a flower, a fruit or water, I will accept it."
       },
       {
@@ -3371,7 +3371,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् |\nयत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ||९-२७||",
         "transliteration": "yat karoṣhi yad aśhnāsi yaj juhoṣhi dadāsi yat\nyat tapasyasi kaunteya tat kuruṣhva mad-arpaṇam",
-        "hindi_meaning": "जन्म लेने वाले की मृत्यु निश्चित है और मरने वाले का जन्म निश्चित है। इसलिए इस अपरिहार्य विषय में तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "हे कुंतीपुत्र, तुम जो भी करते हो, जो भी खाते हो, जो भी अर्पित या दान करते हो और जो भी तपस्या करते हो, उसे मुझे अर्पण करके करो।",
         "meaning": "Whatever you do, whatever you eat, whatever you offer or give away, and whatever austerities you perform—do that, O son of Kunti, as an offering to Me."
       },
       {
@@ -3380,7 +3380,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः |\nसंन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि ||९-२८||",
         "transliteration": "śhubhāśhubha-phalair evaṁ mokṣhyase karma-bandhanaiḥ\nsannyāsa-yoga-yuktātmā vimukto mām upaiṣhyasi",
-        "hindi_meaning": "हे भारत! सभी प्राणी आदि में अव्यक्त, मध्य में व्यक्त और अन्त में अव्यक्त हो जाते हैं। फिर यहाँ शोक क्यों?",
+        "hindi_meaning": "इस प्रकार तुम कर्म और उसके शुभ-अशुभ फलों के बंधन से मुक्त हो जाओगे। इस त्याग-सिद्धांत में मन मुझ पर स्थिर करके तुम मुक्त होकर मेरे पास आओगे।",
         "meaning": "In this way you will be freed from bondage to work and its auspicious and inauspicious results. With your mind fixed on Me in this principle of renunciation, you will be liberated and come to Me."
       },
       {
@@ -3389,7 +3389,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः |\nये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम् ||९-२९||",
         "transliteration": "samo ’haṁ sarva-bhūteṣhu na me dveṣhyo ’sti na priyaḥ\nye bhajanti tu māṁ bhaktyā mayi te teṣhu chāpy aham",
-        "hindi_meaning": "कोई इसे आश्चर्य की तरह देखता है, कोई आश्चर्य की तरह कहता है, कोई आश्चर्य की तरह सुनता है और कोई सुनकर भी इसे नहीं जानता।",
+        "hindi_meaning": "मैं न किसी से द्वेष करता हूँ, न किसी का पक्ष लेता हूँ। मैं सबके प्रति सम हूँ। किंतु जो भक्तिपूर्वक मेरी सेवा करता है, वह मेरा मित्र है, मुझमें स्थित है और मैं भी उसका मित्र हूँ।",
         "meaning": "I envy no one, nor am I partial to anyone. I am equal to all. But whoever renders service unto Me in devotion is a friend, is in Me, and I am also a friend to him."
       },
       {
@@ -3398,7 +3398,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "अपि चेत्सुदुराचारो भजते मामनन्यभाक् |\nसाधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः ||९-३०||",
         "transliteration": "api chet su-durāchāro bhajate mām ananya-bhāk\nsādhur eva sa mantavyaḥ samyag vyavasito hi saḥ",
-        "hindi_meaning": "हे भारत! सभी के शरीर में रहने वाला यह देही अवध्य है। इसलिए तुम्हें किसी भी प्राणी के लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "यदि अत्यंत दुराचारी व्यक्ति भी भक्ति में लगा हो, तो उसे साधु मानना चाहिए, क्योंकि उसका संकल्प उचित दिशा में स्थित है।",
         "meaning": "Even if one commits the most abominable action, if he is engaged in devotional service he is to be considered saintly because he is properly situated in his determination."
       },
       {
@@ -3407,7 +3407,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति |\nकौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति ||९-३१||",
         "transliteration": "kṣhipraṁ bhavati dharmātmā śhaśhvach-chhāntiṁ nigachchhati\nkaunteya pratijānīhi na me bhaktaḥ praṇaśhyati",
-        "hindi_meaning": "हे पार्थ! अपने स्वधर्म पर भी दृष्टि रखकर तुम्हें कंपित नहीं होना चाहिए; क्योंकि क्षत्रिय के लिए धर्मयुद्ध से बढ़कर और कोई श्रेयस्कर नहीं है।",
+        "hindi_meaning": "वह शीघ्र धर्मात्मा बन जाता है और स्थायी शांति प्राप्त करता है। हे कुंतीपुत्र, निर्भय होकर घोषणा करो कि मेरा भक्त कभी नष्ट नहीं होता।",
         "meaning": "He quickly becomes righteous and attains lasting peace. O son of Kunti, declare it boldly that My devotee never perishes."
       },
       {
@@ -3416,7 +3416,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः |\nस्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम् ||९-३२||",
         "transliteration": "māṁ hi pārtha vyapāśhritya ye ’pi syuḥ pāpa-yonayaḥ\nstriyo vaiśhyās tathā śhūdrās te ’pi yānti parāṁ gatim",
-        "hindi_meaning": "हे पार्थ! ऐसे युद्ध को क्षत्रिय सुख से प्राप्त करते हैं, जो स्वर्ग के द्वार को खोलने वाला है और जो स्वयं प्राप्त हो जाता है।",
+        "hindi_meaning": "हे पृथापुत्र, जो मेरी शरण लेते हैं, वे निम्न जन्म के हों, स्त्रियाँ, वैश्य अथवा शूद्र हों, फिर भी परम गति को प्राप्त कर सकते हैं।",
         "meaning": "O son of Pritha, those who take shelter in Me, though they be of lower birth—women, vaisyas [merchants] and sudras [laborers]—can approach the supreme destination."
       },
       {
@@ -3425,7 +3425,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा |\nअनित्यमसुखं लोकमिमं प्राप्य भजस्व माम् ||९-३३||",
         "transliteration": "kiṁ punar brāhmaṇāḥ puṇyā bhaktā rājarṣhayas tathā\nanityam asukhaṁ lokam imaṁ prāpya bhajasva mām",
-        "hindi_meaning": "यदि तुम इस धर्मयुद्ध को नहीं करोगे, तो अपने स्वधर्म और कीर्ति को खोकर पाप को प्राप्त होगे।",
+        "hindi_meaning": "फिर पुण्यात्मा ब्राह्मणों, भक्तों और राजर्षियों के विषय में क्या कहना। अतः इस क्षणभंगुर दुःखमय संसार में आकर मेरी प्रेममयी सेवा में लगो।",
         "meaning": "How much more this is so of the righteous brahmanas, the devotees and the saintly kings. Therefore, having come to this temporary, miserable world, engage in loving service unto Me."
       },
       {
@@ -3434,7 +3434,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 9,
         "text": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु |\nमामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः ||९-३४||",
         "transliteration": "man-manā bhava mad-bhakto mad-yājī māṁ namaskuru\nmām evaiṣhyasi yuktvaivam ātmānaṁ mat-parāyaṇaḥ",
-        "hindi_meaning": "लोग तुम्हारी कीर्ति की निन्दा करेंगे और नाम के लिए जो कीर्ति होती है, वह भी नष्ट हो जाएगी।",
+        "hindi_meaning": "अपना मन सदा मेरे चिंतन में लगाओ, मेरे भक्त बनो, मुझे नमस्कार करो और मेरी पूजा करो। मुझमें पूर्णतः लीन होकर तुम निश्चय ही मेरे पास आओगे।",
         "meaning": "Engage your mind always in thinking of Me, become My devotee, offer obeisances to Me and worship Me. Being completely absorbed in Me, surely you will come to Me."
       }
     ]
@@ -3453,7 +3453,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "श्रीभगवानुवाच |\nभूय एव महाबाहो शृणु मे परमं वचः |\nयत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया ||१०-१||",
         "transliteration": "śhrī bhagavān uvācha\nbhūya eva mahā-bāho śhṛiṇu me paramaṁ vachaḥ\nyat te ’haṁ prīyamāṇāya vakṣhyāmi hita-kāmyayā",
-        "hindi_meaning": "महान योद्धाओं के लिए तुम्हारी निन्दा होगी और तुम्हारा सम्मान अपमान में बदल जाएगा।",
+        "hindi_meaning": "श्रीभगवान ने कहा: हे महाबाहु अर्जुन, फिर सुनो। तुम मेरे प्रिय मित्र हो, इसलिए तुम्हारे हित के लिए मैं पहले बताए ज्ञान से भी श्रेष्ठ ज्ञान कहूँगा।",
         "meaning": "The Supreme Personality of Godhead said: Listen again, O mighty-armed Arjuna. Because you are My dear friend, for your benefit I shall speak to you further, giving knowledge that is better than what I have already explained."
       },
       {
@@ -3462,7 +3462,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "न मे विदुः सुरगणाः प्रभवं न महर्षयः |\nअहमादिर्हि देवानां महर्षीणां च सर्वशः ||१०-२||",
         "transliteration": "na me viduḥ sura-gaṇāḥ prabhavaṁ na maharṣhayaḥ\naham ādir hi devānāṁ maharṣhīṇāṁ cha sarvaśhaḥ",
-        "hindi_meaning": "शत्रु तुम्हारे बारे में अनेक अपशब्द कहेंगे और तुम्हारी वीरता की निन्दा करेंगे। तुम्हारे लिए इससे बढ़कर दुःख और क्या हो सकता है?",
+        "hindi_meaning": "न देवताओं के समूह और न महर्षि मेरे उद्गम या ऐश्वर्यों को जानते हैं, क्योंकि हर प्रकार से मैं ही देवताओं और ऋषियों का स्रोत हूँ।",
         "meaning": "Neither the hosts of demigods nor the great sages know My origin or opulences, for, in every respect, I am the source of the demigods and sages."
       },
       {
@@ -3471,7 +3471,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "यो मामजमनादिं च वेत्ति लोकमहेश्वरम् |\nअसम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते ||१०-३||",
         "transliteration": "yo mām ajam anādiṁ cha vetti loka-maheśhvaram\nasammūḍhaḥ sa martyeṣhu sarva-pāpaiḥ pramuchyate",
-        "hindi_meaning": "हे अर्जुन! यदि तुम मारे जाओगे, तो स्वर्ग को प्राप्त करोगे; यदि विजयी होगे, तो पृथ्वी का भोग करोगे। इसलिए उठो और निश्चयपूर्वक युद्ध करो।",
+        "hindi_meaning": "जो मुझे अजन्मा, अनादि और समस्त लोकों का परम स्वामी जानता है, मनुष्यों में केवल वही मोहरहित होकर सभी पापों से मुक्त होता है।",
         "meaning": "He who knows Me as the unborn, as the beginningless, as the Supreme Lord of all the worlds—he only, undeluded among men, is freed from all sins."
       },
       {
@@ -3480,7 +3480,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "बुद्धिर्ज्ञानमसम्मोहः क्षमा सत्यं दमः शमः |\nसुखं दुःखं भवोऽभावो भयं चाभयमेव च ||१०-४||",
         "transliteration": "buddhir jñānam asammohaḥ kṣhamā satyaṁ damaḥ śhamaḥ\nsukhaṁ duḥkhaṁ bhavo ’bhāvo bhayaṁ chābhayam eva cha",
-        "hindi_meaning": "सुख-दुःख, लाभ-हानि, जय-पराजय को समान समझकर युद्ध के लिए तैयार हो जाओ। इस प्रकार करने से तुम पाप नहीं करोगे।",
+        "hindi_meaning": "बुद्धि, ज्ञान, संशय और मोह से मुक्ति, क्षमा, सत्य, इंद्रिय-संयम, मन-संयम, सुख और दुःख, जन्म, मृत्यु, भय और अभय...",
         "meaning": "Intelligence, knowledge, freedom from doubt and delusion, forgiveness, truthfulness, control of the senses, control of the mind, happiness and distress, birth, death, fear, fearlessness..."
       },
       {
@@ -3489,7 +3489,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः |\nभवन्ति भावा भूतानां मत्त एव पृथग्विधाः ||१०-५||",
         "transliteration": "ahiṁsā samatā tuṣhṭis tapo dānaṁ yaśho ’yaśhaḥ\nbhavanti bhāvā bhūtānāṁ matta eva pṛithag-vidhāḥ",
-        "hindi_meaning": "हे पार्थ! अब तक मैंने तुम्हें सांख्य योग (ज्ञान) बताया है। अब कर्मयोग सुनो, जिसे जानकर तुम कर्मबन्धन से मुक्त हो जाओगे।",
+        "hindi_meaning": "अहिंसा, समता, संतोष, तपस्या, दान, यश और अपयश—जीवों के ये विविध गुण केवल मुझसे उत्पन्न होते हैं।",
         "meaning": "Nonviolence, equanimity, satisfaction, austerity, charity, fame and infamy—all these various qualities of living beings are created by Me alone."
       },
       {
@@ -3498,7 +3498,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा |\nमद्भावा मानसा जाता येषां लोक इमाः प्रजाः ||१०-६||",
         "transliteration": "maharṣhayaḥ sapta pūrve chatvāro manavas tathā\nmad-bhāvā mānasā jātā yeṣhāṁ loka imāḥ prajāḥ",
-        "hindi_meaning": "इसमें कोई हानि नहीं है और यह आरम्भ में थोड़ा सा भी हो, तो भी संसार के भय से रक्षा करता है।",
+        "hindi_meaning": "सात महर्षि, उनसे पूर्व के चार अन्य महर्षि और मनु मेरे मन से उत्पन्न हुए हैं, और विभिन्न लोकों में रहने वाले सभी जीव उन्हीं से आए हैं।",
         "meaning": "The seven great sages and before them the four other great sages and the Manus [progenitors of mankind] come from Me, born from My mind, and all the living beings populating the various planets descend from them."
       },
       {
@@ -3507,7 +3507,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः |\nसोऽविकम्पेन योगेन युज्यते नात्र संशयः ||१०-७||",
         "transliteration": "etāṁ vibhūtiṁ yogaṁ cha mama yo vetti tattvataḥ\nso ’vikampena yogena yujyate nātra saṁśhayaḥ",
-        "hindi_meaning": "हे कुरुनन्दन! इस कर्मयोग में निश्चयात्मक बुद्धि एक ही है, लेकिन अविश्वासियों की बुद्धि अनेक शाखाओं वाली और अनन्त है।",
+        "hindi_meaning": "जो मेरे इस ऐश्वर्य और योगशक्ति पर वास्तव में दृढ़ विश्वास करता है, वह निर्मल भक्ति में लग जाता है; इसमें कोई संदेह नहीं।",
         "meaning": "One who is factually convinced of this opulence and mystic power of Mine engages in unalloyed devotional service; of this there is no doubt."
       },
       {
@@ -3516,7 +3516,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते |\nइति मत्वा भजन्ते मां बुधा भावसमन्विताः ||१०-८||",
         "transliteration": "ahaṁ sarvasya prabhavo mattaḥ sarvaṁ pravartate\niti matvā bhajante māṁ budhā bhāva-samanvitāḥ",
-        "hindi_meaning": "हे पार्थ! जो लोग वेदों के शब्दज्ञान में मोहित होकर कहते हैं कि इसके सिवा और कुछ नहीं है, वे कामनाओं से युक्त हैं।",
+        "hindi_meaning": "मैं समस्त आध्यात्मिक और भौतिक जगतों का स्रोत हूँ। सब कुछ मुझसे निकलता है। इसे पूर्णतः जानने वाले बुद्धिमान मेरी भक्ति करते और हृदय से मेरी पूजा करते हैं।",
         "meaning": "I am the source of all spiritual and material worlds. Everything emanates from Me. The wise who perfectly know this engage in My devotional service and worship Me with all their hearts."
       },
       {
@@ -3525,7 +3525,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् |\nकथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ||१०-९||",
         "transliteration": "mach-chittā mad-gata-prāṇā bodhayantaḥ parasparam\nkathayantaśh cha māṁ nityaṁ tuṣhyanti cha ramanti cha",
-        "hindi_meaning": "जिनकी बुद्धि उन कामनाओं में लगी हुई है, जिनका परम लक्ष्य स्वर्ग है, वे जन्म-मृत्यु के चक्र में बने रहते हैं।",
+        "hindi_meaning": "मेरे शुद्ध भक्तों के विचार मुझमें स्थित रहते हैं, उनका जीवन मेरी सेवा में पूर्णतः समर्पित होता है और वे परस्पर मेरा बोध कराते तथा मेरे विषय में चर्चा करते हुए परम संतोष और आनंद पाते हैं।",
         "meaning": "The thoughts of My pure devotees dwell in Me, their lives are fully devoted to My service, and they derive great satisfaction and bliss from always enlightening one another and conversing about Me."
       },
       {
@@ -3534,7 +3534,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् |\nददामि बुद्धियोगं तं येन मामुपयान्ति ते ||१०-१०||",
         "transliteration": "teṣhāṁ satata-yuktānāṁ bhajatāṁ prīti-pūrvakam\ndadāmi buddhi-yogaṁ taṁ yena mām upayānti te",
-        "hindi_meaning": "जो लोग इन्द्रियों और इन्द्रियों के विषयों में आसक्त हैं, उनकी बुद्धि स्थिर नहीं होती।",
+        "hindi_meaning": "जो निरंतर प्रेमपूर्वक मेरी सेवा में लगे रहते हैं, उन्हें मैं वह बुद्धि देता हूँ जिससे वे मेरे पास आ सकते हैं।",
         "meaning": "To those who are constantly devoted to serving Me with love, I give the understanding by which they can come to Me."
       },
       {
@@ -3543,7 +3543,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः |\nनाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ||१०-११||",
         "transliteration": "teṣhām evānukampārtham aham ajñāna-jaṁ tamaḥ\nnāśhayāmy ātma-bhāva-stho jñāna-dīpena bhāsvatā",
-        "hindi_meaning": "वेद तीन गुणों (सत्, रज, तम) के विषय में हैं। हे अर्जुन! तुम इन तीनों गुणों से परे हो जाओ, नित्य सत्ता में स्थित रहो, द्रव्य के लिए चिंतित न रहो और आत्म-स्वरूप में स्थित रहो।",
+        "hindi_meaning": "उन पर विशेष कृपा करने के लिए मैं उनके हृदय में स्थित होकर ज्ञान के प्रकाशमान दीपक से अज्ञानजनित अंधकार नष्ट करता हूँ।",
         "meaning": "To show them special mercy, I, dwelling in their hearts, destroy with the shining lamp of knowledge the darkness born of ignorance."
       },
       {
@@ -3552,7 +3552,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "अर्जुन उवाच |\nपरं ब्रह्म परं धाम पवित्रं परमं भवान् |\nपुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम् ||१०-१२||",
         "transliteration": "arjuna uvācha\nparaṁ brahma paraṁ dhāma pavitraṁ paramaṁ bhavān\npuruṣhaṁ śhāśhvataṁ divyam ādi-devam ajaṁ vibhum",
-        "hindi_meaning": "जैसे सभी जलाशयों के लिए एक छोटा तालाब पर्याप्त है, वैसे ही सभी वेदों के लिए ज्ञानी ब्राह्मण के लिए वेदों का ज्ञान पर्याप्त है।",
+        "hindi_meaning": "अर्जुन ने कहा: आप पूर्ण पुरुषोत्तम भगवान, परम धाम, परम पवित्र और परम सत्य हैं। आप शाश्वत, दिव्य, आदि पुरुष, अजन्मा और महानतम हैं।",
         "meaning": "Arjuna said: You are the Supreme Personality of Godhead, the ultimate abode, the purest, the Absolute Truth. You are the eternal, transcendental, original person, the unborn, the greatest."
       },
       {
@@ -3561,7 +3561,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा |\nअसितो देवलो व्यासः स्वयं चैव ब्रवीषि मे ||१०-१३||",
         "transliteration": "āhus tvām ṛiṣhayaḥ sarve devarṣhir nāradas tathā\nasito devalo vyāsaḥ svayaṁ chaiva bravīṣhi me",
-        "hindi_meaning": "तुम्हारा कर्म करने में ही अधिकार है, कर्म के फल में कभी नहीं। कर्म के फल का कारण मत बनो और कर्म न करने में आसक्ति मत रखो।",
+        "hindi_meaning": "नारद, असित, देवल और व्यास जैसे सभी महर्षि आपके विषय में इस सत्य की पुष्टि करते हैं और अब आप स्वयं भी मुझसे यही कह रहे हैं।",
         "meaning": "All the great sages such as Narada, Asita, Devala and Vyasa confirm this truth about You, and now You Yourself are declaring it to me."
       },
       {
@@ -3570,7 +3570,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "सर्वमेतदृतं मन्ये यन्मां वदसि केशव |\nन हि ते भगवन्व्यक्तिं विदुर्देवा न दानवाः ||१०-१४||",
         "transliteration": "sarvam etad ṛitaṁ manye yan māṁ vadasi keśhava\nna hi te bhagavan vyaktiṁ vidur devā na dānavāḥ",
-        "hindi_meaning": "हे अर्जुन! योग में स्थित होकर कर्म करो, सफलता-असफलता को त्याग दो। ऐसी समता को योग कहते हैं।",
+        "hindi_meaning": "हे कृष्ण, आपने मुझसे जो कुछ कहा है, उसे मैं पूर्णतः सत्य मानता हूँ। हे प्रभु, न देवता और न असुर आपके व्यक्तित्व को समझ सकते हैं।",
         "meaning": "O Krishna, I totally accept as truth all that You have told me. Neither the demigods nor the demons, O Lord, can understand Your personality."
       },
       {
@@ -3579,7 +3579,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "स्वयमेवात्मनात्मानं वेत्थ त्वं पुरुषोत्तम |\nभूतभावन भूतेश देवदेव जगत्पते ||१०-१५||",
         "transliteration": "svayam evātmanātmānaṁ vettha tvaṁ puruṣhottama\nbhūta-bhāvana bhūteśha deva-deva jagat-pate",
-        "hindi_meaning": "हे धनञ्जय! कर्मफल की इच्छा से किए गए कर्म से बुद्धि (ज्ञानयोग) बहुत श्रेष्ठ है। ज्ञानयोग में शरण लो, क्योंकि कर्म करने वाले लोग दुःखी होते हैं।",
+        "hindi_meaning": "हे परम पुरुष, सबके उद्गम, समस्त जीवों के स्वामी, देवों के देव और ब्रह्मांड के प्रभु, निश्चय ही आप अपनी अंतरंगा शक्ति से स्वयं को केवल स्वयं ही जानते हैं।",
         "meaning": "Indeed, You alone know Yourself by Your own internal potency, O Supreme Person, origin of all, Lord of all beings, God of gods, Lord of the universe!"
       },
       {
@@ -3588,7 +3588,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः |\nयाभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि ||१०-१६||",
         "transliteration": "vaktum arhasy aśheṣheṇa divyā hy ātma-vibhūtayaḥ\nyābhir vibhūtibhir lokān imāṁs tvaṁ vyāpya tiṣhṭhasi",
-        "hindi_meaning": "जो व्यक्ति कर्मफल से मुक्त है, वह ज्ञानयोग द्वारा पाप और पुण्य दोनों से मुक्त हो जाता है। इसलिए तुम योग में स्थित होकर कर्म करो।",
+        "hindi_meaning": "कृपा करके अपने उन दिव्य ऐश्वर्यों का विस्तार से वर्णन करें, जिनसे आप इन सभी लोकों में व्याप्त हैं।",
         "meaning": "Please tell me in detail of Your divine opulences by which You pervade all these worlds."
       },
       {
@@ -3597,7 +3597,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन् |\nकेषु केषु च भावेषु चिन्त्योऽसि भगवन्मया ||१०-१७||",
         "transliteration": "kathaṁ vidyām ahaṁ yogiṁs tvāṁ sadā parichintayan\nkeṣhu keṣhu cha bhāveṣhu chintyo ’si bhagavan mayā",
-        "hindi_meaning": "ज्ञानी लोग कर्मफल का त्याग करके जन्म और मृत्यु के चक्र से मुक्त हो जाते हैं और वे उस स्थान को प्राप्त करते हैं, जहाँ दुःख नहीं है।",
+        "hindi_meaning": "हे कृष्ण, हे परम योगेश्वर, मैं निरंतर आपका चिंतन कैसे करूँ और आपको कैसे जानूँ? हे पूर्ण पुरुषोत्तम भगवान, किन-किन रूपों में आपका स्मरण किया जाए?",
         "meaning": "O Krishna, O supreme mystic, how shall I constantly think of You, and how shall I know You? In what various forms are You to be remembered, O Supreme Personality of Godhead?"
       },
       {
@@ -3606,7 +3606,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "विस्तरेणात्मनो योगं विभूतिं च जनार्दन |\nभूयः कथय तृप्तिर्हि शृण्वतो नास्ति मेऽमृतम् ||१०-१८||",
         "transliteration": "vistareṇātmano yogaṁ vibhūtiṁ cha janārdana\nbhūyaḥ kathaya tṛiptir hi śhṛiṇvato nāsti me ’mṛitam",
-        "hindi_meaning": "जब तुम्हारी बुद्धि भ्रम से मुक्त हो जाएगी, तो तुम वैराग्य और श्रवण दोनों में ही उदासीन हो जाओगे।",
+        "hindi_meaning": "हे जनार्दन, कृपा करके अपने ऐश्वर्यों की योगशक्ति का फिर विस्तार से वर्णन करें। आपके विषय में सुनकर मैं कभी तृप्त नहीं होता, क्योंकि जितना सुनता हूँ उतना ही आपके वचनों का अमृत चखना चाहता हूँ।",
         "meaning": "O Janardana, again please describe in detail the mystic power of Your opulences. I am never satiated in hearing about You, for the more I hear the more I want to taste the nectar of Your words."
       },
       {
@@ -3615,7 +3615,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "श्रीभगवानुवाच |\nहन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः |\nप्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे ||१०-१९||",
         "transliteration": "śhrī bhagavān uvācha\nhanta te kathayiṣhyāmi divyā hy ātma-vibhūtayaḥ\nprādhānyataḥ kuru-śhreṣhṭha nāsty anto vistarasya me",
-        "hindi_meaning": "हे अर्जुन! जब तुम्हारी बुद्धि वेदों के शब्दज्ञान से विचलित नहीं होगी और तुम आत्मा में स्थित हो जाओगे, तो तुम्हें दिव्य ज्ञान प्राप्त होगा।",
+        "hindi_meaning": "श्रीभगवान ने कहा: हाँ, हे अर्जुन, मैं तुम्हें अपनी प्रमुख तेजस्वी विभूतियाँ बताऊँगा, क्योंकि मेरे ऐश्वर्य का कोई अंत नहीं है।",
         "meaning": "The Supreme Personality of Godhead said: Yes, I will tell you of My splendorous manifestations, but only of those which are prominent, O Arjuna, for My opulence is limitless."
       },
       {
@@ -3624,7 +3624,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः |\nअहमादिश्च मध्यं च भूतानामन्त एव च ||१०-२०||",
         "transliteration": "aham ātmā guḍākeśha sarva-bhūtāśhaya-sthitaḥ\naham ādiśh cha madhyaṁ cha bhūtānām anta eva cha",
-        "hindi_meaning": "अर्जुन ने कहा: हे केशव! जो व्यक्ति आत्मा में स्थित है, जिसकी बुद्धि स्थिर है, वह कैसा होता है? वह कैसे बोलता है, कैसे बैठता है और कैसे चलता है?",
+        "hindi_meaning": "हे अर्जुन, मैं समस्त जीवों के हृदय में स्थित परमात्मा हूँ। मैं सभी प्राणियों का आदि, मध्य और अंत हूँ।",
         "meaning": "I am the Supersoul, O Arjuna, seated in the hearts of all living entities. I am the beginning, the middle and the end of all beings."
       },
       {
@@ -3633,7 +3633,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान् |\nमरीचिर्मरुतामस्मि नक्षत्राणामहं शशी ||१०-२१||",
         "transliteration": "ādityānām ahaṁ viṣhṇur jyotiṣhāṁ ravir aṁśhumān\nmarīchir marutām asmi nakṣhatrāṇām ahaṁ śhaśhī",
-        "hindi_meaning": "श्री भगवान ने कहा: हे पार्थ! जब मनुष्य सभी इच्छाओं को त्याग देता है और आत्मा में ही संतुष्ट रहता है, तो उसे आत्मस्थिति कहते हैं।",
+        "hindi_meaning": "आदित्यों में मैं विष्णु, प्रकाशों में तेजस्वी सूर्य, मरुतों में मरीचि और तारों में चंद्रमा हूँ।",
         "meaning": "Of the Adityas I am Vishnu, of lights I am the radiant sun, of the Maruts I am Marici, and among the stars I am the moon."
       },
       {
@@ -3642,7 +3642,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "वेदानां सामवेदोऽस्मि देवानामस्मि वासवः |\nइन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ||१०-२२||",
         "transliteration": "vedānāṁ sāma-vedo ’smi devānām asmi vāsavaḥ\nindriyāṇāṁ manaśh chāsmi bhūtānām asmi chetanā",
-        "hindi_meaning": "जो दुःख में विचलित नहीं होता, सुख में हर्षित नहीं होता, जो राग, भय और क्रोध से मुक्त है, वह स्थिरबुद्धि कहलाता है।",
+        "hindi_meaning": "वेदों में मैं सामवेद, देवताओं में स्वर्ग का राजा इंद्र, इंद्रियों में मन और जीवों में जीवन-शक्ति अर्थात चेतना हूँ।",
         "meaning": "Of the Vedas I am the Sama Veda; of the demigods I am Indra, the king of heaven; of the senses I am the mind; and in living beings I am the living force [consciousness]."
       },
       {
@@ -3651,7 +3651,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम् |\nवसूनां पावकश्चास्मि मेरुः शिखरिणामहम् ||१०-२३||",
         "transliteration": "rudrāṇāṁ śhaṅkaraśh chāsmi vitteśho yakṣha-rakṣhasām\nvasūnāṁ pāvakaśh chāsmi meruḥ śhikhariṇām aham",
-        "hindi_meaning": "जो सभी प्राणियों में समभाव रखता है, सुख-दुःख में समान रहता है, वह मुझे अत्यंत प्रिय है।",
+        "hindi_meaning": "समस्त रुद्रों में मैं भगवान शिव, यक्षों और राक्षसों में धन के स्वामी कुबेर, वसुओं में अग्नि और पर्वतों में मेरु हूँ।",
         "meaning": "Of all the Rudras I am Lord Shiva, of the Yaksas and Raksasas I am the Lord of wealth [Kuvera], of the Vasus I am fire [Agni], and of mountains I am Meru."
       },
       {
@@ -3660,7 +3660,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम् |\nसेनानीनामहं स्कन्दः सरसामस्मि सागरः ||१०-२४||",
         "transliteration": "purodhasāṁ cha mukhyaṁ māṁ viddhi pārtha bṛihaspatim\nsenānīnām ahaṁ skandaḥ sarasām asmi sāgaraḥ",
-        "hindi_meaning": "जो मनुष्य सभी इन्द्रियों को इन्द्रिय-विषयों से हटाकर, कछुए की तरह अपने अंगों को समेट लेता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "हे अर्जुन, पुरोहितों में मुझे प्रधान बृहस्पति जानो। सेनापतियों में मैं कार्तिकेय और जलाशयों में समुद्र हूँ।",
         "meaning": "Of priests, O Arjuna, know Me to be the chief, Brihaspati. Of generals I am Kartikeya, and of bodies of water I am the ocean."
       },
       {
@@ -3669,7 +3669,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम् |\nयज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः ||१०-२५||",
         "transliteration": "maharṣhīṇāṁ bhṛigur ahaṁ girām asmy ekam akṣharam\nyajñānāṁ japa-yajño ’smi sthāvarāṇāṁ himālayaḥ",
-        "hindi_meaning": "विषय-भोगों से वस्तुतः विरक्त व्यक्ति रुचि को त्याग देता है, लेकिन रुचि का स्वाद बना रहता है। यह रुचि भी परमात्मा को देखकर समाप्त हो जाती है।",
+        "hindi_meaning": "महर्षियों में मैं भृगु, ध्वनियों में दिव्य ओंकार, यज्ञों में पवित्र नामों का जप और अचल वस्तुओं में हिमालय हूँ।",
         "meaning": "Of the great sages I am Bhrigu; of vibrations I am the transcendental om. Of sacrifices I am the chanting of the holy names [japa], and of immovable things I am the Himalayas."
       },
       {
@@ -3678,7 +3678,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः |\nगन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः ||१०-२६||",
         "transliteration": "aśhvatthaḥ sarva-vṛikṣhāṇāṁ devarṣhīṇāṁ cha nāradaḥ\ngandharvāṇāṁ chitrarathaḥ siddhānāṁ kapilo muniḥ",
-        "hindi_meaning": "हे अर्जुन! चंचल इन्द्रियाँ बलवान मन को भी बलपूर्वक अपने वश में कर लेती हैं।",
+        "hindi_meaning": "सभी वृक्षों में मैं वटवृक्ष और देवर्षियों में नारद हूँ। गंधर्वों में चित्ररथ और सिद्ध पुरुषों में कपिल मुनि हूँ।",
         "meaning": "Of all trees I am the banyan tree, and of the sages among the demigods I am Narada. Of the Gandharvas I am Citraratha, and among perfected beings I am the sage Kapila."
       },
       {
@@ -3687,7 +3687,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम् |\nऐरावतं गजेन्द्राणां नराणां च नराधिपम् ||१०-२७||",
         "transliteration": "uchchaiḥśhravasam aśhvānāṁ viddhi mām amṛitodbhavam\nairāvataṁ gajendrāṇāṁ narāṇāṁ cha narādhipam",
-        "hindi_meaning": "हे अर्जुन! जो व्यक्ति सभी इन्द्रियों को वश में करके मुझमें मन लगाता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "घोड़ों में मुझे अमृत के लिए समुद्र-मंथन से उत्पन्न उच्चैःश्रवा जानो। श्रेष्ठ हाथियों में मैं ऐरावत और मनुष्यों में राजा हूँ।",
         "meaning": "Of horses know Me to be Uccaihsrava, produced during the churning of the ocean for nectar. Of lordly elephants I am Airavata, and among men I am the monarch."
       },
       {
@@ -3696,7 +3696,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "आयुधानामहं वज्रं धेनूनामस्मि कामधुक् |\nप्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः ||१०-२८||",
         "transliteration": "āyudhānām ahaṁ vajraṁ dhenūnām asmi kāmadhuk\nprajanaśh chāsmi kandarpaḥ sarpāṇām asmi vāsukiḥ",
-        "hindi_meaning": "हे अर्जुन! जब मनुष्य विषयों का चिन्तन करता है, तो उनके प्रति आसक्ति उत्पन्न होती है। आसक्ति से कामना उत्पन्न होती है और कामना से क्रोध उत्पन्न होता है।",
+        "hindi_meaning": "शस्त्रों में मैं वज्र, गायों में सुरभि, संतान उत्पत्ति के कारणों में प्रेमदेव कंदर्प और सर्पों में वासुकि हूँ।",
         "meaning": "Of weapons I am the thunderbolt; among cows I am the surabhi. Of causes for procreation I am Kandarpa, the god of love, and of serpents I am Vasuki."
       },
       {
@@ -3705,7 +3705,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "अनन्तश्चास्मि नागानां वरुणो यादसामहम् |\nपितॄणामर्यमा चास्मि यमः संयमतामहम् ||१०-२९||",
         "transliteration": "anantaśh chāsmi nāgānāṁ varuṇo yādasām aham\npitṝīṇām aryamā chāsmi yamaḥ saṁyamatām aham",
-        "hindi_meaning": "क्रोध से भ्रम उत्पन्न होता है, भ्रम से स्मृति भ्रष्ट होती है, स्मृति के नष्ट होने से बुद्धि नष्ट हो जाती है और बुद्धि के नष्ट होने से मनुष्य का पतन हो जाता है।",
+        "hindi_meaning": "अनेक फनों वाले नागों में मैं अनंत और जलचरों में देवता वरुण हूँ। दिवंगत पितरों में अर्यमा और दंड देने वालों में मृत्यु का स्वामी यम हूँ।",
         "meaning": "Of the many-hooded Nagas I am Ananta, and among the aquatics I am the demigod Varuna. Of departed ancestors I am Aryama, and among the dispensers of law I am Yama, the lord of death."
       },
       {
@@ -3714,7 +3714,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम् |\nमृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम् ||१०-३०||",
         "transliteration": "prahlādaśh chāsmi daityānāṁ kālaḥ kalayatām aham\nmṛigāṇāṁ cha mṛigendro ’haṁ vainateyaśh cha pakṣhiṇām",
-        "hindi_meaning": "लेकिन जो व्यक्ति इन्द्रियों को वश में करके, राग-द्वेष से रहित होकर, अपने स्वरूप में स्थित रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "दैत्य असुरों में मैं भक्त प्रह्लाद, वश में करने वालों में काल, पशुओं में सिंह और पक्षियों में गरुड़ हूँ।",
         "meaning": "Among the Daitya demons I am the devoted Prahlada, among subduers I am time, among beasts I am the lion, and among birds I am Garuda."
       },
       {
@@ -3723,7 +3723,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "पवनः पवतामस्मि रामः शस्त्रभृतामहम् |\nझषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी ||१०-३१||",
         "transliteration": "pavanaḥ pavatām asmi rāmaḥ śhastra-bhṛitām aham\njhaṣhāṇāṁ makaraśh chāsmi srotasām asmi jāhnavī",
-        "hindi_meaning": "शान्ति प्राप्त होने पर सभी दुःखों का अन्त हो जाता है और शान्त चित्त वाले की बुद्धि शीघ्र स्थिर हो जाती है।",
+        "hindi_meaning": "पवित्र करने वालों में मैं वायु, शस्त्रधारियों में राम, मछलियों में मकर और बहती नदियों में गंगा हूँ।",
         "meaning": "Of purifiers I am the wind, of the wielders of weapons I am Rama, of fishes I am the shark, and of flowing rivers I am the Ganges."
       },
       {
@@ -3732,7 +3732,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन |\nअध्यात्मविद्या विद्यानां वादः प्रवदतामहम् ||१०-३२||",
         "transliteration": "sargāṇām ādir antaśh cha madhyaṁ chaivāham arjuna\nadhyātma-vidyā vidyānāṁ vādaḥ pravadatām aham",
-        "hindi_meaning": "जो व्यक्ति योग में स्थित नहीं है, उसकी बुद्धि स्थिर नहीं होती और उसके लिए आत्मज्ञान नहीं है। आत्मज्ञान के बिना शान्ति नहीं है और शान्ति के बिना सुख कहाँ?",
+        "hindi_meaning": "हे अर्जुन, समस्त सृष्टियों का आदि, अंत और मध्य भी मैं हूँ। सभी विद्याओं में मैं आत्मविद्या और तर्क करने वालों में निर्णायक सत्य हूँ।",
         "meaning": "Of all creations I am the beginning and the end and also the middle, O Arjuna. Of all sciences I am the spiritual science of the self, and among logicians I am the conclusive truth."
       },
       {
@@ -3741,7 +3741,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "अक्षराणामकारोऽस्मि द्वन्द्वः सामासिकस्य च |\nअहमेवाक्षयः कालो धाताहं विश्वतोमुखः ||१०-३३||",
         "transliteration": "akṣharāṇām a-kāro ’smi dvandvaḥ sāmāsikasya cha\naham evākṣhayaḥ kālo dhātāhaṁ viśhvato-mukhaḥ",
-        "hindi_meaning": "जो इन्द्रियाँ चंचल हैं, उन्हें वश में न करने पर मन भी उनके पीछे-पीछे भटकता है, जैसे वायु नाव को बहा ले जाती है।",
+        "hindi_meaning": "अक्षरों में मैं अकार और समासों में द्वंद्व समास हूँ। मैं अक्षय काल भी हूँ और स्रष्टाओं में ब्रह्मा हूँ।",
         "meaning": "Of letters I am the letter A, and among compound words I am the dual compound. I am also inexhaustible time, and of creators I am Brahma."
       },
       {
@@ -3750,7 +3750,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "मृत्युः सर्वहरश्चाहमुद्भवश्च भविष्यताम् |\nकीर्तिः श्रीर्वाक्च नारीणां स्मृतिर्मेधा धृतिः क्षमा ||१०-३४||",
         "transliteration": "mṛityuḥ sarva-haraśh chāham udbhavaśh cha bhaviṣhyatām\nkīrtiḥ śhrīr vāk cha nārīṇāṁ smṛitir medhā dhṛitiḥ kṣhamā",
-        "hindi_meaning": "हे महाबाहो! इसलिए जो व्यक्ति सभी इन्द्रियों को इन्द्रिय-विषयों से पूर्णतः हटा देता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "मैं सबको ग्रसने वाली मृत्यु और भविष्य में उत्पन्न होने वाली प्रत्येक वस्तु का उत्पत्ति-सिद्धांत हूँ। स्त्रियों में मैं कीर्ति, श्री, सुंदर वाणी, स्मृति, मेधा, दृढ़ता और क्षमा हूँ।",
         "meaning": "I am all-devouring death, and I am the generating principle of all that is yet to be. Among women I am fame, fortune, fine speech, memory, intelligence, steadfastness and patience."
       },
       {
@@ -3759,7 +3759,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "बृहत्साम तथा साम्नां गायत्री छन्दसामहम् |\nमासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः ||१०-३५||",
         "transliteration": "bṛihat-sāma tathā sāmnāṁ gāyatrī chhandasām aham\nmāsānāṁ mārga-śhīrṣho ’ham ṛitūnāṁ kusumākaraḥ",
-        "hindi_meaning": "जो सभी प्राणियों के लिए रात्रि है, वही जागृत पुरुष के लिए दिन है और जो सभी प्राणियों के लिए दिन है, वही जागृत पुरुष के लिए रात्रि है।",
+        "hindi_meaning": "सामवेद के स्तोत्रों में मैं बृहत्साम और छंदों में गायत्री हूँ। महीनों में मार्गशीर्ष और ऋतुओं में पुष्पों से युक्त वसंत हूँ।",
         "meaning": "Of the hymns in the Sama Veda I am the Brihat-sama, and of poetry I am the Gayatri. Of months I am Margasirsa [November-December], and of seasons I am flower-bearing spring."
       },
       {
@@ -3768,7 +3768,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम् |\nजयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम् ||१०-३६||",
         "transliteration": "dyūtaṁ chhalayatām asmi tejas tejasvinām aham\njayo ’smi vyavasāyo ’smi sattvaṁ sattvavatām aham",
-        "hindi_meaning": "जैसे सभी नदियाँ समुद्र में मिलकर अपना नाम-रूप खो देती हैं, वैसे ही ज्ञानी पुरुष सभी इच्छाओं को त्यागकर शान्ति प्राप्त करता है, न कि इच्छा करने वाला।",
+        "hindi_meaning": "मैं छलियों का जुआ और तेजस्वियों का तेज हूँ। मैं विजय, साहस और बलवानों का बल हूँ।",
         "meaning": "I am also the gambling of cheats, and of the splendid I am the splendor. I am victory, I am adventure, and I am the strength of the strong."
       },
       {
@@ -3777,7 +3777,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जयः |\nमुनीनामप्यहं व्यासः कवीनामुशना कविः ||१०-३७||",
         "transliteration": "vṛiṣhṇīnāṁ vāsudevo ’smi pāṇḍavānāṁ dhanañjayaḥ\nmunīnām apy ahaṁ vyāsaḥ kavīnām uśhanā kaviḥ",
-        "hindi_meaning": "हे पार्थ! जो व्यक्ति सभी इच्छाओं को त्यागकर, स्वयं में ही संतुष्ट रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "वृष्णिवंशियों में मैं वासुदेव और पांडवों में अर्जुन हूँ। मुनियों में मैं व्यास और महान विचारकों में उशना हूँ।",
         "meaning": "Of the descendants of Vrishni I am Vasudeva, and of the Pandavas I am Arjuna. Of the sages I am Vyasa, and among great thinkers I am Usana."
       },
       {
@@ -3786,7 +3786,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् |\nमौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ||१०-३८||",
         "transliteration": "daṇḍo damayatām asmi nītir asmi jigīṣhatām\nmaunaṁ chaivāsmi guhyānāṁ jñānaṁ jñānavatām aham",
-        "hindi_meaning": "हे अर्जुन! यह ब्रह्म की स्थिति है। इसे प्राप्त करके मनुष्य मोहित नहीं होता। इस अवस्था में स्थित रहकर, अन्त समय में भी, वह ब्रह्म-निर्वाण को प्राप्त करता है।",
+        "hindi_meaning": "अधर्म का दमन करने के सभी साधनों में मैं दंड और विजय चाहने वालों में नीति हूँ। रहस्यों में मैं मौन और ज्ञानियों में ज्ञान हूँ।",
         "meaning": "Among all means of suppressing lawlessness I am punishment, and of those who seek victory I am morality. Of secret things I am silence, and of the wise I am the wisdom."
       },
       {
@@ -3795,7 +3795,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "यच्चापि सर्वभूतानां बीजं तदहमर्जुन |\nन तदस्ति विना यत्स्यान्मया भूतं चराचरम् ||१०-३९||",
         "transliteration": "yach chāpi sarva-bhūtānāṁ bījaṁ tad aham arjuna\nna tad asti vinā yat syān mayā bhūtaṁ charācharam",
-        "hindi_meaning": "अर्जुन ने कहा: हे जनार्दन! हे केशव! यदि आपकी दृष्टि में कर्म से बुद्धि (ज्ञान) श्रेष्ठ है, तो आप मुझे इस भयंकर युद्ध में क्यों लगा रहे हैं?",
+        "hindi_meaning": "इसके अतिरिक्त हे अर्जुन, मैं समस्त अस्तित्वों का उत्पत्ति-बीज हूँ। कोई भी चर या अचर प्राणी मेरे बिना अस्तित्व में नहीं रह सकता।",
         "meaning": "Furthermore, O Arjuna, I am the generating seed of all existences. There is no being—moving or nonmoving—that can exist without Me."
       },
       {
@@ -3804,7 +3804,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "नान्तोऽस्ति मम दिव्यानां विभूतीनां परन्तप |\nएष तूद्देशतः प्रोक्तो विभूतेर्विस्तरो मया ||१०-४०||",
         "transliteration": "nānto ’sti mama divyānāṁ vibhūtīnāṁ parantapa\neṣha tūddeśhataḥ prokto vibhūter vistaro mayā",
-        "hindi_meaning": "आपके मिश्रित वचनों से मेरी बुद्धि मोहित हो रही है। इसलिए निश्चयपूर्वक एक ही बात कहिए, जिससे मैं श्रेय प्राप्त करूँ।",
+        "hindi_meaning": "हे शत्रुओं के महाविजेता, मेरी दिव्य विभूतियों का कोई अंत नहीं है। मैंने तुम्हें जो बताया है, वह मेरे अनंत ऐश्वर्यों का केवल संकेत है।",
         "meaning": "O mighty conqueror of enemies, there is no end to My divine manifestations. What I have spoken to you is but a mere indication of My infinite opulences."
       },
       {
@@ -3813,7 +3813,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा |\nतत्तदेवावगच्छ त्वं मम तेजोंऽशसम्भवम् ||१०-४१||",
         "transliteration": "yad yad vibhūtimat sattvaṁ śhrīmad ūrjitam eva vā\ntat tad evāvagachchha tvaṁ mama tejo-’ṁśha-sambhavam",
-        "hindi_meaning": "श्री भगवान ने कहा: हे निष्पाप अर्जुन! मैंने पहले दो प्रकार की निष्ठा बताई है - सांख्ययोगियों के लिए ज्ञानयोग और योगियों के लिए कर्मयोग।",
+        "hindi_meaning": "जान लो कि प्रत्येक ऐश्वर्यवान, सुंदर और यशस्वी सृष्टि मेरे तेज की एक चिनगारी से उत्पन्न होती है।",
         "meaning": "Know that all opulent, beautiful and glorious creations spring from but a spark of My splendor."
       },
       {
@@ -3822,7 +3822,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 10,
         "text": "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन |\nविष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत् ||१०-४२||",
         "transliteration": "athavā bahunaitena kiṁ jñātena tavārjuna\nviṣhṭabhyāham idaṁ kṛitsnam ekāṁśhena sthito jagat",
-        "hindi_meaning": "मनुष्य केवल कर्म न करने से कर्मफल से मुक्त नहीं होता और न ही केवल संन्यास से सिद्धि प्राप्त करता है।",
+        "hindi_meaning": "किंतु हे अर्जुन, इस सारे विस्तृत ज्ञान की क्या आवश्यकता है? मैं अपने एक अंश मात्र से इस संपूर्ण ब्रह्मांड में व्याप्त होकर उसे धारण करता हूँ।",
         "meaning": "But what need is there, Arjuna, for all this detailed knowledge? With a single fragment of Myself I pervade and support this entire universe."
       }
     ]
@@ -3841,7 +3841,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "अर्जुन उवाच |\nमदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम् |\nयत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम ||११-१||",
         "transliteration": "arjuna uvācha\nmad-anugrahāya paramaṁ guhyam adhyātma-saṁjñitam\nyat tvayoktaṁ vachas tena moho ’yaṁ vigato mama",
-        "hindi_meaning": "कोई भी क्षणभर भी बिना कर्म किए नहीं रह सकता, क्योंकि सभी प्रकृति के गुणों से बाध्य होकर कर्म करने को विवश हैं।",
+        "hindi_meaning": "अर्जुन ने कहा: आपने कृपापूर्वक मुझे परम गोपनीय आध्यात्मिक विषयों के जो उपदेश दिए हैं, उन्हें सुनकर अब मेरा मोह दूर हो गया है।",
         "meaning": "Arjuna said: By my hearing the instructions You have kindly given me about these most confidential spiritual subjects, my illusion has now been dispelled."
       },
       {
@@ -3850,7 +3850,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया |\nत्वत्तः कमलपत्राक्ष माहात्म्यमपि चाव्ययम् ||११-२||",
         "transliteration": "bhavāpyayau hi bhūtānāṁ śhrutau vistaraśho mayā\ntvattaḥ kamala-patrākṣha māhātmyam api chāvyayam",
-        "hindi_meaning": "जो व्यक्ति कर्मेन्द्रियों को वश में करके मन से इन्द्रिय-विषयों का चिन्तन करता है, वह मूढ़ात्मा और मिथ्याचारी कहलाता है।",
+        "hindi_meaning": "हे कमलनयन, मैंने आपसे सभी जीवों की उत्पत्ति और विनाश के विषय में विस्तार से सुना है और आपकी अक्षय महिमा को अनुभव किया है।",
         "meaning": "O lotus-eyed one, I have heard from You in detail about the appearance and disappearance of every living entity and have realized Your inexhaustible glories."
       },
       {
@@ -3859,7 +3859,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "एवमेतद्यथात्थ त्वमात्मानं परमेश्वर |\nद्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम ||११-३||",
         "transliteration": "evam etad yathāttha tvam ātmānaṁ parameśhvara\ndraṣhṭum ichchhāmi te rūpam aiśhvaraṁ puruṣhottama",
-        "hindi_meaning": "हे अर्जुन! जो व्यक्ति मन से इन्द्रियों को वश में करके कर्मेन्द्रियों से कर्मयोग करता है, वह श्रेष्ठ है।",
+        "hindi_meaning": "हे समस्त पुरुषों में महानतम, हे परम स्वरूप, जैसा आपने अपना वर्णन किया है वैसा ही मैं आपको अपने सामने देख रहा हूँ, फिर भी मैं देखना चाहता हूँ कि आपने इस जगत में कैसे प्रवेश किया है। मैं आपका वह रूप देखना चाहता हूँ।",
         "meaning": "O greatest of all personalities, O supreme form, though I see You here before me in Your actual position, as You have described Yourself, I wish to see how You have entered into this cosmic manifestation. I want to see that form of Yours."
       },
       {
@@ -3868,7 +3868,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो |\nयोगेश्वर ततो मे त्वं दर्शयात्मानमव्ययम् ||११-४||",
         "transliteration": "manyase yadi tach chhakyaṁ mayā draṣhṭum iti prabho\nyogeśhvara tato me tvaṁ darśhayātmānam avyayam",
-        "hindi_meaning": "तुम नियत कर्म करो, क्योंकि कर्म न करने से श्रेष्ठ है कर्म करना। कर्म न करने से तुम्हारा शरीर-निर्वाह भी नहीं हो सकता।",
+        "hindi_meaning": "हे मेरे प्रभु, हे समस्त योगशक्ति के स्वामी, यदि आप मुझे अपना विराट रूप देखने योग्य मानते हैं, तो कृपा करके अपना वह विश्वरूप दिखाएँ।",
         "meaning": "If You think that I am able to behold Your cosmic form, O my Lord, O master of all mystic power, then kindly show me that universal Self."
       },
       {
@@ -3877,7 +3877,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "श्रीभगवानुवाच |\nपश्य मे पार्थ रूपाणि शतशोऽथ सहस्रशः |\nनानाविधानि दिव्यानि नानावर्णाकृतीनि च ||११-५||",
         "transliteration": "śhrī bhagavān uvācha\npaśhya me pārtha rūpāṇi śhataśho ’tha sahasraśhaḥ\nnānā-vidhāni divyāni nānā-varṇākṛitīni cha",
-        "hindi_meaning": "हे कौन्तेय! यज्ञ के अतिरिक्त कर्म करने से यह लोक कर्मबन्धन में बँध जाता है। इसलिए यज्ञ के लिए कर्म करो, आसक्ति रहित होकर।",
+        "hindi_meaning": "श्रीभगवान ने कहा: मेरे प्रिय अर्जुन, हे पृथापुत्र, अब मेरी सैकड़ों-हजारों विविध दिव्य और बहुरंगी विभूतियों को देखो।",
         "meaning": "The Supreme Personality of Godhead said: My dear Arjuna, O son of Pritha, see now My opulences, hundreds of thousands of varied divine and multicolored forms."
       },
       {
@@ -3886,7 +3886,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "पश्यादित्यान्वसून्रुद्रानश्विनौ मरुतस्तथा |\nबहून्यदृष्टपूर्वाणि पश्याश्चर्याणि भारत ||११-६||",
         "transliteration": "paśhyādityān vasūn rudrān aśhvinau marutas tathā\nbahūny adṛiṣhṭa-pūrvāṇi paśhyāśhcharyāṇi bhārata",
-        "hindi_meaning": "प्रजापति ने प्रजाओं को यज्ञ सहित सृष्ट करके कहा: इससे तुम लोग वृद्धि को प्राप्त हो और यह तुम्हारा इष्टकामधुक (सभी इच्छाओं को पूर्ण करने वाला) हो।",
+        "hindi_meaning": "हे भरतश्रेष्ठ, यहाँ आदित्यों, वसुओं, रुद्रों, अश्विनीकुमारों और अन्य सभी देवताओं के विभिन्न रूप देखो। ऐसी अनेक अद्भुत वस्तुएँ देखो जिन्हें पहले किसी ने न देखा न सुना है।",
         "meaning": "O best of the Bharatas, see here the different manifestations of Adityas, Vasus, Rudras, Asvini-kumaras and all the other demigods. Behold the many wonderful things which no one has ever seen or heard of before."
       },
       {
@@ -3895,7 +3895,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम् |\nमम देहे गुडाकेश यच्चान्यद्द्रष्टुमिच्छसि ||११-७||",
         "transliteration": "ihaika-sthaṁ jagat kṛitsnaṁ paśhyādya sa-charācharam\nmama dehe guḍākeśha yach chānyad draṣhṭum ichchhasi",
-        "hindi_meaning": "इससे देवताओं को तृप्त करो और देवता तुम्हें तृप्त करेंगे। इस प्रकार एक-दूसरे को तृप्त करके तुम परम श्रेय को प्राप्त होगे।",
+        "hindi_meaning": "हे अर्जुन, तुम जो कुछ देखना चाहते हो, उसे इसी क्षण मेरे इस शरीर में देखो। यह विश्वरूप तुम्हें वर्तमान और भविष्य की इच्छित सभी वस्तुएँ दिखा सकता है। समस्त चर-अचर यहाँ एक ही स्थान पर पूर्णतः स्थित हैं।",
         "meaning": "O Arjuna, whatever you wish to see, behold at once in this body of Mine! This universal form can show you whatever you now desire to see and whatever you may want to see in the future. Everything—moving and nonmoving—is here completely, in one place."
       },
       {
@@ -3904,7 +3904,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा |\nदिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम् ||११-८||",
         "transliteration": "na tu māṁ śhakyase draṣhṭum anenaiva sva-chakṣhuṣhā\ndivyaṁ dadāmi te chakṣhuḥ paśhya me yogam aiśhvaram",
-        "hindi_meaning": "यज्ञ से तृप्त देवता तुम्हें सभी वांछित वस्तुएँ प्रदान करेंगे। जो उनके द्वारा दी गई वस्तुओं का भोग करके उन्हें नहीं देता, वह चोर है।",
+        "hindi_meaning": "किंतु तुम मुझे अपनी वर्तमान आँखों से नहीं देख सकते। इसलिए मैं तुम्हें दिव्य दृष्टि देता हूँ। मेरी योगमयी ऐश्वर्य को देखो।",
         "meaning": "But you cannot see Me with your present eyes. Therefore I give you divine eyes. Behold My mystic opulence!"
       },
       {
@@ -3913,7 +3913,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "सञ्जय उवाच |\nएवमुक्त्वा ततो राजन्महायोगेश्वरो हरिः |\nदर्शयामास पार्थाय परमं रूपमैश्वरम् ||११-९||",
         "transliteration": "sañjaya uvācha\nevam uktvā tato rājan mahā-yogeśhvaro hariḥ\ndarśhayām āsa pārthāya paramaṁ rūpam aiśhvaram",
-        "hindi_meaning": "यज्ञशेष से भोजन करने वाले साधु सभी पापों से मुक्त हो जाते हैं, लेकिन जो अपने लिए ही पकाते हैं, वे पाप को भोगते हैं।",
+        "hindi_meaning": "संजय ने कहा: हे राजन्, ऐसा कहकर समस्त योगशक्ति के परम स्वामी भगवान ने अर्जुन को अपना विश्वरूप दिखाया।",
         "meaning": "Sanjaya said: O King, having spoken thus, the Supreme Lord of all mystic power, the Personality of Godhead, displayed His universal form to Arjuna."
       },
       {
@@ -3922,7 +3922,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "अनेकवक्त्रनयनमनेकाद्भुतदर्शनम् |\nअनेकदिव्याभरणं दिव्यानेकोद्यतायुधम् ||११-१०||",
         "transliteration": "aneka-vaktra-nayanam anekādbhuta-darśhanam\naneka-divyābharaṇaṁ divyānekodyatāyudham",
-        "hindi_meaning": "प्राणियों की उत्पत्ति अन्न से होती है, अन्न की उत्पत्ति वर्षा से होती है, वर्षा यज्ञ से होती है और यज्ञ कर्म से होता है।",
+        "hindi_meaning": "अर्जुन ने उस विश्वरूप में असंख्य मुख, असंख्य नेत्र और असंख्य अद्भुत दृश्य देखे। वह रूप अनेक दिव्य आभूषणों से सुसज्जित था और अनेक उठे हुए दिव्य शस्त्र धारण किए था।",
         "meaning": "Arjuna saw in that universal form unlimited mouths, unlimited eyes, unlimited wonderful visions. The form was decorated with many celestial ornaments and bore many divine upraised weapons."
       },
       {
@@ -3931,7 +3931,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम् |\nसर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम् ||११-११||",
         "transliteration": "divya-mālyāmbara-dharaṁ divya-gandhānulepanam\nsarvāśhcharya-mayaṁ devam anantaṁ viśhvato-mukham",
-        "hindi_meaning": "कर्म ब्रह्म से उत्पन्न होता है, ब्रह्म अक्षर (परमात्मा) से उत्पन्न होता है। इसलिए सर्वव्यापी ब्रह्म सदैव यज्ञ में स्थित है।",
+        "hindi_meaning": "उन्होंने दिव्य मालाएँ और वस्त्र पहने थे तथा उनके शरीर पर अनेक दिव्य सुगंधियाँ लगी थीं। सब कुछ अद्भुत, प्रकाशमान, असीम और सर्वत्र विस्तृत था।",
         "meaning": "He wore celestial garlands and garments, and many divine scents were smeared over His body. All was wondrous, brilliant, unlimited, all-expanding."
       },
       {
@@ -3940,7 +3940,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता |\nयदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ||११-१२||",
         "transliteration": "divi sūrya-sahasrasya bhaved yugapad utthitā\nyadi bhāḥ sadṛiśhī sā syād bhāsas tasya mahātmanaḥ",
-        "hindi_meaning": "हे पार्थ! जो व्यक्ति इस प्रकार यज्ञ चक्र का अनुसरण नहीं करता, वह पापी जीवन बिताता है और केवल इन्द्रिय-सुख में लिप्त रहता है, वह व्यर्थ जीवन जीता है।",
+        "hindi_meaning": "यदि आकाश में सैकड़ों-हजारों सूर्य एक साथ उदित हों, तो उनका प्रकाश उस विश्वरूप में परम पुरुष के तेज के समान हो सकता है।",
         "meaning": "If hundreds of thousands of suns were to rise at once into the sky, their radiance might resemble the effulgence of the Supreme Person in that universal form."
       },
       {
@@ -3949,7 +3949,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा |\nअपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा ||११-१३||",
         "transliteration": "tatraika-sthaṁ jagat kṛitsnaṁ pravibhaktam anekadhā\napaśhyad deva-devasya śharīre pāṇḍavas tadā",
-        "hindi_meaning": "लेकिन जो व्यक्ति आत्मा में आनन्दित है, आत्मा में तृप्त है और आत्मा में ही संतुष्ट है, उसके लिए कोई कर्तव्य नहीं है।",
+        "hindi_meaning": "उस समय अर्जुन ने भगवान के विश्वरूप में अनेक हजारों भागों में विभक्त होते हुए भी ब्रह्मांड के असीम विस्तारों को एक ही स्थान पर स्थित देखा।",
         "meaning": "At that time Arjuna could see in the universal form of the Lord the unlimited expansions of the universe situated in one place although divided into many, many thousands."
       },
       {
@@ -3958,7 +3958,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "ततः स विस्मयाविष्टो हृष्टरोमा धनञ्जयः |\nप्रणम्य शिरसा देवं कृताञ्जलिरभाषत ||११-१४||",
         "transliteration": "tataḥ sa vismayāviṣhṭo hṛiṣhṭa-romā dhanañjayaḥ\npraṇamya śhirasā devaṁ kṛitāñjalir abhāṣhata",
-        "hindi_meaning": "उसके लिए कर्म करने में कोई प्रयोजन नहीं है और कर्म न करने में भी कोई प्रयोजन नहीं है। उसे किसी भी प्राणी पर निर्भर नहीं रहना पड़ता।",
+        "hindi_meaning": "तब चकित और विस्मित अर्जुन के रोम खड़े हो गए। उन्होंने सिर झुकाकर प्रणाम किया और हाथ जोड़कर परमेश्वर से प्रार्थना करने लगे।",
         "meaning": "Then, bewildered and astonished, his hair standing on end, Arjuna bowed his head to offer obeisances and with folded hands began to pray to the Supreme Lord."
       },
       {
@@ -3967,7 +3967,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "अर्जुन उवाच |\nपश्यामि देवांस्तव देव देहे\nसर्वांस्तथा भूतविशेषसङ्घान् |\nब्रह्माणमीशं कमलासनस्थ\nमृषींश्च सर्वानुरगांश्च दिव्यान् ||११-१५||",
         "transliteration": "arjuna uvācha\npaśhyāmi devāṁs tava deva dehe\nsarvāṁs tathā bhūta-viśheṣha-saṅghān\nbrahmāṇam īśhaṁ kamalāsana-stham\nṛiṣhīṁśh cha sarvān uragāṁśh cha divyān",
-        "hindi_meaning": "इसलिए सदैव कर्तव्यपूर्वक कर्म करो, बिना आसक्ति के। बिना आसक्ति के कर्म करने से मनुष्य परम को प्राप्त करता है।",
+        "hindi_meaning": "अर्जुन ने कहा: मेरे प्रिय भगवान कृष्ण, मैं आपके शरीर में सभी देवताओं और विभिन्न जीवों को एकत्र देख रहा हूँ। मैं कमल पर बैठे ब्रह्मा, भगवान शिव, सभी ऋषियों और दिव्य सर्पों को भी देख रहा हूँ।",
         "meaning": "Arjuna said: My dear Lord Krishna, I see assembled in Your body all the demigods and various other living entities. I see Brahma sitting on the lotus flower, as well as Lord Shiva and all the sages and divine serpents."
       },
       {
@@ -3976,7 +3976,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "अनेकबाहूदरवक्त्रनेत्रं\nपश्यामि त्वां सर्वतोऽनन्तरूपम् |\nनान्तं न मध्यं न पुनस्तवादिं\nपश्यामि विश्वेश्वर विश्वरूप ||११-१६||",
         "transliteration": "aneka-bāhūdara-vaktra-netraṁ\npaśhyāmi tvāṁ sarvato ’nanta-rūpam\nnāntaṁ na madhyaṁ na punas tavādiṁ\npaśhyāmi viśhveśhvara viśhva-rūpa",
-        "hindi_meaning": "राजा जनक आदि ने केवल कर्म करके ही सिद्धि प्राप्त की थी। लोक की स्थिति के लिए भी तुम्हें कर्म करना चाहिए।",
+        "hindi_meaning": "हे ब्रह्मांड के प्रभु, हे विश्वरूप, मैं आपके शरीर में सर्वत्र फैली हुई असंख्य भुजाएँ, उदर, मुख और नेत्र देखता हूँ। मैं आपमें न अंत, न मध्य और न आरंभ देखता हूँ।",
         "meaning": "O Lord of the universe, O universal form, I see in Your body many, many arms, bellies, mouths and eyes, expanded everywhere, without limit. I see in You no end, no middle and no beginning."
       },
       {
@@ -3985,7 +3985,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "किरीटिनं गदिनं चक्रिणं च\nतेजोराशिं सर्वतो दीप्तिमन्तम् |\nपश्यामि त्वां दुर्निरीक्ष्यं समन्ता\nद्दीप्तानलार्कद्युतिमप्रमेयम् ||११-१७||",
         "transliteration": "kirīṭinaṁ gadinaṁ chakriṇaṁ cha\ntejo-rāśhiṁ sarvato dīptimantam\npaśhyāmi tvāṁ durnirīkṣhyaṁ samantād\ndīptānalārka-dyutim aprameyam",
-        "hindi_meaning": "जो श्रेष्ठ व्यक्ति जैसा करता है, सामान्य लोग भी वैसा ही करते हैं। जो वह मानकर चलता है, लोग उसका अनुसरण करते हैं।",
+        "hindi_meaning": "चारों ओर फैलते प्रज्वलित अग्नि या सूर्य के अपरिमेय प्रकाश जैसे चकाचौंध करने वाले तेज के कारण आपका रूप देखना कठिन है। फिर भी मैं मुकुटों, गदाओं और चक्रों से सुशोभित इस दीप्त रूप को सर्वत्र देखता हूँ।",
         "meaning": "Your form is difficult to see because of its glaring effulgence, spreading on all sides, like blazing fire or the immeasurable radiance of the sun. Yet I see this glowing form everywhere, adorned with various crowns, clubs and discs."
       },
       {
@@ -3994,7 +3994,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "त्वमक्षरं परमं वेदितव्यं\nत्वमस्य विश्वस्य परं निधानम् |\nत्वमव्ययः शाश्वतधर्मगोप्ता\nसनातनस्त्वं पुरुषो मतो मे ||११-१८||",
         "transliteration": "tvam akṣharaṁ paramaṁ veditavyaṁ\ntvam asya viśhvasya paraṁ nidhānam\ntvam avyayaḥ śhāśhvata-dharma-goptā\nsanātanas tvaṁ puruṣho mato me",
-        "hindi_meaning": "हे पार्थ! तीनों लोकों में मेरे लिए कोई कर्तव्य नहीं है, न ही मुझे कुछ प्राप्त करना है या प्राप्त नहीं करना है, फिर भी मैं कर्म में लगा रहता हूँ।",
+        "hindi_meaning": "आप परम आदि लक्ष्य हैं। आप इस संपूर्ण ब्रह्मांड के परम आश्रय हैं। आप अक्षय और पुरातनतम हैं। आप सनातन धर्म के पालक और पूर्ण पुरुषोत्तम भगवान हैं। यही मेरा मत है।",
         "meaning": "You are the supreme primal objective. You are the ultimate resting place of all this universe. You are inexhaustible, and You are the oldest. You are the maintainer of the eternal religion, the Personality of Godhead. This is my opinion."
       },
       {
@@ -4003,7 +4003,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "अनादिमध्यान्तमनन्तवीर्य\nमनन्तबाहुं शशिसूर्यनेत्रम् |\nपश्यामि त्वां दीप्तहुताशवक्त्रं\nस्वतेजसा विश्वमिदं तपन्तम् ||११-१९||",
         "transliteration": "anādi-madhyāntam ananta-vīryam\nananta-bāhuṁ śhaśhi-sūrya-netram\npaśhyāmi tvāṁ dīpta-hutāśha-vaktraṁ\nsva-tejasā viśhvam idaṁ tapantam",
-        "hindi_meaning": "हे पार्थ! यदि मैं नियत कर्म न करूँ, तो सभी लोग मेरे मार्ग का अनुसरण करेंगे और यह लोक नष्ट हो जाएगा।",
+        "hindi_meaning": "आपका न आदि, न मध्य और न अंत है। आपकी महिमा असीम है। आपकी असंख्य भुजाएँ हैं और सूर्य तथा चंद्रमा आपके नेत्र हैं। मैं आपके मुख से प्रज्वलित अग्नि निकलते और आपके तेज से इस संपूर्ण ब्रह्मांड को जलते देख रहा हूँ।",
         "meaning": "You are without origin, middle or end. Your glory is unlimited. You have numberless arms, and the sun and moon are Your eyes. I see You with blazing fire coming forth from Your mouth, burning this entire universe by Your own radiance."
       },
       {
@@ -4012,7 +4012,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "द्यावापृथिव्योरिदमन्तरं हि\nव्याप्तं त्वयैकेन दिशश्च सर्वाः |\nदृष्ट्वाद्भुतं रूपमुग्रं तवेदं\nलोकत्रयं प्रव्यथितं महात्मन् ||११-२०||",
         "transliteration": "dyāv ā-pṛithivyor idam antaraṁ hi\nvyāptaṁ tvayaikena diśhaśh cha sarvāḥ\ndṛiṣhṭvādbhutaṁ rūpam ugraṁ tavedaṁ\nloka-trayaṁ pravyathitaṁ mahātman",
-        "hindi_meaning": "हे भारत! जैसे अज्ञानी लोग कर्मफल में आसक्त होकर कर्म करते हैं, वैसे ही ज्ञानी व्यक्ति को भी लोक की स्थिति के लिए कर्म करना चाहिए, बिना आसक्ति के।",
+        "hindi_meaning": "यद्यपि आप एक हैं, फिर भी आकाश, समस्त लोकों और उनके बीच के पूरे अंतरिक्ष में व्याप्त हैं। हे महान प्रभु, आपके इस अद्भुत और भयानक रूप को देखकर सभी लोक व्याकुल हैं।",
         "meaning": "Although You are one, You spread throughout the sky and the planets and all space between. O great one, seeing this wondrous and terrible form, all the planetary systems are perturbed."
       },
       {
@@ -4021,7 +4021,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "अमी हि त्वां सुरसङ्घा विशन्ति\nकेचिद्भीताः प्राञ्जलयो गृणन्ति |\nस्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घाः\nस्तुवन्ति त्वां स्तुतिभिः पुष्कलाभिः ||११-२१||",
         "transliteration": "amī hi tvāṁ sura-saṅghā viśhanti\nkechid bhītāḥ prāñjalayo gṛiṇanti\nsvastīty uktvā maharṣhi-siddha-saṅghāḥ\nstuvanti tvāṁ stutibhiḥ puṣhkalābhiḥ",
-        "hindi_meaning": "ज्ञानी व्यक्ति अज्ञानियों को कर्म में लगाए रखने के लिए स्वयं कर्म करता है। सभी कर्म मुझमें अर्पित करके कर्म करो।",
+        "hindi_meaning": "देवताओं के सभी समूह आपकी शरण लेकर आपमें प्रवेश कर रहे हैं। उनमें से कुछ अत्यंत भयभीत होकर हाथ जोड़कर प्रार्थना कर रहे हैं। महर्षि और सिद्ध जन मंगल हो कहते हुए वैदिक स्तोत्र गाकर आपकी प्रार्थना कर रहे हैं।",
         "meaning": "All the hosts of demigods are surrendering before You and entering into You. Some of them, very much afraid, are offering prayers with folded hands. Hosts of great sages and perfected beings, crying “All peace!” are praying to You by singing the Vedic hymns."
       },
       {
@@ -4030,7 +4030,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "रुद्रादित्या वसवो ये च साध्या\nविश्वेऽश्विनौ मरुतश्चोष्मपाश्च |\nगन्धर्वयक्षासुरसिद्धसङ्घा\nवीक्षन्ते त्वां विस्मिताश्चैव सर्वे ||११-२२||",
         "transliteration": "rudrādityā vasavo ye cha sādhyā\nviśhve ’śhvinau marutaśh choṣhmapāśh cha\ngandharva-yakṣhāsura-siddha-saṅghā\nvīkṣhante tvāṁ vismitāśh chaiva sarve",
-        "hindi_meaning": "जो व्यक्ति अहंकार से मोहित है, वह सोचता है कि मैं कर्ता हूँ, लेकिन वास्तव में सभी कर्म प्रकृति के गुणों द्वारा किए जाते हैं।",
+        "hindi_meaning": "भगवान शिव के विभिन्न रूप, आदित्य, वसु, साध्य, विश्वेदेव, दोनों अश्विनी कुमार, मरुत, पितर, गंधर्व, यक्ष, असुर और सिद्ध देवता आपको आश्चर्य से देख रहे हैं।",
         "meaning": "All the various manifestations of Lord Shiva, the Adityas, the Vasus, the Sadhyas, the Visvedevas, the two Asvis, the Maruts, the forefathers, the Gandharvas, the Yaksas, the Asuras and the perfected demigods are beholding You in wonder."
       },
       {
@@ -4039,7 +4039,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "रूपं महत्ते बहुवक्त्रनेत्रं\nमहाबाहो बहुबाहूरुपादम् |\nबहूदरं बहुदंष्ट्राकरालं\nदृष्ट्वा लोकाः प्रव्यथितास्तथाहम् ||११-२३||",
         "transliteration": "rūpaṁ mahat te bahu-vaktra-netraṁ\nmahā-bāho bahu-bāhūru-pādam\nbahūdaraṁ bahu-daṁṣhṭrā-karālaṁ\ndṛiṣhṭvā lokāḥ pravyathitās tathāham",
-        "hindi_meaning": "हे महाबाहो! जो व्यक्ति गुणों और कर्मों के स्वभाव को जानता है, वह सोचता है कि गुण गुणों में ही कर्म कर रहे हैं और आसक्त नहीं होता।",
+        "hindi_meaning": "हे महाबाहु, अनेक मुखों, नेत्रों, भुजाओं, जाँघों, पैरों, उदरों और भयानक दाँतों वाले आपके विशाल रूप को देखकर देवताओं सहित सभी लोक व्याकुल हैं और मैं भी व्याकुल हूँ।",
         "meaning": "O mighty-armed one, all the planets with their demigods are perturbed at seeing Your great form, with its many faces, eyes, arms, thighs, legs, and bellies and Your many terrible teeth; and as they are perturbed, so am I."
       },
       {
@@ -4048,7 +4048,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "नभःस्पृशं दीप्तमनेकवर्णं\nव्यात्ताननं दीप्तविशालनेत्रम् |\nदृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा\nधृतिं न विन्दामि शमं च विष्णो ||११-२४||",
         "transliteration": "nabhaḥ-spṛiśhaṁ dīptam aneka-varṇaṁ\nvyāttānanaṁ dīpta-viśhāla-netram\ndṛiṣhṭvā hi tvāṁ pravyathitāntar-ātmā\ndhṛitiṁ na vindāmi śhamaṁ cha viṣhṇo",
-        "hindi_meaning": "हे गुणातीत! जो व्यक्ति गुणों में स्थित है, वह गुणों द्वारा किए गए कर्मों में आसक्त हो जाता है, लेकिन जो गुणातीत है, वह आसक्त नहीं होता।",
+        "hindi_meaning": "हे सर्वव्यापी विष्णु, आकाश को छूते आपके अनेक दीप्त रंगों, खुले मुखों और विशाल चमकते नेत्रों को देखकर मेरा मन भय से व्याकुल है। अब मैं न धैर्य रख सकता हूँ, न मन का संतुलन।",
         "meaning": "O all-pervading Vishnu, seeing You with Your many radiant colors touching the sky, Your gaping mouths, and Your great glowing eyes, my mind is perturbed by fear. I can no longer maintain my steadiness or equilibrium of mind."
       },
       {
@@ -4057,7 +4057,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "दंष्ट्राकरालानि च ते मुखानि\nदृष्ट्वैव कालानलसन्निभानि |\nदिशो न जाने न लभे च शर्म\nप्रसीद देवेश जगन्निवास ||११-२५||",
         "transliteration": "daṁṣhṭrā-karālāni cha te mukhāni\ndṛiṣhṭvaiva kālānala-sannibhāni\ndiśho na jāne na labhe cha śharma\nprasīda deveśha jagan-nivāsa",
-        "hindi_meaning": "जो व्यक्ति गुणों में मोहित है, वह गुणों के कर्मों में आसक्त हो जाता है। जो व्यक्ति गुणातीत है, वह जानता है कि गुण गुणों में ही कर्म कर रहे हैं।",
+        "hindi_meaning": "हे देवेश, हे जगत के आश्रय, मुझ पर कृपा करें। आपके प्रलयाग्नि जैसे मुखों और भयानक दाँतों को देखकर मैं अपना संतुलन नहीं रख पा रहा हूँ और सभी दिशाओं में भ्रमित हूँ।",
         "meaning": "O Lord of lords, O refuge of the worlds, please be gracious to me. I cannot keep my balance seeing thus Your blazing deathlike faces and awful teeth. In all directions I am bewildered."
       },
       {
@@ -4066,7 +4066,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "अमी च त्वां धृतराष्ट्रस्य पुत्राः\nसर्वे सहैवावनिपालसङ्घैः |\nभीष्मो द्रोणः सूतपुत्रस्तथासौ\nसहास्मदीयैरपि योधमुख्यैः ||११-२६||",
         "transliteration": "amī cha tvāṁ dhṛitarāṣhṭrasya putrāḥ\nsarve sahaivāvani-pāla-saṅghaiḥ\nbhīṣhmo droṇaḥ sūta-putras tathāsau\nsahāsmadīyair api yodha-mukhyaiḥ",
-        "hindi_meaning": "हे अर्जुन! मुझमें अपने सभी कर्म अर्पित करो, मुझमें मन लगाओ, भक्ति करो, मुझे नमस्कार करो और मुझसे युक्त हो जाओ। इस प्रकार मुझसे युक्त होकर तुम मुझे प्राप्त करोगे।",
+        "hindi_meaning": "धृतराष्ट्र के सभी पुत्र अपने सहयोगी राजाओं सहित तथा भीष्म, द्रोण, कर्ण और हमारे प्रमुख योद्धा भी आपके भयानक मुखों में तेजी से प्रवेश कर रहे हैं।",
         "meaning": "All the sons of Dhritarashtra, along with their allied kings, and Bhishma, Drona, Karna—and our chief soldiers also—are rushing into Your fearful mouths."
       },
       {
@@ -4075,7 +4075,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "वक्त्राणि ते त्वरमाणा विशन्ति\nदंष्ट्राकरालानि भयानकानि |\nकेचिद्विलग्ना दशनान्तरेषु\nसन्दृश्यन्ते चूर्णितैरुत्तमाङ्गैः ||११-२७||",
         "transliteration": "vaktrāṇi te tvaramāṇā viśhanti\ndaṁṣhṭrā-karālāni bhayānakāni\nkechid vilagnā daśhanāntareṣhu\nsandṛiśhyante chūrṇitair uttamāṅgaiḥ",
-        "hindi_meaning": "हे अर्जुन! यदि तुम मेरे इस उपदेश का श्रद्धापूर्वक अनुसरण करोगे, तो तुम मुझे प्राप्त करोगे, क्योंकि तुम मुझसे प्रिय हो।",
+        "hindi_meaning": "और कुछ को मैं आपके दाँतों के बीच फँसा हुआ देखता हूँ, जिनके सिर चूर्ण हो गए हैं।",
         "meaning": "And some I see trapped with their heads smashed between Your teeth."
       },
       {
@@ -4084,7 +4084,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "यथा नदीनां बहवोऽम्बुवेगाः\nसमुद्रमेवाभिमुखा द्रवन्ति |\nतथा तवामी नरलोकवीरा\nविशन्ति वक्त्राण्यभिविज्वलन्ति ||११-२८||",
         "transliteration": "yathā nadīnāṁ bahavo ’mbu-vegāḥ\nsamudram evābhimukhā dravanti\ntathā tavāmī nara-loka-vīrā\nviśhanti vaktrāṇy abhivijvalanti",
-        "hindi_meaning": "लेकिन यदि तुम अहंकार के कारण मेरी बात नहीं मानोगे, तो तुम नष्ट हो जाओगे।",
+        "hindi_meaning": "जिस प्रकार नदियों की अनेक लहरें समुद्र में बहती हैं, उसी प्रकार ये सभी महान योद्धा आपके प्रज्वलित मुखों में प्रवेश कर रहे हैं।",
         "meaning": "As the many waves of the rivers flow into the ocean, so do all these great warriors enter Your blazing mouths."
       },
       {
@@ -4093,7 +4093,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "यथा प्रदीप्तं ज्वलनं पतङ्गा\nविशन्ति नाशाय समृद्धवेगाः |\nतथैव नाशाय विशन्ति लोका\nस्तवापि वक्त्राणि समृद्धवेगाः ||११-२९||",
         "transliteration": "yathā pradīptaṁ jvalanaṁ pataṅgā\nviśhanti nāśhāya samṛiddha-vegāḥ\ntathaiva nāśhāya viśhanti lokās\ntavāpi vaktrāṇi samṛiddha-vegāḥ",
-        "hindi_meaning": "सभी प्राणी अपनी प्रकृति के अनुसार कर्म करते हैं, भले ही वे ज्ञानी हों या अज्ञानी। दमन से क्या होगा?",
+        "hindi_meaning": "मैं सभी लोगों को आपके मुखों में पूरी गति से दौड़ते देख रहा हूँ, जैसे पतंगे प्रज्वलित अग्नि में नष्ट होने के लिए दौड़ते हैं।",
         "meaning": "I see all people rushing full speed into Your mouths, as moths dash to destruction in a blazing fire."
       },
       {
@@ -4102,7 +4102,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "लेलिह्यसे ग्रसमानः समन्ता\nल्लोकान्समग्रान्वदनैर्ज्वलद्भिः |\nतेजोभिरापूर्य जगत्समग्रं\nभासस्तवोग्राः प्रतपन्ति विष्णो ||११-३०||",
         "transliteration": "lelihyase grasamānaḥ samantāl\nlokān samagrān vadanair jvaladbhiḥ\ntejobhir āpūrya jagat samagraṁ\nbhāsas tavogrāḥ pratapanti viṣhṇo",
-        "hindi_meaning": "इन्द्रियों और इन्द्रिय-विषयों के प्रति राग-द्वेष को वश में करो, क्योंकि ये दोनों ही ज्ञान प्राप्ति में बाधक हैं।",
+        "hindi_meaning": "हे विष्णु, मैं आपको अपने ज्वलंत मुखों से चारों ओर के सभी लोगों को निगलते देख रहा हूँ। अपने तेज से सारे ब्रह्मांड को ढककर आप भयानक दाहक किरणों सहित प्रकट हैं।",
         "meaning": "O Vishnu, I see You devouring all people from all sides with Your flaming mouths. Covering all the universe with Your effulgence, You are manifest with terrible, scorching rays."
       },
       {
@@ -4111,7 +4111,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "आख्याहि मे को भवानुग्ररूपो\nनमोऽस्तु ते देववर प्रसीद |\nविज्ञातुमिच्छामि भवन्तमाद्यं\nन हि प्रजानामि तव प्रवृत्तिम् ||११-३१||",
         "transliteration": "ākhyāhi me ko bhavān ugra-rūpo\nnamo ’stu te deva-vara prasīda\nvijñātum ichchhāmi bhavantam ādyaṁ\nna hi prajānāmi tava pravṛittim",
-        "hindi_meaning": "अपने स्वधर्म का पालन करना, भले ही वह दोषपूर्ण हो, दूसरे के धर्म से श्रेष्ठ है। दूसरे के धर्म में मृत्यु भी भयानक है।",
+        "hindi_meaning": "हे देवेश, हे उग्ररूप, कृपा करके बताइए कि आप कौन हैं। मैं आपको नमस्कार करता हूँ, मुझ पर कृपा करें। आप आदिदेव हैं। मैं आपको जानना चाहता हूँ, क्योंकि मैं आपके प्रयोजन को नहीं समझता।",
         "meaning": "O Lord of lords, so fierce of form, please tell me who You are. I offer my obeisances unto You; please be gracious to me. You are the primal Lord. I want to know about You, for I do not know what Your mission is."
       },
       {
@@ -4120,7 +4120,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "श्रीभगवानुवाच |\nकालोऽस्मि लोकक्षयकृत्प्रवृद्धो\nलोकान्समाहर्तुमिह प्रवृत्तः |\nऋतेऽपि त्वां न भविष्यन्ति सर्वे\nयेऽवस्थिताः प्रत्यनीकेषु योधाः ||११-३२||",
         "transliteration": "śhrī bhagavān uvācha\nkālo ’smi loka-kṣhaya-kṛit pravṛiddho\nlokān samāhartum iha pravṛittaḥ\nṛite ’pi tvāṁ na bhaviṣhyanti sarve\nye ’vasthitāḥ pratyanīkeṣhu yodhāḥ",
-        "hindi_meaning": "अर्जुन ने कहा: हे वार्ष्णेय! मनुष्य बिना इच्छा के भी पाप करने को क्यों प्रेरित होता है, जैसे बलपूर्वक ले जाया जा रहा हो?",
+        "hindi_meaning": "श्रीभगवान ने कहा: मैं लोकों का महान संहारक काल हूँ और यहाँ सभी लोगों का विनाश करने आया हूँ। तुम्हारे अर्थात पांडवों के अतिरिक्त दोनों पक्षों के सभी सैनिक मारे जाएँगे।",
         "meaning": "The Supreme Personality of Godhead said: Time I am, the great destroyer of the worlds, and I have come here to destroy all people. With the exception of you [the Pandavas], all the soldiers here on both sides will be slain."
       },
       {
@@ -4129,7 +4129,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "तस्मात्त्वमुत्तिष्ठ यशो लभस्व\nजित्वा शत्रून्भुङ्क्ष्व राज्यं समृद्धम् |\nमयैवैते निहताः पूर्वमेव\nनिमित्तमात्रं भव सव्यसाचिन् ||११-३३||",
         "transliteration": "tasmāt tvam uttiṣhṭha yaśho labhasva\njitvā śhatrūn bhuṅkṣhva rājyaṁ samṛiddham\n Mayaivaita nihatāḥ pūrvam eva\n nimitta-mātraṁ bhava savya-sāchin",
-        "hindi_meaning": "श्री भगवान ने कहा: यह काम है, यह क्रोध है, जो रजोगुण से उत्पन्न होता है और बहुत ही पापी और भक्षक है। इसे इस लोक में शत्रु समझो।",
+        "hindi_meaning": "अतः उठो, युद्ध के लिए तैयार होओ और यश प्राप्त करो। शत्रुओं को जीतकर समृद्ध राज्य का भोग करो। वे मेरी व्यवस्था से पहले ही मारे जा चुके हैं और हे सव्यसाची, तुम युद्ध में केवल निमित्त बनो।",
         "meaning": "Therefore get up. Prepare to fight and win glory. Conquer your enemies and enjoy a flourishing kingdom. They are already put to death by My arrangement, and you, O Savyasaci, can be but an instrument in the fight."
       },
       {
@@ -4138,7 +4138,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "द्रोणं च भीष्मं च जयद्रथं च\nकर्णं तथान्यानपि योधवीरान् |\nमया हतांस्त्वं जहि मा व्यथिष्ठा\nयुध्यस्व जेतासि रणे सपत्नान् ||११-३४||",
         "transliteration": "droṇaṁ cha bhīṣhmaṁ cha jayadrathaṁ cha\nkarṇaṁ tathānyān api yodha-vīrān\nmayā hatāṁs tvaṁ jahi mā vyathiṣhṭhā\nyudhyasva jetāsi raṇe sapatnān",
-        "hindi_meaning": "जैसे धुँआ अग्नि को, धूल दर्पण को और गर्भ गर्भाशय को ढक लेता है, वैसे ही यह लोक काम से ढका हुआ है।",
+        "hindi_meaning": "द्रोण, भीष्म, जयद्रथ, कर्ण और अन्य महान योद्धा मेरे द्वारा पहले ही मारे जा चुके हैं। अतः उनका वध करो और व्याकुल मत होओ। केवल युद्ध करो, तुम युद्ध में शत्रुओं को पराजित करोगे।",
         "meaning": "Drona, Bhishma, Jayadratha, Karna and the other great warriors have already been destroyed by Me. Therefore, kill them and do not be disturbed. Simply fight, and you will vanquish your enemies in battle."
       },
       {
@@ -4147,7 +4147,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "सञ्जय उवाच |\nएतच्छ्रुत्वा वचनं केशवस्य\nकृताञ्जलिर्वेपमानः किरीटी |\nनमस्कृत्वा भूय एवाह कृष्णं\nसगद्गदं भीतभीतः प्रणम्य ||११-३५||",
         "transliteration": "sañjaya uvācha\netach chhrutvā vachanaṁ keśhavasya\nkṛitāñjalir vepamānaḥ kirīṭī\nnamaskṛitvā bhūya evāha kṛiṣhṇaṁ\nsa-gadgadaṁ bhīta-bhītaḥ praṇamya",
-        "hindi_meaning": "हे कौन्तेय! ज्ञानी व्यक्ति की बुद्धि भी काम से ढकी हुई है, जो शाश्वत शत्रु है और इन्द्रियों की तरह अग्नि है।",
+        "hindi_meaning": "संजय ने धृतराष्ट्र से कहा: हे राजन्, पूर्ण पुरुषोत्तम भगवान के ये वचन सुनकर काँपते हुए अर्जुन ने हाथ जोड़कर बार-बार प्रणाम किया। अत्यंत भयभीत होकर वे गद्गद वाणी में बोले।",
         "meaning": "Sanjaya said to Dhritarashtra: O King, after hearing these words from the Supreme Personality of Godhead, the trembling Arjuna offered obeisances with folded hands again and again. He spoke in a faltering voice, out of great fear."
       },
       {
@@ -4156,7 +4156,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "अर्जुन उवाच |\nस्थाने हृषीकेश तव प्रकीर्त्या\nजगत्प्रहृष्यत्यनुरज्यते च |\nरक्षांसि भीतानि दिशो द्रवन्ति\nसर्वे नमस्यन्ति च सिद्धसङ्घाः ||११-३६||",
         "transliteration": "arjuna uvācha\nsthāne hṛiṣhīkeśha tava prakīrtyā\njagat prahṛiṣhyaty anurajyate cha\nrakṣhāṁsi bhītāni diśho dravanti\nsarve namasyanti cha siddha-saṅghāḥ",
-        "hindi_meaning": "इन्द्रियाँ, मन और बुद्धि इसके निवास स्थान हैं। इनके द्वारा यह ज्ञान को ढककर जीव को मोहित करता है।",
+        "hindi_meaning": "अर्जुन ने कहा: हे हृषीकेश, आपका नाम सुनकर संसार हर्षित होता है और सभी आपकी ओर आकर्षित होते हैं। सिद्ध जन आपको सादर प्रणाम करते हैं, जबकि असुर भयभीत होकर इधर-उधर भागते हैं। यह सब उचित ही है।",
         "meaning": "Arjuna said: O master of the senses, the world becomes joyful upon hearing Your name, and thus everyone becomes attached to You. Although the perfected beings offer You their respectful homage, the demons are afraid, and they flee here and there. All this is rightly done."
       },
       {
@@ -4165,7 +4165,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "कस्माच्च ते न नमेरन्महात्मन्\nगरीयसे ब्रह्मणोऽप्यादिकर्त्रे |\nअनन्त देवेश जगन्निवास\nत्वमक्षरं सदसत्तत्परं यत् ||११-३७||",
         "transliteration": "kasmāch cha te na nameran mahātman\ngarīyase brahmaṇo ’py ādi-kartre\nananta deveśha jagan-nivāsa\ntvam akṣharaṁ sad-asat tat paraṁ yat",
-        "hindi_meaning": "हे अर्जुन! इसलिए सबसे पहले इन्द्रियों को वश में करो और इस पापी काम को नष्ट करो, जो ज्ञान और आत्मज्ञान का नाशक है।",
+        "hindi_meaning": "हे महान प्रभु, आप ब्रह्मा से भी श्रेष्ठ और आदि स्वामी हैं। वे आपको सादर प्रणाम क्यों न करें? हे अनंत, देवों के देव, जगत के आश्रय, आप अविनाशी स्रोत, समस्त कारणों के कारण और इस भौतिक जगत से परे हैं।",
         "meaning": "O great one, who stands above even Brahma, You are the original master. Why should they not offer their respectful obeisances unto You? O limitless one, God of gods, refuge of the universe! You are the invincible source, the cause of all causes, transcendental to this material manifestation."
       },
       {
@@ -4174,7 +4174,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "त्वमादिदेवः पुरुषः पुराण\nस्त्वमस्य विश्वस्य परं निधानम् |\nवेत्तासि वेद्यं च परं च धाम\nत्वया ततं विश्वमनन्तरूप ||११-३८||",
         "transliteration": "tvam ādi-devaḥ puruṣhaḥ purāṇas\ntvam asya viśhvasya paraṁ nidhānam\nvettāsi vedyaṁ cha paraṁ cha dhāma\ntvayā tataṁ viśhvam ananta-rūpa",
-        "hindi_meaning": "हे अर्जुन! इन्द्रियाँ मन से श्रेष्ठ हैं, मन बुद्धि से श्रेष्ठ है और बुद्धि से श्रेष्ठ आत्मा है।",
+        "hindi_meaning": "आप आदि पूर्ण पुरुषोत्तम भगवान, पुरातनतम और इस प्रकट जगत के परम आश्रय हैं। आप सबके ज्ञाता और समस्त ज्ञेय हैं। आप भौतिक गुणों से परे परम शरण हैं। हे अनंतरूप, यह संपूर्ण जगत आपसे व्याप्त है।",
         "meaning": "You are the original Personality of Godhead, the oldest, the ultimate sanctuary of this manifested cosmic world. You are the knower of everything, and You are all that is knowable. You are the supreme refuge, above the material modes. O limitless form! This whole cosmic manifestation is pervaded by You!"
       },
       {
@@ -4183,7 +4183,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "वायुर्यमोऽग्निर्वरुणः शशाङ्कः\nप्रजापतिस्त्वं प्रपितामहश्च |\nनमो नमस्तेऽस्तु सहस्रकृत्वः\nपुनश्च भूयोऽपि नमो नमस्ते ||११-३९||",
         "transliteration": "vāyur yamo ’gnir varuṇaḥ śhaśhāṅkaḥ\nprajāpatis tvaṁ prapitāmahaśh cha\nnamo namas te ’stu sahasra-kṛitvaḥ\npunaśh cha bhūyo ’pi namo namas te",
-        "hindi_meaning": "इसलिए हे महाबाहो! आत्मा को जानकर बुद्धि से मन को वश में करो और इस शत्रु काम को मारो, जो ज्ञान और आत्मज्ञान को नष्ट करता है।",
+        "hindi_meaning": "आप वायु और परम नियंत्रक हैं। आप अग्नि, जल और चंद्रमा हैं। आप प्रथम जीव ब्रह्मा और प्रपितामह हैं। अतः मैं आपको हजार बार और पुनः बारंबार सादर प्रणाम करता हूँ।",
         "meaning": "You are air, and You are the supreme controller! You are fire, You are water, and You are the moon! You are Brahma, the first living creature, and You are the great-grandfather. I therefore offer my respectful obeisances unto You a thousand times, and again and yet again!"
       },
       {
@@ -4192,7 +4192,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "नमः पुरस्तादथ पृष्ठतस्ते\nनमोऽस्तु ते सर्वत एव सर्व |\nअनन्तवीर्यामितविक्रमस्त्वं\nसर्वं समाप्नोषि ततोऽसि सर्वः ||११-४०||",
         "transliteration": "namaḥ purastād atha pṛiṣhṭhatas te\nnamo ’stu te sarvata eva sarva\nananta-vīryāmita-vikramas tvaṁ\nsarvaṁ samāpnoṣhi tato ’si sarvaḥ",
-        "hindi_meaning": "श्री भगवान ने कहा: मैंने इस अमर योग को सूर्य को बताया था, सूर्य ने मनु को बताया और मनु ने इक्ष्वाकु को बताया।",
+        "hindi_meaning": "आपको आगे से, पीछे से और सभी ओर से नमस्कार है। हे अनंत शक्ति, आप असीम सामर्थ्य के स्वामी हैं। आप सर्वव्यापी हैं और इस प्रकार आप ही सब कुछ हैं।",
         "meaning": "Obeisances to You from the front, from behind and from all sides! O unbounded power, You are the master of limitless might! You are all-pervading, and thus You are everything!"
       },
       {
@@ -4201,7 +4201,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "सखेति मत्वा प्रसभं यदुक्तं\nहे कृष्ण हे यादव हे सखेति |\nअजानता महिमानं तवेदं\nमया प्रमादात्प्रणयेन वापि ||११-४१||",
         "transliteration": "sakheti matvā prasabhaṁ yad uktaṁ\nhe kṛiṣhṇa he yādava he sakheti\najanatā mahimānaṁ tavedaṁ\nmayā pramādāt praṇayena vāpi",
-        "hindi_meaning": "इस प्रकार राजर्षियों द्वारा यह योग परंपरा से चला आया, लेकिन काल के साथ यह नष्ट हो गया।",
+        "hindi_meaning": "आपको अपना मित्र मानकर, आपकी महिमा न जानते हुए, मैंने उतावलेपन में आपको हे कृष्ण, हे यादव, हे मित्र कहा है। उन्माद या प्रेम में मुझसे जो कुछ हुआ हो, कृपया उसे क्षमा करें।",
         "meaning": "Thinking of You as my friend, I have rashly addressed You “O Krishna,” “O Yadava,” “O my friend,” not knowing Your glories. Please forgive whatever I may have done in madness or in love."
       },
       {
@@ -4210,7 +4210,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "यच्चावहासार्थमसत्कृतोऽसि\nविहारशय्यासनभोजनेषु |\nएकोऽथवाप्यच्युत तत्समक्षं\nतत्क्षामये त्वामहमप्रमेयम् ||११-४२||",
         "transliteration": "yach chāvahāsārtham asat-kṛito ’si\nvihāra-śhayyāsana-bhojaneṣhu\neko ’thavāpy achyuta tat-samakṣhaṁ\ntat kṣhāmaye tvām aham aprameyam",
-        "hindi_meaning": "हे अर्जुन! वही प्राचीन योग मैं आज तुम्हें बता रहा हूँ, क्योंकि तुम मेरे भक्त और मित्र हो।",
+        "hindi_meaning": "विश्राम करते, एक ही शय्या पर लेटते, साथ बैठते या भोजन करते समय, कभी अकेले और कभी अनेक मित्रों के सामने हँसी में मैंने कई बार आपका अनादर किया है। हे अच्युत, उन सभी अपराधों के लिए मुझे क्षमा करें।",
         "meaning": "I have dishonored You many times, jesting as we relaxed, lay on the same bed, or sat or ate together, sometimes alone and sometimes in front of many friends. O infallible one, please excuse me for all those offenses."
       },
       {
@@ -4219,7 +4219,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 11,
         "text": "पितासि लोकस्य चराचरस्य\nत्वमस्य पूज्यश्च गुरुर्गरीयान् |\nन त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो\nलोकत्रयेऽप्यप्रतिमप्रभाव ||११-४३||",
         "transliteration": "pitāsi lokasya charācharasya\ntvam asya pūjyaśh cha gurur garīyān\nna tvat-samo ’sty abhyadhikaḥ kuto ’nyo\nloka-traye ’py apratima-prabhāva",
-        "hindi_meaning": "अर्जुन ने कहा: आपका जन्म हाल ही में हुआ है और सूर्य का जन्म बहुत पहले हुआ था। मैं कैसे समझूँ कि आपने इसे पहले बताया था?",
+        "hindi_meaning": "आप इस संपूर्ण चर-अचर जगत के पिता, पूजनीय स्वामी और परम गुरु हैं। न कोई आपसे महान है, न कोई आपके समान हो सकता है। फिर हे अपरिमेय शक्ति के प्रभु, तीनों लोकों में कोई आपसे महान कैसे हो सकता है?",
         "meaning": "You are the father of this complete cosmic manifestation, of the moving and the nonmoving. You are its worshipable chief, the supreme spiritual master. No one is greater than You, nor can anyone be one with You. How then could there be anyone greater than You within the three worlds, O Lord of immeasurable power?"
       },
       {
@@ -4590,7 +4590,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतना धृतिः |\nएतत्क्षेत्रं समासेन सविकारमुदाहृतम् ||१३-७||",
         "transliteration": "ichchhā dveṣhaḥ sukhaṁ duḥkhaṁ saṅghātaśh chetanā dhṛitiḥ\netat kṣhetraṁ samāsena sa-vikāram udāhṛitam",
-        "hindi_meaning": "श्री भगवान ने कहा: तुम विद्वानों जैसी बातें कर रहे हो, लेकिन जो शोक के योग्य नहीं है उसके लिए शोक कर रहे हो। ज्ञानी लोग न तो जीवितों के लिए और न ही मृतकों के लिए शोक करते हैं।",
+        "hindi_meaning": "इच्छा, द्वेष, सुख, दुःख, शरीर का संघात, जीवन के लक्षण तथा धारणाएँ—संक्षेप में ये सब कर्मक्षेत्र की अन्तःक्रियाएँ मानी जाती हैं।",
         "meaning": "Desire, hatred, happiness, distress, the aggregate, the life symptoms, and convictions—all these are considered, in summary, to be the interactions of the field of activities."
       },
       {
@@ -4599,7 +4599,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् |\nआचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ||१३-८||",
         "transliteration": "amānitvam adambhitvam ahiṁsā kṣhāntir ārjavam\nāchāryopāsanaṁ śhauchaṁ sthairyam ātma-vinigrahaḥ",
-        "hindi_meaning": "न तो मैं कभी नहीं था, न तुम, न ये सभी राजा; और न भविष्य में हम में से कोई कभी नहीं होगा।",
+        "hindi_meaning": "नम्रता, दम्भहीनता, अहिंसा, सहिष्णुता, सरलता, प्रामाणिक गुरु की शरण ग्रहण करना, शुद्धता, स्थिरता और आत्मसंयम;",
         "meaning": "Humility; pridelessness; nonviolence; tolerance; simplicity; approaching a bona fide spiritual master; cleanliness; steadiness; self-control;"
       },
       {
@@ -4608,7 +4608,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च |\nजन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम् ||१३-९||",
         "transliteration": "indriyārtheṣhu vairāgyam anahaṅkāra eva cha\njanma-mṛityu-jarā-vyādhi-duḥkha-doṣhānudarśhanam",
-        "hindi_meaning": "जैसे इस शरीर में देही (आत्मा) बाल्यावस्था, यौवन और वृद्धावस्था से गुजरता है, वैसे ही मृत्यु के समय वह दूसरे शरीर को प्राप्त करता है। धीर पुरुष ऐसे परिवर्तन से विचलित नहीं होता।",
+        "hindi_meaning": "इन्द्रियतृप्ति के विषयों का त्याग, मिथ्या अहंकार का अभाव तथा जन्म, मृत्यु, वृद्धावस्था और रोग के दोषों का अनुभव;",
         "meaning": "renunciation of the objects of sense gratification; absence of false ego; the perception of the evil of birth, death, old age and disease;"
       },
       {
@@ -4617,7 +4617,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "असक्तिरनभिष्वङ्गः पुत्रदारगृहादिषु |\nनित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु ||१३-१०||",
         "transliteration": "asaktir anabhiṣhvaṅgaḥ putra-dāra-gṛihādiṣhu\nnityaṁ cha sama-chittatvam iṣhṭāniṣhṭopapattiṣhu",
-        "hindi_meaning": "हे कौन्तेय! इन्द्रियों के संपर्क से उत्पन्न सुख-दुःख, शीत-उष्ण आदि आते-जाते रहते हैं, अनित्य हैं। हे भारत! तुम उन्हें सहन करो।",
+        "hindi_meaning": "अनासक्ति, सन्तान, पत्नी, घर आदि के मोह से मुक्ति तथा प्रिय और अप्रिय घटनाओं में समभाव;",
         "meaning": "detachment; freedom from entanglement with children, wife, home and the rest; even-mindedness amid pleasant and unpleasant events;"
       },
       {
@@ -4626,7 +4626,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "मयि चानन्ययोगेन भक्तिरव्यभिचारिणी |\nविविक्तदेशसेवित्वमरतिर्जनसंसदि ||१३-११||",
         "transliteration": "mayi chānanya-yogena bhaktir avyabhichāriṇī\nvivikta-deśha-sevitvam aratir jana-saṁsadi",
-        "hindi_meaning": "हे पुरुषर्षभ! जिस पुरुष को ये (सुख-दुःख) व्यथित नहीं करते, जो सुख-दुःख में सम है और धीर है, वह मोक्ष के योग्य है।",
+        "hindi_meaning": "मेरे प्रति निरन्तर अनन्य भक्ति, एकान्त स्थान में रहने की इच्छा तथा सामान्य जनसमूह से विरक्ति;",
         "meaning": "constant and unalloyed devotion to Me; aspiring to live in a solitary place; detachment from the general mass of people;"
       },
       {
@@ -4635,7 +4635,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् |\nएतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा ||१३-१२||",
         "transliteration": "adhyātma-jñāna-nityatvaṁ tattva-jñānārtha-darśhanam\netaj jñānam iti proktam ajñānaṁ yad ato ’nyathā",
-        "hindi_meaning": "जो तत्त्वदर्शी हैं, उन्होंने देखा है कि असत् (शरीर) का कोई स्थायी भाव नहीं है और सत् (आत्मा) का कोई अभाव नहीं है।",
+        "hindi_meaning": "आत्मसाक्षात्कार के महत्त्व को स्वीकार करना और परम सत्य की दार्शनिक खोज—इन सबको मैं ज्ञान घोषित करता हूँ और इनके अतिरिक्त जो कुछ भी है, वह अज्ञान है।",
         "meaning": "accepting the importance of self-realization; and philosophical search for the Absolute Truth—all these I declare to be knowledge, and besides this whatever there may be is ignorance."
       },
       {
@@ -4644,7 +4644,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते |\nअनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते ||१३-१३||",
         "transliteration": "jñeyaṁ yat tat pravakṣhyāmi yaj jñātvāmṛitam aśhnute\nanādi mat-paraṁ brahma na sat tan nāsad uchyate",
-        "hindi_meaning": "जान लो कि जो इस सम्पूर्ण शरीर में व्याप्त है, वह अविनाशी है। इस अव्यय आत्मा का विनाश कोई नहीं कर सकता।",
+        "hindi_meaning": "अब मैं ज्ञेय का वर्णन करूँगा, जिसे जानकर तुम नित्य जीवन का आस्वादन करोगे। अनादि और मेरे अधीन ब्रह्म इस भौतिक जगत के कारण और कार्य से परे है।",
         "meaning": "I shall now explain the knowable, knowing which you will taste the eternal. Brahman, the spirit, beginningless and subordinate to Me, lies beyond the cause and effect of this material world."
       },
       {
@@ -4653,7 +4653,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम् |\nसर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति ||१३-१४||",
         "transliteration": "sarvataḥ pāṇi-pādaṁ tat sarvato ’kṣhi-śhiro-mukham\nsarvataḥ śhrutimal loke sarvam āvṛitya tiṣhṭhati",
-        "hindi_meaning": "हे भारत! ये शरीर नित्य, अविनाशी और अप्रमेय आत्मा के लिए नाशवान कहे गए हैं; इसलिए तुम युद्ध करो।",
+        "hindi_meaning": "सर्वत्र उनके हाथ और पैर, नेत्र, सिर और मुख हैं तथा सर्वत्र उनके कान हैं। इस प्रकार परमात्मा सबमें व्याप्त होकर स्थित हैं।",
         "meaning": "Everywhere are His hands and legs, His eyes, heads and faces, and He has ears everywhere. In this way the Supersoul exists, pervading everything."
       },
       {
@@ -4662,7 +4662,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् |\nअसक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च ||१३-१५||",
         "transliteration": "sarvendriya-guṇābhāsaṁ sarvendriya-vivarjitam\nasaktaṁ sarva-bhṛich chaiva nirguṇaṁ guṇa-bhoktṛi cha",
-        "hindi_meaning": "जो इसे हन्ता मानता है और जो इसे हत मानता है, दोनों ही अज्ञानी हैं; क्योंकि यह न तो किसी को मारता है और न मारा जाता है।",
+        "hindi_meaning": "परमात्मा समस्त इन्द्रियों के मूल स्रोत हैं, फिर भी वे इन्द्रियों से रहित हैं। वे अनासक्त होते हुए भी समस्त जीवों के पालनकर्ता हैं। वे प्रकृति के गुणों से परे हैं और साथ ही समस्त भौतिक गुणों के स्वामी हैं।",
         "meaning": "The Supersoul is the original source of all senses, yet He is without senses. He is unattached, although He is the maintainer of all living beings. He transcends the modes of nature, and at the same time He is the master of all the modes of material nature."
       },
       {
@@ -4671,7 +4671,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "बहिरन्तश्च भूतानामचरं चरमेव च |\nसूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ||१३-१६||",
         "transliteration": "bahir antaśh cha bhūtānām acharaṁ charam eva cha\nsūkṣhmatvāt tad avijñeyaṁ dūra-sthaṁ chāntike cha tat",
-        "hindi_meaning": "यह आत्मा कभी जन्म नहीं लेता और न कभी मरता है। यह उत्पन्न नहीं हुआ, न होगा और न पहले था। यह अजन्मा, नित्य, शाश्वत और पुरातन है। शरीर के मारे जाने पर भी यह नहीं मारा जाता।",
+        "hindi_meaning": "परम सत्य समस्त चर और अचर जीवों के भीतर और बाहर स्थित है। सूक्ष्म होने के कारण वह भौतिक इन्द्रियों की देखने या जानने की शक्ति से परे है। अत्यन्त दूर होते हुए भी वह सबके निकट है।",
         "meaning": "The Supreme Truth exists outside and inside of all living beings, the moving and the nonmoving. Because He is subtle, He is beyond the power of the material senses to see or to know. Although far, far away, He is also near to all."
       },
       {
@@ -4680,7 +4680,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "अविभक्तं च भूतेषु विभक्तमिव च स्थितम् |\nभूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च ||१३-१७||",
         "transliteration": "avibhaktaṁ cha bhūteṣhu vibhaktam iva cha sthitam\nbhūta-bhartṛi cha taj jñeyaṁ grasiṣhṇu prabhaviṣhṇu cha",
-        "hindi_meaning": "हे पार्थ! जो पुरुष इस अजन्मा, अव्यय और नित्य आत्मा को जानता है, वह कैसे किसी को मार सकता है या मरवा सकता है?",
+        "hindi_meaning": "परमात्मा समस्त जीवों में विभाजित प्रतीत होते हुए भी कभी विभाजित नहीं होते, वे एक रूप में स्थित हैं। यद्यपि वे प्रत्येक जीव के पालनकर्ता हैं, तथापि वे सबका संहार और विकास करने वाले भी हैं।",
         "meaning": "Although the Supersoul appears to be divided among all beings, He is never divided. He is situated as one. Although He is the maintainer of every living entity, it is to be understood that He devours and develops all."
       },
       {
@@ -4689,7 +4689,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते |\nज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम् ||१३-१८||",
         "transliteration": "jyotiṣhām api taj jyotis tamasaḥ param uchyate\njñānaṁ jñeyaṁ jñāna-gamyaṁ hṛidi sarvasya viṣhṭhitam",
-        "hindi_meaning": "जैसे मनुष्य पुराने वस्त्रों को त्यागकर नए वस्त्र ग्रहण करता है, वैसे ही देही (आत्मा) पुराने शरीरों को त्यागकर नए शरीरों को प्राप्त करता है।",
+        "hindi_meaning": "वे समस्त प्रकाशमान वस्तुओं के प्रकाशस्रोत हैं। वे भौतिक अन्धकार से परे और अप्रकट हैं। वे ज्ञान, ज्ञान के विषय और ज्ञान के लक्ष्य हैं तथा सबके हृदय में स्थित हैं।",
         "meaning": "He is the source of light in all luminous objects. He is beyond the darkness of matter and is unmanifested. He is knowledge, He is the object of knowledge, and He is the goal of knowledge. He is situated in everyone’s heart."
       },
       {
@@ -4698,7 +4698,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः |\nमद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते ||१३-१९||",
         "transliteration": "iti kṣhetraṁ tathā jñānaṁ jñeyaṁ choktaṁ samāsataḥ\nmad-bhakta etad vijñāya mad-bhāvāyopapadyate",
-        "hindi_meaning": "इस आत्मा को शस्त्र काट नहीं सकते, अग्नि जला नहीं सकती, जल गीला नहीं कर सकता और वायु सुखा नहीं सकती।",
+        "hindi_meaning": "इस प्रकार कर्मक्षेत्र अर्थात् शरीर, ज्ञान और ज्ञेय का मैंने संक्षेप में वर्णन किया है। केवल मेरे भक्त इसे पूर्णतः समझकर मेरे स्वभाव को प्राप्त कर सकते हैं।",
         "meaning": "Thus the field of activities [the body], knowledge and the knowable have been summarily described by Me. Only My devotees can understand this thoroughly and thus attain to My nature."
       },
       {
@@ -4707,7 +4707,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि |\nविकारांश्च गुणांश्चैव विद्धि प्रकृतिसम्भवान् ||१३-२०||",
         "transliteration": "prakṛitiṁ puruṣhaṁ chaiva viddhy anādī ubhāv api\nvikārāṁśh cha guṇāṁśh chaiva viddhi prakṛiti-sambhavān",
-        "hindi_meaning": "यह अच्छेद्य, अदाह्य, अक्लेद्य और अशोष्य है तथा नित्य, सर्वगत, स्थिर, अचल और सनातन है।",
+        "hindi_meaning": "भौतिक प्रकृति और जीवों को अनादि समझना चाहिए। उनके रूपान्तरण और भौतिक गुण प्रकृति से उत्पन्न होते हैं।",
         "meaning": "Material nature and the living entities should be understood to be beginningless. Their transformations and the modes of matter are products of material nature."
       },
       {
@@ -4716,7 +4716,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते |\nपुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते ||१३-२१||",
         "transliteration": "kārya-kāraṇa-kartṛitve hetuḥ prakṛitir uchyate\npuruṣhaḥ sukha-duḥkhānāṁ bhoktṛitve hetur uchyate",
-        "hindi_meaning": "यह अव्यक्त, अचिन्त्य और अविकारी कहा जाता है। इसलिए इसे इस प्रकार जानकर तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "प्रकृति समस्त भौतिक कारणों और कार्यों की कारण कही जाती है, जबकि जीव इस संसार के विविध सुख और दुःख का कारण है।",
         "meaning": "Nature is said to be the cause of all material causes and effects, whereas the living entity is the cause of the various sufferings and enjoyments in this world."
       },
       {
@@ -4725,7 +4725,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् |\nकारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु ||१३-२२||",
         "transliteration": "puruṣhaḥ prakṛiti-stho hi bhuṅkte prakṛiti-jān guṇān\nkāraṇaṁ guṇa-saṅgo ’sya sad-asad-yoni-janmasu",
-        "hindi_meaning": "हे महाबाहो! यदि तुम इसे सदा जन्म लेने वाला या सदा मरने वाला मानते हो, तो भी तुम्हें इसके लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "भौतिक प्रकृति में स्थित जीव उसके तीनों गुणों का भोग करते हुए जीवन की विभिन्न योनियों का अनुसरण करता है। प्रकृति की संगति के कारण ही उसे विविध योनियों में शुभ और अशुभ प्राप्त होते हैं।",
         "meaning": "The living entity in material nature thus follows the ways of life, enjoying the three modes of nature. This is due to his association with that material nature. Thus he meets with good and evil among various species."
       },
       {
@@ -4734,7 +4734,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः |\nपरमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः ||१३-२३||",
         "transliteration": "upadraṣhṭānumantā cha bhartā bhoktā maheśhvaraḥ\nparamātmeti chāpy ukto dehe ’smin puruṣhaḥ paraḥ",
-        "hindi_meaning": "जन्म लेने वाले की मृत्यु निश्चित है और मरने वाले का जन्म निश्चित है। इसलिए इस अपरिहार्य विषय में तुम्हें शोक नहीं करना चाहिए।",
+        "hindi_meaning": "फिर भी इस शरीर में एक अन्य दिव्य भोक्ता है, जो प्रभु, परम स्वामी, निरीक्षक और अनुमति देने वाला है तथा परमात्मा कहलाता है।",
         "meaning": "Yet in this body there is another, a transcendental enjoyer, who is the Lord, the supreme proprietor, who exists as the overseer and permitter, and who is known as the Supersoul."
       },
       {
@@ -4743,7 +4743,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैः सह |\nसर्वथा वर्तमानोऽपि न स भूयोऽभिजायते ||१३-२४||",
         "transliteration": "ya evaṁ vetti puruṣhaṁ prakṛitiṁ cha guṇaiḥ saha\nsarvathā vartamāno ’pi na sa bhūyo ’bhijāyate",
-        "hindi_meaning": "हे भारत! सभी प्राणी आदि में अव्यक्त, मध्य में व्यक्त और अन्त में अव्यक्त हो जाते हैं। फिर यहाँ शोक क्यों?",
+        "hindi_meaning": "जो भौतिक प्रकृति, जीव और प्रकृति के गुणों की अन्तःक्रिया सम्बन्धी इस दर्शन को समझता है, वह निश्चित रूप से मुक्त होता है। अपनी वर्तमान स्थिति चाहे जो हो, वह यहाँ पुनः जन्म नहीं लेता।",
         "meaning": "One who understands this philosophy concerning material nature, the living entity and the interaction of the modes of nature is sure to attain liberation. He will not take birth here again, regardless of his present position."
       },
       {
@@ -4752,7 +4752,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना |\nअन्ये सांख्येन योगेन कर्मयोगेन चापरे ||१३-२५||",
         "transliteration": "dhyānenātmani paśhyanti kechid ātmānam ātmanā\nanye sāṅkhyena yogena karma-yogena chāpare",
-        "hindi_meaning": "कोई इसे आश्चर्य की तरह देखता है, कोई आश्चर्य की तरह कहता है, कोई आश्चर्य की तरह सुनता है और कोई सुनकर भी इसे नहीं जानता।",
+        "hindi_meaning": "कुछ लोग ध्यान द्वारा अपने भीतर परमात्मा का दर्शन करते हैं, कुछ ज्ञान के अनुशीलन द्वारा और अन्य निष्काम कर्म द्वारा।",
         "meaning": "Some perceive the Supersoul within themselves through meditation, others through the cultivation of knowledge, and still others through working without fruitive desires."
       },
       {
@@ -4761,7 +4761,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "अन्ये त्वेवमजानन्तः श्रुत्वान्येभ्य उपासते |\nतेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः ||१३-२६||",
         "transliteration": "anye tv evam ajānantaḥ śhrutvānyebhya upāsate\nte ’pi chātitaranty eva mṛityuṁ śhruti-parāyaṇāḥ",
-        "hindi_meaning": "हे भारत! सभी के शरीर में रहने वाला यह देही अवध्य है। इसलिए तुम्हें किसी भी प्राणी के लिए शोक नहीं करना चाहिए।",
+        "hindi_meaning": "कुछ अन्य लोग आध्यात्मिक ज्ञान से परिचित न होते हुए भी अधिकारियों से परम पुरुष के विषय में सुनकर उनकी उपासना आरम्भ करते हैं। प्रामाणिक व्यक्तियों से सुनने की प्रवृत्ति के कारण वे भी जन्म और मृत्यु के मार्ग को पार कर जाते हैं।",
         "meaning": "Again there are those who, although not conversant in spiritual knowledge, begin to worship the Supreme Person upon hearing about Him from others. Because of their tendency to hear from authorities, they also transcend the path of birth and death."
       },
       {
@@ -4770,7 +4770,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम् |\nक्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ ||१३-२७||",
         "transliteration": "yāvat sañjāyate kiñchit sattvaṁ sthāvara-jaṅgamam\nkṣhetra-kṣhetrajña-saṁyogāt tad viddhi bharatarṣhabha",
-        "hindi_meaning": "हे पार्थ! अपने स्वधर्म पर भी दृष्टि रखकर तुम्हें कंपित नहीं होना चाहिए; क्योंकि क्षत्रिय के लिए धर्मयुद्ध से बढ़कर और कोई श्रेयस्कर नहीं है।",
+        "hindi_meaning": "हे भरतश्रेष्ठ, जान लो कि चर और अचर जो कुछ भी अस्तित्व में तुम्हें दिखाई देता है, वह केवल कर्मक्षेत्र और क्षेत्रज्ञ का संयोग है।",
         "meaning": "O chief of the Bharatas, know that whatever you see in existence, both the moving and the nonmoving, is only a combination of the field of activities and the knower of the field."
       },
       {
@@ -4779,7 +4779,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम् |\nविनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति ||१३-२८||",
         "transliteration": "samaṁ sarveṣhu bhūteṣhu tiṣhṭhantaṁ parameśhvaram\nvinaśhyatsv avinaśhyantaṁ yaḥ paśhyati sa paśhyati",
-        "hindi_meaning": "हे पार्थ! ऐसे युद्ध को क्षत्रिय सुख से प्राप्त करते हैं, जो स्वर्ग के द्वार को खोलने वाला है और जो स्वयं प्राप्त हो जाता है।",
+        "hindi_meaning": "जो समस्त शरीरों में जीवात्मा के साथ परमात्मा को देखता है और समझता है कि विनाशशील शरीर के भीतर न तो आत्मा और न ही परमात्मा कभी नष्ट होते हैं, वही वास्तव में देखता है।",
         "meaning": "One who sees the Supersoul accompanying the individual soul in all bodies, and who understands that neither the soul nor the Supersoul within the destructible body is ever destroyed, actually sees."
       },
       {
@@ -4788,7 +4788,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम् |\nन हिनस्त्यात्मनात्मानं ततो याति परां गतिम् ||१३-२९||",
         "transliteration": "samaṁ paśhyan hi sarvatra samavasthitam īśhvaram\nna hinasty ātmanātmānaṁ tato yāti parāṁ gatim",
-        "hindi_meaning": "यदि तुम इस धर्मयुद्ध को नहीं करोगे, तो अपने स्वधर्म और कीर्ति को खोकर पाप को प्राप्त होगे।",
+        "hindi_meaning": "जो प्रत्येक जीव में परमात्मा को समान रूप से सर्वत्र उपस्थित देखता है, वह अपने मन द्वारा अपना पतन नहीं करता। इस प्रकार वह दिव्य गन्तव्य को प्राप्त करता है।",
         "meaning": "One who sees the Supersoul equally present everywhere, in every living being, does not degrade himself by his mind. Thus he approaches the transcendental destination."
       },
       {
@@ -4797,7 +4797,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः |\nयः पश्यति तथात्मानमकर्तारं स पश्यति ||१३-३०||",
         "transliteration": "prakṛityaiva cha karmāṇi kriyamāṇāni sarvaśhaḥ\nyaḥ paśhyati tathātmānam akartāraṁ sa paśhyati",
-        "hindi_meaning": "लोग तुम्हारी कीर्ति की निन्दा करेंगे और नाम के लिए जो कीर्ति होती है, वह भी नष्ट हो जाएगी।",
+        "hindi_meaning": "जो देखता है कि समस्त कर्म भौतिक प्रकृति से बने शरीर द्वारा सम्पन्न होते हैं और आत्मा कुछ नहीं करती, वही वास्तव में देखता है।",
         "meaning": "One who can see that all activities are performed by the body, which is created of material nature, and sees that the self does nothing, actually sees."
       },
       {
@@ -4806,7 +4806,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "यदा भूतपृथग्भावमेकस्थमनुपश्यति |\nतत एव च विस्तारं ब्रह्म सम्पद्यते तदा ||१३-३१||",
         "transliteration": "yadā bhūta-pṛithag-bhāvam eka-stham anupaśhyati\ntata eva cha vistāraṁ brahma sampadyate tadā",
-        "hindi_meaning": "महान योद्धाओं के लिए तुम्हारी निन्दा होगी और तुम्हारा सम्मान अपमान में बदल जाएगा।",
+        "hindi_meaning": "जब बुद्धिमान मनुष्य विभिन्न भौतिक शरीरों के कारण पृथक् पहचान देखना छोड़ देता है और देखता है कि जीव किस प्रकार सर्वत्र विस्तृत हैं, तब वह ब्रह्मभाव को प्राप्त करता है।",
         "meaning": "When a sensible man ceases to see different identities due to different material bodies and he sees how beings are expanded everywhere, he attains to the Brahman conception."
       },
       {
@@ -4815,7 +4815,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः |\nशरीरस्थोऽपि कौन्तेय न करोति न लिप्यते ||१३-३२||",
         "transliteration": "anāditvān nirguṇatvāt paramātmāyam avyayaḥ\nśharīra-stho ’pi kaunteya na karoti na lipyate",
-        "hindi_meaning": "शत्रु तुम्हारे बारे में अनेक अपशब्द कहेंगे और तुम्हारी वीरता की निन्दा करेंगे। तुम्हारे लिए इससे बढ़कर दुःख और क्या हो सकता है?",
+        "hindi_meaning": "नित्य दृष्टि वाले देख सकते हैं कि अविनाशी आत्मा दिव्य, शाश्वत और प्रकृति के गुणों से परे है। हे अर्जुन, भौतिक शरीर के सम्पर्क में रहते हुए भी आत्मा न कुछ करती है, न बँधती है।",
         "meaning": "Those with the vision of eternity can see that the imperishable soul is transcendental, eternal, and beyond the modes of nature. Despite contact with the material body, O Arjuna, the soul does neither anything nor is entangled."
       },
       {
@@ -4824,7 +4824,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते |\nसर्वत्रावस्थितो देहे तथात्मा नोपलिप्यते ||१३-३३||",
         "transliteration": "yathā sarva-gataṁ saukṣhmyād ākāśhaṁ nopalipyate\nsarvatrāvasthito dehe tathātmā nopalipyate",
-        "hindi_meaning": "हे अर्जुन! यदि तुम मारे जाओगे, तो स्वर्ग को प्राप्त करोगे; यदि विजयी होगे, तो पृथ्वी का भोग करोगे। इसलिए उठो और निश्चयपूर्वक युद्ध करो।",
+        "hindi_meaning": "आकाश अपनी सूक्ष्म प्रकृति के कारण सर्वव्यापी होते हुए भी किसी वस्तु से नहीं मिलता। उसी प्रकार ब्रह्मदृष्टि में स्थित आत्मा शरीर में रहते हुए भी उससे नहीं मिलती।",
         "meaning": "The sky, due to its subtle nature, does not mix with anything, although it is all-pervading. Similarly, the soul situated in Brahman vision does not mix with the body, though situated in that body."
       },
       {
@@ -4833,7 +4833,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः |\nक्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत ||१३-३४||",
         "transliteration": "yathā prakāśhayaty ekaḥ kṛitsnaṁ lokam imaṁ raviḥ\nkṣhetraṁ kṣhetrī tathā kṛitsnaṁ prakāśhayati bhārata",
-        "hindi_meaning": "सुख-दुःख, लाभ-हानि, जय-पराजय को समान समझकर युद्ध के लिए तैयार हो जाओ। इस प्रकार करने से तुम पाप नहीं करोगे।",
+        "hindi_meaning": "हे भरतपुत्र, जिस प्रकार एक सूर्य इस सम्पूर्ण ब्रह्माण्ड को प्रकाशित करता है, उसी प्रकार शरीर के भीतर स्थित एक जीव चेतना द्वारा सम्पूर्ण शरीर को प्रकाशित करता है।",
         "meaning": "O son of Bharata, as the sun alone illuminates all this universe, so does the living entity, one within the body, illuminate the entire body by consciousness."
       },
       {
@@ -4842,7 +4842,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 13,
         "text": "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा |\nभूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम् ||१३-३५||",
         "transliteration": "kṣhetra-kṣhetrajñayor evam antaraṁ jñāna-chakṣhuṣhā\nbhūta-prakṛiti-mokṣhaṁ cha ye vidur yānti te param",
-        "hindi_meaning": "हे पार्थ! अब तक मैंने तुम्हें सांख्य योग (ज्ञान) बताया है। अब कर्मयोग सुनो, जिसे जानकर तुम कर्मबन्धन से मुक्त हो जाओगे।",
+        "hindi_meaning": "जो ज्ञानचक्षु से शरीर और शरीर के ज्ञाता का अन्तर देखते हैं तथा भौतिक प्रकृति के बन्धन से मुक्ति की विधि भी समझते हैं, वे परम लक्ष्य को प्राप्त करते हैं।",
         "meaning": "Those who see with eyes of knowledge the difference between the body and the knower of the body, and can also understand the process of liberation from bondage in material nature, attain to the supreme goal."
       }
     ]
@@ -4861,7 +4861,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "श्रीभगवानुवाच |\nपरं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम् |\nयज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः ||१४-१||",
         "transliteration": "śhrī bhagavān uvācha\nparaṁ bhūyaḥ pravakṣhyāmi jñānānāṁ jñānam uttamam\nyaj jñātvā munayaḥ sarve parāṁ siddhim ito gatāḥ",
-        "hindi_meaning": "इसमें कोई हानि नहीं है और यह आरम्भ में थोड़ा सा भी हो, तो भी संसार के भय से रक्षा करता है।",
+        "hindi_meaning": "श्रीभगवान् ने कहा: मैं पुनः तुम्हें समस्त ज्ञानों में श्रेष्ठ इस परम ज्ञान को बताऊँगा, जिसे जानकर सभी मुनियों ने परम सिद्धि प्राप्त की है।",
         "meaning": "The Supreme Personality of Godhead said: Again I shall declare to you this supreme wisdom, the best of all knowledge, knowing which all the sages have attained the supreme perfection."
       },
       {
@@ -4870,7 +4870,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः |\nसर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च ||१४-२||",
         "transliteration": "idaṁ jñānam upāśhritya mama sādharmyam āgatāḥ\nsarge ’pi nopajāyante pralaye na vyathanti cha",
-        "hindi_meaning": "हे कुरुनन्दन! इस कर्मयोग में निश्चयात्मक बुद्धि एक ही है, लेकिन अविश्वासियों की बुद्धि अनेक शाखाओं वाली और अनन्त है।",
+        "hindi_meaning": "इस ज्ञान में स्थिर होकर मनुष्य मेरे समान दिव्य स्वभाव को प्राप्त कर सकता है। ऐसी स्थिति में वह सृष्टि के समय जन्म नहीं लेता और प्रलय के समय विचलित नहीं होता।",
         "meaning": "By becoming fixed in this knowledge, one can attain to the transcendental nature like My own. Thus established, one is not born at the time of creation or disturbed at the time of dissolution."
       },
       {
@@ -4879,7 +4879,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "मम योनिर्महद्ब्रह्म तस्मिन्गर्भं दधाम्यहम् |\nसम्भवः सर्वभूतानां ततो भवति भारत ||१४-३||",
         "transliteration": "mama yonir mahad brahma tasmin garbhaṁ dadhāmy aham\nsambhavaḥ sarva-bhūtānāṁ tato bhavati bhārata",
-        "hindi_meaning": "हे पार्थ! जो लोग वेदों के शब्दज्ञान में मोहित होकर कहते हैं कि इसके सिवा और कुछ नहीं है, वे कामनाओं से युक्त हैं।",
+        "hindi_meaning": "हे भरतपुत्र, ब्रह्म कहलाने वाला सम्पूर्ण भौतिक तत्त्व जन्म का स्रोत है और उसी ब्रह्म में मैं गर्भ स्थापित करता हूँ, जिससे समस्त जीवों का जन्म सम्भव होता है।",
         "meaning": "The total material substance, called Brahman, is the source of birth, and it is that Brahman that I impregnate, making possible the births of all living beings, O son of Bharata."
       },
       {
@@ -4888,7 +4888,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः |\nतासां ब्रह्म महद्योनिरहं बीजप्रदः पिता ||१४-४||",
         "transliteration": "sarva-yoniṣhu kaunteya mūrtayaḥ sambhavanti yāḥ\ntāsāṁ brahma mahad yonir ahaṁ bīja-pradaḥ pitā",
-        "hindi_meaning": "जिनकी बुद्धि उन कामनाओं में लगी हुई है, जिनका परम लक्ष्य स्वर्ग है, वे जन्म-मृत्यु के चक्र में बने रहते हैं।",
+        "hindi_meaning": "हे कुन्तीपुत्र, यह समझना चाहिए कि जीवन की समस्त योनियाँ इस भौतिक प्रकृति में जन्म से सम्भव होती हैं और मैं बीज प्रदान करने वाला पिता हूँ।",
         "meaning": "It should be understood that all species of life, O son of Kunti, are made possible by birth in this material nature, and that I am the seed-giving father."
       },
       {
@@ -4897,7 +4897,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः |\nनिबध्नन्ति महाबाहो देहे देहिनमव्ययम् ||१४-५||",
         "transliteration": "sattvaṁ rajas tama iti guṇāḥ prakṛiti-sambhavāḥ\nnibadhnanti mahā-bāho dehe dehinam avyayam",
-        "hindi_meaning": "जो लोग इन्द्रियों और इन्द्रियों के विषयों में आसक्त हैं, उनकी बुद्धि स्थिर नहीं होती।",
+        "hindi_meaning": "भौतिक प्रकृति सत्त्व, रज और तम—इन तीन गुणों से बनी है। हे महाबाहु अर्जुन, जब नित्य जीव प्रकृति के सम्पर्क में आता है, तब वह इन गुणों से बँध जाता है।",
         "meaning": "Material nature consists of three modes—goodness, passion and ignorance. When the eternal living entity comes in contact with nature, O mighty-armed Arjuna, he becomes conditioned by these modes."
       },
       {
@@ -4906,7 +4906,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् |\nसुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||१४-६||",
         "transliteration": "tatra sattvaṁ nirmalatvāt prakāśhakam anāmayam\nsukha-saṅgena badhnāti jñāna-saṅgena chānagha",
-        "hindi_meaning": "वेद तीन गुणों (सत्, रज, तम) के विषय में हैं। हे अर्जुन! तुम इन तीनों गुणों से परे हो जाओ, नित्य सत्ता में स्थित रहो, द्रव्य के लिए चिंतित न रहो और आत्म-स्वरूप में स्थित रहो।",
+        "hindi_meaning": "हे निष्पाप, सत्त्वगुण अन्य गुणों से अधिक शुद्ध होने के कारण प्रकाश देने वाला है और मनुष्य को समस्त पापफल से मुक्त करता है। इस गुण में स्थित व्यक्ति सुख और ज्ञान के भाव से बँध जाता है।",
         "meaning": "O sinless one, the mode of goodness, being purer than the others, is illuminating, and it frees one from all sinful reactions. Those situated in that mode become conditioned by a sense of happiness and knowledge."
       },
       {
@@ -4915,7 +4915,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् |\nतन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||१४-७||",
         "transliteration": "rajo rāgātmakaṁ viddhi tṛiṣhṇā-saṅga-samudbhavam\ntan nibadhnāti kaunteya karma-saṅgena dehinam",
-        "hindi_meaning": "जैसे सभी जलाशयों के लिए एक छोटा तालाब पर्याप्त है, वैसे ही सभी वेदों के लिए ज्ञानी ब्राह्मण के लिए वेदों का ज्ञान पर्याप्त है।",
+        "hindi_meaning": "हे कुन्तीपुत्र, रजोगुण असीम इच्छाओं और लालसाओं से उत्पन्न होता है और इसके कारण देहधारी जीव सकाम भौतिक कर्मों से बँध जाता है।",
         "meaning": "The mode of passion is born of unlimited desires and longings, O son of Kunti, and because of this the embodied living entity is bound to material fruitive actions."
       },
       {
@@ -4924,7 +4924,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् |\nप्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||१४-८||",
         "transliteration": "tamas tv ajñāna-jaṁ viddhi mohanaṁ sarva-dehinām\npramādālasya-nidrābhis tan nibadhnāti bhārata",
-        "hindi_meaning": "तुम्हारा कर्म करने में ही अधिकार है, कर्म के फल में कभी नहीं। कर्म के फल का कारण मत बनो और कर्म न करने में आसक्ति मत रखो।",
+        "hindi_meaning": "हे भरतपुत्र, जान लो कि अज्ञान से उत्पन्न तमोगुण समस्त देहधारी जीवों का मोह है। इसके फल पागलपन, आलस्य और निद्रा हैं, जो बद्धजीव को बाँधते हैं।",
         "meaning": "O son of Bharata, know that the mode of darkness, born of ignorance, is the delusion of all embodied living entities. The results of this mode are madness, indolence and sleep, which bind the conditioned soul."
       },
       {
@@ -4933,7 +4933,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत |\nज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत ||१४-९||",
         "transliteration": "sattvaṁ sukhe sañjayati rajaḥ karmaṇi bhārata\njñānam āvṛitya tu tamaḥ pramāde sañjayaty uta",
-        "hindi_meaning": "हे अर्जुन! योग में स्थित होकर कर्म करो, सफलता-असफलता को त्याग दो। ऐसी समता को योग कहते हैं।",
+        "hindi_meaning": "हे भरतपुत्र, सत्त्वगुण मनुष्य को सुख से, रजोगुण सकाम कर्म से और तमोगुण उसके ज्ञान को ढककर पागलपन से बाँधता है।",
         "meaning": "O son of Bharata, the mode of goodness conditions one to happiness; passion conditions one to fruitive action; and ignorance, covering one’s knowledge, binds one to madness."
       },
       {
@@ -4942,7 +4942,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "रजस्तमश्चाभिभूय सत्त्वं भवति भारत |\nरजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा ||१४-१०||",
         "transliteration": "rajas tamaśh chābhibhūya sattvaṁ bhavati bhārata\nrajaḥ sattvaṁ tamaśh chaiva tamaḥ sattvaṁ rajas tathā",
-        "hindi_meaning": "हे धनञ्जय! कर्मफल की इच्छा से किए गए कर्म से बुद्धि (ज्ञानयोग) बहुत श्रेष्ठ है। ज्ञानयोग में शरण लो, क्योंकि कर्म करने वाले लोग दुःखी होते हैं।",
+        "hindi_meaning": "हे भरतपुत्र, कभी सत्त्वगुण रज और तम को परास्त करके प्रधान हो जाता है, कभी रजोगुण सत्त्व और तम को तथा कभी तमोगुण सत्त्व और रज को परास्त करता है। इस प्रकार प्रभुत्व के लिए सदा स्पर्धा रहती है।",
         "meaning": "Sometimes the mode of goodness becomes prominent, defeating the modes of passion and ignorance, O son of Bharata. Sometimes the mode of passion defeats goodness and ignorance, and at other times ignorance defeats goodness and passion. In this way there is always competition for supremacy."
       },
       {
@@ -4951,7 +4951,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते |\nज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत ||१४-११||",
         "transliteration": "sarva-dvāreṣhu dehe ’smin prakāśha upajāyate\njñānaṁ yadā tadā vidyād vivṛiddhaṁ sattvam ity uta",
-        "hindi_meaning": "जो व्यक्ति कर्मफल से मुक्त है, वह ज्ञानयोग द्वारा पाप और पुण्य दोनों से मुक्त हो जाता है। इसलिए तुम योग में स्थित होकर कर्म करो।",
+        "hindi_meaning": "जब शरीर के सभी द्वार ज्ञान से प्रकाशित होते हैं, तब सत्त्वगुण की अभिव्यक्ति का अनुभव किया जा सकता है।",
         "meaning": "The manifestation of the mode of goodness can be experienced when all the gates of the body are illuminated by knowledge."
       },
       {
@@ -4960,7 +4960,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा |\nरजस्येतानि जायन्ते विवृद्धे भरतर्षभ ||१४-१२||",
         "transliteration": "lobhaḥ pravṛittir ārambhaḥ karmaṇām aśhamaḥ spṛihā\nrajasy etāni jāyante vivṛiddhe bharatarṣhabha",
-        "hindi_meaning": "ज्ञानी लोग कर्मफल का त्याग करके जन्म और मृत्यु के चक्र से मुक्त हो जाते हैं और वे उस स्थान को प्राप्त करते हैं, जहाँ दुःख नहीं है।",
+        "hindi_meaning": "हे भरतश्रेष्ठ, रजोगुण बढ़ने पर अत्यधिक आसक्ति, सकाम कर्म, तीव्र प्रयास तथा अनियन्त्रित इच्छा और लालसा के लक्षण प्रकट होते हैं।",
         "meaning": "O chief of the Bharatas, when there is an increase in the mode of passion the symptoms of great attachment, fruitive activity, intense endeavor, and uncontrollable desire and hankering develop."
       },
       {
@@ -4969,7 +4969,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च |\nतमस्येतानि जायन्ते विवृद्धे कुरुनन्दन ||१४-१३||",
         "transliteration": "aprakāśho ’pravṛittiśh cha pramādo moha eva cha\ntamasy etāni jāyante vivṛiddhe kuru-nandana",
-        "hindi_meaning": "जब तुम्हारी बुद्धि भ्रम से मुक्त हो जाएगी, तो तुम वैराग्य और श्रवण दोनों में ही उदासीन हो जाओगे।",
+        "hindi_meaning": "हे कुरुपुत्र, तमोगुण बढ़ने पर अन्धकार, जड़ता, पागलपन और मोह प्रकट होते हैं।",
         "meaning": "When there is an increase in the mode of ignorance, O son of Kuru, darkness, inertia, madness and illusion are manifested."
       },
       {
@@ -4978,7 +4978,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत् |\nतदोत्तमविदां लोकानमलान्प्रतिपद्यते ||१४-१४||",
         "transliteration": "yadā sattve pravṛiddhe tu pralayaṁ yāti deha-bhṛit\ntadottama-vidāṁ lokān amalān pratipadyate",
-        "hindi_meaning": "हे अर्जुन! जब तुम्हारी बुद्धि वेदों के शब्दज्ञान से विचलित नहीं होगी और तुम आत्मा में स्थित हो जाओगे, तो तुम्हें दिव्य ज्ञान प्राप्त होगा।",
+        "hindi_meaning": "जब कोई सत्त्वगुण में मरता है, तब वह महान ऋषियों के शुद्ध उच्चतर लोकों को प्राप्त करता है।",
         "meaning": "When one dies in the mode of goodness, he attains to the pure higher planets of the great sages."
       },
       {
@@ -4987,7 +4987,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते |\nतथा प्रलीनस्तमसि मूढयोनिषु जायते ||१४-१५||",
         "transliteration": "rajasi pralayaṁ gatvā karma-saṅgiṣhu jāyate\ntathā pralīnas tamasi mūḍha-yoniṣhu jāyate",
-        "hindi_meaning": "अर्जुन ने कहा: हे केशव! जो व्यक्ति आत्मा में स्थित है, जिसकी बुद्धि स्थिर है, वह कैसा होता है? वह कैसे बोलता है, कैसे बैठता है और कैसे चलता है?",
+        "hindi_meaning": "रजोगुण में मरने वाला सकाम कर्म करने वालों के बीच जन्म लेता है और तमोगुण में मरने वाला पशुयोनि में जन्म लेता है।",
         "meaning": "When one dies in the mode of passion, he takes birth among those engaged in fruitive activities; and when one dies in the mode of ignorance, he takes birth in the animal kingdom."
       },
       {
@@ -4996,7 +4996,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम् |\nरजसस्तु फलं दुःखमज्ञानं तमसः फलम् ||१४-१६||",
         "transliteration": "karmaṇaḥ sukṛitasyāhuḥ sāttvikaṁ nirmalaṁ phalam\nrajasas tu phalaṁ duḥkham ajñānaṁ tamasaḥ phalam",
-        "hindi_meaning": "श्री भगवान ने कहा: हे पार्थ! जब मनुष्य सभी इच्छाओं को त्याग देता है और आत्मा में ही संतुष्ट रहता है, तो उसे आत्मस्थिति कहते हैं।",
+        "hindi_meaning": "पुण्यकर्म का फल शुद्ध और सत्त्वगुणी कहा जाता है, किन्तु रजोगुण में किया गया कर्म दुःख देता है और तमोगुण में किया गया कर्म मूर्खता उत्पन्न करता है।",
         "meaning": "The result of pious action is pure and is said to be in the mode of goodness. But action done in the mode of passion results in misery, and action performed in the mode of ignorance results in foolishness."
       },
       {
@@ -5005,7 +5005,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च |\nप्रमादमोहौ तमसो भवतोऽज्ञानमेव च ||१४-१७||",
         "transliteration": "sattvāt sañjāyate jñānaṁ rajaso lobha eva cha\npramāda-mohau tamaso bhavato ’jñānam eva cha",
-        "hindi_meaning": "जो दुःख में विचलित नहीं होता, सुख में हर्षित नहीं होता, जो राग, भय और क्रोध से मुक्त है, वह स्थिरबुद्धि कहलाता है।",
+        "hindi_meaning": "सत्त्वगुण से वास्तविक ज्ञान, रजोगुण से लोभ और तमोगुण से मूर्खता, पागलपन तथा मोह उत्पन्न होते हैं।",
         "meaning": "From the mode of goodness, real knowledge develops; from the mode of passion, greed develops; and from the mode of ignorance develop foolishness, madness and illusion."
       },
       {
@@ -5014,7 +5014,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः |\nजघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः ||१४-१८||",
         "transliteration": "ūrdhvaṁ gachchhanti sattva-sthā madhye tiṣhṭhanti rājasāḥ\njaghanya-guṇa-vṛitti-sthā adho gachchhanti tāmasāḥ",
-        "hindi_meaning": "जो सभी प्राणियों में समभाव रखता है, सुख-दुःख में समान रहता है, वह मुझे अत्यंत प्रिय है।",
+        "hindi_meaning": "सत्त्वगुण में स्थित लोग क्रमशः उच्चतर लोकों को जाते हैं, रजोगुणी पृथ्वी के लोकों में रहते हैं और निन्दनीय तमोगुणी नीचे नरकलोकों में जाते हैं।",
         "meaning": "Those situated in the mode of goodness gradually go upward to the higher planets; those in the mode of passion live on the earthly planets; and those in the abominable mode of ignorance go down to the hellish worlds."
       },
       {
@@ -5023,7 +5023,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति |\nगुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति ||१४-१९||",
         "transliteration": "nānyaṁ guṇebhyaḥ kartāraṁ yadā draṣhṭānupaśhyati\nguṇebhyaśh cha paraṁ vetti mad-bhāvaṁ so ’dhigachchhati",
-        "hindi_meaning": "जो मनुष्य सभी इन्द्रियों को इन्द्रिय-विषयों से हटाकर, कछुए की तरह अपने अंगों को समेट लेता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "जब कोई ठीक प्रकार से देखता है कि समस्त कर्मों में प्रकृति के इन गुणों के अतिरिक्त अन्य कोई कर्ता नहीं है और इन गुणों से परे परम प्रभु को जानता है, तब वह मेरे आध्यात्मिक स्वभाव को प्राप्त करता है।",
         "meaning": "When one properly sees that in all activities no other performer is at work than these modes of nature and he knows the Supreme Lord, who is transcendental to all these modes, he attains My spiritual nature."
       },
       {
@@ -5032,7 +5032,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "गुणानेतान्तीत्य त्रीन्देही देहसमुद्भवान् |\nजन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते ||१४-२०||",
         "transliteration": "guṇān etān atītya trīn dehī deha-samudbhavān\njanma-mṛityu-jarā-duḥkhair vimukto ’mṛitam aśhnute",
-        "hindi_meaning": "विषय-भोगों से वस्तुतः विरक्त व्यक्ति रुचि को त्याग देता है, लेकिन रुचि का स्वाद बना रहता है। यह रुचि भी परमात्मा को देखकर समाप्त हो जाती है।",
+        "hindi_meaning": "जब देहधारी जीव भौतिक शरीर से सम्बन्धित इन तीनों गुणों को पार कर लेता है, तब वह जन्म, मृत्यु, वृद्धावस्था और उनके दुःखों से मुक्त होकर इसी जीवन में अमृत का आस्वादन कर सकता है।",
         "meaning": "When the embodied being is able to transcend these three modes associated with the material body, he can become free from birth, death, old age and their distresses and can enjoy nectar even in this life."
       },
       {
@@ -5041,7 +5041,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "अर्जुन उवाच |\nकैर्लिङ्गैस्त्रीन्गुणानेतान्तीतो भवति प्रभो |\nकिमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते ||१४-२१||",
         "transliteration": "arjuna uvācha\nkair liṅgais trīn guṇān etān atīto bhavati prabho\nkim-āchāraḥ kathaṁ chaitāṁs trīn guṇān ativartate",
-        "hindi_meaning": "हे अर्जुन! चंचल इन्द्रियाँ बलवान मन को भी बलपूर्वक अपने वश में कर लेती हैं।",
+        "hindi_meaning": "अर्जुन ने पूछा: हे मेरे प्रिय प्रभु, इन तीनों गुणों से परे व्यक्ति किन लक्षणों से जाना जाता है? उसका आचरण कैसा होता है? और वह प्रकृति के गुणों को कैसे पार करता है?",
         "meaning": "Arjuna inquired: O my dear Lord, by which signs is one known who is transcendental to these three modes? What is his behavior? And how does he transcend the modes of nature?"
       },
       {
@@ -5050,7 +5050,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "श्रीभगवानुवाच |\nप्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव |\nन द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति ||१४-२२||",
         "transliteration": "śhrī bhagavān uvācha\nprakāśhaṁ cha pravṛittiṁ cha moham eva cha pāṇḍava\nna dveṣhṭi sampravṛittāni na nivṛittāni kāṅkṣhati",
-        "hindi_meaning": "हे अर्जुन! जो व्यक्ति सभी इन्द्रियों को वश में करके मुझमें मन लगाता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "श्रीभगवान् ने कहा: हे पाण्डुपुत्र, जो प्रकाश, आसक्ति और मोह के उपस्थित होने पर उनसे द्वेष नहीं करता और लुप्त होने पर उनकी लालसा नहीं करता;",
         "meaning": "The Supreme Personality of Godhead said: O son of Pandu, he who does not hate illumination, attachment and delusion when they are present or long for them when they disappear;"
       },
       {
@@ -5059,7 +5059,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "उदासीनवदासीनो गुणैर्यो न विचाल्यते |\nगुणा वर्तन्त इत्येव योऽवतिष्ठति नेङ्गते ||१४-२३||",
         "transliteration": "udāsīna-vad āsīno guṇair yo na vichālyate\nguṇā vartanta ity evaṁ yo ’vatiṣhṭhati neṅgate",
-        "hindi_meaning": "हे अर्जुन! जब मनुष्य विषयों का चिन्तन करता है, तो उनके प्रति आसक्ति उत्पन्न होती है। आसक्ति से कामना उत्पन्न होती है और कामना से क्रोध उत्पन्न होता है।",
+        "hindi_meaning": "जो भौतिक गुणों की इन समस्त प्रतिक्रियाओं में तटस्थ और दिव्य रहकर अचल तथा अविचलित रहता है और जानता है कि केवल गुण ही कार्यशील हैं;",
         "meaning": "who is unwavering and undisturbed through all these reactions of the material qualities, remaining neutral and transcendental, knowing that the modes alone are active;"
       },
       {
@@ -5068,7 +5068,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "समदुःखसुखः स्वस्थः समलोष्ट्राश्मकाञ्चनः |\nतुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः ||१४-२४||",
         "transliteration": "sama-duḥkha-sukhaḥ svasthaḥ sama-loṣhṭrāśhma-kāñchanaḥ\ntulya-priyāpriyo dhīras tulya-nindātma-saṁstutiḥ",
-        "hindi_meaning": "क्रोध से भ्रम उत्पन्न होता है, भ्रम से स्मृति भ्रष्ट होती है, स्मृति के नष्ट होने से बुद्धि नष्ट हो जाती है और बुद्धि के नष्ट होने से मनुष्य का पतन हो जाता है।",
+        "hindi_meaning": "जो आत्मभाव में स्थित होकर सुख और दुःख को समान मानता है, मिट्टी के ढेले, पत्थर और सोने को समान दृष्टि से देखता है, प्रिय और अप्रिय के प्रति समान रहता है तथा निन्दा और स्तुति, मान और अपमान में स्थिर रहता है;",
         "meaning": "who is situated in the self and regards alike happiness and distress; who looks upon a lump of earth, a stone and a piece of gold with an equal eye; who is equal toward the desirable and the undesirable; who is steady, situated equally well in praise and blame, honor and dishonor;"
       },
       {
@@ -5077,7 +5077,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः |\nसर्वारम्भपरित्यागी गुणातीतः स उच्यते ||१४-२५||",
         "transliteration": "mānāpamānayos tulyas tulyo mitrāri-pakṣhayoḥ\nsarvārambha-parityāgī guṇātītaḥ sa uchyate",
-        "hindi_meaning": "लेकिन जो व्यक्ति इन्द्रियों को वश में करके, राग-द्वेष से रहित होकर, अपने स्वरूप में स्थित रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "जो मित्र और शत्रु से समान व्यवहार करता है और जिसने समस्त भौतिक कर्मों का त्याग कर दिया है—ऐसा व्यक्ति प्रकृति के गुणों से परे कहा जाता है।",
         "meaning": "who treats the friend and the enemy alike; and who has renounced all material activities—such a person is said to have transcended the modes of nature."
       },
       {
@@ -5086,7 +5086,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "मां च योऽव्यभिचारेण भक्तियोगेन सेवते |\nस गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते ||१४-२६||",
         "transliteration": "māṁ cha yo ’vyabhichāreṇa bhakti-yogena sevate\nsa guṇān samatītyaitān brahma-bhūyāya kalpate",
-        "hindi_meaning": "शान्ति प्राप्त होने पर सभी दुःखों का अन्त हो जाता है और शान्त चित्त वाले की बुद्धि शीघ्र स्थिर हो जाती है।",
+        "hindi_meaning": "जो सभी परिस्थितियों में अविचलित रहकर पूर्ण भक्तिमय सेवा में लगा रहता है, वह तुरन्त भौतिक प्रकृति के गुणों को पार करके ब्रह्म के स्तर पर पहुँच जाता है।",
         "meaning": "One who engages in full devotional service, unfailing in all circumstances, at once transcends the modes of material nature and thus comes to the level of Brahman."
       },
       {
@@ -5095,7 +5095,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 14,
         "text": "ब्रह्मणो हि प्रतिष्ठाहममृतस्याव्ययस्य च |\nशाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च ||१४-२७||",
         "transliteration": "brahmaṇo hi pratiṣhṭhāham amṛitasyāvyayasya cha\nśhāśhvatasya cha dharmasya sukhasyaikāntikasya cha",
-        "hindi_meaning": "जो व्यक्ति योग में स्थित नहीं है, उसकी बुद्धि स्थिर नहीं होती और उसके लिए आत्मज्ञान नहीं है। आत्मज्ञान के बिना शान्ति नहीं है और शान्ति के बिना सुख कहाँ?",
+        "hindi_meaning": "मैं उस निर्विशेष ब्रह्म का आधार हूँ, जो अमर, अविनाशी, नित्य और परम सुख की स्वाभाविक स्थिति है।",
         "meaning": "And I am the basis of the impersonal Brahman, which is immortal, imperishable and eternal and is the constitutional position of ultimate happiness."
       }
     ]
@@ -5114,7 +5114,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "श्रीभगवानुवाच |\nऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् |\nछन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित् ||१५-१||",
         "transliteration": "śhrī bhagavān uvācha\nūrdhva-mūlam adhaḥ-śhākham aśhvatthaṁ prāhur avyayam\nchhandāṁsi yasya parṇāni yas taṁ veda sa veda-vit",
-        "hindi_meaning": "जो इन्द्रियाँ चंचल हैं, उन्हें वश में न करने पर मन भी उनके पीछे-पीछे भटकता है, जैसे वायु नाव को बहा ले जाती है।",
+        "hindi_meaning": "श्रीभगवान् ने कहा: कहा जाता है कि एक अविनाशी बरगद का वृक्ष है, जिसकी जड़ें ऊपर, शाखाएँ नीचे और पत्ते वैदिक मन्त्र हैं। जो इस वृक्ष को जानता है, वह वेदों का ज्ञाता है।",
         "meaning": "The Supreme Personality of Godhead said: It is said that there is an imperishable banyan tree that has its roots upward and its branches down and whose leaves are the Vedic hymns. One who knows this tree is the knower of the Vedas."
       },
       {
@@ -5123,7 +5123,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा\nगुणप्रवृद्धा विषयप्रवालाः |\nअधश्च मूलान्यनुसन्ततानि\nकर्मानुबन्धीनि मनुष्यलोके ||१५-२||",
         "transliteration": "adhaśh chordhvaṁ prasṛitās tasya śhākhā\nguṇa-pravṛiddhā viṣhaya-pravālāḥ\nadhaśh cha mūlāny anusantatāni\nkarma-nubandhīni manuṣhya-loke",
-        "hindi_meaning": "हे महाबाहो! इसलिए जो व्यक्ति सभी इन्द्रियों को इन्द्रिय-विषयों से पूर्णतः हटा देता है, उसकी बुद्धि स्थिर है।",
+        "hindi_meaning": "भौतिक प्रकृति के तीनों गुणों से पोषित इस वृक्ष की शाखाएँ नीचे और ऊपर फैली हैं। उसकी टहनियाँ इन्द्रियविषय हैं। इसकी जड़ें नीचे भी जाती हैं और मानव समाज के सकाम कर्मों से बँधी हैं।",
         "meaning": "The branches of this tree extend downward and upward, nourished by the three modes of material nature. The twigs are the objects of the senses. This tree also has roots going down, and these are bound to the fruitive actions of human society."
       },
       {
@@ -5132,7 +5132,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "न रूपमस्येह तथोपलभ्यते\nनान्तो न चादिर्न च सम्प्रतिष्ठा |\nअश्वत्थमेनं सुविरूढमूल\nमसङ्गशस्त्रेण दृढेन छित्त्वा ||१५-३||",
         "transliteration": "na rūpam asyeha tathopalabhyate\nnānto na chādir na cha sampratiṣhṭhā\naśhvattham enaṁ su-virūḍha-mūlam\nasaṅga-śhastreṇa dṛiḍhena chhittvā",
-        "hindi_meaning": "जो सभी प्राणियों के लिए रात्रि है, वही जागृत पुरुष के लिए दिन है और जो सभी प्राणियों के लिए दिन है, वही जागृत पुरुष के लिए रात्रि है।",
+        "hindi_meaning": "इस संसार में इस वृक्ष का वास्तविक रूप नहीं देखा जा सकता। कोई नहीं समझ सकता कि इसका अन्त, आरम्भ या आधार कहाँ है। किन्तु दृढ़ निश्चय से अनासक्ति के शस्त्र द्वारा इस दृढ़मूल वृक्ष को काट देना चाहिए।",
         "meaning": "The real form of this tree cannot be perceived in this world. No one can understand where it ends, where it begins, or where its foundation is. But with determination one must cut down this strongly rooted tree with the weapon of detachment."
       },
       {
@@ -5141,7 +5141,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "ततः पदं तत्परिमार्गितव्यं\nयस्मिन्गता न निवर्तन्ति भूयः |\nतमेव चाद्यं पुरुषं प्रपद्ये\nयतः प्रवृत्तिः प्रसृता पुराणी ||१५-४||",
         "transliteration": "tataḥ padaṁ tat parimārgitavyaṁ\nyasmin gatā na nivartanti bhūyaḥ\ntam eva chādyaṁ puruṣhaṁ prapadye\nyataḥ pravṛittiḥ prasṛitā purāṇī",
-        "hindi_meaning": "जैसे सभी नदियाँ समुद्र में मिलकर अपना नाम-रूप खो देती हैं, वैसे ही ज्ञानी पुरुष सभी इच्छाओं को त्यागकर शान्ति प्राप्त करता है, न कि इच्छा करने वाला।",
+        "hindi_meaning": "तत्पश्चात् उस स्थान की खोज करनी चाहिए, जहाँ जाकर मनुष्य कभी लौटता नहीं, और उस परम पुरुषोत्तम भगवान् की शरण ग्रहण करनी चाहिए, जिनसे सबका आरम्भ हुआ और अनादि काल से सबका विस्तार हुआ है।",
         "meaning": "Thereafter, one must seek that place from which, having gone, one never returns, and there surrender to that Supreme Personality of Godhead from whom everything began and from whom everything has extended since time immemorial."
       },
       {
@@ -5150,7 +5150,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "निर्मानमोहा जितसङ्गदोषा\nअध्यात्मनित्या विनिवृत्तकामाः |\nद्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञै\nर्गच्छन्त्यमूढाः पदमव्ययं तत् ||१५-५||",
         "transliteration": "nirmāna-mohā jita-saṅga-doṣhā\nadhyātma-nityā vinivṛitta-kāmāḥ\ndvandvair vimuktāḥ sukha-duḥkha-saṁjñair\ngachchhanty amūḍhāḥ padam avyayaṁ tat",
-        "hindi_meaning": "हे पार्थ! जो व्यक्ति सभी इच्छाओं को त्यागकर, स्वयं में ही संतुष्ट रहता है, वह शान्ति प्राप्त करता है।",
+        "hindi_meaning": "जो मिथ्या प्रतिष्ठा, मोह और कुसंगति से मुक्त हैं, नित्य तत्त्व को समझते हैं, भौतिक कामना त्याग चुके हैं, सुख और दुःख के द्वन्द्वों से मुक्त हैं तथा मोहरहित होकर परम पुरुष की शरण लेना जानते हैं, वे उस नित्य धाम को प्राप्त करते हैं।",
         "meaning": "Those who are free from false prestige, illusion and false association, who understand the eternal, who are done with material lust, who are freed from the dualities of happiness and distress, and who, unbewildered, know how to surrender unto the Supreme Person attain to that eternal kingdom."
       },
       {
@@ -5159,7 +5159,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "न तद्भासयते सूर्यो न शशाङ्को न पावकः |\nयद्गत्वा न निवर्तन्ते तद्धाम परमं मम ||१५-६||",
         "transliteration": "na tad bhāsayate sūryo na śhaśhāṅko na pāvakaḥ\nyad gatvā na nivartante tad dhāma paramaṁ mama",
-        "hindi_meaning": "हे अर्जुन! यह ब्रह्म की स्थिति है। इसे प्राप्त करके मनुष्य मोहित नहीं होता। इस अवस्था में स्थित रहकर, अन्त समय में भी, वह ब्रह्म-निर्वाण को प्राप्त करता है।",
+        "hindi_meaning": "मेरा वह परम धाम न सूर्य या चन्द्रमा से, न अग्नि या विद्युत् से प्रकाशित होता है। वहाँ पहुँचने वाले इस भौतिक जगत में फिर कभी नहीं लौटते।",
         "meaning": "That supreme abode of Mine is not illumined by the sun or moon, nor by fire or electricity. Those who reach it never return to this material world."
       },
       {
@@ -5168,7 +5168,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "ममैवांशो जीवलोके जीवभूतः सनातनः |\nमनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ||१५-७||",
         "transliteration": "mamaivāṁśho jīva-loke jīva-bhūtaḥ sanātanaḥ\nmanaḥ-ṣhaṣhṭhānīndriyāṇi prakṛiti-sthāni karṣhati",
-        "hindi_meaning": "अर्जुन ने कहा: हे जनार्दन! हे केशव! यदि आपकी दृष्टि में कर्म से बुद्धि (ज्ञान) श्रेष्ठ है, तो आप मुझे इस भयंकर युद्ध में क्यों लगा रहे हैं?",
+        "hindi_meaning": "इस बद्ध संसार के जीव मेरे नित्य अंश हैं। बद्ध जीवन के कारण वे मन सहित छह इन्द्रियों से अत्यन्त कठिन संघर्ष कर रहे हैं।",
         "meaning": "The living entities in this conditioned world are My eternal fragmental parts. Due to conditioned life, they are struggling very hard with the six senses, which include the mind."
       },
       {
@@ -5177,7 +5177,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः |\nगृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात् ||१५-८||",
         "transliteration": "śharīraṁ yad avāpnoti yach chāpy utkrāmatīśhvaraḥ\ngṛihītvaitāni saṁyāti vāyur gandhān ivāśhayāt",
-        "hindi_meaning": "आपके मिश्रित वचनों से मेरी बुद्धि मोहित हो रही है। इसलिए निश्चयपूर्वक एक ही बात कहिए, जिससे मैं श्रेय प्राप्त करूँ।",
+        "hindi_meaning": "भौतिक जगत में जीव अपनी जीवन सम्बन्धी विभिन्न धारणाओं को एक शरीर से दूसरे शरीर में वैसे ले जाता है, जैसे वायु सुगन्ध को ले जाती है। इस प्रकार वह एक शरीर धारण करता है, उसे छोड़ता है और दूसरा ग्रहण करता है।",
         "meaning": "The living entity in the material world carries his different conceptions of life from one body to another as the air carries aromas. Thus he takes one kind of body and again quits it to take another."
       },
       {
@@ -5186,7 +5186,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च |\nअधिष्ठाय मनश्चायं विषयानुपसेवते ||१५-९||",
         "transliteration": "śhrotraṁ chakṣhuḥ sparśhanaṁ cha rasanaṁ ghrāṇam eva cha\nadhiṣhṭhāya manaśh chāyaṁ viṣhayān upasevate",
-        "hindi_meaning": "श्री भगवान ने कहा: हे निष्पाप अर्जुन! मैंने पहले दो प्रकार की निष्ठा बताई है - सांख्ययोगियों के लिए ज्ञानयोग और योगियों के लिए कर्मयोग।",
+        "hindi_meaning": "दूसरा स्थूल शरीर ग्रहण करके जीव मन के चारों ओर स्थित विशेष प्रकार के कान, आँख, जीभ, नाक और स्पर्शेन्द्रिय प्राप्त करता है तथा इन्द्रियविषयों के एक विशेष समूह का भोग करता है।",
         "meaning": "The living entity, thus taking another gross body, obtains a certain type of ear, eye, tongue, nose and sense of touch, which are grouped about the mind. He thus enjoys a particular set of sense objects."
       },
       {
@@ -5195,7 +5195,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम् |\nविमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः ||१५-१०||",
         "transliteration": "utkrāmantaṁ sthitaṁ vāpi bhuñjānaṁ vā guṇānvitam\nvimūḍhā nānupaśhyanti paśhyanti jñāna-chakṣhuṣhaḥ",
-        "hindi_meaning": "मनुष्य केवल कर्म न करने से कर्मफल से मुक्त नहीं होता और न ही केवल संन्यास से सिद्धि प्राप्त करता है।",
+        "hindi_meaning": "मूर्ख नहीं समझ पाते कि जीव शरीर कैसे छोड़ता है या प्रकृति के गुणों के वशीभूत होकर किस प्रकार के शरीर का भोग करता है। किन्तु ज्ञान से प्रशिक्षित नेत्रों वाला यह सब देख सकता है।",
         "meaning": "The foolish cannot understand how a living entity can quit his body, nor can they understand what sort of body he enjoys under the spell of the modes of nature. But one whose eyes are trained in knowledge can see all this."
       },
       {
@@ -5204,7 +5204,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम् |\nयतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः ||१५-११||",
         "transliteration": "yatanto yoginaśh chainaṁ paśhyanty ātmany avasthitam\nyatanto ’py akṛitātmāno nainaṁ paśhyanty achetasaḥ",
-        "hindi_meaning": "कोई भी क्षणभर भी बिना कर्म किए नहीं रह सकता, क्योंकि सभी प्रकृति के गुणों से बाध्य होकर कर्म करने को विवश हैं।",
+        "hindi_meaning": "आत्मसाक्षात्कार में स्थित प्रयत्नशील योगी यह सब स्पष्ट देख सकते हैं, किन्तु जिनका मन विकसित नहीं है और जो आत्मसाक्षात्कार में स्थित नहीं हैं, वे प्रयत्न करके भी घटित हो रही बातों को नहीं देख सकते।",
         "meaning": "The endeavoring transcendentalists who are situated in self-realization can see all this clearly. But those whose minds are not developed and who are not situated in self-realization cannot see what is taking place, though they may try."
       },
       {
@@ -5213,7 +5213,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "यदादित्यगतं तेजो जगद्भासयतेऽखिलम् |\nयच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम् ||१५-१२||",
         "transliteration": "yad āditya-gataṁ tejo jagad bhāsayate ’khilam\nyach chandramasi yach chāgnau tat tejo viddhi māmakam",
-        "hindi_meaning": "जो व्यक्ति कर्मेन्द्रियों को वश में करके मन से इन्द्रिय-विषयों का चिन्तन करता है, वह मूढ़ात्मा और मिथ्याचारी कहलाता है।",
+        "hindi_meaning": "सम्पूर्ण संसार का अन्धकार दूर करने वाला सूर्य का तेज मुझसे आता है। चन्द्रमा और अग्नि का तेज भी मुझसे ही है।",
         "meaning": "The splendor of the sun, which dissipates the darkness of this whole world, comes from Me. And the splendor of the moon and the splendor of fire are also from Me."
       },
       {
@@ -5222,7 +5222,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "गामाविश्य च भूतानि धारयाम्यहमोजसा |\nपुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः ||१५-१३||",
         "transliteration": "gām āviśhya cha bhūtāni dhārayāmy aham ojasā\npuṣhṇāmi chauṣhadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ",
-        "hindi_meaning": "हे अर्जुन! जो व्यक्ति मन से इन्द्रियों को वश में करके कर्मेन्द्रियों से कर्मयोग करता है, वह श्रेष्ठ है।",
+        "hindi_meaning": "मैं प्रत्येक ग्रह में प्रवेश करता हूँ और मेरी शक्ति से वे अपनी कक्षा में स्थित रहते हैं। मैं चन्द्रमा बनकर समस्त वनस्पतियों को जीवनरस प्रदान करता हूँ।",
         "meaning": "I enter into each planet, and by My energy they stay in orbit. I become the moon and thereby supply the juice of life to all vegetables."
       },
       {
@@ -5231,7 +5231,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः |\nप्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम् ||१५-१४||",
         "transliteration": "ahaṁ vaiśhvānaro bhūtvā prāṇināṁ deham āśhritaḥ\nprāṇāpāna-samāyuktaḥ pachāmy annaṁ chatur-vidham",
-        "hindi_meaning": "तुम नियत कर्म करो, क्योंकि कर्म न करने से श्रेष्ठ है कर्म करना। कर्म न करने से तुम्हारा शरीर-निर्वाह भी नहीं हो सकता।",
+        "hindi_meaning": "मैं समस्त जीवों के शरीरों में पाचन की अग्नि हूँ और बाहर तथा भीतर जाने वाली प्राणवायु के साथ मिलकर चार प्रकार के अन्न को पचाता हूँ।",
         "meaning": "I am the fire of digestion in the bodies of all living entities, and I join with the air of life, outgoing and incoming, to digest the four kinds of foodstuff."
       },
       {
@@ -5240,7 +5240,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "सर्वस्य चाहं हृदि सन्निविष्टो\nमत्तः स्मृतिर्ज्ञानमपोहनं च |\nवेदैश्च सर्वैरहमेव वेद्यो\nवेदान्तकृद्वेदविदेव चाहम् ||१५-१५||",
         "transliteration": "sarvasya chāhaṁ hṛidi sanniviṣhṭo\nmattaḥ smṛitir jñānam apohanaṁ cha\nvedaiśh cha sarvair aham eva vedyo\nvedānta-kṛid veda-vid eva chāham",
-        "hindi_meaning": "हे कौन्तेय! यज्ञ के अतिरिक्त कर्म करने से यह लोक कर्मबन्धन में बँध जाता है। इसलिए यज्ञ के लिए कर्म करो, आसक्ति रहित होकर।",
+        "hindi_meaning": "मैं सबके हृदय में स्थित हूँ और मुझसे स्मृति, ज्ञान तथा विस्मृति आती है। समस्त वेदों द्वारा मुझे ही जानना है। वास्तव में मैं वेदान्त का रचयिता और वेदों का ज्ञाता हूँ।",
         "meaning": "I am seated in everyone’s heart, and from Me come remembrance, knowledge and forgetfulness. By all the Vedas, I am to be known. Indeed, I am the compiler of Vedanta, and I am the knower of the Vedas."
       },
       {
@@ -5249,7 +5249,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च |\nक्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते ||१५-१६||",
         "transliteration": "dvāv imau puruṣhau loke kṣharaśh chākṣhara eva cha\nkṣharaḥ sarvāṇi bhūtāni kūṭa-stho ’kṣhara uchyate",
-        "hindi_meaning": "प्रजापति ने प्रजाओं को यज्ञ सहित सृष्ट करके कहा: इससे तुम लोग वृद्धि को प्राप्त हो और यह तुम्हारा इष्टकामधुक (सभी इच्छाओं को पूर्ण करने वाला) हो।",
+        "hindi_meaning": "जीवों के दो वर्ग हैं—क्षर और अक्षर। भौतिक जगत में प्रत्येक जीव क्षर है और आध्यात्मिक जगत में प्रत्येक जीव अक्षर कहलाता है।",
         "meaning": "There are two classes of beings, the fallible and the infallible. In the material world every living entity is fallible, and in the spiritual world every living entity is called infallible."
       },
       {
@@ -5258,7 +5258,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युदाहृतः |\nयो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः ||१५-१७||",
         "transliteration": "uttamaḥ puruṣhas tv anyaḥ paramātmety udāhṛitaḥ\nyo loka-trayam āviśhya bibharty avyaya īśhvaraḥ",
-        "hindi_meaning": "इससे देवताओं को तृप्त करो और देवता तुम्हें तृप्त करेंगे। इस प्रकार एक-दूसरे को तृप्त करके तुम परम श्रेय को प्राप्त होगे।",
+        "hindi_meaning": "इन दोनों के अतिरिक्त महानतम जीवस्वरूप परमात्मा हैं, स्वयं अविनाशी प्रभु, जो तीनों लोकों में प्रवेश करके उनका पालन कर रहे हैं।",
         "meaning": "Besides these two, there is the greatest living personality, the Supreme Soul, the imperishable Lord Himself, who has entered the three worlds and is maintaining them."
       },
       {
@@ -5267,7 +5267,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः |\nअतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ||१५-१८||",
         "transliteration": "yasmāt kṣharam atīto ’ham akṣharād api chottamaḥ\nato ’smi loke vede cha prathitaḥ puruṣhottamaḥ",
-        "hindi_meaning": "यज्ञ से तृप्त देवता तुम्हें सभी वांछित वस्तुएँ प्रदान करेंगे। जो उनके द्वारा दी गई वस्तुओं का भोग करके उन्हें नहीं देता, वह चोर है।",
+        "hindi_meaning": "क्योंकि मैं क्षर और अक्षर दोनों से परे दिव्य हूँ और सर्वोच्च हूँ, अतः संसार और वेदों में उस परम पुरुष के रूप में विख्यात हूँ।",
         "meaning": "Because I am transcendental, beyond both the fallible and the infallible, and because I am the greatest, I am celebrated both in the world and in the Vedas as that Supreme Person."
       },
       {
@@ -5276,7 +5276,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम् |\nस सर्वविद्भजति मां सर्वभावेन भारत ||१५-१९||",
         "transliteration": "yo mām evam asammūḍho jānāti puruṣhottamam\nsa sarva-vid bhajati māṁ sarva-bhāvena bhārata",
-        "hindi_meaning": "यज्ञशेष से भोजन करने वाले साधु सभी पापों से मुक्त हो जाते हैं, लेकिन जो अपने लिए ही पकाते हैं, वे पाप को भोगते हैं।",
+        "hindi_meaning": "हे भरतपुत्र, जो संशयरहित होकर मुझे पूर्ण पुरुषोत्तम भगवान् के रूप में जानता है, वह सब कुछ जानने वाला है। इसलिए वह मेरी पूर्ण भक्तिमय सेवा में लग जाता है।",
         "meaning": "Whoever knows Me as the Supreme Personality of Godhead, without doubting, is the knower of everything. He therefore engages himself in full devotional service to Me, O son of Bharata."
       },
       {
@@ -5285,7 +5285,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 15,
         "text": "इति गुह्यतमं शास्त्रमिदमुक्तं मयानघ |\nएतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत ||१५-२०||",
         "transliteration": "iti guhyatamaṁ śhāstram idam uktaṁ mayānagha\netad buddhvā buddhimān syāt kṛita-kṛityaśh cha bhārata",
-        "hindi_meaning": "प्राणियों की उत्पत्ति अन्न से होती है, अन्न की उत्पत्ति वर्षा से होती है, वर्षा यज्ञ से होती है और यज्ञ कर्म से होता है।",
+        "hindi_meaning": "हे निष्पाप, यह वैदिक शास्त्रों का सर्वाधिक गोपनीय अंश है और अब मेरे द्वारा प्रकट किया गया है। जो इसे समझता है, वह बुद्धिमान होगा और उसके प्रयास सिद्ध होंगे।",
         "meaning": "This is the most confidential part of the Vedic scriptures, O sinless one, and it is disclosed now by Me. Whoever understands this will become wise, and his endeavors will know perfection."
       }
     ]
@@ -5304,7 +5304,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "श्रीभगवानुवाच |\nअभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः |\nदानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ||१६-१||",
         "transliteration": "śhrī bhagavān uvācha\nabhayaṁ sattva-saṁśhuddhir jñāna-yoga-vyavasthitiḥ\ndānaṁ damaśh cha yajñaśh cha svādhyāyas tapa ārjavam",
-        "hindi_meaning": "कर्म ब्रह्म से उत्पन्न होता है, ब्रह्म अक्षर (परमात्मा) से उत्पन्न होता है। इसलिए सर्वव्यापी ब्रह्म सदैव यज्ञ में स्थित है।",
+        "hindi_meaning": "श्रीभगवान् ने कहा: निर्भयता, अपने अस्तित्व की शुद्धि, आध्यात्मिक ज्ञान का अनुशीलन, दान, आत्मसंयम, यज्ञ करना, वेदाध्ययन, तपस्या और सरलता;",
         "meaning": "The Supreme Personality of Godhead said: Fearlessness; purification of one’s existence; cultivation of spiritual knowledge; charity; self-control; performance of sacrifice; study of the Vedas; austerity; simplicity;"
       },
       {
@@ -5313,7 +5313,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् |\nदया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम् ||१६-२||",
         "transliteration": "ahiṁsā satyam akrodhas tyāgaḥ śhāntir apaiśhunam\ndayā bhūteṣhv aloluptvaṁ mārdavaṁ hrīr achāpalam",
-        "hindi_meaning": "हे पार्थ! जो व्यक्ति इस प्रकार यज्ञ चक्र का अनुसरण नहीं करता, वह पापी जीवन बिताता है और केवल इन्द्रिय-सुख में लिप्त रहता है, वह व्यर्थ जीवन जीता है।",
+        "hindi_meaning": "अहिंसा, सत्यता, क्रोध से मुक्ति, त्याग, शान्ति, दोष ढूँढ़ने से विरक्ति, समस्त जीवों पर करुणा, लोभरहितता, कोमलता, लज्जा और दृढ़ निश्चय;",
         "meaning": "nonviolence; truthfulness; freedom from anger; renunciation; tranquility; aversion to faultfinding; compassion for all living entities; freedom from covetousness; gentleness; modesty; steady determination;"
       },
       {
@@ -5322,7 +5322,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता |\nभवन्ति सम्पदं दैवीमभिजातस्य भारत ||१६-३||",
         "transliteration": "tejaḥ kṣhamā dhṛitiḥ śhaucham adroho nāti-mānitā\nbhavanti sampadaṁ daivīm abhijātasya bhārata",
-        "hindi_meaning": "लेकिन जो व्यक्ति आत्मा में आनन्दित है, आत्मा में तृप्त है और आत्मा में ही संतुष्ट है, उसके लिए कोई कर्तव्य नहीं है।",
+        "hindi_meaning": "तेज, क्षमा, धैर्य, शुद्धता तथा ईर्ष्या और सम्मान की लालसा से मुक्ति—हे भरतपुत्र, ये दिव्य गुण दैवी स्वभाव से युक्त मनुष्यों के होते हैं।",
         "meaning": "vigor; forgiveness; fortitude; cleanliness; and freedom from envy and from the passion for honor—these transcendental qualities, O son of Bharata, belong to godly men endowed with divine nature."
       },
       {
@@ -5331,7 +5331,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च |\nअज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम् ||१६-४||",
         "transliteration": "dambho darpo ’bhimānaśh cha krodhaḥ pāruṣhyam eva cha\najñānaṁ chābhijātasya pārtha sampadam āsurīm",
-        "hindi_meaning": "उसके लिए कर्म करने में कोई प्रयोजन नहीं है और कर्म न करने में भी कोई प्रयोजन नहीं है। उसे किसी भी प्राणी पर निर्भर नहीं रहना पड़ता।",
+        "hindi_meaning": "हे पृथापुत्र, गर्व, दर्प, अभिमान, क्रोध, कठोरता और अज्ञान—ये गुण आसुरी स्वभाव वालों के होते हैं।",
         "meaning": "Pride, arrogance, conceit, anger, harshness and ignorance—these qualities belong to those of demonic nature, O son of Pritha."
       },
       {
@@ -5340,7 +5340,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता |\nमा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव ||१६-५||",
         "transliteration": "daivī sampad vimokṣhāya nibandhāyāsurī matā\nmā śhuchaḥ sampadaṁ daivīm abhijāto ’si pāṇḍava",
-        "hindi_meaning": "इसलिए सदैव कर्तव्यपूर्वक कर्म करो, बिना आसक्ति के। बिना आसक्ति के कर्म करने से मनुष्य परम को प्राप्त करता है।",
+        "hindi_meaning": "दिव्य गुण मुक्ति के अनुकूल हैं, जबकि आसुरी गुण बन्धन का कारण हैं। हे पाण्डुपुत्र, चिन्ता मत करो, क्योंकि तुम दैवी गुणों के साथ जन्मे हो।",
         "meaning": "The transcendental qualities are conducive to liberation, whereas the demonic qualities make for bondage. Do not worry, O son of Pandu, for you are born with the divine qualities."
       },
       {
@@ -5349,7 +5349,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "द्वौ भूतसर्गौ लोकेऽस्मिन्दैव आसुर एव च |\nदैवो विस्तरशः प्रोक्त आसुरं पार्थ मे शृणु ||१६-६||",
         "transliteration": "dvau bhūta-sargau loke ’smin daiva āsura eva cha\ndaivo vistaraśhaḥ prokta āsuraṁ pārtha me śhṛiṇu",
-        "hindi_meaning": "राजा जनक आदि ने केवल कर्म करके ही सिद्धि प्राप्त की थी। लोक की स्थिति के लिए भी तुम्हें कर्म करना चाहिए।",
+        "hindi_meaning": "हे पृथापुत्र, इस संसार में सृजे गए जीव दो प्रकार के हैं—दैवी और आसुरी। मैं तुम्हें दैवी गुणों का विस्तार से वर्णन कर चुका हूँ। अब मुझसे आसुरी गुणों को सुनो।",
         "meaning": "O son of Pritha, in this world there are two kinds of created beings. One is called the divine and the other demonic. I have already explained to you at length the divine qualities. Now hear from Me of the demonic."
       },
       {
@@ -5358,7 +5358,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः |\nन शौचं नापि चाचारो न सत्यं तेषु विद्यते ||१६-७||",
         "transliteration": "pravṛittiṁ cha nivṛittiṁ cha janā na vidur āsurāḥ\nna śhauchaṁ nāpi chāchāro na satyaṁ teṣhu vidyate",
-        "hindi_meaning": "जो श्रेष्ठ व्यक्ति जैसा करता है, सामान्य लोग भी वैसा ही करते हैं। जो वह मानकर चलता है, लोग उसका अनुसरण करते हैं।",
+        "hindi_meaning": "आसुरी लोग नहीं जानते कि क्या करना चाहिए और क्या नहीं करना चाहिए। उनमें न शुद्धता, न उचित आचरण और न सत्य पाया जाता है।",
         "meaning": "Those who are demonic do not know what is to be done and what is not to be done. Neither cleanliness nor proper behavior nor truth is found in them."
       },
       {
@@ -5367,7 +5367,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम् |\nअपरस्परसम्भूतं किमन्यत्कामहैतुकम् ||१६-८||",
         "transliteration": "asatyam apratiṣhṭhaṁ te jagad āhur anīśhvaram\naparaspara-sambhūtaṁ kim anyat kāma-haitukam",
-        "hindi_meaning": "हे पार्थ! तीनों लोकों में मेरे लिए कोई कर्तव्य नहीं है, न ही मुझे कुछ प्राप्त करना है या प्राप्त नहीं करना है, फिर भी मैं कर्म में लगा रहता हूँ।",
+        "hindi_meaning": "वे कहते हैं कि यह जगत मिथ्या, आधारहीन और किसी नियामक ईश्वर से रहित है। वे कहते हैं कि यह कामेच्छा से उत्पन्न हुआ है और वासना के अतिरिक्त इसका कोई कारण नहीं है।",
         "meaning": "They say that this world is unreal, with no foundation, no God in control. They say it is produced of sex desire and has no cause other than lust."
       },
       {
@@ -5376,7 +5376,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धयः |\nप्रभवन्त्युग्रकर्माणः क्षयाय जगतोऽहिताः ||१६-९||",
         "transliteration": "etāṁ dṛiṣhṭim avaṣhṭabhya naṣhṭātmāno ’lpa-buddhayaḥ\nprabhavanty ugra-karmāṇaḥ kṣhayāya jagato ’hitāḥ",
-        "hindi_meaning": "हे पार्थ! यदि मैं नियत कर्म न करूँ, तो सभी लोग मेरे मार्ग का अनुसरण करेंगे और यह लोक नष्ट हो जाएगा।",
+        "hindi_meaning": "ऐसे निष्कर्षों का अनुसरण करने वाले, आत्मविनष्ट और बुद्धिहीन आसुरी लोग संसार के विनाश के लिए अहितकारी और भयानक कार्यों में लगते हैं।",
         "meaning": "Following such conclusions, the demonic, who are lost to themselves and who have no intelligence, engage in unbeneficial, horrible works meant to destroy the world."
       },
       {
@@ -5385,7 +5385,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः |\nमोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः ||१६-१०||",
         "transliteration": "kāmam āśhritya duṣhpūraṁ dambha-māna-madānvitāḥ\nmohād gṛihītvāsad-grāhān pravartante ’śhuchi-vratāḥ",
-        "hindi_meaning": "हे भारत! जैसे अज्ञानी लोग कर्मफल में आसक्त होकर कर्म करते हैं, वैसे ही ज्ञानी व्यक्ति को भी लोक की स्थिति के लिए कर्म करना चाहिए, बिना आसक्ति के।",
+        "hindi_meaning": "अतृप्त कामना का आश्रय लेकर तथा गर्व और मिथ्या प्रतिष्ठा के दम्भ में डूबकर मोहित आसुरी लोग क्षणभंगुर वस्तुओं से आकर्षित होकर सदा अपवित्र कर्म करने की प्रतिज्ञा करते हैं।",
         "meaning": "Taking shelter of insatiable lust and absorbed in the conceit of pride and false prestige, the demonic, thus illusioned, are always sworn to unclean work, attracted by the impermanent."
       },
       {
@@ -5394,7 +5394,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिताः |\nकामोपभोगपरमा एतावदिति निश्चिताः ||१६-११||",
         "transliteration": "chintām aparimeyāṁ cha pralayāntām upāśhritāḥ\nkāmopabhoga-paramā etāvad iti niśhchitāḥ",
-        "hindi_meaning": "ज्ञानी व्यक्ति अज्ञानियों को कर्म में लगाए रखने के लिए स्वयं कर्म करता है। सभी कर्म मुझमें अर्पित करके कर्म करो।",
+        "hindi_meaning": "वे इन्द्रियतृप्ति को मानव सभ्यता की प्रधान आवश्यकता मानते हैं। इसलिए जीवन के अन्त तक उनकी चिन्ता अपरिमित रहती है। लाखों इच्छाओं के जाल में बँधकर और काम तथा क्रोध में डूबकर वे इन्द्रियतृप्ति के लिए अवैध साधनों से धन प्राप्त करते हैं।",
         "meaning": "They believe that to gratify the senses is the prime necessity of human civilization. Thus until the end of life their anxiety is immeasurable. Bound by a network of hundreds of thousands of desires and absorbed in lust and anger, they secure money by illegal means for sense gratification."
       },
       {
@@ -5403,7 +5403,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "आशापाशशतैर्बद्धाः कामक्रोधपरायणाः |\nईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान् ||१६-१२||",
         "transliteration": "āśhā-pāśha-śhatair baddhāḥ kāma-krodha-parāyaṇāḥ\nīhante kāma-bhogārtham anyāyenārtha-sañchayān",
-        "hindi_meaning": "जो व्यक्ति अहंकार से मोहित है, वह सोचता है कि मैं कर्ता हूँ, लेकिन वास्तव में सभी कर्म प्रकृति के गुणों द्वारा किए जाते हैं।",
+        "hindi_meaning": "लाखों इच्छाओं के जाल में बँधकर और काम तथा क्रोध में डूबकर वे इन्द्रियतृप्ति के लिए अवैध साधनों से धन प्राप्त करते हैं।",
         "meaning": "Bound by a network of hundreds of thousands of desires and absorbed in lust and anger, they secure money by illegal means for sense gratification."
       },
       {
@@ -5412,7 +5412,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम् |\nइदमस्तीदमपि मे भविष्यति पुनर्धनम् ||१६-१३||",
         "transliteration": "idam adya mayā labdham imaṁ prāpsye manoratham\nidam astīdam api me bhaviṣhyati punar dhanam",
-        "hindi_meaning": "हे महाबाहो! जो व्यक्ति गुणों और कर्मों के स्वभाव को जानता है, वह सोचता है कि गुण गुणों में ही कर्म कर रहे हैं और आसक्त नहीं होता।",
+        "hindi_meaning": "आसुरी व्यक्ति सोचता है: आज मेरे पास इतना धन है और अपनी योजनाओं से मैं और अधिक प्राप्त करूँगा। अभी इतना मेरा है और भविष्य में यह अधिकाधिक बढ़ेगा।",
         "meaning": "The demonic person thinks: “So much wealth do I have today, and I will gain more according to my schemes. So much is mine now, and it will increase in the future, more and more."
       },
       {
@@ -5421,7 +5421,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "असौ मया हतः शत्रुर्हनिष्ये चापरानपि |\nईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी ||१६-१४||",
         "transliteration": "asau mayā hataḥ śhatrur haniṣhye chāparān api\nīśhvaro ’ham ahaṁ bhogī siddho ’haṁ balavān sukhī",
-        "hindi_meaning": "हे गुणातीत! जो व्यक्ति गुणों में स्थित है, वह गुणों द्वारा किए गए कर्मों में आसक्त हो जाता है, लेकिन जो गुणातीत है, वह आसक्त नहीं होता।",
+        "hindi_meaning": "वह मेरा शत्रु था और मैंने उसे मार दिया है; मेरे अन्य शत्रु भी मारे जाएँगे। मैं सबका स्वामी हूँ। मैं भोक्ता हूँ। मैं सिद्ध, शक्तिशाली और सुखी हूँ।",
         "meaning": "He is my enemy, and I have killed him, and my other enemies will also be killed. I am the lord of everything. I am the enjoyer. I am perfect, powerful and happy."
       },
       {
@@ -5430,7 +5430,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया |\nयक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः ||१६-१५||",
         "transliteration": "āḍhyo ’bhijanavān asmi ko ’nyo ’sti sadṛiśho mayā\nyakṣhye dāsyāmi modiṣhya ity ajñāna-vimohitāḥ",
-        "hindi_meaning": "जो व्यक्ति गुणों में मोहित है, वह गुणों के कर्मों में आसक्त हो जाता है। जो व्यक्ति गुणातीत है, वह जानता है कि गुण गुणों में ही कर्म कर रहे हैं।",
+        "hindi_meaning": "मैं सबसे धनी हूँ और कुलीन सम्बन्धियों से घिरा हूँ। मेरे समान शक्तिशाली और सुखी कोई नहीं है। मैं यज्ञ करूँगा, कुछ दान दूँगा और इस प्रकार आनन्द मनाऊँगा। इस प्रकार ऐसे व्यक्ति अज्ञान से मोहित रहते हैं।",
         "meaning": "I am the richest man, surrounded by aristocratic relatives. There is none so powerful and happy as I am. I shall perform sacrifices, I shall give some charity, and thus I shall rejoice.” In this way, such persons are deluded by ignorance."
       },
       {
@@ -5439,7 +5439,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "अनेकचित्तविभ्रान्ता मोहजालसमावृताः |\nप्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ ||१६-१६||",
         "transliteration": "aneka-chitta-vibhrāntā moha-jāla-samāvṛitāḥ\nprasaktāḥ kāma-bhogeṣhu patanti narake ’śhuchau",
-        "hindi_meaning": "हे अर्जुन! मुझमें अपने सभी कर्म अर्पित करो, मुझमें मन लगाओ, भक्ति करो, मुझे नमस्कार करो और मुझसे युक्त हो जाओ। इस प्रकार मुझसे युक्त होकर तुम मुझे प्राप्त करोगे।",
+        "hindi_meaning": "इस प्रकार अनेक चिन्ताओं से भ्रमित और मोहजाल में बँधे वे इन्द्रियभोग में अत्यधिक आसक्त होकर नरक में गिरते हैं।",
         "meaning": "Thus perplexed by various anxieties and bound by a network of illusions, they become too strongly attached to sense enjoyment and fall down into hell."
       },
       {
@@ -5448,7 +5448,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः |\nयजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम् ||१६-१७||",
         "transliteration": "ātma-sambhāvitāḥ stabdhā dhana-māna-madānvitāḥ\nyajante nāma-yajñais te dambhenāvidhi-pūrvakam",
-        "hindi_meaning": "हे अर्जुन! यदि तुम मेरे इस उपदेश का श्रद्धापूर्वक अनुसरण करोगे, तो तुम मुझे प्राप्त करोगे, क्योंकि तुम मुझसे प्रिय हो।",
+        "hindi_meaning": "आत्मतुष्ट, सदा धृष्ट तथा धन और मिथ्या प्रतिष्ठा से मोहित होकर वे कभी-कभी किसी विधि-विधान का पालन किए बिना केवल नाममात्र के यज्ञ गर्वपूर्वक करते हैं।",
         "meaning": "Self-complacent and always impudent, deluded by wealth and false prestige, they sometimes proudly perform sacrifices in name only, without following any rules or regulations."
       },
       {
@@ -5457,7 +5457,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः |\nमामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः ||१६-१८||",
         "transliteration": "ahaṅkāraṁ balaṁ darpaṁ kāmaṁ krodhaṁ cha saṁśhritāḥ\nmām ātma-para-deheṣhu pradviṣhanto ’bhyasūyakāḥ",
-        "hindi_meaning": "लेकिन यदि तुम अहंकार के कारण मेरी बात नहीं मानोगे, तो तुम नष्ट हो जाओगे।",
+        "hindi_meaning": "मिथ्या अहंकार, शक्ति, गर्व, काम और क्रोध से मोहित असुर अपने तथा दूसरों के शरीरों में स्थित पूर्ण पुरुषोत्तम भगवान् से ईर्ष्या करते हैं और वास्तविक धर्म की निन्दा करते हैं।",
         "meaning": "Bewildered by false ego, strength, pride, lust and anger, the demons become envious of the Supreme Personality of Godhead, who is situated in their own bodies and in the bodies of others, and blaspheme against the real religion."
       },
       {
@@ -5466,7 +5466,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "तानहं द्विषतः क्रूरान्संसारेषु नराधमान् |\nक्षिपाम्यजस्रमशुभानासुरीष्वेव योनिषु ||१६-१९||",
         "transliteration": "tān ahaṁ dviṣhataḥ krūrān saṁsāreṣhu narādhamān\nkṣhipāmy ajasram aśhubhān āsurīṣhv eva yoniṣhu",
-        "hindi_meaning": "सभी प्राणी अपनी प्रकृति के अनुसार कर्म करते हैं, भले ही वे ज्ञानी हों या अज्ञानी। दमन से क्या होगा?",
+        "hindi_meaning": "जो ईर्ष्यालु, दुष्ट और मनुष्यों में अधम हैं, उन्हें मैं निरन्तर भौतिक अस्तित्व के सागर में विभिन्न आसुरी योनियों में डालता हूँ।",
         "meaning": "Those who are envious and mischievous, who are the lowest among men, I perpetually cast into the ocean of material existence, into various demonic species of life."
       },
       {
@@ -5475,7 +5475,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "आसुरीं योनिमापन्ना मूढा जन्मनि जन्मनि |\nमामप्राप्यैव कौन्तेय ततो यान्त्यधमां गतिम् ||१६-२०||",
         "transliteration": "āsurīṁ yonim āpannā mūḍhā janmani janmani\nmām aprāpyaiva kaunteya tato yānty adhamāṁ gatim",
-        "hindi_meaning": "इन्द्रियों और इन्द्रिय-विषयों के प्रति राग-द्वेष को वश में करो, क्योंकि ये दोनों ही ज्ञान प्राप्ति में बाधक हैं।",
+        "hindi_meaning": "हे कुन्तीपुत्र, आसुरी योनियों में बारम्बार जन्म लेकर ऐसे व्यक्ति कभी मेरे निकट नहीं आ सकते। धीरे-धीरे वे अत्यन्त घृणित अस्तित्व में गिरते जाते हैं।",
         "meaning": "Attaining repeated birth amongst the species of demonic life, O son of Kunti, such persons can never approach Me. Gradually they sink down to the most abominable type of existence."
       },
       {
@@ -5484,7 +5484,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः |\nकामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत् ||१६-२१||",
         "transliteration": "tri-vidhaṁ narakasyedaṁ dvāraṁ nāśhanam ātmanaḥ\nkāmaḥ krodhas tathā lobhas tasmād etat trayaṁ tyajet",
-        "hindi_meaning": "अपने स्वधर्म का पालन करना, भले ही वह दोषपूर्ण हो, दूसरे के धर्म से श्रेष्ठ है। दूसरे के धर्म में मृत्यु भी भयानक है।",
+        "hindi_meaning": "इस नरक के तीन द्वार हैं—काम, क्रोध और लोभ। प्रत्येक विवेकी मनुष्य को इन्हें त्याग देना चाहिए, क्योंकि ये आत्मा के पतन का कारण हैं।",
         "meaning": "There are three gates leading to this hell—lust, anger and greed. Every sane man should give these up, for they lead to the degradation of the soul."
       },
       {
@@ -5493,7 +5493,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "एतैर्विमुक्तः कौन्तेय तमोद्वारैस्त्रिभिर्नरः |\nआचरत्यात्मनः श्रेयस्ततो याति परां गतिम् ||१६-२२||",
         "transliteration": "etair vimuktaḥ kaunteya tamo-dvārais tribhir naraḥ\nācharaty ātmanaḥ śhreyas tato yāti parāṁ gatim",
-        "hindi_meaning": "अर्जुन ने कहा: हे वार्ष्णेय! मनुष्य बिना इच्छा के भी पाप करने को क्यों प्रेरित होता है, जैसे बलपूर्वक ले जाया जा रहा हो?",
+        "hindi_meaning": "हे कुन्तीपुत्र, जो मनुष्य नरक के इन तीन द्वारों से बच गया है, वह आत्मसाक्षात्कार के अनुकूल कर्म करता है और इस प्रकार क्रमशः परम गति को प्राप्त करता है।",
         "meaning": "The man who has escaped these three gates of hell, O son of Kunti, performs acts conducive to self-realization and thus gradually attains the supreme destination."
       },
       {
@@ -5502,7 +5502,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः |\nन स सिद्धिमवाप्नोति न सुखं न परां गतिम् ||१६-२३||",
         "transliteration": "yaḥ śhāstra-vidhim utsṛijya vartate kāma-kārataḥ\nna sa siddhim avāpnoti na sukhaṁ na parāṁ gatim",
-        "hindi_meaning": "श्री भगवान ने कहा: यह काम है, यह क्रोध है, जो रजोगुण से उत्पन्न होता है और बहुत ही पापी और भक्षक है। इसे इस लोक में शत्रु समझो।",
+        "hindi_meaning": "जो शास्त्रीय आदेशों को त्यागकर अपनी सनक के अनुसार कर्म करता है, वह न सिद्धि, न सुख और न परम गति प्राप्त करता है।",
         "meaning": "He who discards scriptural injunctions and acts according to his own whims attains neither perfection, nor happiness, nor the supreme destination."
       },
       {
@@ -5511,7 +5511,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 16,
         "text": "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ |\nज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ||१६-२४||",
         "transliteration": "tasmāch chhāstraṁ pramāṇaṁ te kāryākārya-vyavasthitau\njñātvā śhāstra-vidhānoktaṁ karma kartum ihārhasi",
-        "hindi_meaning": "जैसे धुँआ अग्नि को, धूल दर्पण को और गर्भ गर्भाशय को ढक लेता है, वैसे ही यह लोक काम से ढका हुआ है।",
+        "hindi_meaning": "अतः मनुष्य को शास्त्रों के नियमों द्वारा समझना चाहिए कि कर्तव्य क्या है और अकर्तव्य क्या है। इन नियमों को जानकर उसे ऐसा कर्म करना चाहिए, जिससे वह क्रमशः उन्नत हो सके।",
         "meaning": "One should therefore understand what is duty and what is not duty by the regulations of the scriptures. Knowing such rules and regulations, one should act so that he may gradually be elevated."
       }
     ]
@@ -5530,7 +5530,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "अर्जुन उवाच |\nये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः |\nतेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः ||१७-१||",
         "transliteration": "arjuna uvācha\nye śhāstra-vidhim utsṛijya yajante śhraddhayānvitāḥ\nteṣhāṁ niṣhṭhā tu kā kṛiṣhṇa sattvam āho rajas tamaḥ",
-        "hindi_meaning": "हे कौन्तेय! ज्ञानी व्यक्ति की बुद्धि भी काम से ढकी हुई है, जो शाश्वत शत्रु है और इन्द्रियों की तरह अग्नि है।",
+        "hindi_meaning": "अर्जुन ने पूछा: हे कृष्ण, जो शास्त्र के सिद्धान्तों का पालन नहीं करते, किन्तु अपनी कल्पना के अनुसार पूजा करते हैं, उनकी स्थिति क्या है? क्या वे सत्त्व, रज या तम में हैं?",
         "meaning": "Arjuna inquired: O Krishna, what is the situation of those who do not follow the principles of scripture but worship according to their own imagination? Are they in goodness, in passion or in ignorance?"
       },
       {
@@ -5539,7 +5539,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "श्रीभगवानुवाच |\nत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा |\nसात्त्विकी राजसी चैव तामसी चेति तां शृणु ||१७-२||",
         "transliteration": "śhrī bhagavān uvācha\ntri-vidhā bhavati śhraddhā dehināṁ sā svabhāva-jā\nsāttvikī rājasī chaiva tāmasī cheti tāṁ śhṛiṇu",
-        "hindi_meaning": "इन्द्रियाँ, मन और बुद्धि इसके निवास स्थान हैं। इनके द्वारा यह ज्ञान को ढककर जीव को मोहित करता है।",
+        "hindi_meaning": "श्रीभगवान् ने कहा: देहधारी आत्मा द्वारा अर्जित प्रकृति के गुणों के अनुसार मनुष्य की श्रद्धा तीन प्रकार की हो सकती है—सात्त्विक, राजसी या तामसी। अब इसके विषय में सुनो।",
         "meaning": "The Supreme Personality of Godhead said: According to the modes of nature acquired by the embodied soul, one’s faith can be of three kinds—in goodness, in passion or in ignorance. Now hear about this."
       },
       {
@@ -5548,7 +5548,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत |\nश्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ||१७-३||",
         "transliteration": "sattvānurūpā sarvasya śhraddhā bhavati bhārata\nśhraddhā-mayo ’yaṁ puruṣho yo yach-chhraddhaḥ sa eva saḥ",
-        "hindi_meaning": "हे अर्जुन! इसलिए सबसे पहले इन्द्रियों को वश में करो और इस पापी काम को नष्ट करो, जो ज्ञान और आत्मज्ञान का नाशक है।",
+        "hindi_meaning": "हे भरतपुत्र, प्रकृति के विभिन्न गुणों के अधीन अपने अस्तित्व के अनुसार मनुष्य में विशेष प्रकार की श्रद्धा विकसित होती है। जीव अपने अर्जित गुणों के अनुसार एक विशेष श्रद्धा वाला कहा जाता है।",
         "meaning": "O son of Bharata, according to one’s existence under the various modes of nature, one evolves a particular kind of faith. The living being is said to be of a particular faith according to the modes he has acquired."
       },
       {
@@ -5557,7 +5557,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसाः |\nप्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जनाः ||१७-४||",
         "transliteration": "yajante sāttvikā devān yakṣha-rakṣhāṁsi rājasāḥ\npretān bhūta-gaṇāṁśh chānye yajante tāmasā janāḥ",
-        "hindi_meaning": "हे अर्जुन! इन्द्रियाँ मन से श्रेष्ठ हैं, मन बुद्धि से श्रेष्ठ है और बुद्धि से श्रेष्ठ आत्मा है।",
+        "hindi_meaning": "सत्त्वगुणी मनुष्य देवताओं की, रजोगुणी असुरों की और तमोगुणी भूत-प्रेतों की पूजा करते हैं।",
         "meaning": "Men in the mode of goodness worship the demigods; those in the mode of passion worship the demons; and those in the mode of ignorance worship ghosts and spirits."
       },
       {
@@ -5566,7 +5566,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः |\nदम्भाहङ्कारसंयुक्ताः कामरागबलान्विताः ||१७-५||",
         "transliteration": "aśhāstra-vihitaṁ ghoraṁ tapyante ye tapo janāḥ\ndambhāhaṅkāra-saṁyuktāḥ kāma-rāga-balānvitāḥ",
-        "hindi_meaning": "इसलिए हे महाबाहो! आत्मा को जानकर बुद्धि से मन को वश में करो और इस शत्रु काम को मारो, जो ज्ञान और आत्मज्ञान को नष्ट करता है।",
+        "hindi_meaning": "जो लोग शास्त्रों में न बताई गई कठोर तपस्याएँ गर्व और अहंकार के कारण करते हैं तथा काम और आसक्ति से प्रेरित होते हैं…",
         "meaning": "Those who undergo severe austerities and penances not recommended in the scriptures, performing them out of pride and egoism, who are impelled by lust and attachment..."
       },
       {
@@ -5575,7 +5575,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "कर्षयन्तः शरीरस्थं भूतग्राममचेतसः |\nमां चैवान्तःशरीरस्थं तान्विद्ध्यासुरनिश्चयान् ||१७-६||",
         "transliteration": "karṣhayantaḥ śharīra-sthaṁ bhūta-grāmam achetasaḥ\nmāṁ chaivāntaḥ-śharīra-sthaṁ tān viddhy āsura-niśhchayān",
-        "hindi_meaning": "श्री भगवान ने कहा: मैंने इस अमर योग को सूर्य को बताया था, सूर्य ने मनु को बताया और मनु ने इक्ष्वाकु को बताया।",
+        "hindi_meaning": "…जो मूर्ख हैं और शरीर के भौतिक तत्त्वों के साथ भीतर स्थित परमात्मा को भी यातना देते हैं, उन्हें असुर समझना चाहिए।",
         "meaning": "...who are fools and who torture the material elements within the body as well as the Supersoul dwelling within, are to be known as demons."
       },
       {
@@ -5584,7 +5584,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः |\nयज्ञस्तपस्तथा दानं तेषां भेदमिमं शृणु ||१७-७||",
         "transliteration": "āhāras tv api sarvasya tri-vidho bhavati priyaḥ\nyajñas tapas tathā dānaṁ teṣhāṁ bhedam imaṁ śhṛiṇu",
-        "hindi_meaning": "इस प्रकार राजर्षियों द्वारा यह योग परंपरा से चला आया, लेकिन काल के साथ यह नष्ट हो गया।",
+        "hindi_meaning": "प्रत्येक व्यक्ति का प्रिय भोजन भी भौतिक प्रकृति के तीन गुणों के अनुसार तीन प्रकार का होता है। यही बात यज्ञ, तपस्या और दान पर भी लागू होती है। अब उनके भेद सुनो।",
         "meaning": "Even the food each person prefers is of three kinds, according to the three modes of material nature. The same is true of sacrifices, austerities and charity. Now hear of the distinctions between them."
       },
       {
@@ -5593,7 +5593,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः |\nरस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः ||१७-८||",
         "transliteration": "āyuḥ-sattva-balārogya-sukha-prīti-vivardhanāḥ\nrasyāḥ snigdhāḥ sthirā hṛidyā āhārāḥ sāttvika-priyāḥ",
-        "hindi_meaning": "हे अर्जुन! वही प्राचीन योग मैं आज तुम्हें बता रहा हूँ, क्योंकि तुम मेरे भक्त और मित्र हो।",
+        "hindi_meaning": "सत्त्वगुणी लोगों को प्रिय भोजन आयु बढ़ाते, अस्तित्व को शुद्ध करते तथा बल, स्वास्थ्य, सुख और सन्तोष देते हैं। ऐसे भोजन रसयुक्त, स्निग्ध, स्वास्थ्यकर और हृदय को प्रिय होते हैं।",
         "meaning": "Foods dear to those in the mode of goodness increase the duration of life, purify one’s existence and give strength, health, happiness and satisfaction. Such foods are juicy, fatty, wholesome, and pleasing to the heart."
       },
       {
@@ -5602,7 +5602,7 @@ export const gitaChapters: Chapter[] = [
         "chapter_number": 17,
         "text": "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः |\nआहारा राजसस्येष्टा दुःखशोकामयप्रदाः ||१७-९||",
         "transliteration": "kaṭv-amla-lavaṇāty-uṣhṇa-tīkṣhṇa-rūkṣha-vidāhinaḥ\nāhārā rājasasyeṣhṭā duḥkha-śhokāmaya-pradāḥ",
-        "hindi_meaning": "अर्जुन ने कहा: आपका जन्म हाल ही में हुआ है और सूर्य का जन्म बहुत पहले हुआ था। मैं कैसे समझूँ कि आपने इसे पहले बताया था?",
+        "hindi_meaning": "अत्यधिक कड़वे, खट्टे, नमकीन, गरम, तीखे, सूखे और जलन उत्पन्न करने वाले भोजन रजोगुणी लोगों को प्रिय होते हैं। ऐसे भोजन दुःख, शोक और रोग उत्पन्न करते हैं।",
         "meaning": "Foods that are too bitter, too sour, too salty, too hot, pungent, dry and burning are dear to those in the mode of passion. Such foods cause distress, misery and disease."
       },
       {

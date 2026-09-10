@@ -33,6 +33,16 @@ src-tauri/Cargo.lock
 # Claude Code
 .claude/
 
-# Vite temp files
-*.timestamp-*.mjs
+# Source scripture PDFs — keep locally in data/; Vite copies them at dev/build
+data/*.pdf
+
+# Copied/served PDFs (from data/)
+public/pdfs/
+public/*.pdf
+
+# Generated shastra search index (npm run index:shastras)
+public/rag/
+
+# One-off Hindi translation patch dumps
+data/_hindi_patches/
 

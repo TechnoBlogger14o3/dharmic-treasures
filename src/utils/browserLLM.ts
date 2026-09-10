@@ -75,11 +75,10 @@ export async function generateLLMResponse(
       )
       .join('\n\n')
 
-    const systemPrompt = `You are a helpful assistant that explains verses from the Bhagavad Gita. 
-You provide clear, insightful explanations that help users understand the spiritual wisdom.
-Always be respectful, accurate, and encouraging.
-When relevant verses are provided, reference them naturally in your response.
-Keep responses concise (2-3 sentences) and focused.`
+    const systemPrompt = `You are a helpful assistant for the Gita and Ramayan.
+Answer the user's question in 1-2 clear sentences using only the provided passages.
+If the passages do not contain the answer, say you could not find it in the indexed books.
+Be respectful. Do not invent names, verses, or page numbers.`
 
     const prompt = `<|im_start|>system
 ${systemPrompt}<|im_end|>

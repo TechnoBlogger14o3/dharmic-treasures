@@ -4,6 +4,7 @@ import ErrorBoundary from './components/ErrorBoundary'
 import BackgroundSelector from './components/BackgroundSelector'
 import FontSizeControl from './components/FontSizeControl'
 import LoadingSpinner from './components/LoadingSpinner'
+import GitaChatbot, { type ShastraPdfTarget } from './components/GitaChatbot'
 import { getSettings, saveSettings, getProgress } from './utils/storage'
 
 // Lazy load heavy components - only load when needed
@@ -14,6 +15,7 @@ const ShaktipeethsView = lazy(() => import('./components/ShaktipeethsView'))
 const CharDhamView = lazy(() => import('./components/CharDhamView'))
 const JyotirlingasView = lazy(() => import('./components/JyotirlingasView'))
 const SatyanarayanChapterView = lazy(() => import('./components/SatyanarayanChapterView'))
+const ShastrasView = lazy(() => import('./components/ShastrasView'))
 
 // Lazy load data files - load only when text type is selected
 const loadGitaData = () => import('../data/gita').then(m => ({ default: m.gitaChapters }))
@@ -67,11 +69,10 @@ const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?
     name: 'Jyotirlingas',
     nameHindi: 'ज्योतिर्लिंग',
   },
-}
-
-// PDF paths for texts that have PDF versions
-const pdfPaths: Partial<Record<TextType, string>> = {
-  gita: 'sadhak-sanjeevani.pdf', // Bhagavad Gita PDF
+  shastras: {
+    name: 'Shastras',
+    nameHindi: 'शास्त्र',
+  },
 }
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
   const [viewMode, setViewMode] = useState<'text' | 'pdf'>('text')
   const [textDataCache, setTextDataCache] = useState<Record<TextType, any[]>>({} as Record<TextType, any[]>)
   const [isLoadingData, setIsLoadingData] = useState(false)
+  const [sourcePdf, setSourcePdf] = useState<ShastraPdfTarget | null>(null)
 
   // Lazy load data when text type changes
   useEffect(() => {
@@ -148,13 +150,12 @@ function App() {
     ...currentTextConfig,
     data: currentTextData,
   }
-  const hasPDF = pdfPaths[textType] !== undefined
-  const isPDFViewer = viewMode === 'pdf' && hasPDF
   const isShaktipeethsView = textType === 'shaktipeeths'
   const isCharDhamView = textType === 'charDham'
   const isJyotirlingasView = textType === 'jyotirlingas'
-  const isSpecialView = isShaktipeethsView || isCharDhamView || isJyotirlingasView
-  const isHomePage = selectedChapter === null && !isPDFViewer && !isSpecialView
+  const isShastrasView = textType === 'shastras'
+  const isSpecialView = isShaktipeethsView || isCharDhamView || isJyotirlingasView || isShastrasView
+  const isHomePage = selectedChapter === null && !isSpecialView
 
   const handleChapterSelect = (chapterNumber: number, verseNumber?: number) => {
     setSelectedChapter(chapterNumber)
@@ -165,12 +166,7 @@ function App() {
     setSelectedChapter(null)
     setSelectedVerse(1)
     setViewMode('text')
-  }
-
-  const handleViewPDF = () => {
-    setViewMode('pdf')
-    setSelectedChapter(null)
-    setSelectedVerse(1)
+    setSourcePdf(null)
   }
 
   const backgroundClasses: Record<string, string> = {
@@ -200,6 +196,7 @@ function App() {
                         setSelectedChapter(null)
                         setSelectedVerse(1)
                         setViewMode('text')
+                        setSourcePdf(null)
                       }}
                       className={`px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium transition-all duration-300 cursor-pointer touch-manipulation min-w-[80px] sm:min-w-0 flex-shrink-0 ${
                         textType === type && viewMode === 'text'
@@ -228,7 +225,19 @@ function App() {
 
         {/* Main Content */}
         <div className="relative z-10">
-          {isShaktipeethsView ? (
+          {sourcePdf ? (
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key={`source-pdf-${sourcePdf.path}-${sourcePdf.page}`} className="animate-fadeIn">
+                <PDFViewer
+                  pdfPath={sourcePdf.path}
+                  title={sourcePdf.title}
+                  titleHindi={sourcePdf.titleHindi}
+                  initialPage={sourcePdf.page}
+                  onBack={() => setSourcePdf(null)}
+                />
+              </div>
+            </Suspense>
+          ) : isShaktipeethsView ? (
             <Suspense fallback={<LoadingSpinner />}>
               <div key="shaktipeeths-view" className="animate-fadeIn">
                 <ShaktipeethsView />
@@ -246,14 +255,18 @@ function App() {
                 <JyotirlingasView />
               </div>
             </Suspense>
-          ) : isPDFViewer ? (
+          ) : isShastrasView ? (
             <Suspense fallback={<LoadingSpinner />}>
-              <div key="pdf-viewer" className="animate-fadeIn">
-                <PDFViewer
-                  pdfPath={pdfPaths[textType]!}
-                  title={currentText.name}
-                  titleHindi={currentText.nameHindi}
-                  onBack={handleBackToHome}
+              <div key="shastras-view" className="animate-fadeIn">
+                <ShastrasView
+                  onOpenBook={(book) => {
+                    setSourcePdf({
+                      path: book.path,
+                      title: book.title,
+                      titleHindi: book.titleHindi,
+                      page: 1,
+                    })
+                  }}
                 />
               </div>
             </Suspense>
@@ -268,8 +281,6 @@ function App() {
                   textNameHindi={currentText.nameHindi}
                   onChapterSelect={handleChapterSelect}
                   textType={textType}
-                  hasPDF={hasPDF}
-                  onViewPDF={handleViewPDF}
                 />
               </div>
             </Suspense>
@@ -302,11 +313,13 @@ function App() {
         </div>
 
         {/* Controls */}
-        {!isHomePage && !isPDFViewer && (
+        {!isHomePage && !sourcePdf && !isSpecialView && (
           <div className="fixed bottom-20 sm:bottom-4 right-4 z-40">
             <FontSizeControl fontSize={fontSize} onFontSizeChange={setFontSize} />
           </div>
         )}
+
+        <GitaChatbot />
 
         <footer className="mt-12 border-t border-gold bg-cream">
           <div className="container mx-auto px-4 py-8 text-center text-sm text-ink">
