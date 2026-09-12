@@ -2,9 +2,9 @@ import { useState, useEffect, lazy, Suspense, useRef } from 'react'
 import { TextType, TextConfig } from '../types'
 import ErrorBoundary from './components/ErrorBoundary'
 import BackgroundSelector from './components/BackgroundSelector'
-import FontSizeControl from './components/FontSizeControl'
 import LoadingSpinner from './components/LoadingSpinner'
 import GitaChatbot, { type ShastraPdfTarget } from './components/GitaChatbot'
+import PanchangWidget from './components/PanchangWidget'
 import { getSettings, saveSettings, getProgress } from './utils/storage'
 
 // Lazy load heavy components - only load when needed
@@ -14,6 +14,7 @@ const PDFViewer = lazy(() => import('./components/PDFViewer'))
 const ShaktipeethsView = lazy(() => import('./components/ShaktipeethsView'))
 const CharDhamView = lazy(() => import('./components/CharDhamView'))
 const JyotirlingasView = lazy(() => import('./components/JyotirlingasView'))
+const ChhathPujaView = lazy(() => import('./components/ChhathPujaView'))
 const SatyanarayanChapterView = lazy(() => import('./components/SatyanarayanChapterView'))
 const ShastrasView = lazy(() => import('./components/ShastrasView'))
 
@@ -69,6 +70,10 @@ const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?
     name: 'Jyotirlingas',
     nameHindi: 'ज्योतिर्लिंग',
   },
+  chhath: {
+    name: 'Chhath Puja',
+    nameHindi: 'छठ पूजा',
+  },
   shastras: {
     name: 'Shastras',
     nameHindi: 'शास्त्र',
@@ -82,7 +87,7 @@ function App() {
   const [selectedChapter, setSelectedChapter] = useState<number | null>(null)
   const [selectedVerse, setSelectedVerse] = useState<number>(1)
   const [backgroundTheme, setBackgroundTheme] = useState<string>(savedSettings.backgroundTheme)
-  const [fontSize, setFontSize] = useState<number>(savedSettings.fontSize)
+  const fontSize = savedSettings.fontSize
   const [viewMode, setViewMode] = useState<'text' | 'pdf'>('text')
   const [textDataCache, setTextDataCache] = useState<Record<TextType, any[]>>({} as Record<TextType, any[]>)
   const [isLoadingData, setIsLoadingData] = useState(false)
@@ -153,8 +158,9 @@ function App() {
   const isShaktipeethsView = textType === 'shaktipeeths'
   const isCharDhamView = textType === 'charDham'
   const isJyotirlingasView = textType === 'jyotirlingas'
+  const isChhathView = textType === 'chhath'
   const isShastrasView = textType === 'shastras'
-  const isSpecialView = isShaktipeethsView || isCharDhamView || isJyotirlingasView || isShastrasView
+  const isSpecialView = isShaktipeethsView || isCharDhamView || isJyotirlingasView || isChhathView || isShastrasView
   const isHomePage = selectedChapter === null && !isSpecialView
 
   const handleChapterSelect = (chapterNumber: number, verseNumber?: number) => {
@@ -255,6 +261,12 @@ function App() {
                 <JyotirlingasView />
               </div>
             </Suspense>
+          ) : isChhathView ? (
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="chhath-view" className="animate-fadeIn">
+                <ChhathPujaView />
+              </div>
+            </Suspense>
           ) : isShastrasView ? (
             <Suspense fallback={<LoadingSpinner />}>
               <div key="shastras-view" className="animate-fadeIn">
@@ -312,13 +324,7 @@ function App() {
           )}
         </div>
 
-        {/* Controls */}
-        {!isHomePage && !sourcePdf && !isSpecialView && (
-          <div className="fixed bottom-20 sm:bottom-4 right-4 z-40">
-            <FontSizeControl fontSize={fontSize} onFontSizeChange={setFontSize} />
-          </div>
-        )}
-
+        <PanchangWidget />
         <GitaChatbot />
 
         <footer className="mt-12 border-t border-gold bg-cream">

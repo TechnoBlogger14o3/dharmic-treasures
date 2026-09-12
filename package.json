@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "node --experimental-strip-types --test src/utils/shastraSearch.test.ts",
+    "test": "node --experimental-strip-types --test src/utils/shastraSearch.test.ts src/utils/chhathDates.test.ts src/utils/panchang.test.ts",
     "index:shastras": "node scripts/build-shastra-index.mjs",
     "preview": "vite preview",
     "deploy": "VITE_BASE=/dharmic-treasures/ npm run build && gh-pages -d dist",
