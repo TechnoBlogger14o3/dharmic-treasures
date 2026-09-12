@@ -23,6 +23,7 @@ export interface AppSettings {
   backgroundTheme: string
   notificationsEnabled: boolean
   dailyVerseTime?: string
+  panchangCityId?: string
 }
 
 const STORAGE_KEYS = {

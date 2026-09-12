@@ -15,6 +15,7 @@ const ShaktipeethsView = lazy(() => import('./components/ShaktipeethsView'))
 const CharDhamView = lazy(() => import('./components/CharDhamView'))
 const JyotirlingasView = lazy(() => import('./components/JyotirlingasView'))
 const ChhathPujaView = lazy(() => import('./components/ChhathPujaView'))
+const DiwaliView = lazy(() => import('./components/DiwaliView'))
 const SatyanarayanChapterView = lazy(() => import('./components/SatyanarayanChapterView'))
 const ShastrasView = lazy(() => import('./components/ShastrasView'))
 
@@ -73,6 +74,10 @@ const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?
   chhath: {
     name: 'Chhath Puja',
     nameHindi: 'छठ पूजा',
+  },
+  diwali: {
+    name: 'Diwali',
+    nameHindi: 'दीपावली',
   },
   shastras: {
     name: 'Shastras',
@@ -142,6 +147,7 @@ function App() {
   // Save settings when they change
   useEffect(() => {
     saveSettings({
+      ...getSettings(),
       fontSize,
       backgroundTheme,
       notificationsEnabled: savedSettings.notificationsEnabled,
@@ -159,8 +165,10 @@ function App() {
   const isCharDhamView = textType === 'charDham'
   const isJyotirlingasView = textType === 'jyotirlingas'
   const isChhathView = textType === 'chhath'
+  const isDiwaliView = textType === 'diwali'
   const isShastrasView = textType === 'shastras'
-  const isSpecialView = isShaktipeethsView || isCharDhamView || isJyotirlingasView || isChhathView || isShastrasView
+  const isSpecialView =
+    isShaktipeethsView || isCharDhamView || isJyotirlingasView || isChhathView || isDiwaliView || isShastrasView
   const isHomePage = selectedChapter === null && !isSpecialView
 
   const handleChapterSelect = (chapterNumber: number, verseNumber?: number) => {
@@ -265,6 +273,12 @@ function App() {
             <Suspense fallback={<LoadingSpinner />}>
               <div key="chhath-view" className="animate-fadeIn">
                 <ChhathPujaView />
+              </div>
+            </Suspense>
+          ) : isDiwaliView ? (
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key="diwali-view" className="animate-fadeIn">
+                <DiwaliView />
               </div>
             </Suspense>
           ) : isShastrasView ? (

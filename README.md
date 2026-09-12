@@ -17,6 +17,7 @@ React 18 + TypeScript + Vite + Tailwind. Static hosting on Hostinger (GitHub Act
 
 - 51 Shaktipeeths, Char Dham, 12 Jyotirlingas (maps where listed)
 - Chhath Puja — vidhi, katha vs history, Kartik dates for the upcoming year
+- Diwali — five days, Lakshmi Puja notes, katha vs history, North India dates through 2027
 
 **Shastras (PDFs)**
 
@@ -25,7 +26,7 @@ React 18 + TypeScript + Vite + Tailwind. Static hosting on Hostinger (GitHub Act
 
 **Also**
 
-- Bottom-left panchang (approximate *udaya* tithi for India; confirm muhurat locally)
+- Bottom-left panchang (city sunrise: tithi, nakshatra, yoga, karana, vara, rahu kaal, main festival)
 - Theme picker in the header
 - Chat button is **Coming Next** (not a live Q&A)
 
