@@ -41,9 +41,7 @@ Push to `main` or run **Actions → Deploy to Hostinger → Run workflow**.
 | **GitHub Actions + FTP** | Builds and **uploads static files** to `public_html`. This is what “deploy the website” means for shared hosting. |
 | **Hostinger MCP** (Cursor) | Talks to the **Hostinger API** (VPS, billing, DNS where exposed, etc.). It does **not** upload files to shared hosting. |
 
-Use MCP in Cursor for API tasks; use this workflow (or manual upload) for **site files**.
-
-See [`mcp/README.md`](mcp/README.md).
+Use MCP in Cursor for API tasks (configure it in your local `~/.cursor/mcp.json`); use this workflow (or manual upload) for **site files**.
 
 ---
 

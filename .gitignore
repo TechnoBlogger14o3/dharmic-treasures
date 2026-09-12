@@ -41,9 +41,18 @@ data/*.pdf
 public/*.pdf
 !public/pdfs/
 
-# Generated shastra search index (npm run index:shastras)
+# Generated leftover from the dropped PDF search experiment
 public/rag/
 
 # One-off Hindi translation patch dumps
 data/_hindi_patches/
+
+# Local Cursor / Hostinger MCP (not part of the site)
+mcp/
+
+# Old README screenshots — not used by the app
+screenshots/
+
+# Abandoned design/RAG notes
+docs/
 
