@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "node --experimental-strip-types --test src/utils/chhathDates.test.ts src/utils/panchang.test.ts src/utils/festivals.test.ts",
+    "test": "node --experimental-strip-types --test src/utils/chhathDates.test.ts src/utils/panchang.test.ts src/utils/festivals.test.ts src/utils/pdfNav.test.ts",
     "preview": "vite preview",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",

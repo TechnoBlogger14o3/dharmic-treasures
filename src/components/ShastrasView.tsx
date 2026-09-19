@@ -8,32 +8,46 @@ export interface ShastraBook {
 
 const SHASTRA_BOOKS: ShastraBook[] = [
   {
-    id: 'gita-pdf',
-    title: 'Bhagavad Gita (Sadhak Sanjeevani)',
-    titleHindi: 'भगवद्गीता — साधक संजीवनी',
-    path: 'pdfs/sadhak-sanjeevani.pdf',
-    note: 'Gita Press commentary — open the PDF to read.',
+    id: 'bhagavad-gita-pdf',
+    title: 'The Bhagavad Gita',
+    titleHindi: 'भगवद्गीता',
+    path: 'pdfs/bhagavad-gita.pdf',
+    note: 'English PDF — open to read.',
   },
   {
-    id: 'shiv-puran',
-    title: 'Shiv Puran',
-    titleHindi: 'शिव पुराण',
-    path: 'pdfs/shiv-puran.pdf',
-    note: 'Hindi edition — open the PDF to read.',
+    id: 'mahabharata',
+    title: 'Mahabharata',
+    titleHindi: 'महाभारत',
+    path: 'pdfs/mahabharata.pdf',
+    note: 'English PDF — open to read.',
   },
   {
-    id: 'vishnu-puran',
-    title: 'Vishnu Puran',
-    titleHindi: 'विष्णु पुराण',
-    path: 'pdfs/vishnu-puran.pdf',
-    note: 'Gita Press edition — open the PDF to read.',
+    id: 'ramayana',
+    title: 'Ramayana',
+    titleHindi: 'रामायण',
+    path: 'pdfs/ramayana.pdf',
+    note: 'English PDF — open to read.',
   },
   {
-    id: 'ramayan',
-    title: 'Shrimad Valmiki Ramayan',
-    titleHindi: 'श्रीमद् वाल्मीकि रामायण',
-    path: 'pdfs/valmiki-ramayan.pdf',
-    note: 'Itihasa — open the PDF to read.',
+    id: 'shiva-purana-1',
+    title: 'Shiva Purana — Part 1',
+    titleHindi: 'शिव पुराण — भाग १',
+    path: 'pdfs/shiva-purana-1.pdf',
+    note: 'English PDF — open to read.',
+  },
+  {
+    id: 'shiva-purana-2',
+    title: 'Shiva Purana — Part 2',
+    titleHindi: 'शिव पुराण — भाग २',
+    path: 'pdfs/shiva-purana-2.pdf',
+    note: 'English PDF — open to read.',
+  },
+  {
+    id: 'shiva-purana-3',
+    title: 'Shiva Purana — Part 3',
+    titleHindi: 'शिव पुराण — भाग ३',
+    path: 'pdfs/shiva-purana-3.pdf',
+    note: 'English PDF — open to read.',
   },
 ]
 
@@ -63,7 +77,12 @@ export default function ShastrasView({ onOpenBook }: ShastrasViewProps) {
             <div className="text-xs text-ink/50 mt-2">{book.note}</div>
             <div className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-saffron">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                />
               </svg>
               Open PDF
             </div>
