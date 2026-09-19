@@ -29,10 +29,12 @@ jobs:
       - name: Ensure shastra PDFs are in the build
         run: |
           ls -lh dist/pdfs || true
-          test -f dist/pdfs/sadhak-sanjeevani.pdf
-          test -f dist/pdfs/shiv-puran.pdf
-          test -f dist/pdfs/valmiki-ramayan.pdf
-          test -f dist/pdfs/vishnu-puran.pdf
+          test -f dist/pdfs/bhagavad-gita.pdf
+          test -f dist/pdfs/mahabharata.pdf
+          test -f dist/pdfs/ramayana.pdf
+          test -f dist/pdfs/shiva-purana-1.pdf
+          test -f dist/pdfs/shiva-purana-2.pdf
+          test -f dist/pdfs/shiva-purana-3.pdf
 
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

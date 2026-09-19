@@ -21,7 +21,7 @@ React 18 + TypeScript + Vite + Tailwind. Static hosting on Hostinger (GitHub Act
 
 **Shastras (PDFs)**
 
-- Sadhak Sanjeevani (Gita), Shiv Puran, Vishnu Puran, Valmiki Ramayan  
+- The Bhagavad Gita, Mahabharata, Ramayana, Shiva Purana (parts 1–3)
 - Opened in the in-app PDF viewer. Files live in `public/pdfs/` and must be committed so deploy can serve them. Source copies under `data/*.pdf` stay local and gitignored.
 
 **Also**
@@ -50,7 +50,7 @@ npm run build     # tsc + Vite
 
 See [DEPLOY.md](DEPLOY.md). Push to `main` runs the Hostinger FTP workflow.
 
-Put the four PDFs in `public/pdfs/` before that build. If they are missing, PDF URLs return the homepage HTML and the viewer fails.
+Put the shastra PDFs in `public/pdfs/` before that build. If they are missing, PDF URLs return the homepage HTML and the viewer fails. Note: `Ramayana.pdf` is ~81MB (GitHub warns above 50MB).
 
 ## Repo layout
 
@@ -64,4 +64,4 @@ src/utils/            # Chhath calendar table, panchang tithi
 
 ## License
 
-Personal project. Texts and PDFs follow their original publishers’ terms (e.g. Gita Press editions).
+Personal project. Texts and PDFs follow their original publishers’ terms.

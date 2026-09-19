@@ -8,37 +8,52 @@
       "path": "data/gita.ts"
     },
     {
-      "id": "gita-pdf",
-      "title": "Bhagavad Gita (Sadhak Sanjeevani)",
-      "titleHindi": "भगवद्गीता — साधक संजीवनी",
+      "id": "bhagavad-gita-pdf",
+      "title": "The Bhagavad Gita",
+      "titleHindi": "भगवद्गीता",
       "kind": "pdf",
-      "path": "data/Sadhak Sanjeevani.pdf",
-      "publicPdf": "pdfs/sadhak-sanjeevani.pdf",
-      "index": false
+      "path": "data/The_Bhagavad_Gita.pdf",
+      "publicPdf": "pdfs/bhagavad-gita.pdf"
     },
     {
-      "id": "ramayan",
-      "title": "Shrimad Valmiki Ramayan",
-      "titleHindi": "श्रीमद् वाल्मीकि रामायण",
+      "id": "mahabharata",
+      "title": "Mahabharata",
+      "titleHindi": "महाभारत",
       "kind": "pdf",
-      "path": "data/Shrimad Valmiki Ramayan.pdf",
-      "publicPdf": "pdfs/valmiki-ramayan.pdf"
+      "path": "data/Mahabharata.pdf",
+      "publicPdf": "pdfs/mahabharata.pdf"
     },
     {
-      "id": "shiv-puran",
-      "title": "Shiv Puran",
-      "titleHindi": "शिव पुराण",
+      "id": "ramayana",
+      "title": "Ramayana",
+      "titleHindi": "रामायण",
       "kind": "pdf",
-      "path": "data/शिव पुराण.pdf",
-      "publicPdf": "pdfs/shiv-puran.pdf"
+      "path": "data/Ramayana.pdf",
+      "publicPdf": "pdfs/ramayana.pdf"
     },
     {
-      "id": "vishnu-puran",
-      "title": "Vishnu Puran",
-      "titleHindi": "विष्णु पुराण",
+      "id": "shiva-purana-1",
+      "title": "Shiva Purana — Part 1",
+      "titleHindi": "शिव पुराण — भाग १",
       "kind": "pdf",
-      "path": "data/Vishnu Puran - Gita Press.pdf",
-      "publicPdf": "pdfs/vishnu-puran.pdf"
+      "path": "data/Shiva-Purana_1.pdf",
+      "publicPdf": "pdfs/shiva-purana-1.pdf"
+    },
+    {
+      "id": "shiva-purana-2",
+      "title": "Shiva Purana — Part 2",
+      "titleHindi": "शिव पुराण — भाग २",
+      "kind": "pdf",
+      "path": "data/Shiva-Purana_2.pdf",
+      "publicPdf": "pdfs/shiva-purana-2.pdf"
+    },
+    {
+      "id": "shiva-purana-3",
+      "title": "Shiva Purana — Part 3",
+      "titleHindi": "शिव पुराण — भाग ३",
+      "kind": "pdf",
+      "path": "data/Shiva-Purana_3.pdf",
+      "publicPdf": "pdfs/shiva-purana-3.pdf"
     }
   ]
 }
