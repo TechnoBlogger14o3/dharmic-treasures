@@ -124,6 +124,9 @@ export default defineConfig(({ command, mode }) => {
         ignored: ['**/src-tauri/**'],
       },
     },
+    optimizeDeps: {
+      exclude: ['@huggingface/transformers'],
+    },
     build: {
       rollupOptions: {
         output: {
@@ -151,6 +154,9 @@ export default defineConfig(({ command, mode }) => {
               // PDF libraries
               if (id.includes('pdf') || id.includes('pdfjs')) {
                 return 'pdf-vendor'
+              }
+              if (id.includes('@huggingface/transformers') || id.includes('onnxruntime')) {
+                return 'rag-vendor'
               }
               // Other vendor code
               return 'vendor'

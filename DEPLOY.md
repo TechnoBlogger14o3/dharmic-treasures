@@ -4,7 +4,9 @@
 
 Workflow: [`.github/workflows/deploy-hostinger.yml`](.github/workflows/deploy-hostinger.yml)
 
-On every push to `main`, GitHub Actions runs `npm ci`, `npm run build`, and uploads **`dist/`** to your Hostinger account over **FTP**.
+On every push to `main`, GitHub Actions runs `npm ci`, builds the RAG index (`npm run index:rag`), `npm run build`, and uploads **`dist/`** to Hostinger over **FTP**.
+
+The chat Worker is already deployed at `https://shastra-chat.dharmic-treasures.workers.dev`. The frontend uses that URL unless `VITE_CHAT_URL` is set at build time. `GROQ_API_KEY` lives only on Cloudflare (`wrangler secret put GROQ_API_KEY`). Never put it in Vite or GitHub frontend env.
 
 ### GitHub repository secrets
 
@@ -15,6 +17,19 @@ In the repo: **Settings → Secrets and variables → Actions → New repository
 | `HOSTINGER_FTP_HOST` | FTP hostname (often `ftp.hostinger.com` — confirm in hPanel → **Files → FTP Accounts**) |
 | `HOSTINGER_FTP_USER` | FTP username |
 | `HOSTINGER_FTP_PASSWORD` | FTP password |
+| `VITE_CHAT_URL` | Optional. Worker URL, e.g. `https://shastra-chat.dharmic-treasures.workers.dev`. If unset, the app uses that URL anyway. |
+
+### Chat Worker (Cloudflare)
+
+Deployed from `workers/shastra-chat`:
+
+```bash
+cd workers/shastra-chat
+npx wrangler secret put GROQ_API_KEY
+npx wrangler deploy
+```
+
+After Worker code changes, run `npx wrangler deploy` again. Hostinger FTP does not update the Worker.
 
 ### FTP remote folder
 
