@@ -56,3 +56,8 @@ screenshots/
 # Abandoned design/RAG notes
 docs/
 
+# Wrangler local secrets and cache
+**/.dev.vars
+**/.wrangler/
+
+

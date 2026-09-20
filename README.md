@@ -28,7 +28,7 @@ React 18 + TypeScript + Vite + Tailwind. Static hosting on Hostinger (GitHub Act
 
 - Bottom-left panchang (city sunrise: tithi, nakshatra, yoga, karana, vara, rahu kaal, main festival)
 - Theme picker in the header
-- Chat button is **Coming Next** (not a live Q&A)
+- Chat button asks the English PDF library and in-app JSON (Gita chapters, Shaktipeeths, Jyotirlingas, …). Run `npm run index:rag` once locally. Groq answers go through the Cloudflare Worker. Local: `VITE_CHAT_URL=http://127.0.0.1:8787` plus `npm run chat:dev`. Production Worker: `https://shastra-chat.dharmic-treasures.workers.dev`.
 
 Reading progress and settings use `localStorage`.
 
@@ -42,7 +42,9 @@ npm run dev
 App: [http://localhost:5173](http://localhost:5173)
 
 ```bash
-npm test          # Chhath dates, panchang
+npm test          # dates, panchang, RAG helpers
+npm run index:rag # build public/rag from the PDFs (gitignored; CI rebuilds it)
+npm run chat:dev  # local Worker on :8787
 npm run build     # tsc + Vite
 ```
 

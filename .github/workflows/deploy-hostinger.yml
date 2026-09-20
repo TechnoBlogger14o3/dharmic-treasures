@@ -9,6 +9,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
@@ -23,7 +24,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Cache MiniLM embedder
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: minilm-${{ hashFiles('package-lock.json') }}
+
+      - name: Build RAG index
+        run: npm run index:rag
+
       - name: Build
+        env:
+          VITE_CHAT_URL: ${{ secrets.VITE_CHAT_URL }}
         run: npm run build
 
       - name: Ensure shastra PDFs are in the build
@@ -35,6 +47,12 @@ jobs:
           test -f dist/pdfs/shiva-purana-1.pdf
           test -f dist/pdfs/shiva-purana-2.pdf
           test -f dist/pdfs/shiva-purana-3.pdf
+
+      - name: Ensure RAG index is in the build
+        run: |
+          test -f dist/rag/shastra-meta.json
+          test -f dist/rag/shastra-chunks.json
+          test -f dist/rag/shastra-embeddings.bin
 
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

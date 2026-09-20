@@ -1,0 +1,6 @@
+name = "shastra-chat"
+main = "src/index.js"
+compatibility_date = "2026-09-19"
+workers_dev = true
+
+# Set GROQ_API_KEY with: wrangler secret put GROQ_API_KEY
