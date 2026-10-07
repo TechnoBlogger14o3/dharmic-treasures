@@ -3,6 +3,7 @@ import { TextType, TextConfig } from '../types'
 import ErrorBoundary from './components/ErrorBoundary'
 import BackgroundSelector from './components/BackgroundSelector'
 import LoadingSpinner from './components/LoadingSpinner'
+import SiteNav from './components/SiteNav'
 import GitaChatbot, { type ShastraPdfTarget } from './components/GitaChatbot'
 import PanchangWidget from './components/PanchangWidget'
 import { getSettings, saveSettings, getProgress } from './utils/storage'
@@ -16,8 +17,28 @@ const CharDhamView = lazy(() => import('./components/CharDhamView'))
 const JyotirlingasView = lazy(() => import('./components/JyotirlingasView'))
 const ChhathPujaView = lazy(() => import('./components/ChhathPujaView'))
 const DiwaliView = lazy(() => import('./components/DiwaliView'))
+const NavratriView = lazy(() => import('./components/NavratriView'))
+const ShivaratriView = lazy(() => import('./components/ShivaratriView'))
+const HoliView = lazy(() => import('./components/HoliView'))
+const JanmashtamiView = lazy(() => import('./components/JanmashtamiView'))
+const GaneshChaturthiView = lazy(() => import('./components/GaneshChaturthiView'))
+const KarvaChauthView = lazy(() => import('./components/KarvaChauthView'))
 const SatyanarayanChapterView = lazy(() => import('./components/SatyanarayanChapterView'))
 const ShastrasView = lazy(() => import('./components/ShastrasView'))
+
+const standaloneViews = {
+  shaktipeeths: ShaktipeethsView,
+  charDham: CharDhamView,
+  jyotirlingas: JyotirlingasView,
+  chhath: ChhathPujaView,
+  diwali: DiwaliView,
+  navratri: NavratriView,
+  shivaratri: ShivaratriView,
+  holi: HoliView,
+  janmashtami: JanmashtamiView,
+  ganeshChaturthi: GaneshChaturthiView,
+  karvaChauth: KarvaChauthView,
+} as const
 
 // Lazy load data files - load only when text type is selected
 const loadGitaData = () => import('../data/gita').then(m => ({ default: m.gitaChapters }))
@@ -79,6 +100,30 @@ const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?
     name: 'Diwali',
     nameHindi: 'दीपावली',
   },
+  navratri: {
+    name: 'Navratri',
+    nameHindi: 'नवरात्रि',
+  },
+  shivaratri: {
+    name: 'Maha Shivaratri',
+    nameHindi: 'महा शिवरात्रि',
+  },
+  holi: {
+    name: 'Holi',
+    nameHindi: 'होली',
+  },
+  janmashtami: {
+    name: 'Janmashtami',
+    nameHindi: 'जन्माष्टमी',
+  },
+  ganeshChaturthi: {
+    name: 'Ganesh Chaturthi',
+    nameHindi: 'गणेश चतुर्थी',
+  },
+  karvaChauth: {
+    name: 'Karva Chauth',
+    nameHindi: 'करवा चौथ',
+  },
   shastras: {
     name: 'Shastras',
     nameHindi: 'शास्त्र',
@@ -93,7 +138,6 @@ function App() {
   const [selectedVerse, setSelectedVerse] = useState<number>(1)
   const [backgroundTheme, setBackgroundTheme] = useState<string>(savedSettings.backgroundTheme)
   const fontSize = savedSettings.fontSize
-  const [viewMode, setViewMode] = useState<'text' | 'pdf'>('text')
   const [textDataCache, setTextDataCache] = useState<Record<TextType, any[]>>({} as Record<TextType, any[]>)
   const [isLoadingData, setIsLoadingData] = useState(false)
   const [sourcePdf, setSourcePdf] = useState<ShastraPdfTarget | null>(null)
@@ -161,14 +205,9 @@ function App() {
     ...currentTextConfig,
     data: currentTextData,
   }
-  const isShaktipeethsView = textType === 'shaktipeeths'
-  const isCharDhamView = textType === 'charDham'
-  const isJyotirlingasView = textType === 'jyotirlingas'
-  const isChhathView = textType === 'chhath'
-  const isDiwaliView = textType === 'diwali'
+  const StandaloneView = standaloneViews[textType as keyof typeof standaloneViews]
   const isShastrasView = textType === 'shastras'
-  const isSpecialView =
-    isShaktipeethsView || isCharDhamView || isJyotirlingasView || isChhathView || isDiwaliView || isShastrasView
+  const isSpecialView = Boolean(StandaloneView) || isShastrasView
   const isHomePage = selectedChapter === null && !isSpecialView
 
   const handleChapterSelect = (chapterNumber: number, verseNumber?: number) => {
@@ -179,7 +218,6 @@ function App() {
   const handleBackToHome = () => {
     setSelectedChapter(null)
     setSelectedVerse(1)
-    setViewMode('text')
     setSourcePdf(null)
   }
 
@@ -198,33 +236,16 @@ function App() {
         <div className="sticky top-0 z-50 bg-saffron shadow-md border-b border-gold">
           <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
             <div className="flex items-center justify-between gap-2">
-              <span className="flex-shrink-0 text-cream text-lg sm:text-xl leading-none pr-1 sm:pr-2" aria-hidden="true">ॐ</span>
-              {/* Text Type Selector - Scrollable on mobile */}
-              <div className="flex-1 overflow-x-auto scrollbar-hide -mx-3 sm:mx-0 px-3 sm:px-0">
-                <div className="flex items-center gap-2 sm:gap-3 min-w-max sm:flex-wrap sm:justify-center">
-                  {(Object.keys(textConfigsBase) as TextType[]).map((type) => (
-                    <button
-                      key={type}
-                      onClick={() => {
-                        setTextType(type)
-                        setSelectedChapter(null)
-                        setSelectedVerse(1)
-                        setViewMode('text')
-                        setSourcePdf(null)
-                      }}
-                      className={`px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium transition-all duration-300 cursor-pointer touch-manipulation min-w-[80px] sm:min-w-0 flex-shrink-0 ${
-                        textType === type && viewMode === 'text'
-                          ? 'bg-cream text-maroon shadow-lg border-2 border-gold underline decoration-gold decoration-2 underline-offset-4'
-                          : 'bg-cream/90 text-ink hover:bg-saffron-light active:bg-saffron-light border border-gold/70'
-                      }`}
-                    >
-                      <div className="font-serif text-xs sm:text-sm md:text-base whitespace-nowrap">{textConfigsBase[type].nameHindi}</div>
-                      <div className={`text-[10px] sm:text-xs whitespace-nowrap ${textType === type && viewMode === 'text' ? 'text-saffron-dark' : 'text-ink/60'}`}>{textConfigsBase[type].name}</div>
-                    </button>
-                  ))}
-                </div>
-              </div>
-              {/* Background Selector */}
+              <SiteNav
+                currentType={textType}
+                labels={textConfigsBase}
+                onSelect={(type) => {
+                  setTextType(type)
+                  setSelectedChapter(null)
+                  setSelectedVerse(1)
+                  setSourcePdf(null)
+                }}
+              />
               <div className="flex-shrink-0">
                 <BackgroundSelector
                   currentTheme={backgroundTheme}
@@ -251,34 +272,10 @@ function App() {
                 />
               </div>
             </Suspense>
-          ) : isShaktipeethsView ? (
+          ) : StandaloneView ? (
             <Suspense fallback={<LoadingSpinner />}>
-              <div key="shaktipeeths-view" className="animate-fadeIn">
-                <ShaktipeethsView />
-              </div>
-            </Suspense>
-          ) : isCharDhamView ? (
-            <Suspense fallback={<LoadingSpinner />}>
-              <div key="char-dham-view" className="animate-fadeIn">
-                <CharDhamView />
-              </div>
-            </Suspense>
-          ) : isJyotirlingasView ? (
-            <Suspense fallback={<LoadingSpinner />}>
-              <div key="jyotirlingas-view" className="animate-fadeIn">
-                <JyotirlingasView />
-              </div>
-            </Suspense>
-          ) : isChhathView ? (
-            <Suspense fallback={<LoadingSpinner />}>
-              <div key="chhath-view" className="animate-fadeIn">
-                <ChhathPujaView />
-              </div>
-            </Suspense>
-          ) : isDiwaliView ? (
-            <Suspense fallback={<LoadingSpinner />}>
-              <div key="diwali-view" className="animate-fadeIn">
-                <DiwaliView />
+              <div key={`${textType}-view`} className="animate-fadeIn">
+                <StandaloneView />
               </div>
             </Suspense>
           ) : isShastrasView ? (

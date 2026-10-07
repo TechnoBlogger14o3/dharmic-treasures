@@ -1,4 +1,5 @@
 import { FormEvent, useEffect, useRef, useState } from 'react'
+import { resolveChatQuery } from '../utils/chatFollowUp'
 import { answerFromHits } from '../utils/ragAnswer'
 import type { RagChunk } from '../utils/ragChunk'
 import { searchMatrix, type RagHit } from '../utils/ragSearch'
@@ -69,6 +70,12 @@ async function loadSiteChunks(): Promise<RagChunk[]> {
       import('../../data/charDham'),
       import('../../data/chhathPuja'),
       import('../../data/diwali'),
+      import('../../data/navratri'),
+      import('../../data/mahaShivaratri'),
+      import('../../data/holi'),
+      import('../../data/janmashtami'),
+      import('../../data/ganeshChaturthi'),
+      import('../../data/karvaChauth'),
     ]).then(
       ([
         gita,
@@ -82,6 +89,12 @@ async function loadSiteChunks(): Promise<RagChunk[]> {
         dham,
         chhath,
         diwali,
+        navratri,
+        shivaratri,
+        holi,
+        janmashtami,
+        ganesh,
+        karva,
       ]) => {
         const chaptersOf = (
           rows: { chapter_number: number; name: string; name_meaning: string; summary: string }[],
@@ -170,6 +183,35 @@ async function loadSiteChunks(): Promise<RagChunk[]> {
               intro: diwali.diwaliIntroduction.contentEnglish,
             },
           ),
+          ...siteChunksFromCollection(
+            navratri.navratriDays.map((item) => ({
+              id: item.id,
+              name: item.name,
+              extra: `${item.nameHindi}, ${item.tithi}. ${item.summary}`,
+            })),
+            {
+              book: 'navratri-site',
+              title: 'Navratri (site)',
+              kind: 'Navratri nights',
+              intro: navratri.navratriIntroduction.contentEnglish,
+            },
+          ),
+          ...[shivaratri.mahaShivaratriPage, holi.holiPage, janmashtami.janmashtamiPage, ganesh.ganeshChaturthiPage, karva.karvaChauthPage].flatMap(
+            (page) =>
+              siteChunksFromCollection(
+                page.days.map((item) => ({
+                  id: item.id,
+                  name: item.name,
+                  extra: `${item.nameHindi}, ${item.tithi}. ${item.summary}`,
+                })),
+                {
+                  book: page.book,
+                  title: page.title,
+                  kind: page.kind,
+                  intro: page.introduction.contentEnglish,
+                },
+              ),
+          ),
         ]
       },
     ).catch((error) => {
@@ -196,15 +238,24 @@ async function embedQuery(text: string, model: string): Promise<Float32Array> {
   return embed(text)
 }
 
-async function askWorker(question: string, hits: RagHit[]): Promise<string | null> {
+async function askWorker(
+  question: string,
+  hits: RagHit[],
+  history: { role: 'user' | 'assistant'; text: string }[],
+): Promise<string | null> {
   const url = import.meta.env.VITE_CHAT_URL || 'https://shastra-chat.dharmic-treasures.workers.dev'
   const response = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       question,
+      history: history.slice(-4).map(({ role, text }) => ({ role, text })),
       hits: hits.map(({ book, title, page, text }) => ({ book, title, page, text })),
-    } satisfies { question: string; hits: RagChunk[] }),
+    } satisfies {
+      question: string
+      history: { role: 'user' | 'assistant'; text: string }[]
+      hits: RagChunk[]
+    }),
   })
   if (!response.ok) throw new Error('worker-failed')
   const data = (await response.json()) as { answer?: string }
@@ -217,6 +268,7 @@ export default function GitaChatbot() {
   const [pending, setPending] = useState(false)
   const [messages, setMessages] = useState<ChatMessage[]>([])
   const nextId = useRef(0)
+  const topicRef = useRef('')
   const endRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -228,6 +280,7 @@ export default function GitaChatbot() {
     setDraft('')
     setMessages([])
     setPending(false)
+    topicRef.current = ''
   }
 
   const handleSend = async (event: FormEvent) => {
@@ -236,6 +289,9 @@ export default function GitaChatbot() {
     if (!question || pending) return
 
     const userId = ++nextId.current
+    const history = messages.slice(-4)
+    const { searchQuery, nextTopic } = resolveChatQuery(question, topicRef.current)
+    topicRef.current = nextTopic
     setDraft('')
     setPending(true)
     setMessages((prev) => [...prev, { id: userId, role: 'user', text: question }])
@@ -243,13 +299,13 @@ export default function GitaChatbot() {
     try {
       const store = await loadStore()
       const siteChunks = await loadSiteChunks().catch(() => [])
-      const query = await embedQuery(question, store.meta.model)
+      const query = await embedQuery(searchQuery, store.meta.model)
       const pdfHits = searchMatrix(query, store.embeddings, store.meta.dims, store.chunks, 6)
-      const siteHits = searchSiteText(question, siteChunks, 4)
+      const siteHits = searchSiteText(searchQuery, siteChunks, 4)
       const hits = mergeHits(pdfHits, siteHits, 6)
       let text = ''
       try {
-        text = (await askWorker(question, hits)) ?? answerFromHits(hits)
+        text = (await askWorker(searchQuery, hits, history)) ?? answerFromHits(hits)
       } catch {
         text = answerFromHits(hits)
       }

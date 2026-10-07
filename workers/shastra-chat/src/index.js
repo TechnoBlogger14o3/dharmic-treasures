@@ -18,11 +18,16 @@ function citeHit(hit) {
   return hit.page > 0 ? `${hit.title} p. ${hit.page}` : hit.title
 }
 
-function buildPayload(question, hits) {
+function buildPayload(question, hits, history) {
   const passages = (hits || [])
     .slice(0, 6)
     .map((hit, i) => `[${i + 1}] ${citeHit(hit)}\n${String(hit.text || '').slice(0, 2000)}`)
     .join('\n\n')
+
+  const earlier = (Array.isArray(history) ? history : [])
+    .slice(-4)
+    .map((turn) => `${turn.role === 'user' ? 'User' : 'Assistant'}: ${String(turn.text || '')}`)
+    .join('\n')
 
   return {
     model: GROQ_MODEL,
@@ -32,11 +37,11 @@ function buildPayload(question, hits) {
       {
         role: 'system',
         content:
-          'You answer from Hindu scriptures and this site\'s notes, including homepage chapters, Shaktipeeths, Jyotirlingas, Char Dham, and festival pages. Prefer PDF passages when they answer the question. If they do not, you MUST use site passages. Never say the books do not say when a site passage answers. Cite PDFs as Title, p. N. Cite site passages as Title (site) or Title (homepage). Reply in 2-4 sentences unless the question asks for a list or a count; then give the list or the number from the passages. Do not invent verses, other books, or general knowledge beyond the passages.',
+          'You answer from Hindu scriptures and this site\'s notes, including homepage chapters, Shaktipeeths, Jyotirlingas, Char Dham, and festival pages (Chhath, Diwali, Navratri, Maha Shivaratri, Holi, Janmashtami, Ganesh Chaturthi, Karva Chauth). Prefer PDF passages when they answer the question. If they do not, you MUST use site passages. Never say the books do not say when a site passage answers. Cite PDFs as Title, p. N. Cite site passages as Title (site) or Title (homepage). Reply in 2-4 sentences unless the question asks for a list or a count; then give the list or the number from the passages. Resolve words like them, those, it, and list them from earlier turns. Do not invent verses, other books, or general knowledge beyond the passages.',
       },
       {
         role: 'user',
-        content: `Question: ${question}\n\nPassages:\n${passages}`,
+        content: `${earlier ? `Earlier:\n${earlier}\n\n` : ''}Question: ${question}\n\nPassages:\n${passages}`,
       },
     ],
   }
@@ -61,13 +66,15 @@ export default {
     if (!question) return json({ error: 'question required' }, 400)
     if (!hits.length) return json({ answer: 'These books do not say.' })
 
+    const history = Array.isArray(body.history) ? body.history : []
+
     const groq = await fetch(GROQ_URL, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${env.GROQ_API_KEY}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(buildPayload(question, hits)),
+      body: JSON.stringify(buildPayload(question, hits, history)),
     })
 
     if (!groq.ok) {

@@ -22,11 +22,21 @@ export function answerFromHits(hits: RagHit[]): string {
     .join('\n\n')
 }
 
-export function buildGroqPayload(question: string, hits: RagHit[]): GroqPayload {
+export interface ChatTurn {
+  role: 'user' | 'assistant'
+  text: string
+}
+
+export function buildGroqPayload(question: string, hits: RagHit[], history: ChatTurn[] = []): GroqPayload {
   const passages = hits
     .slice(0, 6)
     .map((hit, i) => `[${i + 1}] ${citeHit(hit)}\n${hit.text}`)
     .join('\n\n')
+
+  const earlier = history
+    .slice(-4)
+    .map((turn) => `${turn.role === 'user' ? 'User' : 'Assistant'}: ${turn.text}`)
+    .join('\n')
 
   return {
     model: GROQ_MODEL,
@@ -36,11 +46,11 @@ export function buildGroqPayload(question: string, hits: RagHit[]): GroqPayload 
       {
         role: 'system',
         content:
-          'You answer from Hindu scriptures and this site\'s notes, including homepage chapters, Shaktipeeths, Jyotirlingas, Char Dham, and festival pages. Prefer PDF passages when they answer the question. If they do not, you MUST use site passages. Never say the books do not say when a site passage answers. Cite PDFs as Title, p. N. Cite site passages as Title (site) or Title (homepage). Reply in 2-4 sentences unless the question asks for a list or a count; then give the list or the number from the passages. Do not invent verses, other books, or general knowledge beyond the passages.',
+          'You answer from Hindu scriptures and this site\'s notes, including homepage chapters, Shaktipeeths, Jyotirlingas, Char Dham, and festival pages (Chhath, Diwali, Navratri, Maha Shivaratri, Holi, Janmashtami, Ganesh Chaturthi, Karva Chauth). Prefer PDF passages when they answer the question. If they do not, you MUST use site passages. Never say the books do not say when a site passage answers. Cite PDFs as Title, p. N. Cite site passages as Title (site) or Title (homepage). Reply in 2-4 sentences unless the question asks for a list or a count; then give the list or the number from the passages. Resolve words like them, those, it, and list them from earlier turns. Do not invent verses, other books, or general knowledge beyond the passages.',
       },
       {
         role: 'user',
-        content: `Question: ${question}\n\nPassages:\n${passages}`,
+        content: `${earlier ? `Earlier:\n${earlier}\n\n` : ''}Question: ${question}\n\nPassages:\n${passages}`,
       },
     ],
   }

@@ -1,4 +1,4 @@
-import { chhathDatesForYear } from './chhathDates.ts'
+import { addIsoDays, chhathDatesForYear } from './chhathDates.ts'
 import { formatIso } from './panchang.ts'
 
 export interface DayEvent {
@@ -35,6 +35,7 @@ const BY_ISO: Record<string, DayEvent> = {
   '2025-08-09': { name: 'Raksha Bandhan', nameHindi: 'रक्षा बंधन', rank: 85 },
   '2025-08-16': { name: 'Janmashtami', nameHindi: 'जन्माष्टमी', rank: 92 },
   '2025-08-27': { name: 'Ganesh Chaturthi', nameHindi: 'गणेश चतुर्थी', rank: 90 },
+  '2025-09-06': { name: 'Anant Chaturdashi', nameHindi: 'अनंत चतुर्दशी', rank: 74 },
   '2025-09-22': { name: 'Navratri begins', nameHindi: 'नवरात्रि आरंभ', rank: 80 },
   '2025-10-02': { name: 'Dussehra', nameHindi: 'दशहरा', rank: 90 },
   '2025-10-10': { name: 'Karva Chauth', nameHindi: 'करवा चौथ', rank: 78 },
@@ -57,6 +58,7 @@ const BY_ISO: Record<string, DayEvent> = {
   '2026-08-28': { name: 'Raksha Bandhan', nameHindi: 'रक्षा बंधन', rank: 85 },
   '2026-09-03': { name: 'Janmashtami', nameHindi: 'जन्माष्टमी', rank: 92 },
   '2026-09-14': { name: 'Ganesh Chaturthi', nameHindi: 'गणेश चतुर्थी', rank: 90 },
+  '2026-09-25': { name: 'Anant Chaturdashi', nameHindi: 'अनंत चतुर्दशी', rank: 74 },
   '2026-10-11': { name: 'Navratri begins', nameHindi: 'नवरात्रि आरंभ', rank: 80 },
   '2026-10-20': { name: 'Dussehra', nameHindi: 'दशहरा', rank: 90 },
   '2026-10-29': { name: 'Karva Chauth', nameHindi: 'करवा चौथ', rank: 78 },
@@ -67,14 +69,17 @@ const BY_ISO: Record<string, DayEvent> = {
 
   '2027-01-14': { name: 'Makar Sankranti', nameHindi: 'मकर संक्रांति', rank: 70 },
   '2027-03-06': { name: 'Maha Shivaratri', nameHindi: 'महा शिवरात्रि', rank: 90 },
+  '2027-03-21': { name: 'Holika Dahan', nameHindi: 'होलिका दहन', rank: 72 },
   '2027-03-22': { name: 'Holi', nameHindi: 'होली', rank: 95 },
   '2027-04-08': { name: 'Ugadi / Gudi Padwa', nameHindi: 'उगादि / गुड़ी पड़वा', rank: 75 },
   '2027-04-15': { name: 'Ram Navami', nameHindi: 'राम नवमी', rank: 85 },
   '2027-07-18': { name: 'Guru Purnima', nameHindi: 'गुरु पूर्णिमा', rank: 75 },
   '2027-08-24': { name: 'Janmashtami', nameHindi: 'जन्माष्टमी', rank: 92 },
   '2027-09-04': { name: 'Ganesh Chaturthi', nameHindi: 'गणेश चतुर्थी', rank: 90 },
+  '2027-09-14': { name: 'Anant Chaturdashi', nameHindi: 'अनंत चतुर्दशी', rank: 74 },
   '2027-09-30': { name: 'Navratri begins', nameHindi: 'नवरात्रि आरंभ', rank: 80 },
   '2027-10-09': { name: 'Dussehra', nameHindi: 'दशहरा', rank: 90 },
+  '2027-10-18': { name: 'Karva Chauth', nameHindi: 'करवा चौथ', rank: 78 },
   '2027-10-28': { name: 'Diwali', nameHindi: 'दीपावली', rank: 100 },
 }
 
@@ -112,6 +117,24 @@ export function mainEventForDate(year: number, month: number, day: number): DayE
 export function dateForNamedEvent(year: number, name: string): string | null {
   for (const [iso, event] of Object.entries(BY_ISO)) {
     if (event.name === name && iso.startsWith(`${year}-`)) return iso
+  }
+  return null
+}
+
+export function dateForNavratriNight(year: number, night: number): string | null {
+  const start = dateForNamedEvent(year, 'Navratri begins')
+  if (!start || night < 1) return null
+  return addIsoDays(start, night - 1)
+}
+
+export function dateForFestivalDay(
+  year: number,
+  day: { eventName?: string | null; offsetFrom?: string; offsetDays?: number },
+): string | null {
+  if (day.eventName) return dateForNamedEvent(year, day.eventName)
+  if (day.offsetFrom) {
+    const base = dateForNamedEvent(year, day.offsetFrom)
+    return base ? addIsoDays(base, day.offsetDays ?? 0) : null
   }
   return null
 }

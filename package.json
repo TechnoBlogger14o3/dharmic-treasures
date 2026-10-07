@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "node --experimental-strip-types --test src/utils/chhathDates.test.ts src/utils/panchang.test.ts src/utils/festivals.test.ts src/utils/pdfNav.test.ts src/utils/ragChunk.test.ts src/utils/ragSearch.test.ts src/utils/ragAnswer.test.ts src/utils/siteChunks.test.ts",
+    "test": "node --experimental-strip-types --test src/utils/chhathDates.test.ts src/utils/panchang.test.ts src/utils/festivals.test.ts src/utils/pdfNav.test.ts src/utils/ragChunk.test.ts src/utils/ragSearch.test.ts src/utils/ragAnswer.test.ts src/utils/siteChunks.test.ts src/utils/chatFollowUp.test.ts src/utils/siteNav.test.ts",
     "index:rag": "node --experimental-strip-types scripts/index-shastra-rag.mjs",
     "chat:dev": "npm run dev --prefix workers/shastra-chat",
     "preview": "vite preview",

@@ -6,6 +6,12 @@ import {
   siteChunksFromChapters,
   siteChunksFromCollection,
 } from './siteChunks.ts'
+import { ganeshChaturthiPage } from '../../data/ganeshChaturthi.ts'
+import { holiPage } from '../../data/holi.ts'
+import { janmashtamiPage } from '../../data/janmashtami.ts'
+import { karvaChauthPage } from '../../data/karvaChauth.ts'
+import { mahaShivaratriPage } from '../../data/mahaShivaratri.ts'
+import { navratriDays, navratriIntroduction } from '../../data/navratri.ts'
 
 const sample = [
   {
@@ -144,6 +150,54 @@ test('mergeHits keeps at most two PDF hits when site JSON matches', () => {
   )
   assert.equal(merged.filter((hit) => hit.book === 'shaktipeeths-site').length, 1)
   assert.equal(merged.filter((hit) => hit.book === 'shiva-purana-1').length, 2)
+})
+
+test('searchSiteText answers the five new festival pages from site JSON', () => {
+  const pages = [mahaShivaratriPage, holiPage, janmashtamiPage, ganeshChaturthiPage, karvaChauthPage]
+  const queries = [
+    ['how many watches on shivaratri', /4 Shivaratri watches/, /Nishita/],
+    ['how many days in holi', /2 Holi days/, /Holika/],
+    ['how many days in janmashtami', /Janmashtami days/, /Nandotsav/],
+    ['when is ganesh visarjan', /Ganeshotsav days/, /Anant Chaturdashi/],
+    ['what is sargi on karva chauth', /Karva Chauth hours/, /Sargi/],
+  ] as const
+  for (const [index, page] of pages.entries()) {
+    const [query, kind, name] = queries[index]
+    const chunks = siteChunksFromCollection(
+      page.days.map((item) => ({
+        id: item.id,
+        name: item.name,
+        extra: `${item.nameHindi}, ${item.tithi}. ${item.summary}`,
+      })),
+      { book: page.book, title: page.title, kind: page.kind, intro: page.introduction.contentEnglish },
+    )
+    const hits = searchSiteText(query, chunks, 2)
+    assert.ok(hits.length >= 1, query)
+    assert.match(hits[0].text, kind)
+    assert.match(hits.map((hit) => hit.text).join('\n'), name)
+  }
+})
+
+test('searchSiteText answers how many Navratri nights from site JSON', () => {
+  const chunks = siteChunksFromCollection(
+    navratriDays.map((item) => ({
+      id: item.id,
+      name: item.name,
+      extra: `${item.nameHindi}, ${item.tithi}. ${item.summary}`,
+    })),
+    {
+      book: 'navratri-site',
+      title: 'Navratri (site)',
+      kind: 'Navratri nights',
+      intro: navratriIntroduction.contentEnglish,
+    },
+  )
+  const hits = searchSiteText('how many nights in navratri', chunks, 2)
+  assert.ok(hits.length >= 1)
+  assert.equal(hits[0].page, 0)
+  assert.match(hits[0].text, /9 Navratri nights/)
+  assert.match(hits[0].text, /Shailaputri/)
+  assert.match(hits[0].text, /Siddhidatri/)
 })
 
 test('mergeHits ignores weak homepage matches', () => {

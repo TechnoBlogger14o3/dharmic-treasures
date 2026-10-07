@@ -36,6 +36,29 @@ test('buildGroqPayload uses gpt-oss and only the supplied hits', () => {
   assert.match(payload.messages[1].content, /celestial weapons/)
 })
 
+test('buildGroqPayload includes prior turns so list them stays on the Gita', () => {
+  const payload = buildGroqPayload(
+    'list them',
+    [
+      {
+        book: 'gita-site',
+        title: 'Bhagavad Gita (homepage)',
+        page: 0,
+        text: "Bhagavad Gita (homepage) has 18 chapters:\n1. Arjuna's Despondency",
+        score: 1,
+      },
+    ],
+    [
+      { role: 'user', text: 'how many chapters in Bhagavad Gita' },
+      { role: 'assistant', text: 'There are 18 chapters (Bhagavad Gita (homepage)).' },
+    ],
+  )
+  assert.match(payload.messages[1].content, /how many chapters in Bhagavad Gita/)
+  assert.match(payload.messages[1].content, /18 chapters/)
+  assert.match(payload.messages[1].content, /list them/)
+  assert.match(payload.messages[0].content, /earlier/i)
+})
+
 test('buildGroqPayload cites homepage hits without a fake page number', () => {
   const payload = buildGroqPayload('list all chapters in bhagavad gita', [
     {
