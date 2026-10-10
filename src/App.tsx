@@ -237,35 +237,26 @@ function App() {
 
   return (
     <ErrorBoundary>
-      <div className={`min-h-screen transition-colors duration-500 ${backgroundClasses[backgroundTheme]}`}>
-        {/* Header with Text Type Selector */}
-        <div className="sticky top-0 z-50 bg-saffron shadow-md border-b border-gold">
-          <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
-            <div className="flex items-center justify-between gap-2">
-              <SiteNav
-                currentType={textType}
-                labels={textConfigsBase}
-                onSelect={(type) => {
-                  setTextType(type)
-                  setSelectedChapter(null)
-                  setSelectedVerse(1)
-                  setSourcePdf(null)
-                }}
-              />
-              <div className="flex-shrink-0">
-                <BackgroundSelector
-                  currentTheme={backgroundTheme}
-                  onThemeChange={setBackgroundTheme}
-                  themes={Object.keys(backgroundClasses)}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div className={`min-h-screen flex flex-col transition-colors duration-500 ${backgroundClasses[backgroundTheme]}`}>
+        <SiteNav
+          currentType={textType}
+          labels={textConfigsBase}
+          onSelect={(type) => {
+            setTextType(type)
+            setSelectedChapter(null)
+            setSelectedVerse(1)
+            setSourcePdf(null)
+          }}
+        >
+          <BackgroundSelector
+            currentTheme={backgroundTheme}
+            onThemeChange={setBackgroundTheme}
+            themes={Object.keys(backgroundClasses)}
+          />
+        </SiteNav>
 
         {/* Main Content */}
-        <div className="relative z-10">
+        <div className="relative z-10 flex-1 md:pl-64">
           {sourcePdf ? (
             <Suspense fallback={<LoadingSpinner />}>
               <div key={`source-pdf-${sourcePdf.path}-${sourcePdf.page}`} className="animate-fadeIn">
@@ -344,7 +335,7 @@ function App() {
         <PanchangWidget />
         <GitaChatbot />
 
-        <footer className="mt-12 border-t border-gold bg-cream">
+        <footer className="mt-auto border-t border-gold bg-cream md:pl-64">
           <div className="container mx-auto px-4 py-8 text-center text-sm text-ink">
             <div className="text-xs uppercase tracking-[0.2em] text-maroon/80 font-serif">Connect & Explore</div>
             <div className="mt-2 text-base font-semibold text-maroon">

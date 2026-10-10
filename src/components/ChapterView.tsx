@@ -133,8 +133,7 @@ export default function ChapterView({
             backgroundPosition: 'center top',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed',
-            top: '40px',
-            height: 'calc(100% - 40px)',
+            inset: 0,
           }}
         >
           {/* Gradient fade overlays for smooth edges */}
