@@ -50,7 +50,7 @@ npm run build     # tsc + Vite
 
 ## Deploy
 
-See [DEPLOY.md](DEPLOY.md). Push to `main` runs the Hostinger FTP workflow.
+Push to `main` runs `.github/workflows/deploy-hostinger.yml` (build + FTP to Hostinger).
 
 Put the shastra PDFs in `public/pdfs/` before that build. If they are missing, PDF URLs return the homepage HTML and the viewer fails. Note: `Ramayana.pdf` is ~81MB (GitHub warns above 50MB).
 

@@ -56,6 +56,13 @@ screenshots/
 # Abandoned design/RAG notes
 docs/
 
+# Local brainstorm mockups
+.superpowers/
+
+# Extra markdown — keep only the root README
+*.md
+!README.md
+
 # Wrangler local secrets and cache
 **/.dev.vars
 **/.wrangler/
