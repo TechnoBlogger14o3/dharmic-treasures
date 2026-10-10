@@ -4,6 +4,7 @@ import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { pipeline } from '@huggingface/transformers'
 import { chunkPages } from '../src/utils/ragChunk.ts'
+import { buildAllSiteChunks } from '../src/utils/siteRag.ts'
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..')
 const MODEL = 'onnx-community/all-MiniLM-L6-v2-ONNX'
@@ -64,6 +65,10 @@ for (const source of sources) {
   console.log('  chunks', made.length)
   chunks.push(...made)
 }
+
+const siteChunks = buildAllSiteChunks()
+console.log('site chunks', siteChunks.length)
+chunks.push(...siteChunks)
 
 if (!chunks.length) {
   throw new Error('No chunks extracted. Check the PDFs in data/ or public/pdfs/.')

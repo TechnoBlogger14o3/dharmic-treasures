@@ -1,4 +1,5 @@
 import type { RagHit } from './ragSearch'
+import { isListOrCountQuery } from './siteChunks.ts'
 
 export const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions'
 export const GROQ_MODEL = 'openai/gpt-oss-20b'
@@ -14,10 +15,18 @@ function citeHit(hit: RagHit): string {
   return hit.page > 0 ? `${hit.title} p. ${hit.page}` : hit.title
 }
 
-export function answerFromHits(hits: RagHit[]): string {
-  if (!hits.length) return 'These books do not say.'
-  return hits
-    .slice(0, 2)
+function pickHits(hits: RagHit[], question: string): RagHit[] {
+  if (isListOrCountQuery(question)) {
+    const catalog = hits.find((hit) => hit.page === 0 && /\b(?:has|there are)\s+\d+/i.test(hit.text))
+    if (catalog) return [catalog]
+  }
+  return hits.slice(0, 2)
+}
+
+export function answerFromHits(hits: RagHit[], question = ''): string {
+  const chosen = pickHits(hits, question)
+  if (!chosen.length) return 'These books do not say.'
+  return chosen
     .map((hit) => `${hit.text}\n\n— ${hit.page > 0 ? `${hit.title}, p. ${hit.page}` : hit.title}`)
     .join('\n\n')
 }
@@ -46,7 +55,7 @@ export function buildGroqPayload(question: string, hits: RagHit[], history: Chat
       {
         role: 'system',
         content:
-          'You answer from Hindu scriptures and this site\'s notes, including homepage chapters, Shaktipeeths, Jyotirlingas, Char Dham, and festival pages (Chhath, Diwali, Navratri, Maha Shivaratri, Holi, Janmashtami, Ganesh Chaturthi, Karva Chauth). Prefer PDF passages when they answer the question. If they do not, you MUST use site passages. Never say the books do not say when a site passage answers. Cite PDFs as Title, p. N. Cite site passages as Title (site) or Title (homepage). Reply in 2-4 sentences unless the question asks for a list or a count; then give the list or the number from the passages. Resolve words like them, those, it, and list them from earlier turns. Do not invent verses, other books, or general knowledge beyond the passages.',
+          'You answer from Hindu scriptures and this site\'s notes, including homepage chapters, Shaktipeeths, Jyotirlingas, Char Dham, major temples by Indian state, and festival pages (Chhath, Diwali, Navratri, Maha Shivaratri, Holi, Janmashtami, Ganesh Chaturthi, Karva Chauth). Prefer PDF passages when they answer the question. If they do not, you MUST use site passages. Never say the books do not say when a site passage answers. Cite PDFs as Title, p. N. Cite site passages as Title (site) or Title (homepage). Reply in 2-4 sentences unless the question asks for a list or a count; then give the list or the number from the passages. Resolve words like them, those, it, and list them from earlier turns. Do not invent verses, other books, or general knowledge beyond the passages.',
       },
       {
         role: 'user',

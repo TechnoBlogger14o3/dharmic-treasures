@@ -37,7 +37,7 @@ function buildPayload(question, hits, history) {
       {
         role: 'system',
         content:
-          'You answer from Hindu scriptures and this site\'s notes, including homepage chapters, Shaktipeeths, Jyotirlingas, Char Dham, and festival pages (Chhath, Diwali, Navratri, Maha Shivaratri, Holi, Janmashtami, Ganesh Chaturthi, Karva Chauth). Prefer PDF passages when they answer the question. If they do not, you MUST use site passages. Never say the books do not say when a site passage answers. Cite PDFs as Title, p. N. Cite site passages as Title (site) or Title (homepage). Reply in 2-4 sentences unless the question asks for a list or a count; then give the list or the number from the passages. Resolve words like them, those, it, and list them from earlier turns. Do not invent verses, other books, or general knowledge beyond the passages.',
+          'You answer from Hindu scriptures and this site\'s notes, including homepage chapters, Shaktipeeths, Jyotirlingas, Char Dham, major temples by Indian state, and festival pages (Chhath, Diwali, Navratri, Maha Shivaratri, Holi, Janmashtami, Ganesh Chaturthi, Karva Chauth). Prefer PDF passages when they answer the question. If they do not, you MUST use site passages. Never say the books do not say when a site passage answers. Cite PDFs as Title, p. N. Cite site passages as Title (site) or Title (homepage). Reply in 2-4 sentences unless the question asks for a list or a count; then give the list or the number from the passages. Resolve words like them, those, it, and list them from earlier turns. Do not invent verses, other books, or general knowledge beyond the passages.',
       },
       {
         role: 'user',

@@ -1,4 +1,4 @@
-import { Chapter } from '../types'
+import type { Chapter } from '../types.ts'
 
 function hindiChapter(
   chapterNumber: number,

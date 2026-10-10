@@ -53,8 +53,34 @@ export function isJunkPage(text: string): boolean {
   return false
 }
 
+const HEADING = /^(chapter\s+\d+\b(?:[:.\s]+[A-Za-z][^.!]{0,60})?)/i
+const UNIT_SPLIT = /(?=\b(?:Chapter\s+\d+|\d{1,3}\.\s+[A-Za-z]))/
+
 function wordsOf(text: string): string[] {
   return text.split(/\s+/).filter(Boolean)
+}
+
+function windowBodies(words: string[], target: number, overlap: number): string[] {
+  if (words.length <= target) return [words.join(' ')]
+  const bodies: string[] = []
+  let start = 0
+  while (start < words.length) {
+    bodies.push(words.slice(start, start + target).join(' '))
+    if (start + target >= words.length) break
+    start += target - overlap
+  }
+  return bodies
+}
+
+function headingOf(unit: string, previous: string): string {
+  const match = unit.match(HEADING)
+  return match ? match[1].replace(/[.:]+$/, '').trim() : previous
+}
+
+function formatChunk(title: string, page: number, heading: string, body: string): string {
+  const needsHeading = Boolean(heading) && !body.toLowerCase().startsWith(heading.toLowerCase())
+  const prefix = `${title}, p. ${page}. ${needsHeading ? `${heading}. ` : ''}`
+  return `${prefix}${body}`.replace(/\s+/g, ' ').trim()
 }
 
 export function chunkPages(pages: RagPage[], meta: RagChunkMeta): RagChunk[] {
@@ -64,28 +90,39 @@ export function chunkPages(pages: RagPage[], meta: RagChunkMeta): RagChunk[] {
 
   for (const page of pages) {
     if (isJunkPage(page.text)) continue
-    const words = wordsOf(cleanPageText(page.text))
-    if (words.length <= target) {
-      chunks.push({
-        book: meta.book,
-        title: meta.title,
-        page: page.page,
-        text: words.join(' '),
-      })
-      continue
+    const cleaned = cleanPageText(page.text)
+    if (!cleaned) continue
+
+    const units = cleaned.split(UNIT_SPLIT).map((unit) => unit.trim()).filter(Boolean)
+    let heading = ''
+    let buffer: string[] = []
+    let bufferWords = 0
+    let bufferHeading = ''
+
+    const flush = () => {
+      if (!buffer.length) return
+      for (const body of windowBodies(wordsOf(buffer.join(' ')), target, overlap)) {
+        chunks.push({
+          book: meta.book,
+          title: meta.title,
+          page: page.page,
+          text: formatChunk(meta.title, page.page, bufferHeading, body),
+        })
+      }
+      buffer = []
+      bufferWords = 0
     }
-    let start = 0
-    while (start < words.length) {
-      const slice = words.slice(start, start + target)
-      chunks.push({
-        book: meta.book,
-        title: meta.title,
-        page: page.page,
-        text: slice.join(' '),
-      })
-      if (start + target >= words.length) break
-      start += target - overlap
+
+    for (const unit of units) {
+      heading = headingOf(unit, heading)
+      const count = wordsOf(unit).length
+      if (bufferWords && bufferWords + count > target) flush()
+      if (!buffer.length) bufferHeading = heading
+      buffer.push(unit)
+      bufferWords += count
+      if (count >= target) flush()
     }
+    flush()
   }
 
   return chunks

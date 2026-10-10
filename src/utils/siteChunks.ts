@@ -33,13 +33,57 @@ const STOP = new Set([
   'all',
   'about',
   'there',
+  'them',
+  'those',
+  'these',
+  'please',
 ])
+
+export function queryTokens(query: string): string[] {
+  return (
+    query
+      .toLowerCase()
+      .match(/[a-z0-9]+/g)
+      ?.filter((token) => token.length > 2 && !STOP.has(token)) ?? []
+  )
+}
+
+export function lexicalScore(query: string, text: string): number {
+  const tokens = queryTokens(query)
+  if (!tokens.length) return 0
+  const hay = text.toLowerCase()
+  return tokens.filter((token) => tokenMatches(hay, token)).length / tokens.length
+}
+
+function editDistance(a: string, b: string): number {
+  if (a === b) return 0
+  const max = a.length >= 8 || b.length >= 8 ? 2 : 1
+  if (Math.abs(a.length - b.length) > max) return max + 1
+  const prev = Array.from({ length: b.length + 1 }, (_, j) => j)
+  for (let i = 1; i <= a.length; i++) {
+    let last = prev[0]
+    prev[0] = i
+    let rowMin = prev[0]
+    for (let j = 1; j <= b.length; j++) {
+      const cur = prev[j]
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1
+      prev[j] = Math.min(prev[j] + 1, prev[j - 1] + 1, last + cost)
+      last = cur
+      if (prev[j] < rowMin) rowMin = prev[j]
+    }
+    if (rowMin > max) return max + 1
+  }
+  return prev[b.length]
+}
 
 function tokenMatches(hay: string, token: string): boolean {
   if (hay.includes(token)) return true
   if (token.endsWith('s') && token.length > 4 && hay.includes(token.slice(0, -1))) return true
   if (!token.endsWith('s') && hay.includes(`${token}s`)) return true
-  return false
+  if (token.length < 5) return false
+  const max = token.length >= 8 ? 2 : 1
+  const words = hay.match(/[a-z0-9]+/g) ?? []
+  return words.some((word) => word.length >= 4 && editDistance(word, token) <= max)
 }
 
 export function siteChunksFromChapters(
@@ -94,26 +138,29 @@ export function siteChunksFromCollection(
   return chunks
 }
 
+export function isListOrCountQuery(query: string): boolean {
+  return /\b(how many|list|chapters|nights)\b/i.test(query)
+}
+
+function isCatalogHit(hit: RagHit): boolean {
+  return hit.page === 0 && /\b(?:has|there are)\s+\d+/i.test(hit.text)
+}
+
 export function searchSiteText(query: string, chunks: RagChunk[], limit = 3): RagHit[] {
-  const tokens = query
-    .toLowerCase()
-    .match(/[a-z0-9]+/g)
-    ?.filter((token) => token.length > 2 && !STOP.has(token)) ?? []
-  if (!tokens.length) return []
+  if (!queryTokens(query).length) return []
   return chunks
-    .map((chunk) => {
-      const hay = chunk.text.toLowerCase()
-      const hits = tokens.filter((token) => tokenMatches(hay, token)).length
-      return { ...chunk, score: hits / tokens.length }
-    })
+    .map((chunk) => ({ ...chunk, score: lexicalScore(query, chunk.text) }))
     .filter((hit) => hit.score >= 0.5)
-    .sort((a, b) => b.score - a.score)
+    .sort((a, b) => b.score - a.score || a.page - b.page)
     .slice(0, limit)
 }
 
-export function mergeHits(pdfHits: RagHit[], siteHits: RagHit[], limit = 6): RagHit[] {
-  const strongSite = siteHits.filter((hit) => hit.score >= 0.5)
-  const pdfBudget = strongSite.length ? 2 : limit
+export function mergeHits(pdfHits: RagHit[], siteHits: RagHit[], limit = 6, query = ''): RagHit[] {
+  let strongSite = siteHits.filter((hit) => hit.score >= 0.5)
+  const catalog = strongSite.filter(isCatalogHit)
+  const listQuery = Boolean(query) && isListOrCountQuery(query)
+  if (listQuery && catalog.length) strongSite = catalog
+  const pdfBudget = listQuery && catalog.length ? 0 : strongSite.length ? 2 : limit
   const merged: RagHit[] = []
   const seen = new Set<string>()
   const push = (hit: RagHit) => {

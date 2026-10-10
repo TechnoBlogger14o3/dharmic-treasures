@@ -12,6 +12,7 @@ import { janmashtamiPage } from '../../data/janmashtami.ts'
 import { karvaChauthPage } from '../../data/karvaChauth.ts'
 import { mahaShivaratriPage } from '../../data/mahaShivaratri.ts'
 import { navratriDays, navratriIntroduction } from '../../data/navratri.ts'
+import { templeIntroduction, temples } from '../../data/temples.ts'
 
 const sample = [
   {
@@ -67,6 +68,18 @@ test('searchSiteText ranks the catalog for list-all-chapters', () => {
   assert.ok(hits.length >= 1)
   assert.equal(hits[0].page, 0)
   assert.ok(hits[0].score >= 0.5)
+})
+
+test('searchSiteText still finds the Gita catalog through common typos', () => {
+  const chunks = siteChunksFromChapters(sample, {
+    book: 'gita-site',
+    title: 'Bhagavad Gita (homepage)',
+  })
+  const hits = searchSiteText('how many chapoters in bhagvad gita', chunks, 2)
+  assert.ok(hits.length >= 1)
+  assert.equal(hits[0].page, 0)
+  assert.match(hits[0].text, /Arjuna's Despondency/)
+  assert.match(hits[0].text, /The Yoga of Knowledge/)
 })
 
 test('mergeHits keeps PDF hits and adds a strong homepage match', () => {
@@ -198,6 +211,60 @@ test('searchSiteText answers how many Navratri nights from site JSON', () => {
   assert.match(hits[0].text, /9 Navratri nights/)
   assert.match(hits[0].text, /Shailaputri/)
   assert.match(hits[0].text, /Siddhidatri/)
+})
+
+test('searchSiteText answers major temples from site JSON', () => {
+  const chunks = siteChunksFromCollection(
+    temples.map((item) => ({
+      id: item.id,
+      name: item.name,
+      extra: `${item.nameHindi}, ${item.deity}, ${item.location}, ${item.state}. ${item.history}`,
+    })),
+    {
+      book: 'temples-site',
+      title: 'Major temples (site)',
+      kind: 'major temples',
+      intro: templeIntroduction.contentEnglish,
+    },
+  )
+  const hits = searchSiteText('meenakshi madurai tamil', chunks, 2)
+  assert.ok(hits.length >= 1)
+  assert.match(hits.map((hit) => hit.text).join('\n'), /Meenakshi/)
+})
+
+test('mergeHits keeps only the catalog for a how-many or list question', () => {
+  const merged = mergeHits(
+    [
+      {
+        book: 'bhagavad-gita',
+        title: 'The Bhagavad Gita',
+        page: 2,
+        text: 'All Rights Reserved First Edition',
+        score: 0.8,
+      },
+    ],
+    [
+      {
+        book: 'gita-site',
+        title: 'Bhagavad Gita (homepage)',
+        page: 0,
+        text: "Bhagavad Gita (homepage) has 18 chapters:\n1. Arjuna's Despondency",
+        score: 1,
+      },
+      {
+        book: 'gita-site',
+        title: 'Bhagavad Gita (homepage)',
+        page: 18,
+        text: 'Chapter 18: Moksha-Sannyasa Yoga. The final chapter.',
+        score: 0.9,
+      },
+    ],
+    6,
+    'how many chaoters in bhagavad gita',
+  )
+  assert.equal(merged.filter((hit) => hit.book === 'gita-site').length, 1)
+  assert.equal(merged[0].page, 0)
+  assert.equal(merged.some((hit) => hit.page === 18), false)
 })
 
 test('mergeHits ignores weak homepage matches', () => {

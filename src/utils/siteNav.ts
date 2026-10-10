@@ -18,7 +18,7 @@ export const NAV_GROUPS: NavGroup[] = [
     kind: 'menu',
     name: 'Tirtha',
     nameHindi: 'तीर्थ',
-    types: ['shaktipeeths', 'charDham', 'jyotirlingas'],
+    types: ['shaktipeeths', 'charDham', 'jyotirlingas', 'temples'],
   },
   {
     id: 'utsav',

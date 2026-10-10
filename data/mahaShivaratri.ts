@@ -1,4 +1,4 @@
-import type { FestivalPage } from './festivalTypes'
+import type { FestivalPage } from './festivalTypes.ts'
 
 export const mahaShivaratriPage: FestivalPage = {
   upcomingEventName: 'Maha Shivaratri',

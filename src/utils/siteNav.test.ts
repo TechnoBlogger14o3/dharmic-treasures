@@ -13,6 +13,7 @@ const ALL_TYPES: TextType[] = [
   'shaktipeeths',
   'charDham',
   'jyotirlingas',
+  'temples',
   'chhath',
   'diwali',
   'navratri',

@@ -15,6 +15,7 @@ const PDFViewer = lazy(() => import('./components/PDFViewer'))
 const ShaktipeethsView = lazy(() => import('./components/ShaktipeethsView'))
 const CharDhamView = lazy(() => import('./components/CharDhamView'))
 const JyotirlingasView = lazy(() => import('./components/JyotirlingasView'))
+const TemplesView = lazy(() => import('./components/TemplesView'))
 const ChhathPujaView = lazy(() => import('./components/ChhathPujaView'))
 const DiwaliView = lazy(() => import('./components/DiwaliView'))
 const NavratriView = lazy(() => import('./components/NavratriView'))
@@ -30,6 +31,7 @@ const standaloneViews = {
   shaktipeeths: ShaktipeethsView,
   charDham: CharDhamView,
   jyotirlingas: JyotirlingasView,
+  temples: TemplesView,
   chhath: ChhathPujaView,
   diwali: DiwaliView,
   navratri: NavratriView,
@@ -91,6 +93,10 @@ const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?
   jyotirlingas: {
     name: 'Jyotirlingas',
     nameHindi: 'ज्योतिर्लिंग',
+  },
+  temples: {
+    name: 'Temples',
+    nameHindi: 'मंदिर',
   },
   chhath: {
     name: 'Chhath Puja',

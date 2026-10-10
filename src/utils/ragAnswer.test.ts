@@ -23,6 +23,32 @@ test('answerFromHits says so when nothing matches', () => {
   assert.match(answerFromHits([]), /do not say/i)
 })
 
+test('answerFromHits quotes only the catalog for a list-or-count question', () => {
+  const answer = answerFromHits(
+    [
+      {
+        book: 'gita-site',
+        title: 'Bhagavad Gita (homepage)',
+        page: 0,
+        text: "Bhagavad Gita (homepage) has 18 chapters:\n1. Arjuna's Despondency\n2. The Yoga of Knowledge",
+        score: 1,
+      },
+      {
+        book: 'gita-site',
+        title: 'Bhagavad Gita (homepage)',
+        page: 18,
+        text: 'Chapter 18: Moksha-Sannyasa Yoga. The final chapter of the Bhagavad Gita.',
+        score: 0.9,
+      },
+    ],
+    'how many chaoters in bhagavad gita',
+  )
+  assert.match(answer, /18 chapters/)
+  assert.match(answer, /Arjuna's Despondency/)
+  assert.doesNotMatch(answer, /final chapter/)
+  assert.doesNotMatch(answer, /p\. 18/)
+})
+
 test('buildGroqPayload uses gpt-oss and only the supplied hits', () => {
   const payload = buildGroqPayload('Who stood with Agni?', hits)
   assert.equal(payload.model, GROQ_MODEL)

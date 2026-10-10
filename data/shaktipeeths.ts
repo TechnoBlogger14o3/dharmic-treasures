@@ -1,4 +1,4 @@
-import shaktiPeethasData from './shakti_peethas_51.json'
+import shaktiPeethasData from './shakti_peethas_51.json' with { type: 'json' }
 
 export interface Shaktipeeth {
   id: number

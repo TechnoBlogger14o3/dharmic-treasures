@@ -2,8 +2,9 @@ import { FormEvent, useEffect, useRef, useState } from 'react'
 import { resolveChatQuery } from '../utils/chatFollowUp'
 import { answerFromHits } from '../utils/ragAnswer'
 import type { RagChunk } from '../utils/ragChunk'
-import { searchMatrix, type RagHit } from '../utils/ragSearch'
-import { mergeHits, searchSiteText, siteChunksFromChapters, siteChunksFromCollection } from '../utils/siteChunks'
+import { searchHybrid, type RagHit } from '../utils/ragSearch'
+import { mergeHits, searchSiteText } from '../utils/siteChunks'
+import { buildAllSiteChunks } from '../utils/siteRag'
 
 export interface ShastraPdfTarget {
   path: string
@@ -58,163 +59,7 @@ async function loadStore(): Promise<RagStore> {
 
 async function loadSiteChunks(): Promise<RagChunk[]> {
   if (!sitePromise) {
-    sitePromise = Promise.all([
-      import('../../data/gita'),
-      import('../../data/hanumanChalisa'),
-      import('../../data/sunderkand'),
-      import('../../data/bajrangBaan'),
-      import('../../data/yakshaPrashn'),
-      import('../../data/satyanarayan'),
-      import('../../data/shaktipeeths'),
-      import('../../data/jyotirlingas'),
-      import('../../data/charDham'),
-      import('../../data/chhathPuja'),
-      import('../../data/diwali'),
-      import('../../data/navratri'),
-      import('../../data/mahaShivaratri'),
-      import('../../data/holi'),
-      import('../../data/janmashtami'),
-      import('../../data/ganeshChaturthi'),
-      import('../../data/karvaChauth'),
-    ]).then(
-      ([
-        gita,
-        chalisa,
-        sunderkand,
-        bajrang,
-        yaksha,
-        satyanarayan,
-        shakti,
-        jyoti,
-        dham,
-        chhath,
-        diwali,
-        navratri,
-        shivaratri,
-        holi,
-        janmashtami,
-        ganesh,
-        karva,
-      ]) => {
-        const chaptersOf = (
-          rows: { chapter_number: number; name: string; name_meaning: string; summary: string }[],
-          book: string,
-          title: string,
-        ) =>
-          siteChunksFromChapters(
-            rows.map(({ chapter_number, name, name_meaning, summary }) => ({
-              chapter_number,
-              name,
-              name_meaning,
-              summary,
-            })),
-            { book, title },
-          )
-
-        return [
-          ...chaptersOf(gita.gitaChapters, 'gita-site', 'Bhagavad Gita (homepage)'),
-          ...chaptersOf(chalisa.hanumanChalisa, 'hanuman-chalisa-site', 'Hanuman Chalisa (site)'),
-          ...chaptersOf(sunderkand.sunderkandChapters, 'sunderkand-site', 'Sunderkand (site)'),
-          ...chaptersOf(bajrang.bajrangBaan, 'bajrang-baan-site', 'Bajrang Baan (site)'),
-          ...chaptersOf(yaksha.yakshaPrashna, 'yaksha-prashna-site', 'Yaksha Prashna (site)'),
-          ...chaptersOf(satyanarayan.satyanarayanChapters, 'satyanarayan-site', 'Satyanarayan Vrat Katha (site)'),
-          ...siteChunksFromCollection(
-            shakti.shaktipeeths.map((item) => ({
-              id: item.id,
-              name: item.name,
-              extra: `${item.deviName}, ${item.bodyPart}, ${item.location}, ${item.state}, ${item.country}. ${item.description}`,
-            })),
-            {
-              book: 'shaktipeeths-site',
-              title: 'Shaktipeeths (site)',
-              kind: 'Shaktipeeths',
-              intro: shakti.shaktipeethIntroduction.contentEnglish,
-            },
-          ),
-          ...siteChunksFromCollection(
-            jyoti.jyotirlingas.map((item) => ({
-              id: item.id,
-              name: item.name,
-              extra: `${item.nameHindi}, ${item.location}, ${item.state}. ${item.significance}. ${item.description}`,
-            })),
-            {
-              book: 'jyotirlingas-site',
-              title: 'Jyotirlingas (site)',
-              kind: 'Jyotirlingas',
-              intro: jyoti.jyotirlingaIntroduction.contentEnglish,
-            },
-          ),
-          ...siteChunksFromCollection(
-            dham.charDham.map((item) => ({
-              id: item.id,
-              name: item.name,
-              extra: `${item.nameHindi}, ${item.deity}, ${item.location}, ${item.state}. ${item.significance}. ${item.description}`,
-            })),
-            {
-              book: 'char-dham-site',
-              title: 'Char Dham (site)',
-              kind: 'Char Dham sites',
-              intro: dham.charDhamIntroduction.contentEnglish,
-            },
-          ),
-          ...siteChunksFromCollection(
-            chhath.chhathDays.map((item) => ({
-              id: item.id,
-              name: item.name,
-              extra: `${item.nameHindi}, ${item.tithi}. ${item.summary}`,
-            })),
-            {
-              book: 'chhath-site',
-              title: 'Chhath Puja (site)',
-              kind: 'Chhath days',
-              intro: chhath.chhathIntroduction.contentEnglish,
-            },
-          ),
-          ...siteChunksFromCollection(
-            diwali.diwaliDays.map((item) => ({
-              id: item.id,
-              name: item.name,
-              extra: `${item.nameHindi}, ${item.tithi}. ${item.summary}`,
-            })),
-            {
-              book: 'diwali-site',
-              title: 'Diwali (site)',
-              kind: 'Diwali days',
-              intro: diwali.diwaliIntroduction.contentEnglish,
-            },
-          ),
-          ...siteChunksFromCollection(
-            navratri.navratriDays.map((item) => ({
-              id: item.id,
-              name: item.name,
-              extra: `${item.nameHindi}, ${item.tithi}. ${item.summary}`,
-            })),
-            {
-              book: 'navratri-site',
-              title: 'Navratri (site)',
-              kind: 'Navratri nights',
-              intro: navratri.navratriIntroduction.contentEnglish,
-            },
-          ),
-          ...[shivaratri.mahaShivaratriPage, holi.holiPage, janmashtami.janmashtamiPage, ganesh.ganeshChaturthiPage, karva.karvaChauthPage].flatMap(
-            (page) =>
-              siteChunksFromCollection(
-                page.days.map((item) => ({
-                  id: item.id,
-                  name: item.name,
-                  extra: `${item.nameHindi}, ${item.tithi}. ${item.summary}`,
-                })),
-                {
-                  book: page.book,
-                  title: page.title,
-                  kind: page.kind,
-                  intro: page.introduction.contentEnglish,
-                },
-              ),
-          ),
-        ]
-      },
-    ).catch((error) => {
+    sitePromise = Promise.resolve(buildAllSiteChunks()).catch((error) => {
       sitePromise = null
       throw error
     })
@@ -290,7 +135,7 @@ export default function GitaChatbot() {
 
     const userId = ++nextId.current
     const history = messages.slice(-4)
-    const { searchQuery, nextTopic } = resolveChatQuery(question, topicRef.current)
+    const { searchQuery, nextTopic, retrievalQuery } = resolveChatQuery(question, topicRef.current)
     topicRef.current = nextTopic
     setDraft('')
     setPending(true)
@@ -299,15 +144,22 @@ export default function GitaChatbot() {
     try {
       const store = await loadStore()
       const siteChunks = await loadSiteChunks().catch(() => [])
-      const query = await embedQuery(searchQuery, store.meta.model)
-      const pdfHits = searchMatrix(query, store.embeddings, store.meta.dims, store.chunks, 6)
+      const query = await embedQuery(retrievalQuery, store.meta.model)
+      const hybridHits = searchHybrid(
+        retrievalQuery,
+        query,
+        store.embeddings,
+        store.meta.dims,
+        store.chunks,
+        8,
+      )
       const siteHits = searchSiteText(searchQuery, siteChunks, 4)
-      const hits = mergeHits(pdfHits, siteHits, 6)
+      const hits = mergeHits(hybridHits, siteHits, 6, searchQuery)
       let text = ''
       try {
-        text = (await askWorker(searchQuery, hits, history)) ?? answerFromHits(hits)
+        text = (await askWorker(searchQuery, hits, history)) ?? answerFromHits(hits, searchQuery)
       } catch {
-        text = answerFromHits(hits)
+        text = answerFromHits(hits, searchQuery)
       }
       setMessages((prev) => [...prev, { id: ++nextId.current, role: 'assistant', text }])
     } catch {

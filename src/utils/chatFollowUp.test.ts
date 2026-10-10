@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { resolveChatQuery } from './chatFollowUp.ts'
+import { expandSearchQuery, inferBookHint, resolveChatQuery } from './chatFollowUp.ts'
 import { searchSiteText, siteChunksFromChapters } from './siteChunks.ts'
 
 const gitaChunks = siteChunksFromChapters(
@@ -46,6 +46,15 @@ test('list them reuses the Gita topic so site search finds the catalog', () => {
   assert.match(hits[0].text, /The Yoga of Knowledge/)
 })
 
+test('list them after a typo Gita question still finds the catalog', () => {
+  const first = resolveChatQuery('how many chapoters in bhagvad gita', '')
+  const follow = resolveChatQuery('list them please', first.nextTopic)
+  const hits = searchSiteText(follow.searchQuery, gitaChunks, 2)
+  assert.ok(hits.length >= 1)
+  assert.equal(hits[0].page, 0)
+  assert.match(hits[0].text, /Arjuna's Despondency/)
+})
+
 test('a new book question replaces the topic', () => {
   const follow = resolveChatQuery('how many shaktipeeths', 'how many chapters in Bhagavad Gita')
   assert.equal(follow.searchQuery, 'how many shaktipeeths')
@@ -56,4 +65,35 @@ test('a Navratri question is a new topic, not a Gita follow-up', () => {
   const follow = resolveChatQuery('how many nights in navratri', 'how many chapters in Bhagavad Gita')
   assert.equal(follow.searchQuery, 'how many nights in navratri')
   assert.equal(follow.nextTopic, 'how many nights in navratri')
+})
+
+test('a temple question is a new topic, not a Gita follow-up', () => {
+  const follow = resolveChatQuery('tirupati temple history', 'how many chapters in Bhagavad Gita')
+  assert.equal(follow.searchQuery, 'tirupati temple history')
+  assert.equal(follow.nextTopic, 'tirupati temple history')
+})
+
+test('who was manthra is a new question, not a Gita list follow-up', () => {
+  const follow = resolveChatQuery('who was manthra', 'how many chaoters in bhagavad gita')
+  assert.equal(follow.searchQuery, 'who was manthra')
+  assert.match(follow.retrievalQuery, /ramayan/i)
+  assert.doesNotMatch(follow.searchQuery, /gita/i)
+  assert.equal(follow.nextTopic, 'who was manthra')
+  const hits = searchSiteText(follow.searchQuery, gitaChunks, 2)
+  assert.equal(hits.some((hit) => hit.page === 0), false)
+})
+
+test('a bare Manthra question after Gita still routes to the Ramayana', () => {
+  assert.equal(inferBookHint('who was manthra'), 'ramayana')
+  assert.match(expandSearchQuery('Manthra'), /ramayan/i)
+  const follow = resolveChatQuery('Manthra', 'how many chaoters in Bhagavad Gita')
+  assert.equal(follow.searchQuery, 'Manthra')
+  assert.match(follow.retrievalQuery, /ramayan/i)
+  assert.doesNotMatch(follow.searchQuery, /gita/i)
+})
+
+test('list all of them please still reuses the Gita topic', () => {
+  const follow = resolveChatQuery('list all of them please', 'how many chaoters in bhagavad gita')
+  assert.match(follow.searchQuery, /bhagavad gita/i)
+  assert.equal(follow.nextTopic, 'how many chaoters in bhagavad gita')
 })
