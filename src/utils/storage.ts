@@ -20,7 +20,6 @@ export interface ReadingProgress {
 
 export interface AppSettings {
   fontSize: number
-  backgroundTheme: string
   notificationsEnabled: boolean
   dailyVerseTime?: string
   panchangCityId?: string
@@ -115,13 +114,11 @@ export function getSettings(): AppSettings {
       ? JSON.parse(stored)
       : {
           fontSize: 16,
-          backgroundTheme: 'gradient-1',
           notificationsEnabled: false,
         }
   } catch {
     return {
       fontSize: 16,
-      backgroundTheme: 'gradient-1',
       notificationsEnabled: false,
     }
   }

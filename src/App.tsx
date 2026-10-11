@@ -1,12 +1,11 @@
 import { useState, useEffect, lazy, Suspense, useRef } from 'react'
 import { TextType, TextConfig } from '../types'
 import ErrorBoundary from './components/ErrorBoundary'
-import BackgroundSelector from './components/BackgroundSelector'
 import LoadingSpinner from './components/LoadingSpinner'
 import SiteNav from './components/SiteNav'
 import GitaChatbot, { type ShastraPdfTarget } from './components/GitaChatbot'
 import PanchangWidget from './components/PanchangWidget'
-import { getSettings, saveSettings, getProgress } from './utils/storage'
+import { getSettings, getProgress } from './utils/storage'
 
 // Lazy load heavy components - only load when needed
 const ChapterList = lazy(() => import('./components/ChapterList'))
@@ -142,7 +141,6 @@ function App() {
   const [textType, setTextType] = useState<TextType>('gita')
   const [selectedChapter, setSelectedChapter] = useState<number | null>(null)
   const [selectedVerse, setSelectedVerse] = useState<number>(1)
-  const [backgroundTheme, setBackgroundTheme] = useState<string>(savedSettings.backgroundTheme)
   const fontSize = savedSettings.fontSize
   const [textDataCache, setTextDataCache] = useState<Record<TextType, any[]>>({} as Record<TextType, any[]>)
   const [isLoadingData, setIsLoadingData] = useState(false)
@@ -194,17 +192,6 @@ function App() {
     }
   }, [textType])
 
-  // Save settings when they change
-  useEffect(() => {
-    saveSettings({
-      ...getSettings(),
-      fontSize,
-      backgroundTheme,
-      notificationsEnabled: savedSettings.notificationsEnabled,
-      dailyVerseTime: savedSettings.dailyVerseTime,
-    })
-  }, [fontSize, backgroundTheme])
-
   const currentTextConfig = textConfigsBase[textType]
   const currentTextData = textDataCache[textType] || []
   const currentText: TextConfig = {
@@ -227,17 +214,9 @@ function App() {
     setSourcePdf(null)
   }
 
-  const backgroundClasses: Record<string, string> = {
-    'gradient-1': 'bg-cream paper-grain',
-    'gradient-2': 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50',
-    'gradient-3': 'bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50',
-    'gradient-4': 'bg-gradient-to-br from-pink-50 via-rose-50 to-red-50',
-    'gradient-5': 'bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50',
-  }
-
   return (
     <ErrorBoundary>
-      <div className={`min-h-screen flex flex-col transition-colors duration-500 ${backgroundClasses[backgroundTheme]}`}>
+      <div className="min-h-screen flex flex-col bg-cream paper-grain">
         <SiteNav
           currentType={textType}
           labels={textConfigsBase}
@@ -247,13 +226,8 @@ function App() {
             setSelectedVerse(1)
             setSourcePdf(null)
           }}
-        >
-          <BackgroundSelector
-            currentTheme={backgroundTheme}
-            onThemeChange={setBackgroundTheme}
-            themes={Object.keys(backgroundClasses)}
-          />
-        </SiteNav>
+          trailing={<PanchangWidget placement="header" />}
+        />
 
         {/* Main Content */}
         <div className="relative z-10 flex-1 md:pl-64">
@@ -332,7 +306,6 @@ function App() {
           )}
         </div>
 
-        <PanchangWidget />
         <GitaChatbot />
 
         <footer className="mt-auto border-t border-gold bg-cream md:pl-64">

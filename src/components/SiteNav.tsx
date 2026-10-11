@@ -6,7 +6,7 @@ interface SiteNavProps {
   currentType: TextType
   labels: Record<TextType, { name: string; nameHindi: string }>
   onSelect: (type: TextType) => void
-  children?: ReactNode
+  trailing?: ReactNode
 }
 
 function CurrentTitle({ current }: { current: { name: string; nameHindi: string } }) {
@@ -85,7 +85,7 @@ function NavList({
   )
 }
 
-export default function SiteNav({ currentType, labels, onSelect, children }: SiteNavProps) {
+export default function SiteNav({ currentType, labels, onSelect, trailing }: SiteNavProps) {
   const [open, setOpen] = useState(false)
   const current = labels[currentType]
 
@@ -111,8 +111,8 @@ export default function SiteNav({ currentType, labels, onSelect, children }: Sit
   return (
     <>
       <header className="sticky top-0 z-50 min-h-[5.25rem] bg-saffron text-cream border-b border-gold shadow-md">
-        <div className="flex items-center justify-between gap-2 px-3 py-3 md:w-64">
-          <div className="min-w-0 flex items-center gap-2">
+        <div className="flex items-center justify-between gap-3 px-3 py-3">
+          <div className="min-w-0 flex items-center gap-2 md:w-64 md:shrink-0">
             <button
               type="button"
               aria-expanded={open}
@@ -127,7 +127,7 @@ export default function SiteNav({ currentType, labels, onSelect, children }: Sit
             </button>
             <CurrentTitle current={current} />
           </div>
-          <div className="flex-shrink-0">{children}</div>
+          {trailing ? <div className="flex-shrink-0">{trailing}</div> : null}
         </div>
       </header>
 

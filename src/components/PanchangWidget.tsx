@@ -32,7 +32,7 @@ const MONTHS = [
 
 const WEEKDAYS = ['र', 'सो', 'मं', 'बु', 'गु', 'शु', 'श']
 
-export default function PanchangWidget() {
+export default function PanchangWidget({ placement = 'float' }: { placement?: 'float' | 'header' }) {
   const [now, setNow] = useState(() => new Date())
   const today = useMemo(() => kolkataYmd(now), [now])
   const [open, setOpen] = useState(false)
@@ -110,27 +110,34 @@ export default function PanchangWidget() {
     selected.day,
   )
 
+  const inHeader = placement === 'header'
+
   return (
-    <div className="fixed bottom-20 sm:bottom-4 left-4 z-40">
-      {!open && (
+    <div className={inHeader ? 'relative' : 'fixed bottom-20 sm:bottom-4 left-4 z-40'}>
+      {(!open || inHeader) && (
         <button
           type="button"
           onClick={() => {
             jumpToToday()
-            setOpen(true)
+            setOpen((wasOpen) => !wasOpen)
           }}
-          className="folio border border-gold bg-cream/95 backdrop-blur-md rounded-xl px-3 py-2.5 text-left shadow-lg min-h-[44px] touch-manipulation"
-          aria-label="Open panchang"
+          className="folio border border-gold bg-cream/95 backdrop-blur-md rounded-xl px-3 py-2 text-left shadow-lg min-h-[44px] touch-manipulation"
+          aria-label={open ? 'Close panchang' : 'Open panchang'}
+          aria-expanded={open}
         >
           <div className="text-[10px] uppercase tracking-wide text-maroon/70">पंचांग</div>
-          <div className="text-sm font-serif text-maroon">
+          <div className="text-sm font-serif text-maroon leading-tight">
             {todayEvent ? todayEvent.nameHindi : `${running.pakshaHindi.split(' ')[0]} ${running.nameHindi}`}
           </div>
         </button>
       )}
 
       {open && (
-        <div className="folio border border-gold bg-cream/95 backdrop-blur-md rounded-xl w-[min(21rem,calc(100vw-2rem))] shadow-lg p-3 sm:p-4">
+        <div
+          className={`folio border border-gold bg-cream/95 backdrop-blur-md rounded-xl w-[min(21rem,calc(100vw-2rem))] shadow-lg p-3 sm:p-4 ${
+            inHeader ? 'absolute right-0 top-full mt-2 z-[60]' : ''
+          }`}
+        >
           <div className="flex items-center justify-between mb-2">
             <div>
               <div className="text-[10px] uppercase tracking-wide text-maroon/70">पंचांग · Panchang</div>
