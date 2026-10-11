@@ -18,7 +18,42 @@ export interface Chapter {
   verses: Verse[];
 }
 
-export type TextType = 'gita' | 'hanumanChalisa' | 'sunderkand' | 'bajrangBaan' | 'yakshaPrashna' | 'satyanarayan' | 'shaktipeeths' | 'charDham' | 'jyotirlingas' | 'temples' | 'chhath' | 'diwali' | 'navratri' | 'shivaratri' | 'holi' | 'janmashtami' | 'ganeshChaturthi' | 'karvaChauth' | 'shastras';
+export type TextType = 'gita' | 'aarti' | 'hanumanChalisa' | 'sunderkand' | 'bajrangBaan' | 'yakshaPrashna' | 'satyanarayan' | 'shaktipeeths' | 'charDham' | 'jyotirlingas' | 'temples' | 'chhath' | 'diwali' | 'navratri' | 'shivaratri' | 'holi' | 'janmashtami' | 'ganeshChaturthi' | 'karvaChauth' | 'shastras';
+
+export interface AartiStanza {
+  id: number
+  refrain?: boolean
+  text: string
+  transliteration: string
+  hindi_meaning: string
+  meaning: string
+}
+
+export interface AartiHymn {
+  id: number
+  chapter_number: number
+  deity: string
+  deityHindi: string
+  name: string
+  nameHindi: string
+  summary: string
+  stanzas: AartiStanza[]
+}
+
+export interface PathStanza {
+  id: number
+  text: string
+}
+
+export interface PathSection {
+  id: number
+  chapter_number: number
+  group: 'purva' | 'madhya' | 'uttara'
+  name: string
+  nameHindi: string
+  summary: string
+  stanzas: PathStanza[]
+}
 
 export interface TextConfig {
   name: string;

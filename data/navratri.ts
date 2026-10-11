@@ -232,4 +232,4 @@ export const navratriPractice = {
 }
 
 export const navratriSources =
-  'Drik Panchang festival lists (Delhi) for Sharad Navratri begins and Dussehra 2025–2027; Devi Mahatmya (Markandeya Purana) for the katha; Navadurga names as commonly taught; regional notes for Durga Puja, Garba, Mysore Dasara, and Kullu. Confirm ghatasthapana and sandhi puja with a local panchang.'
+  'Drik Panchang festival lists (Delhi) for Sharad Navratri begins and Dussehra 2025–2027; Devi Mahatmya (Markandeya Purana) for the katha; Hindi Saptashati path follows the Gita Press / Drik order, verse-by-verse. Navadurga names as commonly taught; regional notes for Durga Puja, Garba, Mysore Dasara, and Kullu. Confirm ghatasthapana and sandhi puja with a local panchang.'

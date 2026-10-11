@@ -2,6 +2,7 @@ import type { TextType } from '../../types.ts'
 
 const TEXT_TYPES = new Set<TextType>([
   'gita',
+  'aarti',
   'hanumanChalisa',
   'sunderkand',
   'bajrangBaan',

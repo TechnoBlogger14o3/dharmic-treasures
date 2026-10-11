@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import { formatChhathDate, kolkataTodayIso } from '../utils/chhathDates.ts'
 import { dateForNamedEvent, dateForNavratriNight, upcomingYearForEvent } from '../utils/festivals.ts'
+import { saptashatiGroups, saptashatiPath } from '../../data/durgaSaptashati'
 import {
   navratriDays,
   navratriDeities,
@@ -30,7 +31,11 @@ const DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon
 
-export default function NavratriView() {
+interface NavratriViewProps {
+  onSelectPath?: (chapterNumber: number) => void
+}
+
+export default function NavratriView({ onSelectPath }: NavratriViewProps) {
   const [showMap, setShowMap] = useState(false)
   const todayIso = kolkataTodayIso()
   const year = upcomingYearForEvent('Navratri begins', todayIso)
@@ -56,6 +61,35 @@ export default function NavratriView() {
             {navratriIntroduction.contentEnglish}
           </p>
         </div>
+      </div>
+
+      <h2 className="font-serif text-xl sm:text-2xl font-bold text-maroon mb-3">पाठ · दुर्गा सप्तशती</h2>
+      <p className="text-sm text-ink/60 mb-4">
+        कवच, अर्गल, कीलक, अथर्वशीर्ष, चण्डी प्रार्थना, तेरह अध्याय (७०० मंत्र), कुंजिका, रहस्य और क्षमा प्रार्थना —
+        पूरा हिन्दी पाठ, श्लोक-दर-श्लोक।
+      </p>
+      <div className="space-y-6 mb-8">
+        {saptashatiGroups.map((group) => (
+          <div key={group.id}>
+            <h3 className="font-serif text-lg text-maroon mb-3">{group.nameHindi}</h3>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {saptashatiPath
+                .filter((section) => section.group === group.id)
+                .map((section) => (
+                  <button
+                    key={section.id}
+                    type="button"
+                    onClick={() => onSelectPath?.(section.chapter_number)}
+                    className="folio text-left rounded-xl p-4 hover:shadow-xl active:scale-[0.99] transition-all touch-manipulation border border-gold/60"
+                  >
+                    <div className="text-[11px] tracking-wide text-saffron">{section.name}</div>
+                    <div className="font-serif text-lg text-maroon mt-1">{section.nameHindi}</div>
+                    <p className="text-xs text-ink/55 mt-2 leading-relaxed">{section.summary}</p>
+                  </button>
+                ))}
+            </div>
+          </div>
+        ))}
       </div>
 
       <h2 className="font-serif text-xl sm:text-2xl font-bold text-maroon mb-3">नौ रातें · Nine nights</h2>

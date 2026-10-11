@@ -1,3 +1,4 @@
+import { aartis } from '../../data/aarti.ts'
 import { bajrangBaan } from '../../data/bajrangBaan.ts'
 import { charDham, charDhamIntroduction } from '../../data/charDham.ts'
 import { chhathDays, chhathIntroduction } from '../../data/chhathPuja.ts'
@@ -10,6 +11,7 @@ import { janmashtamiPage } from '../../data/janmashtami.ts'
 import { jyotirlingaIntroduction, jyotirlingas } from '../../data/jyotirlingas.ts'
 import { karvaChauthPage } from '../../data/karvaChauth.ts'
 import { mahaShivaratriPage } from '../../data/mahaShivaratri.ts'
+import { saptashatiPath } from '../../data/durgaSaptashati.ts'
 import { navratriDays, navratriIntroduction } from '../../data/navratri.ts'
 import { satyanarayanChapters } from '../../data/satyanarayan.ts'
 import { shaktipeethIntroduction, shaktipeeths } from '../../data/shaktipeeths.ts'
@@ -37,6 +39,19 @@ function chaptersOf(
 
 export function buildAllSiteChunks(): RagChunk[] {
   return [
+    ...siteChunksFromCollection(
+      aartis.map((item) => ({
+        id: item.id,
+        name: item.name,
+        extra: `${item.nameHindi}, ${item.deity}. ${item.summary}`,
+      })),
+      {
+        book: 'aarti-site',
+        title: 'Aarti (site)',
+        kind: 'aartis',
+        intro: 'Seven household aartis: Jagdish, Ganesh, Shiv, Lakshmi, Ambe, Hanuman, and Krishna.',
+      },
+    ),
     ...chaptersOf(gitaChapters, 'gita-site', 'Bhagavad Gita (homepage)'),
     ...chaptersOf(hanumanChalisa, 'hanuman-chalisa-site', 'Hanuman Chalisa (site)'),
     ...chaptersOf(sunderkandChapters, 'sunderkand-site', 'Sunderkand (site)'),
@@ -132,6 +147,19 @@ export function buildAllSiteChunks(): RagChunk[] {
         title: 'Navratri (site)',
         kind: 'Navratri nights',
         intro: navratriIntroduction.contentEnglish,
+      },
+    ),
+    ...siteChunksFromCollection(
+      saptashatiPath.map((item) => ({
+        id: item.id,
+        name: item.name,
+        extra: `${item.nameHindi}. ${item.summary}`,
+      })),
+      {
+        book: 'saptashati-site',
+        title: 'Durga Saptashati (site)',
+        kind: 'Saptashati path',
+        intro: 'Hindi Durga Saptashati path: Kavacham, Argala, Kilakam, 13 chapters, Kunjika, and the three rahasyas.',
       },
     ),
     ...[mahaShivaratriPage, holiPage, janmashtamiPage, ganeshChaturthiPage, karvaChauthPage].flatMap((page) =>

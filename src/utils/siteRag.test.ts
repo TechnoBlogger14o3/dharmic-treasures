@@ -17,3 +17,21 @@ test('buildAllSiteChunks catalogs Gita chapters and major temples', async () => 
   assert.ok(hits.length >= 1)
   assert.match(hits.map((hit) => hit.text).join('\n'), /Tirumala Venkateswara/)
 })
+
+test('site search lists the Saptashati path on Navratri', async () => {
+  const chunks = await buildAllSiteChunks()
+  const path = chunks.filter((chunk) => chunk.book === 'saptashati-site')
+  assert.match(path[0].text, /Saptashati path/)
+  const hits = searchSiteText('kilakam argala durga saptashati', path, 3)
+  assert.ok(hits.length >= 1)
+  assert.match(hits.map((hit) => hit.text).join('\n'), /Kilakam/)
+})
+
+test('site search lists the seven home aartis', async () => {
+  const chunks = await buildAllSiteChunks()
+  const aarti = chunks.filter((chunk) => chunk.book === 'aarti-site')
+  assert.match(aarti[0].text, /7 aartis/)
+  const hits = searchSiteText('list aartis jagdish ganesh hanuman', aarti, 3)
+  assert.ok(hits.length >= 1)
+  assert.match(hits.map((hit) => hit.text).join('\n'), /Om Jai Jagdish Hare/)
+})

@@ -5,6 +5,7 @@ import type { TextType } from '../../types.ts'
 
 const ALL_TYPES: TextType[] = [
   'gita',
+  'aarti',
   'hanumanChalisa',
   'sunderkand',
   'bajrangBaan',
@@ -44,5 +45,13 @@ test('festivals sit under Utsav and texts under Path', () => {
   assert.equal(groupIdForType('hanumanChalisa'), 'path')
   assert.equal(groupIdForType('jyotirlingas'), 'tirtha')
   assert.equal(groupIdForType('gita'), 'gita')
+  assert.equal(groupIdForType('aarti'), 'aarti')
   assert.equal(groupIdForType('shastras'), 'shastras')
+})
+
+test('Aarti sits as its own rail item after Gita', () => {
+  const ids = NAV_GROUPS.map((group) => group.id)
+  assert.ok(ids.indexOf('gita') < ids.indexOf('aarti'))
+  assert.ok(ids.indexOf('aarti') < ids.indexOf('tirtha'))
+  assert.equal(NAV_GROUPS.find((group) => group.id === 'aarti')?.kind, 'item')
 })

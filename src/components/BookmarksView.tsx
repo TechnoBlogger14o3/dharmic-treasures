@@ -26,11 +26,13 @@ export default function BookmarksView({ onNavigate, onBack }: BookmarksViewProps
 
   const textTypeNames: Record<string, string> = {
     gita: 'Bhagavad Gita',
+    aarti: 'Aarti',
     hanumanChalisa: 'Hanuman Chalisa',
     sunderkand: 'Sunderkand',
     bajrangBaan: 'Bajrang Baan',
     yakshaPrashna: 'Yaksha Prashna',
     satyanarayan: 'Satyanarayan Vrat Katha',
+    navratri: 'Navratri',
   }
 
   if (bookmarks.length === 0) {

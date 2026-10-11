@@ -28,6 +28,9 @@ const GaneshChaturthiView = lazy(() => import('./components/GaneshChaturthiView'
 const KarvaChauthView = lazy(() => import('./components/KarvaChauthView'))
 const SatyanarayanChapterView = lazy(() => import('./components/SatyanarayanChapterView'))
 const ShastrasView = lazy(() => import('./components/ShastrasView'))
+const AartiList = lazy(() => import('./components/AartiList'))
+const AartiView = lazy(() => import('./components/AartiView'))
+const SaptashatiView = lazy(() => import('./components/SaptashatiView'))
 
 const standaloneViews = {
   shaktipeeths: ShaktipeethsView,
@@ -36,7 +39,6 @@ const standaloneViews = {
   temples: TemplesView,
   chhath: ChhathPujaView,
   diwali: DiwaliView,
-  navratri: NavratriView,
   shivaratri: ShivaratriView,
   holi: HoliView,
   janmashtami: JanmashtamiView,
@@ -58,6 +60,10 @@ const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?
     name: 'Bhagavad Gita',
     nameHindi: 'भगवद्गीता',
     dataLoader: loadGitaData,
+  },
+  aarti: {
+    name: 'Aarti',
+    nameHindi: 'आरती',
   },
   hanumanChalisa: {
     name: 'Hanuman Chalisa',
@@ -190,7 +196,7 @@ function App() {
   useEffect(() => {
     if (didRestoreInitialProgress.current) return
     didRestoreInitialProgress.current = true
-    if (boot?.bookmarks || boot?.chapter != null) return
+    if (boot?.bookmarks || boot?.chapter != null || textType === 'aarti' || textType === 'navratri') return
     const progress = getProgress(textType)
     if (progress) {
       setSelectedChapter(progress.chapterNumber)
@@ -225,7 +231,9 @@ function App() {
   }
   const StandaloneView = standaloneViews[textType as keyof typeof standaloneViews]
   const isShastrasView = textType === 'shastras'
-  const isSpecialView = Boolean(StandaloneView) || isShastrasView
+  const isAartiView = textType === 'aarti'
+  const isNavratriView = textType === 'navratri'
+  const isSpecialView = Boolean(StandaloneView) || isShastrasView || isAartiView || isNavratriView
   const isHomePage = selectedChapter === null && !isSpecialView && !showBookmarks
 
   const openSection = (type: TextType, chapter: number | null = null, verse = 1) => {
@@ -287,6 +295,34 @@ function App() {
             <Suspense fallback={<LoadingSpinner />}>
               <div key={`${textType}-view`} className="animate-fadeIn">
                 <StandaloneView />
+              </div>
+            </Suspense>
+          ) : isAartiView ? (
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key={`aarti-${selectedChapter ?? 'list'}`} className="animate-fadeIn">
+                {selectedChapter == null ? (
+                  <AartiList onSelect={(chapter) => handleChapterSelect(chapter, 1)} />
+                ) : (
+                  <AartiView
+                    chapterNumber={selectedChapter}
+                    onBack={handleBackToHome}
+                    onNavigate={(chapter) => handleChapterSelect(chapter, 1)}
+                  />
+                )}
+              </div>
+            </Suspense>
+          ) : isNavratriView ? (
+            <Suspense fallback={<LoadingSpinner />}>
+              <div key={`navratri-${selectedChapter ?? 'page'}`} className="animate-fadeIn">
+                {selectedChapter == null ? (
+                  <NavratriView onSelectPath={(chapter) => handleChapterSelect(chapter, 1)} />
+                ) : (
+                  <SaptashatiView
+                    chapterNumber={selectedChapter}
+                    onBack={handleBackToHome}
+                    onNavigate={(chapter) => handleChapterSelect(chapter, 1)}
+                  />
+                )}
               </div>
             </Suspense>
           ) : isShastrasView ? (

@@ -6,6 +6,7 @@ export type NavGroup =
 
 export const NAV_GROUPS: NavGroup[] = [
   { id: 'gita', kind: 'item', type: 'gita', name: 'Gita', nameHindi: 'गीता' },
+  { id: 'aarti', kind: 'item', type: 'aarti', name: 'Aarti', nameHindi: 'आरती' },
   {
     id: 'tirtha',
     kind: 'menu',
