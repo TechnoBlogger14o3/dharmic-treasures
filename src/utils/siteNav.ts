@@ -7,13 +7,6 @@ export type NavGroup =
 export const NAV_GROUPS: NavGroup[] = [
   { id: 'gita', kind: 'item', type: 'gita', name: 'Gita', nameHindi: 'गीता' },
   {
-    id: 'path',
-    kind: 'menu',
-    name: 'Path',
-    nameHindi: 'पाठ',
-    types: ['hanumanChalisa', 'sunderkand', 'bajrangBaan', 'yakshaPrashna', 'satyanarayan'],
-  },
-  {
     id: 'tirtha',
     kind: 'menu',
     name: 'Tirtha',
@@ -35,6 +28,13 @@ export const NAV_GROUPS: NavGroup[] = [
       'janmashtami',
       'ganeshChaturthi',
     ],
+  },
+  {
+    id: 'path',
+    kind: 'menu',
+    name: 'Path',
+    nameHindi: 'पाठ',
+    types: ['hanumanChalisa', 'sunderkand', 'bajrangBaan', 'yakshaPrashna', 'satyanarayan'],
   },
   { id: 'shastras', kind: 'item', type: 'shastras', name: 'Shastras', nameHindi: 'शास्त्र' },
 ]

@@ -1,18 +1,24 @@
 import { useState } from 'react'
-import { Verse } from '../../types'
+import { TextType, Verse } from '../../types'
+import { shareSearch } from '../utils/shareLink'
 
 interface ShareButtonProps {
   verse: Verse
   chapterName: string
   chapterNumber: number
+  textType?: TextType
 }
 
-export default function ShareButton({ verse, chapterName, chapterNumber }: ShareButtonProps) {
+export default function ShareButton({ verse, chapterName, chapterNumber, textType = 'gita' }: ShareButtonProps) {
   const [copied, setCopied] = useState(false)
 
   const handleShare = async () => {
     const shareText = `Chapter ${chapterNumber}: ${chapterName}\nVerse ${verse.verse_number}\n\n${verse.text}\n\n${verse.meaning}`
-    const shareUrl = `${window.location.origin}${window.location.pathname}?chapter=${chapterNumber}&verse=${verse.verse_number}`
+    const shareUrl = `${window.location.origin}${window.location.pathname}${shareSearch({
+      textType,
+      chapter: chapterNumber,
+      verse: verse.verse_number,
+    })}`
 
     if (navigator.share) {
       try {

@@ -1,5 +1,29 @@
+import type { TextType } from '../../types.ts'
 import { addIsoDays, chhathDatesForYear } from './chhathDates.ts'
 import { formatIso } from './panchang.ts'
+
+const EVENT_SECTION: Record<string, TextType> = {
+  'Navratri begins': 'navratri',
+  Dussehra: 'navratri',
+  'Karva Chauth': 'karvaChauth',
+  Diwali: 'diwali',
+  Dhanteras: 'diwali',
+  'Govardhan Puja': 'diwali',
+  'Bhai Dooj': 'diwali',
+  'Chhath Puja': 'chhath',
+  'Nahay Khay': 'chhath',
+  Kharna: 'chhath',
+  'Usha Arghya': 'chhath',
+  'Maha Shivaratri': 'shivaratri',
+  Holi: 'holi',
+  'Holika Dahan': 'holi',
+  Janmashtami: 'janmashtami',
+  'Ganesh Chaturthi': 'ganeshChaturthi',
+}
+
+export function textTypeForEvent(name: string): TextType | null {
+  return EVENT_SECTION[name] ?? null
+}
 
 export interface DayEvent {
   name: string

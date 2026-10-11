@@ -5,6 +5,7 @@ import {
   dateForNamedEvent,
   dateForNavratriNight,
   mainEventForDate,
+  textTypeForEvent,
   upcomingYearForEvent,
 } from './festivals.ts'
 
@@ -76,6 +77,17 @@ test('2027 lists Holika Dahan, Karva Chauth, and Anant Chaturdashi', () => {
   assert.equal(dateForNamedEvent(2027, 'Karva Chauth'), '2027-10-18')
   assert.equal(dateForNamedEvent(2027, 'Anant Chaturdashi'), '2027-09-14')
   assert.equal(dateForNamedEvent(2026, 'Anant Chaturdashi'), '2026-09-25')
+})
+
+test('textTypeForEvent opens the site page for utsavs we have', () => {
+  assert.equal(textTypeForEvent('Diwali'), 'diwali')
+  assert.equal(textTypeForEvent('Dhanteras'), 'diwali')
+  assert.equal(textTypeForEvent('Holika Dahan'), 'holi')
+  assert.equal(textTypeForEvent('Navratri begins'), 'navratri')
+  assert.equal(textTypeForEvent('Dussehra'), 'navratri')
+  assert.equal(textTypeForEvent('Chhath Puja'), 'chhath')
+  assert.equal(textTypeForEvent('Usha Arghya'), 'chhath')
+  assert.equal(textTypeForEvent('Republic Day'), null)
 })
 
 test('dateForFestivalDay uses a named event or an offset from one', () => {

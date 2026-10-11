@@ -253,6 +253,7 @@ export default function ChapterView({
               verse={verse!}
               chapterName={chapter.name}
               chapterNumber={chapter.chapter_number}
+              textType={textType}
             />
             <ExportButton
               verse={verse!}

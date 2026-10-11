@@ -31,6 +31,13 @@ test('nav groups list every section once', () => {
   assert.equal(listed.length, new Set(listed).size)
 })
 
+test('grouped sections are Tirtha, then Utsav, then Path', () => {
+  assert.deepEqual(
+    NAV_GROUPS.filter((group) => group.kind === 'menu').map((group) => group.id),
+    ['tirtha', 'utsav', 'path'],
+  )
+})
+
 test('festivals sit under Utsav and texts under Path', () => {
   assert.equal(groupIdForType('navratri'), 'utsav')
   assert.equal(groupIdForType('karvaChauth'), 'utsav')

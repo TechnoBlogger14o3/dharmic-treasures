@@ -56,15 +56,9 @@ export default function ChapterList({
 
   return (
     <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8">
-      {/* Title */}
-      <div className="text-center mb-6 sm:mb-8 animate-fadeIn">
-        <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-maroon mb-2">
-          {textNameHindi}
-        </h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-ink/70 mb-4">
-          {textName}
-        </p>
-        {hasPDF && onViewPDF && (
+      <h1 className="sr-only">{textNameHindi} {textName}</h1>
+      {hasPDF && onViewPDF ? (
+        <div className="text-center mb-6 sm:mb-8">
           <button
             onClick={onViewPDF}
             className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-saffron text-white rounded-lg font-medium hover:bg-saffron-dark active:bg-saffron-dark transition-all duration-200 shadow-md hover:shadow-lg touch-manipulation"
@@ -74,8 +68,8 @@ export default function ChapterList({
             </svg>
             <span className="text-sm sm:text-base">View {textName} in PDF</span>
           </button>
-        )}
-      </div>
+        </div>
+      ) : null}
 
       {/* Search Bar - Only for Bhagavad Gita */}
       {textType === 'gita' && (

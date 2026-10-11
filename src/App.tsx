@@ -6,10 +6,13 @@ import SiteNav from './components/SiteNav'
 import GitaChatbot, { type ShastraPdfTarget } from './components/GitaChatbot'
 import PanchangWidget from './components/PanchangWidget'
 import { getSettings, getProgress } from './utils/storage'
+import { trackView, viewPath } from './utils/analytics'
+import { parseShareQuery, shareSearch } from './utils/shareLink'
 
 // Lazy load heavy components - only load when needed
 const ChapterList = lazy(() => import('./components/ChapterList'))
 const ChapterView = lazy(() => import('./components/ChapterView'))
+const BookmarksView = lazy(() => import('./components/BookmarksView'))
 const PDFViewer = lazy(() => import('./components/PDFViewer'))
 const ShaktipeethsView = lazy(() => import('./components/ShaktipeethsView'))
 const CharDhamView = lazy(() => import('./components/CharDhamView'))
@@ -138,9 +141,11 @@ const textConfigsBase: Record<TextType, Omit<TextConfig, 'data'> & { dataLoader?
 function App() {
   // Load settings from storage
   const savedSettings = getSettings()
-  const [textType, setTextType] = useState<TextType>('gita')
-  const [selectedChapter, setSelectedChapter] = useState<number | null>(null)
-  const [selectedVerse, setSelectedVerse] = useState<number>(1)
+  const boot = parseShareQuery(typeof window === 'undefined' ? '' : window.location.search)
+  const [textType, setTextType] = useState<TextType>(boot?.textType ?? 'gita')
+  const [selectedChapter, setSelectedChapter] = useState<number | null>(boot?.chapter ?? null)
+  const [selectedVerse, setSelectedVerse] = useState<number>(boot?.verse ?? 1)
+  const [showBookmarks, setShowBookmarks] = useState(Boolean(boot?.bookmarks))
   const fontSize = savedSettings.fontSize
   const [textDataCache, setTextDataCache] = useState<Record<TextType, any[]>>({} as Record<TextType, any[]>)
   const [isLoadingData, setIsLoadingData] = useState(false)
@@ -185,12 +190,32 @@ function App() {
   useEffect(() => {
     if (didRestoreInitialProgress.current) return
     didRestoreInitialProgress.current = true
+    if (boot?.bookmarks || boot?.chapter != null) return
     const progress = getProgress(textType)
     if (progress) {
       setSelectedChapter(progress.chapterNumber)
       setSelectedVerse(progress.verseNumber)
     }
   }, [textType])
+
+  useEffect(() => {
+    const search = shareSearch({
+      bookmarks: showBookmarks,
+      textType,
+      chapter: selectedChapter,
+      verse: selectedVerse,
+    })
+    const next = `${window.location.pathname}${search}`
+    if (`${window.location.pathname}${window.location.search}` !== next) {
+      window.history.replaceState(null, '', next)
+    }
+    const title = showBookmarks
+      ? 'Bookmarks'
+      : selectedChapter
+        ? `${textConfigsBase[textType].name} · ${selectedChapter}`
+        : textConfigsBase[textType].name
+    trackView(viewPath({ bookmarks: showBookmarks, textType, chapter: selectedChapter, verse: selectedVerse }), title)
+  }, [textType, selectedChapter, selectedVerse, showBookmarks])
 
   const currentTextConfig = textConfigsBase[textType]
   const currentTextData = textDataCache[textType] || []
@@ -201,7 +226,15 @@ function App() {
   const StandaloneView = standaloneViews[textType as keyof typeof standaloneViews]
   const isShastrasView = textType === 'shastras'
   const isSpecialView = Boolean(StandaloneView) || isShastrasView
-  const isHomePage = selectedChapter === null && !isSpecialView
+  const isHomePage = selectedChapter === null && !isSpecialView && !showBookmarks
+
+  const openSection = (type: TextType, chapter: number | null = null, verse = 1) => {
+    setShowBookmarks(false)
+    setTextType(type)
+    setSelectedChapter(chapter)
+    setSelectedVerse(verse)
+    setSourcePdf(null)
+  }
 
   const handleChapterSelect = (chapterNumber: number, verseNumber?: number) => {
     setSelectedChapter(chapterNumber)
@@ -220,18 +253,25 @@ function App() {
         <SiteNav
           currentType={textType}
           labels={textConfigsBase}
-          onSelect={(type) => {
-            setTextType(type)
-            setSelectedChapter(null)
-            setSelectedVerse(1)
+          onSelect={(type) => openSection(type)}
+          bookmarksActive={showBookmarks}
+          onOpenBookmarks={() => {
+            setShowBookmarks(true)
             setSourcePdf(null)
           }}
-          trailing={<PanchangWidget placement="header" />}
+          trailing={<PanchangWidget placement="header" onOpenSection={(type) => openSection(type)} />}
         />
 
         {/* Main Content */}
         <div className="relative z-10 flex-1 md:pl-64">
-          {sourcePdf ? (
+          {showBookmarks ? (
+            <Suspense fallback={<LoadingSpinner />}>
+              <BookmarksView
+                onNavigate={(type, chapter, verse) => openSection(type, chapter, verse)}
+                onBack={() => setShowBookmarks(false)}
+              />
+            </Suspense>
+          ) : sourcePdf ? (
             <Suspense fallback={<LoadingSpinner />}>
               <div key={`source-pdf-${sourcePdf.path}-${sourcePdf.page}`} className="animate-fadeIn">
                 <PDFViewer
@@ -316,6 +356,14 @@ function App() {
             </div>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
               <a
+                href="https://link.amazon/B0iBEnmNS"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-gold bg-cream px-4 py-2 text-xs font-medium text-maroon shadow-sm transition-all hover:border-saffron hover:bg-saffron-light"
+              >
+                My Books
+              </a>
+              <a
                 href="https://technoblogger14o3.github.io/my-portfolio/"
                 target="_blank"
                 rel="noreferrer"
@@ -323,14 +371,7 @@ function App() {
               >
                 Portfolio
               </a>
-              <a
-                href="https://www.linkedin.com/in/aman-shekhar/"
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full border border-gold bg-cream px-4 py-2 text-xs font-medium text-maroon shadow-sm transition-all hover:border-saffron hover:bg-saffron-light"
-              >
-                LinkedIn
-              </a>
+           
               <a
                 href="https://debunkmythology.blogspot.com/"
                 target="_blank"
@@ -345,7 +386,7 @@ function App() {
                 rel="noreferrer"
                 className="rounded-full border border-gold bg-cream px-4 py-2 text-xs font-medium text-maroon shadow-sm transition-all hover:border-saffron hover:bg-saffron-light"
               >
-                Medium
+                Technical Blog
               </a>
             </div>
             <div className="mt-4 text-xs text-ink/60">

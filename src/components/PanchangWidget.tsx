@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
-import { mainEventForDate } from '../utils/festivals.ts'
+import type { TextType } from '../../types'
+import { mainEventForDate, textTypeForEvent } from '../utils/festivals.ts'
 import {
   DEFAULT_CITY_ID,
   daysInMonth,
@@ -32,7 +33,13 @@ const MONTHS = [
 
 const WEEKDAYS = ['र', 'सो', 'मं', 'बु', 'गु', 'शु', 'श']
 
-export default function PanchangWidget({ placement = 'float' }: { placement?: 'float' | 'header' }) {
+export default function PanchangWidget({
+  placement = 'float',
+  onOpenSection,
+}: {
+  placement?: 'float' | 'header'
+  onOpenSection?: (type: TextType) => void
+}) {
   const [now, setNow] = useState(() => new Date())
   const today = useMemo(() => kolkataYmd(now), [now])
   const [open, setOpen] = useState(false)
@@ -59,6 +66,7 @@ export default function PanchangWidget({ placement = 'float' }: { placement?: 'f
     [selected],
   )
   const todayEvent = mainEventForDate(today.year, today.month, today.day)
+  const selectedSection = selectedEvent ? textTypeForEvent(selectedEvent.name) : null
   const lead = weekdayIst(year, month, 1)
   const isToday = (day: number) => day === today.day && month === today.month && year === today.year
   const isSelected = (day: number) =>
@@ -224,11 +232,22 @@ export default function PanchangWidget({ placement = 'float' }: { placement?: 'f
 
           <div className="border-t border-gold mt-2 pt-2 space-y-1.5">
             <div>
-              {selectedEvent && (
+              {selectedEvent && selectedSection && onOpenSection ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    onOpenSection(selectedSection)
+                    setOpen(false)
+                  }}
+                  className="font-serif text-maroon text-sm mb-1 text-left underline decoration-gold underline-offset-2 hover:text-saffron"
+                >
+                  उत्सव · {selectedEvent.nameHindi} · {selectedEvent.name}
+                </button>
+              ) : selectedEvent ? (
                 <div className="font-serif text-maroon text-sm mb-1">
                   उत्सव · {selectedEvent.nameHindi} · {selectedEvent.name}
                 </div>
-              )}
+              ) : null}
               <div className="font-serif text-maroon">
                 {dayPanchang.tithi.nameHindi} · {dayPanchang.tithi.name}
               </div>

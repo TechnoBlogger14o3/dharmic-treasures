@@ -7,13 +7,21 @@ interface SiteNavProps {
   labels: Record<TextType, { name: string; nameHindi: string }>
   onSelect: (type: TextType) => void
   trailing?: ReactNode
+  bookmarksActive?: boolean
+  onOpenBookmarks?: () => void
 }
 
-function CurrentTitle({ current }: { current: { name: string; nameHindi: string } }) {
+function CurrentTitle({
+  current,
+  align = 'left',
+}: {
+  current: { name: string; nameHindi: string }
+  align?: 'left' | 'center'
+}) {
   return (
-    <div className="min-w-0">
+    <div className={`min-w-0 ${align === 'center' ? 'text-center' : ''}`}>
       <div className="text-lg leading-none">ॐ</div>
-      <div className="font-serif text-sm mt-1 truncate">{current.nameHindi}</div>
+      <div className="font-serif text-xl sm:text-3xl font-bold mt-1 truncate">{current.nameHindi}</div>
       <div className="text-[11px] text-cream/80 truncate">{current.name}</div>
     </div>
   )
@@ -24,7 +32,7 @@ function NavList({
   labels,
   onChoose,
 }: {
-  currentType: TextType
+  currentType: TextType | null
   labels: Record<TextType, { name: string; nameHindi: string }>
   onChoose: (type: TextType) => void
 }) {
@@ -85,9 +93,18 @@ function NavList({
   )
 }
 
-export default function SiteNav({ currentType, labels, onSelect, trailing }: SiteNavProps) {
+export default function SiteNav({
+  currentType,
+  labels,
+  onSelect,
+  trailing,
+  bookmarksActive,
+  onOpenBookmarks,
+}: SiteNavProps) {
   const [open, setOpen] = useState(false)
-  const current = labels[currentType]
+  const current = bookmarksActive
+    ? { name: 'Bookmarks', nameHindi: 'बुकमार्क' }
+    : labels[currentType]
 
   useEffect(() => {
     if (!open) return
@@ -111,8 +128,8 @@ export default function SiteNav({ currentType, labels, onSelect, trailing }: Sit
   return (
     <>
       <header className="sticky top-0 z-50 min-h-[5.25rem] bg-saffron text-cream border-b border-gold shadow-md">
-        <div className="flex items-center justify-between gap-3 px-3 py-3">
-          <div className="min-w-0 flex items-center gap-2 md:w-64 md:shrink-0">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-3 py-3">
+          <div className="justify-self-start">
             <button
               type="button"
               aria-expanded={open}
@@ -125,9 +142,9 @@ export default function SiteNav({ currentType, labels, onSelect, trailing }: Sit
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7h16M4 12h16M4 17h16" />
               </svg>
             </button>
-            <CurrentTitle current={current} />
           </div>
-          {trailing ? <div className="flex-shrink-0">{trailing}</div> : null}
+          <CurrentTitle current={current} align="center" />
+          {trailing ? <div className="justify-self-end">{trailing}</div> : <div />}
         </div>
       </header>
 
@@ -136,7 +153,26 @@ export default function SiteNav({ currentType, labels, onSelect, trailing }: Sit
         className="hidden md:flex flex-col fixed left-0 top-[5.25rem] bottom-0 z-40 w-64 bg-cream border-r border-gold"
       >
         <div className="flex-1 overflow-y-auto">
-          <NavList currentType={currentType} labels={labels} onChoose={choose} />
+          {onOpenBookmarks ? (
+            <div className="px-3 pt-6">
+              <button
+                type="button"
+                onClick={() => {
+                  onOpenBookmarks()
+                  setOpen(false)
+                }}
+                className={`w-full text-left px-3 py-3 rounded-xl border touch-manipulation min-h-[48px] ${
+                  bookmarksActive
+                    ? 'bg-saffron text-white border-gold'
+                    : 'bg-cream border-gold/70 text-ink hover:bg-saffron-light'
+                }`}
+              >
+                <div className="font-serif text-base">बुकमार्क</div>
+                <div className={`text-xs ${bookmarksActive ? 'text-cream/80' : 'text-ink/60'}`}>Bookmarks</div>
+              </button>
+            </div>
+          ) : null}
+          <NavList currentType={bookmarksActive ? null : currentType} labels={labels} onChoose={choose} />
         </div>
       </aside>
 
@@ -166,7 +202,26 @@ export default function SiteNav({ currentType, labels, onSelect, trailing }: Sit
                 </svg>
               </button>
             </div>
-            <NavList currentType={currentType} labels={labels} onChoose={choose} />
+            {onOpenBookmarks ? (
+              <div className="px-3 pt-6">
+                <button
+                  type="button"
+                  onClick={() => {
+                    onOpenBookmarks()
+                    setOpen(false)
+                  }}
+                  className={`w-full text-left px-3 py-3 rounded-xl border touch-manipulation min-h-[48px] ${
+                    bookmarksActive
+                      ? 'bg-saffron text-white border-gold'
+                      : 'bg-cream border-gold/70 text-ink hover:bg-saffron-light'
+                  }`}
+                >
+                  <div className="font-serif text-base">बुकमार्क</div>
+                  <div className={`text-xs ${bookmarksActive ? 'text-cream/80' : 'text-ink/60'}`}>Bookmarks</div>
+                </button>
+              </div>
+            ) : null}
+            <NavList currentType={bookmarksActive ? null : currentType} labels={labels} onChoose={choose} />
           </nav>
         </div>
       ) : null}
