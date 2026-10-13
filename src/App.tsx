@@ -426,7 +426,7 @@ function App() {
               </a>
             </div>
             <div className="mt-4 text-xs text-ink/60">
-              Sharing sacred wisdom with devotion. © {new Date().getFullYear()}
+              Sharing sacred wisdom with devotion. © {new Date().getFullYear()} Aman Shekhar. 
             </div>
           </div>
         </footer>

@@ -27,11 +27,12 @@ test('site search lists the Saptashati path on Navratri', async () => {
   assert.match(hits.map((hit) => hit.text).join('\n'), /Kilakam/)
 })
 
-test('site search lists the seven home aartis', async () => {
+test('site search lists the eight home aartis', async () => {
   const chunks = await buildAllSiteChunks()
   const aarti = chunks.filter((chunk) => chunk.book === 'aarti-site')
-  assert.match(aarti[0].text, /7 aartis/)
+  assert.match(aarti[0].text, /8 aartis/)
   const hits = searchSiteText('list aartis jagdish ganesh hanuman', aarti, 3)
   assert.ok(hits.length >= 1)
   assert.match(hits.map((hit) => hit.text).join('\n'), /Om Jai Jagdish Hare/)
+  assert.match(aarti.map((chunk) => chunk.text).join('\n'), /Durga Chalisa/)
 })

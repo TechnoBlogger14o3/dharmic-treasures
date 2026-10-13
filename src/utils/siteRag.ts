@@ -49,7 +49,7 @@ export function buildAllSiteChunks(): RagChunk[] {
         book: 'aarti-site',
         title: 'Aarti (site)',
         kind: 'aartis',
-        intro: 'Seven household aartis: Jagdish, Ganesh, Shiv, Lakshmi, Ambe, Hanuman, and Krishna.',
+        intro: 'Eight household aartis: Jagdish, Ganesh, Shiv, Lakshmi, Ambe, Durga Chalisa, Hanuman, and Krishna.',
       },
     ),
     ...chaptersOf(gitaChapters, 'gita-site', 'Bhagavad Gita (homepage)'),

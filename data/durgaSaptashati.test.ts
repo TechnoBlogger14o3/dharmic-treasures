@@ -75,3 +75,14 @@ test('Navratri path has the full Saptashati book order', () => {
   assert.match(full, /समाधि/)
   assert.match(full, /अथर्वशीर्ष|महादेवी/)
 })
+
+test('Saptashati path carries a copyright notice', async () => {
+  const { saptashatiCopyright, saptashatiCopyrightYear } = await import('./durgaSaptashati.ts')
+  assert.match(saptashatiCopyright.holder, /Aman Shekhar/)
+  const notice = saptashatiCopyrightYear(2026)
+  assert.match(notice.hindi, /© 2026 Aman Shekhar/)
+  assert.match(notice.hindi, /वेबसाइट और डिज़ाइन/)
+  assert.match(notice.hindi, /सामग्री पर कोई दावा नहीं/)
+  assert.match(notice.english, /website and design only/)
+  assert.match(notice.english, /not claimed/)
+})

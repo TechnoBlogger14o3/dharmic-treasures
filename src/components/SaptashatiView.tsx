@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { saptashatiPath } from '../../data/durgaSaptashati'
+import { saptashatiCopyrightYear, saptashatiPath } from '../../data/durgaSaptashati'
 import { shareSearch } from '../utils/shareLink'
 import ArrowLeftIcon from './icons/ArrowLeftIcon'
 import BookmarkButton from './BookmarkButton'
@@ -112,6 +112,7 @@ export default function SaptashatiView({ chapterNumber, onBack, onNavigate }: Sa
           अगला पाठ
         </button>
       </div>
+      <p className="text-xs text-ink/45 leading-relaxed text-center mb-6">{saptashatiCopyrightYear().hindi}</p>
     </div>
   )
 }

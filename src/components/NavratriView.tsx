@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import { formatChhathDate, kolkataTodayIso } from '../utils/chhathDates.ts'
 import { dateForNamedEvent, dateForNavratriNight, upcomingYearForEvent } from '../utils/festivals.ts'
-import { saptashatiGroups, saptashatiPath } from '../../data/durgaSaptashati'
+import { saptashatiCopyrightYear, saptashatiGroups, saptashatiPath } from '../../data/durgaSaptashati'
 import {
   navratriDays,
   navratriDeities,
@@ -68,6 +68,7 @@ export default function NavratriView({ onSelectPath }: NavratriViewProps) {
         कवच, अर्गल, कीलक, अथर्वशीर्ष, चण्डी प्रार्थना, तेरह अध्याय (७०० मंत्र), कुंजिका, रहस्य और क्षमा प्रार्थना —
         पूरा हिन्दी पाठ, श्लोक-दर-श्लोक।
       </p>
+      <p className="text-xs text-ink/50 leading-relaxed mb-4">{saptashatiCopyrightYear().hindi}</p>
       <div className="space-y-6 mb-8">
         {saptashatiGroups.map((group) => (
           <div key={group.id}>
